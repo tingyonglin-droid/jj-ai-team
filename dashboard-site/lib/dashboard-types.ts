@@ -1,40 +1,97 @@
 export type WorkStatus = "尚未開始" | "等待中" | "進行中" | "待核准" | "已完成" | "受阻";
 
+export type ArtifactStatus = "草稿" | "待核准" | "已核准" | "退回修訂" | "已核准並執行";
+
+export type ApprovalType = "晨報" | "Threads" | "IG" | "市場風險報告" | "風險方法" | "App 規格";
+
+export type Freshness = "今日" | "過期";
+
+export interface TraceableRecord {
+  source: string;
+  asOf: string;
+  updatedAt: string;
+  dependencies: string[];
+}
+
+export interface DashboardTask extends TraceableRecord {
+  id: string;
+  title: string;
+  owner: string;
+  ownerId: string;
+  status: WorkStatus;
+  artifactStatus: ArtifactStatus;
+  rawStatus: string | null;
+  nextStep: string;
+}
+
 export interface DashboardSnapshot {
   generatedAt: string;
   date: string;
-  approvals: Array<{
-    id: string;
+  approvals: Array<
+    TraceableRecord & {
+      id: string;
+      title: string;
+      type: ApprovalType;
+      owner: string;
+      status: "待核准";
+      artifactStatus: "待核准";
+      rawStatus: string;
+      summary: string;
+      decision: string;
+      createdAt: string;
+    }
+  >;
+  employees: Array<
+    TraceableRecord & {
+      id: string;
+      name: string;
+      role: string;
+      status: WorkStatus;
+      artifactStatus: ArtifactStatus | null;
+      rawStatus: string | null;
+      currentTask: string;
+      progress: string;
+      handoff: string;
+      blocker: string | null;
+      nextStep: string;
+    }
+  >;
+  tasks: DashboardTask[];
+  brief:
+    | (TraceableRecord & {
+        title: string;
+        summary: string;
+        freshness: Freshness;
+        artifactStatus: ArtifactStatus;
+        rawStatus: string;
+      })
+    | null;
+  marketRisk:
+    | (TraceableRecord & {
+        label: string;
+        freshness: Freshness;
+        artifactStatus: ArtifactStatus;
+        rawStatus: string;
+        completeness: number | null;
+      })
+    | null;
+  blockers: Array<{
+    severity: "warning" | "blocker";
+    kind: "missing" | "stale" | "malformed" | "conflict";
     title: string;
-    type: string;
-    owner: string;
-    status: "待核准";
-    summary: string;
-    decision: string;
-    source: string;
-    updatedAt: string;
-  }>;
-  employees: Array<{
-    id: string;
-    name: string;
-    role: string;
-    status: WorkStatus;
-    currentTask: string;
-    progress: string;
-    dependencies: string[];
-    handoff: string;
-    blocker: string | null;
+    reason: string;
     nextStep: string;
-    updatedAt: string;
+    source: string | null;
+    asOf: string | null;
+    updatedAt: string | null;
   }>;
-  tasks: Array<{
-    id: string;
-    title: string;
-    owner: string;
-    status: WorkStatus;
-    nextStep: string;
-  }>;
-  brief: { title: string; summary: string; asOf: string; source: string } | null;
-  marketRisk: { label: string; asOf: string; source: string; completeness: number | null } | null;
-  blockers: Array<{ title: string; reason: string; nextStep: string }>;
 }
+
+export const supportedApprovalTypes: ApprovalType[] = [
+  "晨報",
+  "Threads",
+  "IG",
+  "市場風險報告",
+  "風險方法",
+  "App 規格",
+];

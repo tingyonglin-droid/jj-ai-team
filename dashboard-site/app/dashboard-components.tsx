@@ -1,13 +1,25 @@
 import Link from "next/link";
-import type { DashboardSnapshot, WorkStatus } from "../lib/dashboard-types";
+import {
+  supportedApprovalTypes,
+  type ArtifactStatus,
+  type DashboardSnapshot,
+  type Freshness,
+  type WorkStatus,
+} from "../lib/dashboard-types";
 
 type Approval = DashboardSnapshot["approvals"][number];
 type Employee = DashboardSnapshot["employees"][number];
 
-export function StatusBadge({ status }: { status: WorkStatus | "資料不足" }) {
+export function StatusBadge({
+  status,
+  label,
+}: {
+  status: WorkStatus | ArtifactStatus | Freshness | "資料不足" | "warning" | "blocker";
+  label?: string;
+}) {
   return (
     <span className="status-badge" data-status={status}>
-      {status}
+      {label ?? status}
     </span>
   );
 }
@@ -54,9 +66,13 @@ export function TodayOverview({ snapshot }: { snapshot: DashboardSnapshot }) {
             {snapshot.approvals.map((approval) => (
               <li key={approval.id}>
                 <div>
-                  <p className="item-meta">{approval.type}</p>
+                  <p className="item-meta">成果類型：{approval.type}；負責角色：{approval.owner}</p>
                   <h3>{approval.title}</h3>
                   <p>{approval.decision}</p>
+                  <p className="source-line">
+                    來源：{approval.source}；資料代表時間：{approval.asOf}；更新時間：
+                    {approval.updatedAt}
+                  </p>
                 </div>
                 <StatusBadge status={approval.status} />
               </li>
@@ -108,8 +124,26 @@ export function TodayOverview({ snapshot }: { snapshot: DashboardSnapshot }) {
                 <div>
                   <h3>{task.title}</h3>
                   <p>
+                    <strong>主責角色：</strong>
+                    {task.owner}
+                  </p>
+                  <p>
+                    <strong>依賴：</strong>
+                    {task.dependencies.length > 0 ? task.dependencies.join("、") : "尚未記載依賴"}
+                  </p>
+                  <p>
                     <strong>下一步：</strong>
                     {task.nextStep}
+                  </p>
+                  <p>
+                    <strong>成果狀態：</strong>
+                    {task.artifactStatus}
+                    {task.rawStatus && task.rawStatus !== task.artifactStatus
+                      ? `（原始記載：${task.rawStatus}）`
+                      : ""}
+                  </p>
+                  <p className="source-line">
+                    來源：{task.source}；資料代表時間：{task.asOf}；更新時間：{task.updatedAt}
                   </p>
                 </div>
                 <StatusBadge status={task.status} />
@@ -135,10 +169,25 @@ export function TodayOverview({ snapshot }: { snapshot: DashboardSnapshot }) {
         <div className="summary-grid">
           {snapshot.brief ? (
             <article>
-              <p className="item-meta">晨報</p>
+              <div className="card-heading">
+                <p className="item-meta">晨報</p>
+                <StatusBadge status={snapshot.brief.freshness} />
+              </div>
               <h3>{snapshot.brief.title}</h3>
               <p>{snapshot.brief.summary}</p>
-              <p className="source-line">資料截止：{snapshot.brief.asOf}</p>
+              {snapshot.brief.freshness === "過期" ? (
+                <p className="warning-text">此為最後有效紀錄，不是今日資料。</p>
+              ) : null}
+              <p>
+                依賴：
+                {snapshot.brief.dependencies.length > 0
+                  ? snapshot.brief.dependencies.join("、")
+                  : "尚未記載依賴"}
+              </p>
+              <p className="source-line">
+                資料代表時間：{snapshot.brief.asOf}；來源：{snapshot.brief.source}；更新時間：
+                {snapshot.brief.updatedAt}
+              </p>
             </article>
           ) : (
             <EmptyState
@@ -149,14 +198,29 @@ export function TodayOverview({ snapshot }: { snapshot: DashboardSnapshot }) {
           )}
           {snapshot.marketRisk ? (
             <article>
-              <p className="item-meta">市場風險</p>
+              <div className="card-heading">
+                <p className="item-meta">市場風險</p>
+                <StatusBadge status={snapshot.marketRisk.freshness} />
+              </div>
               <h3>{snapshot.marketRisk.label}</h3>
-              <p>資料截止：{snapshot.marketRisk.asOf}</p>
+              {snapshot.marketRisk.freshness === "過期" ? (
+                <p className="warning-text">此為最後有效紀錄，不是今日資料。</p>
+              ) : null}
               <p>
                 資料完整度：
                 {snapshot.marketRisk.completeness === null
                   ? "尚未記載"
                   : `${snapshot.marketRisk.completeness}%`}
+              </p>
+              <p>
+                依賴：
+                {snapshot.marketRisk.dependencies.length > 0
+                  ? snapshot.marketRisk.dependencies.join("、")
+                  : "尚未記載依賴"}
+              </p>
+              <p className="source-line">
+                資料代表時間：{snapshot.marketRisk.asOf}；來源：{snapshot.marketRisk.source}；更新時間：
+                {snapshot.marketRisk.updatedAt}
               </p>
             </article>
           ) : (
@@ -179,9 +243,19 @@ export function TodayOverview({ snapshot }: { snapshot: DashboardSnapshot }) {
         {snapshot.blockers.length > 0 ? (
           <ul className="blocker-list">
             {snapshot.blockers.map((blocker) => (
-              <li key={blocker.title}>
-                <h3>{blocker.title}</h3>
+              <li key={`${blocker.kind}:${blocker.source ?? blocker.title}`}>
+                <div className="card-heading">
+                  <h3>{blocker.title}</h3>
+                  <StatusBadge
+                    status={blocker.severity}
+                    label={blocker.severity === "warning" ? "警告" : "阻擋"}
+                  />
+                </div>
                 <p>{blocker.reason}</p>
+                <p className="source-line">
+                  來源：{blocker.source ?? "尚未產出"}；資料代表時間：{blocker.asOf ?? "尚未產出"}；
+                  更新時間：{blocker.updatedAt ?? "尚未產出"}
+                </p>
                 <p>
                   <strong>下一步：</strong>
                   {blocker.nextStep}
@@ -225,6 +299,15 @@ export function EmployeeDirectory({ employees }: { employees: Employee[] }) {
                 <dd>{employee.currentTask}</dd>
               </div>
               <div>
+                <dt>成果狀態</dt>
+                <dd>
+                  {employee.artifactStatus ?? "尚未產出"}
+                  {employee.rawStatus && employee.rawStatus !== employee.artifactStatus
+                    ? `（原始記載：${employee.rawStatus}）`
+                    : ""}
+                </dd>
+              </div>
+              <div>
                 <dt>進度</dt>
                 <dd>{employee.progress}</dd>
               </div>
@@ -243,6 +326,14 @@ export function EmployeeDirectory({ employees }: { employees: Employee[] }) {
               <div>
                 <dt>下一步</dt>
                 <dd>{employee.nextStep}</dd>
+              </div>
+              <div>
+                <dt>資料代表時間</dt>
+                <dd>{employee.asOf}</dd>
+              </div>
+              <div>
+                <dt>來源</dt>
+                <dd>{employee.source}</dd>
               </div>
               <div>
                 <dt>更新時間</dt>
@@ -268,42 +359,53 @@ export function ApprovalCenter({ approvals }: { approvals: Approval[] }) {
         <h1 id="approval-heading">待你決定</h1>
         <p>這裡只列出已保存、且狀態為待核准的真實成果。</p>
       </div>
-      {approvals.length === 0 ? (
-        <EmptyState
-          title="目前沒有待核准事項"
-          description="目前沒有已保存的待核准成果。"
-          nextStep="等待團隊依工作流提交成果。"
-        />
-      ) : (
-        <div className="approval-groups">
-          {[...approvalGroups].map(([type, group]) => (
+      {approvals.length === 0 ? <p className="empty-summary">目前沒有待核准事項。</p> : null}
+      <div className="approval-groups">
+        {supportedApprovalTypes.map((type) => {
+          const group = approvalGroups.get(type) ?? [];
+          return (
             <section key={type} aria-labelledby={`approval-type-${type}`} className="approval-group">
               <h2 id={`approval-type-${type}`}>成果類型：{type}</h2>
-              <ul>
-                {group.map((approval) => (
-                  <li key={approval.id}>
-                    <div className="card-heading">
-                      <div>
-                        <h3>{approval.title}</h3>
-                        <p className="item-meta">負責角色：{approval.owner}</p>
+              {group.length > 0 ? (
+                <ul>
+                  {group.map((approval) => (
+                    <li key={approval.id}>
+                      <div className="card-heading">
+                        <div>
+                          <h3>{approval.title}</h3>
+                          <p className="item-meta">負責角色：{approval.owner}</p>
+                        </div>
+                        <StatusBadge status={approval.status} />
                       </div>
-                      <StatusBadge status={approval.status} />
-                    </div>
-                    <p>{approval.summary}</p>
-                    <p>
-                      <strong>待決定：</strong>
-                      {approval.decision}
-                    </p>
-                    <p className="source-line">
-                      來源：{approval.source}；更新時間：{approval.updatedAt}
-                    </p>
-                  </li>
-                ))}
-              </ul>
+                      <p>{approval.summary}</p>
+                      <p>
+                        <strong>待決定：</strong>
+                        {approval.decision}
+                      </p>
+                      <p>
+                        <strong>依賴：</strong>
+                        {approval.dependencies.length > 0
+                          ? approval.dependencies.join("、")
+                          : "尚未記載依賴"}
+                      </p>
+                      <p className="source-line">
+                        建立時間：{approval.createdAt}；資料代表時間：{approval.asOf}；更新時間：
+                        {approval.updatedAt}；來源：{approval.source}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <EmptyState
+                  title="此類型目前沒有待核准成果"
+                  description="沒有對應保存位置中的真實待核准資料。"
+                  nextStep="依對應工作流產出成果；不顯示範例。"
+                />
+              )}
             </section>
-          ))}
-        </div>
-      )}
+          );
+        })}
+      </div>
     </section>
   );
 }

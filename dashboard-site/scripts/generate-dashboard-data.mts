@@ -1,14 +1,33 @@
-import { readdir, readFile, stat, writeFile, mkdir } from "node:fs/promises";
+import { mkdir, readFile, readdir, stat, writeFile } from "node:fs/promises";
 import type { Dirent } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-import type { DashboardSnapshot, WorkStatus } from "../lib/dashboard-types.ts";
+import type {
+  ApprovalType,
+  ArtifactStatus,
+  DashboardSnapshot,
+  DashboardTask,
+  WorkStatus,
+} from "../lib/dashboard-types.ts";
+
+type SourceDefinition = {
+  id: string;
+  type: ApprovalType;
+  directory: string;
+  ownerId: string;
+  owner: string;
+  requiredFields: string[];
+  requiredSections: string[];
+};
 
 type MarkdownRecord = {
   content: string;
   relativePath: string;
   updatedAt: string;
+  definition: SourceDefinition | null;
+  identity: string;
+  version: number;
 };
 
 type EmployeeSource = {
@@ -22,86 +41,177 @@ type EmployeeSource = {
 type WorkflowSource = {
   ownerText: string;
   firstStep: string | null;
-  relativePath: string;
 };
 
-const statusValues: WorkStatus[] = ["尚未開始", "等待中", "進行中", "待核准", "已完成", "受阻"];
+type ValidRecord = MarkdownRecord & {
+  title: string;
+  ownerId: string;
+  owner: string;
+  artifactStatus: ArtifactStatus;
+  rawStatus: string | null;
+  workStatus: WorkStatus;
+  asOf: string;
+  representativeDate: string;
+  createdAt: string;
+  dependencies: string[];
+};
+
+type ValidationResult =
+  | { valid: true; record: ValidRecord }
+  | {
+      valid: false;
+      issue: DashboardSnapshot["blockers"][number];
+    };
+
+const operationalSources: Record<"reviews" | "decisions", { ownerId: string; owner: string }> = {
+  reviews: { ownerId: "social-operator", owner: "社群經營員" },
+  decisions: { ownerId: "commander", owner: "總司令" },
+};
 
 function normalizeRelativePath(relativePath: string) {
   return relativePath.split(path.sep).join("/");
 }
 
+function escapeRegExp(value: string) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
 function firstHeading(content: string) {
-  return content.match(/^#\s+(.+)$/m)?.[1]?.trim() ?? "未命名紀錄";
+  return content.match(/^#\s+(.+)$/m)?.[1]?.trim() ?? null;
+}
+
+function fieldValues(content: string, label: string) {
+  const expression = new RegExp(`^\\s*[-*]\\s*${escapeRegExp(label)}[：:]\\s*(.+?)\\s*$`, "gm");
+  return [...content.matchAll(expression)].map((match) => match[1]?.trim() ?? "");
 }
 
 function field(content: string, label: string) {
-  const escaped = label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  return content.match(new RegExp(`^\\s*[-*]\\s*${escaped}[：:]\\s*(.+?)\\s*$`, "m"))?.[1]?.trim() ?? null;
+  return fieldValues(content, label)[0] ?? null;
 }
 
 function sectionText(content: string, heading: string) {
-  const escaped = heading.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const match = content.match(new RegExp(`^##\\s+${escaped}\\s*\\n([\\s\\S]*?)(?=^##\\s+|(?![\\s\\S]))`, "m"));
+  const match = content.match(
+    new RegExp(`^##\\s+${escapeRegExp(heading)}\\s*\\n([\\s\\S]*?)(?=^##\\s+|(?![\\s\\S]))`, "m"),
+  );
   return match?.[1]?.trim() ?? "";
 }
 
 function summaryFrom(content: string) {
-  const section = sectionText(content, "一分鐘摘要");
+  const section = ["一分鐘摘要", "摘要", "主版本", "方法變更", "問題與證據"]
+    .map((heading) => sectionText(content, heading))
+    .find(Boolean);
+  if (!section) return firstHeading(content) ?? "未命名紀錄";
+
   const bullets = section
     .split("\n")
     .filter((line) => /^\s*[-*]\s+/.test(line))
     .map((line) => line.replace(/^\s*[-*]\s+/, "").trim());
-  return bullets.join(" ") || firstHeading(content);
+  return bullets.join(" ") || section.split("\n").find((line) => line.trim())?.trim() || "尚未記載摘要";
 }
 
-function toWorkStatus(rawStatus: string | null): WorkStatus {
-  return rawStatus && statusValues.includes(rawStatus as WorkStatus) ? (rawStatus as WorkStatus) : "尚未開始";
+function normalizeArtifactStatus(rawStatus: string | null): ArtifactStatus | null {
+  if (!rawStatus) return null;
+  if (rawStatus.startsWith("已核准並執行")) return "已核准並執行";
+  if (rawStatus.startsWith("已核准")) return "已核准";
+  if (rawStatus.startsWith("待核准")) return "待核准";
+  if (rawStatus.startsWith("退回修訂")) return "退回修訂";
+  if (rawStatus.startsWith("草稿") || rawStatus.startsWith("探索")) return "草稿";
+  return null;
 }
 
-function ownerForPath(relativePath: string) {
-  if (relativePath.startsWith("records/daily-briefs/") || relativePath.startsWith("records/market-risk/")) {
-    return "macro-researcher";
+function toWorkStatus(status: ArtifactStatus): WorkStatus {
+  switch (status) {
+    case "草稿":
+    case "退回修訂":
+      return "進行中";
+    case "待核准":
+      return "待核准";
+    case "已核准":
+    case "已核准並執行":
+      return "已完成";
   }
-  if (relativePath.startsWith("records/reviews/")) return "social-operator";
-  if (relativePath.startsWith("records/decisions/")) return "commander";
-  return "commander";
 }
 
-function newestRecordFirst(left: MarkdownRecord, right: MarkdownRecord) {
-  const filenameComparison = path.basename(right.relativePath).localeCompare(path.basename(left.relativePath));
-  return filenameComparison || right.relativePath.localeCompare(left.relativePath);
+function dateInTaipei(now: Date) {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Taipei",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).formatToParts(now);
+  const values = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+  return `${values.year}-${values.month}-${values.day}`;
 }
 
-async function markdownRecords(root: string, relativeDirectory: string): Promise<MarkdownRecord[]> {
-  const absoluteDirectory = path.join(root, relativeDirectory);
+function dateFrom(value: string | null) {
+  return value?.match(/\b(\d{4}-\d{2}-\d{2})\b/)?.[1] ?? null;
+}
+
+function filenameDate(relativePath: string) {
+  return dateFrom(path.basename(relativePath));
+}
+
+function createdAtFrom(date: string) {
+  return `${date}T00:00:00+08:00`;
+}
+
+function dependenciesFrom(content: string) {
+  const raw =
+    field(content, "依賴") ??
+    field(content, "依賴與待確認") ??
+    field(content, "關聯文件") ??
+    field(content, "來源研究");
+  if (!raw) return [];
+  return raw
+    .split(/[、，,;；]/)
+    .map((dependency) => dependency.trim().replace(/^`+|[`。.]+$/g, ""))
+    .filter(Boolean);
+}
+
+function identityAndVersion(definitionId: string, relativePath: string) {
+  const basename = path.basename(relativePath, ".md");
+  const versionMatch = basename.match(/-v(\d+)$/i);
+  const version = versionMatch ? Number(versionMatch[1]) : 0;
+  const identity = versionMatch ? basename.slice(0, versionMatch.index) : basename;
+  return { identity: `${definitionId}:${identity}`, version };
+}
+
+async function artifactDefinitions(): Promise<SourceDefinition[]> {
+  const text = await readFile(new URL("../data/artifact-sources.json", import.meta.url), "utf8");
+  return (JSON.parse(text) as { artifacts: SourceDefinition[] }).artifacts;
+}
+
+async function markdownRecords(
+  root: string,
+  relativeDirectory: string,
+  definition: SourceDefinition | null,
+): Promise<MarkdownRecord[]> {
   let entries: Dirent<string>[];
   try {
-    entries = await readdir(absoluteDirectory, { withFileTypes: true });
+    entries = await readdir(path.join(root, relativeDirectory), { withFileTypes: true });
   } catch (error: unknown) {
     if ((error as NodeJS.ErrnoException).code === "ENOENT") return [];
     throw error;
   }
 
-  const records = await Promise.all(
+  return Promise.all(
     entries
       .filter((entry) => entry.isFile() && entry.name.endsWith(".md") && entry.name !== "README.md")
       .map(async (entry) => {
         const relativePath = normalizeRelativePath(path.join(relativeDirectory, entry.name));
         const absolutePath = path.join(root, relativePath);
         const [content, metadata] = await Promise.all([readFile(absolutePath, "utf8"), stat(absolutePath)]);
-        return { content, relativePath, updatedAt: metadata.mtime.toISOString() };
+        const definitionId = definition?.id ?? relativeDirectory;
+        const { identity, version } = identityAndVersion(definitionId, relativePath);
+        return { content, relativePath, updatedAt: metadata.mtime.toISOString(), definition, identity, version };
       }),
   );
-
-  return records.sort(newestRecordFirst);
 }
 
 async function employeesFromRoles(root: string): Promise<EmployeeSource[]> {
-  const rolesDirectory = path.join(root, "roles");
   let entries: Dirent<string>[];
   try {
-    entries = await readdir(rolesDirectory, { withFileTypes: true });
+    entries = await readdir(path.join(root, "roles"), { withFileTypes: true });
   } catch (error: unknown) {
     if ((error as NodeJS.ErrnoException).code === "ENOENT") return [];
     throw error;
@@ -112,12 +222,14 @@ async function employeesFromRoles(root: string): Promise<EmployeeSource[]> {
       .filter((entry) => entry.isDirectory())
       .map(async (entry) => {
         const relativePath = normalizeRelativePath(path.join("roles", entry.name, "ROLE.md"));
-        const absolutePath = path.join(root, relativePath);
         try {
-          const [content, metadata] = await Promise.all([readFile(absolutePath, "utf8"), stat(absolutePath)]);
+          const [content, metadata] = await Promise.all([
+            readFile(path.join(root, relativePath), "utf8"),
+            stat(path.join(root, relativePath)),
+          ]);
           return {
             id: entry.name,
-            name: firstHeading(content),
+            name: firstHeading(content) ?? entry.name,
             handoff: sectionText(content, "交接對象") || "尚未記載",
             relativePath,
             updatedAt: metadata.mtime.toISOString(),
@@ -129,35 +241,31 @@ async function employeesFromRoles(root: string): Promise<EmployeeSource[]> {
       }),
   );
 
-  return employees.filter((employee): employee is EmployeeSource => employee !== null).sort((left, right) => left.id.localeCompare(right.id));
+  return employees
+    .filter((employee): employee is EmployeeSource => employee !== null)
+    .sort((left, right) => left.id.localeCompare(right.id));
 }
 
 async function workflowsFromDocuments(root: string): Promise<WorkflowSource[]> {
-  const relativeDirectory = "workflows";
-  const absoluteDirectory = path.join(root, relativeDirectory);
   let entries: Dirent<string>[];
   try {
-    entries = await readdir(absoluteDirectory, { withFileTypes: true });
+    entries = await readdir(path.join(root, "workflows"), { withFileTypes: true });
   } catch (error: unknown) {
     if ((error as NodeJS.ErrnoException).code === "ENOENT") return [];
     throw error;
   }
 
-  const workflows = await Promise.all(
+  return Promise.all(
     entries
       .filter((entry) => entry.isFile() && entry.name.endsWith(".md") && entry.name !== "README.md")
       .map(async (entry) => {
-        const relativePath = normalizeRelativePath(path.join(relativeDirectory, entry.name));
-        const content = await readFile(path.join(root, relativePath), "utf8");
+        const content = await readFile(path.join(root, "workflows", entry.name), "utf8");
         return {
           ownerText: sectionText(content, "負責角色"),
           firstStep: sectionText(content, "步驟").match(/^\s*1\.\s+(.+)$/m)?.[1]?.trim() ?? null,
-          relativePath,
         };
       }),
   );
-
-  return workflows.sort((left, right) => left.relativePath.localeCompare(right.relativePath));
 }
 
 function workflowForEmployee(workflows: WorkflowSource[], employee: EmployeeSource) {
@@ -169,116 +277,379 @@ function workflowForEmployee(workflows: WorkflowSource[], employee: EmployeeSour
   );
 }
 
-function taskFromRecord(record: MarkdownRecord, owner: string) {
-  const status = toWorkStatus(field(record.content, "狀態"));
+function issueFor(
+  record: MarkdownRecord,
+  kind: "missing" | "malformed" | "conflict",
+  reason: string,
+): DashboardSnapshot["blockers"][number] {
+  return {
+    severity: "blocker",
+    kind,
+    title: `來源無法使用：${firstHeading(record.content) ?? path.basename(record.relativePath)}`,
+    reason,
+    nextStep: "依對應模板補齊或更正來源，建立新版本後重新產生快照。",
+    source: record.relativePath,
+    asOf: representativeTime(record.content, record.relativePath),
+    updatedAt: record.updatedAt,
+  };
+}
+
+function representativeTime(content: string, relativePath: string) {
+  return (
+    field(content, "資料截止") ??
+    field(content, "最後更新時間") ??
+    field(content, "文件日期與版本") ??
+    field(content, "生效日") ??
+    field(content, "決策日期") ??
+    field(content, "整理日期") ??
+    field(content, "日期") ??
+    filenameDate(relativePath) ??
+    ""
+  );
+}
+
+function validateRecord(record: MarkdownRecord): ValidationResult {
+  const title = firstHeading(record.content);
+  if (!title || title.includes("請填寫")) {
+    return { valid: false, issue: issueFor(record, "missing", "缺少有效的一級標題。") };
+  }
+
+  if (record.definition) {
+    const conflictingFields = record.definition.requiredFields.filter((label) => {
+      const values = [...new Set(fieldValues(record.content, label))];
+      return values.length > 1;
+    });
+    if (conflictingFields.length > 0) {
+      return {
+        valid: false,
+        issue: issueFor(record, "conflict", `同一來源的欄位互相衝突：${conflictingFields.join("、")}。`),
+      };
+    }
+
+    const missingFields = record.definition.requiredFields.filter((label) => {
+      const value = field(record.content, label);
+      return !value || value.includes("請填寫");
+    });
+    const missingSections = record.definition.requiredSections.filter(
+      (heading) => !sectionText(record.content, heading) || sectionText(record.content, heading).includes("請填寫"),
+    );
+    if (missingFields.length > 0 || missingSections.length > 0) {
+      const details = [
+        missingFields.length > 0 ? `缺欄位：${missingFields.join("、")}` : null,
+        missingSections.length > 0 ? `缺必要章節：${missingSections.join("、")}` : null,
+      ].filter(Boolean);
+      return { valid: false, issue: issueFor(record, "missing", `${details.join("；")}。`) };
+    }
+  }
+
+  const operationalKind = record.relativePath.startsWith("records/decisions/")
+    ? "decisions"
+    : record.relativePath.startsWith("records/reviews/")
+      ? "reviews"
+      : null;
+  const rawStatus = field(record.content, "狀態");
+  let artifactStatus = normalizeArtifactStatus(rawStatus);
+  if (operationalKind === "decisions") {
+    const missingDecisionFields = ["決策日期", "決策者", "決定", "生效日"].filter(
+      (label) => !field(record.content, label),
+    );
+    if (missingDecisionFields.length > 0) {
+      return {
+        valid: false,
+        issue: issueFor(record, "missing", `決策紀錄缺欄位：${missingDecisionFields.join("、")}。`),
+      };
+    }
+    artifactStatus = "已核准";
+  }
+  if (!artifactStatus) {
+    return {
+      valid: false,
+      issue: issueFor(record, "malformed", rawStatus ? `無法辨識成果狀態：${rawStatus}。` : "缺少可映射的成果狀態。"),
+    };
+  }
+
+  const asOf = representativeTime(record.content, record.relativePath);
+  const representativeDate = dateFrom(asOf) ?? filenameDate(record.relativePath);
+  if (!asOf || !representativeDate) {
+    return { valid: false, issue: issueFor(record, "missing", "缺少可辨識的資料代表時間或日期。") };
+  }
+
+  const owner = record.definition
+    ? { ownerId: record.definition.ownerId, owner: record.definition.owner }
+    : operationalKind
+      ? operationalSources[operationalKind]
+      : operationalSources.decisions;
+
+  return {
+    valid: true,
+    record: {
+      ...record,
+      title,
+      ...owner,
+      artifactStatus,
+      rawStatus,
+      workStatus: toWorkStatus(artifactStatus),
+      asOf,
+      representativeDate,
+      createdAt: createdAtFrom(filenameDate(record.relativePath) ?? representativeDate),
+      dependencies: dependenciesFrom(record.content),
+    },
+  };
+}
+
+function newestVersionFirst(left: MarkdownRecord, right: MarkdownRecord) {
+  return (
+    right.version - left.version ||
+    right.relativePath.localeCompare(left.relativePath)
+  );
+}
+
+function selectLatestEffective(records: MarkdownRecord[]) {
+  const grouped = Map.groupBy(records, (record) => record.identity);
+  const validRecords: ValidRecord[] = [];
+  const issues: DashboardSnapshot["blockers"] = [];
+
+  for (const versions of grouped.values()) {
+    const sorted = [...versions].sort(newestVersionFirst);
+    const newestValidation = validateRecord(sorted[0]);
+    if (!newestValidation.valid) issues.push(newestValidation.issue);
+
+    for (const version of sorted) {
+      const validation = validateRecord(version);
+      if (validation.valid) {
+        validRecords.push(validation.record);
+        break;
+      }
+    }
+  }
+
+  return { validRecords, issues };
+}
+
+function newestWorkFirst(left: ValidRecord, right: ValidRecord) {
+  return (
+    right.representativeDate.localeCompare(left.representativeDate) ||
+    right.version - left.version ||
+    right.updatedAt.localeCompare(left.updatedAt) ||
+    right.relativePath.localeCompare(left.relativePath)
+  );
+}
+
+function nextStepFor(record: ValidRecord) {
+  switch (record.artifactStatus) {
+    case "待核准":
+      return "等待使用者核准";
+    case "退回修訂":
+      return "依退回意見修訂並建立新版本";
+    case "草稿":
+      return "依工作流完成查核與提交";
+    case "已核准":
+    case "已核准並執行":
+      return "依紀錄保留結果並追蹤後續";
+  }
+}
+
+function taskFromRecord(record: ValidRecord): DashboardTask {
   return {
     id: record.relativePath,
-    title: firstHeading(record.content),
-    owner,
-    status,
-    nextStep: status === "待核准" ? "等待使用者核准" : "依紀錄所列下一步執行",
+    title: record.title,
+    owner: record.owner,
+    ownerId: record.ownerId,
+    status: record.workStatus,
+    artifactStatus: record.artifactStatus,
+    rawStatus: record.rawStatus,
+    nextStep: nextStepFor(record),
+    dependencies: record.dependencies,
+    source: record.relativePath,
+    asOf: record.asOf,
+    updatedAt: record.updatedAt,
+  };
+}
+
+function decisionFrom(record: ValidRecord) {
+  const approvalSections = ["人工核准", "核准", "圖說與核准", "風險、依賴與核准"];
+  for (const section of approvalSections) {
+    const content = sectionText(record.content, section);
+    const value = field(content, "待核准事項") ?? field(content, "上線決策") ?? field(content, "核准紀錄");
+    if (value) return value;
+  }
+  return "等待使用者決定";
+}
+
+function missingSummaryIssue(
+  title: string,
+  directory: string,
+  nextStep: string,
+): DashboardSnapshot["blockers"][number] {
+  return {
+    severity: "blocker",
+    kind: "missing",
+    title,
+    reason: `${directory}/ 沒有可用的有效紀錄。`,
+    nextStep,
+    source: null,
+    asOf: null,
+    updatedAt: null,
+  };
+}
+
+function staleIssue(
+  label: string,
+  record: ValidRecord,
+  dashboardDate: string,
+): DashboardSnapshot["blockers"][number] {
+  return {
+    severity: "warning",
+    kind: "stale",
+    title: `${label}已過期`,
+    reason: `最後有效資料日期為 ${record.representativeDate}，不是台北今日 ${dashboardDate}；畫面只會以「過期」呈現。`,
+    nextStep: "依對應工作流產生今日紀錄。",
+    source: record.relativePath,
+    asOf: record.asOf,
+    updatedAt: record.updatedAt,
   };
 }
 
 export async function generateDashboardSnapshot(root: string, now: Date): Promise<DashboardSnapshot> {
-  const [employees, workflows, briefs, risks, reviews, decisions] = await Promise.all([
+  const definitions = await artifactDefinitions();
+  const [employees, workflows, artifactRecordSets, reviews, decisions] = await Promise.all([
     employeesFromRoles(root),
     workflowsFromDocuments(root),
-    markdownRecords(root, "records/daily-briefs"),
-    markdownRecords(root, "records/market-risk"),
-    markdownRecords(root, "records/reviews"),
-    markdownRecords(root, "records/decisions"),
+    Promise.all(definitions.map((definition) => markdownRecords(root, definition.directory, definition))),
+    markdownRecords(root, "records/reviews", null),
+    markdownRecords(root, "records/decisions", null),
   ]);
-  const allRecords = [...briefs, ...risks, ...reviews, ...decisions];
-  const newestBrief = briefs[0] ?? null;
-  const newestRisk = risks[0] ?? null;
+  const dashboardDate = dateInTaipei(now);
+  const allRecords = [...artifactRecordSets.flat(), ...reviews, ...decisions];
+  const { validRecords, issues } = selectLatestEffective(allRecords);
+  const sortedValidRecords = [...validRecords].sort(newestWorkFirst);
+  const tasksForEmployees = sortedValidRecords.map(taskFromRecord);
+  const currentTasks = tasksForEmployees.filter(
+    (task) =>
+      dateFrom(task.asOf) === dashboardDate ||
+      task.status === "進行中" ||
+      task.status === "待核准" ||
+      task.status === "受阻",
+  );
 
-  const approvals = allRecords
-    .filter((record) => field(record.content, "狀態") === "待核准")
-    .sort((left, right) => right.relativePath.localeCompare(left.relativePath))
-    .map((record) => ({
-      id: record.relativePath,
-      title: firstHeading(record.content),
-      type: record.relativePath.split("/")[1] ?? "record",
-      owner: ownerForPath(record.relativePath),
-      status: "待核准" as const,
-      summary: summaryFrom(record.content),
-      decision: field(sectionText(record.content, "人工核准"), "待核准事項") ?? "等待使用者決定",
-      source: record.relativePath,
-      updatedAt: record.updatedAt,
-    }));
-
-  const recordTasks = allRecords
-    .filter((record) => statusValues.includes(field(record.content, "狀態") as WorkStatus))
-    .sort(newestRecordFirst)
-    .map((record) => taskFromRecord(record, ownerForPath(record.relativePath)))
-  const latestTaskByOwner = new Map<string, (typeof recordTasks)[number]>();
-  for (const task of recordTasks) {
-    if (!latestTaskByOwner.has(task.owner)) latestTaskByOwner.set(task.owner, task);
+  const latestTaskByOwner = new Map<string, DashboardTask>();
+  for (const task of tasksForEmployees) {
+    if (!latestTaskByOwner.has(task.ownerId)) latestTaskByOwner.set(task.ownerId, task);
   }
 
   const employeeSnapshots = employees.map((employee) => {
     const task = latestTaskByOwner.get(employee.id);
     const workflow = workflowForEmployee(workflows, employee);
-    const status = task?.status ?? "尚未開始";
     return {
       id: employee.id,
       name: employee.name,
       role: employee.name,
-      status,
+      status: task?.status ?? ("尚未開始" as const),
+      artifactStatus: task?.artifactStatus ?? null,
+      rawStatus: task?.rawStatus ?? null,
       currentTask: task?.title ?? "尚未產出",
-      progress: status === "待核准" ? "等待人工核准" : task ? "已記錄工作狀態" : "尚未產出",
-      dependencies: [],
+      progress:
+        task?.status === "待核准"
+          ? "等待人工核准"
+          : task
+            ? `工作狀態：${task.status}`
+            : "尚未產出",
+      dependencies: task?.dependencies ?? [],
       handoff: employee.handoff,
-      blocker: null,
+      blocker: task?.status === "受阻" ? "紀錄標示此任務受阻" : null,
       nextStep: task?.nextStep ?? workflow?.firstStep ?? "等待工作流或紀錄產出",
-      updatedAt: employee.updatedAt,
+      source: task?.source ?? employee.relativePath,
+      asOf: task?.asOf ?? "尚未產出",
+      updatedAt: task?.updatedAt ?? employee.updatedAt,
     };
   });
 
-  const blockers: DashboardSnapshot["blockers"] = [];
-  if (!newestBrief) {
-    blockers.push({
-      title: "晨報尚未產出",
-      reason: "records/daily-briefs/ 沒有可用的晨報紀錄。",
-      nextStep: "依 daily-brief 工作流產出並保存晨報。",
-    });
+  const approvals = sortedValidRecords
+    .filter(
+      (record): record is ValidRecord & { definition: SourceDefinition } =>
+        record.artifactStatus === "待核准" && record.definition !== null,
+    )
+    .map((record) => ({
+      id: record.relativePath,
+      title: record.title,
+      type: record.definition.type,
+      owner: record.owner,
+      status: "待核准" as const,
+      artifactStatus: "待核准" as const,
+      rawStatus: record.rawStatus ?? "待核准",
+      summary: summaryFrom(record.content),
+      decision: decisionFrom(record),
+      source: record.relativePath,
+      asOf: record.asOf,
+      createdAt: record.createdAt,
+      updatedAt: record.updatedAt,
+      dependencies: record.dependencies,
+    }));
+
+  const briefRecord = sortedValidRecords.find((record) => record.definition?.id === "daily-brief") ?? null;
+  const riskRecord = sortedValidRecords.find((record) => record.definition?.id === "market-risk-report") ?? null;
+  const blockers = [...issues];
+
+  if (!briefRecord) {
+    blockers.push(
+      missingSummaryIssue("晨報尚未產出", "records/daily-briefs", "依 daily-brief 工作流產出並保存晨報。"),
+    );
+  } else if (briefRecord.representativeDate !== dashboardDate) {
+    blockers.push(staleIssue("晨報", briefRecord, dashboardDate));
   }
-  if (!newestRisk) {
-    blockers.push({
-      title: "市場風險資料尚未產出",
-      reason: "records/market-risk/ 尚未產出可用資料，無法顯示分數或完整度。",
-      nextStep: "依 market-risk 工作流建立可追溯的市場風險紀錄。",
-    });
+
+  if (!riskRecord) {
+    blockers.push(
+      missingSummaryIssue(
+        "市場風險資料尚未產出",
+        "records/market-risk",
+        "依 market-risk 工作流建立可追溯的市場風險紀錄。",
+      ),
+    );
+  } else if (riskRecord.representativeDate !== dashboardDate) {
+    blockers.push(staleIssue("市場風險資料", riskRecord, dashboardDate));
   }
 
   return {
     generatedAt: now.toISOString(),
-    date: now.toISOString().slice(0, 10),
+    date: dashboardDate,
     approvals,
     employees: employeeSnapshots,
-    tasks: recordTasks,
-    brief: newestBrief
+    tasks: currentTasks,
+    brief: briefRecord
       ? {
-          title: firstHeading(newestBrief.content),
-          summary: summaryFrom(newestBrief.content),
-          asOf: field(newestBrief.content, "資料截止") ?? newestBrief.updatedAt,
-          source: newestBrief.relativePath,
+          title: briefRecord.title,
+          summary: summaryFrom(briefRecord.content),
+          freshness: briefRecord.representativeDate === dashboardDate ? "今日" : "過期",
+          artifactStatus: briefRecord.artifactStatus,
+          rawStatus: briefRecord.rawStatus ?? briefRecord.artifactStatus,
+          asOf: briefRecord.asOf,
+          source: briefRecord.relativePath,
+          updatedAt: briefRecord.updatedAt,
+          dependencies: briefRecord.dependencies,
         }
       : null,
-    marketRisk: newestRisk
+    marketRisk: riskRecord
       ? {
-          label: firstHeading(newestRisk.content),
-          asOf: field(newestRisk.content, "資料截止") ?? newestRisk.updatedAt,
-          source: newestRisk.relativePath,
+          label: riskRecord.title,
+          freshness: riskRecord.representativeDate === dashboardDate ? "今日" : "過期",
+          artifactStatus: riskRecord.artifactStatus,
+          rawStatus: riskRecord.rawStatus ?? riskRecord.artifactStatus,
+          asOf: riskRecord.asOf,
+          source: riskRecord.relativePath,
+          updatedAt: riskRecord.updatedAt,
+          dependencies: riskRecord.dependencies,
           completeness: (() => {
-            const value = field(newestRisk.content, "資料完整度")?.match(/^(\d{1,3})\s*(?:%|\/100)?$/)?.[1];
+            const value = field(riskRecord.content, "資料完整度")?.match(/^(\d{1,3})\s*(?:%|\/100)?/)?.[1];
             const completeness = value ? Number(value) : null;
             return completeness !== null && completeness >= 0 && completeness <= 100 ? completeness : null;
           })(),
         }
       : null,
-    blockers,
+    blockers: blockers.sort((left, right) => {
+      if (left.severity !== right.severity) return left.severity === "blocker" ? -1 : 1;
+      return left.title.localeCompare(right.title);
+    }),
   };
 }
 

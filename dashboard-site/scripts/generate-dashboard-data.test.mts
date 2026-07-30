@@ -19,88 +19,357 @@ async function writeFixture(root: string, relativePath: string, content: string)
   await writeFile(target, content, "utf8");
 }
 
-test("uses the newest pending brief as a traceable approval without inventing missing market risk", async () => {
+async function writeRoles(root: string) {
+  await Promise.all(
+    roles.map(([id, name]) =>
+      writeFixture(
+        root,
+        `roles/${id}/ROLE.md`,
+        `# ${name}\n\n## 使命\n\n測試角色。\n\n## 交接對象\n\n向總司令交接。\n`,
+      ),
+    ),
+  );
+}
+
+function brief({
+  title = "每日投資晨報｜2026-07-30",
+  status = "待核准",
+  cutoff = "2026-07-30 12:13（Asia/Taipei，UTC+8）",
+  includeExternalView = true,
+}: {
+  title?: string;
+  status?: string;
+  cutoff?: string;
+  includeExternalView?: boolean;
+} = {}) {
+  return `# ${title}
+
+- 狀態：${status}
+- 資料截止：${cutoff}
+- 依賴：美國官方經濟資料、市場風險紀錄
+
+## 一分鐘摘要
+
+- 可追溯摘要。
+
+## 已確認事實
+
+- 測試事實。
+
+## AI 推論與初步判斷
+
+- 測試推論。
+
+${includeExternalView ? "## 外部觀點比較\n\n- 測試觀點。\n" : ""}
+## 最終判斷與反方證據
+
+- 測試反證。
+
+## 尚未確認與待觀察
+
+- 測試缺口。
+
+## 人工核准
+
+- 待核准事項：確認晨報範圍。
+`;
+}
+
+function threads(status = "待核准") {
+  return `# Threads 草稿｜可追溯主題
+
+- 日期：2026-07-30
+- 狀態：${status}
+- 來源研究：records/daily-briefs/2026-07-30-v01.md
+
+## 主版本
+
+內文。
+
+## 查核與語氣
+
+- 事實與來源：已列出。
+
+## 核准
+
+- 最終文字與發布由使用者決定：等待使用者決定。
+`;
+}
+
+function instagram(status = "待核准") {
+  return `# IG 輪播｜可追溯主題
+
+- 日期：2026-07-30
+- 狀態：${status}
+
+## 逐頁腳本
+
+| 頁次 | 文案 |
+|---:|---|
+| 1 | 封面 |
+
+## 圖說與核准
+
+- 核准紀錄：等待使用者決定。
+`;
+}
+
+function riskMethod(status = "待核准") {
+  return `# 市場風險方法｜權重檢視
+
+- 日期：2026-07-30
+- 狀態：${status}
+
+## 方法變更
+
+- 本次只是待審規格。
+
+## 證據與限制
+
+- 未取得新資料。
+
+## 核准
+
+- 待核准事項：是否採用新權重。
+`;
+}
+
+function appSpec(status = "待核准") {
+  return `# App 功能規格｜範例
+
+- 狀態：${status}
+- 文件日期與版本：2026-07-30、v01
+- 負責人：App 設計員
+- 依賴與待確認：產品決策
+
+## 問題與證據
+
+- 已列出。
+
+## 用戶故事與價值
+
+- 已列出。
+
+## 範圍與非目標
+
+- 已列出。
+
+## 畫面流程與狀態
+
+1. 進入畫面。
+
+## 資料與成功指標
+
+- 已列出。
+
+## 風險、依賴與核准
+
+- 上線決策：必須由使用者決定。
+`;
+}
+
+test("用台北日期產生可追溯的任務、員工、摘要與核准欄位", async () => {
   const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+
+  try {
+    await writeRoles(root);
+    await writeFixture(root, "records/daily-briefs/2026-07-30-v01.md", brief());
+
+    const snapshot = await generateDashboardSnapshot(root, new Date("2026-07-29T16:30:00.000Z"));
+    const approval = snapshot.approvals[0];
+    const task = snapshot.tasks.find((item) => item.owner === "總經研究員");
+    const employee = snapshot.employees.find((item) => item.id === "macro-researcher");
+
+    assert.equal(snapshot.date, "2026-07-30");
+    assert.equal(approval.type, "晨報");
+    assert.equal(approval.owner, "總經研究員");
+    assert.equal(approval.createdAt, "2026-07-30T00:00:00+08:00");
+    assert.equal(approval.asOf, "2026-07-30 12:13（Asia/Taipei，UTC+8）");
+    assert.match(approval.updatedAt, /^\d{4}-\d{2}-\d{2}T/);
+    assert.deepEqual(approval.dependencies, ["美國官方經濟資料", "市場風險紀錄"]);
+    assert.equal(task?.source, "records/daily-briefs/2026-07-30-v01.md");
+    assert.equal(task?.asOf, approval.asOf);
+    assert.equal(task?.updatedAt, approval.updatedAt);
+    assert.deepEqual(task?.dependencies, approval.dependencies);
+    assert.equal(employee?.source, task?.source);
+    assert.equal(employee?.asOf, task?.asOf);
+    assert.equal(employee?.updatedAt, task?.updatedAt);
+    assert.equal(snapshot.brief?.source, task?.source);
+    assert.equal(snapshot.brief?.updatedAt, task?.updatedAt);
+    assert.deepEqual(snapshot.brief?.dependencies, task?.dependencies);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("保留原始成果狀態並映射全部政策狀態為工作狀態", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+  const cases = [
+    ["草稿", "進行中"],
+    ["待核准", "待核准"],
+    ["已核准", "已完成"],
+    ["退回修訂", "進行中"],
+    ["已核准並執行（2026-07-30）", "已完成"],
+  ] as const;
 
   try {
     await Promise.all(
-      roles.map(([id, name]) =>
-        writeFixture(root, `roles/${id}/ROLE.md`, `# ${name}\n\n## 使命\n\n測試角色。\n`),
+      cases.map(([status], index) =>
+        writeFixture(
+          root,
+          `records/content/threads/2026-07-30-status-${index + 1}-v01.md`,
+          threads(status),
+        ),
       ),
     );
-    await writeFixture(
-      root,
-      "workflows/README.md",
-      "| 工作流 | 節奏 | 主責 | 主要成果 |\n|---|---|---|---|\n| 每日投資晨報 | 平日 | 總經研究員 | 晨報 |\n",
+
+    const snapshot = await generateDashboardSnapshot(root, new Date("2026-07-30T04:30:00.000Z"));
+
+    assert.equal(snapshot.tasks.length, cases.length);
+    for (const [status, workStatus] of cases) {
+      const task = snapshot.tasks.find((item) => item.rawStatus === status);
+      assert.equal(task?.status, workStatus, status);
+      assert.equal(task?.rawStatus, status);
+    }
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("五類成果使用正式來源與中文 owner，舊 v01 待核准會被 v02 取代", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+
+  try {
+    await writeFixture(root, "records/daily-briefs/2026-07-30-v01.md", brief());
+    await writeFixture(root, "records/content/threads/2026-07-30-topic-v01.md", threads());
+    await writeFixture(root, "records/content/threads/2026-07-30-topic-v02.md", threads("已核准"));
+    await writeFixture(root, "records/content/instagram/2026-07-30-topic-v01.md", instagram());
+    await writeFixture(root, "records/market-risk-methods/2026-07-30-weights-v01.md", riskMethod());
+    await writeFixture(root, "records/app-specs/2026-07-30-feature-v01.md", appSpec());
+
+    const snapshot = await generateDashboardSnapshot(root, new Date("2026-07-30T04:30:00.000Z"));
+
+    assert.deepEqual(
+      snapshot.approvals.map((approval) => [approval.type, approval.owner]).sort(),
+      [
+        ["App 規格", "App 設計員"],
+        ["IG", "社群經營員"],
+        ["晨報", "總經研究員"],
+        ["風險方法", "總經研究員"],
+      ].sort(),
     );
+    assert.equal(
+      snapshot.approvals.some(
+        (approval) => approval.source === "records/content/threads/2026-07-30-topic-v01.md",
+      ),
+      false,
+    );
+    assert.equal(
+      snapshot.tasks.some(
+        (task) => task.source === "records/content/threads/2026-07-30-topic-v01.md",
+      ),
+      false,
+    );
+    assert.equal(
+      snapshot.tasks.find((task) => task.source.endsWith("topic-v02.md"))?.rawStatus,
+      "已核准",
+    );
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("過期有效摘要會明示最後有效時間，不會冒充今日", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+
+  try {
     await writeFixture(
       root,
       "records/daily-briefs/2026-07-29-v01.md",
-      "# 每日投資晨報｜舊版\n\n- 狀態：已完成\n- 資料截止：2026-07-29 12:00（Asia/Taipei，UTC+8）\n\n## 一分鐘摘要\n\n- 舊摘要。\n",
+      brief({
+        title: "每日投資晨報｜2026-07-29",
+        status: "已核准",
+        cutoff: "2026-07-29 12:00（Asia/Taipei，UTC+8）",
+      }),
     );
+
+    const snapshot = await generateDashboardSnapshot(root, new Date("2026-07-30T04:30:00.000Z"));
+
+    assert.equal(snapshot.brief?.freshness, "過期");
+    assert.equal(snapshot.brief?.asOf, "2026-07-29 12:00（Asia/Taipei，UTC+8）");
+    assert.equal(snapshot.tasks.length, 0);
+    assert.equal(snapshot.blockers.some((issue) => issue.kind === "stale" && issue.severity === "warning"), true);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("壞格式、缺必要章節與來源衝突會成為可追溯 blocker", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+
+  try {
     await writeFixture(
       root,
       "records/daily-briefs/2026-07-30-v01.md",
-      "# 每日投資晨報｜新版\n\n- 狀態：待核准\n- 資料截止：2026-07-30 12:13（Asia/Taipei，UTC+8）\n\n## 一分鐘摘要\n\n- 新版摘要。\n- 第二項摘要。\n\n## 人工核准\n\n- 待核准事項：確認晨報範圍。\n",
+      brief({ includeExternalView: false }),
+    );
+    await writeFixture(
+      root,
+      "records/content/threads/2026-07-30-conflict-v01.md",
+      `${threads("待核准")}\n- 狀態：已核准\n`,
+    );
+    await writeFixture(
+      root,
+      "records/app-specs/2026-07-30-malformed-v01.md",
+      "# App 功能規格｜壞格式\n\n## 問題與證據\n\n- 沒有狀態與日期。\n",
+    );
+    await writeFixture(
+      root,
+      "records/content/threads/2026-07-30-unknown-status-v01.md",
+      threads("不明狀態"),
     );
 
     const snapshot = await generateDashboardSnapshot(root, new Date("2026-07-30T04:30:00.000Z"));
 
-    assert.equal(snapshot.generatedAt, "2026-07-30T04:30:00.000Z");
-    assert.equal(snapshot.approvals[0].status, "待核准");
-    assert.equal(snapshot.approvals[0].source, "records/daily-briefs/2026-07-30-v01.md");
-    assert.equal(snapshot.brief?.source, "records/daily-briefs/2026-07-30-v01.md");
-    assert.equal(snapshot.brief?.summary, "新版摘要。 第二項摘要。");
-    assert.equal(snapshot.marketRisk, null);
-    assert.equal(snapshot.employees.length, 4);
-    assert.equal(snapshot.employees.find((employee) => employee.id === "macro-researcher")?.status, "待核准");
-    assert.equal(snapshot.employees.find((employee) => employee.id === "macro-researcher")?.currentTask, "每日投資晨報｜新版");
-    assert.match(snapshot.blockers[0].reason, /尚未產出|資料/);
+    assert.equal(snapshot.brief, null);
+    assert.equal(snapshot.tasks.length, 0);
+    assert.equal(snapshot.blockers.some((issue) => issue.kind === "missing" && /外部觀點比較/.test(issue.reason)), true);
+    assert.equal(snapshot.blockers.some((issue) => issue.kind === "malformed" && issue.source?.includes("unknown-status")), true);
+    assert.equal(snapshot.blockers.some((issue) => issue.kind === "conflict" && issue.source?.includes("conflict")), true);
+    assert.equal(snapshot.blockers.some((issue) => issue.kind === "missing" && issue.source?.includes("malformed")), true);
+    assert.equal(snapshot.blockers.every((issue) => "updatedAt" in issue && "source" in issue), true);
   } finally {
     await rm(root, { recursive: true, force: true });
   }
 });
 
-test("uses role handoff and workflow first step for a no-record employee without inventing active work", async () => {
+test("員工狀態由最新有效工作決定，現有復盤與生效決策不會被忽略", async () => {
   const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
 
   try {
+    await writeRoles(root);
     await writeFixture(
       root,
-      "roles/macro-researcher/ROLE.md",
-      "# 總經研究員\n\n## 交接對象\n\n向總司令提交研究成果。\n",
+      "records/reviews/2026-07-30-threads-review.md",
+      "# Threads 復盤\n\n- 整理日期：2026-07-30\n- 狀態：已核准並執行（2026-07-30）\n\n## 摘要\n\n- 已完成。\n",
     );
     await writeFixture(
       root,
-      "workflows/daily-brief.md",
-      "# 每日投資晨報\n\n## 負責角色\n\n總經研究員主責；總司令驗收。\n\n## 步驟\n\n1. 設定資料截止時間、市場範圍與觀察期。\n2. 整理已確認事實。\n",
-    );
-
-    const snapshot = await generateDashboardSnapshot(root, new Date("2026-07-30T04:30:00.000Z"));
-    const employee = snapshot.employees[0];
-
-    assert.equal(employee.status, "尚未開始");
-    assert.equal(employee.currentTask, "尚未產出");
-    assert.equal(employee.handoff, "向總司令提交研究成果。");
-    assert.equal(employee.nextStep, "設定資料截止時間、市場範圍與觀察期。");
-  } finally {
-    await rm(root, { recursive: true, force: true });
-  }
-});
-
-test("does not turn an unsupported record status into an unstarted task", async () => {
-  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
-
-  try {
-    await writeFixture(
-      root,
-      "records/reviews/2026-07-30-review.md",
-      "# 已核准復盤\n\n- 狀態：已核准\n",
+      "records/decisions/2026-07-30-dashboard-decision.md",
+      "# Dashboard 決策\n\n- 決策日期：2026-07-30\n- 決策者：使用者\n- 決定：採用。\n- 生效日：2026-07-30\n",
     );
 
     const snapshot = await generateDashboardSnapshot(root, new Date("2026-07-30T04:30:00.000Z"));
+    const social = snapshot.employees.find((employee) => employee.id === "social-operator");
+    const commander = snapshot.employees.find((employee) => employee.id === "commander");
 
-    assert.deepEqual(snapshot.tasks, []);
+    assert.equal(social?.status, "已完成");
+    assert.equal(social?.rawStatus, "已核准並執行（2026-07-30）");
+    assert.equal(social?.source, "records/reviews/2026-07-30-threads-review.md");
+    assert.equal(commander?.status, "已完成");
+    assert.equal(commander?.rawStatus, null);
+    assert.equal(commander?.artifactStatus, "已核准");
+    assert.equal(commander?.source, "records/decisions/2026-07-30-dashboard-decision.md");
   } finally {
     await rm(root, { recursive: true, force: true });
   }

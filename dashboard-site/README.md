@@ -9,6 +9,19 @@
 3. 開啟控制台，確認頁尾的「資料更新時間」及畫面呈現的來源路徑均為預期最新資料。
 4. 不得將真實允許 Email 寫入版本控制檔案；僅在執行環境設定 `ALLOWED_USER_EMAIL`，版本庫中的 `.env.example` 必須保持空值範例。
 
+## 成果來源 manifest
+
+`data/artifact-sources.json` 是 Dashboard 成果類型的權威映射，定義中文類型、主責角色、保存位置、必要欄位與必要章節：
+
+- 晨報：`records/daily-briefs/`
+- Threads：`records/content/threads/`
+- IG：`records/content/instagram/`
+- 市場風險報告：`records/market-risk/`
+- 風險方法：`records/market-risk-methods/`
+- App 規格：`records/app-specs/`
+
+沒有真實成果時畫面顯示空狀態，不建立 sample。同一 identity 的 `vNN` 只採用最新有效版本；過期、缺欄位、壞格式或來源衝突會保留來源並顯示警告或阻擋。
+
 ## 本機驗證
 
 需使用 Node.js `>=22.13.0`。

@@ -236,15 +236,27 @@ h3 {
   color: var(--amber);
 }
 
+.status-badge[data-status="過期"],
+.status-badge[data-status="warning"] {
+  background: var(--amber-pale);
+  color: var(--amber);
+}
+
 .status-badge[data-status="進行中"],
 .status-badge[data-status="已完成"] {
   background: var(--teal-pale);
   color: var(--teal);
 }
 
-.status-badge[data-status="受阻"] {
+.status-badge[data-status="受阻"],
+.status-badge[data-status="blocker"] {
   background: var(--rose-pale);
   color: var(--rose);
+}
+
+.warning-text {
+  color: var(--amber);
+  font-weight: 700;
 }
 
 .decision-list,

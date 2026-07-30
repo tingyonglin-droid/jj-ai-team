@@ -45,7 +45,12 @@ test("server-renders the protected dashboard foundation for an allowed user", as
 
 test("does not server-render dashboard content for a non-allowed user", async () => {
   process.env.ALLOWED_USER_EMAIL = "owner@example.com";
-  await assert.rejects(render("/", "other@example.com"));
+  const response = await render("/", "other@example.com");
+
+  assert.equal(response.status, 403);
+  const html = await response.text();
+  assert.match(html, /沒有存取此儀表板的權限/);
+  assert.doesNotMatch(html, /每日投資晨報|records\/daily-briefs|員工動態/);
 });
 
 test("server-renders every protected dashboard route for an allowed user", async () => {
@@ -61,6 +66,11 @@ test("server-renders every protected dashboard route for an allowed user", async
 test("does not render employee or approval pages for a non-allowed user", async () => {
   process.env.ALLOWED_USER_EMAIL = "owner@example.com";
 
-  await assert.rejects(render("/employees", "other@example.com"));
-  await assert.rejects(render("/approvals", "other@example.com"));
+  for (const path of ["/employees", "/approvals"]) {
+    const response = await render(path, "other@example.com");
+    assert.equal(response.status, 403, path);
+    const html = await response.text();
+    assert.match(html, /沒有存取此儀表板的權限/);
+    assert.doesNotMatch(html, /每日投資晨報|records\/daily-briefs|員工動態/);
+  }
 });

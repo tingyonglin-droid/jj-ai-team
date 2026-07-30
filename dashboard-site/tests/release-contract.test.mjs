@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { access, readFile } from "node:fs/promises";
 import test from "node:test";
 
 const projectRoot = new URL("../", import.meta.url);
@@ -16,8 +16,41 @@ test("標準測試指令涵蓋帳號、快照、頁面與正式輸出驗收", as
   assert.match(testCommand, /dashboard-snapshot\.test\.ts/);
   assert.match(testCommand, /dashboard-routes\.test\.tsx/);
   assert.match(testCommand, /generate-dashboard-data\.test\.mts/);
+  assert.match(testCommand, /typecheck/);
   assert.match(testCommand, /npm run build/);
   assert.match(testCommand, /rendered-html\.test\.mjs/);
+});
+
+test("正式專案不包含 D1 寫入 starter 或未使用的公開素材", async () => {
+  const [packageJsonText, packageLockText, hostingText, viteConfigText] = await Promise.all([
+    readProjectFile("package.json"),
+    readProjectFile("package-lock.json"),
+    readProjectFile(".openai/hosting.json"),
+    readProjectFile("vite.config.ts"),
+  ]);
+  const packageJson = JSON.parse(packageJsonText);
+  const hosting = JSON.parse(hostingText);
+  const removedPaths = [
+    "db/index.ts",
+    "db/schema.ts",
+    "drizzle.config.ts",
+    "drizzle/meta/_journal.json",
+    "examples/d1/app/api/notes/route.ts",
+    "examples/d1/db/schema.ts",
+    "public/file.svg",
+    "public/globe.svg",
+    "public/window.svg",
+  ];
+
+  assert.equal(packageJson.dependencies?.["drizzle-orm"], undefined);
+  assert.equal(packageJson.devDependencies?.["drizzle-kit"], undefined);
+  assert.equal(packageJson.scripts?.["db:generate"], undefined);
+  assert.doesNotMatch(packageLockText, /drizzle/i);
+  assert.equal("d1" in hosting, false);
+  assert.doesNotMatch(viteConfigText, /d1_databases/i);
+  for (const path of removedPaths) {
+    await assert.rejects(access(new URL(path, projectRoot)), { code: "ENOENT" });
+  }
 });
 
 test("正式版套件與 Worker 不保留起始專案身分", async () => {
