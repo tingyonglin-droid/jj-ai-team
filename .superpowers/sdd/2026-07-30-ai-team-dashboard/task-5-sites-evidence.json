@@ -1,0 +1,22 @@
+{
+  "collected_at": "2026-07-30T06:15:04Z",
+  "source": "Sites connector",
+  "deployment": {
+    "status": "succeeded",
+    "failure_present": false
+  },
+  "access_policy": {
+    "current_user_role": "owner",
+    "mode": "custom",
+    "allowed_user_count": 1,
+    "allowed_group_count": 0,
+    "workspace_group_count": 0,
+    "tenant_group_count": 0
+  },
+  "runtime_environment": {
+    "key": "ALLOWED_USER_EMAIL",
+    "is_secret": true,
+    "value_state": "redacted_by_connector"
+  },
+  "redaction": "No account address, secret value, token, or project identifier is stored in this evidence."
+}
