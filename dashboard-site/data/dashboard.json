@@ -1,0 +1,94 @@
+{
+  "generatedAt": "2026-07-30T05:28:55.615Z",
+  "date": "2026-07-30",
+  "approvals": [
+    {
+      "id": "records/daily-briefs/2026-07-30-v01.md",
+      "title": "每日投資晨報｜2026-07-30",
+      "type": "daily-briefs",
+      "owner": "macro-researcher",
+      "status": "待核准",
+      "summary": "聯準會將聯邦基金利率目標區間維持在 3.50%–3.75%，但 12 票中有 3 票主張升息 1 碼；「利率不變」不等於政策風險下降。 2 年期與 10 年期公債殖利率在 7 月 29 日分別為 4.22% 與 4.67%；相較 7 月 28 日，2 年期下降 4 個基點、10 年期上升 6 個基點，殖利率曲線更陡，顯示長期通膨／期限風險壓力未消。 美股同步下跌：S&P 500 -1.5%、Nasdaq Composite -1.7%、Russell 2000 -1.6%、Dow -2.2%；Brent 原油同日上漲 7.3% 至每桶 88.09 美元。風險不是只集中在單一大型科技股。 初步判斷：短線環境由「政策等待」轉為「能源衝擊、長端利率與政策分歧共同定價」，總經不確定性升高；信心中等。 美國第二季 GDP 初值與 6 月個人所得／支出資料預定今晚 20:30（台北時間）發布。關鍵資料尚未出爐，因此不判定衰退、不預測短期漲跌，也不導出買賣行動。",
+      "decision": "確認此晨報的市場範圍、篇幅與保存位置是否適合作為日後標準；如需對外引用，另行核准文字與具名觀點。",
+      "source": "records/daily-briefs/2026-07-30-v01.md",
+      "updatedAt": "2026-07-30T05:07:35.736Z"
+    }
+  ],
+  "employees": [
+    {
+      "id": "app-designer",
+      "name": "App 設計員",
+      "role": "App 設計員",
+      "status": "尚未開始",
+      "currentTask": "尚未產出",
+      "progress": "尚未產出",
+      "dependencies": [],
+      "handoff": "依角色手冊交接",
+      "blocker": null,
+      "nextStep": "等待工作流或紀錄產出",
+      "updatedAt": "2026-07-30T05:07:35.741Z"
+    },
+    {
+      "id": "commander",
+      "name": "總司令",
+      "role": "總司令",
+      "status": "尚未開始",
+      "currentTask": "尚未產出",
+      "progress": "尚未產出",
+      "dependencies": [],
+      "handoff": "依角色手冊交接",
+      "blocker": null,
+      "nextStep": "等待工作流或紀錄產出",
+      "updatedAt": "2026-07-30T05:07:35.741Z"
+    },
+    {
+      "id": "macro-researcher",
+      "name": "總經研究員",
+      "role": "總經研究員",
+      "status": "待核准",
+      "currentTask": "每日投資晨報｜2026-07-30",
+      "progress": "等待人工核准",
+      "dependencies": [],
+      "handoff": "依角色手冊交接",
+      "blocker": null,
+      "nextStep": "等待使用者核准",
+      "updatedAt": "2026-07-30T05:07:35.741Z"
+    },
+    {
+      "id": "social-operator",
+      "name": "社群經營員",
+      "role": "社群經營員",
+      "status": "尚未開始",
+      "currentTask": "尚未產出",
+      "progress": "尚未產出",
+      "dependencies": [],
+      "handoff": "依角色手冊交接",
+      "blocker": null,
+      "nextStep": "等待工作流或紀錄產出",
+      "updatedAt": "2026-07-30T05:07:35.742Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "records/daily-briefs/2026-07-30-v01.md",
+      "title": "每日投資晨報｜2026-07-30",
+      "owner": "macro-researcher",
+      "status": "待核准",
+      "nextStep": "等待使用者核准"
+    }
+  ],
+  "brief": {
+    "title": "每日投資晨報｜2026-07-30",
+    "summary": "聯準會將聯邦基金利率目標區間維持在 3.50%–3.75%，但 12 票中有 3 票主張升息 1 碼；「利率不變」不等於政策風險下降。 2 年期與 10 年期公債殖利率在 7 月 29 日分別為 4.22% 與 4.67%；相較 7 月 28 日，2 年期下降 4 個基點、10 年期上升 6 個基點，殖利率曲線更陡，顯示長期通膨／期限風險壓力未消。 美股同步下跌：S&P 500 -1.5%、Nasdaq Composite -1.7%、Russell 2000 -1.6%、Dow -2.2%；Brent 原油同日上漲 7.3% 至每桶 88.09 美元。風險不是只集中在單一大型科技股。 初步判斷：短線環境由「政策等待」轉為「能源衝擊、長端利率與政策分歧共同定價」，總經不確定性升高；信心中等。 美國第二季 GDP 初值與 6 月個人所得／支出資料預定今晚 20:30（台北時間）發布。關鍵資料尚未出爐，因此不判定衰退、不預測短期漲跌，也不導出買賣行動。",
+    "asOf": "2026-07-30 12:13（Asia/Taipei，UTC+8）",
+    "source": "records/daily-briefs/2026-07-30-v01.md"
+  },
+  "marketRisk": null,
+  "blockers": [
+    {
+      "title": "市場風險資料尚未產出",
+      "reason": "records/market-risk/ 尚未產出可用資料，無法顯示分數或完整度。",
+      "nextStep": "依 market-risk 工作流建立可追溯的市場風險紀錄。"
+    }
+  ]
+}
