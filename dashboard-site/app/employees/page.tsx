@@ -1,15 +1,11 @@
-import snapshotData from "../../data/dashboard.json";
 import { DashboardShell } from "../dashboard-shell";
 import { EmployeeDirectory } from "../dashboard-components";
-import { requireAllowedUser } from "../authorization";
-import type { DashboardSnapshot } from "../../lib/dashboard-types";
+import { loadAuthorizedDashboardSnapshot } from "../dashboard-snapshot";
 
 export const dynamic = "force-dynamic";
 
-const snapshot = snapshotData as DashboardSnapshot;
-
 export default async function EmployeesPage() {
-  const user = await requireAllowedUser("/employees");
+  const { user, snapshot } = await loadAuthorizedDashboardSnapshot("/employees");
 
   return (
     <DashboardShell user={user} generatedAt={snapshot.generatedAt}>
