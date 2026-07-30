@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T05:28:55.615Z",
+  "generatedAt": "2026-07-30T05:33:37.466Z",
   "date": "2026-07-30",
   "approvals": [
     {
@@ -23,9 +23,9 @@
       "currentTask": "尚未產出",
       "progress": "尚未產出",
       "dependencies": [],
-      "handoff": "依角色手冊交接",
+      "handoff": "向總經研究員確認風險資料語意，向總司令提交規格與取捨，交由使用者決定優先級、實作及上線。",
       "blocker": null,
-      "nextStep": "等待工作流或紀錄產出",
+      "nextStep": "區分已知現況、使用者問題、資料證據、假設與限制。",
       "updatedAt": "2026-07-30T05:07:35.741Z"
     },
     {
@@ -36,7 +36,7 @@
       "currentTask": "尚未產出",
       "progress": "尚未產出",
       "dependencies": [],
-      "handoff": "依角色手冊交接",
+      "handoff": "向總經研究員交付研究題目，向社群經營員交付已驗證的內容素材，向 App 設計員交付產品問題；將整合成果與決策項交給使用者。",
       "blocker": null,
       "nextStep": "等待工作流或紀錄產出",
       "updatedAt": "2026-07-30T05:07:35.741Z"
@@ -49,7 +49,7 @@
       "currentTask": "每日投資晨報｜2026-07-30",
       "progress": "等待人工核准",
       "dependencies": [],
-      "handoff": "依角色手冊交接",
+      "handoff": "將研究與風險成果交總司令驗收；將已驗證素材交社群經營員；將市場風險欄位與限制交 App 設計員。所有對外使用均由使用者核准。",
       "blocker": null,
       "nextStep": "等待使用者核准",
       "updatedAt": "2026-07-30T05:07:35.741Z"
@@ -62,9 +62,9 @@
       "currentTask": "尚未產出",
       "progress": "尚未產出",
       "dependencies": [],
-      "handoff": "依角色手冊交接",
+      "handoff": "研究疑問退回總經研究員；成果與實驗交總司令驗收；最終語氣、個人觀點、發布與互動交使用者。",
       "blocker": null,
-      "nextStep": "等待工作流或紀錄產出",
+      "nextStep": "選出一個核心觀點與讀者問題，不把整份晨報塞入一篇。",
       "updatedAt": "2026-07-30T05:07:35.742Z"
     }
   ],

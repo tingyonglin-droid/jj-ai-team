@@ -53,7 +53,36 @@ test("uses the newest pending brief as a traceable approval without inventing mi
     assert.equal(snapshot.brief?.summary, "新版摘要。 第二項摘要。");
     assert.equal(snapshot.marketRisk, null);
     assert.equal(snapshot.employees.length, 4);
+    assert.equal(snapshot.employees.find((employee) => employee.id === "macro-researcher")?.status, "待核准");
+    assert.equal(snapshot.employees.find((employee) => employee.id === "macro-researcher")?.currentTask, "每日投資晨報｜新版");
     assert.match(snapshot.blockers[0].reason, /尚未產出|資料/);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("uses role handoff and workflow first step for a no-record employee without inventing active work", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+
+  try {
+    await writeFixture(
+      root,
+      "roles/macro-researcher/ROLE.md",
+      "# 總經研究員\n\n## 交接對象\n\n向總司令提交研究成果。\n",
+    );
+    await writeFixture(
+      root,
+      "workflows/daily-brief.md",
+      "# 每日投資晨報\n\n## 負責角色\n\n總經研究員主責；總司令驗收。\n\n## 步驟\n\n1. 設定資料截止時間、市場範圍與觀察期。\n2. 整理已確認事實。\n",
+    );
+
+    const snapshot = await generateDashboardSnapshot(root, new Date("2026-07-30T04:30:00.000Z"));
+    const employee = snapshot.employees[0];
+
+    assert.equal(employee.status, "尚未開始");
+    assert.equal(employee.currentTask, "尚未產出");
+    assert.equal(employee.handoff, "向總司令提交研究成果。");
+    assert.equal(employee.nextStep, "設定資料截止時間、市場範圍與觀察期。");
   } finally {
     await rm(root, { recursive: true, force: true });
   }
