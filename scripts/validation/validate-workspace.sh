@@ -65,7 +65,22 @@ printf '%s\n' "$required_files" | while IFS= read -r file; do
 done
 pass '必要檔案均存在且非空白'
 
-empty_files=$(find . -type f -size 0 -not -path './.git/*' -print)
+empty_files=$(find . \
+  \( -type d \( \
+    -name .git -o \
+    -name .next -o \
+    -name .superpowers -o \
+    -name .vinext -o \
+    -name .worktrees -o \
+    -name .wrangler -o \
+    -name coverage -o \
+    -name dist -o \
+    -name node_modules -o \
+    -name outputs -o \
+    -name tmp -o \
+    -name work \
+  \) -prune \) -o \
+  \( -type f -size 0 -print \))
 [ -z "$empty_files" ] || fail "發現零位元組檔案：$empty_files"
 pass '沒有零位元組檔案'
 

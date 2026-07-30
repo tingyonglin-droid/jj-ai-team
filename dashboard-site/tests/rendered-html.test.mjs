@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-async function render() {
+async function render(email) {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
   const { default: worker } = await import(workerUrl.href);
@@ -10,7 +10,7 @@ async function render() {
     new Request("http://localhost/", {
       headers: {
         accept: "text/html",
-        "oai-authenticated-user-email": "owner@example.com",
+        "oai-authenticated-user-email": email,
       },
     }),
     {
@@ -27,7 +27,7 @@ async function render() {
 
 test("server-renders the protected dashboard foundation for an allowed user", async () => {
   process.env.ALLOWED_USER_EMAIL = "owner@example.com";
-  const response = await render();
+  const response = await render("owner@example.com");
 
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
@@ -36,4 +36,9 @@ test("server-renders the protected dashboard foundation for an allowed user", as
   assert.match(html, /<title>JJ AI Team Dashboard<\/title>/i);
   assert.match(html, /JJ AI Team Dashboard/);
   assert.doesNotMatch(html, /Your site is taking shape|Building your site/i);
+});
+
+test("does not server-render dashboard content for a non-allowed user", async () => {
+  process.env.ALLOWED_USER_EMAIL = "owner@example.com";
+  await assert.rejects(render("other@example.com"));
 });
