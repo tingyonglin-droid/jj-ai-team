@@ -1,13 +1,13 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-async function render(email) {
+async function render(path, email) {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
   const { default: worker } = await import(workerUrl.href);
 
   return worker.fetch(
-    new Request("http://localhost/", {
+    new Request(`http://localhost${path}`, {
       headers: {
         accept: "text/html",
         "oai-authenticated-user-email": email,
@@ -27,7 +27,7 @@ async function render(email) {
 
 test("server-renders the protected dashboard foundation for an allowed user", async () => {
   process.env.ALLOWED_USER_EMAIL = "owner@example.com";
-  const response = await render("owner@example.com");
+  const response = await render("/", "owner@example.com");
 
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
@@ -40,5 +40,22 @@ test("server-renders the protected dashboard foundation for an allowed user", as
 
 test("does not server-render dashboard content for a non-allowed user", async () => {
   process.env.ALLOWED_USER_EMAIL = "owner@example.com";
-  await assert.rejects(render("other@example.com"));
+  await assert.rejects(render("/", "other@example.com"));
+});
+
+test("server-renders every protected dashboard route for an allowed user", async () => {
+  process.env.ALLOWED_USER_EMAIL = "owner@example.com";
+
+  for (const path of ["/", "/employees", "/approvals"]) {
+    const response = await render(path, "owner@example.com");
+    assert.equal(response.status, 200, path);
+    assert.match(await response.text(), /登出 ChatGPT/);
+  }
+});
+
+test("does not render employee or approval pages for a non-allowed user", async () => {
+  process.env.ALLOWED_USER_EMAIL = "owner@example.com";
+
+  await assert.rejects(render("/employees", "other@example.com"));
+  await assert.rejects(render("/approvals", "other@example.com"));
 });
