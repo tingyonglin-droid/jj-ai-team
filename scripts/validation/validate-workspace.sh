@@ -121,6 +121,14 @@ for phrase in 日期 分數 子指標 理由 反方證據 資料完整度 事後
 done
 pass '市場風險模板必要欄位完整'
 
+for heading in 今日風險儀表 五則重要事件 今日市場一句話 反方證據與尚未確認資料; do
+  grep -q "^## $heading" templates/daily-brief.md || fail "每日晨報模板缺少：$heading"
+done
+for phrase in 事件調整 即時風險 結構性風險 影子運行; do
+  grep -q "$phrase" templates/market-risk-report.md || fail "市場風險模板缺少：$phrase"
+done
+pass '晨報與風險模板符合下行風險試跑契約'
+
 for file in templates/daily-brief.md templates/threads-draft.md templates/instagram-carousel.md templates/content-weekly-report.md templates/market-risk-report.md templates/app-feature-spec.md; do
   grep -q '\[請填寫：' "$file" || fail "$file 沒有可直接填寫欄位"
 done
