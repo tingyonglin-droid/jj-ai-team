@@ -8,6 +8,25 @@ async function readProjectFile(path) {
   return readFile(new URL(path, projectRoot), "utf8");
 }
 
+function dependencyNames(entry) {
+  return new Set([
+    ...Object.keys(entry.dependencies ?? {}),
+    ...Object.keys(entry.devDependencies ?? {}),
+    ...Object.keys(entry.optionalDependencies ?? {}),
+    ...Object.keys(entry.peerDependencies ?? {}),
+  ]);
+}
+
+function dependencyPath(packagePath, dependencyName, packages) {
+  let parent = packagePath;
+  while (true) {
+    const candidate = `${parent ? `${parent}/` : ""}node_modules/${dependencyName}`;
+    if (packages[candidate]) return candidate;
+    if (!parent) return null;
+    parent = parent.replace(/(?:^|\/)node_modules\/(?:@[^/]+\/)?[^/]+$/, "");
+  }
+}
+
 test("標準測試指令涵蓋帳號、快照、頁面與正式輸出驗收", async () => {
   const packageJson = JSON.parse(await readProjectFile("package.json"));
   const testCommand = packageJson.scripts.test;
@@ -63,6 +82,27 @@ test("正式版套件與 Worker 不保留起始專案身分", async () => {
   assert.equal(JSON.parse(packageJsonText).name, "jj-ai-team-dashboard");
   assert.doesNotMatch(packageLockText, /site-creator-vinext-starter/i);
   assert.doesNotMatch(workerText, /vinext-starter template/i);
+});
+
+test("lockfile 的每個套件節點都可由根依賴閉包到達", async () => {
+  const lockfile = JSON.parse(await readProjectFile("package-lock.json"));
+  const packages = lockfile.packages;
+  const reachable = new Set([""]);
+  const pending = [""];
+
+  while (pending.length > 0) {
+    const packagePath = pending.pop();
+    for (const dependencyName of dependencyNames(packages[packagePath])) {
+      const resolvedPath = dependencyPath(packagePath, dependencyName, packages);
+      if (resolvedPath && !reachable.has(resolvedPath)) {
+        reachable.add(resolvedPath);
+        pending.push(resolvedPath);
+      }
+    }
+  }
+
+  const orphaned = Object.keys(packages).filter((packagePath) => !reachable.has(packagePath));
+  assert.deepEqual(orphaned, []);
 });
 
 test("響應式與鍵盤可用性規則可由原始碼重現驗收", async () => {

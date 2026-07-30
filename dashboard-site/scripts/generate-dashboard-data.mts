@@ -52,7 +52,8 @@ type ValidRecord = MarkdownRecord & {
   workStatus: WorkStatus;
   asOf: string;
   representativeDate: string;
-  createdAt: string;
+  createdAt: string | null;
+  effectiveDate: string | null;
   dependencies: string[];
 };
 
@@ -149,10 +150,6 @@ function dateFrom(value: string | null) {
 
 function filenameDate(relativePath: string) {
   return dateFrom(path.basename(relativePath));
-}
-
-function createdAtFrom(date: string) {
-  return `${date}T00:00:00+08:00`;
 }
 
 function dependenciesFrom(content: string) {
@@ -391,7 +388,8 @@ function validateRecord(record: MarkdownRecord): ValidationResult {
       workStatus: toWorkStatus(artifactStatus),
       asOf,
       representativeDate,
-      createdAt: createdAtFrom(filenameDate(record.relativePath) ?? representativeDate),
+      createdAt: null,
+      effectiveDate: filenameDate(record.relativePath) ?? representativeDate,
       dependencies: dependenciesFrom(record.content),
     },
   };
@@ -582,6 +580,7 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
       source: record.relativePath,
       asOf: record.asOf,
       createdAt: record.createdAt,
+      effectiveDate: record.effectiveDate,
       updatedAt: record.updatedAt,
       dependencies: record.dependencies,
     }));

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T06:57:54.551Z",
+  "generatedAt": "2026-07-30T07:21:50.752Z",
   "date": "2026-07-30",
   "approvals": [
     {
@@ -14,7 +14,8 @@
       "decision": "確認此晨報的市場範圍、篇幅與保存位置是否適合作為日後標準；如需對外引用，另行核准文字與具名觀點。",
       "source": "records/daily-briefs/2026-07-30-v01.md",
       "asOf": "2026-07-30 12:13（Asia/Taipei，UTC+8）",
-      "createdAt": "2026-07-30T00:00:00+08:00",
+      "createdAt": null,
+      "effectiveDate": "2026-07-30",
       "updatedAt": "2026-07-30T05:07:35.736Z",
       "dependencies": []
     }

@@ -38,7 +38,8 @@ export interface DashboardSnapshot {
       rawStatus: string;
       summary: string;
       decision: string;
-      createdAt: string;
+      createdAt: string | null;
+      effectiveDate: string | null;
     }
   >;
   employees: Array<

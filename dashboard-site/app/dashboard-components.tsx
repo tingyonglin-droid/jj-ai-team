@@ -389,7 +389,12 @@ export function ApprovalCenter({ approvals }: { approvals: Approval[] }) {
                           : "尚未記載依賴"}
                       </p>
                       <p className="source-line">
-                        建立時間：{approval.createdAt}；資料代表時間：{approval.asOf}；更新時間：
+                        {approval.createdAt
+                          ? `建立時間：${approval.createdAt}`
+                          : approval.effectiveDate
+                            ? `生效日期：${approval.effectiveDate}`
+                            : "建立時間未記載"}
+                        ；資料代表時間：{approval.asOf}；更新時間：
                         {approval.updatedAt}；來源：{approval.source}
                       </p>
                     </li>
