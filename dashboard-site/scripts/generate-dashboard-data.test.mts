@@ -184,7 +184,8 @@ test("用台北日期產生可追溯的任務、員工、摘要與核准欄位",
     assert.equal(approval.type, "晨報");
     assert.equal(approval.owner, "總經研究員");
     assert.equal(approval.createdAt, null);
-    assert.equal(approval.effectiveDate, "2026-07-30");
+    assert.equal(approval.recordDate, "2026-07-30");
+    assert.equal("effectiveDate" in approval, false);
     assert.equal(approval.asOf, "2026-07-30 12:13（Asia/Taipei，UTC+8）");
     assert.match(approval.updatedAt, /^\d{4}-\d{2}-\d{2}T/);
     assert.deepEqual(approval.dependencies, ["美國官方經濟資料", "市場風險紀錄"]);

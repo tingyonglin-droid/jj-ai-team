@@ -47,7 +47,8 @@ test("待核准中心只呈現真實待決定事項", () => {
 
   assert.match(approvalHtml, /待你決定/);
   assert.match(approvalHtml, /每日投資晨報/);
-  assert.match(approvalHtml, /生效日期：2026-07-30/);
+  assert.match(approvalHtml, /紀錄日期：2026-07-30/);
+  assert.doesNotMatch(approvalHtml, /生效日期/);
   assert.doesNotMatch(approvalHtml, /建立時間：2026-07-30T00:00:00\+08:00/);
   assert.match(approvalHtml, /資料代表時間/);
   assert.match(approvalHtml, /負責角色：總經研究員/);

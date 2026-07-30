@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T07:21:50.752Z",
+  "generatedAt": "2026-07-30T07:32:09.250Z",
   "date": "2026-07-30",
   "approvals": [
     {
@@ -15,7 +15,7 @@
       "source": "records/daily-briefs/2026-07-30-v01.md",
       "asOf": "2026-07-30 12:13（Asia/Taipei，UTC+8）",
       "createdAt": null,
-      "effectiveDate": "2026-07-30",
+      "recordDate": "2026-07-30",
       "updatedAt": "2026-07-30T05:07:35.736Z",
       "dependencies": []
     }
