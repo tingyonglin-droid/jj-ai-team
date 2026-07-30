@@ -18,4 +18,4 @@ npm test
 ALLOWED_USER_EMAIL=test-owner@example.com npm run build
 ```
 
-`npm test` 會重建資料快照並驗證受保護頁面的伺服器輸出。`npm run build` 也會在建立前重新產生快照。網站使用者的實際 Email 僅由執行環境提供，請勿提交 `.env` 檔案。
+`npm test` 會驗證帳號允許規則、資料快照、三個頁面、響應式與鍵盤規則，然後重建資料快照並驗證受保護頁面的伺服器輸出。`npm run build` 也會在建立前重新產生快照。網站使用者的實際 Email 僅由執行環境提供，請勿提交 `.env` 檔案。

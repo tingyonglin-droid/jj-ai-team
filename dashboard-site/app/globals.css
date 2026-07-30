@@ -390,7 +390,7 @@ h3 {
   background: var(--surface);
 }
 
-@media (max-width: 719px) {
+@media (max-width: 720px) {
   .site-header,
   .site-footer,
   .site-main {
