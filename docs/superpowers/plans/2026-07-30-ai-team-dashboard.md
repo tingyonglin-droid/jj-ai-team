@@ -20,7 +20,7 @@
 
 ---
 
-### 任務一：建立受保護的網站基礎
+### Task 1：建立受保護的網站基礎
 
 **檔案：**
 
@@ -103,7 +103,7 @@ git commit -m "feat: scaffold protected AI team dashboard"
 
 ---
 
-### 任務二：產生可追溯的 Dashboard 資料快照
+### Task 2：產生可追溯的 Dashboard 資料快照
 
 **檔案：**
 
@@ -190,7 +190,7 @@ git commit -m "feat: generate traceable dashboard snapshot"
 
 ---
 
-### 任務三：建立三個受保護頁面
+### Task 3：建立三個受保護頁面
 
 **檔案：**
 
@@ -264,7 +264,7 @@ git commit -m "feat: add AI team dashboard views"
 
 ---
 
-### 任務四：驗證隱私、手機版與正式建置
+### Task 4：驗證隱私、手機版與正式建置
 
 **檔案：**
 
@@ -323,7 +323,7 @@ git commit -m "test: verify private dashboard release"
 
 ---
 
-### 任務五：發布受保護的網站
+### Task 5：發布受保護的網站
 
 **可能修改：** `dashboard-site/.openai/hosting.json`，只在託管驗證要求時調整。
 
