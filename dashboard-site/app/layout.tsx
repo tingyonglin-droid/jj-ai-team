@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "JJ AI Team Dashboard",
-  description: "Private workspace for the JJ AI team.",
+  description: "私人 AI 團隊控制台。",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

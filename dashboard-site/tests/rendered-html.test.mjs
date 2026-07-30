@@ -34,7 +34,12 @@ test("server-renders the protected dashboard foundation for an allowed user", as
 
   const html = await response.text();
   assert.match(html, /<title>JJ AI Team Dashboard<\/title>/i);
+  assert.match(html, /<meta name="viewport" content="width=device-width, initial-scale=1"\s*\/?/i);
   assert.match(html, /JJ AI Team Dashboard/);
+  assert.match(html, /今日總覽/);
+  assert.match(html, /<meta name="description" content="私人 AI 團隊控制台。"\s*\/?/i);
+  assert.doesNotMatch(html, /codex-preview|SkeletonPreview/i);
+  assert.doesNotMatch(html, /(?:og:image|twitter:image)/i);
   assert.doesNotMatch(html, /Your site is taking shape|Building your site/i);
 });
 
