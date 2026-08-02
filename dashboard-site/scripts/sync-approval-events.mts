@@ -11,7 +11,7 @@ const execFileAsync = promisify(execFile);
 export type PendingApprovalEvent = {
   eventId: string;
   artifactId: string;
-  artifactType: "晨報" | "市場風險報告";
+  artifactType: "晨報" | "市場風險報告" | "Threads";
   artifactVersion: number;
   artifactHash: string;
   action: "approve";
@@ -48,6 +48,11 @@ const allowedArtifactPatterns = [
     type: "市場風險報告" as const,
     prefix: "market-risk",
     pattern: /^records\/market-risk\/(\d{4}-\d{2}-\d{2})-v(\d{2})\.md$/,
+  },
+  {
+    type: "Threads" as const,
+    prefix: "threads",
+    pattern: /^records\/content\/threads\/(\d{4}-\d{2}-\d{2})-[A-Za-z0-9._-]+-v(\d{2})\.md$/,
   },
 ];
 

@@ -35,7 +35,7 @@ export function createApprovalHandler(dependencies: ApprovalHandlerDependencies)
     );
     if (
       !artifact ||
-      (artifact.type !== "晨報" && artifact.type !== "市場風險報告")
+      (artifact.type !== "晨報" && artifact.type !== "市場風險報告" && artifact.type !== "Threads")
     ) {
       return jsonError(409, "此版本已不是可核准狀態。");
     }

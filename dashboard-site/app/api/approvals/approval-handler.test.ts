@@ -12,6 +12,7 @@ import type { DashboardSnapshot } from "../../../lib/dashboard-types";
 import { createApprovalHandler } from "./approval-handler.ts";
 
 const artifactId = "records/daily-briefs/2026-07-31-v01.md";
+const threadsArtifactId = "records/content/threads/2026-08-03-topic-v01.md";
 
 test("同源且仍待核准的版本會以伺服器快照資料建立事件", async () => {
   const store = testStore();
@@ -29,6 +30,23 @@ test("同源且仍待核准的版本會以伺服器快照資料建立事件", as
   assert.equal(body.artifactId, artifactId);
   assert.equal(saved.actorUserId, allowedUser.id);
   assert.equal(saved.artifactHash, "sha256:brief-v01");
+});
+
+test("Threads 待核准版本會以伺服器快照資料建立事件", async () => {
+  const store = testStore();
+  const handler = createApprovalHandler({
+    requireUser: async () => allowedUser,
+    loadSnapshot: async () => snapshotWithPendingThreads(),
+    store,
+  });
+
+  const response = await handler(approvalRequest({ artifactId: threadsArtifactId }));
+  const [saved] = await store.list();
+
+  assert.equal(response.status, 200);
+  assert.equal(saved.artifactId, threadsArtifactId);
+  assert.equal(saved.artifactType, "Threads");
+  assert.equal(saved.artifactHash, "sha256:threads-v01");
 });
 
 test("跨來源核准請求在授權與寫入前被拒絕", async () => {
@@ -69,15 +87,37 @@ test("不存在或已不是待核准的版本回傳衝突", async () => {
   assert.equal((await store.list()).length, 0);
 });
 
-function approvalRequest({ origin = "https://dashboard.example" } = {}) {
+function approvalRequest({
+  origin = "https://dashboard.example",
+  artifactId: requestedArtifactId = artifactId,
+} = {}) {
   return new Request("https://dashboard.example/api/approvals", {
     method: "POST",
     headers: {
       "content-type": "application/json",
       origin,
     },
-    body: JSON.stringify({ artifactId, version: 1 }),
+    body: JSON.stringify({ artifactId: requestedArtifactId, version: 1 }),
   });
+}
+
+function snapshotWithPendingThreads(): DashboardSnapshot {
+  const brief = snapshotWithPendingBrief().approvals[0];
+  return {
+    ...snapshotWithPendingBrief(),
+    approvals: [{
+      ...brief,
+      id: threadsArtifactId,
+      title: "Threads 草稿｜測試",
+      type: "Threads",
+      owner: "社群經營員",
+      artifactHash: "sha256:threads-v01",
+      source: threadsArtifactId,
+      recordDate: "2026-08-03",
+      asOf: "2026-08-03",
+      updatedAt: "2026-08-03",
+    }],
+  };
 }
 
 const allowedUser: ChatGPTUser = {

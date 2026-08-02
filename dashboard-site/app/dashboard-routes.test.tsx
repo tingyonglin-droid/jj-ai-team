@@ -229,7 +229,7 @@ test("待核准中心只有晨報項目提供全文入口", () => {
   assert.equal((html.match(/>查看全文</g) ?? []).length, 1);
 });
 
-test("首頁與待核准中心只替晨報及市場風險提供兩段式核准入口", () => {
+test("首頁與待核准中心替晨報、市場風險及 Threads 提供兩段式核准入口", () => {
   const pendingBrief: DashboardSnapshot["approvals"][number] = {
     id: "records/daily-briefs/2026-07-31-v01.md",
     title: "每日投資晨報｜2026-07-31",
@@ -276,7 +276,7 @@ test("首頁與待核准中心只替晨報及市場風險提供兩段式核准�
   );
   const centerHtml = renderToStaticMarkup(<ApprovalCenter approvals={approvals} />);
 
-  assert.equal((overviewHtml.match(/>核准此版本</g) ?? []).length, 2);
-  assert.equal((centerHtml.match(/>核准此版本</g) ?? []).length, 2);
-  assert.doesNotMatch(centerHtml, /Threads 草稿[\s\S]*?核准此版本[\s\S]*?成果類型：IG/);
+  assert.equal((overviewHtml.match(/>核准此版本</g) ?? []).length, 3);
+  assert.equal((centerHtml.match(/>核准此版本</g) ?? []).length, 3);
+  assert.match(centerHtml, /Threads 草稿[\s\S]*?核准此版本[\s\S]*?成果類型：IG/);
 });

@@ -107,6 +107,10 @@ test("資料庫列只接受核准事件允許的列舉值", () => {
   };
 
   assert.equal(approvalEventFromRow(row).eventId, "event-1");
+  assert.equal(
+    approvalEventFromRow({ ...row, artifactType: "Threads" }).artifactType,
+    "Threads",
+  );
   assert.throws(
     () => approvalEventFromRow({ ...row, action: "publish" }),
     /無效的核准事件動作/,

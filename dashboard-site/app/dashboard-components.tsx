@@ -13,7 +13,7 @@ type Employee = DashboardSnapshot["employees"][number];
 type DataIssue = DashboardSnapshot["blockers"][number];
 
 function canApproveInDashboard(approval: Approval) {
-  return approval.type === "晨報" || approval.type === "市場風險報告";
+  return approval.type === "晨報" || approval.type === "市場風險報告" || approval.type === "Threads";
 }
 
 export function StatusBadge({

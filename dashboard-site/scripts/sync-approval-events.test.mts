@@ -101,6 +101,35 @@ test("fetch 以 exclusive create 建立決策與本機 manifest，但不提前 a
   ]);
 });
 
+test("Threads 核准事件建立可追溯決策紀錄", async () => {
+  const root = await fixtureRoot();
+  const threadsPath = "records/content/threads/2026-08-03-topic-v01.md";
+  const threadsContent = "# Threads 草稿｜測試\n\n- 日期：2026-08-03\n- 狀態：待核准\n";
+  await mkdir(path.join(root, "records/content/threads"), { recursive: true });
+  await writeFile(path.join(root, threadsPath), threadsContent);
+  const client: ApprovalSyncClient = {
+    fetchPending: async () => [event({
+      eventId: "threads-event-1",
+      artifactId: threadsPath,
+      artifactType: "Threads",
+      artifactHash: artifactContentHash(threadsContent),
+    })],
+    acknowledge: async () => {},
+  };
+
+  const manifestPath = await fetchAndMaterialize(client, {
+    root,
+    now: new Date("2026-08-03T02:00:00.000Z"),
+  });
+  assert.ok(manifestPath);
+  const decision = await readFile(
+    path.join(root, "records/decisions/2026-08-03-approve-threads-2026-08-03-v01.md"),
+    "utf8",
+  );
+  assert.match(decision, /核准 Threads/);
+  assert.match(decision, /僅限 records\/content\/threads\/2026-08-03-topic-v01\.md v01/);
+});
+
 test("acknowledge 只在 manifest 對應決策已提交後送出", async () => {
   const root = await fixtureRoot();
   const manifestPath = path.join(root, ".approval-sync/manifest.json");

@@ -1,4 +1,4 @@
-export type ApprovalArtifactType = "晨報" | "市場風險報告";
+export type ApprovalArtifactType = "晨報" | "市場風險報告" | "Threads";
 
 export type ApprovalEvent = {
   eventId: string;
@@ -47,7 +47,11 @@ type ApprovalEventRow = {
 };
 
 export function approvalEventFromRow(row: ApprovalEventRow): ApprovalEvent {
-  if (row.artifactType !== "晨報" && row.artifactType !== "市場風險報告") {
+  if (
+    row.artifactType !== "晨報" &&
+    row.artifactType !== "市場風險報告" &&
+    row.artifactType !== "Threads"
+  ) {
     throw new Error(`無效的核准成果類型：${row.artifactType}`);
   }
   if (row.action !== "approve") {
