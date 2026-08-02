@@ -56,11 +56,30 @@ test("標準測試指令涵蓋帳號、快照、頁面與正式輸出驗收", as
   assert.match(testCommand, /approval-events\.test\.ts/);
   assert.match(testCommand, /approval-handler\.test\.ts/);
   assert.match(testCommand, /approval-action\.test\.tsx/);
+  assert.match(testCommand, /approval-sync\/sync-handler\.test\.ts/);
+  assert.match(testCommand, /sync-approval-events\.test\.mts/);
   assert.match(testCommand, /runtime-env\.test\.ts/);
   assert.match(testCommand, /generate-dashboard-data\.test\.mts/);
   assert.match(testCommand, /typecheck/);
   assert.match(testCommand, /npm run build/);
   assert.match(testCommand, /rendered-html\.test\.mjs/);
+});
+
+test("核准 outbox 指令與本機 manifest 忽略規則保持 fail closed", async () => {
+  const [packageJsonText, rootGitignore, decisionsReadme] = await Promise.all([
+    readProjectFile("package.json"),
+    readFile(new URL("../.gitignore", projectRoot), "utf8"),
+    readFile(new URL("../records/decisions/README.md", projectRoot), "utf8"),
+  ]);
+  const packageJson = JSON.parse(packageJsonText);
+
+  assert.equal(
+    packageJson.scripts?.["approvals:sync"],
+    "node --import tsx scripts/sync-approval-events.mts",
+  );
+  assert.match(rootGitignore, /^\.approval-sync\/$/m);
+  assert.match(decisionsReadme, /Dashboard 核准 outbox/);
+  assert.match(decisionsReadme, /不代表發布、上線或投資授權/);
 });
 
 test("正式專案封裝核准事件 D1 binding 與 migration", async () => {
