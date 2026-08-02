@@ -1,0 +1,58 @@
+{
+  "artifacts": [
+    {
+      "id": "daily-brief",
+      "type": "晨報",
+      "directory": "records/daily-briefs",
+      "ownerId": "macro-researcher",
+      "owner": "總經研究員",
+      "requiredFields": ["狀態", "資料截止"],
+      "requiredSections": ["一分鐘摘要", "已確認事實", "AI 推論與初步判斷", "外部觀點比較", "最終判斷與反方證據", "尚未確認與待觀察", "人工核准"]
+    },
+    {
+      "id": "threads",
+      "type": "Threads",
+      "directory": "records/content/threads",
+      "ownerId": "social-operator",
+      "owner": "社群經營員",
+      "requiredFields": ["狀態", "日期"],
+      "requiredSections": ["主版本", "查核與語氣", "核准"]
+    },
+    {
+      "id": "instagram",
+      "type": "IG",
+      "directory": "records/content/instagram",
+      "ownerId": "social-operator",
+      "owner": "社群經營員",
+      "requiredFields": ["狀態"],
+      "requiredSections": ["逐頁腳本", "圖說與核准"]
+    },
+    {
+      "id": "market-risk-report",
+      "type": "市場風險報告",
+      "directory": "records/market-risk",
+      "ownerId": "macro-researcher",
+      "owner": "總經研究員",
+      "requiredFields": ["狀態", "資料截止"],
+      "requiredSections": ["總覽", "子指標", "證據與限制", "核准"]
+    },
+    {
+      "id": "market-risk-method",
+      "type": "風險方法",
+      "directory": "records/market-risk-methods",
+      "ownerId": "macro-researcher",
+      "owner": "總經研究員",
+      "requiredFields": ["狀態", "日期"],
+      "requiredSections": ["方法變更", "證據與限制", "核准"]
+    },
+    {
+      "id": "app-spec",
+      "type": "App 規格",
+      "directory": "records/app-specs",
+      "ownerId": "app-designer",
+      "owner": "App 設計員",
+      "requiredFields": ["狀態", "文件日期與版本", "負責人"],
+      "requiredSections": ["問題與證據", "用戶故事與價值", "範圍與非目標", "畫面流程與狀態", "資料與成功指標", "風險、依賴與核准"]
+    }
+  ]
+}

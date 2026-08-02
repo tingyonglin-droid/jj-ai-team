@@ -65,7 +65,22 @@ printf '%s\n' "$required_files" | while IFS= read -r file; do
 done
 pass '必要檔案均存在且非空白'
 
-empty_files=$(find . -type f -size 0 -not -path './.git/*' -print)
+empty_files=$(find . \
+  \( -type d \( \
+    -name .git -o \
+    -name .next -o \
+    -name .superpowers -o \
+    -name .vinext -o \
+    -name .worktrees -o \
+    -name .wrangler -o \
+    -name coverage -o \
+    -name dist -o \
+    -name node_modules -o \
+    -name outputs -o \
+    -name tmp -o \
+    -name work \
+  \) -prune \) -o \
+  \( -type f -size 0 -print \))
 [ -z "$empty_files" ] || fail "發現零位元組檔案：$empty_files"
 pass '沒有零位元組檔案'
 
@@ -106,6 +121,14 @@ for phrase in 日期 分數 子指標 理由 反方證據 資料完整度 事後
 done
 pass '市場風險模板必要欄位完整'
 
+for heading in 今日風險儀表 五則重要事件 今日市場一句話 反方證據與尚未確認資料; do
+  grep -q "^## $heading" templates/daily-brief.md || fail "每日晨報模板缺少：$heading"
+done
+for phrase in 事件調整 即時風險 結構性風險 影子運行; do
+  grep -q "$phrase" templates/market-risk-report.md || fail "市場風險模板缺少：$phrase"
+done
+pass '晨報與風險模板符合下行風險試跑契約'
+
 for file in templates/daily-brief.md templates/threads-draft.md templates/instagram-carousel.md templates/content-weekly-report.md templates/market-risk-report.md templates/app-feature-spec.md; do
   grep -q '\[請填寫：' "$file" || fail "$file 沒有可直接填寫欄位"
 done
@@ -127,5 +150,9 @@ grep -q '不得覆寫' AGENTS.md || fail 'AGENTS.md 缺少風險紀錄不可覆�
 grep -q '不修改.*jj-invest-public\|不得.*jj-invest-public' AGENTS.md || fail 'AGENTS.md 缺少外部 App 禁止修改規則'
 grep -q '資料缺失.*來源衝突.*停止做出確定結論' AGENTS.md || fail 'AGENTS.md 缺少資料缺失與衝突停止條件'
 pass '核心安全規則存在'
+
+NODE_BIN=${NODE_BIN:-node}
+"$NODE_BIN" --test scripts/validation/validate-morning-risk-records.test.mjs
+pass '晨報與風險紀錄驗證器測試通過'
 
 printf 'ALL CHECKS PASSED\n'
