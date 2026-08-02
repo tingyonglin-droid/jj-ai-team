@@ -79,14 +79,15 @@ test("AI 員工頁呈現任務進度與依賴交接資訊", () => {
   assert.match(employeeHtml, /來源/);
 });
 
-test("待核准中心只呈現真實待決定事項", () => {
+test("待核准中心排除已核准晨報，只呈現仍待決定事項", () => {
   const approvalHtml = renderToStaticMarkup(
     <ApprovalCenter approvals={snapshot.approvals} />,
   );
 
   assert.match(approvalHtml, /待你決定/);
   assert.match(approvalHtml, /成果類型：晨報/);
-  assert.match(approvalHtml, /records\/daily-briefs\/2026-07-30-v02.md/);
+  assert.doesNotMatch(approvalHtml, /records\/daily-briefs\//);
+  assert.match(approvalHtml, /records\/market-risk\/2026-07-30-v01.md/);
   assert.match(approvalHtml, /紀錄日期：2026-07-30/);
   assert.doesNotMatch(approvalHtml, /生效日期/);
   assert.doesNotMatch(approvalHtml, /建立時間：2026-07-30T00:00:00\+08:00/);
@@ -126,8 +127,27 @@ test("首頁晨報卡提供對應日期的全文入口", () => {
 });
 
 test("待核准中心只有晨報項目提供全文入口", () => {
-  const html = renderToStaticMarkup(<ApprovalCenter approvals={snapshot.approvals} />);
+  const pendingBrief: DashboardSnapshot["approvals"][number] = {
+    id: "records/daily-briefs/2026-07-31-v01.md",
+    title: "每日投資晨報｜2026-07-31",
+    type: "晨報",
+    owner: "總經研究員",
+    status: "待核准",
+    artifactStatus: "待核准",
+    rawStatus: "待核准",
+    summary: "測試待核准晨報。",
+    decision: "是否核准晨報內容。",
+    createdAt: null,
+    recordDate: "2026-07-31",
+    source: "records/daily-briefs/2026-07-31-v01.md",
+    asOf: "2026-07-31 07:00（Asia/Taipei，UTC+8）",
+    updatedAt: "2026-07-31",
+    dependencies: [],
+  };
+  const html = renderToStaticMarkup(
+    <ApprovalCenter approvals={[pendingBrief, ...snapshot.approvals]} />,
+  );
 
-  assert.match(html, /href="\/briefs\/2026-07-30"/);
+  assert.match(html, /href="\/briefs\/2026-07-31"/);
   assert.equal((html.match(/>查看全文</g) ?? []).length, 1);
 });
