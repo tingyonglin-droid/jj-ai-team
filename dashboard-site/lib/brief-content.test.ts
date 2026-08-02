@@ -37,6 +37,19 @@ test("不把非 http 連結建立成可點擊節點", () => {
   assert.equal(JSON.stringify(blocks).includes('\"type\":\"link\"'), false);
 });
 
+test("將混用 - 與 * 的連續無序項目合併為單一清單", () => {
+  assert.deepEqual(parseBriefMarkdown("- 第一項\n* 第二項"), [
+    {
+      type: "list",
+      ordered: false,
+      items: [
+        [{ type: "text", text: "第一項" }],
+        [{ type: "text", text: "第二項" }],
+      ],
+    },
+  ]);
+});
+
 test("依版本標籤選取指定晨報，否則選取最新版本", () => {
   const documents = [
     makeDocument({ version: 1, versionLabel: "v1", isLatest: false }),
