@@ -665,6 +665,7 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
     approvals,
     employees: employeeSnapshots,
     tasks: currentTasks,
+    briefArchive: [],
     brief: briefRecord
       ? {
           title: briefRecord.title,

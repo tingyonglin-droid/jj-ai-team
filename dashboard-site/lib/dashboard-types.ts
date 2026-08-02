@@ -24,6 +24,32 @@ export interface DashboardTask extends TraceableRecord {
   nextStep: string;
 }
 
+export type BriefInlineNode =
+  | { type: "text"; text: string }
+  | { type: "strong"; text: string }
+  | { type: "code"; text: string }
+  | { type: "link"; text: string; href: string };
+
+export type BriefBlock =
+  | { type: "heading"; level: 2 | 3 | 4; content: BriefInlineNode[] }
+  | { type: "paragraph"; content: BriefInlineNode[] }
+  | { type: "list"; ordered: boolean; items: BriefInlineNode[][] }
+  | { type: "table"; headers: BriefInlineNode[][]; rows: BriefInlineNode[][][] };
+
+export interface DashboardBriefDocument extends TraceableRecord {
+  id: string;
+  date: string;
+  version: number;
+  versionLabel: string;
+  isLatest: boolean;
+  title: string;
+  summary: string;
+  freshness: Freshness;
+  artifactStatus: ArtifactStatus;
+  rawStatus: string;
+  blocks: BriefBlock[];
+}
+
 export interface DashboardSnapshot {
   generatedAt: string;
   date: string;
@@ -58,6 +84,7 @@ export interface DashboardSnapshot {
     }
   >;
   tasks: DashboardTask[];
+  briefArchive: DashboardBriefDocument[];
   brief:
     | (TraceableRecord & {
       title: string;
