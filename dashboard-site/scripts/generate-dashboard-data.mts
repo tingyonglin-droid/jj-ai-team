@@ -474,6 +474,52 @@ function decisionFrom(record: ValidRecord) {
   return "等待使用者決定";
 }
 
+function numericField(content: string, label: string) {
+  const value = field(content, label);
+  const match = value?.match(/^[+]?(-?\d+)\b/);
+  return match ? Number(match[1]) : null;
+}
+
+function riskDetails(record: ValidRecord) {
+  const score = numericField(record.content, "市場風險分數");
+  const baseline = numericField(record.content, "基準分");
+  const eventAdjustment = numericField(record.content, "事件調整");
+  const completeness = numericField(record.content, "資料完整度");
+  const confidence = numericField(record.content, "AI 判斷信心");
+  const dailyChange = numericField(record.content, "單日變動");
+  const immediateRisk = field(record.content, "即時風險");
+  const structuralRisk = field(record.content, "結構性風險");
+  const shadow = field(record.content, "影子運行");
+  const topRisks = field(record.content, "三項主要風險")?.split("、").map((item) => item.trim()).filter(Boolean) ?? [];
+  const pillarScores = [...record.content.matchAll(
+    /^\|\s*(?:景氣與成長|通膨與利率|流動性|信用|市場結構)\s*\|\s*20%\s*\|\s*(\d+)\s*\|/gm,
+  )].map((match) => Number(match[1]));
+
+  if (
+    score === null || baseline === null || eventAdjustment === null || completeness === null || confidence === null ||
+    !immediateRisk || !structuralRisk || !shadow?.includes("實驗性指標") || topRisks.length !== 3 ||
+    pillarScores.length !== 5 || pillarScores.some((value) => value < 0 || value > 100 || value % 5 !== 0) ||
+    baseline !== pillarScores.reduce((sum, value) => sum + value, 0) / 5 ||
+    eventAdjustment < -10 || eventAdjustment > 15 || score !== Math.min(100, Math.max(0, baseline + eventAdjustment)) ||
+    completeness < 0 || completeness > 100 || confidence < 0 || confidence > 100
+  ) {
+    return null;
+  }
+
+  return {
+    score,
+    baseline,
+    eventAdjustment,
+    dailyChange,
+    immediateRisk,
+    structuralRisk,
+    topRisks,
+    confidence,
+    completeness,
+    experimental: true,
+  };
+}
+
 function missingSummaryIssue(
   title: string,
   directory: string,
@@ -587,6 +633,7 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
 
   const briefRecord = sortedValidRecords.find((record) => record.definition?.id === "daily-brief") ?? null;
   const riskRecord = sortedValidRecords.find((record) => record.definition?.id === "market-risk-report") ?? null;
+  const parsedRisk = riskRecord ? riskDetails(riskRecord) : null;
   const blockers = [...issues];
 
   if (!briefRecord) {
@@ -608,6 +655,9 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
   } else if (riskRecord.representativeDate !== dashboardDate) {
     blockers.push(staleIssue("市場風險資料", riskRecord, dashboardDate));
   }
+  if (riskRecord && !parsedRisk) {
+    blockers.push(issueFor(riskRecord, "malformed", "風險分數、期限或計算欄位無法重現。"));
+  }
 
   return {
     generatedAt: now.toISOString(),
@@ -618,6 +668,7 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
     brief: briefRecord
       ? {
           title: briefRecord.title,
+          headline: briefRecord.title,
           summary: summaryFrom(briefRecord.content),
           freshness: briefRecord.representativeDate === dashboardDate ? "今日" : "過期",
           artifactStatus: briefRecord.artifactStatus,
@@ -628,7 +679,7 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
           dependencies: briefRecord.dependencies,
         }
       : null,
-    marketRisk: riskRecord
+    marketRisk: riskRecord && parsedRisk
       ? {
           label: riskRecord.title,
           freshness: riskRecord.representativeDate === dashboardDate ? "今日" : "過期",
@@ -638,11 +689,7 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
           source: riskRecord.relativePath,
           updatedAt: riskRecord.updatedAt,
           dependencies: riskRecord.dependencies,
-          completeness: (() => {
-            const value = field(riskRecord.content, "資料完整度")?.match(/^(\d{1,3})\s*(?:%|\/100)?/)?.[1];
-            const completeness = value ? Number(value) : null;
-            return completeness !== null && completeness >= 0 && completeness <= 100 ? completeness : null;
-          })(),
+          ...parsedRisk,
         }
       : null,
     blockers: blockers.sort((left, right) => {

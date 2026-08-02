@@ -60,7 +60,8 @@ export interface DashboardSnapshot {
   tasks: DashboardTask[];
   brief:
     | (TraceableRecord & {
-        title: string;
+      title: string;
+        headline?: string;
         summary: string;
         freshness: Freshness;
         artifactStatus: ArtifactStatus;
@@ -73,7 +74,16 @@ export interface DashboardSnapshot {
         freshness: Freshness;
         artifactStatus: ArtifactStatus;
         rawStatus: string;
+        score: number;
+        baseline: number;
+        eventAdjustment: number;
+        dailyChange: number | null;
+        immediateRisk: string;
+        structuralRisk: string;
+        topRisks: string[];
+        confidence: number;
         completeness: number | null;
+        experimental: boolean;
       })
     | null;
   blockers: Array<{

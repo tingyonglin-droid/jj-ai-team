@@ -134,6 +134,54 @@ function riskMethod(status = "待核准") {
 `;
 }
 
+function marketRisk(status = "待核准") {
+  return `# 市場風險報告｜2026-07-30-v01
+
+- 狀態：${status}
+- 資料截止：2026-07-30 17:30（Asia/Taipei，UTC+8）
+- 方法版本：v2.0
+- 影子運行：實驗性指標／第 1 個交易日
+- 觀察期：主分數為 1–4 週
+
+## 總覽
+
+- 市場風險分數：65
+- 基準分：55
+- 事件調整：+10
+- 單日變動：尚無前值
+- 5 日趨勢：尚無資料
+- 20 日趨勢：尚無資料
+- 風險狀態及趨勢：偏高；尚無趨勢
+- 即時風險：1–3 個交易日留意能源衝擊
+- 結構性風險：1–2 季留意資本支出回報
+- 三項主要風險：能源衝擊、長端利率、市場廣度
+- AI 判斷信心：72
+- 資料完整度：82
+
+## 子指標
+
+| 子指標 | 權重 | 分數 | 趨勢 | 理由 | 來源 |
+|---|---:|---:|---|---|---|
+| 景氣與成長 | 20% | 45 | 持平 | 測試 | 官方來源 |
+| 通膨與利率 | 20% | 75 | 上升 | 測試 | 官方來源 |
+| 流動性 | 20% | 50 | 持平 | 測試 | 官方來源 |
+| 信用 | 20% | 40 | 持平 | 測試 | 官方來源 |
+| 市場結構 | 20% | 65 | 上升 | 測試 | 市場資料 |
+
+## 事件調整
+
+- 調整事件：能源衝擊
+
+## 證據與限制
+
+- 支持證據：官方來源。
+
+## 核准
+
+- 待核准事項：是否接受試跑內容。
+`;
+}
+
 function appSpec(status = "待核准") {
   return `# App 功能規格｜範例
 
@@ -243,6 +291,11 @@ test("五類成果使用正式來源與中文 owner，舊 v01 待核准會被 v0
 
   try {
     await writeFixture(root, "records/daily-briefs/2026-07-30-v01.md", brief());
+    await writeFixture(
+      root,
+      "records/daily-briefs/2026-07-30-v02.md",
+      brief({ title: "每日投資晨報｜2026-07-30 v02" }),
+    );
     await writeFixture(root, "records/content/threads/2026-07-30-topic-v01.md", threads());
     await writeFixture(root, "records/content/threads/2026-07-30-topic-v02.md", threads("已核准"));
     await writeFixture(root, "records/content/instagram/2026-07-30-topic-v01.md", instagram());
@@ -276,6 +329,35 @@ test("五類成果使用正式來源與中文 owner，舊 v01 待核准會被 v0
       snapshot.tasks.find((task) => task.source.endsWith("topic-v02.md"))?.rawStatus,
       "已核准",
     );
+    assert.equal(snapshot.brief?.source, "records/daily-briefs/2026-07-30-v02.md");
+    assert.equal(snapshot.approvals.filter((approval) => approval.type === "晨報").length, 1);
+    assert.equal(
+      snapshot.approvals.find((approval) => approval.type === "晨報")?.source,
+      "records/daily-briefs/2026-07-30-v02.md",
+    );
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("市場風險紀錄解析可重現的風險優先欄位", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+
+  try {
+    await writeFixture(root, "records/market-risk/2026-07-30-v01.md", marketRisk());
+
+    const snapshot = await generateDashboardSnapshot(root, new Date("2026-07-30T04:30:00.000Z"));
+
+    assert.equal(snapshot.marketRisk?.score, 65);
+    assert.equal(snapshot.marketRisk?.baseline, 55);
+    assert.equal(snapshot.marketRisk?.eventAdjustment, 10);
+    assert.equal(snapshot.marketRisk?.dailyChange, null);
+    assert.equal(snapshot.marketRisk?.experimental, true);
+    assert.equal(snapshot.marketRisk?.confidence, 72);
+    assert.equal(snapshot.marketRisk?.completeness, 82);
+    assert.equal(snapshot.marketRisk?.immediateRisk, "1–3 個交易日留意能源衝擊");
+    assert.equal(snapshot.marketRisk?.structuralRisk, "1–2 季留意資本支出回報");
+    assert.deepEqual(snapshot.marketRisk?.topRisks, ["能源衝擊", "長端利率", "市場廣度"]);
   } finally {
     await rm(root, { recursive: true, force: true });
   }
