@@ -106,16 +106,23 @@ test("lockfile 的每個套件節點都可由根依賴閉包到達", async () =>
 });
 
 test("響應式與鍵盤可用性規則可由原始碼重現驗收", async () => {
-  const [styles, shell] = await Promise.all([
+  const [styles, shell, briefComponents] = await Promise.all([
     readProjectFile("app/globals.css"),
     readProjectFile("app/dashboard-shell.tsx"),
+    readProjectFile("app/briefs/brief-components.tsx"),
   ]);
 
   assert.match(styles, /@media\s*\(max-width:\s*720px\)/);
   assert.match(styles, /\.employee-summary-grid,[\s\S]*?grid-template-columns:\s*1fr;/);
+  assert.match(styles, /\.brief-archive-grid/);
+  assert.match(styles, /\.brief-reader/);
+  assert.match(styles, /\.brief-version-nav/);
+  assert.match(styles, /\.brief-table-scroll[\s\S]*overflow-x:\s*auto/);
   assert.match(styles, /a:focus-visible,[\s\S]*?outline:\s*3px solid/);
   assert.match(styles, /\.skip-link:focus\s*\{[\s\S]*?transform:\s*translateY\(0\)/);
   assert.match(shell, /<a className="skip-link" href="#main-content">/);
   assert.match(shell, /<nav aria-label="主要導覽">/);
+  assert.match(shell, /<Link href="\/briefs">晨報全文<\/Link>/);
   assert.match(shell, /<main id="main-content" className="site-main">/);
+  assert.doesNotMatch(briefComponents, /dangerouslySetInnerHTML/);
 });

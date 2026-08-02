@@ -450,6 +450,137 @@ h3 {
   border-bottom: 1px solid var(--line);
 }
 
+.brief-archive-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.brief-archive-card {
+  min-width: 0;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 0.85rem;
+  background: var(--surface);
+  box-shadow: 0 6px 20px rgb(31 55 74 / 5%);
+}
+
+.brief-archive-card > p {
+  margin: 0.75rem 0;
+}
+
+.brief-reader {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: clamp(1.25rem, 3vw, 2.25rem);
+  border: 1px solid var(--line);
+  border-radius: 0.85rem;
+  background: var(--surface);
+  box-shadow: 0 6px 20px rgb(31 55 74 / 5%);
+}
+
+.brief-reader > .page-heading {
+  margin-top: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-version-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+  margin: 1.25rem 0;
+}
+
+.brief-version-nav > span,
+.brief-version-nav > a {
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+}
+
+.brief-version-nav > span:first-child {
+  padding-left: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.brief-version-nav [aria-current="page"] {
+  background: var(--teal-pale);
+  color: var(--teal);
+  font-weight: 800;
+}
+
+.brief-content {
+  color: var(--ink);
+}
+
+.brief-content h2 {
+  margin: 2rem 0 0.75rem;
+}
+
+.brief-content h3,
+.brief-content h4 {
+  margin: 1.5rem 0 0.6rem;
+  color: var(--navy);
+  line-height: 1.35;
+}
+
+.brief-content p,
+.brief-content ul,
+.brief-content ol {
+  margin: 0.75rem 0;
+}
+
+.brief-content ul,
+.brief-content ol {
+  padding-left: 1.5rem;
+}
+
+.brief-content li + li {
+  margin-top: 0.35rem;
+}
+
+.brief-content code {
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.25rem;
+  background: var(--slate-pale);
+  font-size: 0.92em;
+}
+
+.brief-content a {
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.brief-table-scroll {
+  max-width: 100%;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+.brief-table-scroll table {
+  width: 100%;
+  min-width: 32rem;
+  border-collapse: collapse;
+}
+
+.brief-table-scroll th,
+.brief-table-scroll td {
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.brief-table-scroll th {
+  background: var(--slate-pale);
+  color: var(--navy);
+}
+
 .access-message {
   width: min(42rem, calc(100% - 3rem));
   margin: 15vh auto;
@@ -482,8 +613,17 @@ h3 {
   .employee-summary-grid,
   .summary-grid,
   .employee-directory,
+  .brief-archive-grid,
   .employee-card dl {
     grid-template-columns: 1fr;
+  }
+
+  .brief-version-nav {
+    flex-wrap: wrap;
+  }
+
+  .brief-reader {
+    padding: 1rem;
   }
 
   .risk-score-panel {

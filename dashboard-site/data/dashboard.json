@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T13:37:27.721Z",
+  "generatedAt": "2026-08-02T14:30:12.430Z",
   "date": "2026-08-02",
   "approvals": [
     {
@@ -142,7 +142,2001 @@
       "updatedAt": "2026-08-02T13:37:02.003Z"
     }
   ],
-  "briefArchive": [],
+  "briefArchive": [
+    {
+      "id": "records/daily-briefs/2026-07-30-v02.md",
+      "date": "2026-07-30",
+      "version": 2,
+      "versionLabel": "v02",
+      "isLatest": true,
+      "title": "AI 營收還在成長，但市場開始追問現金流能否追上資本支出",
+      "summary": "Fed 沒有升息，但 12 票中有 3 票主張升息一碼；政策風險從「何時降息」轉向「是否還要再緊」。 10 年期美債殖利率單日升 6 個基點至 4.67%，2s10s 利差擴大約 10 個基點；長端折現率仍壓住高估值資產。 Meta Q2 營收成長 28%，但資本支出達 310.8 億美元、自由現金流只剩 7.84 億美元；AI 投資的問題已從需求轉向現金回收速度。 Microsoft 同期 Azure 成長 43%，營運現金流 554.4 億美元，扣除 358.0 億美元設備投資後仍約有 196.4 億美元自由現金流，是 AI CapEx 能轉成收入與現金流的反方證據。 影子風險分數為 65／100（偏高）。即時壓力來自油價、長債與市場廣度；1–2 季結構風險是 AI 資本支出回報分化。",
+      "freshness": "過期",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-07-30 07:10（Asia/Taipei；回溯資訊截止）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "產製時間：2026-08-02 21:35（Asia/Taipei；人工回溯試跑）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察市場：美國貨幣政策、美債、能源、美股科技巨頭、AI 與台股科技供應鏈"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察期間：以 2026-07-29 美國交易日及此前已發布資料為主"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "版本：v02（回溯試跑；不覆寫 v01）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料完整度：78／100；缺信用利差、VIX、美元與 7/30 亞洲完整收盤資料"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "一分鐘摘要"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "Fed 沒有升息，但 12 票中有 3 票主張升息一碼；政策風險從「何時降息」轉向「是否還要再緊」。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "10 年期美債殖利率單日升 6 個基點至 4.67%，2s10s 利差擴大約 10 個基點；長端折現率仍壓住高估值資產。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Meta Q2 營收成長 28%，但資本支出達 310.8 億美元、自由現金流只剩 7.84 億美元；AI 投資的問題已從需求轉向現金回收速度。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Microsoft 同期 Azure 成長 43%，營運現金流 554.4 億美元，扣除 358.0 億美元設備投資後仍約有 196.4 億美元自由現金流，是 AI CapEx 能轉成收入與現金流的反方證據。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影子風險分數為 65／100（偏高）。即時壓力來自油價、長債與市場廣度；1–2 季結構風險是 AI 資本支出回報分化。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日風險儀表"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "1–4 週風險分數：65／100"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "相較前一交易日：尚無前值"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險狀態：偏高"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "即時風險：1–3 個交易日內，能源價格、長端殖利率與科技股廣度可能延續高波動"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "結構性風險：1–2 季內，AI CapEx 成長若持續快於自由現金流，估值將更依賴商業化證據"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "今日主要風險來源：能源通膨再起、長端殖利率上行、AI CapEx 與自由現金流分化"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "五則重要事件"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "1｜Fed 沒升息，但三張升息反對票提高政策尾端風險"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "FOMC 將聯邦基金利率目標區間維持在 3.50%–3.75%，表決為 9–3；三名反對者主張升息 0.25 個百分點。聲明同時指出通膨仍高於 2% 目標，部分反映能源等供給衝擊。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "政策區間 3.50%–3.75%；9 票贊成維持、3 票主張升息一碼。資料期間為 2026-07-28 至 07-29 FOMC 會議；來源為 Federal Reserve 2026-07-29 聲明。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵不是利率沒變，而是政策反應函數的上行尾端重新出現。若能源通膨延續，市場需同時消化較低的降息機率與非零升息風險，長久期科技股的估值緩衝因而縮小。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 風險變化為主，B 估值修正為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週；若通膨延續可拉長至 1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：鷹派分歧 → 政策利率路徑上修 → 折現率維持高檔 → 高估值資產承壓"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：後續 PCE／CPI 高於預期，或更多官員支持升息"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：核心通膨降溫、能源回落，且表決分歧未擴大"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：市場利率與通膨預期連續回落，Fed 明確排除再升息必要"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "2｜短端下降、長端上升，市場擔心的不是單純升息"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "7 月 29 日 2 年期美債殖利率由 4.26% 降至 4.22%，10 年期由 4.61% 升至 4.67%；2s10s 利差由約 35 個基點擴至約 45 個基點。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2 年期 -4bp、10 年期 +6bp、2s10s 單日擴大約 10bp。資料期間為 2026-07-28 至 07-29；來源為 U.S. Treasury Daily Treasury Par Yield Curve Rates，利差由官方數值計算。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "這比較像長期通膨、期限溢酬或債券供需風險升高，而不是所有期限一致押注近期升息。對長期投資者而言，10 年期殖利率上行會提高股票估值折現率，也會增加高資本支出企業的資金成本比較基準。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：B 估值修正為主，D 風險變化為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：已觸發"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：長端殖利率上升 → 股權風險溢酬空間縮小 → 長久期科技估值下修"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：10 年期維持 4.7% 附近或續升，實質殖利率同步上行"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：殖利率上升主要來自成長預期改善，企業盈餘預期同步上修"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：10 年期回到 7 月 28 日水準以下，且科技股市場廣度修復"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "3｜Meta 營收成長 28%，但自由現金流幾乎被 CapEx 吃完"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Meta Q2 2026 營收維持高成長，但成本增幅快於營收，營業利益與淨利年減。季度資本支出接近營運現金流，使自由現金流降至 7.84 億美元；全年 CapEx 指引下緣也被上調。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "營收 608.0 億美元、年增 28%；成本費用 420.3 億美元、年增 55%；營業利益 187.8 億美元、年減 8%；營業利益率 31%，去年同期 43%；EPS 6.18 美元、年減 13%；營運現金流 318.6 億美元；CapEx（含融資租賃本金）310.8 億美元；自由現金流 7.84 億美元；2026 全年 CapEx 指引 1,300–1,450 億美元。來源為 Meta 2026-07-29 Q2 財報。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "營收成長不等於 AI 投資已成功。Meta 的廣告與使用者基本面仍強，但短期現金回收速度明顯落後基礎建設支出；市場會更嚴格要求 AI 對廣告定價、互動率與新產品收入的可量化貢獻。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面分化為主，B 估值修正為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：已觸發"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：AI CapEx 接近營運現金流 → 自由現金流壓縮 → ROI 不確定性提高 → 估值折價"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：未來兩季 CapEx 續升而自由現金流未回升，營業利益率再降"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：廣告收入與 AI 產品商業化加速，使營運現金流增幅追上 CapEx"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：自由現金流恢復至足以同時支應 CapEx、股東回饋與資產負債表彈性"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "4｜Microsoft 也大幅投資，但 Azure 與現金流提供較強回報證據"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Microsoft FY2026 Q4 營收、雲端與 Azure 均維持高成長。設備投資比去年同期增加逾一倍，但季度營運現金流仍明顯高於設備投資，顯示 AI 基礎建設已帶動收入，並保留正自由現金流。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "營收 900.1 億美元、年增 18%；EPS 4.81 美元；Microsoft Cloud 收入 593 億美元、年增 27%；Azure 與其他雲端服務收入年增 43%；Microsoft 365 Copilot 超過 3,000 萬付費席次；營運現金流 554.4 億美元；設備投資 358.0 億美元、去年同期 170.8 億美元；依兩者相減計算的自由現金流約 196.4 億美元。來源為 Microsoft 2026-07-29 FY2026 Q4 財報。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "這是 Meta 風險的關鍵反方證據：市場不是一概排斥 AI CapEx，而是區分收入轉化與現金流覆蓋。風險在於資金可能進一步集中到少數能證明 ROI 的巨頭，讓指數表現與多數成分股基本面脫鉤。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面改善為主，C 資金輪動為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：緩解，但集中度風險仍升溫"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：雲端收入與現金流覆蓋 CapEx → AI ROI 信心提高 → 資金向少數贏家集中 → 指數集中度風險上升"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：Azure 成長與 Copilot 席次延續，營運現金流持續覆蓋 CapEx"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：設備投資增速長期高於雲端收入與現金流，或 AI 需求受供給／電力限制"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：Azure 成長明顯降速且自由現金流連續惡化"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "5｜油價跳升與四大指數齊跌，壓力已超出單一 AI 個股"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Brent 原油 7 月 29 日上漲 7.3% 至每桶 88.09 美元；同日 S&P 500、Dow、Nasdaq 與 Russell 2000 全數下跌。EIA 先前已指出，中東供應中斷與荷莫茲海峽運輸受限曾使第二季 Brent 期貨在 72–118 美元間大幅波動。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Brent 88.09 美元、單日 +7.3%；S&P 500 -1.5%、Dow -2.2%、Nasdaq -1.7%、Russell 2000 -1.6%。市場數據期間為 2026-07-29；來源為 Associated Press。供給背景來源為 EIA 2026-07-15 分析。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "四大指數同步下跌表示壓力不只來自單一財報；油價又把企業成本、消費與通膨預期連在一起。若能源上漲與長債上行並存，股票會同時面臨盈餘率與估值兩端壓力。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 風險變化為主，A 基本面為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：已觸發"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日；若供給中斷延續則為 1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：能源供給風險 → 油價與通膨預期上升 → 利率與成本壓力 → 股市廣度惡化"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：Brent 維持 88 美元附近或續升，主要指數與半導體同步走弱"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：供應恢復、油價快速回落，市場下跌集中於少數權值股"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：Brent 回到跳升前區間且市場廣度連續修復"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "事實"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "數值／變化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料期間"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源與日期"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "FOMC 維持利率但有三票主張升息"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "3.50%–3.75%；表決 9–3"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-07-28 至 07-29"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "Federal Reserve，2026-07-29",
+                  "href": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "10 年期殖利率上升、曲線變陡"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2Y 4.22%；10Y 4.67%；2s10s 約 +45bp"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-07-29"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "U.S. Treasury，2026-07-29",
+                  "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202607&type=daily_treasury_yield_curve"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Meta 營收成長但自由現金流壓縮"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "營收 +28%；CapEx 310.8 億美元；FCF 7.84 億美元"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026 Q2"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "Meta，2026-07-29",
+                  "href": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Microsoft 雲端收入與現金流仍覆蓋投資"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Azure +43%；營運現金流 554.4 億美元；設備投資 358.0 億美元"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "FY2026 Q4"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "Microsoft，2026-07-29",
+                  "href": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "油價與美股同日呈現風險壓力"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Brent +7.3%；S&P 500 -1.5%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-07-29"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "Associated Press，2026-07-29",
+                  "href": "https://apnews.com/article/b8bfaf782877957bbaa7196b70a4d725"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論與初步判斷"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "初判為「偏高風險、但不是全面基本面惡化」。總經端是能源與長端利率共振；AI 端則由同一個 CapEx 故事分裂成兩種現金流結果。Meta 顯示投資回收期拉長的風險，Microsoft 顯示有收入、合約與現金流支撐時，市場仍可能接受高投資。因缺信用與波動原始數據，本次不把單日股市下跌外推為熊市。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "外部觀點比較"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀點摘要"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "與初判一致／分歧"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "對判斷影響"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-07-29"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "將市場下跌連結至油價、科技股與 Fed 通膨不確定性"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "支持跨資產壓力已擴散，但仍屬單日市場報導"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-07-29 Meta 財報報導"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Meta 營收優於預期，但獲利受法律與裁員費用影響且盤後下跌"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "部分一致"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "提醒不能把所有利潤下降歸因於 AI CapEx，故降低結論強度"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "游庭皓、財經 M 平方"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "本階段尚未導入"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "無法比較"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "不影響以原始來源形成的試跑判斷"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "最終判斷與反方證據"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終判斷：未來 1–4 週下行風險為偏高，信心 72／100。壓力來自能源通膨、長端折現率與 AI 現金流分化，而不是經濟衰退已被確認。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：Microsoft 雲端與自由現金流強、TSMC Q2 營收年增 36% 且毛利率 67.7%、Fed 仍描述經濟活動穩健擴張。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：油價與 10 年期殖利率回落、信用與市場廣度未惡化，且後續大型科技財報證明 CapEx 可被現金流覆蓋。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日市場一句話"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "今天市場真正交易的不是 AI 還有沒有需求，而是誰能在高利率下把 AI 資本支出轉成自由現金流。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "反方證據與尚未確認資料"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "反方證據：Microsoft Azure 與現金流、TSMC 先前公布的 Q2 成長，顯示 AI 供應鏈基本面並未全面反轉。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：7/30 之後發布的 GDP、PCE、完整亞洲收盤、信用利差、VIX 與美元資料均未納入本版。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "尚未確認與待觀察"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "未確認資料：高收益債利差、投資級債利差、VIX、美元指數與台股 7/30 收盤；缺口使資料完整度降為 78。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "未入選候選事件：TSMC Q2 強勁財報列為反證；BEA GDP／PCE 因尚未發布只列催化劑；SK hynix／記憶體跌勢缺可在截止前完整核對的公司原始資料；另有美股廣度、Treasury 供給與中東制裁候選，前兩者已合併進殖利率與油價事件，後者不另重複計分。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "下一確認點：GDP／PCE 與市場反應、Brent、10 年期殖利率、信用利差，以及 Meta／Microsoft 後續財測與現金流。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "來源"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜FOMC statement｜2026-07-29",
+                "href": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Treasury｜Daily Treasury Par Yield Curve Rates｜2026-07-29",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202607&type=daily_treasury_yield_curve"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Meta｜Second Quarter 2026 Results｜2026-07-29",
+                "href": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Microsoft｜FY2026 Q4 Results｜2026-07-29",
+                "href": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "EIA｜Middle East disruptions in Q2 petroleum markets｜2026-07-15",
+                "href": "https://www.eia.gov/Todayinenergy/detail.php?id=67865"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "TSMC｜2026 Q2 Results｜2026-07-16",
+                "href": "https://investor.tsmc.com/english/quarterly-results/2026/q2"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜7/29 market close｜2026-07-29",
+                "href": "https://apnews.com/article/a483060a0aa9c24c50f589b0b7713497"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜Meta Q2 report｜2026-07-29",
+                "href": "https://apnews.com/article/bcbc62dde6d2cac724e3b3385fcabeab"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "人工核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：五則事件排序、65 分影子風險、AI CapEx／現金流主軸與五分鐘篇幅是否適合進入 30 個交易日影子運行；不代表啟用排程或投資操作。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：2026-08-02，AI 完成回溯試跑並提交使用者；尚未核准。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/daily-briefs/2026-07-30-v02.md",
+      "asOf": "2026-07-30 07:10（Asia/Taipei；回溯資訊截止）",
+      "updatedAt": "2026-08-02T13:37:01.903Z",
+      "dependencies": []
+    },
+    {
+      "id": "records/daily-briefs/2026-07-30-v01.md",
+      "date": "2026-07-30",
+      "version": 1,
+      "versionLabel": "v01",
+      "isLatest": false,
+      "title": "每日投資晨報｜2026-07-30",
+      "summary": "聯準會將聯邦基金利率目標區間維持在 3.50%–3.75%，但 12 票中有 3 票主張升息 1 碼；「利率不變」不等於政策風險下降。 2 年期與 10 年期公債殖利率在 7 月 29 日分別為 4.22% 與 4.67%；相較 7 月 28 日，2 年期下降 4 個基點、10 年期上升 6 個基點，殖利率曲線更陡，顯示長期通膨／期限風險壓力未消。 美股同步下跌：S&P 500 -1.5%、Nasdaq Composite -1.7%、Russell 2000 -1.6%、Dow -2.2%；Brent 原油同日上漲 7.3% 至每桶 88.09 美元。風險不是只集中在單一大型科技股。 初步判斷：短線環境由「政策等待」轉為「能源衝擊、長端利率與政策分歧共同定價」，總經不確定性升高；信心中等。 美國第二季 GDP 初值與 6 月個人所得／支出資料預定今晚 20:30（台北時間）發布。關鍵資料尚未出爐，因此不判定衰退、不預測短期漲跌，也不導出買賣行動。",
+      "freshness": "過期",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-07-30 12:13（Asia/Taipei，UTC+8）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察市場：美國貨幣政策、美債、原油與美股隔夜市場；觀察期以 2026-07-29 美國交易日為主"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "版本：v01（首次人工試跑；有限版）"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "一分鐘摘要"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "聯準會將聯邦基金利率目標區間維持在 3.50%–3.75%，但 12 票中有 3 票主張升息 1 碼；「利率不變」不等於政策風險下降。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "2 年期與 10 年期公債殖利率在 7 月 29 日分別為 4.22% 與 4.67%；相較 7 月 28 日，2 年期下降 4 個基點、10 年期上升 6 個基點，殖利率曲線更陡，顯示長期通膨／期限風險壓力未消。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "美股同步下跌：S&P 500 -1.5%、Nasdaq Composite -1.7%、Russell 2000 -1.6%、Dow -2.2%；Brent 原油同日上漲 7.3% 至每桶 88.09 美元。風險不是只集中在單一大型科技股。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "初步判斷：短線環境由「政策等待」轉為「能源衝擊、長端利率與政策分歧共同定價」，總經不確定性升高；信心中等。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "美國第二季 GDP 初值與 6 月個人所得／支出資料預定今晚 20:30（台北時間）發布。關鍵資料尚未出爐，因此不判定衰退、不預測短期漲跌，也不導出買賣行動。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "事實"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "數值／變化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料期間"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源與日期"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "FOMC 維持政策利率不變"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "聯邦基金利率目標區間 3.50%–3.75%；表決 9–3，3 位反對者主張升息 0.25 個百分點"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-07-28 至 07-29 會議"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "Federal Reserve，2026-07-29，FOMC statement",
+                  "href": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "聯準會認為通膨仍高於 2% 目標，部分源自能源等供給衝擊"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "聲明未提供新的通膨數值"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "截至 2026-07-29"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "Federal Reserve，2026-07-29，FOMC statement",
+                  "href": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "美國公債殖利率曲線變陡"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2 年期 4.22%（前日 4.26%，-4bp）；10 年期 4.67%（前日 4.61%，+6bp）；2s10s 利差由 +35bp 擴至 +45bp"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-07-28 至 07-29"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "U.S. Treasury，2026-07-29，Daily Treasury Par Yield Curve Rates",
+                  "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202607&type=daily_treasury_yield_curve"
+                },
+                {
+                  "type": "text",
+                  "text": "；利差為依官方數值計算"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "美國主要股價指數普遍下跌"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "S&P 500 7,316.15（-1.5%）；Dow 51,594.14（-2.2%）；Nasdaq Composite 24,442.94（-1.7%）；Russell 2000 2,906.31（-1.6%）"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-07-29 收盤"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "Associated Press，2026-07-29，美股收盤統計",
+                  "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-a483060a0aa9c24c50f589b0b7713497"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Brent 原油大幅上漲"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "每桶 88.09 美元，單日 +7.3%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-07-29 結算"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "Associated Press，2026-07-29，市場報導",
+                  "href": "https://apnews.com/article/stocks-markets-ai-oil-trump-rates-b8bfaf782877957bbaa7196b70a4d725"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "最新已發布的美國實質 GDP 為第一季第三次估計"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026 Q1 年化季增 2.1%；2025 Q4 為 0.5%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026 Q1"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "BEA，2026-06-25，GDP",
+                  "href": "https://www.bea.gov/data/gdp/gross-domestic-product"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "第二季 GDP 初值與 6 月個人所得及支出尚待發布"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "預定 2026-07-30 08:30 ET，即台北時間 20:30"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "發布排程"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "BEA，頁面更新 2026-07-30，Release Schedule",
+                  "href": "https://www.bea.gov/news/schedule"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論與初步判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "原油急漲提高能源通膨再度傳導的可能性；FOMC 聲明同時明確指出能源供給衝擊與通膨偏高，兩者方向一致。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "2 年期殖利率下降、10 年期上升，使 2s10s 利差單日擴大約 10 個基點。這比較像長期通膨、期限溢酬或財政／供給不確定性增加，而不是市場單純全面押注近期升息；此為推論，不能由殖利率單日變化唯一識別原因。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "四個主要美股指數同步下跌，包含小型股，因此「只是少數 AI 權值股修正」不足以完整解釋當日風險偏好變化。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "初判為短期總經不確定性升高，主要傳導鏈是「地緣與能源供給風險 → 通膨黏性疑慮 → 長端利率上升 → 高估值與廣泛風險資產承壓」。這是風險辨識，不是短期行情預測。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "外部觀點比較"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀點摘要"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "與初判一致／分歧"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "對判斷影響"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-07-29"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "將市場下跌連結至油價跳升、科技股走弱、通膨與利率不確定性；並指出多數股票一同下跌"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致：支持能源、利率與市場廣度共同惡化；補充 AI 類股估值壓力"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "提高中等信心，但 AP 屬二手市場報導，不能替代官方總經數據"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "游庭皓 8:30 解讀"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "來源未取得：本次未使用已登入且獲授權的正常介面"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "無法比較"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "不影響以原始資料形成的有限版初判"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "財經 M 平方"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "來源未取得：本次未使用已登入且獲授權的正常介面"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "無法比較"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "不影響以原始資料形成的有限版初判"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "最終判斷與反方證據"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終判斷：短期系統性風險較前一日上升，核心是能源供給衝擊、長端殖利率上行與 FOMC 內部鷹派分歧同時出現；信心中等。這仍不足以確認經濟衰退、長期熊市或政策必然升息。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：最新官方資料仍顯示 2026 Q1 實質 GDP 年化成長 2.1%；FOMC 對經濟活動的官方描述仍為穩健擴張；2 年期殖利率當日下降，未呈現所有期限同步緊縮；單日股市與油價變動可能快速反轉。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若 Brent 回落並維持、長端殖利率回落、後續通膨低於預期且市場廣度修復，應下調此判斷；若 GDP／消費顯著弱於預期但通膨仍高，則需改判為停滯性風險；若 GDP 與消費強而通膨偏高，則需提高利率維持高檔或升息風險。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "尚未確認與待觀察"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "未確認資料：2026 Q2 GDP 初值、2026 年 6 月 PCE／核心 PCE、個人所得與支出尚未發布；本版未取得 VIX 官方收盤值、信用利差、美元指數與亞洲盤完整收盤資料，因此不能宣稱完成全面風險評分。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "下一確認點：2026-07-30 20:30（Asia/Taipei）BEA GDP 與個人所得／支出；其後比較實質消費、GDP 價格指標、PCE 與市場利率反應，必要時建立 "
+              },
+              {
+                "type": "code",
+                "text": "v02"
+              },
+              {
+                "type": "text",
+                "text": "，不覆寫本版。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "人工核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：確認此晨報的市場範圍、篇幅與保存位置是否適合作為日後標準；如需對外引用，另行核准文字與具名觀點。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：2026-07-30，AI 完成首次試跑並提交使用者；尚未核准。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/daily-briefs/2026-07-30-v01.md",
+      "asOf": "2026-07-30 12:13（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-07-30T05:07:35.736Z",
+      "dependencies": []
+    }
+  ],
   "brief": {
     "title": "AI 營收還在成長，但市場開始追問現金流能否追上資本支出",
     "headline": "AI 營收還在成長，但市場開始追問現金流能否追上資本支出",
