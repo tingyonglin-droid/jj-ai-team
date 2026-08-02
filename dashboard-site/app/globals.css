@@ -507,6 +507,12 @@ h3 {
   font-weight: 700;
 }
 
+.brief-version-nav > a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
 .brief-version-nav [aria-current="page"] {
   background: var(--teal-pale);
   color: var(--teal);

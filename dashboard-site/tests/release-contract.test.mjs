@@ -27,6 +27,22 @@ function dependencyPath(packagePath, dependencyName, packages) {
   }
 }
 
+function cssBlock(styles, expression) {
+  const match = expression.exec(styles);
+  assert.ok(match, `CSS block not found: ${expression}`);
+  const openingBrace = styles.indexOf("{", match.index);
+  assert.notEqual(openingBrace, -1);
+
+  let depth = 0;
+  for (let index = openingBrace; index < styles.length; index += 1) {
+    if (styles[index] === "{") depth += 1;
+    if (styles[index] === "}") depth -= 1;
+    if (depth === 0) return styles.slice(openingBrace + 1, index);
+  }
+
+  assert.fail(`Unclosed CSS block: ${expression}`);
+}
+
 test("標準測試指令涵蓋帳號、快照、頁面與正式輸出驗收", async () => {
   const packageJson = JSON.parse(await readProjectFile("package.json"));
   const testCommand = packageJson.scripts.test;
@@ -34,6 +50,8 @@ test("標準測試指令涵蓋帳號、快照、頁面與正式輸出驗收", as
   assert.match(testCommand, /authorization\.test\.ts/);
   assert.match(testCommand, /dashboard-snapshot\.test\.ts/);
   assert.match(testCommand, /dashboard-routes\.test\.tsx/);
+  assert.match(testCommand, /brief-content\.test\.ts/);
+  assert.match(testCommand, /brief-components\.test\.tsx/);
   assert.match(testCommand, /generate-dashboard-data\.test\.mts/);
   assert.match(testCommand, /typecheck/);
   assert.match(testCommand, /npm run build/);
@@ -111,13 +129,17 @@ test("響應式與鍵盤可用性規則可由原始碼重現驗收", async () =>
     readProjectFile("app/dashboard-shell.tsx"),
     readProjectFile("app/briefs/brief-components.tsx"),
   ]);
+  const mobileStyles = cssBlock(styles, /@media\s*\(max-width:\s*720px\)/);
 
   assert.match(styles, /@media\s*\(max-width:\s*720px\)/);
   assert.match(styles, /\.employee-summary-grid,[\s\S]*?grid-template-columns:\s*1fr;/);
   assert.match(styles, /\.brief-archive-grid/);
   assert.match(styles, /\.brief-reader/);
   assert.match(styles, /\.brief-version-nav/);
+  assert.match(styles, /\.brief-version-nav\s*>\s*a\s*\{[\s\S]*?min-height:\s*44px/);
   assert.match(styles, /\.brief-table-scroll[\s\S]*overflow-x:\s*auto/);
+  assert.match(mobileStyles, /\.brief-archive-grid,[\s\S]*?grid-template-columns:\s*1fr;/);
+  assert.match(mobileStyles, /\.brief-reader\s*\{[\s\S]*?padding:\s*1rem;/);
   assert.match(styles, /a:focus-visible,[\s\S]*?outline:\s*3px solid/);
   assert.match(styles, /\.skip-link:focus\s*\{[\s\S]*?transform:\s*translateY\(0\)/);
   assert.match(shell, /<a className="skip-link" href="#main-content">/);

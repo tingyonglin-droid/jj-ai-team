@@ -4,7 +4,7 @@ import { tmpdir } from "node:os";
 import path from "node:path";
 import test from "node:test";
 
-import { generateDashboardSnapshot } from "./generate-dashboard-data.mts";
+import { generateDashboardSnapshot, sourceUpdatedAt } from "./generate-dashboard-data.mts";
 
 const roles = [
   ["commander", "總司令"],
@@ -216,6 +216,30 @@ function appSpec(status = "待核准") {
 `;
 }
 
+test("更新時間優先使用來源紀錄，再使用 Git 並且不臆造精度", () => {
+  assert.equal(
+    sourceUpdatedAt(
+      "- 產製時間：2026-08-02 21:35（Asia/Taipei；人工回溯試跑）",
+      "records/daily-briefs/2026-07-30-v02.md",
+      "2026-08-02T14:00:00+08:00",
+    ),
+    "2026-08-02 21:35（Asia/Taipei；人工回溯試跑）",
+  );
+  assert.equal(
+    sourceUpdatedAt(
+      "# 沒有明示更新時間",
+      "records/daily-briefs/2026-07-30-v01.md",
+      "2026-08-02T14:00:00+08:00",
+    ),
+    "2026-08-02T14:00:00+08:00",
+  );
+  assert.equal(
+    sourceUpdatedAt("# 測試夾記錄", "records/daily-briefs/2026-07-30-v01.md", null),
+    "2026-07-30",
+  );
+  assert.equal(sourceUpdatedAt("# 測試角色", "roles/test/ROLE.md", null), "來源未提供更新時間");
+});
+
 test("用台北日期產生可追溯的任務、員工、摘要與核准欄位", async () => {
   const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
 
@@ -235,7 +259,7 @@ test("用台北日期產生可追溯的任務、員工、摘要與核准欄位",
     assert.equal(approval.recordDate, "2026-07-30");
     assert.equal("effectiveDate" in approval, false);
     assert.equal(approval.asOf, "2026-07-30 12:13（Asia/Taipei，UTC+8）");
-    assert.match(approval.updatedAt, /^\d{4}-\d{2}-\d{2}T/);
+    assert.equal(approval.updatedAt, "2026-07-30");
     assert.deepEqual(approval.dependencies, ["美國官方經濟資料", "市場風險紀錄"]);
     assert.equal(task?.source, "records/daily-briefs/2026-07-30-v01.md");
     assert.equal(task?.asOf, approval.asOf);

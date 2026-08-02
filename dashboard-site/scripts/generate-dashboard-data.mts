@@ -1,4 +1,5 @@
-import { mkdir, readFile, readdir, stat, writeFile } from "node:fs/promises";
+import { execFileSync } from "node:child_process";
+import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import type { Dirent } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -43,6 +44,8 @@ type WorkflowSource = {
   ownerText: string;
   firstStep: string | null;
 };
+
+type SourceUpdatedAtResolver = (relativePath: string, content: string) => Promise<string>;
 
 type ValidRecord = MarkdownRecord & {
   title: string;
@@ -153,6 +156,59 @@ function filenameDate(relativePath: string) {
   return dateFrom(path.basename(relativePath));
 }
 
+function explicitSourceUpdatedAt(content: string) {
+  return (
+    field(content, "最後更新時間") ??
+    field(content, "產製時間") ??
+    field(content, "建立時間") ??
+    field(content, "更新時間") ??
+    field(content, "整理日期") ??
+    field(content, "決策日期") ??
+    field(content, "日期") ??
+    field(content, "文件日期與版本")
+  );
+}
+
+export function sourceUpdatedAt(
+  content: string,
+  relativePath: string,
+  gitUpdatedAt: string | null,
+) {
+  return (
+    explicitSourceUpdatedAt(content) ??
+    gitUpdatedAt ??
+    filenameDate(relativePath) ??
+    "來源未提供更新時間"
+  );
+}
+
+function gitOutput(root: string, arguments_: string[]) {
+  try {
+    return execFileSync("git", ["-C", root, ...arguments_], {
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "ignore"],
+    }).trim() || null;
+  } catch {
+    return null;
+  }
+}
+
+function sourceUpdatedAtResolver(root: string): SourceUpdatedAtResolver {
+  const repositoryRoot = gitOutput(root, ["rev-parse", "--show-toplevel"]);
+  const canReadGitMetadata =
+    repositoryRoot !== null && path.resolve(repositoryRoot) === path.resolve(root);
+
+  return async (relativePath, content) => {
+    const explicit = explicitSourceUpdatedAt(content);
+    if (explicit) return explicit;
+
+    const gitUpdatedAt = canReadGitMetadata
+      ? gitOutput(root, ["log", "-1", "--format=%cI", "--", relativePath])
+      : null;
+    return sourceUpdatedAt(content, relativePath, gitUpdatedAt);
+  };
+}
+
 function dependenciesFrom(content: string) {
   const raw =
     field(content, "依賴") ??
@@ -183,6 +239,7 @@ async function markdownRecords(
   root: string,
   relativeDirectory: string,
   definition: SourceDefinition | null,
+  updatedAtFor: SourceUpdatedAtResolver,
 ): Promise<MarkdownRecord[]> {
   let entries: Dirent<string>[];
   try {
@@ -198,15 +255,25 @@ async function markdownRecords(
       .map(async (entry) => {
         const relativePath = normalizeRelativePath(path.join(relativeDirectory, entry.name));
         const absolutePath = path.join(root, relativePath);
-        const [content, metadata] = await Promise.all([readFile(absolutePath, "utf8"), stat(absolutePath)]);
+        const content = await readFile(absolutePath, "utf8");
         const definitionId = definition?.id ?? relativeDirectory;
         const { identity, version } = identityAndVersion(definitionId, relativePath);
-        return { content, relativePath, updatedAt: metadata.mtime.toISOString(), definition, identity, version };
+        return {
+          content,
+          relativePath,
+          updatedAt: await updatedAtFor(relativePath, content),
+          definition,
+          identity,
+          version,
+        };
       }),
   );
 }
 
-async function employeesFromRoles(root: string): Promise<EmployeeSource[]> {
+async function employeesFromRoles(
+  root: string,
+  updatedAtFor: SourceUpdatedAtResolver,
+): Promise<EmployeeSource[]> {
   let entries: Dirent<string>[];
   try {
     entries = await readdir(path.join(root, "roles"), { withFileTypes: true });
@@ -221,16 +288,13 @@ async function employeesFromRoles(root: string): Promise<EmployeeSource[]> {
       .map(async (entry) => {
         const relativePath = normalizeRelativePath(path.join("roles", entry.name, "ROLE.md"));
         try {
-          const [content, metadata] = await Promise.all([
-            readFile(path.join(root, relativePath), "utf8"),
-            stat(path.join(root, relativePath)),
-          ]);
+          const content = await readFile(path.join(root, relativePath), "utf8");
           return {
             id: entry.name,
             name: firstHeading(content) ?? entry.name,
             handoff: sectionText(content, "交接對象") || "尚未記載",
             relativePath,
-            updatedAt: metadata.mtime.toISOString(),
+            updatedAt: await updatedAtFor(relativePath, content),
           };
         } catch (error: unknown) {
           if ((error as NodeJS.ErrnoException).code === "ENOENT") return null;
@@ -600,12 +664,17 @@ function staleIssue(
 
 export async function generateDashboardSnapshot(root: string, now: Date): Promise<DashboardSnapshot> {
   const definitions = await artifactDefinitions();
+  const updatedAtFor = sourceUpdatedAtResolver(root);
   const [employees, workflows, artifactRecordSets, reviews, decisions] = await Promise.all([
-    employeesFromRoles(root),
+    employeesFromRoles(root, updatedAtFor),
     workflowsFromDocuments(root),
-    Promise.all(definitions.map((definition) => markdownRecords(root, definition.directory, definition))),
-    markdownRecords(root, "records/reviews", null),
-    markdownRecords(root, "records/decisions", null),
+    Promise.all(
+      definitions.map((definition) =>
+        markdownRecords(root, definition.directory, definition, updatedAtFor),
+      ),
+    ),
+    markdownRecords(root, "records/reviews", null, updatedAtFor),
+    markdownRecords(root, "records/decisions", null, updatedAtFor),
   ]);
   const dashboardDate = dateInTaipei(now);
   const dailyBriefIndex = definitions.findIndex((definition) => definition.id === "daily-brief");
