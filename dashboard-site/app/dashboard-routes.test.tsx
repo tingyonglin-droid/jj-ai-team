@@ -14,7 +14,29 @@ const snapshot = JSON.parse(
 ) as DashboardSnapshot;
 
 test("今日總覽優先呈現需決定事項，並排除未核准行動", () => {
-  const todayHtml = renderToStaticMarkup(<TodayOverview snapshot={snapshot} />);
+  const todayHtml = renderToStaticMarkup(
+    <TodayOverview
+      snapshot={{
+        ...snapshot,
+        tasks: [
+          {
+            id: "records/daily-briefs/2026-07-31-v01.md",
+            title: "每日投資晨報｜2026-07-31",
+            owner: "總經研究員",
+            ownerId: "macro-researcher",
+            status: "待核准",
+            artifactStatus: "待核准",
+            rawStatus: "待核准",
+            nextStep: "等待使用者核准",
+            source: "records/daily-briefs/2026-07-31-v01.md",
+            asOf: "2026-07-31 07:10（Asia/Taipei，UTC+8）",
+            updatedAt: "2026-07-31T00:00:00.000Z",
+            dependencies: ["workflows/daily-brief.md"],
+          },
+        ],
+      }}
+    />,
+  );
 
   assert.match(todayHtml, /<h1[^>]*>今日總覽<\/h1>/);
   assert.match(todayHtml, /需要你決定/);
