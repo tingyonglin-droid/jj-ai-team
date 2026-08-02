@@ -1,22 +1,39 @@
 {
-  "generatedAt": "2026-07-30T07:38:37.445Z",
-  "date": "2026-07-30",
+  "generatedAt": "2026-08-02T13:37:27.721Z",
+  "date": "2026-08-02",
   "approvals": [
     {
-      "id": "records/daily-briefs/2026-07-30-v01.md",
-      "title": "每日投資晨報｜2026-07-30",
+      "id": "records/daily-briefs/2026-07-30-v02.md",
+      "title": "AI 營收還在成長，但市場開始追問現金流能否追上資本支出",
       "type": "晨報",
       "owner": "總經研究員",
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
-      "summary": "聯準會將聯邦基金利率目標區間維持在 3.50%–3.75%，但 12 票中有 3 票主張升息 1 碼；「利率不變」不等於政策風險下降。 2 年期與 10 年期公債殖利率在 7 月 29 日分別為 4.22% 與 4.67%；相較 7 月 28 日，2 年期下降 4 個基點、10 年期上升 6 個基點，殖利率曲線更陡，顯示長期通膨／期限風險壓力未消。 美股同步下跌：S&P 500 -1.5%、Nasdaq Composite -1.7%、Russell 2000 -1.6%、Dow -2.2%；Brent 原油同日上漲 7.3% 至每桶 88.09 美元。風險不是只集中在單一大型科技股。 初步判斷：短線環境由「政策等待」轉為「能源衝擊、長端利率與政策分歧共同定價」，總經不確定性升高；信心中等。 美國第二季 GDP 初值與 6 月個人所得／支出資料預定今晚 20:30（台北時間）發布。關鍵資料尚未出爐，因此不判定衰退、不預測短期漲跌，也不導出買賣行動。",
-      "decision": "確認此晨報的市場範圍、篇幅與保存位置是否適合作為日後標準；如需對外引用，另行核准文字與具名觀點。",
-      "source": "records/daily-briefs/2026-07-30-v01.md",
-      "asOf": "2026-07-30 12:13（Asia/Taipei，UTC+8）",
+      "summary": "Fed 沒有升息，但 12 票中有 3 票主張升息一碼；政策風險從「何時降息」轉向「是否還要再緊」。 10 年期美債殖利率單日升 6 個基點至 4.67%，2s10s 利差擴大約 10 個基點；長端折現率仍壓住高估值資產。 Meta Q2 營收成長 28%，但資本支出達 310.8 億美元、自由現金流只剩 7.84 億美元；AI 投資的問題已從需求轉向現金回收速度。 Microsoft 同期 Azure 成長 43%，營運現金流 554.4 億美元，扣除 358.0 億美元設備投資後仍約有 196.4 億美元自由現金流，是 AI CapEx 能轉成收入與現金流的反方證據。 影子風險分數為 65／100（偏高）。即時壓力來自油價、長債與市場廣度；1–2 季結構風險是 AI 資本支出回報分化。",
+      "decision": "五則事件排序、65 分影子風險、AI CapEx／現金流主軸與五分鐘篇幅是否適合進入 30 個交易日影子運行；不代表啟用排程或投資操作。",
+      "source": "records/daily-briefs/2026-07-30-v02.md",
+      "asOf": "2026-07-30 07:10（Asia/Taipei；回溯資訊截止）",
       "createdAt": null,
       "recordDate": "2026-07-30",
-      "updatedAt": "2026-07-30T05:07:35.736Z",
+      "updatedAt": "2026-08-02T13:37:01.903Z",
+      "dependencies": []
+    },
+    {
+      "id": "records/market-risk/2026-07-30-v01.md",
+      "title": "市場風險報告｜2026-07-30-v01",
+      "type": "市場風險報告",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "市場風險報告｜2026-07-30-v01",
+      "decision": "是否接受 65 分、+5 事件調整、資料完整度 78 與首日影子紀錄；不代表啟用排程或投資操作",
+      "source": "records/market-risk/2026-07-30-v01.md",
+      "asOf": "2026-07-30 07:10（Asia/Taipei；回溯資訊截止）",
+      "createdAt": null,
+      "recordDate": "2026-07-30",
+      "updatedAt": "2026-08-02T13:37:02.003Z",
       "dependencies": []
     }
   ],
@@ -45,18 +62,20 @@
       "status": "已完成",
       "artifactStatus": "已核准",
       "rawStatus": null,
-      "currentTask": "Threads 成效改採累積數據",
+      "currentTask": "晨間投資風險摘要與每日風險指標方法",
       "progress": "工作狀態：已完成",
       "dependencies": [
-        "records/reviews/2026-07-30-threads-tag-correction-and-snapshot-proposal.md",
-        "records/reviews/2026-07-30-threads-baseline-review.md"
+        "docs/superpowers/specs/2026-07-30-morning-investment-risk-brief-design.md",
+        "docs/risk-score-methodology.md",
+        "workflows/daily-brief.md",
+        "workflows/market-risk.md"
       ],
       "handoff": "向總經研究員交付研究題目，向社群經營員交付已驗證的內容素材，向 App 設計員交付產品問題；將整合成果與決策項交給使用者。",
       "blocker": null,
       "nextStep": "依紀錄保留結果並追蹤後續",
-      "source": "records/decisions/2026-07-30-use-cumulative-threads-metrics.md",
-      "asOf": "2026-07-30",
-      "updatedAt": "2026-07-30T05:07:35.738Z"
+      "source": "records/decisions/2026-07-30-morning-risk-brief-method.md",
+      "asOf": "設計核准日；每日自動排程須待實作與驗證完成後另行核准啟用。",
+      "updatedAt": "2026-07-30T09:07:30.178Z"
     },
     {
       "id": "macro-researcher",
@@ -65,15 +84,15 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
-      "currentTask": "每日投資晨報｜2026-07-30",
+      "currentTask": "AI 營收還在成長，但市場開始追問現金流能否追上資本支出",
       "progress": "等待人工核准",
       "dependencies": [],
       "handoff": "將研究與風險成果交總司令驗收；將已驗證素材交社群經營員；將市場風險欄位與限制交 App 設計員。所有對外使用均由使用者核准。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/daily-briefs/2026-07-30-v01.md",
-      "asOf": "2026-07-30 12:13（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-07-30T05:07:35.736Z"
+      "source": "records/daily-briefs/2026-07-30-v02.md",
+      "asOf": "2026-07-30 07:10（Asia/Taipei；回溯資訊截止）",
+      "updatedAt": "2026-08-02T13:37:01.903Z"
     },
     {
       "id": "social-operator",
@@ -95,8 +114,8 @@
   ],
   "tasks": [
     {
-      "id": "records/daily-briefs/2026-07-30-v01.md",
-      "title": "每日投資晨報｜2026-07-30",
+      "id": "records/daily-briefs/2026-07-30-v02.md",
+      "title": "AI 營收還在成長，但市場開始追問現金流能否追上資本支出",
       "owner": "總經研究員",
       "ownerId": "macro-researcher",
       "status": "待核准",
@@ -104,99 +123,81 @@
       "rawStatus": "待核准",
       "nextStep": "等待使用者核准",
       "dependencies": [],
-      "source": "records/daily-briefs/2026-07-30-v01.md",
-      "asOf": "2026-07-30 12:13（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-07-30T05:07:35.736Z"
+      "source": "records/daily-briefs/2026-07-30-v02.md",
+      "asOf": "2026-07-30 07:10（Asia/Taipei；回溯資訊截止）",
+      "updatedAt": "2026-08-02T13:37:01.903Z"
     },
     {
-      "id": "records/reviews/2026-07-30-threads-tag-correction-and-snapshot-proposal.md",
-      "title": "Threads 系列標籤校正與累積成效方案",
-      "owner": "社群經營員",
-      "ownerId": "social-operator",
-      "status": "已完成",
-      "artifactStatus": "已核准並執行",
-      "rawStatus": "已核准並執行（2026-07-30）",
-      "nextStep": "依紀錄保留結果並追蹤後續",
+      "id": "records/market-risk/2026-07-30-v01.md",
+      "title": "市場風險報告｜2026-07-30-v01",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
       "dependencies": [],
-      "source": "records/reviews/2026-07-30-threads-tag-correction-and-snapshot-proposal.md",
-      "asOf": "2026-07-30",
-      "updatedAt": "2026-07-30T05:07:35.740Z"
-    },
-    {
-      "id": "records/decisions/2026-07-30-use-cumulative-threads-metrics.md",
-      "title": "Threads 成效改採累積數據",
-      "owner": "總司令",
-      "ownerId": "commander",
-      "status": "已完成",
-      "artifactStatus": "已核准",
-      "rawStatus": null,
-      "nextStep": "依紀錄保留結果並追蹤後續",
-      "dependencies": [
-        "records/reviews/2026-07-30-threads-tag-correction-and-snapshot-proposal.md",
-        "records/reviews/2026-07-30-threads-baseline-review.md"
-      ],
-      "source": "records/decisions/2026-07-30-use-cumulative-threads-metrics.md",
-      "asOf": "2026-07-30",
-      "updatedAt": "2026-07-30T05:07:35.738Z"
-    },
-    {
-      "id": "records/decisions/2026-07-30-threads-knowledge-and-analysis-baseline.md",
-      "title": "Threads 知識與成效分析基線決策",
-      "owner": "總司令",
-      "ownerId": "commander",
-      "status": "已完成",
-      "artifactStatus": "已核准",
-      "rawStatus": null,
-      "nextStep": "依紀錄保留結果並追蹤後續",
-      "dependencies": [
-        "records/reviews/2026-07-30-threads-baseline-review.md",
-        "knowledge/investment-philosophy.md",
-        "knowledge/writing-style.md"
-      ],
-      "source": "records/decisions/2026-07-30-threads-knowledge-and-analysis-baseline.md",
-      "asOf": "2026-07-30",
-      "updatedAt": "2026-07-30T05:07:35.737Z"
-    },
-    {
-      "id": "records/decisions/2026-07-30-correct-threads-series-tags.md",
-      "title": "修正 Threads 系列標籤並保留爆款實驗室",
-      "owner": "總司令",
-      "ownerId": "commander",
-      "status": "已完成",
-      "artifactStatus": "已核准",
-      "rawStatus": null,
-      "nextStep": "依紀錄保留結果並追蹤後續",
-      "dependencies": [
-        "records/reviews/2026-07-30-threads-tag-correction-and-snapshot-proposal.md",
-        "records/reviews/2026-07-30-threads-baseline-review.md"
-      ],
-      "source": "records/decisions/2026-07-30-correct-threads-series-tags.md",
-      "asOf": "2026-07-30",
-      "updatedAt": "2026-07-30T05:07:35.737Z"
+      "source": "records/market-risk/2026-07-30-v01.md",
+      "asOf": "2026-07-30 07:10（Asia/Taipei；回溯資訊截止）",
+      "updatedAt": "2026-08-02T13:37:02.003Z"
     }
   ],
   "brief": {
-    "title": "每日投資晨報｜2026-07-30",
-    "summary": "聯準會將聯邦基金利率目標區間維持在 3.50%–3.75%，但 12 票中有 3 票主張升息 1 碼；「利率不變」不等於政策風險下降。 2 年期與 10 年期公債殖利率在 7 月 29 日分別為 4.22% 與 4.67%；相較 7 月 28 日，2 年期下降 4 個基點、10 年期上升 6 個基點，殖利率曲線更陡，顯示長期通膨／期限風險壓力未消。 美股同步下跌：S&P 500 -1.5%、Nasdaq Composite -1.7%、Russell 2000 -1.6%、Dow -2.2%；Brent 原油同日上漲 7.3% 至每桶 88.09 美元。風險不是只集中在單一大型科技股。 初步判斷：短線環境由「政策等待」轉為「能源衝擊、長端利率與政策分歧共同定價」，總經不確定性升高；信心中等。 美國第二季 GDP 初值與 6 月個人所得／支出資料預定今晚 20:30（台北時間）發布。關鍵資料尚未出爐，因此不判定衰退、不預測短期漲跌，也不導出買賣行動。",
-    "freshness": "今日",
+    "title": "AI 營收還在成長，但市場開始追問現金流能否追上資本支出",
+    "headline": "AI 營收還在成長，但市場開始追問現金流能否追上資本支出",
+    "summary": "Fed 沒有升息，但 12 票中有 3 票主張升息一碼；政策風險從「何時降息」轉向「是否還要再緊」。 10 年期美債殖利率單日升 6 個基點至 4.67%，2s10s 利差擴大約 10 個基點；長端折現率仍壓住高估值資產。 Meta Q2 營收成長 28%，但資本支出達 310.8 億美元、自由現金流只剩 7.84 億美元；AI 投資的問題已從需求轉向現金回收速度。 Microsoft 同期 Azure 成長 43%，營運現金流 554.4 億美元，扣除 358.0 億美元設備投資後仍約有 196.4 億美元自由現金流，是 AI CapEx 能轉成收入與現金流的反方證據。 影子風險分數為 65／100（偏高）。即時壓力來自油價、長債與市場廣度；1–2 季結構風險是 AI 資本支出回報分化。",
+    "freshness": "過期",
     "artifactStatus": "待核准",
     "rawStatus": "待核准",
-    "asOf": "2026-07-30 12:13（Asia/Taipei，UTC+8）",
-    "source": "records/daily-briefs/2026-07-30-v01.md",
-    "updatedAt": "2026-07-30T05:07:35.736Z",
+    "asOf": "2026-07-30 07:10（Asia/Taipei；回溯資訊截止）",
+    "source": "records/daily-briefs/2026-07-30-v02.md",
+    "updatedAt": "2026-08-02T13:37:01.903Z",
     "dependencies": []
   },
-  "marketRisk": null,
+  "marketRisk": {
+    "label": "市場風險報告｜2026-07-30-v01",
+    "freshness": "過期",
+    "artifactStatus": "待核准",
+    "rawStatus": "待核准",
+    "asOf": "2026-07-30 07:10（Asia/Taipei；回溯資訊截止）",
+    "source": "records/market-risk/2026-07-30-v01.md",
+    "updatedAt": "2026-08-02T13:37:02.003Z",
+    "dependencies": [],
+    "score": 65,
+    "baseline": 60,
+    "eventAdjustment": 5,
+    "dailyChange": null,
+    "immediateRisk": "1–3 個交易日內，能源價格、長端殖利率與科技股廣度維持高波動",
+    "structuralRisk": "1–2 季內，AI CapEx 若持續快於自由現金流，市場將擴大企業間估值分化",
+    "topRisks": [
+      "能源通膨再起",
+      "長端殖利率上行",
+      "AI CapEx 與自由現金流分化"
+    ],
+    "confidence": 72,
+    "completeness": 78,
+    "experimental": true
+  },
   "blockers": [
     {
-      "severity": "blocker",
-      "kind": "missing",
-      "title": "市場風險資料尚未產出",
-      "reason": "records/market-risk/ 沒有可用的有效紀錄。",
-      "nextStep": "依 market-risk 工作流建立可追溯的市場風險紀錄。",
-      "source": null,
-      "asOf": null,
-      "updatedAt": null
+      "severity": "warning",
+      "kind": "stale",
+      "title": "市場風險資料已過期",
+      "reason": "最後有效資料日期為 2026-07-30，不是台北今日 2026-08-02；畫面只會以「過期」呈現。",
+      "nextStep": "依對應工作流產生今日紀錄。",
+      "source": "records/market-risk/2026-07-30-v01.md",
+      "asOf": "2026-07-30 07:10（Asia/Taipei；回溯資訊截止）",
+      "updatedAt": "2026-08-02T13:37:02.003Z"
+    },
+    {
+      "severity": "warning",
+      "kind": "stale",
+      "title": "晨報已過期",
+      "reason": "最後有效資料日期為 2026-07-30，不是台北今日 2026-08-02；畫面只會以「過期」呈現。",
+      "nextStep": "依對應工作流產生今日紀錄。",
+      "source": "records/daily-briefs/2026-07-30-v02.md",
+      "asOf": "2026-07-30 07:10（Asia/Taipei；回溯資訊截止）",
+      "updatedAt": "2026-08-02T13:37:01.903Z"
     }
   ]
 }
