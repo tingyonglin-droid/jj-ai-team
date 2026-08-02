@@ -22,6 +22,7 @@ export function DashboardShell({
         </div>
         <nav aria-label="主要導覽">
           <Link href="/">今日總覽</Link>
+          <Link href="/briefs">晨報全文</Link>
           <Link href="/employees">AI 員工</Link>
           <Link href="/approvals">待核准中心</Link>
         </nav>

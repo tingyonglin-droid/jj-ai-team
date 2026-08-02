@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { readFileSync } from "node:fs";
 import { renderToStaticMarkup } from "react-dom/server";
-import type { DashboardSnapshot } from "../lib/dashboard-types";
+import type { DashboardBriefDocument, DashboardSnapshot } from "../lib/dashboard-types";
 import {
   ApprovalCenter,
   EmployeeDirectory,
@@ -97,4 +97,37 @@ test("待核准中心只呈現真實待決定事項", () => {
   assert.match(approvalHtml, /成果類型：風險方法/);
   assert.match(approvalHtml, /成果類型：App 規格/);
   assert.match(approvalHtml, /此類型目前沒有待核准成果/);
+});
+
+test("首頁晨報卡提供對應日期的全文入口", () => {
+  const document: DashboardBriefDocument = {
+    id: snapshot.brief?.source ?? "records/daily-briefs/2026-07-30-v02.md",
+    date: "2026-07-30",
+    version: 2,
+    versionLabel: "v02",
+    isLatest: true,
+    title: snapshot.brief?.title ?? "晨報",
+    summary: snapshot.brief?.summary ?? "摘要",
+    freshness: snapshot.brief?.freshness ?? "過期",
+    artifactStatus: snapshot.brief?.artifactStatus ?? "待核准",
+    rawStatus: snapshot.brief?.rawStatus ?? "待核准",
+    source: snapshot.brief?.source ?? "records/daily-briefs/2026-07-30-v02.md",
+    asOf: snapshot.brief?.asOf ?? "2026-07-30 07:00（Asia/Taipei，UTC+8）",
+    updatedAt: snapshot.brief?.updatedAt ?? "2026-07-30T00:00:00.000Z",
+    dependencies: snapshot.brief?.dependencies ?? [],
+    blocks: [],
+  };
+  const html = renderToStaticMarkup(
+    <TodayOverview snapshot={{ ...snapshot, briefArchive: [document] }} />,
+  );
+
+  assert.match(html, /href="\/briefs\/2026-07-30"/);
+  assert.match(html, />查看全文</);
+});
+
+test("待核准中心只有晨報項目提供全文入口", () => {
+  const html = renderToStaticMarkup(<ApprovalCenter approvals={snapshot.approvals} />);
+
+  assert.match(html, /href="\/briefs\/2026-07-30"/);
+  assert.equal((html.match(/>查看全文</g) ?? []).length, 1);
 });

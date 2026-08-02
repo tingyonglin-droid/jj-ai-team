@@ -46,6 +46,10 @@ export function EmptyState({
 }
 
 export function TodayOverview({ snapshot }: { snapshot: DashboardSnapshot }) {
+  const briefDocument = snapshot.brief
+    ? snapshot.briefArchive.find((document) => document.source === snapshot.brief?.source)
+    : null;
+
   return (
     <div className="dashboard-sections">
       <div className="page-heading">
@@ -188,6 +192,11 @@ export function TodayOverview({ snapshot }: { snapshot: DashboardSnapshot }) {
                 資料代表時間：{snapshot.brief.asOf}；來源：{snapshot.brief.source}；更新時間：
                 {snapshot.brief.updatedAt}
               </p>
+              {briefDocument ? (
+                <Link href={`/briefs/${briefDocument.date}`} className="text-link">
+                  查看全文
+                </Link>
+              ) : null}
             </article>
           ) : (
             <EmptyState
@@ -416,6 +425,11 @@ export function ApprovalCenter({ approvals }: { approvals: Approval[] }) {
                         ；資料代表時間：{approval.asOf}；更新時間：
                         {approval.updatedAt}；來源：{approval.source}
                       </p>
+                      {approval.type === "晨報" && approval.recordDate ? (
+                        <Link href={`/briefs/${approval.recordDate}`} className="text-link">
+                          查看全文
+                        </Link>
+                      ) : null}
                     </li>
                   ))}
                 </ul>
