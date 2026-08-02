@@ -30,7 +30,13 @@ test("授權失敗時不載入私有 Dashboard 快照", async () => {
 });
 
 test("每個 Dashboard 路由都先授權再載入快照", async () => {
-  for (const returnTo of ["/", "/employees", "/approvals"]) {
+  for (const returnTo of [
+    "/",
+    "/employees",
+    "/approvals",
+    "/briefs",
+    "/briefs/2026-07-30?version=v01",
+  ]) {
     const events: string[] = [];
 
     await loadAuthorizedDashboardSnapshot(
