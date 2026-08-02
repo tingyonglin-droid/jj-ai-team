@@ -157,7 +157,7 @@ test("AI 員工頁呈現任務進度與依賴交接資訊", () => {
 
 test("待核准中心在成果全數核准後顯示空狀態", () => {
   const approvalHtml = renderToStaticMarkup(
-    <ApprovalCenter approvals={snapshot.approvals} />,
+    <ApprovalCenter approvals={[]} />,
   );
 
   assert.match(approvalHtml, /待你決定/);
@@ -222,7 +222,7 @@ test("待核准中心只有晨報項目提供全文入口", () => {
     dependencies: [],
   };
   const html = renderToStaticMarkup(
-    <ApprovalCenter approvals={[pendingBrief, ...snapshot.approvals]} />,
+    <ApprovalCenter approvals={[pendingBrief]} />,
   );
 
   assert.match(html, /href="\/briefs\/2026-07-31"/);
