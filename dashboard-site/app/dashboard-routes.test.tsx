@@ -79,20 +79,17 @@ test("AI 員工頁呈現任務進度與依賴交接資訊", () => {
   assert.match(employeeHtml, /來源/);
 });
 
-test("待核准中心排除已核准晨報，只呈現仍待決定事項", () => {
+test("待核准中心在成果全數核准後顯示空狀態", () => {
   const approvalHtml = renderToStaticMarkup(
     <ApprovalCenter approvals={snapshot.approvals} />,
   );
 
   assert.match(approvalHtml, /待你決定/);
+  assert.match(approvalHtml, /目前沒有待核准事項/);
   assert.match(approvalHtml, /成果類型：晨報/);
   assert.doesNotMatch(approvalHtml, /records\/daily-briefs\//);
-  assert.match(approvalHtml, /records\/market-risk\/2026-07-30-v01.md/);
-  assert.match(approvalHtml, /紀錄日期：2026-07-30/);
-  assert.doesNotMatch(approvalHtml, /生效日期/);
-  assert.doesNotMatch(approvalHtml, /建立時間：2026-07-30T00:00:00\+08:00/);
-  assert.match(approvalHtml, /資料代表時間/);
-  assert.match(approvalHtml, /負責角色：總經研究員/);
+  assert.doesNotMatch(approvalHtml, /records\/market-risk\//);
+  assert.doesNotMatch(approvalHtml, /<strong>待決定：<\/strong>/);
   assert.match(approvalHtml, /成果類型：Threads/);
   assert.match(approvalHtml, /成果類型：IG/);
   assert.match(approvalHtml, /成果類型：風險方法/);

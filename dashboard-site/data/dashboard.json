@@ -1,25 +1,7 @@
 {
-  "generatedAt": "2026-08-02T15:07:07.433Z",
+  "generatedAt": "2026-08-02T15:15:04.554Z",
   "date": "2026-08-02",
-  "approvals": [
-    {
-      "id": "records/market-risk/2026-07-30-v01.md",
-      "title": "市場風險報告｜2026-07-30-v01",
-      "type": "市場風險報告",
-      "owner": "總經研究員",
-      "status": "待核准",
-      "artifactStatus": "待核准",
-      "rawStatus": "待核准",
-      "summary": "市場風險報告｜2026-07-30-v01",
-      "decision": "是否接受 65 分、+5 事件調整、資料完整度 78 與首日影子紀錄；不代表啟用排程或投資操作",
-      "source": "records/market-risk/2026-07-30-v01.md",
-      "asOf": "2026-07-30 07:10（Asia/Taipei；回溯資訊截止）",
-      "createdAt": null,
-      "recordDate": "2026-07-30",
-      "updatedAt": "2026-08-02 21:35（Asia/Taipei；人工回溯試跑）",
-      "dependencies": []
-    }
-  ],
+  "approvals": [],
   "employees": [
     {
       "id": "app-designer",
@@ -114,18 +96,23 @@
       "updatedAt": "2026-08-02"
     },
     {
-      "id": "records/market-risk/2026-07-30-v01.md",
-      "title": "市場風險報告｜2026-07-30-v01",
-      "owner": "總經研究員",
-      "ownerId": "macro-researcher",
-      "status": "待核准",
-      "artifactStatus": "待核准",
-      "rawStatus": "待核准",
-      "nextStep": "等待使用者核准",
-      "dependencies": [],
-      "source": "records/market-risk/2026-07-30-v01.md",
-      "asOf": "2026-07-30 07:10（Asia/Taipei；回溯資訊截止）",
-      "updatedAt": "2026-08-02 21:35（Asia/Taipei；人工回溯試跑）"
+      "id": "records/decisions/2026-08-02-approve-2026-07-30-market-risk-indicator.md",
+      "title": "核准 2026-07-30 市場風險指標",
+      "owner": "總司令",
+      "ownerId": "commander",
+      "status": "已完成",
+      "artifactStatus": "已核准",
+      "rawStatus": null,
+      "nextStep": "依紀錄保留結果並追蹤後續",
+      "dependencies": [
+        "records/market-risk/2026-07-30-v01.md",
+        "records/market-risk/2026-07-30-v02.md",
+        "records/daily-briefs/2026-07-30-v03.md",
+        "workflows/market-risk.md"
+      ],
+      "source": "records/decisions/2026-08-02-approve-2026-07-30-market-risk-indicator.md",
+      "asOf": "2026-08-02",
+      "updatedAt": "2026-08-02"
     }
   ],
   "briefArchive": [
@@ -3550,12 +3537,12 @@
     "dependencies": []
   },
   "marketRisk": {
-    "label": "市場風險報告｜2026-07-30-v01",
+    "label": "市場風險報告｜2026-07-30-v02",
     "freshness": "過期",
-    "artifactStatus": "待核准",
-    "rawStatus": "待核准",
+    "artifactStatus": "已核准",
+    "rawStatus": "已核准",
     "asOf": "2026-07-30 07:10（Asia/Taipei；回溯資訊截止）",
-    "source": "records/market-risk/2026-07-30-v01.md",
+    "source": "records/market-risk/2026-07-30-v02.md",
     "updatedAt": "2026-08-02 21:35（Asia/Taipei；人工回溯試跑）",
     "dependencies": [],
     "score": 65,
@@ -3580,7 +3567,7 @@
       "title": "市場風險資料已過期",
       "reason": "最後有效資料日期為 2026-07-30，不是台北今日 2026-08-02；畫面只會以「過期」呈現。",
       "nextStep": "依對應工作流產生今日紀錄。",
-      "source": "records/market-risk/2026-07-30-v01.md",
+      "source": "records/market-risk/2026-07-30-v02.md",
       "asOf": "2026-07-30 07:10（Asia/Taipei；回溯資訊截止）",
       "updatedAt": "2026-08-02 21:35（Asia/Taipei；人工回溯試跑）"
     },
