@@ -27,6 +27,7 @@ type MarkdownRecord = {
   content: string;
   relativePath: string;
   updatedAt: string;
+  sortAt: string;
   definition: SourceDefinition | null;
   identity: string;
   version: number;
@@ -45,7 +46,12 @@ type WorkflowSource = {
   firstStep: string | null;
 };
 
-type SourceUpdatedAtResolver = (relativePath: string, content: string) => Promise<string>;
+type SourceTimestamps = {
+  updatedAt: string;
+  sortAt: string;
+};
+
+type SourceUpdatedAtResolver = (relativePath: string, content: string) => Promise<SourceTimestamps>;
 
 type ValidRecord = MarkdownRecord & {
   title: string;
@@ -196,16 +202,21 @@ function gitOutput(root: string, arguments_: string[]) {
 function sourceUpdatedAtResolver(root: string): SourceUpdatedAtResolver {
   const repositoryRoot = gitOutput(root, ["rev-parse", "--show-toplevel"]);
   const canReadGitMetadata =
-    repositoryRoot !== null && path.resolve(repositoryRoot) === path.resolve(root);
+    repositoryRoot !== null && gitOutput(root, ["rev-parse", "--show-prefix"]) === null;
+
+  if (canReadGitMetadata && gitOutput(root, ["rev-parse", "--is-shallow-repository"]) === "true") {
+    throw new Error("產生 Dashboard 快照需要完整 Git 歷史，淺層複本無法可靠判定來源更新順序。");
+  }
 
   return async (relativePath, content) => {
     const explicit = explicitSourceUpdatedAt(content);
-    if (explicit) return explicit;
-
     const gitUpdatedAt = canReadGitMetadata
       ? gitOutput(root, ["log", "-1", "--format=%cI", "--", relativePath])
       : null;
-    return sourceUpdatedAt(content, relativePath, gitUpdatedAt);
+    return {
+      updatedAt: sourceUpdatedAt(content, relativePath, gitUpdatedAt),
+      sortAt: gitUpdatedAt ?? dateFrom(explicit) ?? filenameDate(relativePath) ?? "",
+    };
   };
 }
 
@@ -258,10 +269,11 @@ async function markdownRecords(
         const content = await readFile(absolutePath, "utf8");
         const definitionId = definition?.id ?? relativeDirectory;
         const { identity, version } = identityAndVersion(definitionId, relativePath);
+        const timestamps = await updatedAtFor(relativePath, content);
         return {
           content,
           relativePath,
-          updatedAt: await updatedAtFor(relativePath, content),
+          ...timestamps,
           definition,
           identity,
           version,
@@ -289,12 +301,13 @@ async function employeesFromRoles(
         const relativePath = normalizeRelativePath(path.join("roles", entry.name, "ROLE.md"));
         try {
           const content = await readFile(path.join(root, relativePath), "utf8");
+          const timestamps = await updatedAtFor(relativePath, content);
           return {
             id: entry.name,
             name: firstHeading(content) ?? entry.name,
             handoff: sectionText(content, "交接對象") || "尚未記載",
             relativePath,
-            updatedAt: await updatedAtFor(relativePath, content),
+            updatedAt: timestamps.updatedAt,
           };
         } catch (error: unknown) {
           if ((error as NodeJS.ErrnoException).code === "ENOENT") return null;
@@ -536,7 +549,7 @@ function newestWorkFirst(left: ValidRecord, right: ValidRecord) {
   return (
     right.representativeDate.localeCompare(left.representativeDate) ||
     right.version - left.version ||
-    right.updatedAt.localeCompare(left.updatedAt) ||
+    right.sortAt.localeCompare(left.sortAt) ||
     right.relativePath.localeCompare(left.relativePath)
   );
 }

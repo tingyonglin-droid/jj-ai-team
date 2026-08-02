@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T14:42:34.650Z",
+  "generatedAt": "2026-08-02T14:50:47.479Z",
   "date": "2026-08-02",
   "approvals": [
     {
@@ -62,17 +62,19 @@
       "status": "已完成",
       "artifactStatus": "已核准",
       "rawStatus": null,
-      "currentTask": "Threads 成效改採累積數據",
+      "currentTask": "晨間投資風險摘要與每日風險指標方法",
       "progress": "工作狀態：已完成",
       "dependencies": [
-        "records/reviews/2026-07-30-threads-tag-correction-and-snapshot-proposal.md",
-        "records/reviews/2026-07-30-threads-baseline-review.md"
+        "docs/superpowers/specs/2026-07-30-morning-investment-risk-brief-design.md",
+        "docs/risk-score-methodology.md",
+        "workflows/daily-brief.md",
+        "workflows/market-risk.md"
       ],
       "handoff": "向總經研究員交付研究題目，向社群經營員交付已驗證的內容素材，向 App 設計員交付產品問題；將整合成果與決策項交給使用者。",
       "blocker": null,
       "nextStep": "依紀錄保留結果並追蹤後續",
-      "source": "records/decisions/2026-07-30-use-cumulative-threads-metrics.md",
-      "asOf": "2026-07-30",
+      "source": "records/decisions/2026-07-30-morning-risk-brief-method.md",
+      "asOf": "設計核准日；每日自動排程須待實作與驗證完成後另行核准啟用。",
       "updatedAt": "2026-07-30"
     },
     {

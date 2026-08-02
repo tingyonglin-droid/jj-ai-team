@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { execFileSync } from "node:child_process";
 import { mkdtemp, mkdir, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
@@ -17,6 +18,30 @@ async function writeFixture(root: string, relativePath: string, content: string)
   const target = path.join(root, relativePath);
   await mkdir(path.dirname(target), { recursive: true });
   await writeFile(target, content, "utf8");
+}
+
+function git(root: string, arguments_: string[], committedAt?: string) {
+  return execFileSync("git", ["-C", root, ...arguments_], {
+    encoding: "utf8",
+    env: committedAt
+      ? {
+          ...process.env,
+          GIT_AUTHOR_DATE: committedAt,
+          GIT_COMMITTER_DATE: committedAt,
+        }
+      : process.env,
+    stdio: ["ignore", "pipe", "pipe"],
+  }).trim();
+}
+
+function decision(title: string) {
+  return `# ${title}
+
+- 決策日期：2026-07-30
+- 決策者：使用者
+- 決定：採用。
+- 生效日：2026-07-30
+`;
 }
 
 async function writeRoles(root: string) {
@@ -238,6 +263,73 @@ test("更新時間優先使用來源紀錄，再使用 Git 並且不臆造精度
     "2026-07-30",
   );
   assert.equal(sourceUpdatedAt("# 測試角色", "roles/test/ROLE.md", null), "來源未提供更新時間");
+});
+
+test("淺層 Git 複本會拒絕產生快照，避免把邊界提交誤當來源更新時間", async () => {
+  const upstream = await mkdtemp(path.join(tmpdir(), "dashboard-upstream-"));
+  const shallowParent = await mkdtemp(path.join(tmpdir(), "dashboard-shallow-parent-"));
+  const shallow = path.join(shallowParent, "checkout");
+
+  try {
+    git(upstream, ["init"]);
+    git(upstream, ["config", "user.email", "dashboard-test@example.invalid"]);
+    git(upstream, ["config", "user.name", "Dashboard Test"]);
+    await writeRoles(upstream);
+    git(upstream, ["add", "."]);
+    git(upstream, ["commit", "-m", "add roles"], "2026-07-30T13:00:00+08:00");
+    await writeFixture(
+      upstream,
+      "records/decisions/2026-07-30-later.md",
+      decision("較晚決策"),
+    );
+    git(upstream, ["add", "."]);
+    git(upstream, ["commit", "-m", "add decision"], "2026-07-30T17:00:00+08:00");
+
+    execFileSync("git", ["clone", "--depth", "1", `file://${upstream}`, shallow], {
+      stdio: ["ignore", "pipe", "pipe"],
+    });
+
+    await assert.rejects(
+      generateDashboardSnapshot(shallow, new Date("2026-07-30T12:00:00.000Z")),
+      /完整 Git 歷史/,
+    );
+  } finally {
+    await rm(upstream, { recursive: true, force: true });
+    await rm(shallowParent, { recursive: true, force: true });
+  }
+});
+
+test("同日同版本工作以可追溯的 Git 提交時間排序，但顯示來源日期不增加虛構精度", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-git-order-"));
+
+  try {
+    git(root, ["init"]);
+    git(root, ["config", "user.email", "dashboard-test@example.invalid"]);
+    git(root, ["config", "user.name", "Dashboard Test"]);
+    await writeRoles(root);
+    await writeFixture(
+      root,
+      "records/decisions/2026-07-30-older.md",
+      decision("較早決策"),
+    );
+    git(root, ["add", "."]);
+    git(root, ["commit", "-m", "add older decision"], "2026-07-30T13:00:00+08:00");
+    await writeFixture(
+      root,
+      "records/decisions/2026-07-30-later.md",
+      decision("較晚決策"),
+    );
+    git(root, ["add", "."]);
+    git(root, ["commit", "-m", "add later decision"], "2026-07-30T17:00:00+08:00");
+
+    const snapshot = await generateDashboardSnapshot(root, new Date("2026-07-30T12:00:00.000Z"));
+    const commander = snapshot.employees.find((employee) => employee.id === "commander");
+
+    assert.equal(commander?.source, "records/decisions/2026-07-30-later.md");
+    assert.equal(commander?.updatedAt, "2026-07-30");
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
 });
 
 test("用台北日期產生可追溯的任務、員工、摘要與核准欄位", async () => {
