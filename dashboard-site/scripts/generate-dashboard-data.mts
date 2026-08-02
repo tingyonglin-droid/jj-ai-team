@@ -1,4 +1,5 @@
 import { execFileSync } from "node:child_process";
+import { createHash } from "node:crypto";
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import type { Dirent } from "node:fs";
 import path from "node:path";
@@ -89,6 +90,11 @@ const operationalSources: Record<"reviews" | "decisions", { ownerId: string; own
 
 function normalizeRelativePath(relativePath: string) {
   return relativePath.split(path.sep).join("/");
+}
+
+export function artifactContentHash(content: string) {
+  const normalized = content.replace(/\r\n?/g, "\n");
+  return `sha256:${createHash("sha256").update(normalized, "utf8").digest("hex")}`;
 }
 
 function escapeRegExp(value: string) {
@@ -551,6 +557,7 @@ function buildBriefArchive(
       ),
       artifactStatus: record.artifactStatus,
       rawStatus: record.rawStatus ?? record.artifactStatus,
+      artifactHash: artifactContentHash(record.content),
       coveredSessionDate: sessionDateForReportDate(record.representativeDate, calendar),
       blocks: parseBriefMarkdown(record.content),
       source: record.relativePath,
@@ -782,6 +789,8 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
       asOf: record.asOf,
       createdAt: record.createdAt,
       recordDate: record.recordDate,
+      version: record.version,
+      artifactHash: artifactContentHash(record.content),
       updatedAt: record.updatedAt,
       dependencies: record.dependencies,
     }));
@@ -843,6 +852,8 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
           freshness: freshnessFor(briefRecord.representativeDate, expectation),
           artifactStatus: briefRecord.artifactStatus,
           rawStatus: briefRecord.rawStatus ?? briefRecord.artifactStatus,
+          version: briefRecord.version,
+          artifactHash: artifactContentHash(briefRecord.content),
           coveredSessionDate: sessionDateForReportDate(briefRecord.representativeDate, calendar),
           asOf: briefRecord.asOf,
           source: briefRecord.relativePath,
@@ -856,6 +867,8 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
           freshness: freshnessFor(riskRecord.representativeDate, expectation),
           artifactStatus: riskRecord.artifactStatus,
           rawStatus: riskRecord.rawStatus ?? riskRecord.artifactStatus,
+          version: riskRecord.version,
+          artifactHash: artifactContentHash(riskRecord.content),
           coveredSessionDate: sessionDateForReportDate(riskRecord.representativeDate, calendar),
           asOf: riskRecord.asOf,
           source: riskRecord.relativePath,

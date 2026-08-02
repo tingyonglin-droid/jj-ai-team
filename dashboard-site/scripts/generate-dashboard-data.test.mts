@@ -349,6 +349,8 @@ test("用台北日期產生可追溯的任務、員工、摘要與核准欄位",
     assert.equal(approval.owner, "總經研究員");
     assert.equal(approval.createdAt, null);
     assert.equal(approval.recordDate, "2026-07-30");
+    assert.equal(approval.version, 1);
+    assert.match(approval.artifactHash, /^sha256:[a-f0-9]{64}$/);
     assert.equal("effectiveDate" in approval, false);
     assert.equal(approval.asOf, "2026-07-30 12:13（Asia/Taipei，UTC+8）");
     assert.equal(approval.updatedAt, "2026-07-30");
@@ -361,6 +363,8 @@ test("用台北日期產生可追溯的任務、員工、摘要與核准欄位",
     assert.equal(employee?.asOf, task?.asOf);
     assert.equal(employee?.updatedAt, task?.updatedAt);
     assert.equal(snapshot.brief?.source, task?.source);
+    assert.equal(snapshot.brief?.version, approval.version);
+    assert.equal(snapshot.brief?.artifactHash, approval.artifactHash);
     assert.equal(snapshot.brief?.updatedAt, task?.updatedAt);
     assert.deepEqual(snapshot.brief?.dependencies, task?.dependencies);
   } finally {

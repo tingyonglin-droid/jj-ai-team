@@ -11,6 +11,7 @@ async function render(path, email) {
       headers: {
         accept: "text/html",
         "oai-authenticated-user-email": email,
+        "oai-authenticated-user-id": `test-user:${email}`,
       },
     }),
     {

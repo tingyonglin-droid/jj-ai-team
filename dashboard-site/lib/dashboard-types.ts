@@ -49,6 +49,7 @@ export interface DashboardBriefDocument extends TraceableRecord {
   freshness: Freshness;
   artifactStatus: ArtifactStatus;
   rawStatus: string;
+  artifactHash: string;
   coveredSessionDate: string | null;
   blocks: BriefBlock[];
 }
@@ -70,6 +71,8 @@ export interface DashboardSnapshot {
       decision: string;
       createdAt: string | null;
       recordDate: string | null;
+      version: number;
+      artifactHash: string;
     }
   >;
   employees: Array<
@@ -97,6 +100,8 @@ export interface DashboardSnapshot {
         freshness: Freshness;
         artifactStatus: ArtifactStatus;
         rawStatus: string;
+        version: number;
+        artifactHash: string;
         coveredSessionDate: string | null;
       })
     | null;
@@ -106,6 +111,8 @@ export interface DashboardSnapshot {
         freshness: Freshness;
         artifactStatus: ArtifactStatus;
         rawStatus: string;
+        version: number;
+        artifactHash: string;
         coveredSessionDate: string | null;
         score: number;
         baseline: number;

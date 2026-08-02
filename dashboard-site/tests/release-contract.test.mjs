@@ -53,6 +53,9 @@ test("標準測試指令涵蓋帳號、快照、頁面與正式輸出驗收", as
   assert.match(testCommand, /brief-content\.test\.ts/);
   assert.match(testCommand, /brief-components\.test\.tsx/);
   assert.match(testCommand, /approval-store\.test\.ts/);
+  assert.match(testCommand, /approval-events\.test\.ts/);
+  assert.match(testCommand, /approval-handler\.test\.ts/);
+  assert.match(testCommand, /runtime-env\.test\.ts/);
   assert.match(testCommand, /generate-dashboard-data\.test\.mts/);
   assert.match(testCommand, /typecheck/);
   assert.match(testCommand, /npm run build/);

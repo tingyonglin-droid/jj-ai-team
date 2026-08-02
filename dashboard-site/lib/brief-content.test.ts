@@ -88,6 +88,7 @@ function makeDocument(
     freshness: "最新",
     artifactStatus: "草稿",
     rawStatus: "草稿",
+    artifactHash: "sha256:test-brief",
     coveredSessionDate: "2026-07-31",
     blocks: [],
     source: "test",

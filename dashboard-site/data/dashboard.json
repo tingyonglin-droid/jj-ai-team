@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T16:07:50.740Z",
+  "generatedAt": "2026-08-02T16:24:23.918Z",
   "date": "2026-08-03",
   "expectation": {
     "dashboardDate": "2026-08-03",
@@ -97,6 +97,7 @@
       "freshness": "待更新",
       "artifactStatus": "已核准",
       "rawStatus": "已核准",
+      "artifactHash": "sha256:625f4e8ab3104dfa47fe73f179845000a3538bdbc220debee52777b557d1518f",
       "coveredSessionDate": "2026-07-29",
       "blocks": [
         {
@@ -1512,6 +1513,7 @@
       "freshness": "歷史版本",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
+      "artifactHash": "sha256:d9cc021a43bc28a067ef237a986842fd1f5971e812190d54fc4175f0efcd9cfc",
       "coveredSessionDate": "2026-07-29",
       "blocks": [
         {
@@ -2921,6 +2923,7 @@
       "freshness": "歷史版本",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
+      "artifactHash": "sha256:23ffc8e4c8e1f44628e4c905a1a8dc7519e4e800d3b562dff274ca897bf54634",
       "coveredSessionDate": "2026-07-29",
       "blocks": [
         {
@@ -3504,6 +3507,8 @@
     "freshness": "待更新",
     "artifactStatus": "已核准",
     "rawStatus": "已核准",
+    "version": 3,
+    "artifactHash": "sha256:625f4e8ab3104dfa47fe73f179845000a3538bdbc220debee52777b557d1518f",
     "coveredSessionDate": "2026-07-29",
     "asOf": "2026-07-30 07:10（Asia/Taipei；回溯資訊截止）",
     "source": "records/daily-briefs/2026-07-30-v03.md",
@@ -3515,6 +3520,8 @@
     "freshness": "待更新",
     "artifactStatus": "已核准",
     "rawStatus": "已核准",
+    "version": 2,
+    "artifactHash": "sha256:ddc2b3a423872bfaac3bbb42b1e4669d8e2e355069d73819e10fa9cdb17fc11e",
     "coveredSessionDate": "2026-07-29",
     "asOf": "2026-07-30 07:10（Asia/Taipei；回溯資訊截止）",
     "source": "records/market-risk/2026-07-30-v02.md",
