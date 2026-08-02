@@ -52,26 +52,31 @@ test("標準測試指令涵蓋帳號、快照、頁面與正式輸出驗收", as
   assert.match(testCommand, /dashboard-routes\.test\.tsx/);
   assert.match(testCommand, /brief-content\.test\.ts/);
   assert.match(testCommand, /brief-components\.test\.tsx/);
+  assert.match(testCommand, /approval-store\.test\.ts/);
   assert.match(testCommand, /generate-dashboard-data\.test\.mts/);
   assert.match(testCommand, /typecheck/);
   assert.match(testCommand, /npm run build/);
   assert.match(testCommand, /rendered-html\.test\.mjs/);
 });
 
-test("正式專案不包含 D1 寫入 starter 或未使用的公開素材", async () => {
-  const [packageJsonText, packageLockText, hostingText, viteConfigText] = await Promise.all([
+test("正式專案封裝核准事件 D1 binding 與 migration", async () => {
+  const [packageJsonText, packageLockText, hostingText, viteConfigText, buildPluginText] = await Promise.all([
     readProjectFile("package.json"),
     readProjectFile("package-lock.json"),
     readProjectFile(".openai/hosting.json"),
     readProjectFile("vite.config.ts"),
+    readProjectFile("build/sites-vite-plugin.ts"),
   ]);
   const packageJson = JSON.parse(packageJsonText);
   const hosting = JSON.parse(hostingText);
-  const removedPaths = [
+  const requiredPaths = [
     "db/index.ts",
     "db/schema.ts",
+    "db/approval-store.ts",
     "drizzle.config.ts",
     "drizzle/meta/_journal.json",
+  ];
+  const removedStarterPaths = [
     "examples/d1/app/api/notes/route.ts",
     "examples/d1/db/schema.ts",
     "public/file.svg",
@@ -79,13 +84,17 @@ test("正式專案不包含 D1 寫入 starter 或未使用的公開素材", asyn
     "public/window.svg",
   ];
 
-  assert.equal(packageJson.dependencies?.["drizzle-orm"], undefined);
-  assert.equal(packageJson.devDependencies?.["drizzle-kit"], undefined);
-  assert.equal(packageJson.scripts?.["db:generate"], undefined);
-  assert.doesNotMatch(packageLockText, /drizzle/i);
-  assert.equal("d1" in hosting, false);
-  assert.doesNotMatch(viteConfigText, /d1_databases/i);
-  for (const path of removedPaths) {
+  assert.equal(packageJson.dependencies?.["drizzle-orm"], "0.45.2");
+  assert.equal(packageJson.devDependencies?.["drizzle-kit"], "0.31.10");
+  assert.equal(packageJson.scripts?.["db:generate"], "drizzle-kit generate");
+  assert.match(packageLockText, /drizzle-orm/);
+  assert.equal(hosting.d1, "DB");
+  assert.match(viteConfigText, /d1_databases/);
+  assert.match(buildPluginText, /resolve\(root, "drizzle"\)/);
+  for (const path of requiredPaths) {
+    await access(new URL(path, projectRoot));
+  }
+  for (const path of removedStarterPaths) {
     await assert.rejects(access(new URL(path, projectRoot)), { code: "ENOENT" });
   }
 });
