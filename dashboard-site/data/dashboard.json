@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T22:14:45.626Z",
+  "generatedAt": "2026-08-02T22:53:39.333Z",
   "date": "2026-08-03",
   "expectation": {
     "dashboardDate": "2026-08-03",
@@ -9,6 +9,27 @@
     "reason": "尚未到 07:30 交付門檻，沿用前一個應有報告日。"
   },
   "approvals": [
+    {
+      "id": "records/content/threads/2026-08-03-index-up-risk-not-down-v01.md",
+      "title": "Threads 草稿｜指數上漲，不代表風險下降",
+      "type": "Threads",
+      "owner": "社群經營員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "美股三大指數都上漲，市場風險就下降了嗎？",
+      "decision": "等待使用者決定",
+      "source": "records/content/threads/2026-08-03-index-up-risk-not-down-v01.md",
+      "asOf": "2026-08-03",
+      "createdAt": null,
+      "recordDate": "2026-08-03",
+      "version": 1,
+      "artifactHash": "sha256:185cf04f44e74664872c7319c3a9cedb5cda9084982a50f2735ee0d9f05e22b8",
+      "updatedAt": "2026-08-03",
+      "dependencies": [
+        "records/daily-briefs/2026-08-03-v01.md"
+      ]
+    },
     {
       "id": "records/market-risk/2026-08-03-v01.md",
       "title": "市場風險報告｜2026-08-03-v01",
@@ -147,21 +168,39 @@
       "id": "social-operator",
       "name": "社群經營員",
       "role": "社群經營員",
-      "status": "已完成",
-      "artifactStatus": "已核准並執行",
-      "rawStatus": "已核准並執行（2026-07-30）",
-      "currentTask": "Threads 系列標籤校正與累積成效方案",
-      "progress": "工作狀態：已完成",
-      "dependencies": [],
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "currentTask": "Threads 草稿｜指數上漲，不代表風險下降",
+      "progress": "等待人工核准",
+      "dependencies": [
+        "records/daily-briefs/2026-08-03-v01.md"
+      ],
       "handoff": "研究疑問退回總經研究員；成果與實驗交總司令驗收；最終語氣、個人觀點、發布與互動交使用者。",
       "blocker": null,
-      "nextStep": "依紀錄保留結果並追蹤後續",
-      "source": "records/reviews/2026-07-30-threads-tag-correction-and-snapshot-proposal.md",
-      "asOf": "2026-07-30",
-      "updatedAt": "2026-07-30"
+      "nextStep": "等待使用者核准",
+      "source": "records/content/threads/2026-08-03-index-up-risk-not-down-v01.md",
+      "asOf": "2026-08-03",
+      "updatedAt": "2026-08-03"
     }
   ],
   "tasks": [
+    {
+      "id": "records/content/threads/2026-08-03-index-up-risk-not-down-v01.md",
+      "title": "Threads 草稿｜指數上漲，不代表風險下降",
+      "owner": "社群經營員",
+      "ownerId": "social-operator",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [
+        "records/daily-briefs/2026-08-03-v01.md"
+      ],
+      "source": "records/content/threads/2026-08-03-index-up-risk-not-down-v01.md",
+      "asOf": "2026-08-03",
+      "updatedAt": "2026-08-03"
+    },
     {
       "id": "records/market-risk/2026-08-03-v01.md",
       "title": "市場風險報告｜2026-08-03-v01",
