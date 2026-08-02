@@ -197,21 +197,40 @@ export function TodayOverview({ snapshot }: { snapshot: DashboardSnapshot }) {
             />
           )}
           {snapshot.marketRisk ? (
-            <article>
+            <article className="risk-summary-card">
               <div className="card-heading">
                 <p className="item-meta">市場風險</p>
-                <StatusBadge status={snapshot.marketRisk.freshness} />
+                <div className="risk-card-badges">
+                  {snapshot.marketRisk.experimental ? (
+                    <StatusBadge status="warning" label="實驗性指標" />
+                  ) : null}
+                  <StatusBadge status={snapshot.marketRisk.freshness} />
+                </div>
               </div>
               <h3>{snapshot.marketRisk.label}</h3>
               {snapshot.marketRisk.freshness === "過期" ? (
                 <p className="warning-text">此為最後有效紀錄，不是今日資料。</p>
               ) : null}
-              <p>
-                資料完整度：
-                {snapshot.marketRisk.completeness === null
-                  ? "尚未記載"
-                  : `${snapshot.marketRisk.completeness}%`}
-              </p>
+              <div className="risk-score-panel">
+                <div>
+                  <p className="risk-score-label">1–4 週風險</p>
+                  <p className="risk-score-value">{snapshot.marketRisk.score}<span>／100</span></p>
+                  <p className="risk-score-change">
+                    單日變動：{snapshot.marketRisk.dailyChange === null
+                      ? "尚無前值"
+                      : `${snapshot.marketRisk.dailyChange >= 0 ? "+" : ""}${snapshot.marketRisk.dailyChange}`}
+                  </p>
+                </div>
+                <dl className="risk-score-details">
+                  <div><dt>基準分</dt><dd>{snapshot.marketRisk.baseline}</dd></div>
+                  <div><dt>事件調整</dt><dd>{snapshot.marketRisk.eventAdjustment >= 0 ? "+" : ""}{snapshot.marketRisk.eventAdjustment}</dd></div>
+                  <div><dt>資料完整度</dt><dd>{snapshot.marketRisk.completeness}%</dd></div>
+                  <div><dt>AI 信心</dt><dd>{snapshot.marketRisk.confidence}%</dd></div>
+                </dl>
+              </div>
+              <p><strong>即時風險：</strong>{snapshot.marketRisk.immediateRisk}</p>
+              <p><strong>結構性風險：</strong>{snapshot.marketRisk.structuralRisk}</p>
+              <p><strong>主要風險：</strong>{snapshot.marketRisk.topRisks.join("、")}</p>
               <p>
                 依賴：
                 {snapshot.marketRisk.dependencies.length > 0

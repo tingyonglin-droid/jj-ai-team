@@ -27,6 +27,45 @@ test("今日總覽優先呈現需決定事項，並排除未核准行動", () =>
   assert.doesNotMatch(todayHtml, /一鍵發布|買進|賣出/);
 });
 
+test("今日總覽呈現可解釋的實驗性風險指標與三種期限", () => {
+  const riskSnapshot: DashboardSnapshot = {
+    ...snapshot,
+    marketRisk: {
+      label: "市場風險報告｜2026-07-30-v01",
+      freshness: "今日",
+      artifactStatus: "待核准",
+      rawStatus: "待核准",
+      score: 65,
+      baseline: 55,
+      eventAdjustment: 10,
+      dailyChange: null,
+      immediateRisk: "1–3 個交易日留意能源衝擊",
+      structuralRisk: "1–2 季留意資本支出回報",
+      topRisks: ["能源衝擊", "長端利率", "市場廣度"],
+      confidence: 72,
+      completeness: 82,
+      experimental: true,
+      source: "records/market-risk/2026-07-30-v01.md",
+      asOf: "2026-07-30 17:30（Asia/Taipei，UTC+8）",
+      updatedAt: "2026-07-30T09:30:00.000Z",
+      dependencies: ["records/daily-briefs/2026-07-30-v02.md"],
+    },
+  };
+
+  const todayHtml = renderToStaticMarkup(<TodayOverview snapshot={riskSnapshot} />);
+
+  assert.match(todayHtml, /實驗性指標/);
+  assert.match(todayHtml, /1–4 週風險/);
+  assert.match(todayHtml, /65/);
+  assert.match(todayHtml, /基準分/);
+  assert.match(todayHtml, /事件調整/);
+  assert.match(todayHtml, /即時風險/);
+  assert.match(todayHtml, /結構性風險/);
+  assert.match(todayHtml, /資料完整度[\s\S]*82%/);
+  assert.match(todayHtml, /AI 信心[\s\S]*72%/);
+  assert.match(todayHtml, /records\/market-risk\/2026-07-30-v01.md/);
+});
+
 test("AI 員工頁呈現任務進度與依賴交接資訊", () => {
   const employeeHtml = renderToStaticMarkup(
     <EmployeeDirectory employees={snapshot.employees} />,

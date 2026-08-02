@@ -357,6 +357,63 @@ h3 {
   font-size: 0.84rem;
 }
 
+.risk-card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: flex-end;
+}
+
+.risk-score-panel {
+  display: grid;
+  grid-template-columns: minmax(8rem, 0.8fr) minmax(12rem, 1.2fr);
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 0.55rem;
+  background: white;
+}
+
+.risk-score-label,
+.risk-score-change {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.risk-score-value {
+  margin: 0.15rem 0;
+  color: var(--navy);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.risk-score-value span {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.risk-score-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin: 0;
+}
+
+.risk-score-details dt {
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.risk-score-details dd {
+  margin: 0.1rem 0 0;
+  color: var(--navy);
+  font-weight: 800;
+}
+
 .employee-card dl {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -426,6 +483,10 @@ h3 {
   .summary-grid,
   .employee-directory,
   .employee-card dl {
+    grid-template-columns: 1fr;
+  }
+
+  .risk-score-panel {
     grid-template-columns: 1fr;
   }
 }
