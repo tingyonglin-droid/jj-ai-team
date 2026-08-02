@@ -5,12 +5,20 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { parseBriefMarkdown } from "../lib/brief-content.ts";
+import {
+  loadMarketCalendar,
+  resolveReportExpectation,
+  sessionDateForReportDate,
+  type MarketCalendar,
+  type ReportExpectation,
+} from "../lib/market-calendar.ts";
 import type {
   ApprovalType,
   ArtifactStatus,
   DashboardSnapshot,
   DashboardTask,
   WorkStatus,
+  Freshness,
 } from "../lib/dashboard-types.ts";
 
 type SourceDefinition = {
@@ -141,17 +149,6 @@ function toWorkStatus(status: ArtifactStatus): WorkStatus {
     case "已核准並執行":
       return "已完成";
   }
-}
-
-function dateInTaipei(now: Date) {
-  const parts = new Intl.DateTimeFormat("en-CA", {
-    timeZone: "Asia/Taipei",
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-  }).formatToParts(now);
-  const values = Object.fromEntries(parts.map((part) => [part.type, part.value]));
-  return `${values.year}-${values.month}-${values.day}`;
 }
 
 function dateFrom(value: string | null) {
@@ -502,15 +499,33 @@ function selectLatestEffective(records: MarkdownRecord[]) {
   return { validRecords, issues };
 }
 
+export function freshnessFor(
+  recordDate: string,
+  expectation: ReportExpectation,
+  isHistorical = false,
+): Freshness {
+  if (isHistorical) return "歷史版本";
+  if (expectation.phase === "blocked") return "受阻";
+  if (recordDate !== expectation.expectedReportDate) return "待更新";
+  return expectation.phase === "carry_forward" || expectation.phase === "before_cutoff"
+    ? "沿用最近交易日"
+    : "最新";
+}
+
 function buildBriefArchive(
   records: MarkdownRecord[],
-  dashboardDate: string,
+  expectation: ReportExpectation,
+  calendar: MarketCalendar,
 ): DashboardSnapshot["briefArchive"] {
   const validRecords = records.flatMap((record) => {
     const validation = validateRecord(record);
     return validation.valid ? [validation.record] : [];
   });
   const latestVersionByDate = new Map<string, number>();
+  const latestRecordDate = validRecords.reduce(
+    (latest, record) => record.representativeDate > latest ? record.representativeDate : latest,
+    "",
+  );
 
   for (const record of validRecords) {
     const latestVersion = latestVersionByDate.get(record.representativeDate);
@@ -528,9 +543,15 @@ function buildBriefArchive(
       isLatest: record.version === latestVersionByDate.get(record.representativeDate),
       title: record.title,
       summary: summaryFrom(record.content),
-      freshness: record.representativeDate === dashboardDate ? "今日" : "過期",
+      freshness: freshnessFor(
+        record.representativeDate,
+        expectation,
+        record.representativeDate !== latestRecordDate ||
+          record.version !== latestVersionByDate.get(record.representativeDate),
+      ),
       artifactStatus: record.artifactStatus,
       rawStatus: record.rawStatus ?? record.artifactStatus,
+      coveredSessionDate: sessionDateForReportDate(record.representativeDate, calendar),
       blocks: parseBriefMarkdown(record.content),
       source: record.relativePath,
       asOf: record.asOf,
@@ -658,17 +679,17 @@ function missingSummaryIssue(
   };
 }
 
-function staleIssue(
+function pendingUpdateIssue(
   label: string,
   record: ValidRecord,
-  dashboardDate: string,
+  expectation: ReportExpectation,
 ): DashboardSnapshot["blockers"][number] {
   return {
     severity: "warning",
-    kind: "stale",
-    title: `${label}已過期`,
-    reason: `最後有效資料日期為 ${record.representativeDate}，不是台北今日 ${dashboardDate}；畫面只會以「過期」呈現。`,
-    nextStep: "依對應工作流產生今日紀錄。",
+    kind: "pending_update",
+    title: `${label}待更新`,
+    reason: `目前應有報告日為 ${expectation.expectedReportDate ?? "無法判定"}，最後有效資料日期為 ${record.representativeDate}。`,
+    nextStep: "依對應工作流產生應有交易日紀錄。",
     source: record.relativePath,
     asOf: record.asOf,
     updatedAt: record.updatedAt,
@@ -689,11 +710,14 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
     markdownRecords(root, "records/reviews", null, updatedAtFor),
     markdownRecords(root, "records/decisions", null, updatedAtFor),
   ]);
-  const dashboardDate = dateInTaipei(now);
+  const calendar = loadMarketCalendar();
+  const expectation = resolveReportExpectation(now, calendar);
+  const dashboardDate = expectation.dashboardDate;
   const dailyBriefIndex = definitions.findIndex((definition) => definition.id === "daily-brief");
   const briefArchive = buildBriefArchive(
     dailyBriefIndex >= 0 ? artifactRecordSets[dailyBriefIndex] : [],
-    dashboardDate,
+    expectation,
+    calendar,
   );
   const allRecords = [...artifactRecordSets.flat(), ...reviews, ...decisions];
   const { validRecords, issues } = selectLatestEffective(allRecords);
@@ -767,12 +791,25 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
   const parsedRisk = riskRecord ? riskDetails(riskRecord) : null;
   const blockers = [...issues];
 
+  if (expectation.phase === "blocked") {
+    blockers.push({
+      severity: "blocker",
+      kind: "calendar",
+      title: "交易日曆設定受阻",
+      reason: expectation.reason,
+      nextStep: "以 NYSE 官方日曆新增涵蓋年度並重新產生 Dashboard。",
+      source: "dashboard-site/data/nyse-market-calendar.json",
+      asOf: expectation.dashboardDate,
+      updatedAt: calendar.sources[0]?.checkedAt ?? null,
+    });
+  }
+
   if (!briefRecord) {
     blockers.push(
       missingSummaryIssue("晨報尚未產出", "records/daily-briefs", "依 daily-brief 工作流產出並保存晨報。"),
     );
-  } else if (briefRecord.representativeDate !== dashboardDate) {
-    blockers.push(staleIssue("晨報", briefRecord, dashboardDate));
+  } else if (freshnessFor(briefRecord.representativeDate, expectation) === "待更新") {
+    blockers.push(pendingUpdateIssue("晨報", briefRecord, expectation));
   }
 
   if (!riskRecord) {
@@ -783,8 +820,8 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
         "依 market-risk 工作流建立可追溯的市場風險紀錄。",
       ),
     );
-  } else if (riskRecord.representativeDate !== dashboardDate) {
-    blockers.push(staleIssue("市場風險資料", riskRecord, dashboardDate));
+  } else if (freshnessFor(riskRecord.representativeDate, expectation) === "待更新") {
+    blockers.push(pendingUpdateIssue("市場風險資料", riskRecord, expectation));
   }
   if (riskRecord && !parsedRisk) {
     blockers.push(issueFor(riskRecord, "malformed", "風險分數、期限或計算欄位無法重現。"));
@@ -793,6 +830,7 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
   return {
     generatedAt: now.toISOString(),
     date: dashboardDate,
+    expectation,
     approvals,
     employees: employeeSnapshots,
     tasks: currentTasks,
@@ -802,9 +840,10 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
           title: briefRecord.title,
           headline: briefRecord.title,
           summary: summaryFrom(briefRecord.content),
-          freshness: briefRecord.representativeDate === dashboardDate ? "今日" : "過期",
+          freshness: freshnessFor(briefRecord.representativeDate, expectation),
           artifactStatus: briefRecord.artifactStatus,
           rawStatus: briefRecord.rawStatus ?? briefRecord.artifactStatus,
+          coveredSessionDate: sessionDateForReportDate(briefRecord.representativeDate, calendar),
           asOf: briefRecord.asOf,
           source: briefRecord.relativePath,
           updatedAt: briefRecord.updatedAt,
@@ -814,9 +853,10 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
     marketRisk: riskRecord && parsedRisk
       ? {
           label: riskRecord.title,
-          freshness: riskRecord.representativeDate === dashboardDate ? "今日" : "過期",
+          freshness: freshnessFor(riskRecord.representativeDate, expectation),
           artifactStatus: riskRecord.artifactStatus,
           rawStatus: riskRecord.rawStatus ?? riskRecord.artifactStatus,
+          coveredSessionDate: sessionDateForReportDate(riskRecord.representativeDate, calendar),
           asOf: riskRecord.asOf,
           source: riskRecord.relativePath,
           updatedAt: riskRecord.updatedAt,

@@ -1,10 +1,12 @@
+import type { ReportExpectation } from "./market-calendar";
+
 export type WorkStatus = "尚未開始" | "等待中" | "進行中" | "待核准" | "已完成" | "受阻";
 
 export type ArtifactStatus = "草稿" | "待核准" | "已核准" | "退回修訂" | "已核准並執行";
 
 export type ApprovalType = "晨報" | "Threads" | "IG" | "市場風險報告" | "風險方法" | "App 規格";
 
-export type Freshness = "今日" | "過期";
+export type Freshness = "最新" | "沿用最近交易日" | "待更新" | "受阻" | "歷史版本";
 
 export interface TraceableRecord {
   source: string;
@@ -47,12 +49,14 @@ export interface DashboardBriefDocument extends TraceableRecord {
   freshness: Freshness;
   artifactStatus: ArtifactStatus;
   rawStatus: string;
+  coveredSessionDate: string | null;
   blocks: BriefBlock[];
 }
 
 export interface DashboardSnapshot {
   generatedAt: string;
   date: string;
+  expectation: ReportExpectation;
   approvals: Array<
     TraceableRecord & {
       id: string;
@@ -93,6 +97,7 @@ export interface DashboardSnapshot {
         freshness: Freshness;
         artifactStatus: ArtifactStatus;
         rawStatus: string;
+        coveredSessionDate: string | null;
       })
     | null;
   marketRisk:
@@ -101,6 +106,7 @@ export interface DashboardSnapshot {
         freshness: Freshness;
         artifactStatus: ArtifactStatus;
         rawStatus: string;
+        coveredSessionDate: string | null;
         score: number;
         baseline: number;
         eventAdjustment: number;
@@ -115,7 +121,7 @@ export interface DashboardSnapshot {
     | null;
   blockers: Array<{
     severity: "warning" | "blocker";
-    kind: "missing" | "stale" | "malformed" | "conflict";
+    kind: "missing" | "pending_update" | "malformed" | "conflict" | "calendar" | "sync";
     title: string;
     reason: string;
     nextStep: string;

@@ -68,7 +68,7 @@ export function resolveReportExpectation(
     };
   }
 
-  const coveredSessionDate = sessionForReportDate(taipei.date, calendar);
+  const coveredSessionDate = sessionDateForReportDate(taipei.date, calendar);
   if (coveredSessionDate) {
     return {
       dashboardDate: taipei.date,
@@ -129,14 +129,17 @@ function carryForwardExpectation(
 function previousEligibleReport(beforeDate: string, calendar: MarketCalendar) {
   let reportDate = addDays(beforeDate, -1);
   for (let attempts = 0; attempts < 14; attempts += 1) {
-    const sessionDate = sessionForReportDate(reportDate, calendar);
+    const sessionDate = sessionDateForReportDate(reportDate, calendar);
     if (sessionDate) return { reportDate, sessionDate };
     reportDate = addDays(reportDate, -1);
   }
   throw new Error(`找不到 ${beforeDate} 前 14 天內的有效晨報日。`);
 }
 
-function sessionForReportDate(reportDate: string, calendar: MarketCalendar) {
+export function sessionDateForReportDate(
+  reportDate: string,
+  calendar: MarketCalendar,
+) {
   const weekday = weekdayFor(reportDate);
   if (weekday === 0 || weekday === 6) return null;
   const candidateSessionDate = addDays(reportDate, weekday === 1 ? -3 : -1);

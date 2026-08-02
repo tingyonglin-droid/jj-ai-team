@@ -54,9 +54,10 @@ test("今日總覽呈現可解釋的實驗性風險指標與三種期限", () =>
     ...snapshot,
     marketRisk: {
       label: "市場風險報告｜2026-07-30-v01",
-      freshness: "今日",
+      freshness: "最新",
       artifactStatus: "待核准",
       rawStatus: "待核准",
+      coveredSessionDate: "2026-07-29",
       score: 65,
       baseline: 55,
       eventAdjustment: 10,
@@ -86,6 +87,57 @@ test("今日總覽呈現可解釋的實驗性風險指標與三種期限", () =>
   assert.match(todayHtml, /資料完整度[\s\S]*82%/);
   assert.match(todayHtml, /AI 信心[\s\S]*72%/);
   assert.match(todayHtml, /records\/market-risk\/2026-07-30-v01.md/);
+});
+
+test("資料狀態分開呈現正常沿用、提醒與真正阻擋", () => {
+  const statusSnapshot: DashboardSnapshot = {
+    ...snapshot,
+    expectation: {
+      dashboardDate: "2026-08-02",
+      expectedReportDate: "2026-07-31",
+      coveredSessionDate: "2026-07-30",
+      phase: "carry_forward",
+      reason: "週末不產生例行晨報，沿用最近一個應有報告日。",
+    },
+    brief: snapshot.brief
+      ? {
+          ...snapshot.brief,
+          freshness: "沿用最近交易日",
+          coveredSessionDate: "2026-07-30",
+        }
+      : null,
+    blockers: [
+      {
+        severity: "warning",
+        kind: "pending_update",
+        title: "晨報待更新",
+        reason: "目前應有報告尚未完成。",
+        nextStep: "完成晨報。",
+        source: "records/daily-briefs/2026-07-31-v01.md",
+        asOf: "2026-07-31 07:10（Asia/Taipei，UTC+8）",
+        updatedAt: "2026-07-31",
+      },
+      {
+        severity: "blocker",
+        kind: "malformed",
+        title: "風險分數無法重現",
+        reason: "分數欄位缺失。",
+        nextStep: "建立新版本。",
+        source: "records/market-risk/2026-07-31-v01.md",
+        asOf: "2026-07-31 07:10（Asia/Taipei，UTC+8）",
+        updatedAt: "2026-07-31",
+      },
+    ],
+  };
+
+  const html = renderToStaticMarkup(<TodayOverview snapshot={statusSnapshot} />);
+
+  assert.match(html, /資料狀態/);
+  assert.match(html, /沿用最近交易日/);
+  assert.match(html, /涵蓋美股交易時段：2026-07-30/);
+  assert.match(html, /提醒/);
+  assert.match(html, /阻擋/);
+  assert.doesNotMatch(html, /受阻項目|已過期/);
 });
 
 test("AI 員工頁呈現任務進度與依賴交接資訊", () => {
@@ -128,9 +180,10 @@ test("首頁晨報卡提供對應日期的全文入口", () => {
     isLatest: true,
     title: snapshot.brief?.title ?? "晨報",
     summary: snapshot.brief?.summary ?? "摘要",
-    freshness: snapshot.brief?.freshness ?? "過期",
+    freshness: snapshot.brief?.freshness ?? "待更新",
     artifactStatus: snapshot.brief?.artifactStatus ?? "待核准",
     rawStatus: snapshot.brief?.rawStatus ?? "待核准",
+    coveredSessionDate: snapshot.brief?.coveredSessionDate ?? "2026-07-29",
     source: snapshot.brief?.source ?? "records/daily-briefs/2026-07-30-v02.md",
     asOf: snapshot.brief?.asOf ?? "2026-07-30 07:00（Asia/Taipei，UTC+8）",
     updatedAt: snapshot.brief?.updatedAt ?? "2026-07-30T00:00:00.000Z",

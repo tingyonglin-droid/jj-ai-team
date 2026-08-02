@@ -552,26 +552,77 @@ test("市場風險紀錄解析可重現的風險優先欄位", async () => {
   }
 });
 
-test("過期有效摘要會明示最後有效時間，不會冒充今日", async () => {
+test("週末沿用最近交易日，不把有效晨報列為過期警告", async () => {
   const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
 
   try {
     await writeFixture(
       root,
-      "records/daily-briefs/2026-07-29-v01.md",
+      "records/daily-briefs/2026-07-31-v01.md",
       brief({
-        title: "每日投資晨報｜2026-07-29",
+        title: "每日投資晨報｜2026-07-31",
         status: "已核准",
-        cutoff: "2026-07-29 12:00（Asia/Taipei，UTC+8）",
+        cutoff: "2026-07-31 07:10（Asia/Taipei，UTC+8）",
       }),
     );
 
-    const snapshot = await generateDashboardSnapshot(root, new Date("2026-07-30T04:30:00.000Z"));
+    const snapshot = await generateDashboardSnapshot(root, new Date("2026-08-02T01:00:00.000Z"));
 
-    assert.equal(snapshot.brief?.freshness, "過期");
-    assert.equal(snapshot.brief?.asOf, "2026-07-29 12:00（Asia/Taipei，UTC+8）");
+    assert.equal(snapshot.brief?.freshness, "沿用最近交易日");
+    assert.equal(snapshot.brief?.asOf, "2026-07-31 07:10（Asia/Taipei，UTC+8）");
+    assert.equal(snapshot.brief?.coveredSessionDate, "2026-07-30");
+    assert.equal(snapshot.expectation.expectedReportDate, "2026-07-31");
     assert.equal(snapshot.tasks.length, 0);
-    assert.equal(snapshot.blockers.some((issue) => issue.kind === "stale" && issue.severity === "warning"), true);
+    assert.equal(snapshot.blockers.some((issue) => issue.kind === "pending_update"), false);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("07:30 後缺少應有交易日晨報才顯示待更新", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+
+  try {
+    await writeFixture(
+      root,
+      "records/daily-briefs/2026-07-31-v01.md",
+      brief({
+        title: "每日投資晨報｜2026-07-31",
+        status: "已核准",
+        cutoff: "2026-07-31 07:10（Asia/Taipei，UTC+8）",
+      }),
+    );
+
+    const snapshot = await generateDashboardSnapshot(root, new Date("2026-08-03T00:00:00.000Z"));
+
+    assert.equal(snapshot.brief?.freshness, "待更新");
+    assert.equal(snapshot.expectation.expectedReportDate, "2026-08-03");
+    assert.equal(snapshot.expectation.coveredSessionDate, "2026-07-31");
+    assert.equal(
+      snapshot.blockers.some(
+        (issue) => issue.kind === "pending_update" && issue.severity === "warning",
+      ),
+      true,
+    );
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("交易日曆未涵蓋年度時顯示設定受阻", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+
+  try {
+    await writeRoles(root);
+    const snapshot = await generateDashboardSnapshot(root, new Date("2028-01-03T00:00:00.000Z"));
+
+    assert.equal(snapshot.expectation.phase, "blocked");
+    assert.equal(
+      snapshot.blockers.some(
+        (issue) => issue.kind === "calendar" && issue.severity === "blocker",
+      ),
+      true,
+    );
   } finally {
     await rm(root, { recursive: true, force: true });
   }

@@ -9,6 +9,7 @@ import {
 
 type Approval = DashboardSnapshot["approvals"][number];
 type Employee = DashboardSnapshot["employees"][number];
+type DataIssue = DashboardSnapshot["blockers"][number];
 
 export function StatusBadge({
   status,
@@ -45,10 +46,52 @@ export function EmptyState({
   );
 }
 
+function FreshnessNote({ freshness }: { freshness: Freshness }) {
+  if (freshness === "沿用最近交易日") {
+    return <p className="carry-forward-text">目前是週末、休市日或交付門檻前，正常沿用最近交易日資料。</p>;
+  }
+  if (freshness === "待更新") {
+    return <p className="warning-text">此為最後有效紀錄，應有交易日資料尚待更新。</p>;
+  }
+  if (freshness === "受阻") {
+    return <p className="error-text">交易日或來源設定受阻，暫不判定為最新資料。</p>;
+  }
+  return null;
+}
+
+function DataIssueList({ issues }: { issues: DataIssue[] }) {
+  return (
+    <ul className="blocker-list">
+      {issues.map((issue) => (
+        <li key={`${issue.kind}:${issue.source ?? issue.title}`}>
+          <div className="card-heading">
+            <h4>{issue.title}</h4>
+            <StatusBadge
+              status={issue.severity}
+              label={issue.severity === "warning" ? "提醒" : "阻擋"}
+            />
+          </div>
+          <p>{issue.reason}</p>
+          <p className="source-line">
+            來源：{issue.source ?? "尚未產出"}；資料代表時間：{issue.asOf ?? "尚未產出"}；
+            更新時間：{issue.updatedAt ?? "尚未產出"}
+          </p>
+          <p>
+            <strong>下一步：</strong>
+            {issue.nextStep}
+          </p>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export function TodayOverview({ snapshot }: { snapshot: DashboardSnapshot }) {
   const briefDocument = snapshot.brief
     ? snapshot.briefArchive.find((document) => document.source === snapshot.brief?.source)
     : null;
+  const warnings = snapshot.blockers.filter((issue) => issue.severity === "warning");
+  const blockingIssues = snapshot.blockers.filter((issue) => issue.severity === "blocker");
 
   return (
     <div className="dashboard-sections">
@@ -179,9 +222,7 @@ export function TodayOverview({ snapshot }: { snapshot: DashboardSnapshot }) {
               </div>
               <h3>{snapshot.brief.title}</h3>
               <p>{snapshot.brief.summary}</p>
-              {snapshot.brief.freshness === "過期" ? (
-                <p className="warning-text">此為最後有效紀錄，不是今日資料。</p>
-              ) : null}
+              <FreshnessNote freshness={snapshot.brief.freshness} />
               <p>
                 依賴：
                 {snapshot.brief.dependencies.length > 0
@@ -189,8 +230,9 @@ export function TodayOverview({ snapshot }: { snapshot: DashboardSnapshot }) {
                   : "尚未記載依賴"}
               </p>
               <p className="source-line">
-                資料代表時間：{snapshot.brief.asOf}；來源：{snapshot.brief.source}；更新時間：
-                {snapshot.brief.updatedAt}
+                資料代表時間：{snapshot.brief.asOf}；涵蓋美股交易時段：
+                {snapshot.brief.coveredSessionDate ?? "無法判定"}；來源：{snapshot.brief.source}；
+                更新時間：{snapshot.brief.updatedAt}
               </p>
               {briefDocument ? (
                 <Link href={`/briefs/${briefDocument.date}`} className="text-link">
@@ -217,9 +259,7 @@ export function TodayOverview({ snapshot }: { snapshot: DashboardSnapshot }) {
                 </div>
               </div>
               <h3>{snapshot.marketRisk.label}</h3>
-              {snapshot.marketRisk.freshness === "過期" ? (
-                <p className="warning-text">此為最後有效紀錄，不是今日資料。</p>
-              ) : null}
+              <FreshnessNote freshness={snapshot.marketRisk.freshness} />
               <div className="risk-score-panel">
                 <div>
                   <p className="risk-score-label">1–4 週風險</p>
@@ -247,8 +287,9 @@ export function TodayOverview({ snapshot }: { snapshot: DashboardSnapshot }) {
                   : "尚未記載依賴"}
               </p>
               <p className="source-line">
-                資料代表時間：{snapshot.marketRisk.asOf}；來源：{snapshot.marketRisk.source}；更新時間：
-                {snapshot.marketRisk.updatedAt}
+                資料代表時間：{snapshot.marketRisk.asOf}；涵蓋美股交易時段：
+                {snapshot.marketRisk.coveredSessionDate ?? "無法判定"}；來源：
+                {snapshot.marketRisk.source}；更新時間：{snapshot.marketRisk.updatedAt}
               </p>
             </article>
           ) : (
@@ -261,40 +302,32 @@ export function TodayOverview({ snapshot }: { snapshot: DashboardSnapshot }) {
         </div>
       </section>
 
-      <section aria-labelledby="blockers-heading" className="dashboard-section">
+      <section aria-labelledby="data-status-heading" className="dashboard-section">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">需要處理</p>
-            <h2 id="blockers-heading">受阻項目</h2>
+            <p className="eyebrow">更新與異常</p>
+            <h2 id="data-status-heading">資料狀態</h2>
           </div>
         </div>
         {snapshot.blockers.length > 0 ? (
-          <ul className="blocker-list">
-            {snapshot.blockers.map((blocker) => (
-              <li key={`${blocker.kind}:${blocker.source ?? blocker.title}`}>
-                <div className="card-heading">
-                  <h3>{blocker.title}</h3>
-                  <StatusBadge
-                    status={blocker.severity}
-                    label={blocker.severity === "warning" ? "警告" : "阻擋"}
-                  />
-                </div>
-                <p>{blocker.reason}</p>
-                <p className="source-line">
-                  來源：{blocker.source ?? "尚未產出"}；資料代表時間：{blocker.asOf ?? "尚未產出"}；
-                  更新時間：{blocker.updatedAt ?? "尚未產出"}
-                </p>
-                <p>
-                  <strong>下一步：</strong>
-                  {blocker.nextStep}
-                </p>
-              </li>
-            ))}
-          </ul>
+          <div className="data-status-groups">
+            {warnings.length > 0 ? (
+              <section aria-labelledby="data-warning-heading">
+                <h3 id="data-warning-heading">提醒</h3>
+                <DataIssueList issues={warnings} />
+              </section>
+            ) : null}
+            {blockingIssues.length > 0 ? (
+              <section aria-labelledby="data-blocker-heading">
+                <h3 id="data-blocker-heading">阻擋</h3>
+                <DataIssueList issues={blockingIssues} />
+              </section>
+            ) : null}
+          </div>
         ) : (
           <EmptyState
-            title="目前沒有受阻項目"
-            description="目前的工作紀錄沒有標示阻礙。"
+            title="目前資料狀態正常"
+            description="沒有待更新提醒或阻擋問題。"
             nextStep="持續依工作流更新進度。"
           />
         )}

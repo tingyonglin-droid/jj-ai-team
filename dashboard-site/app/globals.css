@@ -236,16 +236,23 @@ h3 {
   color: var(--amber);
 }
 
-.status-badge[data-status="過期"],
+.status-badge[data-status="待更新"],
 .status-badge[data-status="warning"] {
   background: var(--amber-pale);
   color: var(--amber);
 }
 
 .status-badge[data-status="進行中"],
-.status-badge[data-status="已完成"] {
+.status-badge[data-status="已完成"],
+.status-badge[data-status="最新"] {
   background: var(--teal-pale);
   color: var(--teal);
+}
+
+.status-badge[data-status="沿用最近交易日"],
+.status-badge[data-status="歷史版本"] {
+  background: var(--slate-pale);
+  color: #375060;
 }
 
 .status-badge[data-status="受阻"],
@@ -257,6 +264,21 @@ h3 {
 .warning-text {
   color: var(--amber);
   font-weight: 700;
+}
+
+.carry-forward-text {
+  color: #526b79;
+  font-weight: 700;
+}
+
+.error-text {
+  color: var(--rose);
+  font-weight: 700;
+}
+
+.data-status-groups {
+  display: grid;
+  gap: 1.25rem;
 }
 
 .decision-list,
