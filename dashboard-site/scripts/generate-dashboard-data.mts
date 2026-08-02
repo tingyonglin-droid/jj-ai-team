@@ -3,6 +3,7 @@ import type { Dirent } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { parseBriefMarkdown } from "../lib/brief-content.ts";
 import type {
   ApprovalType,
   ArtifactStatus,
@@ -424,6 +425,49 @@ function selectLatestEffective(records: MarkdownRecord[]) {
   return { validRecords, issues };
 }
 
+function buildBriefArchive(
+  records: MarkdownRecord[],
+  dashboardDate: string,
+): DashboardSnapshot["briefArchive"] {
+  const validRecords = records.flatMap((record) => {
+    const validation = validateRecord(record);
+    return validation.valid ? [validation.record] : [];
+  });
+  const latestVersionByDate = new Map<string, number>();
+
+  for (const record of validRecords) {
+    const latestVersion = latestVersionByDate.get(record.representativeDate);
+    if (latestVersion === undefined || record.version > latestVersion) {
+      latestVersionByDate.set(record.representativeDate, record.version);
+    }
+  }
+
+  return validRecords
+    .map((record): DashboardSnapshot["briefArchive"][number] => ({
+      id: record.relativePath,
+      date: record.representativeDate,
+      version: record.version,
+      versionLabel: `v${String(record.version).padStart(2, "0")}`,
+      isLatest: record.version === latestVersionByDate.get(record.representativeDate),
+      title: record.title,
+      summary: summaryFrom(record.content),
+      freshness: record.representativeDate === dashboardDate ? "今日" : "過期",
+      artifactStatus: record.artifactStatus,
+      rawStatus: record.rawStatus ?? record.artifactStatus,
+      blocks: parseBriefMarkdown(record.content),
+      source: record.relativePath,
+      asOf: record.asOf,
+      updatedAt: record.updatedAt,
+      dependencies: record.dependencies,
+    }))
+    .sort(
+      (left, right) =>
+        right.date.localeCompare(left.date) ||
+        right.version - left.version ||
+        right.source.localeCompare(left.source),
+    );
+}
+
 function newestWorkFirst(left: ValidRecord, right: ValidRecord) {
   return (
     right.representativeDate.localeCompare(left.representativeDate) ||
@@ -564,6 +608,11 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
     markdownRecords(root, "records/decisions", null),
   ]);
   const dashboardDate = dateInTaipei(now);
+  const dailyBriefIndex = definitions.findIndex((definition) => definition.id === "daily-brief");
+  const briefArchive = buildBriefArchive(
+    dailyBriefIndex >= 0 ? artifactRecordSets[dailyBriefIndex] : [],
+    dashboardDate,
+  );
   const allRecords = [...artifactRecordSets.flat(), ...reviews, ...decisions];
   const { validRecords, issues } = selectLatestEffective(allRecords);
   const sortedValidRecords = [...validRecords].sort(newestWorkFirst);
@@ -665,7 +714,7 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
     approvals,
     employees: employeeSnapshots,
     tasks: currentTasks,
-    briefArchive: [],
+    briefArchive,
     brief: briefRecord
       ? {
           title: briefRecord.title,

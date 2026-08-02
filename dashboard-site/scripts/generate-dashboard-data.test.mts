@@ -340,6 +340,79 @@ test("五類成果使用正式來源與中文 owner，舊 v01 待核准會被 v0
   }
 });
 
+test("晨報 archive 保留同日有效版本、標示最新版並略過壞格式版本", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+
+  try {
+    await writeFixture(root, "records/daily-briefs/2026-07-30-v01.md", brief());
+    await writeFixture(
+      root,
+      "records/daily-briefs/2026-07-30-v02.md",
+      `${brief({ title: "每日投資晨報｜2026-07-30 v02" })}
+| 指標 | 數值 |
+|---|---:|
+| 測試 | 1 |
+`,
+    );
+    await writeFixture(
+      root,
+      "records/daily-briefs/2026-07-30-v03.md",
+      brief({ title: "每日投資晨報｜2026-07-30 v03", includeExternalView: false }),
+    );
+
+    const snapshot = await generateDashboardSnapshot(root, new Date("2026-07-30T04:30:00.000Z"));
+
+    assert.deepEqual(
+      snapshot.briefArchive.map(({ date, versionLabel, isLatest }) => ({ date, versionLabel, isLatest })),
+      [
+        { date: "2026-07-30", versionLabel: "v02", isLatest: true },
+        { date: "2026-07-30", versionLabel: "v01", isLatest: false },
+      ],
+    );
+    assert.equal(
+      snapshot.blockers.some((blocker) => blocker.source?.endsWith("2026-07-30-v03.md")),
+      true,
+    );
+    assert.equal(snapshot.briefArchive[0]?.blocks.some((block) => block.type === "table"), true);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("晨報 archive 依日期與版本降冪排列", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+
+  try {
+    await writeFixture(root, "records/daily-briefs/2026-07-30-v01.md", brief());
+    await writeFixture(
+      root,
+      "records/daily-briefs/2026-07-30-v02.md",
+      brief({ title: "每日投資晨報｜2026-07-30 v02" }),
+    );
+    await writeFixture(
+      root,
+      "records/daily-briefs/2026-07-31-v01.md",
+      brief({
+        title: "每日投資晨報｜2026-07-31",
+        cutoff: "2026-07-31 12:13（Asia/Taipei，UTC+8）",
+      }),
+    );
+
+    const snapshot = await generateDashboardSnapshot(root, new Date("2026-07-31T04:30:00.000Z"));
+
+    assert.deepEqual(
+      snapshot.briefArchive.map(({ date, versionLabel, isLatest }) => ({ date, versionLabel, isLatest })),
+      [
+        { date: "2026-07-31", versionLabel: "v01", isLatest: true },
+        { date: "2026-07-30", versionLabel: "v02", isLatest: true },
+        { date: "2026-07-30", versionLabel: "v01", isLatest: false },
+      ],
+    );
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
 test("市場風險紀錄解析可重現的風險優先欄位", async () => {
   const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
 
