@@ -151,4 +151,8 @@ grep -q '不修改.*jj-invest-public\|不得.*jj-invest-public' AGENTS.md || fai
 grep -q '資料缺失.*來源衝突.*停止做出確定結論' AGENTS.md || fail 'AGENTS.md 缺少資料缺失與衝突停止條件'
 pass '核心安全規則存在'
 
+NODE_BIN=${NODE_BIN:-node}
+"$NODE_BIN" --test scripts/validation/validate-morning-risk-records.test.mjs
+pass '晨報與風險紀錄驗證器測試通過'
+
 printf 'ALL CHECKS PASSED\n'
