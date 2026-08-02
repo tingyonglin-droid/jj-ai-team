@@ -6,10 +6,15 @@ import {
   type Freshness,
   type WorkStatus,
 } from "../lib/dashboard-types";
+import { ApprovalAction } from "./approvals/approval-action";
 
 type Approval = DashboardSnapshot["approvals"][number];
 type Employee = DashboardSnapshot["employees"][number];
 type DataIssue = DashboardSnapshot["blockers"][number];
+
+function canApproveInDashboard(approval: Approval) {
+  return approval.type === "晨報" || approval.type === "市場風險報告";
+}
 
 export function StatusBadge({
   status,
@@ -121,7 +126,16 @@ export function TodayOverview({ snapshot }: { snapshot: DashboardSnapshot }) {
                     {approval.updatedAt}
                   </p>
                 </div>
-                <StatusBadge status={approval.status} />
+                <div className="decision-actions">
+                  <StatusBadge status={approval.status} />
+                  {canApproveInDashboard(approval) ? (
+                    <ApprovalAction
+                      artifactId={approval.id}
+                      artifactTitle={approval.title}
+                      version={approval.version}
+                    />
+                  ) : null}
+                </div>
               </li>
             ))}
           </ul>
@@ -462,6 +476,13 @@ export function ApprovalCenter({ approvals }: { approvals: Approval[] }) {
                         <Link href={`/briefs/${approval.recordDate}`} className="text-link">
                           查看全文
                         </Link>
+                      ) : null}
+                      {canApproveInDashboard(approval) ? (
+                        <ApprovalAction
+                          artifactId={approval.id}
+                          artifactTitle={approval.title}
+                          version={approval.version}
+                        />
                       ) : null}
                     </li>
                   ))}

@@ -228,3 +228,55 @@ test("待核准中心只有晨報項目提供全文入口", () => {
   assert.match(html, /href="\/briefs\/2026-07-31"/);
   assert.equal((html.match(/>查看全文</g) ?? []).length, 1);
 });
+
+test("首頁與待核准中心只替晨報及市場風險提供兩段式核准入口", () => {
+  const pendingBrief: DashboardSnapshot["approvals"][number] = {
+    id: "records/daily-briefs/2026-07-31-v01.md",
+    title: "每日投資晨報｜2026-07-31",
+    type: "晨報",
+    owner: "總經研究員",
+    status: "待核准",
+    artifactStatus: "待核准",
+    rawStatus: "待核准",
+    summary: "晨報摘要。",
+    decision: "是否核准晨報內容。",
+    createdAt: null,
+    recordDate: "2026-07-31",
+    version: 1,
+    artifactHash: "sha256:brief-v01",
+    source: "records/daily-briefs/2026-07-31-v01.md",
+    asOf: "2026-07-31 07:00（Asia/Taipei，UTC+8）",
+    updatedAt: "2026-07-31",
+    dependencies: [],
+  };
+  const pendingRisk: DashboardSnapshot["approvals"][number] = {
+    ...pendingBrief,
+    id: "records/market-risk/2026-07-31-v01.md",
+    title: "市場風險報告｜2026-07-31",
+    type: "市場風險報告",
+    summary: "風險摘要。",
+    decision: "是否核准風險指標。",
+    artifactHash: "sha256:risk-v01",
+    source: "records/market-risk/2026-07-31-v01.md",
+  };
+  const pendingThreads: DashboardSnapshot["approvals"][number] = {
+    ...pendingBrief,
+    id: "records/drafts/threads/2026-07-31-v01.md",
+    title: "Threads 草稿",
+    type: "Threads",
+    summary: "社群草稿。",
+    decision: "是否核准草稿。",
+    artifactHash: "sha256:threads-v01",
+    source: "records/drafts/threads/2026-07-31-v01.md",
+  };
+  const approvals = [pendingBrief, pendingRisk, pendingThreads];
+
+  const overviewHtml = renderToStaticMarkup(
+    <TodayOverview snapshot={{ ...snapshot, approvals }} />,
+  );
+  const centerHtml = renderToStaticMarkup(<ApprovalCenter approvals={approvals} />);
+
+  assert.equal((overviewHtml.match(/>核准此版本</g) ?? []).length, 2);
+  assert.equal((centerHtml.match(/>核准此版本</g) ?? []).length, 2);
+  assert.doesNotMatch(centerHtml, /Threads 草稿[\s\S]*?核准此版本[\s\S]*?成果類型：IG/);
+});
