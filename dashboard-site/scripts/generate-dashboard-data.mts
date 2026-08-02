@@ -512,6 +512,9 @@ export function freshnessFor(
 ): Freshness {
   if (isHistorical) return "歷史版本";
   if (expectation.phase === "blocked") return "受阻";
+  if (expectation.phase === "before_cutoff" && recordDate === expectation.dashboardDate) {
+    return "最新";
+  }
   if (recordDate !== expectation.expectedReportDate) return "待更新";
   return expectation.phase === "carry_forward" || expectation.phase === "before_cutoff"
     ? "沿用最近交易日"

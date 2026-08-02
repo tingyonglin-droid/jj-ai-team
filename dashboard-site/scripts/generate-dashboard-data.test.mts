@@ -583,6 +583,31 @@ test("週末沿用最近交易日，不把有效晨報列為過期警告", async
   }
 });
 
+test("07:30 前當日晨報已完成時直接顯示最新，不產生待更新警告", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+
+  try {
+    await writeFixture(
+      root,
+      "records/daily-briefs/2026-08-03-v01.md",
+      brief({
+        title: "每日投資晨報｜2026-08-03",
+        cutoff: "2026-08-03 07:10（Asia/Taipei，UTC+8）",
+      }),
+    );
+
+    const snapshot = await generateDashboardSnapshot(root, new Date("2026-08-02T22:30:00.000Z"));
+
+    assert.equal(snapshot.expectation.phase, "before_cutoff");
+    assert.equal(snapshot.expectation.expectedReportDate, "2026-07-31");
+    assert.equal(snapshot.brief?.freshness, "最新");
+    assert.equal(snapshot.brief?.coveredSessionDate, "2026-07-31");
+    assert.equal(snapshot.blockers.some((issue) => issue.kind === "pending_update"), false);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
 test("07:30 後缺少應有交易日晨報才顯示待更新", async () => {
   const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
 

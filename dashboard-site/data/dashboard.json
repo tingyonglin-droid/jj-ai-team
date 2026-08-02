@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T16:37:41.377Z",
+  "generatedAt": "2026-08-02T22:14:45.626Z",
   "date": "2026-08-03",
   "expectation": {
     "dashboardDate": "2026-08-03",
@@ -9,6 +9,44 @@
     "reason": "尚未到 07:30 交付門檻，沿用前一個應有報告日。"
   },
   "approvals": [
+    {
+      "id": "records/market-risk/2026-08-03-v01.md",
+      "title": "市場風險報告｜2026-08-03-v01",
+      "type": "市場風險報告",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "市場風險報告｜2026-08-03-v01",
+      "decision": "是否接受 65 分總分、65 分基準、0 事件調整、資料完整度 84、AI 信心 78 與第 3 日影子紀錄，供內部研究及私人 Dashboard 呈現。",
+      "source": "records/market-risk/2026-08-03-v01.md",
+      "asOf": "2026-08-03 07:10（Asia/Taipei，UTC+8；人工試跑截止）",
+      "createdAt": null,
+      "recordDate": "2026-08-03",
+      "version": 1,
+      "artifactHash": "sha256:a5c8bd443a6d4d7faea1d4a0460ab943d69c17dbe5d82c99cbe7a9c3befb3e71",
+      "updatedAt": "2026-08-03（Asia/Taipei；人工試跑）",
+      "dependencies": []
+    },
+    {
+      "id": "records/daily-briefs/2026-08-03-v01.md",
+      "title": "指數收高，但利率與晶片波動正在削弱表面的安全感",
+      "type": "晨報",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "S&P 500 上漲 0.7%、Nasdaq 上漲 1%，但 10 年期美債官方殖利率由 4.68%升至 4.75%、Brent 升至 87.93 美元；指數上漲沒有解除折現率風險。 美國 Q2 勞動成本季增 0.9%、年增 3.4%，私人企業實質薪資年減 0.4%；薪資成長仍黏著，但購買力並未同步改善。 Amazon 上漲 15.3%、Apple 下跌 7.4%、Micron 下跌 5.9%；市場正在依 AI 投資回收速度與供應限制重新定價，而不是全面追捧科技股。 中國官方製造業 PMI 由 50.3 降至 49.2，新訂單降至 48.5，對全球製造、半導體終端需求與台灣供應鏈形成新的成長反證。 週末出現停止對伊朗新攻擊、重啟荷莫茲海峽談判的框架，能降低油價尾部風險；但伊朗尚未正式接受，且過去停火多次破裂，目前只能列為反方證據。",
+      "decision": "是否接受五則事件排序、65 分風險主軸、週末伊朗事件的保守處理、標題與五分鐘篇幅，供內部研究及私人 Dashboard 使用。",
+      "source": "records/daily-briefs/2026-08-03-v01.md",
+      "asOf": "2026-08-03 07:10（Asia/Taipei，UTC+8；人工試跑截止）",
+      "createdAt": null,
+      "recordDate": "2026-08-03",
+      "version": 1,
+      "artifactHash": "sha256:bb3ea7b5b873878c2ac99bef3a5f90b95b9508a996563d82231b2738c758ba79",
+      "updatedAt": "2026-08-03（Asia/Taipei；人工試跑）",
+      "dependencies": []
+    },
     {
       "id": "records/market-risk/2026-07-31-v01.md",
       "title": "市場風險報告｜2026-07-31-v01",
@@ -73,19 +111,19 @@
       "status": "已完成",
       "artifactStatus": "已核准",
       "rawStatus": null,
-      "currentTask": "核准 2026-07-30 市場風險指標",
+      "currentTask": "啟用 Dashboard 核准與晨報排程",
       "progress": "工作狀態：已完成",
       "dependencies": [
-        "records/market-risk/2026-07-30-v01.md",
-        "records/market-risk/2026-07-30-v02.md",
-        "records/daily-briefs/2026-07-30-v03.md",
-        "workflows/market-risk.md"
+        "workflows/daily-brief.md",
+        "workflows/market-risk.md",
+        "docs/superpowers/plans/2026-08-02-dashboard-approval-trading-calendar-and-morning-automation.md",
+        "dashboard-site/README.md"
       ],
       "handoff": "向總經研究員交付研究題目，向社群經營員交付已驗證的內容素材，向 App 設計員交付產品問題；將整合成果與決策項交給使用者。",
       "blocker": null,
       "nextStep": "依紀錄保留結果並追蹤後續",
-      "source": "records/decisions/2026-08-02-approve-2026-07-30-market-risk-indicator.md",
-      "asOf": "2026-08-02",
+      "source": "records/decisions/2026-08-02-enable-dashboard-approval-and-morning-schedule.md",
+      "asOf": "2026-08-03",
       "updatedAt": "2026-08-02"
     },
     {
@@ -95,15 +133,15 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
-      "currentTask": "市場風險報告｜2026-07-31-v01",
+      "currentTask": "市場風險報告｜2026-08-03-v01",
       "progress": "等待人工核准",
       "dependencies": [],
       "handoff": "將研究與風險成果交總司令驗收；將已驗證素材交社群經營員；將市場風險欄位與限制交 App 設計員。所有對外使用均由使用者核准。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/market-risk/2026-07-31-v01.md",
-      "asOf": "2026-07-31 07:10（Asia/Taipei，UTC+8；人工回溯截止）",
-      "updatedAt": "2026-08-03（Asia/Taipei；人工回溯試跑）"
+      "source": "records/market-risk/2026-08-03-v01.md",
+      "asOf": "2026-08-03 07:10（Asia/Taipei，UTC+8；人工試跑截止）",
+      "updatedAt": "2026-08-03（Asia/Taipei；人工試跑）"
     },
     {
       "id": "social-operator",
@@ -124,6 +162,53 @@
     }
   ],
   "tasks": [
+    {
+      "id": "records/market-risk/2026-08-03-v01.md",
+      "title": "市場風險報告｜2026-08-03-v01",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/market-risk/2026-08-03-v01.md",
+      "asOf": "2026-08-03 07:10（Asia/Taipei，UTC+8；人工試跑截止）",
+      "updatedAt": "2026-08-03（Asia/Taipei；人工試跑）"
+    },
+    {
+      "id": "records/daily-briefs/2026-08-03-v01.md",
+      "title": "指數收高，但利率與晶片波動正在削弱表面的安全感",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/daily-briefs/2026-08-03-v01.md",
+      "asOf": "2026-08-03 07:10（Asia/Taipei，UTC+8；人工試跑截止）",
+      "updatedAt": "2026-08-03（Asia/Taipei；人工試跑）"
+    },
+    {
+      "id": "records/decisions/2026-08-02-enable-dashboard-approval-and-morning-schedule.md",
+      "title": "啟用 Dashboard 核准與晨報排程",
+      "owner": "總司令",
+      "ownerId": "commander",
+      "status": "已完成",
+      "artifactStatus": "已核准",
+      "rawStatus": null,
+      "nextStep": "依紀錄保留結果並追蹤後續",
+      "dependencies": [
+        "workflows/daily-brief.md",
+        "workflows/market-risk.md",
+        "docs/superpowers/plans/2026-08-02-dashboard-approval-trading-calendar-and-morning-automation.md",
+        "dashboard-site/README.md"
+      ],
+      "source": "records/decisions/2026-08-02-enable-dashboard-approval-and-morning-schedule.md",
+      "asOf": "2026-08-03",
+      "updatedAt": "2026-08-02"
+    },
     {
       "id": "records/market-risk/2026-07-31-v01.md",
       "title": "市場風險報告｜2026-07-31-v01",
@@ -155,6 +240,1422 @@
   ],
   "briefArchive": [
     {
+      "id": "records/daily-briefs/2026-08-03-v01.md",
+      "date": "2026-08-03",
+      "version": 1,
+      "versionLabel": "v01",
+      "isLatest": true,
+      "title": "指數收高，但利率與晶片波動正在削弱表面的安全感",
+      "summary": "S&P 500 上漲 0.7%、Nasdaq 上漲 1%，但 10 年期美債官方殖利率由 4.68%升至 4.75%、Brent 升至 87.93 美元；指數上漲沒有解除折現率風險。 美國 Q2 勞動成本季增 0.9%、年增 3.4%，私人企業實質薪資年減 0.4%；薪資成長仍黏著，但購買力並未同步改善。 Amazon 上漲 15.3%、Apple 下跌 7.4%、Micron 下跌 5.9%；市場正在依 AI 投資回收速度與供應限制重新定價，而不是全面追捧科技股。 中國官方製造業 PMI 由 50.3 降至 49.2，新訂單降至 48.5，對全球製造、半導體終端需求與台灣供應鏈形成新的成長反證。 週末出現停止對伊朗新攻擊、重啟荷莫茲海峽談判的框架，能降低油價尾部風險；但伊朗尚未正式接受，且過去停火多次破裂，目前只能列為反方證據。",
+      "freshness": "最新",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:bb3ea7b5b873878c2ac99bef3a5f90b95b9508a996563d82231b2738c758ba79",
+      "coveredSessionDate": "2026-07-31",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-08-03 07:10（Asia/Taipei，UTC+8；人工試跑截止）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "產製時間：2026-08-03（Asia/Taipei；人工試跑）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察市場：全球總經、美債、美股科技巨頭、AI 資料中心、半導體與台股科技供應鏈"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察期間：以 2026-07-31 美國交易時段及截止前週末重大事件為主"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料完整度：84／100；缺同一截止時間的信用利差、VIX、美元與 8/3 亞洲早盤完整價格"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "一分鐘摘要"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "S&P 500 上漲 0.7%、Nasdaq 上漲 1%，但 10 年期美債官方殖利率由 4.68%升至 4.75%、Brent 升至 87.93 美元；指數上漲沒有解除折現率風險。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "美國 Q2 勞動成本季增 0.9%、年增 3.4%，私人企業實質薪資年減 0.4%；薪資成長仍黏著，但購買力並未同步改善。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Amazon 上漲 15.3%、Apple 下跌 7.4%、Micron 下跌 5.9%；市場正在依 AI 投資回收速度與供應限制重新定價，而不是全面追捧科技股。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "中國官方製造業 PMI 由 50.3 降至 49.2，新訂單降至 48.5，對全球製造、半導體終端需求與台灣供應鏈形成新的成長反證。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "週末出現停止對伊朗新攻擊、重啟荷莫茲海峽談判的框架，能降低油價尾部風險；但伊朗尚未正式接受，且過去停火多次破裂，目前只能列為反方證據。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日風險儀表"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "1–4 週風險分數：65／100"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "相較前一交易日：+4"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險狀態：偏高"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "即時風險：1–3 個交易日內，市場將同時重估週末伊朗談判、接近 4.75%的 10 年期殖利率，以及科技財報後的極端輪動"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "結構性風險：1–2 季內，中國製造需求降速、AI CapEx 回收分化與高利率可能共同壓縮科技供應鏈估值"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "今日主要風險來源：通膨與長端利率、AI 與半導體市場結構、中國製造需求"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "五則重要事件"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "1｜指數上漲，但油價、工資與長債同時提高折現率壓力"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "週五美股收高，但能源、勞動成本與美債沒有配合風險偏好改善。Brent 再漲，官方美債殖利率曲線從 2 年到 30 年全面上移；同日公布的就業成本指數顯示，薪資與福利成本仍以高於 Fed 目標相容水準的速度成長。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "S&P 500 +0.7%、Dow +0.5%、Nasdaq +1%；Brent +1.2%至 87.93 美元。美國財政部官方曲線顯示，10 年期殖利率由 4.68%升至 4.75%，30 年期由 5.21%升至 5.27%。Q2 就業成本季增 0.9%、年增 3.4%；薪資年增 3.2%、福利年增 3.8%。私人企業實質薪資年減 0.4%。來源為 BLS、U.S. Treasury 與 AP，2026-07-31。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵不是單日指數收紅，而是支撐高估值的折現率並未下降。工資年增率放緩到 3.2%是改善，但油價與長債同步上升會讓 Fed 更難快速寬鬆，也提高企業資金成本。這對長久期科技股是估值壓力，不等同企業獲利已全面惡化。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 風險升高為主，B 估值修正為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：已觸發"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週；若能源衝擊延續可擴大至 1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：油價與勞動成本黏著 → 通膨預期／期限溢酬上升 → 長端殖利率提高 → 高估值資產與企業融資承壓"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：10 年期持續站在 4.75%以上、Brent 重返 90 美元，或後續 CPI／PCE 月增重新加速"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：工資年增率由一年前 3.6%降至 3.2%，且週五三大指數仍收高"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：油價與長端殖利率同步明顯回落，後續月度通膨持續降溫"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "2｜伊朗談判降低油價尾部風險，但停火紀錄還不能讓市場放心"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "美國總統在週末表示，中東盟友已形成結束伊朗戰爭的參數，美方將暫停新的攻擊；構想包括立即全面重開荷莫茲海峽。不過伊朗沒有立即公開接受，而過去數次暫停攻擊與臨時協議都在數日或數週內破裂。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "荷莫茲海峽在和平時期承載約全球五分之一的交易油氣。Brent 週五收在 87.93 美元，7 月交易區間曾介於 72 至 102 美元。週末公告截止時尚無可核對的完整亞洲早盤價格反應。來源為 AP，2026-08-01 至 2026-08-02。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "如果海峽確實重開，能源通膨、運輸成本與長端利率都可能降溫，這是本報最重要的反方證據。但目前只有談判框架，還不是可執行協議；市場更可能先降低最壞情境機率，而不是把能源風險歸零。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 風險變化為主，C 資金輪動為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：降溫訊號出現，但尚未確認"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日與 1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：談判框架／可能重開海峽 → 原油供應尾部風險下降 → 通膨與殖利率壓力緩解 → 成長股估值獲得緩衝；若談判破裂則反向傳導"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：伊朗正式同意、可驗證的停火與船運恢復，且 Brent 明顯跌破週五收盤"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：歷次停火與協議曾快速破裂，伊朗截至公告後未立即公開接受"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：美伊或代理勢力恢復攻擊、海峽未實際開放，油價重新逼近 100 美元"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "3｜Amazon 大漲、Apple 大跌，AI 投資開始以回收速度分勝負"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Amazon 在財報後上漲 15.3%，市場接受以巨額 CapEx 換取 AWS 與 AI 容量成長；Apple 雖交出創紀錄營收與獲利，卻因本季營收展望低於預期、零組件被 AI 熱潮吸收造成供應限制而下跌 7.4%。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Amazon Q2 營收 2,006 億美元、年增 20%；AWS 422 億美元、年增 37%；過去 12 個月營運現金流 1,614 億美元，但自由現金流為負 76 億美元，2026 年 CapEx 預期升至 2,200 億美元。Apple FY2026 Q3 營收 1,094.17 億美元、年增 16%，EPS 2.02 美元、年增 29%；前九個月推算自由現金流約 1,101.97 億美元。來源為 Amazon、Apple 原始財報與 AP 2026-07-31 市場反應。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "市場獎勵的不是「AI」三個字，而是雲端收入加速與未來容量需求；同時也懲罰供應限制與低於預期的展望。Amazon 的自由現金流仍為負，代表目前股價反應建立在未來利用率能追上 CapEx 的假設上；Apple 現金流強則是需求未崩的反證，但短期供應與成長基期提高估值風險。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面分化為主，B 估值修正為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：已觸發"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週與 1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：AI 容量需求強 → CapEx 與零組件競爭上升 → 現金流回收與非 AI 產品供應分化 → 科技權值股估值差距擴大"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：Amazon CapEx 再上修但自由現金流未回升，或 Apple 供應限制延續並拖累本季營收"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：AWS 成長 37%、Apple 前九個月推算自由現金流逾 1,100 億美元，科技需求沒有全面轉弱"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：新增 AI 容量帶動現金流快於 CapEx，且 Apple 供應恢復後營收重新超越預期"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "4｜中國 PMI 跌破 50，台灣供應鏈要防的是訂單而非單月股價"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "中國 7 月官方製造業 PMI 意外跌回收縮區，是五個月來首次；新訂單與生產同步下滑，其中新訂單降到 2023 年以來最低。這是全球製造與亞洲出口鏈新的基本面風險訊號。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "製造業 PMI 由 6 月 50.3 降至 49.2；新訂單由 51.2 降至 48.5；生產由 51.4 降至 49.9。PMI 高於 50 代表擴張、低於 50 代表收縮。數據由中國國家統計局發布，AP 於 2026-07-31 報導。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "對長期投資人而言，單月 PMI 不能直接推論衰退；但新訂單跌破 50 的傳導比 headline 更重要，可能先影響原料、工業與一般電子需求，再反映到庫存與企業獲利。AI 伺服器需求強可提供緩衝，卻不代表所有台灣科技供應鏈都能避開中國需求降速。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面惡化為主，D 風險升高為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：中國新訂單收縮 → 製造產出與進口需求降速 → 亞洲出口／一般電子庫存壓力 → 台股供應鏈獲利預期下修"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：後續出口、工業生產與企業獲利同步轉弱，PMI 連續低於 50"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：目前只有單月轉弱，AI 伺服器、HBM 與雲端 CapEx 需求仍強"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：新訂單快速回到 50 以上，且亞洲出口與台灣科技營收未跟著降速"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "5｜晶片基本面仍強，但 Micron 與韓股顯示市場結構已進入高波動區"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "晶片股週五再次出現極端波動。Micron 由盤中上漲 6.4%轉為下跌最多 6.5%，終場跌 5.9%；韓國 KOSPI 則單日創紀錄上漲 17.9%，Samsung 與 SK Hynix 至少各漲 26.8%，但 KOSPI 7 月仍下跌 22%。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Micron 單日高低方向差距接近 13 個百分點；KOSPI +17.9%，但 7 月 -22%，今年上半年曾上漲逾一倍。週五 S&P 500 +0.7%、Nasdaq +1%，而 Russell 2000 -0.5%，顯示大型權值與小型股沒有同步。來源為 AP，2026-07-31。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "這比較像高預期資產的部位重整與估值震盪，而不是晶片需求已被證實反轉。對指數投資人，主要風險是少數科技權值掩蓋市場廣度轉弱；對台灣供應鏈，則要把 HBM／AI 伺服器的基本面強勢與股價對高預期的脆弱度分開看。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：C 資金輪動為主，B 估值修正為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：已觸發"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日與 1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：AI 晶片高預期／集中持倉 → 好消息邊際效應下降 → 個股與區域指數劇烈輪動 → 被動指數與供應鏈波動放大"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：半導體在獲利上修後仍續跌、等權重與小型股持續落後，或波動擴散到信用市場"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：Amazon AWS 成長、Samsung／SK Hynix 基本面與 AI 容量需求仍強，KOSPI 已出現歷史性反彈"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：市場廣度持續修復，晶片股波動下降，且價格與訂單數據確認供需仍健康"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "事實"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "數值／變化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料期間"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源與日期"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "美國勞動成本仍黏著"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "ECI +0.9% QoQ／+3.4% YoY；私人實質薪資 -0.4% YoY"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026 Q2"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "BLS，2026-07-31",
+                  "href": "https://www.bls.gov/news.release/archives/eci_07312026.htm"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "官方美債曲線全面上移"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "10Y 4.68%→4.75%；30Y 5.21%→5.27%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-07-31"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "U.S. Treasury，2026-07-31",
+                  "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202607&type=daily_treasury_yield_curve"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "美股上漲但科技與晶片分化"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "S&P +0.7%；Amazon +15.3%；Apple -7.4%；Micron -5.9%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-07-31"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "AP，2026-07-31",
+                  "href": "https://apnews.com/article/stock-markets-rates-korea-ai-oil-e31b3a442bcb957a53f1823ef21e73e8"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "中國製造業重新收縮"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "PMI 49.2；新訂單 48.5"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-07"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "AP／中國國家統計局，2026-07-31",
+                  "href": "https://apnews.com/article/a9a5016ca01d4f65e0491ff5327c0a11"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "美國暫停新一輪對伊朗攻擊"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "提出重開荷莫茲海峽與結束戰爭的談判參數；伊朗尚未正式接受"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-01 至 2026-08-02"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "AP，2026-08-02",
+                  "href": "https://apnews.com/article/iran-war-trump-saudi-crown-prince-call-814164417aa284dc8a6d34ac22ea1a8e"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論與初步判斷"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "初判為「指數仍有大型科技股支撐，但跨資產與內部結構正在提高下行敏感度」。殖利率、油價、工資與中國新訂單是基本面／折現率壓力；Amazon、Apple、Micron 與韓股的極端分化則是市場結構壓力。週末伊朗談判可降低尾部風險，但在海峽實際重開前，尚不足以抵銷全部風險。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "外部觀點比較"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀點摘要"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "與初判一致／分歧"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "對判斷影響"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-07-31 市場收盤"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "指出 Amazon 推升大盤，但 Apple、Micron、油價與殖利率顯示通膨及 AI 高預期壓力"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "支持把指數漲幅與內部風險分開評估"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-02 伊朗事件"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "報導暫停新攻擊與談判框架，也整理過去多次停火快速破裂"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "將其列為重要反證，不直接下調基準分"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "游庭皓、財經 M 平方"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "本階段尚未導入"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "無法比較"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "不影響以原始來源形成的判斷"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "最終判斷與反方證據"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終判斷：未來 1–4 週下行風險由 61 升至 65，進入偏高區，信心 78／100。上升主因是長端殖利率、能源與晶片／權值股結構波動共振，而不是衰退已被確認。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：三大指數收高；Amazon AWS +37%、Apple 現金流強；工資年增率較一年前放緩；週末伊朗談判若落實可降低油價與利率壓力。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：荷莫茲海峽實際重開，油價與長債明顯回落，中國新訂單回到擴張，且市場廣度持續修復，則應降低風險。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日市場一句話"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "今天市場真正交易的不是指數有沒有收紅，而是高利率與高預期還能容許多少基本面誤差。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "反方證據與尚未確認資料"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "反方證據：S&P 500、Dow 與 Nasdaq 同步收高；AWS 成長 37%；Apple 前九個月推算自由現金流逾 1,100 億美元；美國工資年增率放緩；週末伊朗談判可能降低能源尾部風險。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：同一截止時間的投資級／高收益債利差、VIX、美元指數、8/3 亞洲早盤完整價格，以及伊朗正式回應與海峽實際船運資料未納入。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "尚未確認與待觀察"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "未確認資料：信用、波動、美元與週一早盤反應缺口使完整度為 84；65 分是風險監測訊號，不是精準漲跌預測。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "候選池與排序：共評估十項候選，包括美債曲線、Brent、ECI、Amazon、Apple、中國 PMI、Micron、KOSPI、市場廣度與週末伊朗談判。把美債／Brent／ECI 合併為同一折現率傳導鏈，把 Amazon／Apple 合併為 AI 回收分化；信用與 VIX 因缺同步資料不以推測湊成事件。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "下一確認點：8/3 油價與美債正式交易、伊朗回應、荷莫茲船運、JOLTS（8/4）、美國就業報告（8/7）、信用利差與台股／韓股半導體市場廣度。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "來源"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "link",
+                "text": "U.S. Bureau of Labor Statistics｜Employment Cost Index, June 2026｜2026-07-31",
+                "href": "https://www.bls.gov/news.release/archives/eci_07312026.htm"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Treasury｜Daily Treasury Par Yield Curve Rates｜2026-07-31",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202607&type=daily_treasury_yield_curve"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Amazon｜Second Quarter 2026 Results｜2026-07-30",
+                "href": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Apple｜Third Quarter 2026 Results｜2026-07-30",
+                "href": "https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜U.S. stocks finish a wild July｜2026-07-31",
+                "href": "https://apnews.com/article/stock-markets-rates-korea-ai-oil-e31b3a442bcb957a53f1823ef21e73e8"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜China factory activity contracts｜2026-07-31",
+                "href": "https://apnews.com/article/a9a5016ca01d4f65e0491ff5327c0a11"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜Iran war talks and proposed Hormuz reopening｜2026-08-02",
+                "href": "https://apnews.com/article/iran-war-trump-saudi-crown-prince-call-814164417aa284dc8a6d34ac22ea1a8e"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜Timeline of U.S.–Iran pauses and renewed attacks｜2026-08-02",
+                "href": "https://apnews.com/article/trump-iran-war-us-canceled-strikes-670f077d2cf5de7614cfce4ad40e4aaa"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "人工核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：是否接受五則事件排序、65 分風險主軸、週末伊朗事件的保守處理、標題與五分鐘篇幅，供內部研究及私人 Dashboard 使用。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：核准本版本不代表公開發布、個人化投資建議、持股調整、再平衡或買賣操作，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/daily-briefs/2026-08-03-v01.md",
+      "asOf": "2026-08-03 07:10（Asia/Taipei，UTC+8；人工試跑截止）",
+      "updatedAt": "2026-08-03（Asia/Taipei；人工試跑）",
+      "dependencies": []
+    },
+    {
       "id": "records/daily-briefs/2026-07-31-v01.md",
       "date": "2026-07-31",
       "version": 1,
@@ -162,7 +1663,7 @@
       "isLatest": true,
       "title": "經濟還在成長，但市場開始區分哪些 AI 投資能留下現金流",
       "summary": "美國 Q2 實質 GDP 年化成長 1.5%，低於 Q1 的 2.1%；但私人國內最終需求成長 3.9%，比較像成長降速而非衰退已確認。 Q2 國內購買價格指數升 5.7%，但 6 月核心 PCE 月增只 0.1%；市場同時面對季度通膨黏著與月度降溫兩種訊號。 S&P 500 上漲 1.7%、Nasdaq 上漲 2.8%，但 Microsoft 上漲 15.5%、Meta 下跌 8%；指數反彈的核心是 AI ROI 分化，不是所有科技股風險一起消失。 Amazon AWS 成長 37%，但過去 12 個月自由現金流由正 182 億美元轉為負 76 億美元，全年資本支出預期升至 2,200 億美元；需求很強，現金回收速度仍是風險。 影子風險分數由 65 降至 61：市場廣度改善降低即時風險，但高通膨、長端殖利率與 AI CapEx／現金流分化仍使 1–4 週風險偏高。",
-      "freshness": "沿用最近交易日",
+      "freshness": "歷史版本",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
       "artifactHash": "sha256:2daf6be3b376a1c2030a7457857476893cbc452fadd46dd2fd54a87a45524f86",
@@ -5033,45 +6534,45 @@
     }
   ],
   "brief": {
-    "title": "經濟還在成長，但市場開始區分哪些 AI 投資能留下現金流",
-    "headline": "經濟還在成長，但市場開始區分哪些 AI 投資能留下現金流",
-    "summary": "美國 Q2 實質 GDP 年化成長 1.5%，低於 Q1 的 2.1%；但私人國內最終需求成長 3.9%，比較像成長降速而非衰退已確認。 Q2 國內購買價格指數升 5.7%，但 6 月核心 PCE 月增只 0.1%；市場同時面對季度通膨黏著與月度降溫兩種訊號。 S&P 500 上漲 1.7%、Nasdaq 上漲 2.8%，但 Microsoft 上漲 15.5%、Meta 下跌 8%；指數反彈的核心是 AI ROI 分化，不是所有科技股風險一起消失。 Amazon AWS 成長 37%，但過去 12 個月自由現金流由正 182 億美元轉為負 76 億美元，全年資本支出預期升至 2,200 億美元；需求很強，現金回收速度仍是風險。 影子風險分數由 65 降至 61：市場廣度改善降低即時風險，但高通膨、長端殖利率與 AI CapEx／現金流分化仍使 1–4 週風險偏高。",
-    "freshness": "沿用最近交易日",
+    "title": "指數收高，但利率與晶片波動正在削弱表面的安全感",
+    "headline": "指數收高，但利率與晶片波動正在削弱表面的安全感",
+    "summary": "S&P 500 上漲 0.7%、Nasdaq 上漲 1%，但 10 年期美債官方殖利率由 4.68%升至 4.75%、Brent 升至 87.93 美元；指數上漲沒有解除折現率風險。 美國 Q2 勞動成本季增 0.9%、年增 3.4%，私人企業實質薪資年減 0.4%；薪資成長仍黏著，但購買力並未同步改善。 Amazon 上漲 15.3%、Apple 下跌 7.4%、Micron 下跌 5.9%；市場正在依 AI 投資回收速度與供應限制重新定價，而不是全面追捧科技股。 中國官方製造業 PMI 由 50.3 降至 49.2，新訂單降至 48.5，對全球製造、半導體終端需求與台灣供應鏈形成新的成長反證。 週末出現停止對伊朗新攻擊、重啟荷莫茲海峽談判的框架，能降低油價尾部風險；但伊朗尚未正式接受，且過去停火多次破裂，目前只能列為反方證據。",
+    "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准",
     "version": 1,
-    "artifactHash": "sha256:2daf6be3b376a1c2030a7457857476893cbc452fadd46dd2fd54a87a45524f86",
-    "coveredSessionDate": "2026-07-30",
-    "asOf": "2026-07-31 07:10（Asia/Taipei，UTC+8；人工回溯截止）",
-    "source": "records/daily-briefs/2026-07-31-v01.md",
-    "updatedAt": "2026-08-03（Asia/Taipei；人工回溯試跑）",
+    "artifactHash": "sha256:bb3ea7b5b873878c2ac99bef3a5f90b95b9508a996563d82231b2738c758ba79",
+    "coveredSessionDate": "2026-07-31",
+    "asOf": "2026-08-03 07:10（Asia/Taipei，UTC+8；人工試跑截止）",
+    "source": "records/daily-briefs/2026-08-03-v01.md",
+    "updatedAt": "2026-08-03（Asia/Taipei；人工試跑）",
     "dependencies": []
   },
   "marketRisk": {
-    "label": "市場風險報告｜2026-07-31-v01",
-    "freshness": "沿用最近交易日",
+    "label": "市場風險報告｜2026-08-03-v01",
+    "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准",
     "version": 1,
-    "artifactHash": "sha256:b7bf41135f84698a8b1c8f7e7d4dab5799063255d1a00af52a8e3a0852ee69c0",
-    "coveredSessionDate": "2026-07-30",
-    "asOf": "2026-07-31 07:10（Asia/Taipei，UTC+8；人工回溯截止）",
-    "source": "records/market-risk/2026-07-31-v01.md",
-    "updatedAt": "2026-08-03（Asia/Taipei；人工回溯試跑）",
+    "artifactHash": "sha256:a5c8bd443a6d4d7faea1d4a0460ab943d69c17dbe5d82c99cbe7a9c3befb3e71",
+    "coveredSessionDate": "2026-07-31",
+    "asOf": "2026-08-03 07:10（Asia/Taipei，UTC+8；人工試跑截止）",
+    "source": "records/market-risk/2026-08-03-v01.md",
+    "updatedAt": "2026-08-03（Asia/Taipei；人工試跑）",
     "dependencies": [],
-    "score": 61,
-    "baseline": 56,
-    "eventAdjustment": 5,
-    "dailyChange": -4,
-    "immediateRisk": "1–3 個交易日內，Apple／Amazon 財報後正式交易與科技股輪動可能放大波動，長端殖利率仍接近 4.7%",
-    "structuralRisk": "1–2 季內，AI CapEx 若持續快於自由現金流，市場將進一步集中於少數能證明 ROI 的企業",
+    "score": 65,
+    "baseline": 65,
+    "eventAdjustment": 0,
+    "dailyChange": 4,
+    "immediateRisk": "1–3 個交易日內，週末伊朗談判、10 年期殖利率接近 4.75%與科技財報後極端輪動可能造成大幅重新定價",
+    "structuralRisk": "1–2 季內，中國製造需求降速、AI CapEx 回收分化與高利率可能共同壓縮科技供應鏈估值",
     "topRisks": [
       "通膨與長端利率",
-      "AI CapEx 與自由現金流分化",
-      "半導體高預期與市場集中"
+      "AI 與半導體市場結構",
+      "中國製造需求"
     ],
-    "confidence": 76,
-    "completeness": 82,
+    "confidence": 78,
+    "completeness": 84,
     "experimental": true
   },
   "blockers": []
