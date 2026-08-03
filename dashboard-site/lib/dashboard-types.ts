@@ -54,6 +54,45 @@ export interface DashboardBriefDocument extends TraceableRecord {
   blocks: BriefBlock[];
 }
 
+export type ApprovalSyncStatus = "pending" | "synced" | "blocked";
+
+export interface DashboardThreadsDocument extends TraceableRecord {
+  id: string;
+  artifactKey: string;
+  date: string;
+  version: number;
+  versionLabel: string;
+  title: string;
+  summary: string;
+  rawStatus: string;
+  artifactHash: string;
+  blocks: BriefBlock[];
+}
+
+export interface DashboardApprovedThreadsDocument extends DashboardThreadsDocument {
+  approvedAt: string;
+  approvalSyncStatus: ApprovalSyncStatus;
+}
+
+export interface DashboardThreadsArchiveIssue {
+  eventId: string;
+  artifactId: string;
+  version: number;
+  artifactHash: string;
+  approvedAt: string;
+  approvalSyncStatus: ApprovalSyncStatus;
+  reason: string;
+}
+
+export function threadsArtifactKey(
+  artifactId: string,
+  version: number,
+  artifactHash: string,
+) {
+  return Buffer.from(`${artifactId}\u0000${version}\u0000${artifactHash}`, "utf8")
+    .toString("base64url");
+}
+
 export interface DashboardSnapshot {
   generatedAt: string;
   date: string;
@@ -96,6 +135,9 @@ export interface DashboardSnapshot {
   >;
   tasks: DashboardTask[];
   briefArchive: DashboardBriefDocument[];
+  threadsDocuments: DashboardThreadsDocument[];
+  approvedThreadsArchive: DashboardApprovedThreadsDocument[];
+  threadsArchiveIssues: DashboardThreadsArchiveIssue[];
   brief:
     | (TraceableRecord & {
       title: string;
