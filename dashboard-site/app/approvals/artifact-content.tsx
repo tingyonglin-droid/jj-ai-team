@@ -45,7 +45,7 @@ function ArtifactBlock({ block }: { block: BriefBlock }) {
         </li>
       ));
 
-      return block.ordered ? <ol>{items}</ol> : <ul>{items}</ul>;
+      return block.ordered ? <ol start={block.start}>{items}</ol> : <ul>{items}</ul>;
     }
     case "table":
       return (

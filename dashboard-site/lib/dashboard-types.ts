@@ -35,7 +35,7 @@ export type BriefInlineNode =
 export type BriefBlock =
   | { type: "heading"; level: 2 | 3 | 4; content: BriefInlineNode[] }
   | { type: "paragraph"; content: BriefInlineNode[] }
-  | { type: "list"; ordered: boolean; items: BriefInlineNode[][] }
+  | { type: "list"; ordered: boolean; start?: number; items: BriefInlineNode[][] }
   | { type: "table"; headers: BriefInlineNode[][]; rows: BriefInlineNode[][][] };
 
 export interface DashboardBriefDocument extends TraceableRecord {

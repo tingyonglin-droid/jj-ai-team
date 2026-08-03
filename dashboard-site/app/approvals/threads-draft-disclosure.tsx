@@ -13,7 +13,6 @@ export function ThreadsDraftDisclosure({
   blocks,
   source,
 }: {
-  artifactId: string;
   blocks: BriefBlock[] | null;
   source: string;
 }) {

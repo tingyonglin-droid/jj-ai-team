@@ -24,7 +24,6 @@ function ThreadsDraftReview({ approval }: { approval: Approval }) {
   if (approval.type !== "Threads") return null;
   return (
     <ThreadsDraftDisclosure
-      artifactId={approval.id}
       blocks={approval.fullContent?.blocks ?? null}
       source={approval.source}
     />

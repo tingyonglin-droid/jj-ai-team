@@ -50,6 +50,33 @@ test("將混用 - 與 * 的連續無序項目合併為單一清單", () => {
   ]);
 });
 
+test("保留被段落分隔的有序清單起始序號", () => {
+  assert.deepEqual(parseBriefMarkdown("1. 第一點\n\n說明文字。\n\n2. 第二點\n\n3. 第三點"), [
+    {
+      type: "list",
+      ordered: true,
+      start: 1,
+      items: [[{ type: "text", text: "第一點" }]],
+    },
+    {
+      type: "paragraph",
+      content: [{ type: "text", text: "說明文字。" }],
+    },
+    {
+      type: "list",
+      ordered: true,
+      start: 2,
+      items: [[{ type: "text", text: "第二點" }]],
+    },
+    {
+      type: "list",
+      ordered: true,
+      start: 3,
+      items: [[{ type: "text", text: "第三點" }]],
+    },
+  ]);
+});
+
 test("依版本標籤選取指定晨報，否則選取最新版本", () => {
   const documents = [
     makeDocument({ version: 1, versionLabel: "v1", isLatest: false }),

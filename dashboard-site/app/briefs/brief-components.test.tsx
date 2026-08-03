@@ -118,6 +118,27 @@ test("完整晨報安全渲染結構化內容並提供版本切換", () => {
   assert.doesNotMatch(html, /dangerouslySetInnerHTML/);
 });
 
+test("有序內容從來源序號開始渲染", () => {
+  const html = renderToStaticMarkup(
+    <BriefReader
+      document={{
+        ...documents[0],
+        blocks: [
+          {
+            type: "list",
+            ordered: true,
+            start: 2,
+            items: [[{ type: "text", text: "第二點" }]],
+          },
+        ],
+      }}
+      versions={documents.slice(0, 2)}
+    />,
+  );
+
+  assert.match(html, /<ol start="2"><li>第二點<\/li><\/ol>/);
+});
+
 test("找不到晨報時只顯示要求的日期與版本", () => {
   const html = renderToStaticMarkup(
     <BriefNotFound date="2026-07-31" version="v99" />,

@@ -6,7 +6,7 @@ import type {
 
 const headingPattern = /^(#{2,4})\s+(.+)$/;
 const unorderedListPattern = /^[-*]\s+(.+)$/;
-const orderedListPattern = /^\d+\.\s+(.+)$/;
+const orderedListPattern = /^(\d+)\.\s+(.+)$/;
 
 export function parseBriefMarkdown(markdown: string): BriefBlock[] {
   const lines = markdown.replace(/\r\n?/g, "\n").split("\n");
@@ -58,16 +58,17 @@ export function parseBriefMarkdown(markdown: string): BriefBlock[] {
     if (unorderedItem || orderedItem) {
       const ordered = Boolean(orderedItem);
       const pattern = ordered ? orderedListPattern : unorderedListPattern;
+      const start = orderedItem ? Number.parseInt(orderedItem[1], 10) : undefined;
       const items: BriefInlineNode[][] = [];
 
       while (index < lines.length) {
         const item = lines[index].match(pattern);
         if (!item) break;
-        items.push(parseInlineNodes(item[1]));
+        items.push(parseInlineNodes(item[ordered ? 2 : 1]));
         index += 1;
       }
 
-      blocks.push({ type: "list", ordered, items });
+      blocks.push({ type: "list", ordered, ...(start === undefined ? {} : { start }), items });
       continue;
     }
 
