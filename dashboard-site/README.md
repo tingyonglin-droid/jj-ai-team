@@ -43,6 +43,14 @@ ALLOWED_USER_EMAIL=test-owner@example.com npm run build
 
 正式封包的 `.openai/hosting.json` 必須宣告 `"d1": "DB"`，且 `drizzle/` migrations 必須隨版本一併保存與部署。部署後至少驗證：未授權請求不洩漏內容、待核准成果仍可讀、確認前不寫入、相同版本冪等，以及資料庫無法讀取時畫面顯示明確阻擋而不把核准誤判為成功。
 
+## 已核准 Threads 歷史
+
+`/content` 是內容檔案庫入口，`/content/threads` 只列出與 D1 核准事件完全匹配的 Threads 版本；每篇全文使用 `/content/threads/[artifactKey]` 的穩定受保護路徑。配對必須同時符合成果 ID、類型 `Threads`、版本與 SHA-256，缺少來源或雜湊不符時只顯示可追溯錯誤，不顯示正文或全文連結。
+
+核准事件尚未回寫工作區時顯示「已核准、尚未同步」；同步失敗時顯示「核准同步受阻」。兩者都不會撤銷站內有效核准，也不代表內容已發布。歷史列表與全文頁維持唯讀，不提供核准、編輯、刪除、發布或社群互動功能。
+
+此功能目前只完成本機實作與驗證，尚未部署；更新私人正式 Dashboard 仍需另外取得使用者核准。
+
 ## 核准 outbox 同步
 
 站內 D1 核准與 Git 決策紀錄採 fail-closed outbox。只有同時設定 `DASHBOARD_SITE_URL`、`SITES_BYPASS_TOKEN`、`APPROVAL_SYNC_SECRET` 時，`npm run approvals:sync -- fetch` 才會讀取事件、驗證允許路徑／版本／SHA-256，並以 exclusive create 建立決策紀錄；相對應 commit 存在後才可執行 `npm run approvals:sync -- acknowledge`。本機 manifest 位於被 Git 忽略的 `.approval-sync/`。
