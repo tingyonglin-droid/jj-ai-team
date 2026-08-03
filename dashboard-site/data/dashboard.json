@@ -1,14 +1,472 @@
 {
-  "generatedAt": "2026-08-03T07:54:41.870Z",
-  "date": "2026-08-03",
+  "generatedAt": "2026-08-03T23:17:55.585Z",
+  "date": "2026-08-04",
   "expectation": {
-    "dashboardDate": "2026-08-03",
+    "dashboardDate": "2026-08-04",
     "expectedReportDate": "2026-08-03",
     "coveredSessionDate": "2026-07-31",
-    "phase": "due",
-    "reason": "已到 07:30 交付門檻，今日應有新的例行晨報。"
+    "phase": "before_cutoff",
+    "reason": "尚未到 07:30 交付門檻，沿用前一個應有報告日。"
   },
   "approvals": [
+    {
+      "id": "records/market-risk/2026-08-04-v01.md",
+      "title": "市場風險報告｜2026-08-04-v01",
+      "type": "市場風險報告",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "市場風險報告｜2026-08-04-v01",
+      "fullContent": null,
+      "decision": "是否接受 60 分總分、60 分基準、0 事件調整、資料完整度 86、AI 信心 80 與第 4 日影子紀錄，供內部研究及私人 Dashboard 呈現。",
+      "source": "records/market-risk/2026-08-04-v01.md",
+      "asOf": "2026-08-04 07:10（Asia/Taipei，UTC+8）",
+      "createdAt": null,
+      "recordDate": "2026-08-04",
+      "version": 1,
+      "artifactHash": "sha256:f3c75a74b352a3ff9d38288f3ba4c0125558ad6432f4dc72d86e98cf78ba33d5",
+      "updatedAt": "2026-08-04 07:12（Asia/Taipei，UTC+8）",
+      "dependencies": []
+    },
+    {
+      "id": "records/daily-briefs/2026-08-04-v01.md",
+      "title": "油價急跌帶動風險反彈，但價格與流動性沒有同步鬆開",
+      "type": "晨報",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "S&P 500 上漲 1.5%、Dow 上漲 1.3%創收盤新高、Nasdaq 上漲 2.1%；Brent 下跌 4.7%至 83.77 美元，是即時能源風險降溫的直接市場反應。 10 年期美債市場殖利率由 4.75%降至 4.68%，但仍高於伊朗戰爭前的 3.97%；折現率風險改善，尚未正常化。 美國 7 月 ISM 製造業 PMI 升至 55.6、創 2022 年 5 月以來最高；但價格指數仍為 71.1、供應商交期 58.9，強成長同時保留成本與利率壓力。 Fed 最新 H.4.1 顯示，7/29 當週存款機構準備金減少 1,203.52 億美元、TGA 增加 1,350.25 億美元；單週流動性收緊不能直接預測股市，但削弱「油價下跌等於全面寬鬆」的解讀。 Palantir Q2 營收年增 93%、美國商業營收年增 149%，並上調全年財測；AI 商業化證據變強，同時把整個 AI 板塊的成長與獲利門檻推得更高。",
+      "fullContent": null,
+      "decision": "是否接受五則事件排序、60 分風險主軸、能源降溫但價格與流動性未同步改善的標題，以及五分鐘篇幅，供內部研究及私人 Dashboard 使用。",
+      "source": "records/daily-briefs/2026-08-04-v01.md",
+      "asOf": "2026-08-04 07:10（Asia/Taipei，UTC+8）",
+      "createdAt": null,
+      "recordDate": "2026-08-04",
+      "version": 1,
+      "artifactHash": "sha256:d804abbca721b81c96e0a360ae8ef8019d1e16c396c6af3e34c99293e97c74aa",
+      "updatedAt": "2026-08-04 07:11（Asia/Taipei，UTC+8）",
+      "dependencies": []
+    },
+    {
+      "id": "records/content/threads/2026-08-04-oil-down-risk-not-gone-v01.md",
+      "title": "Threads 草稿｜油價跌、指數漲，風險就消失了嗎？",
+      "type": "Threads",
+      "owner": "社群經營員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "油價跌、美股漲，市場風險就消失了嗎？",
+      "fullContent": {
+        "format": "structured-markdown",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "日期：2026-08-04"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "狀態：待核准"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "來源研究："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-04-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-04-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報版本：v01"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報雜湊："
+                },
+                {
+                  "type": "code",
+                  "text": "sha256:d804abbca721b81c96e0a360ae8ef8019d1e16c396c6af3e34c99293e97c74aa"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "建議時機：現在；但發布前須重新確認伊朗談判、荷莫茲船運、油價與長債是否出現重大更新"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "主版本"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "油價跌、美股漲，市場風險就消失了嗎？"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "我不會這麼快下結論。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "8/3 的市場確實出現三個正面變化："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "S&P 500 上漲 1.5%、Nasdaq 上漲 2.1%，Brent 原油下跌 4.7%至 83.77 美元。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "這代表市場正在降低「能源供應立即中斷」的風險溢酬。油價降溫，也讓通膨與企業成本暫時得到喘息。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "但有兩組數字，提醒我不能把「喘息」直接解讀成「風險解除」。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "第一，10 年期美債殖利率雖然從 4.75%降到 4.68%，仍明顯高於伊朗戰爭前的 3.97%。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "折現率壓力有改善，但高估值資產面對的門檻還沒有回到原點。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "第二，美國 7 月 ISM 製造業 PMI 升到 55.6，創 2022 年 5 月以來最高；同時，價格指數仍在 71.1，供應商交期升到 58.9。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "需求強是反對衰退的重要證據，但成本和交期仍高，也可能讓利率維持更久。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "流動性還有另一個容易被忽略的變化：Fed 最新週資料顯示，銀行準備金單週減少約 1,204 億美元，TGA 增加約 1,350 億美元。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "一週數字不能預測股市，但它至少告訴我：金融條件沒有跟油價一起全面放鬆。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "反方證據也要保留。四大美股指數同步上漲，ISM 訂單、生產與就業都在擴張；如果停火、談判與船運恢復能被驗證，能源風險還可能繼續下降。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "所以我現在會把時間拆成兩段看："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "短線先看談判是否落地、油價能否守住跌幅，以及 10 年期是否重回 4.75%以上。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "接下來幾週則看輸入價格、銀行準備金與市場上漲廣度，能不能一起改善。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "我的結論不是預測市場接下來會漲或跌，而是："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "油價下跌讓市場買到喘息時間；只有利率、流動性與企業成本也同步改善，風險才算真正下降。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "備選開頭"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "start": 1,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "S&P 500 上漲 1.5%、Brent 下跌 4.7%。看起來像風險解除，但 10 年期美債仍在 4.68%，ISM 價格指數仍有 71.1。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "油價下跌可以降低即時通膨風險，卻不能自動增加市場流動性。8/3 的反彈，真正要驗證的是這兩件事能不能接棒改善。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "查核與語氣"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "已確認事實與來源：S&P 500 +1.5%、Nasdaq +2.1%、Brent -4.7%至 83.77 美元、10 年期市場殖利率 4.75%→4.68%且戰前為 3.97%，來源為 "
+                },
+                {
+                  "type": "link",
+                  "text": "Associated Press，2026-08-03",
+                  "href": "https://apnews.com/article/stocks-markets-dollar-yen-trump-oil-d19a8f9a77b6fceca41da3e4b6bf17aa"
+                },
+                {
+                  "type": "text",
+                  "text": "；ISM PMI 55.6、Prices 71.1、Supplier Deliveries 58.9，來源為 "
+                },
+                {
+                  "type": "link",
+                  "text": "ISM，2026-08-03",
+                  "href": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/july/"
+                },
+                {
+                  "type": "text",
+                  "text": "；銀行準備金單週 -1,203.52 億美元、TGA +1,350.25 億美元，來源為 "
+                },
+                {
+                  "type": "link",
+                  "text": "Federal Reserve H.4.1，2026-07-30；資料日 2026-07-29",
+                  "href": "https://www.federalreserve.gov/releases/h41/20260730/"
+                },
+                {
+                  "type": "text",
+                  "text": "。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "AI 推論：油價下跌降低即時能源與通膨尾部風險，但利率、輸入成本及流動性沒有同步回到寬鬆狀態；這是根據上述資料形成的暫時推論，不是來源原話或漲跌預測。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "外部觀點：Associated Press 把當日反彈與油價、通膨擔憂及殖利率下降連結；ISM 原始調查則同時呈現成長加速與價格、交期壓力。兩者共同支持「即時風險緩解、結構壓力仍在」的主軸。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "最終判斷：油價下跌讓市場得到喘息，但需等待利率、流動性與成本同步改善，才能把風險視為持續下降。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "反方證據：四大美股指數同步上漲；ISM 訂單、生產與就業擴張；談判與船運若可驗證，能源風險可能進一步下降。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "尚未確認資料：缺 8/3 官方 Treasury 日終曲線、同一截止時間的信用利差、VIX與美元；伊朗正式接受及荷莫茲船運恢復亦未完全確認。晨報資料完整度為 86／100。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "待使用者補充：確認「我不會這麼快下結論」「所以我現在會把時間拆成兩段看」是否符合本人真實判斷；若不符合，發布前改成中性研究口吻，不代寫個人經歷。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "App CTA：不加入；本篇核心是市場風險框架，沒有自然且必要的產品連結。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "內容聲明：本內容為市場研究與風險框架整理，非投資建議；風險指標不是精準漲跌預測。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "核准"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "最終文字、個人觀點、發布時間與是否發布由使用者決定：待核准。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "核准紀錄：尚未核准。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "核准邊界：未授權發布、留言或私訊互動、個人化投資建議、持股調整、買賣或任何投資行動，也不延伸至未來版本。"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "decision": "尚未核准。",
+      "source": "records/content/threads/2026-08-04-oil-down-risk-not-gone-v01.md",
+      "asOf": "2026-08-04",
+      "createdAt": null,
+      "recordDate": "2026-08-04",
+      "version": 1,
+      "artifactHash": "sha256:c8e639b3fe1b36df5699ced8b5c6d05c933edd6d66d05e6263c3de3144848385",
+      "updatedAt": "2026-08-04",
+      "dependencies": [
+        "records/daily-briefs/2026-08-04-v01.md"
+      ]
+    },
     {
       "id": "records/content/threads/2026-08-03-index-up-risk-not-down-v01.md",
       "title": "Threads 草稿｜指數上漲，不代表風險下降",
@@ -505,15 +963,15 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
-      "currentTask": "市場風險報告｜2026-08-03-v01",
+      "currentTask": "市場風險報告｜2026-08-04-v01",
       "progress": "等待人工核准",
       "dependencies": [],
       "handoff": "將研究與風險成果交總司令驗收；將已驗證素材交社群經營員；將市場風險欄位與限制交 App 設計員。所有對外使用均由使用者核准。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/market-risk/2026-08-03-v01.md",
-      "asOf": "2026-08-03 07:10（Asia/Taipei，UTC+8；人工試跑截止）",
-      "updatedAt": "2026-08-03（Asia/Taipei；人工試跑）"
+      "source": "records/market-risk/2026-08-04-v01.md",
+      "asOf": "2026-08-04 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-04 07:12（Asia/Taipei，UTC+8）"
     },
     {
       "id": "social-operator",
@@ -522,20 +980,64 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
-      "currentTask": "Threads 草稿｜指數上漲，不代表風險下降",
+      "currentTask": "Threads 草稿｜油價跌、指數漲，風險就消失了嗎？",
       "progress": "等待人工核准",
       "dependencies": [
-        "records/daily-briefs/2026-08-03-v01.md"
+        "records/daily-briefs/2026-08-04-v01.md"
       ],
       "handoff": "研究疑問退回總經研究員；成果與實驗交總司令驗收；最終語氣、個人觀點、發布與互動交使用者。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/content/threads/2026-08-03-index-up-risk-not-down-v01.md",
-      "asOf": "2026-08-03",
-      "updatedAt": "2026-08-03"
+      "source": "records/content/threads/2026-08-04-oil-down-risk-not-gone-v01.md",
+      "asOf": "2026-08-04",
+      "updatedAt": "2026-08-04"
     }
   ],
   "tasks": [
+    {
+      "id": "records/market-risk/2026-08-04-v01.md",
+      "title": "市場風險報告｜2026-08-04-v01",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/market-risk/2026-08-04-v01.md",
+      "asOf": "2026-08-04 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-04 07:12（Asia/Taipei，UTC+8）"
+    },
+    {
+      "id": "records/daily-briefs/2026-08-04-v01.md",
+      "title": "油價急跌帶動風險反彈，但價格與流動性沒有同步鬆開",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/daily-briefs/2026-08-04-v01.md",
+      "asOf": "2026-08-04 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-04 07:11（Asia/Taipei，UTC+8）"
+    },
+    {
+      "id": "records/content/threads/2026-08-04-oil-down-risk-not-gone-v01.md",
+      "title": "Threads 草稿｜油價跌、指數漲，風險就消失了嗎？",
+      "owner": "社群經營員",
+      "ownerId": "social-operator",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [
+        "records/daily-briefs/2026-08-04-v01.md"
+      ],
+      "source": "records/content/threads/2026-08-04-oil-down-risk-not-gone-v01.md",
+      "asOf": "2026-08-04",
+      "updatedAt": "2026-08-04"
+    },
     {
       "id": "records/content/threads/2026-08-03-index-up-risk-not-down-v01.md",
       "title": "Threads 草稿｜指數上漲，不代表風險下降",
@@ -581,25 +1083,6 @@
       "updatedAt": "2026-08-03（Asia/Taipei；人工試跑）"
     },
     {
-      "id": "records/decisions/2026-08-02-enable-dashboard-approval-and-morning-schedule.md",
-      "title": "啟用 Dashboard 核准與晨報排程",
-      "owner": "總司令",
-      "ownerId": "commander",
-      "status": "已完成",
-      "artifactStatus": "已核准",
-      "rawStatus": null,
-      "nextStep": "依紀錄保留結果並追蹤後續",
-      "dependencies": [
-        "workflows/daily-brief.md",
-        "workflows/market-risk.md",
-        "docs/superpowers/plans/2026-08-02-dashboard-approval-trading-calendar-and-morning-automation.md",
-        "dashboard-site/README.md"
-      ],
-      "source": "records/decisions/2026-08-02-enable-dashboard-approval-and-morning-schedule.md",
-      "asOf": "2026-08-03",
-      "updatedAt": "2026-08-02"
-    },
-    {
       "id": "records/market-risk/2026-07-31-v01.md",
       "title": "市場風險報告｜2026-07-31-v01",
       "owner": "總經研究員",
@@ -630,6 +1113,1448 @@
   ],
   "briefArchive": [
     {
+      "id": "records/daily-briefs/2026-08-04-v01.md",
+      "date": "2026-08-04",
+      "version": 1,
+      "versionLabel": "v01",
+      "isLatest": true,
+      "title": "油價急跌帶動風險反彈，但價格與流動性沒有同步鬆開",
+      "summary": "S&P 500 上漲 1.5%、Dow 上漲 1.3%創收盤新高、Nasdaq 上漲 2.1%；Brent 下跌 4.7%至 83.77 美元，是即時能源風險降溫的直接市場反應。 10 年期美債市場殖利率由 4.75%降至 4.68%，但仍高於伊朗戰爭前的 3.97%；折現率風險改善，尚未正常化。 美國 7 月 ISM 製造業 PMI 升至 55.6、創 2022 年 5 月以來最高；但價格指數仍為 71.1、供應商交期 58.9，強成長同時保留成本與利率壓力。 Fed 最新 H.4.1 顯示，7/29 當週存款機構準備金減少 1,203.52 億美元、TGA 增加 1,350.25 億美元；單週流動性收緊不能直接預測股市，但削弱「油價下跌等於全面寬鬆」的解讀。 Palantir Q2 營收年增 93%、美國商業營收年增 149%，並上調全年財測；AI 商業化證據變強，同時把整個 AI 板塊的成長與獲利門檻推得更高。",
+      "freshness": "最新",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:d804abbca721b81c96e0a360ae8ef8019d1e16c396c6af3e34c99293e97c74aa",
+      "coveredSessionDate": "2026-08-03",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-08-04 07:10（Asia/Taipei，UTC+8）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "產製時間：2026-08-04 07:11（Asia/Taipei，UTC+8）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察市場：全球總經、美債、美股、能源、AI 軟體、半導體與亞洲科技供應鏈"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察期間：以 2026-08-03 美國交易時段及截止前已發布資料為主"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料完整度：86／100；缺 8/3 官方 Treasury 日終曲線、同一截止時間的投資級／高收益債利差、VIX 與美元指數"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "一分鐘摘要"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "S&P 500 上漲 1.5%、Dow 上漲 1.3%創收盤新高、Nasdaq 上漲 2.1%；Brent 下跌 4.7%至 83.77 美元，是即時能源風險降溫的直接市場反應。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "10 年期美債市場殖利率由 4.75%降至 4.68%，但仍高於伊朗戰爭前的 3.97%；折現率風險改善，尚未正常化。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "美國 7 月 ISM 製造業 PMI 升至 55.6、創 2022 年 5 月以來最高；但價格指數仍為 71.1、供應商交期 58.9，強成長同時保留成本與利率壓力。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Fed 最新 H.4.1 顯示，7/29 當週存款機構準備金減少 1,203.52 億美元、TGA 增加 1,350.25 億美元；單週流動性收緊不能直接預測股市，但削弱「油價下跌等於全面寬鬆」的解讀。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Palantir Q2 營收年增 93%、美國商業營收年增 149%，並上調全年財測；AI 商業化證據變強，同時把整個 AI 板塊的成長與獲利門檻推得更高。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日風險儀表"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "1–4 週風險分數：60／100"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "相較前一交易日：-5"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險狀態：中性"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "即時風險：1–3 個交易日內，市場將驗證伊朗談判是否可執行，並消化 Palantir 財報、JOLTS 與 AMD 財報等高波動催化劑"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "結構性風險：1–2 季內，輸入價格黏著、長端殖利率偏高、流動性抽離與 AI 高預期仍可能壓縮估值容錯"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "今日主要風險來源：通膨與長端利率、美元流動性、AI 與半導體市場結構"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "五則重要事件"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "1｜油價下跌讓市場喘息，但反彈仍押注談判可以落地"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "美方週末暫停新的對伊朗攻擊後，週一 Brent 明顯下跌，美股四大主要指數同步上漲。這確認能源尾部風險在市場定價中下降，但伊朗是否正式接受條件、停火能否持續及荷莫茲海峽是否實際恢復通行，截止時仍未完全確認。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "S&P 500 +1.5%至 7,600.50，距歷史收盤高點 7,609.78 約 0.1%；Dow +1.3%至 53,178.41、Nasdaq +2.1%、Russell 2000 +1.7%。Brent -4.7%至 83.77 美元。10 年期美債市場殖利率由 4.75%降至 4.68%，仍高於戰前 3.97%。來源為 Associated Press，2026-08-03。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "油價下跌同時降低通膨尾部風險、航空與運輸成本及長端利率壓力，因此股債可以同時受益。下行風險沒有消失，而是從「立即供應衝擊」轉成「談判失敗後風險溢酬快速回補」；指數接近高點，也提高對負面反轉的敏感度。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 風險變化為主，B 估值修正為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：緩解，但尚未解除"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日與 1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：暫停攻擊／談判預期 → 油價與殖利率下降 → 風險資產反彈；若協議破裂 → 能源風險溢酬回補 → 通膨與估值壓力重新上升"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：伊朗正式接受、可驗證停火、荷莫茲船運恢復，且 Brent 持續低於 8/3 收盤"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：四大美股指數全面上漲、油價與 10 年期殖利率同步下降，市場廣度較前次改善"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：談判落地且能源、運輸與通膨預期連續降溫，則應進一步降低警戒"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "2｜製造業創四年多最快成長，價格壓力卻仍高"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "美國 7 月 ISM 製造業連續第七個月擴張，生產、訂單與就業都改善；但價格仍處高檔、供應商交期繼續變慢。這不是衰退訊號，而是「需求比預期強、成本尚未完全降溫」的利率風險。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "製造業 PMI 由 53.3 升至 55.6，為 2022 年 5 月以來最高；新訂單 56.7、生產 58.5、就業 52.8。價格指數由 73.0 降至 71.1但仍高，供應商交期由 57.4升至 58.9。來源為 Institute for Supply Management，2026-08-03，資料期間為 2026 年 7 月。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "強勁訂單與生產降低短期衰退機率，是重要反方證據；但價格與交期顯示供應成本仍可能傳到企業毛利、通膨與利率預期。對高估值資產，風險不是成長立刻消失，而是強成長延後貨幣寬鬆或提高長端期限溢酬。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 利率風險為主，A 基本面成本壓力為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫但訊號混合"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週與 1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：訂單與生產強／交期慢 → 輸入價格黏著 → 通膨與政策預期偏鷹 → 長端利率與高估值資產承壓"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：ISM 價格續高、JOLTS／就業強於預期、10 年期重回 4.75%以上"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：價格指數已連續第三個月下降，且就業與新出口訂單回到擴張"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：價格與供應交期持續下降，而成長維持，形成非通膨式擴張"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "3｜TGA 上升、銀行準備金下降，流動性成為反彈背後的逆風"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Fed 最新週資料顯示，財政部一般帳戶增加的同時，銀行準備金明顯下降。這類單週變化可能受稅款、發債與結算時點影響，不能單獨推論市場方向；但它補上前幾版缺少的流動性證據，顯示金融條件沒有和油價一起全面放鬆。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "截至 2026-07-29，存款機構在 Federal Reserve Banks 的準備金為 2.944544 兆美元，單週減少 1,203.52 億美元；U.S. Treasury General Account 為 9,704.42 億美元，單週增加 1,350.25 億美元。Fed 總資產為 6.73819 兆美元，單週減少 91.88 億美元。來源為 Federal Reserve H.4.1，發布日 2026-07-30、資料日 2026-07-29。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "TGA 補庫通常會從金融體系抽走部分現金，準備金下降則降低市場的流動性緩衝。現在水位仍高，沒有信用壓力擴散證據；但若 TGA 持續上升、準備金續降且美元走強，股票與槓桿部位對利率和事件衝擊會更敏感。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 流動性風險為主，C 資金輪動為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：TGA 上升／準備金下降 → 金融體系可用流動性減少 → 槓桿與估值容錯下降 → 事件衝擊放大"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：準備金連續下降、美元走強、信用利差擴大或回購市場壓力上升"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：目前只有一週明顯變化，準備金仍接近 2.94 兆美元，尚無信用市場同步惡化證據"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：TGA 回落或準備金回升，且信用與資金市場維持穩定"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "4｜Palantir 證明 AI 可以變現，也把市場的合格線拉得更高"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Palantir 在美股收盤後公布強勁 Q2，營收、獲利、現金流與全年財測同步提高。這是 AI 商業化與 ROI 的正面證據；下行風險在於，市場可能把 90%以上成長與高利潤率外推成整個 AI 板塊的新標準，讓無法交出同等回收的企業更容易被重估。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Q2 營收 19.35464 億美元、年增 93%；GAAP 稀釋 EPS 0.41 美元。毛利 16.38594 億美元，依公司報表計算毛利率約 84.7%；調整後自由現金流 12.20359 億美元、率 63%；單季設備購置 1,455.4 萬美元。美國商業營收 7.64 億美元、年增 149%，剩餘合約價值 62.38 億美元、年增 124%。公司把全年營收財測上調至 81.50–81.58 億美元，調整後自由現金流上調至 45–47 億美元。來源為 Palantir／Business Wire，2026-08-03。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "這份財報同時具備收入增長、GAAP 獲利、自由現金流與合約能見度，反駁「AI 投資普遍沒有回報」。但單一軟體公司的高毛利、低實體 CapEx 結構不能直接類推到晶片、雲端或資料中心；若市場忽略商業模式差異，板塊估值會更集中也更脆弱。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面分化為主，B 估值修正為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：潛伏；財報後正式市場反應尚待確認"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日與 1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：AI 商業化超預期 → 板塊成長／獲利門檻上升 → 未達標企業估值折價 → AI 指數集中與波動放大"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：財報優於預期但股價無法維持漲幅，或其他 AI 公司營收、毛利與現金流明顯落後"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：Palantir 已交出 GAAP 獲利、63%調整後自由現金流率與上調財測，證明部分 AI 應用有強勁回報"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：更多 AI 企業同步證明收入、現金流與資本效率，而市場廣度擴大"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "5｜Micron 與韓股劇烈反轉，晶片基本面強不等於價格結構穩"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "週一美股全面上漲，但 Micron 仍在盤中由跌轉漲，韓國 KOSPI 則在創紀錄反彈後大幅回落。這延續 AI 與記憶體族群對消息、部位及高預期高度敏感的結構性風險。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Micron 盤中一度下跌 6.4%，之後轉為上漲 1.7%，終場上漲 0.8%；年初至今約上漲 190%。KOSPI 週一 -5.1%，前一交易日曾創紀錄上漲 17.9%。來源為 Associated Press，2026-08-03。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "終場上漲與 AI 需求仍強，是基本面沒有全面反轉的證據；但大幅日內反轉與區域指數跳動顯示定價由集中持倉與高預期主導。對被動指數與亞洲供應鏈，主要風險是市場廣度改善不夠持久，少數權值波動放大整體回撤。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：C 資金輪動為主，B 估值修正為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：已觸發"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日與 1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：高成長預期／集中部位 → 消息邊際效應下降 → 個股與區域指數反轉 → 被動指數與供應鏈波動放大"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：AMD 財報後半導體再度大幅分化、等權重市場落後，或波動擴散到信用"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：Micron 終場仍上漲、四大美股指數同步走高，Palantir 與雲端財報支持 AI 需求"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：晶片股波動下降、上漲擴散，且訂單、毛利與現金流共同確認需求健康"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "事實"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "數值／變化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料期間"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源與日期"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "美股全面上漲、能源與長債降溫"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "S&P +1.5%；Brent -4.7%至 83.77 美元；10Y 4.75%→4.68%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-03"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "Associated Press，2026-08-03",
+                  "href": "https://apnews.com/article/stocks-markets-dollar-yen-trump-oil-d19a8f9a77b6fceca41da3e4b6bf17aa"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "美國製造業成長加速但價格仍高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "PMI 55.6；Prices 71.1；Supplier Deliveries 58.9"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-07"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "ISM，2026-08-03",
+                  "href": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/july/"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "銀行準備金下降、TGA 上升"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "準備金單週 -1,203.52 億美元；TGA +1,350.25 億美元"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "截至 2026-07-29"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "Federal Reserve H.4.1，2026-07-30",
+                  "href": "https://www.federalreserve.gov/releases/h41/20260730/"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Palantir AI 商業收入、獲利與現金流同步成長"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "營收 +93%；美國商業營收 +149%；調整後 FCF 12.20 億美元"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026 Q2"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "Palantir／Business Wire，2026-08-03",
+                  "href": "https://www.businesswire.com/news/home/20260802523449/en/"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "本週有重要勞動市場催化劑"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "JOLTS 8/4、就業報告 8/7，均為美東時間"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-04 至 2026-08-07"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "BLS Release Calendar，2026",
+                  "href": "https://www.bls.gov/schedule/2026/home.htm"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論與初步判斷"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "初判為「即時能源風險下降，但 1–4 週風險只從偏高降到中性，並未轉為低風險」。推論鏈是：油價與殖利率下跌降低當日折現率衝擊；ISM 成長、股市廣度與 Palantir 財報反對衰退或 AI 全面失速；但 ISM 價格、TGA 補庫／準備金下降及晶片高波動仍限制估值容錯。上述是 AI 根據已確認事實形成的暫時推論，不是來源原話，也不是漲跌預測。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "外部觀點比較"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀點摘要"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "與初判一致／分歧"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "對判斷影響"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-03"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "把股市反彈主因指向油價下降、通膨擔憂緩解與殖利率回落，同時保留 AI 晶片高波動"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "支持降低即時能源風險與市場結構子分數，但不把總風險降至偏低"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "ISM，2026-08-03"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "認為製造業以四年多最快速度成長，但調查回覆仍大量提到價格波動、伊朗戰爭、交期與關稅"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "同時支持成長反證與通膨／供應壓力"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Palantir 管理層，2026-08-03"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "將營收、商業合約與現金流成長歸因於 AI 商業化需求"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "部分一致"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "財務數字支持 AI ROI，但管理層前瞻觀點不作為估值安全的證明"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "游庭皓、財經 M 平方"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "本次未導入"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "無法比較"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "不影響以公開原始來源形成的判斷"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "最終判斷與反方證據"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終判斷：未來 1–4 週市場下行風險由 65 降至 60，狀態從偏高回到中性，信心 80／100。下降來自油價、長債與美股廣度改善；沒有降到偏低，因價格、流動性與 AI／晶片結構風險仍在。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：四大美股指數全面上漲；ISM 訂單、生產與就業擴張；Palantir 營收、獲利與現金流同步強勁；若伊朗談判落地，能源風險可進一步下降。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若停火與船運可驗證、ISM 價格續降、準備金回升且市場廣度持續改善，應下調風險；若談判破裂、10 年期重返 4.75%以上或信用利差擴大，則重新上調。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日市場一句話"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "今天市場真正交易的不是戰爭風險已經消失，而是油價下降為高利率與高估值暫時買到多少喘息時間。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "反方證據與尚未確認資料"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "反方證據：S&P 500 距收盤高點約 0.1%，Dow 創新高，Russell 2000 也上漲；ISM 與 Palantir 提供成長及 AI 回報證據；10 年期與油價同步下降。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：8/3 官方 Treasury 日終曲線、同一截止時間的信用利差、VIX、美元與 Palantir 財報後完整正式交易反應未取得；伊朗正式接受、荷莫茲船運恢復亦未完全確認。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "尚未確認與待觀察"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "未確認資料：缺口使完整度為 86；AP 的 10 年期 4.68%為收盤市場資料，不冒充尚未取得的 Treasury 官方日終曲線。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "未入選候選事件：候選池共十項，包括美股廣度、Brent、長債、ISM 成長、ISM 價格／交期、Fed 流動性、Palantir、Micron／KOSPI、Boeing MAX-7 認證與本週 JOLTS／AMD／就業報告。美股、油價與長債合併為同一因果鏈；Boeing 為個股利多且跨市場下行傳導較弱；未發布的催化劑只列待觀察，不以預測湊成事件。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "下一確認點：伊朗正式回應與荷莫茲船運、8/4 JOLTS、8/4 AMD 財報、8/6 生產力與成本、8/7 美國就業報告、信用利差、VIX、美元與下一份 Fed H.4.1。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "來源"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "link",
+                "text": "NYSE｜Holidays & Trading Hours｜2026 日曆與核心交易時段",
+                "href": "https://www.nyse.com/trade/hours-calendars"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜US stocks rally near a record as falling oil prices ease inflation worries｜2026-08-03",
+                "href": "https://apnews.com/article/stocks-markets-dollar-yen-trump-oil-d19a8f9a77b6fceca41da3e4b6bf17aa"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Institute for Supply Management｜July 2026 Manufacturing PMI Report｜2026-08-03",
+                "href": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/july/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜H.4.1 Factors Affecting Reserve Balances｜2026-07-30；資料日 2026-07-29",
+                "href": "https://www.federalreserve.gov/releases/h41/20260730/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Palantir Technologies／Business Wire｜Q2 2026 Results｜2026-08-03",
+                "href": "https://www.businesswire.com/news/home/20260802523449/en/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Bureau of Labor Statistics｜2026 Release Calendar｜截至 2026-08-04 查核",
+                "href": "https://www.bls.gov/schedule/2026/home.htm"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "AMD｜Fiscal Q2 2026 Financial Results 時程｜2026-07-08",
+                "href": "https://www.amd.com/en/newsroom/press-releases/2026-7-8-amd-to-report-fiscal-second-quarter-2026-financial.html"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Treasury｜Daily Treasury Par Yield Curve Rates｜截至 2026-08-04 07:10 尚未顯示 8/3 官方值",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?page=1&type=daily_treasury_yield_curve"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "人工核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：是否接受五則事件排序、60 分風險主軸、能源降溫但價格與流動性未同步改善的標題，以及五分鐘篇幅，供內部研究及私人 Dashboard 使用。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：本版本不授權公開發布、對外引用、個人化投資建議、持股調整、再平衡、買賣或任何投資行動，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/daily-briefs/2026-08-04-v01.md",
+      "asOf": "2026-08-04 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-04 07:11（Asia/Taipei，UTC+8）",
+      "dependencies": []
+    },
+    {
       "id": "records/daily-briefs/2026-08-03-v01.md",
       "date": "2026-08-03",
       "version": 1,
@@ -637,7 +2562,7 @@
       "isLatest": true,
       "title": "指數收高，但利率與晶片波動正在削弱表面的安全感",
       "summary": "S&P 500 上漲 0.7%、Nasdaq 上漲 1%，但 10 年期美債官方殖利率由 4.68%升至 4.75%、Brent 升至 87.93 美元；指數上漲沒有解除折現率風險。 美國 Q2 勞動成本季增 0.9%、年增 3.4%，私人企業實質薪資年減 0.4%；薪資成長仍黏著，但購買力並未同步改善。 Amazon 上漲 15.3%、Apple 下跌 7.4%、Micron 下跌 5.9%；市場正在依 AI 投資回收速度與供應限制重新定價，而不是全面追捧科技股。 中國官方製造業 PMI 由 50.3 降至 49.2，新訂單降至 48.5，對全球製造、半導體終端需求與台灣供應鏈形成新的成長反證。 週末出現停止對伊朗新攻擊、重啟荷莫茲海峽談判的框架，能降低油價尾部風險；但伊朗尚未正式接受，且過去停火多次破裂，目前只能列為反方證據。",
-      "freshness": "最新",
+      "freshness": "歷史版本",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
       "artifactHash": "sha256:bb3ea7b5b873878c2ac99bef3a5f90b95b9508a996563d82231b2738c758ba79",
@@ -6925,45 +8850,45 @@
     }
   ],
   "brief": {
-    "title": "指數收高，但利率與晶片波動正在削弱表面的安全感",
-    "headline": "指數收高，但利率與晶片波動正在削弱表面的安全感",
-    "summary": "S&P 500 上漲 0.7%、Nasdaq 上漲 1%，但 10 年期美債官方殖利率由 4.68%升至 4.75%、Brent 升至 87.93 美元；指數上漲沒有解除折現率風險。 美國 Q2 勞動成本季增 0.9%、年增 3.4%，私人企業實質薪資年減 0.4%；薪資成長仍黏著，但購買力並未同步改善。 Amazon 上漲 15.3%、Apple 下跌 7.4%、Micron 下跌 5.9%；市場正在依 AI 投資回收速度與供應限制重新定價，而不是全面追捧科技股。 中國官方製造業 PMI 由 50.3 降至 49.2，新訂單降至 48.5，對全球製造、半導體終端需求與台灣供應鏈形成新的成長反證。 週末出現停止對伊朗新攻擊、重啟荷莫茲海峽談判的框架，能降低油價尾部風險；但伊朗尚未正式接受，且過去停火多次破裂，目前只能列為反方證據。",
+    "title": "油價急跌帶動風險反彈，但價格與流動性沒有同步鬆開",
+    "headline": "油價急跌帶動風險反彈，但價格與流動性沒有同步鬆開",
+    "summary": "S&P 500 上漲 1.5%、Dow 上漲 1.3%創收盤新高、Nasdaq 上漲 2.1%；Brent 下跌 4.7%至 83.77 美元，是即時能源風險降溫的直接市場反應。 10 年期美債市場殖利率由 4.75%降至 4.68%，但仍高於伊朗戰爭前的 3.97%；折現率風險改善，尚未正常化。 美國 7 月 ISM 製造業 PMI 升至 55.6、創 2022 年 5 月以來最高；但價格指數仍為 71.1、供應商交期 58.9，強成長同時保留成本與利率壓力。 Fed 最新 H.4.1 顯示，7/29 當週存款機構準備金減少 1,203.52 億美元、TGA 增加 1,350.25 億美元；單週流動性收緊不能直接預測股市，但削弱「油價下跌等於全面寬鬆」的解讀。 Palantir Q2 營收年增 93%、美國商業營收年增 149%，並上調全年財測；AI 商業化證據變強，同時把整個 AI 板塊的成長與獲利門檻推得更高。",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准",
     "version": 1,
-    "artifactHash": "sha256:bb3ea7b5b873878c2ac99bef3a5f90b95b9508a996563d82231b2738c758ba79",
-    "coveredSessionDate": "2026-07-31",
-    "asOf": "2026-08-03 07:10（Asia/Taipei，UTC+8；人工試跑截止）",
-    "source": "records/daily-briefs/2026-08-03-v01.md",
-    "updatedAt": "2026-08-03（Asia/Taipei；人工試跑）",
+    "artifactHash": "sha256:d804abbca721b81c96e0a360ae8ef8019d1e16c396c6af3e34c99293e97c74aa",
+    "coveredSessionDate": "2026-08-03",
+    "asOf": "2026-08-04 07:10（Asia/Taipei，UTC+8）",
+    "source": "records/daily-briefs/2026-08-04-v01.md",
+    "updatedAt": "2026-08-04 07:11（Asia/Taipei，UTC+8）",
     "dependencies": []
   },
   "marketRisk": {
-    "label": "市場風險報告｜2026-08-03-v01",
+    "label": "市場風險報告｜2026-08-04-v01",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准",
     "version": 1,
-    "artifactHash": "sha256:a5c8bd443a6d4d7faea1d4a0460ab943d69c17dbe5d82c99cbe7a9c3befb3e71",
-    "coveredSessionDate": "2026-07-31",
-    "asOf": "2026-08-03 07:10（Asia/Taipei，UTC+8；人工試跑截止）",
-    "source": "records/market-risk/2026-08-03-v01.md",
-    "updatedAt": "2026-08-03（Asia/Taipei；人工試跑）",
+    "artifactHash": "sha256:f3c75a74b352a3ff9d38288f3ba4c0125558ad6432f4dc72d86e98cf78ba33d5",
+    "coveredSessionDate": "2026-08-03",
+    "asOf": "2026-08-04 07:10（Asia/Taipei，UTC+8）",
+    "source": "records/market-risk/2026-08-04-v01.md",
+    "updatedAt": "2026-08-04 07:12（Asia/Taipei，UTC+8）",
     "dependencies": [],
-    "score": 65,
-    "baseline": 65,
+    "score": 60,
+    "baseline": 60,
     "eventAdjustment": 0,
-    "dailyChange": 4,
-    "immediateRisk": "1–3 個交易日內，週末伊朗談判、10 年期殖利率接近 4.75%與科技財報後極端輪動可能造成大幅重新定價",
-    "structuralRisk": "1–2 季內，中國製造需求降速、AI CapEx 回收分化與高利率可能共同壓縮科技供應鏈估值",
+    "dailyChange": -5,
+    "immediateRisk": "1–3 個交易日內，市場將驗證伊朗談判能否執行，並消化 JOLTS、Palantir 財報後正式交易及 AMD 財報等高波動催化劑",
+    "structuralRisk": "1–2 季內，輸入價格黏著、長端殖利率仍高、流動性抽離及 AI 高預期可能共同壓縮估值容錯",
     "topRisks": [
       "通膨與長端利率",
-      "AI 與半導體市場結構",
-      "中國製造需求"
+      "美元流動性",
+      "AI 與半導體市場結構"
     ],
-    "confidence": 78,
-    "completeness": 84,
+    "confidence": 80,
+    "completeness": 86,
     "experimental": true
   },
   "blockers": []
