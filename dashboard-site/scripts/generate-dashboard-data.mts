@@ -787,6 +787,10 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
       artifactStatus: "待核准" as const,
       rawStatus: record.rawStatus ?? "待核准",
       summary: summaryFrom(record.content),
+      fullContent:
+        record.definition.type === "Threads"
+          ? { format: "structured-markdown" as const, blocks: parseBriefMarkdown(record.content) }
+          : null,
       decision: decisionFrom(record),
       source: record.relativePath,
       asOf: record.asOf,

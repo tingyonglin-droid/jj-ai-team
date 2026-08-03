@@ -109,7 +109,11 @@ function threads(status = "待核准") {
 
 ## 主版本
 
-內文。
+美股三大指數都上漲，市場風險就下降了嗎？
+
+## 備選開頭
+
+- 收紅不一定代表風險下降。
 
 ## 查核與語氣
 
@@ -338,13 +342,15 @@ test("用台北日期產生可追溯的任務、員工、摘要與核准欄位",
   try {
     await writeRoles(root);
     await writeFixture(root, "records/daily-briefs/2026-07-30-v01.md", brief());
+    await writeFixture(root, "records/content/threads/2026-07-30-topic-v01.md", threads());
 
     const snapshot = await generateDashboardSnapshot(root, new Date("2026-07-29T16:30:00.000Z"));
-    const approval = snapshot.approvals[0];
+    const approval = snapshot.approvals.find((item) => item.type === "晨報");
     const task = snapshot.tasks.find((item) => item.owner === "總經研究員");
     const employee = snapshot.employees.find((item) => item.id === "macro-researcher");
 
     assert.equal(snapshot.date, "2026-07-30");
+    assert.ok(approval);
     assert.equal(approval.type, "晨報");
     assert.equal(approval.owner, "總經研究員");
     assert.equal(approval.createdAt, null);
@@ -367,6 +373,17 @@ test("用台北日期產生可追溯的任務、員工、摘要與核准欄位",
     assert.equal(snapshot.brief?.artifactHash, approval.artifactHash);
     assert.equal(snapshot.brief?.updatedAt, task?.updatedAt);
     assert.deepEqual(snapshot.brief?.dependencies, task?.dependencies);
+
+    const threadsApproval = snapshot.approvals.find((approval) => approval.type === "Threads");
+    assert.ok(threadsApproval?.fullContent);
+    const serializedDraft = JSON.stringify(threadsApproval.fullContent.blocks);
+    assert.match(serializedDraft, /美股三大指數都上漲/);
+    assert.match(serializedDraft, /備選開頭/);
+    assert.match(serializedDraft, /查核與語氣/);
+    assert.match(serializedDraft, /最終文字與發布由使用者決定/);
+
+    const briefApproval = snapshot.approvals.find((approval) => approval.type === "晨報");
+    assert.equal(briefApproval?.fullContent, null);
   } finally {
     await rm(root, { recursive: true, force: true });
   }

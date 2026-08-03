@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-02T22:53:39.333Z",
+  "generatedAt": "2026-08-03T02:04:49.648Z",
   "date": "2026-08-03",
   "expectation": {
     "dashboardDate": "2026-08-03",
-    "expectedReportDate": "2026-07-31",
-    "coveredSessionDate": "2026-07-30",
-    "phase": "before_cutoff",
-    "reason": "尚未到 07:30 交付門檻，沿用前一個應有報告日。"
+    "expectedReportDate": "2026-08-03",
+    "coveredSessionDate": "2026-07-31",
+    "phase": "due",
+    "reason": "已到 07:30 交付門檻，今日應有新的例行晨報。"
   },
   "approvals": [
     {
@@ -18,6 +18,349 @@
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
       "summary": "美股三大指數都上漲，市場風險就下降了嗎？",
+      "fullContent": {
+        "format": "structured-markdown",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "日期：2026-08-03"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "狀態：待核准"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "來源研究："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-03-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "建議時機：現在；但發布前須重新確認伊朗談判、油價與長債是否出現重大更新"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "主版本"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "美股三大指數都上漲，市場風險就下降了嗎？"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "我不會只看指數紅或綠，就決定市場安不安全。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "因為 7/31 的市場，同時出現了三組很矛盾的數字："
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "指數上漲，折現率卻更高"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "S&P 500 +0.7%、Nasdaq +1%，但美國 10 年期公債殖利率從 4.68% 升到 4.75%。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "股價收高，不代表高估值面對的利率壓力已經消失。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "同樣談 AI，市場反應完全不同"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Amazon +15.3%，Apple -7.4%。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "市場獎勵的不是「AI」三個字，而是投資能不能轉成收入、產能與未來現金流。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Amazon 的 AWS 年增 37%，但過去 12 個月自由現金流仍是負 76 億美元。這代表市場正在押注未來回收速度，而不是風險已經消失。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "晶片基本面強，股價結構卻很脆弱"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Micron 單日從盤中上漲 6.4%，翻到收盤下跌 5.9%。同一天 Russell 2000 下跌 0.5%，沒有跟大型科技股一起上漲。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "這比較像高預期資產正在重新定價，不等於晶片需求已經反轉；但也提醒我，少數權值股可能掩蓋市場內部的波動。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "所以我現在會先看三件事："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "① 10 年期殖利率能不能回到 4.75% 以下"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "② 油價與伊朗談判是否真的讓能源風險降溫"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "③ 科技股的上漲能不能擴散到更多公司，而不是只靠少數權值股"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "反方證據也要保留：三大指數仍然收高、AWS 成長很強；如果荷莫茲海峽實際重開，油價與利率壓力也可能下降。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "我的結論不是預測市場接下來會下跌，而是："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "指數上漲的時候，更要確認支撐估值的利率、現金流與市場廣度，有沒有一起改善。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "風險監測的目的不是猜明天漲跌，而是避免被表面的安全感蓋住真正的變化。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "備選開頭"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "S&P 500 上漲 0.7%，但 10 年期美債也升到 4.75%。股價與折現率同時上升時，我不會急著把「收紅」解讀成風險下降。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Amazon +15.3%、Apple -7.4%、Micron -5.9%。這不是科技股一起變好，而是市場開始用更嚴格的標準檢查 AI 投資能不能回收。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "查核與語氣"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "事實與來源：S&P 500 +0.7%、Nasdaq +1%、Russell 2000 -0.5%、Amazon +15.3%、Apple -7.4%、Micron -5.9%，來源為 Associated Press 2026-07-31 收盤報導；10 年期美債 4.68%→4.75%，來源為 U.S. Treasury 2026-07-31；AWS 年增 37%與過去 12 個月自由現金流負 76 億美元，來源為 Amazon 2026 Q2 原始財報。完整連結與定位見來源研究。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "反方或限制：三大指數仍收高，AWS 成長強；伊朗談判若落實並使荷莫茲海峽重開，可能降低油價與長端利率壓力。晨報缺同一截止時間的信用利差、VIX、美元與 8/3 亞洲早盤完整價格，資料完整度為 84／100。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "待使用者補充：確認「我不會只看指數紅或綠」「所以我現在會先看三件事」是否符合本人真實判斷；若不符合，發布前改為中性研究口吻。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "App CTA：不加入；本篇核心是即時市場判斷框架，沒有自然且必要的產品連結。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "內容聲明：本內容為市場研究與風險框架整理，非投資建議；65 分風險指標不是精準漲跌預測。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "核准"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "最終文字與發布由使用者決定：待核准；未授權發布、互動或投資行動。"
+                }
+              ]
+            ]
+          }
+        ]
+      },
       "decision": "等待使用者決定",
       "source": "records/content/threads/2026-08-03-index-up-risk-not-down-v01.md",
       "asOf": "2026-08-03",
@@ -39,6 +382,7 @@
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
       "summary": "市場風險報告｜2026-08-03-v01",
+      "fullContent": null,
       "decision": "是否接受 65 分總分、65 分基準、0 事件調整、資料完整度 84、AI 信心 78 與第 3 日影子紀錄，供內部研究及私人 Dashboard 呈現。",
       "source": "records/market-risk/2026-08-03-v01.md",
       "asOf": "2026-08-03 07:10（Asia/Taipei，UTC+8；人工試跑截止）",
@@ -58,6 +402,7 @@
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
       "summary": "S&P 500 上漲 0.7%、Nasdaq 上漲 1%，但 10 年期美債官方殖利率由 4.68%升至 4.75%、Brent 升至 87.93 美元；指數上漲沒有解除折現率風險。 美國 Q2 勞動成本季增 0.9%、年增 3.4%，私人企業實質薪資年減 0.4%；薪資成長仍黏著，但購買力並未同步改善。 Amazon 上漲 15.3%、Apple 下跌 7.4%、Micron 下跌 5.9%；市場正在依 AI 投資回收速度與供應限制重新定價，而不是全面追捧科技股。 中國官方製造業 PMI 由 50.3 降至 49.2，新訂單降至 48.5，對全球製造、半導體終端需求與台灣供應鏈形成新的成長反證。 週末出現停止對伊朗新攻擊、重啟荷莫茲海峽談判的框架，能降低油價尾部風險；但伊朗尚未正式接受，且過去停火多次破裂，目前只能列為反方證據。",
+      "fullContent": null,
       "decision": "是否接受五則事件排序、65 分風險主軸、週末伊朗事件的保守處理、標題與五分鐘篇幅，供內部研究及私人 Dashboard 使用。",
       "source": "records/daily-briefs/2026-08-03-v01.md",
       "asOf": "2026-08-03 07:10（Asia/Taipei，UTC+8；人工試跑截止）",
@@ -77,6 +422,7 @@
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
       "summary": "市場風險報告｜2026-07-31-v01",
+      "fullContent": null,
       "decision": "是否接受 61 分總分、56 分基準、+5 事件調整、資料完整度 82、AI 信心 76 與第 2 日影子紀錄，供內部研究及私人 Dashboard 呈現。",
       "source": "records/market-risk/2026-07-31-v01.md",
       "asOf": "2026-07-31 07:10（Asia/Taipei，UTC+8；人工回溯截止）",
@@ -96,6 +442,7 @@
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
       "summary": "美國 Q2 實質 GDP 年化成長 1.5%，低於 Q1 的 2.1%；但私人國內最終需求成長 3.9%，比較像成長降速而非衰退已確認。 Q2 國內購買價格指數升 5.7%，但 6 月核心 PCE 月增只 0.1%；市場同時面對季度通膨黏著與月度降溫兩種訊號。 S&P 500 上漲 1.7%、Nasdaq 上漲 2.8%，但 Microsoft 上漲 15.5%、Meta 下跌 8%；指數反彈的核心是 AI ROI 分化，不是所有科技股風險一起消失。 Amazon AWS 成長 37%，但過去 12 個月自由現金流由正 182 億美元轉為負 76 億美元，全年資本支出預期升至 2,200 億美元；需求很強，現金回收速度仍是風險。 影子風險分數由 65 降至 61：市場廣度改善降低即時風險，但高通膨、長端殖利率與 AI CapEx／現金流分化仍使 1–4 週風險偏高。",
+      "fullContent": null,
       "decision": "是否接受五則事件排序、61 分風險主軸、下行框架、標題與五分鐘篇幅，供內部研究及私人 Dashboard 使用。",
       "source": "records/daily-briefs/2026-07-31-v01.md",
       "asOf": "2026-07-31 07:10（Asia/Taipei，UTC+8；人工回溯截止）",

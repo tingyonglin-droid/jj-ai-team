@@ -68,6 +68,10 @@ export interface DashboardSnapshot {
       artifactStatus: "待核准";
       rawStatus: string;
       summary: string;
+      fullContent: {
+        format: "structured-markdown";
+        blocks: BriefBlock[];
+      } | null;
       decision: string;
       createdAt: string | null;
       recordDate: string | null;

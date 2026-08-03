@@ -85,6 +85,7 @@ function pendingSnapshot(): DashboardSnapshot {
         artifactStatus: "待核准",
         rawStatus: "待核准",
         summary: "摘要",
+        fullContent: null,
         decision: "是否核准此晨報版本。",
         createdAt: null,
         recordDate: "2026-07-31",
