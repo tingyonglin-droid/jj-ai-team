@@ -7,13 +7,28 @@ import {
   type WorkStatus,
 } from "../lib/dashboard-types";
 import { ApprovalAction } from "./approvals/approval-action";
+import { ThreadsDraftDisclosure } from "./approvals/threads-draft-disclosure";
 
 type Approval = DashboardSnapshot["approvals"][number];
 type Employee = DashboardSnapshot["employees"][number];
 type DataIssue = DashboardSnapshot["blockers"][number];
 
 function canApproveInDashboard(approval: Approval) {
-  return approval.type === "晨報" || approval.type === "市場風險報告" || approval.type === "Threads";
+  if (approval.type === "Threads") {
+    return Boolean(approval.fullContent?.blocks.length);
+  }
+  return approval.type === "晨報" || approval.type === "市場風險報告";
+}
+
+function ThreadsDraftReview({ approval }: { approval: Approval }) {
+  if (approval.type !== "Threads") return null;
+  return (
+    <ThreadsDraftDisclosure
+      artifactId={approval.id}
+      blocks={approval.fullContent?.blocks ?? null}
+      source={approval.source}
+    />
+  );
 }
 
 export function StatusBadge({
@@ -117,7 +132,7 @@ export function TodayOverview({ snapshot }: { snapshot: DashboardSnapshot }) {
           <ul className="decision-list">
             {snapshot.approvals.map((approval) => (
               <li key={approval.id}>
-                <div>
+                <div className="decision-content">
                   <p className="item-meta">成果類型：{approval.type}；負責角色：{approval.owner}</p>
                   <h3>{approval.title}</h3>
                   <p>{approval.decision}</p>
@@ -125,6 +140,7 @@ export function TodayOverview({ snapshot }: { snapshot: DashboardSnapshot }) {
                     來源：{approval.source}；資料代表時間：{approval.asOf}；更新時間：
                     {approval.updatedAt}
                   </p>
+                  <ThreadsDraftReview approval={approval} />
                 </div>
                 <div className="decision-actions">
                   <StatusBadge status={approval.status} />
@@ -472,6 +488,7 @@ export function ApprovalCenter({ approvals }: { approvals: Approval[] }) {
                         ；資料代表時間：{approval.asOf}；更新時間：
                         {approval.updatedAt}；來源：{approval.source}
                       </p>
+                      <ThreadsDraftReview approval={approval} />
                       {approval.type === "晨報" && approval.recordDate ? (
                         <Link href={`/briefs/${approval.recordDate}`} className="text-link">
                           查看全文

@@ -267,6 +267,13 @@ test("首頁與待核准中心替晨報、市場風險及 Threads 提供兩段�
     title: "Threads 草稿",
     type: "Threads",
     summary: "社群草稿。",
+    fullContent: {
+      format: "structured-markdown",
+      blocks: [
+        { type: "heading", level: 2, content: [{ type: "text", text: "完整 Threads 草稿" }] },
+        { type: "paragraph", content: [{ type: "text", text: "這是供核准前審閱的完整內容。" }] },
+      ],
+    },
     decision: "是否核准草稿。",
     artifactHash: "sha256:threads-v01",
     source: "records/drafts/threads/2026-07-31-v01.md",
@@ -280,5 +287,41 @@ test("首頁與待核准中心替晨報、市場風險及 Threads 提供兩段�
 
   assert.equal((overviewHtml.match(/>核准此版本</g) ?? []).length, 3);
   assert.equal((centerHtml.match(/>核准此版本</g) ?? []).length, 3);
+  assert.equal((overviewHtml.match(/查看完整草稿/g) ?? []).length, 1);
+  assert.equal((centerHtml.match(/查看完整草稿/g) ?? []).length, 1);
+  assert.match(overviewHtml, /aria-expanded="false"/);
+  assert.match(centerHtml, /aria-expanded="false"/);
+  const briefOnlyHtml = renderToStaticMarkup(
+    <TodayOverview snapshot={{ ...snapshot, approvals: [pendingBrief] }} />,
+  );
+  assert.doesNotMatch(briefOnlyHtml, /查看完整草稿/);
   assert.match(centerHtml, /Threads 草稿[\s\S]*?核准此版本[\s\S]*?成果類型：IG/);
+});
+
+test("缺少完整內容的 Threads 草稿在待核准中心 fail-closed", () => {
+  const malformedThreads: DashboardSnapshot["approvals"][number] = {
+    id: "records/drafts/threads/malformed-v01.md",
+    title: "不完整的 Threads 草稿",
+    type: "Threads",
+    owner: "社群經營員",
+    status: "待核准",
+    artifactStatus: "待核准",
+    rawStatus: "待核准",
+    summary: "完整草稿未載入。",
+    fullContent: null,
+    decision: "是否核准草稿。",
+    createdAt: null,
+    recordDate: "2026-07-31",
+    version: 1,
+    artifactHash: "sha256:threads-malformed-v01",
+    source: "records/drafts/threads/malformed-v01.md",
+    asOf: "2026-07-31 07:00（Asia/Taipei，UTC+8）",
+    updatedAt: "2026-07-31",
+    dependencies: [],
+  };
+
+  const html = renderToStaticMarkup(<ApprovalCenter approvals={[malformedThreads]} />);
+
+  assert.match(html, /完整草稿無法載入/);
+  assert.doesNotMatch(html, /核准此版本/);
 });

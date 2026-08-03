@@ -472,6 +472,10 @@ h3 {
   border-bottom: 1px solid var(--line);
 }
 
+.decision-content {
+  min-width: 0;
+}
+
 .decision-actions {
   display: grid;
   flex: none;
@@ -487,6 +491,30 @@ h3 {
 
 .decision-actions .approval-action {
   margin-top: 0;
+}
+
+.threads-draft-toggle {
+  margin-top: 0.85rem;
+}
+
+.threads-draft-content {
+  width: 100%;
+  margin-top: 0.85rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--line);
+  line-height: 1.75;
+}
+
+.threads-draft-content h2,
+.threads-draft-content h3,
+.threads-draft-content h4 {
+  margin: 1.25rem 0 0.5rem;
+}
+
+.threads-draft-content p,
+.threads-draft-content ol,
+.threads-draft-content ul {
+  margin: 0.65rem 0 0;
 }
 
 .approval-primary-button,
