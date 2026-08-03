@@ -21,6 +21,7 @@ import type {
   WorkStatus,
   Freshness,
 } from "../lib/dashboard-types.ts";
+import { threadsArtifactKey } from "../lib/dashboard-types.ts";
 
 type SourceDefinition = {
   id: string;
@@ -576,6 +577,39 @@ function buildBriefArchive(
     );
 }
 
+function buildThreadsDocuments(
+  records: MarkdownRecord[],
+): DashboardSnapshot["threadsDocuments"] {
+  return records
+    .flatMap((record) => {
+      const validation = validateRecord(record);
+      if (!validation.valid) return [];
+      const valid = validation.record;
+      const artifactHash = artifactContentHash(valid.content);
+      return [{
+        id: valid.relativePath,
+        artifactKey: threadsArtifactKey(valid.relativePath, valid.version, artifactHash),
+        date: valid.recordDate ?? valid.representativeDate,
+        version: valid.version,
+        versionLabel: `v${String(valid.version).padStart(2, "0")}`,
+        title: valid.title,
+        summary: summaryFrom(valid.content),
+        rawStatus: valid.rawStatus ?? valid.artifactStatus,
+        artifactHash,
+        blocks: parseBriefMarkdown(valid.content),
+        source: valid.relativePath,
+        asOf: valid.asOf,
+        updatedAt: valid.updatedAt,
+        dependencies: valid.dependencies,
+      } satisfies DashboardSnapshot["threadsDocuments"][number]];
+    })
+    .sort((left, right) =>
+      right.date.localeCompare(left.date) ||
+      right.version - left.version ||
+      right.source.localeCompare(left.source),
+    );
+}
+
 function newestWorkFirst(left: ValidRecord, right: ValidRecord) {
   return (
     right.representativeDate.localeCompare(left.representativeDate) ||
@@ -729,6 +763,10 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
     expectation,
     calendar,
   );
+  const threadsIndex = definitions.findIndex((definition) => definition.id === "threads");
+  const threadsDocuments = buildThreadsDocuments(
+    threadsIndex >= 0 ? artifactRecordSets[threadsIndex] : [],
+  );
   const allRecords = [...artifactRecordSets.flat(), ...reviews, ...decisions];
   const { validRecords, issues } = selectLatestEffective(allRecords);
   const sortedValidRecords = [...validRecords].sort(newestWorkFirst);
@@ -851,6 +889,9 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
     employees: employeeSnapshots,
     tasks: currentTasks,
     briefArchive,
+    threadsDocuments,
+    approvedThreadsArchive: [],
+    threadsArchiveIssues: [],
     brief: briefRecord
       ? {
           title: briefRecord.title,

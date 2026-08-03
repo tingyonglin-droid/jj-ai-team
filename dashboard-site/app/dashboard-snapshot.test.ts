@@ -40,6 +40,9 @@ test("每個 Dashboard 路由都先授權再載入快照", async () => {
     "/approvals",
     "/briefs",
     "/briefs/2026-07-30?version=v01",
+    "/content",
+    "/content/threads",
+    "/content/threads/stable-key",
   ]) {
     const events: string[] = [];
 
@@ -56,6 +59,9 @@ test("每個 Dashboard 路由都先授權再載入快照", async () => {
           employees: [],
           tasks: [],
           briefArchive: [],
+          threadsDocuments: [],
+          approvedThreadsArchive: [],
+          threadsArchiveIssues: [],
           brief: null,
           marketRisk: null,
           blockers: [],
@@ -85,6 +91,9 @@ test("核准資料庫無法讀取時保留 Dashboard 並顯示明確受阻項目
         employees: [],
         tasks: [],
         briefArchive: [],
+        threadsDocuments: [],
+        approvedThreadsArchive: [],
+        threadsArchiveIssues: [],
         brief: null,
         marketRisk: null,
         blockers: [],

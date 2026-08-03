@@ -53,6 +53,7 @@ test("標準測試指令涵蓋帳號、快照、頁面與正式輸出驗收", as
   assert.match(testCommand, /brief-content\.test\.ts/);
   assert.match(testCommand, /brief-components\.test\.tsx/);
   assert.match(testCommand, /threads-draft-disclosure\.test\.tsx/);
+  assert.match(testCommand, /threads-components\.test\.tsx/);
   assert.match(testCommand, /approval-store\.test\.ts/);
   assert.match(testCommand, /approval-events\.test\.ts/);
   assert.match(testCommand, /approval-handler\.test\.ts/);
@@ -157,11 +158,12 @@ test("lockfile 的每個套件節點都可由根依賴閉包到達", async () =>
 });
 
 test("響應式與鍵盤可用性規則可由原始碼重現驗收", async () => {
-  const [styles, shell, briefComponents, approvalAction] = await Promise.all([
+  const [styles, shell, briefComponents, approvalAction, threadsComponents] = await Promise.all([
     readProjectFile("app/globals.css"),
     readProjectFile("app/dashboard-shell.tsx"),
     readProjectFile("app/briefs/brief-components.tsx"),
     readProjectFile("app/approvals/approval-action.tsx"),
+    readProjectFile("app/content/threads/threads-components.tsx"),
   ]);
   const mobileStyles = cssBlock(styles, /@media\s*\(max-width:\s*720px\)/);
 
@@ -172,6 +174,10 @@ test("響應式與鍵盤可用性規則可由原始碼重現驗收", async () =>
   assert.match(styles, /\.brief-version-nav/);
   assert.match(styles, /\.brief-version-nav\s*>\s*a\s*\{[\s\S]*?min-height:\s*44px/);
   assert.match(styles, /\.brief-table-scroll[\s\S]*overflow-x:\s*auto/);
+  assert.match(styles, /\.threads-archive-grid/);
+  assert.match(styles, /\.threads-reader[\s\S]*max-width:\s*52rem/);
+  assert.match(mobileStyles, /\.threads-archive-grid[\s\S]*grid-template-columns:\s*1fr/);
+  assert.match(mobileStyles, /\.threads-reader[\s\S]*max-width:\s*none/);
   assert.match(styles, /\.approval-primary-button,[\s\S]*?min-height:\s*44px/);
   assert.match(mobileStyles, /\.brief-archive-grid,[\s\S]*?grid-template-columns:\s*1fr;/);
   assert.match(mobileStyles, /\.brief-reader\s*\{[\s\S]*?padding:\s*1rem;/);
@@ -180,8 +186,12 @@ test("響應式與鍵盤可用性規則可由原始碼重現驗收", async () =>
   assert.match(shell, /<a className="skip-link" href="#main-content">/);
   assert.match(shell, /<nav aria-label="主要導覽">/);
   assert.match(shell, /<Link href="\/briefs">晨報全文<\/Link>/);
+  assert.match(shell, /<Link href="\/content">內容<\/Link>/);
   assert.match(shell, /<main id="main-content" className="site-main">/);
   assert.doesNotMatch(briefComponents, /dangerouslySetInnerHTML/);
   assert.match(approvalAction, /role="alertdialog"/);
   assert.match(approvalAction, /不會發布內容、下單或核准未來版本/);
+  assert.match(threadsComponents, /核准不等於發布/);
+  assert.match(threadsComponents, /ArtifactContent/);
+  assert.doesNotMatch(threadsComponents, /api\/approvals|核准此版本/);
 });

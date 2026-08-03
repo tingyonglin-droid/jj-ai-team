@@ -57,7 +57,15 @@ test("does not server-render dashboard content for a non-allowed user", async ()
 test("server-renders every protected dashboard route for an allowed user", async () => {
   process.env.ALLOWED_USER_EMAIL = "owner@example.com";
 
-  for (const path of ["/", "/employees", "/approvals", "/briefs", "/briefs/2026-07-30"]) {
+  for (const path of [
+    "/",
+    "/employees",
+    "/approvals",
+    "/briefs",
+    "/briefs/2026-07-30",
+    "/content",
+    "/content/threads",
+  ]) {
     const response = await render(path, "owner@example.com");
     assert.equal(response.status, 200, path);
     assert.match(await response.text(), /登出 ChatGPT/);
@@ -67,14 +75,21 @@ test("server-renders every protected dashboard route for an allowed user", async
 test("does not render protected pages for a non-allowed user", async () => {
   process.env.ALLOWED_USER_EMAIL = "owner@example.com";
 
-  for (const path of ["/employees", "/approvals", "/briefs", "/briefs/2026-07-30"]) {
+  for (const path of [
+    "/employees",
+    "/approvals",
+    "/briefs",
+    "/briefs/2026-07-30",
+    "/content",
+    "/content/threads",
+  ]) {
     const response = await render(path, "other@example.com");
     assert.equal(response.status, 403, path);
     const html = await response.text();
     assert.match(html, /沒有存取此儀表板的權限/);
     assert.doesNotMatch(
       html,
-      /每日投資晨報|7 月 30 日晨報|定稿摘要|records\/daily-briefs|員工動態/,
+      /每日投資晨報|7 月 30 日晨報|定稿摘要|records\/(?:daily-briefs|content\/threads)|員工動態|完整 Threads 正文/,
     );
   }
 });

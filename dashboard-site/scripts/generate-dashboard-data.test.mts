@@ -389,6 +389,66 @@ test("用台北日期產生可追溯的任務、員工、摘要與核准欄位",
   }
 });
 
+test("Threads 文件庫保留每個有效版本及完整內容", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+
+  try {
+    await writeFixture(
+      root,
+      "records/content/threads/2026-07-30-market-v01.md",
+      threads().replace("美股三大指數都上漲", "第一版完整正文"),
+    );
+    await writeFixture(
+      root,
+      "records/content/threads/2026-07-30-market-v02.md",
+      threads().replace("美股三大指數都上漲", "第二版完整正文"),
+    );
+
+    const snapshot = await generateDashboardSnapshot(
+      root,
+      new Date("2026-07-30T10:00:00.000Z"),
+    );
+
+    assert.deepEqual(
+      snapshot.threadsDocuments.map((document) => document.version),
+      [2, 1],
+    );
+    assert.match(JSON.stringify(snapshot.threadsDocuments[0]?.blocks), /第二版完整正文/);
+    assert.match(JSON.stringify(snapshot.threadsDocuments[1]?.blocks), /第一版完整正文/);
+    assert.equal(snapshot.approvedThreadsArchive.length, 0);
+    assert.equal(snapshot.threadsArchiveIssues.length, 0);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("壞格式 Threads 版本不會進入可讀文件庫", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+
+  try {
+    await writeFixture(
+      root,
+      "records/content/threads/2026-07-30-malformed-v01.md",
+      threads().replace("## 主版本", "## 遺失主版本"),
+    );
+
+    const snapshot = await generateDashboardSnapshot(
+      root,
+      new Date("2026-07-30T10:00:00.000Z"),
+    );
+
+    assert.equal(snapshot.threadsDocuments.length, 0);
+    assert.equal(
+      snapshot.blockers.some(
+        (issue) => issue.source?.includes("malformed") && /主版本/.test(issue.reason),
+      ),
+      true,
+    );
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
 test("保留原始成果狀態並映射全部政策狀態為工作狀態", async () => {
   const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
   const cases = [
