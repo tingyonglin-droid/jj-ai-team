@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import type { ApprovalEvent } from "../db/approval-store";
-import type { DashboardSnapshot } from "./dashboard-types";
+import { threadsArtifactKey, type DashboardSnapshot } from "./dashboard-types";
 import { applyApprovalEvents } from "./approval-events.ts";
 
 const artifactId = "records/daily-briefs/2026-07-31-v01.md";
@@ -48,6 +48,48 @@ test("已同步核准不顯示尚未同步提醒", () => {
   assert.equal(approved.blockers.some((issue) => issue.kind === "sync"), false);
 });
 
+test("Threads 核准事件依 ID、版本與雜湊保留同日每個已核准版本", () => {
+  const snapshot = pendingSnapshot();
+  snapshot.threadsDocuments = [threadsDocument(2), threadsDocument(1)];
+
+  const approved = applyApprovalEvents(snapshot, [
+    threadsEvent(2, "sha256:threads-v02"),
+    threadsEvent(1, "sha256:threads-v01", {
+      syncStatus: "synced",
+      syncedAt: "2026-08-03T02:00:00.000Z",
+    }),
+  ]);
+
+  assert.deepEqual(
+    approved.approvedThreadsArchive.map((document) => document.version),
+    [2, 1],
+  );
+  assert.equal(approved.approvedThreadsArchive[0]?.approvalSyncStatus, "pending");
+  assert.equal(approved.approvedThreadsArchive[1]?.approvalSyncStatus, "synced");
+  assert.equal(approved.threadsArchiveIssues.length, 0);
+});
+
+test("Threads 雜湊不符或來源缺失時不顯示正文並保留問題", () => {
+  const snapshot = pendingSnapshot();
+  snapshot.threadsDocuments = [threadsDocument(1)];
+
+  const result = applyApprovalEvents(snapshot, [
+    threadsEvent(1, "sha256:wrong"),
+    threadsEvent(3, "sha256:missing"),
+  ]);
+
+  assert.equal(result.approvedThreadsArchive.length, 0);
+  assert.equal(result.threadsArchiveIssues.length, 2);
+  assert.equal(
+    result.threadsArchiveIssues.some((issue) => /雜湊不相符/.test(issue.reason)),
+    true,
+  );
+  assert.equal(
+    result.threadsArchiveIssues.some((issue) => /找不到.*全文/.test(issue.reason)),
+    true,
+  );
+});
+
 function approvalEvent(overrides: Partial<ApprovalEvent> = {}): ApprovalEvent {
   return {
     eventId: "event-1",
@@ -58,6 +100,48 @@ function approvalEvent(overrides: Partial<ApprovalEvent> = {}): ApprovalEvent {
     action: "approve",
     actorUserId: "user-123",
     createdAt: "2026-08-03T00:00:00.000Z",
+    syncStatus: "pending",
+    syncedAt: null,
+    ...overrides,
+  };
+}
+
+function threadsDocument(version: number): DashboardSnapshot["threadsDocuments"][number] {
+  const artifactHash = `sha256:threads-v${String(version).padStart(2, "0")}`;
+  const id = `records/content/threads/2026-08-03-market-v${String(version).padStart(2, "0")}.md`;
+  return {
+    id,
+    artifactKey: threadsArtifactKey(id, version, artifactHash),
+    date: "2026-08-03",
+    version,
+    versionLabel: `v${String(version).padStart(2, "0")}`,
+    title: `Threads 草稿 v${version}`,
+    summary: "摘要",
+    rawStatus: "待核准",
+    artifactHash,
+    blocks: [{ type: "paragraph", content: [{ type: "text", text: `正文 v${version}` }] }],
+    source: id,
+    asOf: "2026-08-03",
+    updatedAt: "2026-08-03",
+    dependencies: [],
+  };
+}
+
+function threadsEvent(
+  version: number,
+  artifactHash: string,
+  overrides: Partial<ApprovalEvent> = {},
+): ApprovalEvent {
+  const artifactId = `records/content/threads/2026-08-03-market-v${String(version).padStart(2, "0")}.md`;
+  return {
+    eventId: `threads-event-${version}`,
+    artifactId,
+    artifactType: "Threads",
+    artifactVersion: version,
+    artifactHash,
+    action: "approve",
+    actorUserId: "user-123",
+    createdAt: `2026-08-03T0${version}:00:00.000Z`,
     syncStatus: "pending",
     syncedAt: null,
     ...overrides,
@@ -153,6 +237,9 @@ function pendingSnapshot(): DashboardSnapshot {
         dependencies: [],
       },
     ],
+    threadsDocuments: [],
+    approvedThreadsArchive: [],
+    threadsArchiveIssues: [],
     brief: {
       title: "每日投資晨報｜2026-07-31",
       summary: "摘要",

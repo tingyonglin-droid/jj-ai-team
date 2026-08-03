@@ -8,10 +8,29 @@ import {
   EmployeeDirectory,
   TodayOverview,
 } from "./dashboard-components";
+import { DashboardShell } from "./dashboard-shell";
 
 const snapshot = JSON.parse(
   readFileSync(new URL("../data/dashboard.json", import.meta.url), "utf8"),
 ) as DashboardSnapshot;
+
+test("主要導覽將內容放在晨報全文與 AI 員工之間", () => {
+  const html = renderToStaticMarkup(
+    <DashboardShell
+      user={{
+        id: "user-123",
+        email: "owner@example.com",
+        displayName: "Owner",
+        fullName: null,
+      }}
+      generatedAt="2026-08-03T00:00:00.000Z"
+    >
+      <p>內容</p>
+    </DashboardShell>,
+  );
+
+  assert.match(html, /晨報全文[\s\S]*?href="\/content"[\s\S]*?AI 員工/);
+});
 
 test("今日總覽優先呈現需決定事項，並排除未核准行動", () => {
   const todayHtml = renderToStaticMarkup(
