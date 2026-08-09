@@ -1,14 +1,481 @@
 {
-  "generatedAt": "2026-08-03T23:19:36.595Z",
-  "date": "2026-08-04",
+  "generatedAt": "2026-08-09T23:11:15.630Z",
+  "date": "2026-08-10",
   "expectation": {
-    "dashboardDate": "2026-08-04",
-    "expectedReportDate": "2026-08-03",
-    "coveredSessionDate": "2026-07-31",
+    "dashboardDate": "2026-08-10",
+    "expectedReportDate": "2026-08-07",
+    "coveredSessionDate": "2026-08-06",
     "phase": "before_cutoff",
     "reason": "尚未到 07:30 交付門檻，沿用前一個應有報告日。"
   },
   "approvals": [
+    {
+      "id": "records/market-risk/2026-08-10-v01.md",
+      "title": "市場風險報告｜2026-08-10-v01",
+      "type": "市場風險報告",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "市場風險報告｜2026-08-10-v01",
+      "fullContent": null,
+      "decision": "是否接受 60 分總分、60 分基準、0 事件調整、資料完整度 92、AI 信心 82 與第 8 日影子紀錄，供內部研究及私人 Dashboard 呈現。",
+      "source": "records/market-risk/2026-08-10-v01.md",
+      "asOf": "2026-08-10 07:10（Asia/Taipei，UTC+8）",
+      "createdAt": null,
+      "recordDate": "2026-08-10",
+      "version": 1,
+      "artifactHash": "sha256:0423215f18ce8d8de1259a228fcc63dabd35e77a5ba94bc1cdc86826cc70a757",
+      "updatedAt": "2026-08-10 07:10（Asia/Taipei，UTC+8）",
+      "dependencies": []
+    },
+    {
+      "id": "records/daily-briefs/2026-08-10-v01.md",
+      "title": "美股創高不是成長風險消失，而是市場先交易降息空間",
+      "type": "晨報",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "美國 7 月非農就業減少 2.3 萬人，5、6 月合計再下修 10.3 萬人；但 S&P 500 上漲 0.6%並創收盤新高，市場短線先交易利率壓力下降，而不是成長風險已被解除。 失業率仍為 4.1%，JOLTS 6 月職缺 740 萬個、7 月服務業活動與新訂單仍擴張，是反對立即衰退的重要證據；同時服務業就業指數 47.4、價格指數 70.3，形成成長降溫與價格黏著並存的矛盾。 8/7 美國 Treasury 官方 10 年期殖利率為 4.65%，較 8/3 的 4.70%低；Brent 當日仍上漲 1.3%至 83.55 美元，週末荷莫茲海峽臨時安排尚未定案，通膨尾部風險沒有消失。 Fed 週資料顯示 8/5 銀行準備金較前週增加 87.79 億美元、TGA 減少 411.17 億美元，單週流動性改善；但相較 7/22，準備金仍少 688 億美元、TGA 仍高 939 億美元，不能把一週回升解讀成全面寬鬆。 AMD Q2 營收年增 50%、資料中心營收年增 107%，支持 AI 需求；但自由現金流率由前季 25%降至 14%，加上市場漲勢仍由大型科技帶動，AI 高預期與集中度仍限制估值容錯。",
+      "fullContent": null,
+      "decision": "是否接受五則事件排序、60 分風險框架、「就業轉弱但股市創高」主標題與五分鐘篇幅，供內部研究及私人 Dashboard 使用。",
+      "source": "records/daily-briefs/2026-08-10-v01.md",
+      "asOf": "2026-08-10 07:10（Asia/Taipei，UTC+8）",
+      "createdAt": null,
+      "recordDate": "2026-08-10",
+      "version": 1,
+      "artifactHash": "sha256:edf4fada14652ec2781436ebd220a219cb88dfcb6cc2c194640ffec5c227733d",
+      "updatedAt": "2026-08-10",
+      "dependencies": []
+    },
+    {
+      "id": "records/content/threads/2026-08-10-jobs-down-stocks-record-v01.md",
+      "title": "Threads 草稿｜就業少了 2.3 萬，美股卻創新高，市場在交易什麼？",
+      "type": "Threads",
+      "owner": "社群經營員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "美國 7 月非農就業少了 2.3 萬人，S&P 500 卻上漲 0.6%、創下收盤新高。",
+      "fullContent": {
+        "format": "structured-markdown",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "日期：2026-08-10"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "狀態：待核准"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "來源研究："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-10-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-10-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報版本：v01"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報雜湊："
+                },
+                {
+                  "type": "code",
+                  "text": "sha256:edf4fada14652ec2781436ebd220a219cb88dfcb6cc2c194640ffec5c227733d"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "建議時機：現在；發布前須重新確認荷莫茲安排、油價、美債與 8/12 CPI 前的重大更新"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "主版本"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "美國 7 月非農就業少了 2.3 萬人，S&P 500 卻上漲 0.6%、創下收盤新高。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "壞消息又變成利多了嗎？"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "我會把它拆成兩條時間軸。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "短線，市場先交易「利率壓力下降」。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "就業轉弱後，8/7 美國 Treasury 官方 10 年期殖利率收在 4.65%，低於 8/3 的 4.70%。折現率下降，對高估值科技股有利；當天 Nvidia 上漲 2.3%、Broadcom 上漲 1.7%，Nasdaq 上漲 1.3%。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "但中期要看的，是「成長與獲利會不會跟著變弱」。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "這份就業報告不只是一個月減少 2.3 萬人。5、6 月合計又下修 10.3 萬人，勞動參與率降到 61.4%，臨時失業者增加 15.3 萬人。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "所以我不會只看失業率仍在 4.1%，就判斷風險解除。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "另一組矛盾在服務業。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "7 月 ISM 服務業活動 59.1、新訂單 57.2，代表需求還在；但就業指數降到 47.4，價格指數升到 70.3。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "也就是說，成長在降溫，價格壓力卻沒有同步消失。這會讓 Fed 的選擇更難：降太慢，可能加重就業壓力；降太快，又可能碰上服務價格與油價重新升溫。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "反方證據也要保留。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "6 月 JOLTS 仍有 740 萬個職缺，Q2 生產力初值年率增加 1.4%；AMD Q2 營收年增 50%、資料中心營收年增 107%。目前還不是「經濟與 AI 需求全面失速」的證據。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "我的暫時結論是："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "市場短線在交易降息空間增加，不代表成長風險已經消失。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "接下來真正重要的，不只是指數能不能再創高，而是 8/12 CPI、油價、信用利差與企業獲利預估，能否證明利率利多比成長下修更持久。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "備選開頭"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "start": 1,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "非農就業 -2.3 萬、S&P 500 卻創新高。市場買的不是經濟變好，而是利率壓力可能先下降。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "就業弱、科技股漲，不能只用「壞消息就是利多」解釋。短線折現率與中期獲利，正在講兩個不同故事。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "查核與語氣"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "已確認事實與來源：7 月非農 -2.3 萬、失業率 4.1%、5 至 6 月合計下修 10.3 萬、參與率 61.4%、臨時失業者 +15.3 萬，來源為 "
+                },
+                {
+                  "type": "link",
+                  "text": "U.S. BLS，2026-08-07",
+                  "href": "https://www.bls.gov/news.release/empsit.nr0.htm"
+                },
+                {
+                  "type": "text",
+                  "text": "；S&P +0.6%、Nasdaq +1.3%、Nvidia +2.3%、Broadcom +1.7%，來源為 "
+                },
+                {
+                  "type": "link",
+                  "text": "Associated Press，2026-08-07",
+                  "href": "https://apnews.com/article/stocks-markets-rates-iran-9636095906bbb689a1f612bce9a07343"
+                },
+                {
+                  "type": "text",
+                  "text": "；8/7 官方 10Y 4.65%，來源為 "
+                },
+                {
+                  "type": "link",
+                  "text": "U.S. Treasury，資料日 2026-08-07",
+                  "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+                },
+                {
+                  "type": "text",
+                  "text": "；ISM Activity 59.1、New Orders 57.2、Employment 47.4、Prices 70.3，來源為 "
+                },
+                {
+                  "type": "link",
+                  "text": "ISM，2026-08-05",
+                  "href": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/july/"
+                },
+                {
+                  "type": "text",
+                  "text": "；JOLTS 職缺 740 萬與 Q2 生產力 +1.4%，來源為 "
+                },
+                {
+                  "type": "link",
+                  "text": "U.S. BLS，2026-08-04、2026-08-06",
+                  "href": "https://www.bls.gov/news.release/jolts.nr0.htm"
+                },
+                {
+                  "type": "text",
+                  "text": "；AMD 數據來源為 "
+                },
+                {
+                  "type": "link",
+                  "text": "AMD，2026-08-04",
+                  "href": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results"
+                },
+                {
+                  "type": "text",
+                  "text": "。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "AI 推論：美股短線先反映殖利率下降與大型科技領漲，中期則須驗證就業轉弱是否傳到消費、營收與獲利；這是根據上述資料形成的暫時推論，不是來源原話或漲跌預測。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "外部觀點：Associated Press 將 8/7 上漲與弱就業後的利率下降連結，同時保留成長疑慮；與「短線折現率利多、中期成長風險」主軸一致。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "最終判斷：市場短線交易降息空間增加，不代表成長風險消失；8/12 CPI、油價、信用與獲利預估是下一輪驗證。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "反方證據：失業率未升、JOLTS 職缺仍有 740 萬個、服務活動與訂單擴張、生產力及 AMD 財報支持需求與效率，尚未出現廣泛衰退或 AI 需求崩落證據。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "尚未確認資料：8/7 HY／IG OAS 與 VIX 在選定日頻來源尚未發布；美元廣義指數只到 7/31；荷莫茲方案尚未共同公布。晨報資料完整度為 92／100。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "待使用者確認：文中「我會把它拆成兩條時間軸」「所以我不會只看失業率」與「我的暫時結論」須符合本人真實判斷；若不符合，發布前改為中性研究口吻，不虛構個人經歷。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "App CTA：不加入；本篇核心是市場風險與資料解讀，沒有自然且必要的產品連結。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "內容聲明：本內容為市場研究與風險框架整理，非投資建議；風險分數與文字都不是精準漲跌預測。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "核准"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "最終文字、個人觀點、發布時間與是否發布由使用者決定：待核准。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "核准紀錄：尚未核准。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "核准邊界：未授權發布、留言或私訊互動、個人化投資建議、持股調整、買賣或任何投資行動，也不延伸至未來版本。"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "decision": "尚未核准。",
+      "source": "records/content/threads/2026-08-10-jobs-down-stocks-record-v01.md",
+      "asOf": "2026-08-10",
+      "createdAt": null,
+      "recordDate": "2026-08-10",
+      "version": 1,
+      "artifactHash": "sha256:8fd5bd1fb659fbb15584203e7561146f4b4f1eb6a051ed30c3562a9e60c075bd",
+      "updatedAt": "2026-08-10",
+      "dependencies": [
+        "records/daily-briefs/2026-08-10-v01.md"
+      ]
+    },
     {
       "id": "records/market-risk/2026-08-04-v01.md",
       "title": "市場風險報告｜2026-08-04-v01",
@@ -963,15 +1430,15 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
-      "currentTask": "市場風險報告｜2026-08-04-v01",
+      "currentTask": "市場風險報告｜2026-08-10-v01",
       "progress": "等待人工核准",
       "dependencies": [],
       "handoff": "將研究與風險成果交總司令驗收；將已驗證素材交社群經營員；將市場風險欄位與限制交 App 設計員。所有對外使用均由使用者核准。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/market-risk/2026-08-04-v01.md",
-      "asOf": "2026-08-04 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-04 07:12（Asia/Taipei，UTC+8）"
+      "source": "records/market-risk/2026-08-10-v01.md",
+      "asOf": "2026-08-10 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-10 07:10（Asia/Taipei，UTC+8）"
     },
     {
       "id": "social-operator",
@@ -980,20 +1447,64 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
-      "currentTask": "Threads 草稿｜油價跌、指數漲，風險就消失了嗎？",
+      "currentTask": "Threads 草稿｜就業少了 2.3 萬，美股卻創新高，市場在交易什麼？",
       "progress": "等待人工核准",
       "dependencies": [
-        "records/daily-briefs/2026-08-04-v01.md"
+        "records/daily-briefs/2026-08-10-v01.md"
       ],
       "handoff": "研究疑問退回總經研究員；成果與實驗交總司令驗收；最終語氣、個人觀點、發布與互動交使用者。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/content/threads/2026-08-04-oil-down-risk-not-gone-v01.md",
-      "asOf": "2026-08-04",
-      "updatedAt": "2026-08-04"
+      "source": "records/content/threads/2026-08-10-jobs-down-stocks-record-v01.md",
+      "asOf": "2026-08-10",
+      "updatedAt": "2026-08-10"
     }
   ],
   "tasks": [
+    {
+      "id": "records/market-risk/2026-08-10-v01.md",
+      "title": "市場風險報告｜2026-08-10-v01",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/market-risk/2026-08-10-v01.md",
+      "asOf": "2026-08-10 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-10 07:10（Asia/Taipei，UTC+8）"
+    },
+    {
+      "id": "records/daily-briefs/2026-08-10-v01.md",
+      "title": "美股創高不是成長風險消失，而是市場先交易降息空間",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/daily-briefs/2026-08-10-v01.md",
+      "asOf": "2026-08-10 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-10"
+    },
+    {
+      "id": "records/content/threads/2026-08-10-jobs-down-stocks-record-v01.md",
+      "title": "Threads 草稿｜就業少了 2.3 萬，美股卻創新高，市場在交易什麼？",
+      "owner": "社群經營員",
+      "ownerId": "social-operator",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [
+        "records/daily-briefs/2026-08-10-v01.md"
+      ],
+      "source": "records/content/threads/2026-08-10-jobs-down-stocks-record-v01.md",
+      "asOf": "2026-08-10",
+      "updatedAt": "2026-08-10"
+    },
     {
       "id": "records/market-risk/2026-08-04-v01.md",
       "title": "市場風險報告｜2026-08-04-v01",
@@ -1113,6 +1624,1524 @@
   ],
   "briefArchive": [
     {
+      "id": "records/daily-briefs/2026-08-10-v01.md",
+      "date": "2026-08-10",
+      "version": 1,
+      "versionLabel": "v01",
+      "isLatest": true,
+      "title": "美股創高不是成長風險消失，而是市場先交易降息空間",
+      "summary": "美國 7 月非農就業減少 2.3 萬人，5、6 月合計再下修 10.3 萬人；但 S&P 500 上漲 0.6%並創收盤新高，市場短線先交易利率壓力下降，而不是成長風險已被解除。 失業率仍為 4.1%，JOLTS 6 月職缺 740 萬個、7 月服務業活動與新訂單仍擴張，是反對立即衰退的重要證據；同時服務業就業指數 47.4、價格指數 70.3，形成成長降溫與價格黏著並存的矛盾。 8/7 美國 Treasury 官方 10 年期殖利率為 4.65%，較 8/3 的 4.70%低；Brent 當日仍上漲 1.3%至 83.55 美元，週末荷莫茲海峽臨時安排尚未定案，通膨尾部風險沒有消失。 Fed 週資料顯示 8/5 銀行準備金較前週增加 87.79 億美元、TGA 減少 411.17 億美元，單週流動性改善；但相較 7/22，準備金仍少 688 億美元、TGA 仍高 939 億美元，不能把一週回升解讀成全面寬鬆。 AMD Q2 營收年增 50%、資料中心營收年增 107%，支持 AI 需求；但自由現金流率由前季 25%降至 14%，加上市場漲勢仍由大型科技帶動，AI 高預期與集中度仍限制估值容錯。",
+      "freshness": "最新",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:edf4fada14652ec2781436ebd220a219cb88dfcb6cc2c194640ffec5c227733d",
+      "coveredSessionDate": "2026-08-07",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-08-10 07:10（Asia/Taipei，UTC+8）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察市場：美國總經、美債、美股、能源、AI 半導體與美元流動性"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察期間：以 2026-08-07 已完成美股交易時段及截止前已發布資料為主"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料完整度：92／100；8/7 信用利差與 VIX 尚未發布於選定日頻來源，美元廣義指數只到 7/31"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "一分鐘摘要"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "美國 7 月非農就業減少 2.3 萬人，5、6 月合計再下修 10.3 萬人；但 S&P 500 上漲 0.6%並創收盤新高，市場短線先交易利率壓力下降，而不是成長風險已被解除。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失業率仍為 4.1%，JOLTS 6 月職缺 740 萬個、7 月服務業活動與新訂單仍擴張，是反對立即衰退的重要證據；同時服務業就業指數 47.4、價格指數 70.3，形成成長降溫與價格黏著並存的矛盾。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "8/7 美國 Treasury 官方 10 年期殖利率為 4.65%，較 8/3 的 4.70%低；Brent 當日仍上漲 1.3%至 83.55 美元，週末荷莫茲海峽臨時安排尚未定案，通膨尾部風險沒有消失。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Fed 週資料顯示 8/5 銀行準備金較前週增加 87.79 億美元、TGA 減少 411.17 億美元，單週流動性改善；但相較 7/22，準備金仍少 688 億美元、TGA 仍高 939 億美元，不能把一週回升解讀成全面寬鬆。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "AMD Q2 營收年增 50%、資料中心營收年增 107%，支持 AI 需求；但自由現金流率由前季 25%降至 14%，加上市場漲勢仍由大型科技帶動，AI 高預期與集中度仍限制估值容錯。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日風險儀表"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "1–4 週風險分數：60／100"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "相較前一交易日：0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險狀態：中性"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "即時風險：1–3 個交易日內，荷莫茲臨時安排能否落地、油價反應及 8/12 CPI 對降息預期的再定價"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "結構性風險：1–2 季內，就業降溫、服務價格黏著與 AI 集中度可能同時壓縮企業獲利及估值容錯"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "今日主要風險來源：就業與成長下修、服務業價格與油價、AI 集中與高預期"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "五則重要事件"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "1｜7 月就業轉負，歷史修正讓成長下行風險正式升高"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "美國 7 月非農就業減少，5、6 月數字也被下修。失業率沒有上升，但勞動參與率、就業人口比率與臨時失業同時轉弱，顯示風險不只是一個月的統計雜訊。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "非農就業 -2.3 萬人、失業率 4.1%；5 月由 -0.4 萬下修至 -6.6 萬，6 月由 +3.7 萬下修至 +2.0 萬，兩月合計下修 10.3 萬。平均時薪年增 3.2%；勞動參與率 61.4%，較 1 月低 0.7 個百分點；臨時失業者增加 15.3 萬至 92.1 萬。來源為 U.S. Bureau of Labor Statistics，2026-08-07，資料期間為 2026 年 7 月。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "就業轉弱可降低短期升息壓力並支撐債券，但也提高消費、企業收入與獲利下修機率。當指數已在高點，市場對「利率利多」與「成長利空」的權重切換可能放大波動。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面下修為主，D 政策與利率重新定價為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：已觸發"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週與 1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：就業減少與歷史下修 → 收入及需求預期下降 → 企業營收與獲利預估下修 → 高估值股票回撤風險上升"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：初領失業金、8 月就業或消費資料續弱，且獲利預估同步下修"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：失業率仍為 4.1%，6 月 JOLTS 職缺 740 萬個、招聘 530 萬人，尚未顯示勞動市場失序"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：後續就業回升、歷史數字不再下修，且實質消費與企業營收保持成長"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "2｜服務業活動穩定，但就業收縮與價格高檔同時出現"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "美國 7 月服務業整體活動與新訂單維持擴張，但就業指數跌回收縮、價格指數升到 70 以上。這使政策面臨「成長正在降溫、價格壓力仍在」的兩難。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "ISM Services PMI 54.1、前月 54.0；Business Activity 59.1、New Orders 57.2；Employment 47.4、前月 51.2；Prices 70.3、前月 67.7。來源為 Institute for Supply Management，2026-08-05，資料期間為 2026 年 7 月。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "活動與訂單反對立即衰退，但就業收縮與價格高檔會限制 Fed 只因就業弱化就快速寬鬆。若通膨資料未降溫，股票可能同時面對獲利與折現率的雙重壓力。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 通膨與政策風險為主，A 就業基本面為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫且訊號混合"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：服務就業收縮／價格高檔 → 停滯性風險升高 → 降息空間受限 → 獲利與估值同時承壓"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：8/12 CPI 高於預期、服務價格續高或服務就業連續低於 50"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：服務業活動 59.1、新訂單 57.2，Q2 非農生產力初值年率增加 1.4%、單位勞工成本僅增 1.3%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：服務價格回落、就業回到擴張，且生產力持續吸收工資與成本壓力"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "3｜荷莫茲臨時安排接近定案，條件分歧仍讓油價保留風險溢酬"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "伊朗與阿曼正推動荷莫茲海峽臨時通行安排，但截至截止時間仍未共同宣布，條款也可能改變。伊朗方面同時提出美方行為、制裁與賠償等條件，並主張與「敵對國家」相關船舶可能不得通行。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "8/7 Brent 上漲 1.3%至 83.55 美元。Associated Press 8/9 報導，擬議安排讓船舶靠近伊朗進入、靠近阿曼離開，臨時期不收費；兩名不具名知情人士強調條款仍可能改變，伊朗官員亦表示此安排不等於海峽已重新開放。來源為 Associated Press，2026-08-07 與 2026-08-09。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "若通行恢復，能源與運輸風險可快速下降；若條件分歧拖延或安全事件再起，油價、通膨預期與長端殖利率可能重新上升，抵銷弱就業帶來的利率利多。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 地緣與能源風險為主，A 企業成本為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫；談判進展與執行風險並存"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日與 1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：通行條件未定／安全事件 → 油價與運費風險溢酬 → 通膨及企業成本上升 → 長端利率與股票估值承壓"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：四方正式公告、實際船舶通行、保險與運費下降，或相反地再出現船舶攻擊"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：伊朗與阿曼已接近臨時安排，且海灣合作委員會成員據報支持方案"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：條款正式生效、通行安全可驗證，Brent 與運費連續下降"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "4｜流動性單週改善，但兩週尺度尚未完全修復"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Fed 最新週資料顯示，銀行準備金、TGA 與總資產都朝較寬鬆方向變化；但拉長到兩週，前一週財政部補庫造成的抽離尚未完全回補。單週水位不能直接預測股市，適合當作壓力緩衝而非方向訊號。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "截至 8/5，準備金 2.993349 兆美元，較 7/29 增加 87.79 億美元；TGA 9,293.25 億美元，單週減少 411.17 億美元；Fed 總資產 6.748567 兆美元，單週增加 103.77 億美元。相較 7/22，準備金仍少約 688 億美元、TGA 仍高約 939 億美元。來源為 Federal Reserve H.4.1／FRED，2026-08-06 發布，資料日 2026-08-05。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "準備金回升與 TGA 回落降低即時流動性壓力，是風險分數改善的依據；但若 TGA 再度補庫、美元轉強或信用利差擴大，市場在高估值與集中持倉下仍可能放大事件衝擊。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 流動性風險為主，C 資金輪動為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：緩解但尚未確認"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：TGA 與準備金波動 → 金融體系現金緩衝改變 → 槓桿與估值容錯改變 → 市場波動放大或緩和"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：準備金連續回升、TGA 續降，且美元與信用利差沒有同步走強"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：兩週尺度準備金仍下降、TGA 仍上升；廣義美元指數只到 7/31，無法完成同截止交叉驗證"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若 TGA 再升、準備金再降且信用利差擴大，應撤回改善判斷"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "5｜AMD 證明 AI 需求強，但現金流與集中度提高市場門檻"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AMD Q2 營收、資料中心與獲利同步成長，並給出強勁 Q3 指引，支持 AI 計算需求；但自由現金流率較前季下降、資本支出增加。市場同週又因 SpaceX 選擇 Nvidia 的消息使 AMD 下跌，顯示 AI 定價仍高度集中且對單一消息敏感。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AMD Q2 營收 115.36 億美元、年增 50%；資料中心營收 67 億美元、年增 107%；GAAP 毛利率 54%、稀釋 EPS 1.38 美元。自由現金流 15.58 億美元、率 14%，低於前季 25%；設備購置 8.08 億美元。Q3 營收指引中位數 130 億美元、年增約 41%。來源為 AMD，2026-08-04。Associated Press 2026-08-05 報導 AMD 當日下跌 7%，同時指出市場正提高對 AI 支出轉化為收入與獲利的要求。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "需求與財測反對 AI 週期立即反轉；但現金流轉換、資本密集度與少數平台優勢將決定哪些公司能維持高估值。當 8/7 指數漲勢主要由大型科技帶動，未達高門檻企業的重估可能放大指數波動。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：B 高預期估值為主，C 集中與資金輪動為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：潛伏且局部已觸發"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週與 1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：AI 營收成長／資本支出上升 → 現金流與回報門檻提高 → 未達標公司估值折價 → 權值集中放大指數波動"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：AI 公司營收強但自由現金流率續降、等權重市場落後或半導體對單一客戶消息持續劇烈反應"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：AMD 資料中心營收年增 107%、Q3 指引強勁；8/7 Nvidia +2.3%、Broadcom +1.7%，AI 需求定價仍正面"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：更多 AI 企業同步交出收入、毛利、自由現金流與市場廣度改善"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "事實"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "數值／變化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料期間"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源與日期"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "美國就業轉弱且前值下修"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "非農 -2.3 萬；失業率 4.1%；5、6 月合計下修 10.3 萬"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-07"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "U.S. BLS，2026-08-07",
+                  "href": "https://www.bls.gov/news.release/empsit.nr0.htm"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "美股創高、科技領漲"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "S&P +0.6%至 7,757.64；Nasdaq +1.3%至 26,690.62"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-07"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "Associated Press，2026-08-07",
+                  "href": "https://apnews.com/article/stocks-markets-rates-iran-9636095906bbb689a1f612bce9a07343"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Treasury 長端利率較前次下降"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "10Y 4.65%；8/3 為 4.70%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-07"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "U.S. Treasury，2026-08-07",
+                  "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "服務業活動與價格同時偏高、就業收縮"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "PMI 54.1；Employment 47.4；Prices 70.3"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-07"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "ISM，2026-08-05",
+                  "href": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/july/"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Q2 生產力提高、單位勞工成本溫和"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "生產力年率 +1.4%；單位勞工成本 +1.3%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026 Q2 初值"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "U.S. BLS，2026-08-06",
+                  "href": "https://www.bls.gov/news.release/prod2.nr0.htm"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "銀行準備金單週回升、TGA 回落"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "準備金 +87.79 億美元；TGA -411.17 億美元"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "截至 2026-08-05"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "FRED／Federal Reserve，資料日 2026-08-05",
+                  "href": "https://fred.stlouisfed.org/series/WRESBAL"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "AMD Q2 資料中心高速成長"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "營收 +50%；資料中心 +107%；自由現金流率 14%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026 Q2"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "AMD，2026-08-04",
+                  "href": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論與初步判斷"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "初判是「風險維持 60 的中性轉折區，但內部來源已從能源與利率主導，轉向就業下修、價格黏著與 AI 集中」。推論鏈為：弱就業與 Treasury 殖利率下降支持短線折現率改善；JOLTS、服務活動、生產力與 AMD 財報反對立即衰退或 AI 需求崩落；但服務價格 70.3、Brent 回升及荷莫茲條款未定限制降息空間，市場創高又提高對成長與 AI 現金流失誤的敏感度。這是 AI 根據已確認資料形成的暫時推論，不是來源原話或漲跌預測。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "外部觀點比較"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀點摘要"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "與初判一致／分歧"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "對判斷影響"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-07"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "弱就業讓 Fed 有等待空間並壓低殖利率，但也提高經濟成長疑慮；大型科技帶動指數創高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "支持利率與成長兩條時間軸並存，不因創高下調總風險"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-09"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "伊朗與阿曼方案接近，但條款可能改變，伊朗並提出重新開放前提"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "保留能源事件風險，不把談判進展當成已完成協議"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "AMD 管理層，2026-08-04"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "將強勁資料中心成長與 Q3 指引歸因於 AI 產品需求"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "部分一致"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "財務數字支持需求，但管理層前瞻敘事不證明估值或現金流安全"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "游庭皓、財經 M 平方"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "本次未導入"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "無法比較"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "不影響以公開原始來源形成的判斷"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "最終判斷與反方證據"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終判斷：未來 1–4 週風險維持 60／100、屬中性轉折區，信心 82／100。就業與修正提高成長下行風險；利率、單週流動性與信用利差則改善；服務價格、油價與 AI 集中使總分沒有下降。短線創高主要反映折現率與大型科技定價，不能單獨證明基本面風險消失。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：失業率仍為 4.1%；JOLTS 職缺 740 萬個；服務業活動與新訂單擴張；Q2 生產力上升；AMD 營收與資料中心高速成長；S&P 500 創高且 HY OAS 至 8/6 由 8/3 的 2.78 降至 2.71。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若 8/12 CPI 明顯降溫、荷莫茲通行可驗證、就業不再惡化且上漲廣度擴大，應下調風險；若 CPI 偏高、能源衝擊再起、就業續弱或信用利差擴大，則上調。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日市場一句話"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "今天市場真正交易的不是就業轉弱等於利多，而是利率壓力下降能否早於成長與獲利風險浮現。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "反方證據與尚未確認資料"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "反方證據：失業率未升、JOLTS 與服務活動仍穩、生產力改善、AMD 財測強勁，美股與信用利差尚未呈現壓力擴散。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：選定日頻來源尚未發布 8/7 HY／IG OAS 與 VIX；廣義美元指數只到 7/31；荷莫茲臨時安排尚未共同公布，相關報導部分依賴不具名知情人士。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "尚未確認與待觀察"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "未確認資料：8/7 信用與 VIX 以 8/6 最新值代理並明確降權；美元資料過期，不用來支持方向判斷。上述缺口使完整度為 92，而非滿分。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "未入選候選事件：候選池共十二項，包括非農與修正、失業率／參與率、JOLTS、服務活動、服務價格與就業、生產力、Treasury 曲線、Brent 與荷莫茲、Fed 流動性、信用利差、VIX／美元、AMD 與大型科技集中。JOLTS、生產力、Treasury、信用與 VIX作為主事件的正反證；同一因果鏈不重複占用五則事件。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "下一確認點：荷莫茲正式條款與實際船運、週一油價與美債反應、8/12 美國 CPI、8/13 PPI、下一份初領失業金、信用利差、VIX、美元與下一份 Fed H.4.1。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "來源"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "link",
+                "text": "NYSE｜Holidays & Trading Hours｜2026 日曆與核心交易時段；截至 2026-08-10 查核",
+                "href": "https://www.nyse.com/trade/hours-calendars"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Bureau of Labor Statistics｜The Employment Situation — July 2026｜2026-08-07",
+                "href": "https://www.bls.gov/news.release/empsit.nr0.htm"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Bureau of Labor Statistics｜Job Openings and Labor Turnover — June 2026｜2026-08-04",
+                "href": "https://www.bls.gov/news.release/jolts.nr0.htm"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Bureau of Labor Statistics｜Productivity and Costs, Q2 2026 preliminary｜2026-08-06",
+                "href": "https://www.bls.gov/news.release/prod2.nr0.htm"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Institute for Supply Management｜July 2026 Services PMI｜2026-08-05",
+                "href": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/july/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Treasury｜Daily Treasury Par Yield Curve Rates｜資料日 2026-08-07",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve Bank of St. Louis／Federal Reserve｜Reserve Balances、TGA、Total Assets｜資料日 2026-08-05",
+                "href": "https://fred.stlouisfed.org/series/WRESBAL"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve Bank of St. Louis／ICE BofA｜HY OAS、IG OAS｜最新資料日 2026-08-06",
+                "href": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜Wall Street rises to records after weaker jobs report｜2026-08-07",
+                "href": "https://apnews.com/article/stocks-markets-rates-iran-9636095906bbb689a1f612bce9a07343"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜More details emerge on the Strait of Hormuz｜2026-08-09",
+                "href": "https://apnews.com/article/6c5aa0c5debcca3fa36316a8b0b67400"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "AMD｜Q2 2026 Financial Results｜2026-08-04",
+                "href": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Bureau of Labor Statistics｜2026 Release Calendar｜截至 2026-08-10 查核",
+                "href": "https://www.bls.gov/schedule/2026/home.htm"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "人工核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：是否接受五則事件排序、60 分風險框架、「就業轉弱但股市創高」主標題與五分鐘篇幅，供內部研究及私人 Dashboard 使用。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：本版本不授權公開發布、對外引用、個人化投資建議、持股調整、再平衡、買賣或任何投資行動，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/daily-briefs/2026-08-10-v01.md",
+      "asOf": "2026-08-10 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-10",
+      "dependencies": []
+    },
+    {
       "id": "records/daily-briefs/2026-08-04-v01.md",
       "date": "2026-08-04",
       "version": 1,
@@ -1120,7 +3149,7 @@
       "isLatest": true,
       "title": "油價急跌帶動風險反彈，但價格與流動性沒有同步鬆開",
       "summary": "S&P 500 上漲 1.5%、Dow 上漲 1.3%創收盤新高、Nasdaq 上漲 2.1%；Brent 下跌 4.7%至 83.77 美元，是即時能源風險降溫的直接市場反應。 10 年期美債市場殖利率由 4.75%降至 4.68%，但仍高於伊朗戰爭前的 3.97%；折現率風險改善，尚未正常化。 美國 7 月 ISM 製造業 PMI 升至 55.6、創 2022 年 5 月以來最高；但價格指數仍為 71.1、供應商交期 58.9，強成長同時保留成本與利率壓力。 Fed 最新 H.4.1 顯示，7/29 當週存款機構準備金減少 1,203.52 億美元、TGA 增加 1,350.25 億美元；單週流動性收緊不能直接預測股市，但削弱「油價下跌等於全面寬鬆」的解讀。 Palantir Q2 營收年增 93%、美國商業營收年增 149%，並上調全年財測；AI 商業化證據變強，同時把整個 AI 板塊的成長與獲利門檻推得更高。",
-      "freshness": "最新",
+      "freshness": "歷史版本",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
       "artifactHash": "sha256:d804abbca721b81c96e0a360ae8ef8019d1e16c396c6af3e34c99293e97c74aa",
@@ -8851,6 +10880,426 @@
   ],
   "threadsDocuments": [
     {
+      "id": "records/content/threads/2026-08-10-jobs-down-stocks-record-v01.md",
+      "artifactKey": "cmVjb3Jkcy9jb250ZW50L3RocmVhZHMvMjAyNi0wOC0xMC1qb2JzLWRvd24tc3RvY2tzLXJlY29yZC12MDEubWQAMQBzaGEyNTY6OGZkNWJkMWZiNjU5ZmJiMTU1ODQyMDNlNzU2MTE0NmY0YjRmMWViNmEwNTFlZDMwYzM1NjJhOWU2MGMwNzViZA",
+      "date": "2026-08-10",
+      "version": 1,
+      "versionLabel": "v01",
+      "title": "Threads 草稿｜就業少了 2.3 萬，美股卻創新高，市場在交易什麼？",
+      "summary": "美國 7 月非農就業少了 2.3 萬人，S&P 500 卻上漲 0.6%、創下收盤新高。",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:8fd5bd1fb659fbb15584203e7561146f4b4f1eb6a051ed30c3562a9e60c075bd",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "日期：2026-08-10"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源研究："
+              },
+              {
+                "type": "code",
+                "text": "records/daily-briefs/2026-08-10-v01.md"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報："
+              },
+              {
+                "type": "code",
+                "text": "records/daily-briefs/2026-08-10-v01.md"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報雜湊："
+              },
+              {
+                "type": "code",
+                "text": "sha256:edf4fada14652ec2781436ebd220a219cb88dfcb6cc2c194640ffec5c227733d"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "建議時機：現在；發布前須重新確認荷莫茲安排、油價、美債與 8/12 CPI 前的重大更新"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "主版本"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "美國 7 月非農就業少了 2.3 萬人，S&P 500 卻上漲 0.6%、創下收盤新高。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "壞消息又變成利多了嗎？"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "我會把它拆成兩條時間軸。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "短線，市場先交易「利率壓力下降」。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "就業轉弱後，8/7 美國 Treasury 官方 10 年期殖利率收在 4.65%，低於 8/3 的 4.70%。折現率下降，對高估值科技股有利；當天 Nvidia 上漲 2.3%、Broadcom 上漲 1.7%，Nasdaq 上漲 1.3%。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "但中期要看的，是「成長與獲利會不會跟著變弱」。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "這份就業報告不只是一個月減少 2.3 萬人。5、6 月合計又下修 10.3 萬人，勞動參與率降到 61.4%，臨時失業者增加 15.3 萬人。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "所以我不會只看失業率仍在 4.1%，就判斷風險解除。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "另一組矛盾在服務業。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "7 月 ISM 服務業活動 59.1、新訂單 57.2，代表需求還在；但就業指數降到 47.4，價格指數升到 70.3。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "也就是說，成長在降溫，價格壓力卻沒有同步消失。這會讓 Fed 的選擇更難：降太慢，可能加重就業壓力；降太快，又可能碰上服務價格與油價重新升溫。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "反方證據也要保留。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "6 月 JOLTS 仍有 740 萬個職缺，Q2 生產力初值年率增加 1.4%；AMD Q2 營收年增 50%、資料中心營收年增 107%。目前還不是「經濟與 AI 需求全面失速」的證據。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "我的暫時結論是："
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "市場短線在交易降息空間增加，不代表成長風險已經消失。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來真正重要的，不只是指數能不能再創高，而是 8/12 CPI、油價、信用利差與企業獲利預估，能否證明利率利多比成長下修更持久。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "備選開頭"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 1,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "非農就業 -2.3 萬、S&P 500 卻創新高。市場買的不是經濟變好，而是利率壓力可能先下降。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "就業弱、科技股漲，不能只用「壞消息就是利多」解釋。短線折現率與中期獲利，正在講兩個不同故事。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "查核與語氣"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "已確認事實與來源：7 月非農 -2.3 萬、失業率 4.1%、5 至 6 月合計下修 10.3 萬、參與率 61.4%、臨時失業者 +15.3 萬，來源為 "
+              },
+              {
+                "type": "link",
+                "text": "U.S. BLS，2026-08-07",
+                "href": "https://www.bls.gov/news.release/empsit.nr0.htm"
+              },
+              {
+                "type": "text",
+                "text": "；S&P +0.6%、Nasdaq +1.3%、Nvidia +2.3%、Broadcom +1.7%，來源為 "
+              },
+              {
+                "type": "link",
+                "text": "Associated Press，2026-08-07",
+                "href": "https://apnews.com/article/stocks-markets-rates-iran-9636095906bbb689a1f612bce9a07343"
+              },
+              {
+                "type": "text",
+                "text": "；8/7 官方 10Y 4.65%，來源為 "
+              },
+              {
+                "type": "link",
+                "text": "U.S. Treasury，資料日 2026-08-07",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+              },
+              {
+                "type": "text",
+                "text": "；ISM Activity 59.1、New Orders 57.2、Employment 47.4、Prices 70.3，來源為 "
+              },
+              {
+                "type": "link",
+                "text": "ISM，2026-08-05",
+                "href": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/july/"
+              },
+              {
+                "type": "text",
+                "text": "；JOLTS 職缺 740 萬與 Q2 生產力 +1.4%，來源為 "
+              },
+              {
+                "type": "link",
+                "text": "U.S. BLS，2026-08-04、2026-08-06",
+                "href": "https://www.bls.gov/news.release/jolts.nr0.htm"
+              },
+              {
+                "type": "text",
+                "text": "；AMD 數據來源為 "
+              },
+              {
+                "type": "link",
+                "text": "AMD，2026-08-04",
+                "href": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results"
+              },
+              {
+                "type": "text",
+                "text": "。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "AI 推論：美股短線先反映殖利率下降與大型科技領漲，中期則須驗證就業轉弱是否傳到消費、營收與獲利；這是根據上述資料形成的暫時推論，不是來源原話或漲跌預測。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "外部觀點：Associated Press 將 8/7 上漲與弱就業後的利率下降連結，同時保留成長疑慮；與「短線折現率利多、中期成長風險」主軸一致。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "最終判斷：市場短線交易降息空間增加，不代表成長風險消失；8/12 CPI、油價、信用與獲利預估是下一輪驗證。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：失業率未升、JOLTS 職缺仍有 740 萬個、服務活動與訂單擴張、生產力及 AMD 財報支持需求與效率，尚未出現廣泛衰退或 AI 需求崩落證據。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：8/7 HY／IG OAS 與 VIX 在選定日頻來源尚未發布；美元廣義指數只到 7/31；荷莫茲方案尚未共同公布。晨報資料完整度為 92／100。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "待使用者確認：文中「我會把它拆成兩條時間軸」「所以我不會只看失業率」與「我的暫時結論」須符合本人真實判斷；若不符合，發布前改為中性研究口吻，不虛構個人經歷。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "App CTA：不加入；本篇核心是市場風險與資料解讀，沒有自然且必要的產品連結。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "內容聲明：本內容為市場研究與風險框架整理，非投資建議；風險分數與文字都不是精準漲跌預測。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終文字、個人觀點、發布時間與是否發布由使用者決定：待核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：未授權發布、留言或私訊互動、個人化投資建議、持股調整、買賣或任何投資行動，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/content/threads/2026-08-10-jobs-down-stocks-record-v01.md",
+      "asOf": "2026-08-10",
+      "updatedAt": "2026-08-10",
+      "dependencies": [
+        "records/daily-briefs/2026-08-10-v01.md"
+      ]
+    },
+    {
       "id": "records/content/threads/2026-08-04-oil-down-risk-not-gone-v01.md",
       "artifactKey": "cmVjb3Jkcy9jb250ZW50L3RocmVhZHMvMjAyNi0wOC0wNC1vaWwtZG93bi1yaXNrLW5vdC1nb25lLXYwMS5tZAAxAHNoYTI1NjpjOGU2MzliM2ZlMWIzNmRmNTY5OWNlZDhiNWM2ZDA1YzkzM2VkZDZkNjZkMDVlNjI2M2MzZGUzMTQ0ODQ4Mzg1",
       "date": "2026-08-04",
@@ -9626,45 +12075,45 @@
   "approvedThreadsArchive": [],
   "threadsArchiveIssues": [],
   "brief": {
-    "title": "油價急跌帶動風險反彈，但價格與流動性沒有同步鬆開",
-    "headline": "油價急跌帶動風險反彈，但價格與流動性沒有同步鬆開",
-    "summary": "S&P 500 上漲 1.5%、Dow 上漲 1.3%創收盤新高、Nasdaq 上漲 2.1%；Brent 下跌 4.7%至 83.77 美元，是即時能源風險降溫的直接市場反應。 10 年期美債市場殖利率由 4.75%降至 4.68%，但仍高於伊朗戰爭前的 3.97%；折現率風險改善，尚未正常化。 美國 7 月 ISM 製造業 PMI 升至 55.6、創 2022 年 5 月以來最高；但價格指數仍為 71.1、供應商交期 58.9，強成長同時保留成本與利率壓力。 Fed 最新 H.4.1 顯示，7/29 當週存款機構準備金減少 1,203.52 億美元、TGA 增加 1,350.25 億美元；單週流動性收緊不能直接預測股市，但削弱「油價下跌等於全面寬鬆」的解讀。 Palantir Q2 營收年增 93%、美國商業營收年增 149%，並上調全年財測；AI 商業化證據變強，同時把整個 AI 板塊的成長與獲利門檻推得更高。",
+    "title": "美股創高不是成長風險消失，而是市場先交易降息空間",
+    "headline": "美股創高不是成長風險消失，而是市場先交易降息空間",
+    "summary": "美國 7 月非農就業減少 2.3 萬人，5、6 月合計再下修 10.3 萬人；但 S&P 500 上漲 0.6%並創收盤新高，市場短線先交易利率壓力下降，而不是成長風險已被解除。 失業率仍為 4.1%，JOLTS 6 月職缺 740 萬個、7 月服務業活動與新訂單仍擴張，是反對立即衰退的重要證據；同時服務業就業指數 47.4、價格指數 70.3，形成成長降溫與價格黏著並存的矛盾。 8/7 美國 Treasury 官方 10 年期殖利率為 4.65%，較 8/3 的 4.70%低；Brent 當日仍上漲 1.3%至 83.55 美元，週末荷莫茲海峽臨時安排尚未定案，通膨尾部風險沒有消失。 Fed 週資料顯示 8/5 銀行準備金較前週增加 87.79 億美元、TGA 減少 411.17 億美元，單週流動性改善；但相較 7/22，準備金仍少 688 億美元、TGA 仍高 939 億美元，不能把一週回升解讀成全面寬鬆。 AMD Q2 營收年增 50%、資料中心營收年增 107%，支持 AI 需求；但自由現金流率由前季 25%降至 14%，加上市場漲勢仍由大型科技帶動，AI 高預期與集中度仍限制估值容錯。",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准",
     "version": 1,
-    "artifactHash": "sha256:d804abbca721b81c96e0a360ae8ef8019d1e16c396c6af3e34c99293e97c74aa",
-    "coveredSessionDate": "2026-08-03",
-    "asOf": "2026-08-04 07:10（Asia/Taipei，UTC+8）",
-    "source": "records/daily-briefs/2026-08-04-v01.md",
-    "updatedAt": "2026-08-04 07:11（Asia/Taipei，UTC+8）",
+    "artifactHash": "sha256:edf4fada14652ec2781436ebd220a219cb88dfcb6cc2c194640ffec5c227733d",
+    "coveredSessionDate": "2026-08-07",
+    "asOf": "2026-08-10 07:10（Asia/Taipei，UTC+8）",
+    "source": "records/daily-briefs/2026-08-10-v01.md",
+    "updatedAt": "2026-08-10",
     "dependencies": []
   },
   "marketRisk": {
-    "label": "市場風險報告｜2026-08-04-v01",
+    "label": "市場風險報告｜2026-08-10-v01",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准",
     "version": 1,
-    "artifactHash": "sha256:f3c75a74b352a3ff9d38288f3ba4c0125558ad6432f4dc72d86e98cf78ba33d5",
-    "coveredSessionDate": "2026-08-03",
-    "asOf": "2026-08-04 07:10（Asia/Taipei，UTC+8）",
-    "source": "records/market-risk/2026-08-04-v01.md",
-    "updatedAt": "2026-08-04 07:12（Asia/Taipei，UTC+8）",
+    "artifactHash": "sha256:0423215f18ce8d8de1259a228fcc63dabd35e77a5ba94bc1cdc86826cc70a757",
+    "coveredSessionDate": "2026-08-07",
+    "asOf": "2026-08-10 07:10（Asia/Taipei，UTC+8）",
+    "source": "records/market-risk/2026-08-10-v01.md",
+    "updatedAt": "2026-08-10 07:10（Asia/Taipei，UTC+8）",
     "dependencies": [],
     "score": 60,
     "baseline": 60,
     "eventAdjustment": 0,
-    "dailyChange": -5,
-    "immediateRisk": "1–3 個交易日內，市場將驗證伊朗談判能否執行，並消化 JOLTS、Palantir 財報後正式交易及 AMD 財報等高波動催化劑",
-    "structuralRisk": "1–2 季內，輸入價格黏著、長端殖利率仍高、流動性抽離及 AI 高預期可能共同壓縮估值容錯",
+    "dailyChange": 0,
+    "immediateRisk": "1–3 個交易日內，荷莫茲臨時安排能否落地、油價反應與 8/12 CPI 對降息預期的再定價",
+    "structuralRisk": "1–2 季內，就業降溫、服務價格黏著及 AI 高集中度可能共同壓縮企業獲利與估值容錯",
     "topRisks": [
-      "通膨與長端利率",
-      "美元流動性",
-      "AI 與半導體市場結構"
+      "就業與成長下修",
+      "服務業價格與油價",
+      "AI 集中與高預期"
     ],
-    "confidence": 80,
-    "completeness": 86,
+    "confidence": 82,
+    "completeness": 92,
     "experimental": true
   },
   "blockers": []
