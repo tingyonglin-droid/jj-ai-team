@@ -1,14 +1,485 @@
 {
-  "generatedAt": "2026-08-11T06:29:29.894Z",
-  "date": "2026-08-11",
+  "generatedAt": "2026-08-11T23:12:36.135Z",
+  "date": "2026-08-12",
   "expectation": {
-    "dashboardDate": "2026-08-11",
+    "dashboardDate": "2026-08-12",
     "expectedReportDate": "2026-08-11",
     "coveredSessionDate": "2026-08-10",
-    "phase": "due",
-    "reason": "已到 07:30 交付門檻，今日應有新的例行晨報。"
+    "phase": "before_cutoff",
+    "reason": "尚未到 07:30 交付門檻，沿用前一個應有報告日。"
   },
   "approvals": [
+    {
+      "id": "records/market-risk/2026-08-12-v01.md",
+      "title": "市場風險報告｜2026-08-12-v01",
+      "type": "市場風險報告",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "市場風險報告｜2026-08-12-v01",
+      "fullContent": null,
+      "decision": "是否接受 63 分總分、63 分基準、0 事件調整、資料完整度 91、AI 信心 81 與第 10 日影子紀錄，供內部研究及私人 Dashboard 呈現。",
+      "source": "records/market-risk/2026-08-12-v01.md",
+      "asOf": "2026-08-12 07:10（Asia/Taipei，UTC+8）",
+      "createdAt": null,
+      "recordDate": "2026-08-12",
+      "version": 1,
+      "artifactHash": "sha256:ebdb02fb44badce040e5503ab70d267c6a46bbfaa7804536f354e049befc4f4e",
+      "updatedAt": "2026-08-12 07:10（Asia/Taipei，UTC+8）",
+      "dependencies": []
+    },
+    {
+      "id": "records/daily-briefs/2026-08-12-v01.md",
+      "title": "EIA 上修油價路徑，但長端利率回落：市場容錯仍被供給與用電瓶頸壓縮",
+      "type": "晨報",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "EIA 8/11 將第三季 Brent 預測由 7 月版約 74 美元上修至約 85 美元，理由是荷莫茲海峽嚴重通行限制持續至 8 月；Brent 當日盤中越過 90 美元、跌回 87 美元下方，最後收 88.91 美元、上漲 1.4%。 7 月 CPI 將於台灣時間 8/12 20:30 公布，07:10 截止前仍未知。官方 10 年期殖利率由 4.72%降至 4.70%，但汽油價格與供給風險使利率緩衝仍有限。 S&P 500、Dow 與 Nasdaq 分別下跌 0.3%、0.3%與 0.6%，為 S&P 上週五創高後連續第二個溫和跌日；尚未形成廣泛去風險，但高點附近的容錯正在收斂。 Texas 要求資料中心併網案完成稽核後才能推進；ERCOT 約 474GW 的新併網申請中約 90%是資料中心。EIA 因此把 2027 Texas 用電成長預測由 14%下修至 6%，突顯 AI 需求到實際用電之間仍有電網、資金與政策瓶頸。 反方證據仍強：HY OAS 與 IG OAS 至 8/10 分別為 2.70、0.78，VIX 為 15.46；FactSet 經 AP 轉述的 S&P 500 Q2 EPS 年增估計約 50%。目前是高估值市場的容錯下降，不是已確認的系統性壓力。",
+      "fullContent": null,
+      "decision": "是否接受五則事件排序、63 分風險框架、「能源與電網兩個實體瓶頸壓縮容錯」主標題與五分鐘篇幅，供內部研究及私人 Dashboard 使用。",
+      "source": "records/daily-briefs/2026-08-12-v01.md",
+      "asOf": "2026-08-12 07:10（Asia/Taipei，UTC+8）",
+      "createdAt": null,
+      "recordDate": "2026-08-12",
+      "version": 1,
+      "artifactHash": "sha256:7dde7c564d3fcde7c36f83ddee58284430425785f8e9c1a6cd8cf4bc4996daad",
+      "updatedAt": "2026-08-12",
+      "dependencies": []
+    },
+    {
+      "id": "records/content/threads/2026-08-12-ai-demand-grid-bottleneck-v01.md",
+      "title": "Threads 草稿｜AI 需求很強，但 474GW 申請不是 474GW 收入",
+      "type": "Threads",
+      "owner": "社群經營員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "Texas 電網現在有大約 474GW 的新併網申請。",
+      "fullContent": {
+        "format": "structured-markdown",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "日期：2026-08-12"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "狀態：待核准"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "來源研究："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-12-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-12-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報版本：v01"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報雜湊："
+                },
+                {
+                  "type": "code",
+                  "text": "sha256:7dde7c564d3fcde7c36f83ddee58284430425785f8e9c1a6cd8cf4bc4996daad"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "建議時機：現在；發布前須重新確認 Texas 稽核、EIA 預測與本人觀點是否有重大更新"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "主版本"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Texas 電網現在有大約 474GW 的新併網申請。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "這是當地歷史尖峰用電的 5 倍以上，而且約 90%來自資料中心。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "如果只看 AI 需求，這個數字很驚人。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "但 8/3，Texas 州長要求 PUCT 與 ERCOT 先完成全面稽核；在稽核完成前，任何資料中心案都不能繼續推進。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "8/11，EIA 也因此把 2027 年 Texas 用電成長預測，從原本的 14%下修到 6%。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "這讓我重新確認一件事："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "AI 需求很強，不等於每一個資料中心計畫都會準時變成用電、營收與現金流。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "中間至少還有四道門："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "需求 → 併網 → 電力與水 → 資本支出與投資回收"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "州政府要求每個案子交代："
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "start": 1,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "誰負擔電網與公共資源成本"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "有多少電力來自自備能源"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "用水與冷卻怎麼處理"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "對社區、噪音與交通的影響"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "所以我不會把 474GW 直接當成未來一定落地的市場規模。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "它比較像一個「需求池」，接下來要經過稽核、排隊、融資與基礎設施篩選。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "反方也要保留。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "EIA 下修後仍預估 Texas 2027 年用電成長 6%，這並不低；能自備電力、解決水資源並符合電網要求的專案，反而可能得到更高優先序。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "我的暫時結論是："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "AI 的下一個風險，不一定是需求突然消失，而是需求到收入之間的實體瓶頸比市場想得更長。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "接下來我會看三件事：稽核要多久、真正獲准的容量有多少、企業是否調整 CapEx 與上線時程。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "備選開頭"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "start": 1,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "AI 資料中心有 474GW 的併網申請，但 EIA 卻把 Texas 明年用電成長預測從 14%砍到 6%。問題不在需求，而在需求能不能落地。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "474GW 是需求池，不是已實現的收入。AI 基建中間還卡著併網、電力、水與資本回收四道門。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "查核與語氣"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "已確認事實與來源：Texas 州長要求 PUCT 與 ERCOT 完成資料中心併網全面稽核、稽核前任何案子不得推進；ERCOT 約 474GW 新併網申請、約 90%來自資料中心，來源為 "
+                },
+                {
+                  "type": "link",
+                  "text": "Office of the Texas Governor，2026-08-03",
+                  "href": "https://gov.texas.gov/news/post/governor-abbott-directs-comprehensive-data-center-audit"
+                },
+                {
+                  "type": "text",
+                  "text": "。EIA 將 2027 Texas 用電成長預測由 14%下修至 6%，來源為 "
+                },
+                {
+                  "type": "link",
+                  "text": "U.S. EIA Short-Term Energy Outlook，2026-08-11",
+                  "href": "https://www.eia.gov/outlooks/steo/index.php"
+                },
+                {
+                  "type": "text",
+                  "text": "。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "AI 推論：併網、電力、水與資本回收會使 AI 需求到實際收入之間產生時程與成本落差；這是由官方資料推導的暫時推論，不是來源原話或個股預測。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "外部觀點：本篇以 Texas 州政府與 EIA 原始資料為主；未把未查證的公司 CapEx 或個別受益／受害名單納入。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "最終判斷：AI 需求仍強，但 474GW 應視為待稽核的需求池，不應直接等同已核准容量、營收或現金流。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "反方證據：下修後的 6%用電成長仍高；符合電網、自備能源、水資源與社區要求的專案可能優先落地。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "尚未確認資料：PUCT／ERCOT 稽核完成日、各專案最終核准容量、企業 CapEx與啟用時程尚未公布。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "待使用者補充：請確認文中「這讓我重新確認」「我不會把 474GW 直接當成」「我的暫時結論」與「接下來我會看」符合本人真實判斷；若不符合，發布前改為中性研究口吻，不虛構個人經歷或投資行動。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "App CTA：不加入；本篇核心是 AI 基建的實體瓶頸，沒有自然且必要的產品連結。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "內容聲明：本內容為市場研究與風險框架整理，非投資建議；不構成個股、持股或買賣建議。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "核准"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "最終文字、個人觀點、發布時間與是否發布由使用者決定：待核准。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "核准紀錄：尚未核准。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "核准邊界：未授權發布、留言或私訊互動、個人化投資建議、持股調整、買賣或任何投資行動，也不延伸至未來版本。"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "decision": "尚未核准。",
+      "source": "records/content/threads/2026-08-12-ai-demand-grid-bottleneck-v01.md",
+      "asOf": "2026-08-12",
+      "createdAt": null,
+      "recordDate": "2026-08-12",
+      "version": 1,
+      "artifactHash": "sha256:bf3153e556d6a5f6f79a63fb7f00f66d9c6238bd787dba36f0587d5d97251afc",
+      "updatedAt": "2026-08-12",
+      "dependencies": [
+        "records/daily-briefs/2026-08-12-v01.md"
+      ]
+    },
     {
       "id": "records/market-risk/2026-08-11-v01.md",
       "title": "市場風險報告｜2026-08-11-v01",
@@ -1906,15 +2377,15 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
-      "currentTask": "市場風險報告｜2026-08-11-v01",
+      "currentTask": "市場風險報告｜2026-08-12-v01",
       "progress": "等待人工核准",
       "dependencies": [],
       "handoff": "將研究與風險成果交總司令驗收；將已驗證素材交社群經營員；將市場風險欄位與限制交 App 設計員。所有對外使用均由使用者核准。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/market-risk/2026-08-11-v01.md",
-      "asOf": "2026-08-11 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-11 07:10（Asia/Taipei，UTC+8）"
+      "source": "records/market-risk/2026-08-12-v01.md",
+      "asOf": "2026-08-12 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-12 07:10（Asia/Taipei，UTC+8）"
     },
     {
       "id": "social-operator",
@@ -1923,20 +2394,64 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
-      "currentTask": "Threads 草稿｜就業轉弱，油價卻漲 5%：Fed 最難的兩難回來了",
+      "currentTask": "Threads 草稿｜AI 需求很強，但 474GW 申請不是 474GW 收入",
       "progress": "等待人工核准",
       "dependencies": [
-        "records/daily-briefs/2026-08-11-v01.md"
+        "records/daily-briefs/2026-08-12-v01.md"
       ],
       "handoff": "研究疑問退回總經研究員；成果與實驗交總司令驗收；最終語氣、個人觀點、發布與互動交使用者。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/content/threads/2026-08-11-oil-jump-rate-buffer-v01.md",
-      "asOf": "2026-08-11",
-      "updatedAt": "2026-08-11"
+      "source": "records/content/threads/2026-08-12-ai-demand-grid-bottleneck-v01.md",
+      "asOf": "2026-08-12",
+      "updatedAt": "2026-08-12"
     }
   ],
   "tasks": [
+    {
+      "id": "records/market-risk/2026-08-12-v01.md",
+      "title": "市場風險報告｜2026-08-12-v01",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/market-risk/2026-08-12-v01.md",
+      "asOf": "2026-08-12 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-12 07:10（Asia/Taipei，UTC+8）"
+    },
+    {
+      "id": "records/daily-briefs/2026-08-12-v01.md",
+      "title": "EIA 上修油價路徑，但長端利率回落：市場容錯仍被供給與用電瓶頸壓縮",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/daily-briefs/2026-08-12-v01.md",
+      "asOf": "2026-08-12 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-12"
+    },
+    {
+      "id": "records/content/threads/2026-08-12-ai-demand-grid-bottleneck-v01.md",
+      "title": "Threads 草稿｜AI 需求很強，但 474GW 申請不是 474GW 收入",
+      "owner": "社群經營員",
+      "ownerId": "social-operator",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [
+        "records/daily-briefs/2026-08-12-v01.md"
+      ],
+      "source": "records/content/threads/2026-08-12-ai-demand-grid-bottleneck-v01.md",
+      "asOf": "2026-08-12",
+      "updatedAt": "2026-08-12"
+    },
     {
       "id": "records/market-risk/2026-08-11-v01.md",
       "title": "市場風險報告｜2026-08-11-v01",
@@ -2144,6 +2659,1531 @@
   ],
   "briefArchive": [
     {
+      "id": "records/daily-briefs/2026-08-12-v01.md",
+      "date": "2026-08-12",
+      "version": 1,
+      "versionLabel": "v01",
+      "isLatest": true,
+      "title": "EIA 上修油價路徑，但長端利率回落：市場容錯仍被供給與用電瓶頸壓縮",
+      "summary": "EIA 8/11 將第三季 Brent 預測由 7 月版約 74 美元上修至約 85 美元，理由是荷莫茲海峽嚴重通行限制持續至 8 月；Brent 當日盤中越過 90 美元、跌回 87 美元下方，最後收 88.91 美元、上漲 1.4%。 7 月 CPI 將於台灣時間 8/12 20:30 公布，07:10 截止前仍未知。官方 10 年期殖利率由 4.72%降至 4.70%，但汽油價格與供給風險使利率緩衝仍有限。 S&P 500、Dow 與 Nasdaq 分別下跌 0.3%、0.3%與 0.6%，為 S&P 上週五創高後連續第二個溫和跌日；尚未形成廣泛去風險，但高點附近的容錯正在收斂。 Texas 要求資料中心併網案完成稽核後才能推進；ERCOT 約 474GW 的新併網申請中約 90%是資料中心。EIA 因此把 2027 Texas 用電成長預測由 14%下修至 6%，突顯 AI 需求到實際用電之間仍有電網、資金與政策瓶頸。 反方證據仍強：HY OAS 與 IG OAS 至 8/10 分別為 2.70、0.78，VIX 為 15.46；FactSet 經 AP 轉述的 S&P 500 Q2 EPS 年增估計約 50%。目前是高估值市場的容錯下降，不是已確認的系統性壓力。",
+      "freshness": "最新",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:7dde7c564d3fcde7c36f83ddee58284430425785f8e9c1a6cd8cf4bc4996daad",
+      "coveredSessionDate": "2026-08-11",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-08-12 07:10（Asia/Taipei，UTC+8）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察市場：美國總經、美債、美股、能源、AI 資料中心、信用與美元流動性"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察期間：以 2026-08-11 已完成美股交易時段及截止前已發布資料為主"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料完整度：91／100；8/11 信用利差、VIX 與廣義美元指數尚未發布於選定日頻來源，On Holding 原始 Q2 結果頁尚未由搜尋索引取得"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "一分鐘摘要"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "EIA 8/11 將第三季 Brent 預測由 7 月版約 74 美元上修至約 85 美元，理由是荷莫茲海峽嚴重通行限制持續至 8 月；Brent 當日盤中越過 90 美元、跌回 87 美元下方，最後收 88.91 美元、上漲 1.4%。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "7 月 CPI 將於台灣時間 8/12 20:30 公布，07:10 截止前仍未知。官方 10 年期殖利率由 4.72%降至 4.70%，但汽油價格與供給風險使利率緩衝仍有限。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "S&P 500、Dow 與 Nasdaq 分別下跌 0.3%、0.3%與 0.6%，為 S&P 上週五創高後連續第二個溫和跌日；尚未形成廣泛去風險，但高點附近的容錯正在收斂。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Texas 要求資料中心併網案完成稽核後才能推進；ERCOT 約 474GW 的新併網申請中約 90%是資料中心。EIA 因此把 2027 Texas 用電成長預測由 14%下修至 6%，突顯 AI 需求到實際用電之間仍有電網、資金與政策瓶頸。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據仍強：HY OAS 與 IG OAS 至 8/10 分別為 2.70、0.78，VIX 為 15.46；FactSet 經 AP 轉述的 S&P 500 Q2 EPS 年增估計約 50%。目前是高估值市場的容錯下降，不是已確認的系統性壓力。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日風險儀表"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "1–4 週風險分數：63／100"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "相較前一交易日：0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險狀態：中性"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "即時風險：1–3 個交易日內，7 月 CPI、Brent 是否續留高檔、10 年期殖利率與科技股的聯動"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "結構性風險：1–2 季內，能源供應、戰略庫存消耗、AI 用電與併網瓶頸、高估值及就業降溫可能共同壓縮企業與市場容錯"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "今日主要風險來源：荷莫茲供給與油價路徑、CPI 與長端利率、AI 資料中心的電網與政策瓶頸"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "五則重要事件"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "1｜EIA 將第三季 Brent 預測由 74 美元上修至約 85 美元"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "EIA 8/11 新版 Short-Term Energy Outlook 表示，荷莫茲海峽嚴重通行限制預計持續至 8 月，未來數月中東停產量高於 7 月版假設，因此第三季 Brent 預測由 7 月版約 74 美元上修至約 85 美元。EIA 同時預估美國商業原油庫存到 2026 年底仍低於五年區間低點。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "第三季 Brent 預測約 85 美元，7 月版為 74 美元；2026 年全年 Brent 預測 87 美元；2026 年美國原油庫存預測 3.96 億桶，前次為 4.33 億桶、下修 8.6%。Brent 8/11 盤中高於 90 美元、低於 87 美元，收 88.91 美元、日漲 1.4%。來源：U.S. EIA，2026-08-11；Associated Press，2026-08-11。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "這不是只看單日油價，而是官方供給假設出現方向性修正。若油價長時間接近 85–90 美元，通膨、企業成本、消費與長端利率都會承受較高壓力；但 EIA 仍預估供給在 2027 年初大致恢復，因此不能把高油價外推為永久狀態。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面與 D 風險變化並重"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：已觸發"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日、1–4 週及 1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：荷莫茲通行限制 → 中東產量與全球庫存壓力 → 油價與運輸成本偏高 → 通膨、企業利潤與估值容錯下降"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：實際船運量、Brent 是否持續高於 85 美元、8/12 EIA 週報中的美國庫存與 SPR"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：EIA 仍預估多數中東產量於 2027 年初恢復，Brent 2027 年均價降至 69 美元"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：海峽通行與產量可驗證恢復、庫存重建，且 Brent 持續回到 7 月版預測區間"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "2｜CPI 公布前，10 年期殖利率回落但汽油壓力仍高"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "BLS 將於台灣時間 8/12 20:30 公布 7 月 CPI，07:10 資料截止前仍未發布。美國 Treasury 官方 10 年期殖利率由 8/10 的 4.72%降至 8/11 的 4.70%，2 年期由 4.25%降至 4.22%；AP 引述 AAA 指出普通汽油均價為每加侖 4.01 美元，高於一年前不到 3.14 美元。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "8/11 Treasury 2 年期 4.22%、10 年期 4.70%、30 年期 5.24%；6 月 CPI 月減 0.4%、年增 3.5%，核心 CPI 月增為零、年增 2.6%。AP 報導的外部經濟學家預期 7 月 CPI 年增可能降至 3.4%，但這是外部預期，不是已公布數據。來源：U.S. Treasury，資料日 2026-08-11；U.S. BLS，2026-07-14、2026-08-12 發布日；AP／AAA，2026-08-11。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "長端利率小幅回落提供短線估值緩衝，但 CPI 結果與能源路徑尚未確定。若通膨降幅不如預期，市場可能重新提高政策利率與折現率；若明顯降溫，則油價風險與利率反應可能分離。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：B 估值為主，A 基本面為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日及 1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：能源與汽油成本偏高 → CPI 與政策預期不確定 → 長端殖利率與資金成本偏高 → 高估值資產容錯下降"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：7 月 CPI 的整體與核心月增、10 年期殖利率、Fed 會議定價與美元"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：6 月整體 CPI 月減、核心月增為零，8/11 官方 10 年期殖利率回落 2 個基點"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：CPI 明顯降溫、能源價格回落，且 10 年期殖利率持續低於 4.65%"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "3｜S&P 連續第二個溫和跌日，Nasdaq 跌幅擴大至 0.6%"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "8/11 S&P 500 下跌 0.3%至 7,728.20，Dow 下跌 184.13 點或 0.3%至 53,791.85，Nasdaq 下跌 0.6%至 26,445.45。S&P 在上週五創歷史新高後連跌兩日，但兩日跌幅仍溫和。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "S&P 500 -0.3%、Dow -0.3%、Nasdaq -0.6%；On Holding 在財報後下跌 20.3%，公司獲利優於市場預期但營收展望低於預期。來源：Associated Press，2026-08-11，市場資料日 2026-08-11。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Nasdaq 相對弱勢與單一成長股財測衝擊，顯示高估值市場對「好獲利、弱展望」的容忍度下降；但指數仍接近高點、跌幅不大，不能把兩天回落直接定義為趨勢反轉。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 風險變化與 B 估值並重"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日及 1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：高估值與高預期 → 財測或通膨事件落差 → 成長股率先下修 → 若廣度、信用與波動同步惡化則擴散至指數"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：Nasdaq 是否持續弱於 S&P、等權指數與半導體廣度、VIX 及信用利差補值"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：S&P 仍接近歷史高點，跌幅溫和，企業獲利整體仍強"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：CPI 後科技股與市場廣度恢復、VIX 與信用利差維持穩定"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "4｜Texas 資料中心稽核，使 2027 用電成長預測由 14%降至 6%"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Texas 州長 8/3 指示 PUCT 與 ERCOT 對資料中心併網案進行全面查核，稽核完成前任何資料中心案不得推進。EIA 8/11 新版預測因此把 2027 Texas 用電負載成長由前次 14%下修至 6%。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "ERCOT 正評估約 474GW 的新併網申請，超過 Texas 歷史最高尖峰用電五倍，其中約 90%來自資料中心；EIA 將 2027 Texas 用電成長預測由 14%降至 6%。來源：Office of the Texas Governor，2026-08-03；U.S. EIA，2026-08-11。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 算力需求不會自動等於可實現的用電與收入。併網、供電、水、社區影響與自備電力要求都可能拉長建設時程，讓市場重新檢驗資料中心 CapEx 的落地速度與投資報酬。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面為主，B 估值與 D 風險變化為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週及 1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：併網稽核與電網限制 → 專案延後或自備電力成本提高 → AI 基建收入與現金回收延後 → 高估值與資本效率被重新檢驗"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：PUCT／ERCOT 稽核時程、被拒絕或延後的容量、自備電力與水資源方案、雲端與電力公司的 CapEx 指引"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：6%仍是顯著用電成長，合規且能自備能源的專案可能取得更高優先序"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：稽核迅速完成、多數優質專案取得併網，且企業維持原 CapEx 與收入時程"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "5｜信用與 VIX 尚未擴散，強勁獲利仍是主要反方"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "選定的日頻來源到 07:10 截止前只補到 8/10：HY OAS 為 2.70、IG OAS 為 0.78，皆與 8/7相同；VIX 由 14.90升至 15.46。AP 引述 FactSet 指出，S&P 500 公司 Q2 每股盈餘年增估計約 50%。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "HY OAS 2.70、IG OAS 0.78、VIX 15.46，資料日 2026-08-10；S&P 500 Q2 EPS 年增估計約 50%。來源：ICE BofA／CBOE 經 FRED，更新日 2026-08-11；FactSet 經 AP 轉述，2026-08-11。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "信用與波動尚未確認壓力擴散，強勁獲利也支持指數；但窄利差、低 VIX 與歷史高點意味風險溢價不厚。這一則的用途是限制結論，不把油價與兩日回落誇大成系統性事件。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 風險變化為主，B 估值為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：潛伏"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：低波動與窄利差 → 市場保護與風險溢價有限 → 若 CPI、油價或財測意外出現 → 調整速度可能放大"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：8/11 後 HY／IG OAS、VIX、美元及市場廣度是否同步惡化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：利差未擴大、VIX仍低、S&P 500 Q2 EPS 估計強勁"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：信用與波動維持穩定，企業財測未廣泛下修，市場廣度恢復"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "事實"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "數值／變化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料期間"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源與日期"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "NYSE 8/11 為正常交易日"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "8 月無完整休市日；8/11 已完成交易"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-11"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "NYSE Holidays & Trading Hours，截至 2026-08-12 查核"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "EIA 上修第三季 Brent 預測"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "7 月版約 74 美元 → 8 月版約 85 美元"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026 Q3"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. EIA，2026-07-07、2026-08-11"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Brent 盤中大幅震盪"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "高於 90、低於 87，收 88.91 美元、+1.4%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-11"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-11"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Treasury 10 年期殖利率"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "4.70%，前日 4.72%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-10 至 08-11"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. Treasury，資料日 2026-08-11"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "美股三大指數"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "S&P -0.3%、Dow -0.3%、Nasdaq -0.6%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-11"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-11"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Texas 資料中心併網申請"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "約 474GW，約 90%為資料中心"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "截至 2026-08-03"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Office of the Texas Governor，2026-08-03"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "信用與波動最新值"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "HY 2.70、IG 0.78、VIX 15.46"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-10"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "ICE BofA／CBOE 經 FRED，更新日 2026-08-11"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論與初步判斷"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "初判是市場正在同時重估兩個「實體瓶頸」：能源供給限制使通膨與利率下行路徑不穩定；電網與併網稽核使 AI 需求不能等比例轉成建設與收入。兩者都不等於長期成長假設已失效，但會降低歷史高點附近市場對時程、成本與財測落差的容忍度。這是由已確認資料推導的暫時判斷，不是來源原話或短期漲跌預測。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "外部觀點比較"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀點摘要"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "與初判一致／分歧"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "對判斷影響"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-11"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "將油價震盪、CPI 催化劑、利率與股市小跌置於同一脈絡"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "支持供給 → 通膨 → 利率 → 估值傳導鏈"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. EIA，2026-08-11"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "上修油價路徑，但預估 2027 年供給逐步恢復"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致並提供反方"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "提高未來數月風險，但不把高油價視為永久"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "FactSet，經 AP 2026-08-11 轉述"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "S&P 500 Q2 EPS 年增估計約 50%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "分歧／反方"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "保留獲利支撐，不把高估值直接等同崩跌"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "游庭皓、財經 M 平方"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "本次未導入"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "無法比較"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "不影響以公開原始來源形成的判斷"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "最終判斷與反方證據"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終判斷：暫定未來 1–4 週風險維持 63／100、中性，方向持平偏高，信心 81／100。EIA 對供給與油價的上修、Texas 對資料中心併網的限制，讓通膨、AI 基建與高估值的容錯下降；但長端殖利率回落、信用利差穩定、VIX仍低與獲利強勁，尚不支持上調為偏高風險。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：10 年期殖利率由 4.72%降至 4.70%；HY／IG OAS 未擴大；VIX 15.46仍低；S&P 只下跌 0.3%且接近高點；Q2 EPS 年增估計強勁；EIA 預估多數中東產量在 2027 年初恢復。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若 CPI 降溫、Brent 回落、Texas 稽核不影響主要專案且市場廣度恢復，應下調風險；若 CPI 偏高、油價續升、資料中心時程或 CapEx 被廣泛下修、信用利差擴大，則上調。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日市場一句話"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "今天市場真正交易的不是油價盤中來回多少，而是能源與電網兩個實體瓶頸會不會同時壓縮高估值市場的容錯。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "反方證據與尚未確認資料"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "反方證據：官方 10 年期殖利率回落、信用利差未擴大、VIX仍低、企業獲利估計強勁；EIA 仍預估油價與中東產量在 2027 年逐步正常化。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：7 月 CPI 尚未發布；8/11 HY／IG OAS、VIX與廣義美元指數尚未在選定日頻來源發布；On Holding 原始 Q2 結果頁尚未由搜尋索引取得，因此只採 AP 對市場反應與財測方向的報導，不使用未查核的詳細財務數字。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "尚未確認與待觀察"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "未確認資料：7 月 CPI、8/11 信用與 VIX、8/8當週 EIA 石油庫存與 SPR 將在本報告資料截止後發布；不以預期值冒充結果。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "未入選候選事件：候選池共十項，包括 EIA 油價與庫存預測、Brent 盤中震盪、汽油價格、7 月 CPI、Treasury 曲線、三大指數、On Holding 財測反應、Texas 資料中心稽核、信用／VIX、S&P 500獲利。Brent 與 EIA 合併為供給事件；On Holding只作市場結構例證；汽油與 CPI／利率合併，避免同一因果鏈重複計數。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "下一確認點：8/12 20:30 台灣時間的美國 7 月 CPI、8/12 EIA 週報、8/11 後信用與 VIX補值、荷莫茲船運與 Brent、PUCT／ERCOT 稽核時程、8/13 PPI與下一份 Fed H.4.1。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "來源"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "link",
+                "text": "NYSE｜Holidays & Trading Hours｜2026 日曆與核心交易時段；截至 2026-08-12 查核",
+                "href": "https://www.nyse.com/trade/hours-calendars"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. EIA｜Short-Term Energy Outlook｜發布日 2026-08-11、預測完成日 2026-08-06",
+                "href": "https://www.eia.gov/outlooks/steo/index.php"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. EIA｜July Short-Term Energy Outlook｜發布日 2026-07-07",
+                "href": "https://www.eia.gov/pressroom/releases/press590.php"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. EIA｜Weekly U.S. Ending Stocks of Crude Oil in SPR｜最新資料日 2026-07-31、發布日 2026-08-05",
+                "href": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=W&n=PET&s=WCSSTUS1"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Office of the Texas Governor｜Governor Abbott Directs Comprehensive Data Center Audit｜2026-08-03",
+                "href": "https://gov.texas.gov/news/post/governor-abbott-directs-comprehensive-data-center-audit"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Treasury｜Daily Treasury Par Yield Curve Rates｜資料日 2026-08-11",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Bureau of Labor Statistics｜CPI Home｜6 月資料發布日 2026-07-14；7 月資料預定 2026-08-12 08:30 ET",
+                "href": "https://www.bls.gov/cpi/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜H.4.1 Factors Affecting Reserve Balances｜發布日 2026-08-06、資料日 2026-08-05",
+                "href": "https://www.federalreserve.gov/releases/h41/current/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve Bank of St. Louis／ICE BofA｜HY OAS｜資料日 2026-08-10、更新日 2026-08-11",
+                "href": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve Bank of St. Louis／ICE BofA｜IG OAS｜資料日 2026-08-10、更新日 2026-08-11",
+                "href": "https://fred.stlouisfed.org/series/BAMLC0A0CM"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve Bank of St. Louis／CBOE｜VIX｜資料日 2026-08-10、更新日 2026-08-11",
+                "href": "https://fred.stlouisfed.org/series/VIXCLS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve Bank of St. Louis／Federal Reserve｜廣義美元指數｜資料日 2026-08-07、更新日 2026-08-10",
+                "href": "https://fred.stlouisfed.org/series/DTWEXBGS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜US stocks slip further from their records as oil prices keep swinging｜2026-08-11",
+                "href": "https://apnews.com/article/stocks-markets-rates-iran-futures-3f3f2f2d49e4aa8744d21ecd0ce55a9c"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜The Latest: Trump seeks an exit from his Iran war as Mideast violence spreads｜2026-08-11",
+                "href": "https://apnews.com/article/84ee037681e5455587a4273eb777709e"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "人工核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：是否接受五則事件排序、63 分風險框架、「能源與電網兩個實體瓶頸壓縮容錯」主標題與五分鐘篇幅，供內部研究及私人 Dashboard 使用。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：本版本不授權公開發布、對外引用、個人化投資建議、持股調整、再平衡、買賣或任何投資行動，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/daily-briefs/2026-08-12-v01.md",
+      "asOf": "2026-08-12 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-12",
+      "dependencies": []
+    },
+    {
       "id": "records/daily-briefs/2026-08-11-v01.md",
       "date": "2026-08-11",
       "version": 1,
@@ -2151,7 +4191,7 @@
       "isLatest": true,
       "title": "油價反彈不是單一商品波動，而是利率風險重新壓過成長利多",
       "summary": "Iran 在荷莫茲海峽重開談判中新增制裁、凍結資產與戰爭賠償等條件；Brent 8/10 上漲 5%至 87.72 美元，市場重新計價能源供應與通膨尾部風險。 美國 Treasury 官方 10 年期殖利率由 8/7 的 4.65%升至 8/10 的 4.72%；S&P 500、Dow 與 Nasdaq 分別下跌約 0.1%、0.1%與 0.3%，顯示折現率壓力暫時壓過前一日的降息交易。 7 月 CPI 將於 8/12 公布。6 月整體 CPI 月減 0.4%、年增 3.5%，核心年增 2.6%；8/10 的油價上漲未必完整進入 7 月數字，但會影響市場對後續通膨與 Fed 路徑的預期。 7 月非農減少 2.3 萬人與歷史下修仍支持成長風險；但市場同時估計 9 月升息機率接近 52%，形成「就業轉弱、能源與利率上升」的政策兩難。 反方證據仍強：HY OAS 至 8/7 降至 2.70、IG OAS 為 0.78、VIX 為 14.90；S&P 500 企業 Q2 每股盈餘年增估計約 50%。目前是風險重新定價，不是已確認的系統性壓力。",
-      "freshness": "最新",
+      "freshness": "歷史版本",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
       "artifactHash": "sha256:96ca2c44d0bf7aedafa1b0ee60d57f27767e1561d5d39822322f43563de94183",
@@ -12885,6 +14925,430 @@
   ],
   "threadsDocuments": [
     {
+      "id": "records/content/threads/2026-08-12-ai-demand-grid-bottleneck-v01.md",
+      "artifactKey": "cmVjb3Jkcy9jb250ZW50L3RocmVhZHMvMjAyNi0wOC0xMi1haS1kZW1hbmQtZ3JpZC1ib3R0bGVuZWNrLXYwMS5tZAAxAHNoYTI1NjpiZjMxNTNlNTU2ZDZhNWY2Zjc5YTYzZmI3ZjAwZjY2ZDljNjIzOGJkNzg3ZGJhMzZmMDU4N2Q1ZDk3MjUxYWZj",
+      "date": "2026-08-12",
+      "version": 1,
+      "versionLabel": "v01",
+      "title": "Threads 草稿｜AI 需求很強，但 474GW 申請不是 474GW 收入",
+      "summary": "Texas 電網現在有大約 474GW 的新併網申請。",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:bf3153e556d6a5f6f79a63fb7f00f66d9c6238bd787dba36f0587d5d97251afc",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "日期：2026-08-12"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源研究："
+              },
+              {
+                "type": "code",
+                "text": "records/daily-briefs/2026-08-12-v01.md"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報："
+              },
+              {
+                "type": "code",
+                "text": "records/daily-briefs/2026-08-12-v01.md"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報雜湊："
+              },
+              {
+                "type": "code",
+                "text": "sha256:7dde7c564d3fcde7c36f83ddee58284430425785f8e9c1a6cd8cf4bc4996daad"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "建議時機：現在；發布前須重新確認 Texas 稽核、EIA 預測與本人觀點是否有重大更新"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "主版本"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Texas 電網現在有大約 474GW 的新併網申請。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "這是當地歷史尖峰用電的 5 倍以上，而且約 90%來自資料中心。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "如果只看 AI 需求，這個數字很驚人。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "但 8/3，Texas 州長要求 PUCT 與 ERCOT 先完成全面稽核；在稽核完成前，任何資料中心案都不能繼續推進。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "8/11，EIA 也因此把 2027 年 Texas 用電成長預測，從原本的 14%下修到 6%。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "這讓我重新確認一件事："
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 需求很強，不等於每一個資料中心計畫都會準時變成用電、營收與現金流。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "中間至少還有四道門："
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "需求 → 併網 → 電力與水 → 資本支出與投資回收"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "州政府要求每個案子交代："
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 1,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "誰負擔電網與公共資源成本"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "有多少電力來自自備能源"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "用水與冷卻怎麼處理"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "對社區、噪音與交通的影響"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "所以我不會把 474GW 直接當成未來一定落地的市場規模。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "它比較像一個「需求池」，接下來要經過稽核、排隊、融資與基礎設施篩選。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "反方也要保留。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "EIA 下修後仍預估 Texas 2027 年用電成長 6%，這並不低；能自備電力、解決水資源並符合電網要求的專案，反而可能得到更高優先序。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "我的暫時結論是："
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 的下一個風險，不一定是需求突然消失，而是需求到收入之間的實體瓶頸比市場想得更長。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來我會看三件事：稽核要多久、真正獲准的容量有多少、企業是否調整 CapEx 與上線時程。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "備選開頭"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 1,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "AI 資料中心有 474GW 的併網申請，但 EIA 卻把 Texas 明年用電成長預測從 14%砍到 6%。問題不在需求，而在需求能不能落地。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "474GW 是需求池，不是已實現的收入。AI 基建中間還卡著併網、電力、水與資本回收四道門。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "查核與語氣"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "已確認事實與來源：Texas 州長要求 PUCT 與 ERCOT 完成資料中心併網全面稽核、稽核前任何案子不得推進；ERCOT 約 474GW 新併網申請、約 90%來自資料中心，來源為 "
+              },
+              {
+                "type": "link",
+                "text": "Office of the Texas Governor，2026-08-03",
+                "href": "https://gov.texas.gov/news/post/governor-abbott-directs-comprehensive-data-center-audit"
+              },
+              {
+                "type": "text",
+                "text": "。EIA 將 2027 Texas 用電成長預測由 14%下修至 6%，來源為 "
+              },
+              {
+                "type": "link",
+                "text": "U.S. EIA Short-Term Energy Outlook，2026-08-11",
+                "href": "https://www.eia.gov/outlooks/steo/index.php"
+              },
+              {
+                "type": "text",
+                "text": "。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "AI 推論：併網、電力、水與資本回收會使 AI 需求到實際收入之間產生時程與成本落差；這是由官方資料推導的暫時推論，不是來源原話或個股預測。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "外部觀點：本篇以 Texas 州政府與 EIA 原始資料為主；未把未查證的公司 CapEx 或個別受益／受害名單納入。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "最終判斷：AI 需求仍強，但 474GW 應視為待稽核的需求池，不應直接等同已核准容量、營收或現金流。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：下修後的 6%用電成長仍高；符合電網、自備能源、水資源與社區要求的專案可能優先落地。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：PUCT／ERCOT 稽核完成日、各專案最終核准容量、企業 CapEx與啟用時程尚未公布。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "待使用者補充：請確認文中「這讓我重新確認」「我不會把 474GW 直接當成」「我的暫時結論」與「接下來我會看」符合本人真實判斷；若不符合，發布前改為中性研究口吻，不虛構個人經歷或投資行動。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "App CTA：不加入；本篇核心是 AI 基建的實體瓶頸，沒有自然且必要的產品連結。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "內容聲明：本內容為市場研究與風險框架整理，非投資建議；不構成個股、持股或買賣建議。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終文字、個人觀點、發布時間與是否發布由使用者決定：待核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：未授權發布、留言或私訊互動、個人化投資建議、持股調整、買賣或任何投資行動，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/content/threads/2026-08-12-ai-demand-grid-bottleneck-v01.md",
+      "asOf": "2026-08-12",
+      "updatedAt": "2026-08-12",
+      "dependencies": [
+        "records/daily-briefs/2026-08-12-v01.md"
+      ]
+    },
+    {
       "id": "records/content/threads/2026-08-11-oil-jump-rate-buffer-v01.md",
       "artifactKey": "cmVjb3Jkcy9jb250ZW50L3RocmVhZHMvMjAyNi0wOC0xMS1vaWwtanVtcC1yYXRlLWJ1ZmZlci12MDEubWQAMQBzaGEyNTY6MDY0NzZmYjZlZDQ4ZTM5ZDI2MzQ2MWFkMTM1NzE5YTkxMjIzNjM5MzE0MTk4ZTZjMzg1OGY5MWY0MWRiODM5Yg",
       "date": "2026-08-11",
@@ -14509,45 +16973,45 @@
   "approvedThreadsArchive": [],
   "threadsArchiveIssues": [],
   "brief": {
-    "title": "油價反彈不是單一商品波動，而是利率風險重新壓過成長利多",
-    "headline": "油價反彈不是單一商品波動，而是利率風險重新壓過成長利多",
-    "summary": "Iran 在荷莫茲海峽重開談判中新增制裁、凍結資產與戰爭賠償等條件；Brent 8/10 上漲 5%至 87.72 美元，市場重新計價能源供應與通膨尾部風險。 美國 Treasury 官方 10 年期殖利率由 8/7 的 4.65%升至 8/10 的 4.72%；S&P 500、Dow 與 Nasdaq 分別下跌約 0.1%、0.1%與 0.3%，顯示折現率壓力暫時壓過前一日的降息交易。 7 月 CPI 將於 8/12 公布。6 月整體 CPI 月減 0.4%、年增 3.5%，核心年增 2.6%；8/10 的油價上漲未必完整進入 7 月數字，但會影響市場對後續通膨與 Fed 路徑的預期。 7 月非農減少 2.3 萬人與歷史下修仍支持成長風險；但市場同時估計 9 月升息機率接近 52%，形成「就業轉弱、能源與利率上升」的政策兩難。 反方證據仍強：HY OAS 至 8/7 降至 2.70、IG OAS 為 0.78、VIX 為 14.90；S&P 500 企業 Q2 每股盈餘年增估計約 50%。目前是風險重新定價，不是已確認的系統性壓力。",
+    "title": "EIA 上修油價路徑，但長端利率回落：市場容錯仍被供給與用電瓶頸壓縮",
+    "headline": "EIA 上修油價路徑，但長端利率回落：市場容錯仍被供給與用電瓶頸壓縮",
+    "summary": "EIA 8/11 將第三季 Brent 預測由 7 月版約 74 美元上修至約 85 美元，理由是荷莫茲海峽嚴重通行限制持續至 8 月；Brent 當日盤中越過 90 美元、跌回 87 美元下方，最後收 88.91 美元、上漲 1.4%。 7 月 CPI 將於台灣時間 8/12 20:30 公布，07:10 截止前仍未知。官方 10 年期殖利率由 4.72%降至 4.70%，但汽油價格與供給風險使利率緩衝仍有限。 S&P 500、Dow 與 Nasdaq 分別下跌 0.3%、0.3%與 0.6%，為 S&P 上週五創高後連續第二個溫和跌日；尚未形成廣泛去風險，但高點附近的容錯正在收斂。 Texas 要求資料中心併網案完成稽核後才能推進；ERCOT 約 474GW 的新併網申請中約 90%是資料中心。EIA 因此把 2027 Texas 用電成長預測由 14%下修至 6%，突顯 AI 需求到實際用電之間仍有電網、資金與政策瓶頸。 反方證據仍強：HY OAS 與 IG OAS 至 8/10 分別為 2.70、0.78，VIX 為 15.46；FactSet 經 AP 轉述的 S&P 500 Q2 EPS 年增估計約 50%。目前是高估值市場的容錯下降，不是已確認的系統性壓力。",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准",
     "version": 1,
-    "artifactHash": "sha256:96ca2c44d0bf7aedafa1b0ee60d57f27767e1561d5d39822322f43563de94183",
-    "coveredSessionDate": "2026-08-10",
-    "asOf": "2026-08-11 07:10（Asia/Taipei，UTC+8）",
-    "source": "records/daily-briefs/2026-08-11-v01.md",
-    "updatedAt": "2026-08-11T07:11:46+08:00",
+    "artifactHash": "sha256:7dde7c564d3fcde7c36f83ddee58284430425785f8e9c1a6cd8cf4bc4996daad",
+    "coveredSessionDate": "2026-08-11",
+    "asOf": "2026-08-12 07:10（Asia/Taipei，UTC+8）",
+    "source": "records/daily-briefs/2026-08-12-v01.md",
+    "updatedAt": "2026-08-12",
     "dependencies": []
   },
   "marketRisk": {
-    "label": "市場風險報告｜2026-08-11-v01",
+    "label": "市場風險報告｜2026-08-12-v01",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准",
     "version": 1,
-    "artifactHash": "sha256:d6e05c93ad22f8e2f45346ea91f5e032175bc4327ab61c9da21316c206569b28",
-    "coveredSessionDate": "2026-08-10",
-    "asOf": "2026-08-11 07:10（Asia/Taipei，UTC+8）",
-    "source": "records/market-risk/2026-08-11-v01.md",
-    "updatedAt": "2026-08-11 07:10（Asia/Taipei，UTC+8）",
+    "artifactHash": "sha256:ebdb02fb44badce040e5503ab70d267c6a46bbfaa7804536f354e049befc4f4e",
+    "coveredSessionDate": "2026-08-11",
+    "asOf": "2026-08-12 07:10（Asia/Taipei，UTC+8）",
+    "source": "records/market-risk/2026-08-12-v01.md",
+    "updatedAt": "2026-08-12 07:10（Asia/Taipei，UTC+8）",
     "dependencies": [],
     "score": 63,
     "baseline": 63,
     "eventAdjustment": 0,
-    "dailyChange": 3,
-    "immediateRisk": "1–3 個交易日內，荷莫茲談判、Brent 是否續升、8/12 CPI 與 10 年期殖利率聯動",
-    "structuralRisk": "1–2 季內，能源成本、就業降溫、AI 資本需求與高估值可能共同壓縮企業利潤與估值容錯",
+    "dailyChange": 0,
+    "immediateRisk": "1–3 個交易日內，7 月 CPI、Brent 是否續留高檔、10 年期殖利率與科技股的聯動",
+    "structuralRisk": "1–2 季內，能源供應、戰略庫存消耗、AI 用電與併網瓶頸、高估值及就業降溫可能共同壓縮企業與市場容錯",
     "topRisks": [
-      "能源與荷莫茲談判",
-      "通膨與長端利率",
-      "就業降溫與 AI 資本密度"
+      "荷莫茲供給與油價路徑",
+      "CPI 與長端利率",
+      "AI 資料中心的電網與政策瓶頸"
     ],
-    "confidence": 80,
-    "completeness": 90,
+    "confidence": 81,
+    "completeness": 91,
     "experimental": true
   },
   "blockers": []
