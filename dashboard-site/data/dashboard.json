@@ -1,14 +1,518 @@
 {
-  "generatedAt": "2026-08-12T23:11:09.613Z",
-  "date": "2026-08-13",
+  "generatedAt": "2026-08-13T23:12:40.661Z",
+  "date": "2026-08-14",
   "expectation": {
-    "dashboardDate": "2026-08-13",
-    "expectedReportDate": "2026-08-12",
-    "coveredSessionDate": "2026-08-11",
+    "dashboardDate": "2026-08-14",
+    "expectedReportDate": "2026-08-13",
+    "coveredSessionDate": "2026-08-12",
     "phase": "before_cutoff",
     "reason": "尚未到 07:30 交付門檻，沿用前一個應有報告日。"
   },
   "approvals": [
+    {
+      "id": "records/market-risk/2026-08-14-v01.md",
+      "title": "市場風險報告｜2026-08-14-v01",
+      "type": "市場風險報告",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "市場風險報告｜2026-08-14-v01",
+      "fullContent": null,
+      "decision": "是否接受60分總分、60分基準、0事件調整、資料完整度94、AI信心85與第12日影子紀錄，供內部研究及私人Dashboard呈現。",
+      "source": "records/market-risk/2026-08-14-v01.md",
+      "asOf": "2026-08-14 07:10（Asia/Taipei，UTC+8）",
+      "createdAt": null,
+      "recordDate": "2026-08-14",
+      "version": 1,
+      "artifactHash": "sha256:2253960b0ed0d8f87f75769d5233e21ced7952457a6e6f8dedb2f114f49ad17c",
+      "updatedAt": "2026-08-14 07:10（Asia/Taipei，UTC+8）",
+      "dependencies": []
+    },
+    {
+      "id": "records/daily-briefs/2026-08-14-v01.md",
+      "title": "PPI 表面降溫，但服務成本與流動性仍限制創高市場的容錯",
+      "type": "晨報",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "美國 7 月最終需求 PPI 月比持平、年增 4.7%，低於 6 月修正後的年增 5.5%；但排除食品、能源與貿易服務後月增 0.4%、年增同為 4.7%，服務與建築成本沒有同步降溫。 初領失業金增加 9,000 人至 20.9 萬，但四週均值持平於 19.9 萬；續領失業金減少 2.2 萬至 177.7 萬，勞動市場是邊際轉弱而非壓力廣泛擴散。 Fed H.4.1 顯示截至 8/12 當週平均準備金減少 492.9 億美元、TGA 增加 566.3 億美元；資產負債表小幅擴張沒有完全抵銷財政現金回補的流動性吸收。 S&P 500 上漲 0.7%創收盤新高、Nasdaq 上漲 0.8%，10 年期 Treasury 官方值由 4.68%降至 4.63%；但 Russell 2000 只漲 0.2%，Cisco 財報優於預期仍因利潤率疑慮下跌 8.4%，高估值市場仍要求獲利品質。 1–4 週影子風險由 61 降至 60／100，維持中性；PPI headline、油價與長債殖利率帶來緩解，但核心服務、流動性吸收與航運風險限制下調幅度。",
+      "fullContent": null,
+      "decision": "是否接受五則事件排序、60 分風險框架、「PPI 表面降溫但服務成本與流動性仍限制容錯」主標題與五分鐘篇幅，供內部研究及私人 Dashboard 使用。",
+      "source": "records/daily-briefs/2026-08-14-v01.md",
+      "asOf": "2026-08-14 07:10（Asia/Taipei，UTC+8）",
+      "createdAt": null,
+      "recordDate": "2026-08-14",
+      "version": 1,
+      "artifactHash": "sha256:7a856b23823062f4fee83b07b24a1b5d8e48cfd6f7c646e58b8d7c564de05092",
+      "updatedAt": "2026-08-14",
+      "dependencies": []
+    },
+    {
+      "id": "records/content/threads/2026-08-14-ppi-flat-core-sticky-v01.md",
+      "title": "Threads 草稿｜PPI 沒漲，為什麼還不能說通膨過關？",
+      "type": "Threads",
+      "owner": "社群經營員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "商品 -0.7% 能源 -3.1% 服務 +0.2% 建築 +2.2%",
+      "fullContent": {
+        "format": "structured-markdown",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "日期：2026-08-14"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "狀態：待核准"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "來源研究："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-14-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-14-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報版本：v01"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報雜湊："
+                },
+                {
+                  "type": "code",
+                  "text": "sha256:7a856b23823062f4fee83b07b24a1b5d8e48cfd6f7c646e58b8d7c564de05092"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "建議時機：現在；發布前須重新確認 BLS 原始資料與本人觀點是否有重大更新"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "主版本"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "美國 7 月 PPI 月增 0.0%。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "看到這個數字，最直覺的解讀是："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "通膨壓力終於沒再增加。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "但把同一份 BLS 報告拆開看，故事沒有那麼單純。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "7 月最終需求："
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "商品 -0.7%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "能源 -3.1%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "服務 +0.2%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "建築 +2.2%"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "排除食品、能源與貿易服務後，核心 PPI 反而月增 0.4%、年增 4.7%。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "所以 headline 的 0%，不是所有成本都沒漲。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "而是商品與能源的下降，剛好抵銷了服務與建築的上升。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "市場先交易比較舒服的那一面："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "10 年期美債官方殖利率從 4.68%降到 4.63%，S&P 500 上漲 0.7%並創收盤新高。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "這個反應有道理，但我不會因此直接把「PPI 沒漲」翻譯成「通膨已過關」。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "我會把問題拆成三層："
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "start": 1,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "商品與能源的降溫能不能延續？"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "服務與建築成本會不會傳到 PCE、租金或企業毛利率？"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "殖利率下降，是趨勢轉彎，還是市場先交易 headline？"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "反方也要保留。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "汽油價格月減 5.7%，headline PPI 年增率也從 6 月的 5.5%降到 4.7%。如果能源與商品持續降溫，確實可以替利率與估值壓力買到時間。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "但真正決定這段緩解能走多遠的，可能不是 0.0%這個漂亮數字，而是核心服務成本能不能一起下來。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "接下來我會看核心 PCE、下一份 CPI／PPI，以及企業財報裡的毛利率與成本指引。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "備選開頭"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "start": 1,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "PPI 月增 0.0%，但核心 PPI 月增 0.4%、建築成本上升 2.2%。同一份通膨報告，正在說兩個不同的故事。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "商品與能源降價，可以把 headline PPI 壓到零；但如果服務成本還在漲，通膨真的算過關了嗎？"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "查核與語氣"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "已確認事實與來源：7 月最終需求 PPI 月比持平、年增4.7%；商品 -0.7%、能源 -3.1%、服務 +0.2%、建築 +2.2%；排除食品、能源與貿易服務後月增0.4%、年增4.7%；汽油月減5.7%。來源為 "
+                },
+                {
+                  "type": "link",
+                  "text": "U.S. Bureau of Labor Statistics，發布日2026-08-13、資料期2026年7月",
+                  "href": "https://www.bls.gov/news.release/ppi.nr0.htm"
+                },
+                {
+                  "type": "text",
+                  "text": "。官方10年期美債殖利率由8/12的4.68%降至8/13的4.63%，來源為 "
+                },
+                {
+                  "type": "link",
+                  "text": "U.S. Department of the Treasury，資料日2026-08-13",
+                  "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+                },
+                {
+                  "type": "text",
+                  "text": "。S&P 500上漲0.7%至7,798.99並創收盤新高，來源為 "
+                },
+                {
+                  "type": "link",
+                  "text": "Associated Press，2026-08-13",
+                  "href": "https://apnews.com/article/stock-markets-ai-semiconductors-fed-energy-3a23f22469cd0e0062f711096906525c"
+                },
+                {
+                  "type": "text",
+                  "text": "。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "AI 推論：headline PPI 的改善主要來自商品與能源抵銷服務及建築上升；是否能持續緩解通膨與估值壓力，仍需核心 PCE、後續物價與企業毛利率確認。這是由官方資料推導的暫時推論，不是來源原話或短期市場預測。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "外部觀點："
+                },
+                {
+                  "type": "link",
+                  "text": "Associated Press，2026-08-13",
+                  "href": "https://apnews.com/article/stock-markets-ai-semiconductors-fed-energy-3a23f22469cd0e0062f711096906525c"
+                },
+                {
+                  "type": "text",
+                  "text": "把 PPI 年增率下降、油價與殖利率回落視為股市創高的支撐；本篇以 BLS 與 Treasury 原始資料為主，AP 只用來驗證市場反應。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "最終判斷：headline PPI 與能源降溫是真實緩解，但核心服務及建築成本仍需確認，不能由月比0.0%單獨判定通膨已過關。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "反方證據：商品、能源與汽油價格下降；headline PPI 年增率由5.5%降至4.7%；10年期殖利率下降；S&P 500創高。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "尚未確認資料：核心 PCE、8月 CPI／PPI、後續企業毛利率與成本指引尚未發布；不以預期值替代結果。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "待使用者補充：請確認文中「我不會因此直接把」「我會把問題拆成」與「接下來我會看」符合本人真實判斷；若不符合，發布前改為中性研究口吻，不虛構個人經歷或投資行動。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "App CTA：不加入；本篇核心是如何拆解 headline 與核心成本，沒有自然且必要的產品連結。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "內容聲明：本內容為市場研究與風險框架整理，非投資建議；不構成個股、持股或買賣建議。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "核准"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "最終文字、個人觀點、發布時間與是否發布由使用者決定：待核准。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "核准紀錄：尚未核准。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "核准邊界：未授權發布、留言或私訊互動、個人化投資建議、持股調整、買賣或任何投資行動，也不延伸至未來版本。"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "decision": "尚未核准。",
+      "source": "records/content/threads/2026-08-14-ppi-flat-core-sticky-v01.md",
+      "asOf": "2026-08-14",
+      "createdAt": null,
+      "recordDate": "2026-08-14",
+      "version": 1,
+      "artifactHash": "sha256:21f0deb8c773246f565cb31bf4551a6ececfcc6230680b12eee2caf91429e141",
+      "updatedAt": "2026-08-14",
+      "dependencies": [
+        "records/daily-briefs/2026-08-14-v01.md"
+      ]
+    },
     {
       "id": "records/market-risk/2026-08-13-v01.md",
       "title": "市場風險報告｜2026-08-13-v01",
@@ -46,7 +550,7 @@
       "recordDate": "2026-08-13",
       "version": 1,
       "artifactHash": "sha256:56c2b2187f2ee3ae713f82390e1a14d4e1e67907c052f18e0b25d5a5c545dde7",
-      "updatedAt": "2026-08-13",
+      "updatedAt": "2026-08-13T07:11:35+08:00",
       "dependencies": []
     },
     {
@@ -2860,15 +3364,15 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
-      "currentTask": "市場風險報告｜2026-08-13-v01",
+      "currentTask": "市場風險報告｜2026-08-14-v01",
       "progress": "等待人工核准",
       "dependencies": [],
       "handoff": "將研究與風險成果交總司令驗收；將已驗證素材交社群經營員；將市場風險欄位與限制交 App 設計員。所有對外使用均由使用者核准。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/market-risk/2026-08-13-v01.md",
-      "asOf": "2026-08-13 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-13 07:10（Asia/Taipei，UTC+8）"
+      "source": "records/market-risk/2026-08-14-v01.md",
+      "asOf": "2026-08-14 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-14 07:10（Asia/Taipei，UTC+8）"
     },
     {
       "id": "social-operator",
@@ -2877,20 +3381,78 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
-      "currentTask": "Threads 草稿｜CPI 降溫了，為什麼薪水體感還沒變好？",
+      "currentTask": "Threads 草稿｜PPI 沒漲，為什麼還不能說通膨過關？",
       "progress": "等待人工核准",
       "dependencies": [
-        "records/daily-briefs/2026-08-13-v01.md"
+        "records/daily-briefs/2026-08-14-v01.md"
       ],
       "handoff": "研究疑問退回總經研究員；成果與實驗交總司令驗收；最終語氣、個人觀點、發布與互動交使用者。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/content/threads/2026-08-13-cpi-cools-real-wages-shrink-v01.md",
-      "asOf": "2026-08-13",
-      "updatedAt": "2026-08-13"
+      "source": "records/content/threads/2026-08-14-ppi-flat-core-sticky-v01.md",
+      "asOf": "2026-08-14",
+      "updatedAt": "2026-08-14"
     }
   ],
   "tasks": [
+    {
+      "id": "records/market-risk/2026-08-14-v01.md",
+      "title": "市場風險報告｜2026-08-14-v01",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/market-risk/2026-08-14-v01.md",
+      "asOf": "2026-08-14 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-14 07:10（Asia/Taipei，UTC+8）"
+    },
+    {
+      "id": "records/daily-briefs/2026-08-14-v01.md",
+      "title": "PPI 表面降溫，但服務成本與流動性仍限制創高市場的容錯",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/daily-briefs/2026-08-14-v01.md",
+      "asOf": "2026-08-14 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-14"
+    },
+    {
+      "id": "records/content/threads/2026-08-14-ppi-flat-core-sticky-v01.md",
+      "title": "Threads 草稿｜PPI 沒漲，為什麼還不能說通膨過關？",
+      "owner": "社群經營員",
+      "ownerId": "social-operator",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [
+        "records/daily-briefs/2026-08-14-v01.md"
+      ],
+      "source": "records/content/threads/2026-08-14-ppi-flat-core-sticky-v01.md",
+      "asOf": "2026-08-14",
+      "updatedAt": "2026-08-14"
+    },
+    {
+      "id": "records/reviews/2026-08-14-market-risk-shadow-checkpoint.md",
+      "title": "市場風險影子指標首輪檢查點",
+      "owner": "社群經營員",
+      "ownerId": "social-operator",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/reviews/2026-08-14-market-risk-shadow-checkpoint.md",
+      "asOf": "2026-08-14",
+      "updatedAt": "2026-08-14"
+    },
     {
       "id": "records/market-risk/2026-08-13-v01.md",
       "title": "市場風險報告｜2026-08-13-v01",
@@ -2917,7 +3479,7 @@
       "dependencies": [],
       "source": "records/daily-briefs/2026-08-13-v01.md",
       "asOf": "2026-08-13 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-13"
+      "updatedAt": "2026-08-13T07:11:35+08:00"
     },
     {
       "id": "records/content/threads/2026-08-13-cpi-cools-real-wages-shrink-v01.md",
@@ -3186,6 +3748,1552 @@
   ],
   "briefArchive": [
     {
+      "id": "records/daily-briefs/2026-08-14-v01.md",
+      "date": "2026-08-14",
+      "version": 1,
+      "versionLabel": "v01",
+      "isLatest": true,
+      "title": "PPI 表面降溫，但服務成本與流動性仍限制創高市場的容錯",
+      "summary": "美國 7 月最終需求 PPI 月比持平、年增 4.7%，低於 6 月修正後的年增 5.5%；但排除食品、能源與貿易服務後月增 0.4%、年增同為 4.7%，服務與建築成本沒有同步降溫。 初領失業金增加 9,000 人至 20.9 萬，但四週均值持平於 19.9 萬；續領失業金減少 2.2 萬至 177.7 萬，勞動市場是邊際轉弱而非壓力廣泛擴散。 Fed H.4.1 顯示截至 8/12 當週平均準備金減少 492.9 億美元、TGA 增加 566.3 億美元；資產負債表小幅擴張沒有完全抵銷財政現金回補的流動性吸收。 S&P 500 上漲 0.7%創收盤新高、Nasdaq 上漲 0.8%，10 年期 Treasury 官方值由 4.68%降至 4.63%；但 Russell 2000 只漲 0.2%，Cisco 財報優於預期仍因利潤率疑慮下跌 8.4%，高估值市場仍要求獲利品質。 1–4 週影子風險由 61 降至 60／100，維持中性；PPI headline、油價與長債殖利率帶來緩解，但核心服務、流動性吸收與航運風險限制下調幅度。",
+      "freshness": "最新",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:7a856b23823062f4fee83b07b24a1b5d8e48cfd6f7c646e58b8d7c564de05092",
+      "coveredSessionDate": "2026-08-13",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-08-14 07:10（Asia/Taipei，UTC+8）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察市場：美股、美元利率、信用、波動、能源與美國總經"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察期間：2026-08-13 已完成美股交易時段；總經與市場資料使用各來源截至截止時間的最新可得值"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料完整度：94／100；8/13 信用利差與 VIX、8/8 後廣義美元尚未發布，荷莫茲與曼德海峽的即時流量仍主要依可信二手報導驗證"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "一分鐘摘要"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "美國 7 月最終需求 PPI 月比持平、年增 4.7%，低於 6 月修正後的年增 5.5%；但排除食品、能源與貿易服務後月增 0.4%、年增同為 4.7%，服務與建築成本沒有同步降溫。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "初領失業金增加 9,000 人至 20.9 萬，但四週均值持平於 19.9 萬；續領失業金減少 2.2 萬至 177.7 萬，勞動市場是邊際轉弱而非壓力廣泛擴散。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Fed H.4.1 顯示截至 8/12 當週平均準備金減少 492.9 億美元、TGA 增加 566.3 億美元；資產負債表小幅擴張沒有完全抵銷財政現金回補的流動性吸收。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "S&P 500 上漲 0.7%創收盤新高、Nasdaq 上漲 0.8%，10 年期 Treasury 官方值由 4.68%降至 4.63%；但 Russell 2000 只漲 0.2%，Cisco 財報優於預期仍因利潤率疑慮下跌 8.4%，高估值市場仍要求獲利品質。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "1–4 週影子風險由 61 降至 60／100，維持中性；PPI headline、油價與長債殖利率帶來緩解，但核心服務、流動性吸收與航運風險限制下調幅度。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日風險儀表"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "1–4 週風險分數：60／100"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "相較前一交易日：-1"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險狀態：中性"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "即時風險：創高後的市場廣度、核心服務 PPI 對下一份 PCE／CPI 的傳導、荷莫茲與曼德海峽航運消息"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "結構性風險：服務與建築成本黏性、實質工資與就業動能、TGA 回補對市場流動性的持續吸收"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "今日主要風險來源：核心服務與建築成本、TGA 回補與準備金下降、高估值與能源航運尾部風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "五則重要事件"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "1｜Headline PPI 持平，但核心服務與建築成本仍黏"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "美國勞工統計局公布，7 月最終需求 PPI 月比持平、年增 4.7%，6 月月比由下降 0.3%修正為下降 0.1%。但排除食品、能源與貿易服務後月增 0.4%、年增 4.7%；最終需求服務月增 0.2%，最終需求建築月增 2.2%。這些都是已確認事實，顯示 headline 改善主要由商品與能源下降抵銷，而非所有成本同步降溫。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "7 月最終需求 PPI：月比 0.0%、年增 4.7%；排除食品、能源與貿易服務：月增 0.4%、年增 4.7%；最終需求商品 -0.7%、能源 -3.1%、服務 +0.2%、建築 +2.2%。來源：U.S. BLS，發布日 2026-08-13、資料期 2026 年 7 月。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：headline PPI 與能源下跌可緩解近期升息與長債壓力，但核心服務、建築與中間需求服務仍偏強，表示企業成本壓力只是換了位置。若服務成本傳導到 PCE 或利潤率，市場對「通膨已過關」的定價仍可能反覆。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 風險變化為主，B 估值為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：緩解但未解除"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日、1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：商品與能源降溫但核心服務／建築上升 → 通膨傳導與企業利潤率不確定 → 長債與高估值資產波動"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：核心 PCE、下一份 CPI／PPI、服務成本、企業毛利率與 10 年期殖利率"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：最終需求商品連續下降、汽油價格月減 5.7%，headline PPI 年增率由 5.5%降至 4.7%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若核心 PCE、服務 PPI 與建築成本同步放慢，且企業毛利率保持穩定，應再降低此風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "2｜TGA 回補，單週平均準備金減少近 500 億美元"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Fed H.4.1 顯示，截至 8/12 當週，存款機構準備金週平均為 2.944 兆美元，較前週減少 492.9 億美元；TGA 週平均為 9,639.5 億美元，增加 566.3 億美元。Fed 持有證券週平均增加 85.6 億美元，但不足以抵銷 TGA 與其他吸收項目的變化。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "準備金週平均 2.944 兆美元、週減 492.9 億美元；TGA 週平均 9,639.5 億美元、週增 566.3 億美元；Fed 持有證券週平均 6.467 兆美元、週增 85.6 億美元。來源：Federal Reserve H.4.1，發布日 2026-08-13、資料週截至 2026-08-12。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：TGA 回補會把銀行體系現金轉入財政部帳戶，短期形成流動性吸收；當市場同時接近歷史高點，這不等於立即觸發壓力，但會降低資金面對利率或事件衝擊的緩衝。單週變化仍可能受結算與季節因素影響，不應由一筆數據判定趨勢。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：C 資金輪動為主，D 風險變化為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫但尚未擴散"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：TGA 回補 → 銀行準備金下降 → 邊際流動性與風險承擔緩衝縮小 → 高估值資產容錯下降"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：下一份 H.4.1、TGA、準備金、ON RRP、美元與短期融資利差"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：Fed 週平均持有證券與總資產仍小幅增加，準備金絕對水準仍接近 2.94 兆美元"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若 TGA 回補停止、準備金回升且短期融資市場沒有壓力，應取消升溫判斷"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "3｜失業金申請回升，但續領與四週均值沒有惡化"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "截至 8/8 當週，經季節調整初領失業金增加 9,000 人至 20.9 萬；四週移動平均維持 19.9 萬。截至 8/1 當週，續領失業金減少 2.2 萬至 177.7 萬，投保失業率維持 1.2%。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "初領失業金 20.9 萬、週增 0.9 萬；四週均值 19.9 萬、持平；續領失業金 177.7 萬、週減 2.2 萬；投保失業率 1.2%。來源：U.S. Department of Labor，發布日 2026-08-13，資料週截至 2026-08-08／2026-08-01。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：初領增加與先前非農轉弱方向一致，但四週均值與續領沒有同步惡化，尚不足以判定裁員或再就業困難正在廣泛擴散。這項數據提高成長監測必要性，卻同時提供不升級為高風險的反方證據。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面為主，D 風險變化為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：潛伏"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：初領回升＋先前就業轉弱 → 所得與消費動能放慢 → 企業營收、利潤與信用風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：初領四週均值、續領失業金、8 月就業、實質所得與零售銷售"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：續領失業金下降、四週均值持平，最新初領仍低於 2025 年同期的 22.4 萬"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若初領回落、續領保持下降且就業修正停止，應降低此風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "4｜S&P 500 創高，但小型股與財報利潤率反應仍分化"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "8/13 S&P 500 上漲 0.7%至 7,798.99，刷新收盤高點；Nasdaq 上漲 0.8%、Dow 上漲 0.1%，Russell 2000 只上漲 0.2%。Cisco 雖公布優於市場預期的獲利與營收，仍因利潤率疑慮下跌 8.4%。這是市場收盤與可信二手報導確認的個股反應。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "S&P 500 7,798.99、+0.7%；Nasdaq 26,803.03、+0.8%；Dow 53,839.99、+0.1%；Russell 2000 3,052.85、+0.2%；Cisco -8.4%。最新可得 8/12 VIX 14.55、HY OAS 2.71、IG OAS 0.79。來源：Associated Press，2026-08-13；CBOE／ICE BofA 經 FRED，資料日 2026-08-12、更新日 2026-08-13。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：長債與油價下降讓指數創高有基本支撐，低 VIX 與穩定信用也沒有顯示廣泛去風險；但 Russell 明顯落後 Nasdaq，且財報優於預期仍可能因利潤率被拋售，反映高估值市場對獲利品質的門檻仍高。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：B 估值為主，C 資金輪動為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：潛伏"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日、1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：指數創高＋獲利品質門檻升高 → 財報落差容忍度下降 → 權值股或高估值類股回撤風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：市場廣度、Russell 相對強弱、VIX、信用利差、財報後股價與利潤率指引"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：四大指數全數上漲、房地產類股反彈、VIX 與信用利差仍低"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若市場廣度持續擴散、財報後反應改善且小型股補漲，應降低市場結構風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "5｜油價下跌，但主要與替代航線的安全風險未解除"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Brent 8/13 下跌 2.1%至每桶 87.07 美元，直接緩解當日通膨與利率壓力；但 AP 同日報導，美國海軍仍對伊朗港口實施封鎖，政府尚未說明如何結束戰事，曼德海峽商船遭三枚飛彈攻擊造成六人死亡。事件細節屬可信二手資料，尚未由本次選定的單一政府原始通報完整重現。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Brent 87.07 美元、單日 -2.1%。EIA 先前確認 2026 年第二季荷莫茲運輸中斷曾使 Brent 在 72–118 美元間波動；IEA 2026 年 2 月資料指出，2025 年平均約 2,000 萬桶／日油品通過荷莫茲。來源：Associated Press，2026-08-13；U.S. EIA，2026-07-15；IEA，2026-02。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：油價下跌是明確反方，表示市場沒有把當日消息定價為立即供應中斷；但主要航道與替代航道同時存在安全不確定性，使能源價格仍具跳升尾部風險。這項風險不作事件加分，避免與通膨及市場結構重複計分。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 風險變化為主，A 基本面為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：潛伏"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日、1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：主要與替代航線安全不確定 → 油價、保險與運費跳升 → 通膨、企業成本與風險溢價"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：官方航運通報、油輪流量、戰爭風險保費、Brent 與汽油價格"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：Brent 當日下跌 2.1%，PPI 能源月減 3.1%，美國商業原油庫存前週大增"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若荷莫茲與曼德海峽安全恢復、油輪流量正常化且油價／保費持續下降，應移除此風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "事實"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "數值／變化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料期間"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源與日期"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "7 月 PPI"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "月比 0.0%、年增 4.7%；核心月增 0.4%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026 年 7 月"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. BLS，2026-08-13"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "初領與續領失業金"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "初領 20.9 萬、+0.9 萬；續領 177.7 萬、-2.2 萬"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "當週截至 2026-08-08／08-01"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. Department of Labor，2026-08-13"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Fed 準備金與 TGA"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "準備金 -492.9 億美元；TGA +566.3 億美元"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "當週截至 2026-08-12"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Federal Reserve H.4.1，2026-08-13"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "官方 10 年期殖利率"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "4.63%，前日 4.68%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-13"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. Treasury，資料日 2026-08-13"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "美股收盤"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "S&P +0.7%、Nasdaq +0.8%、Russell 2000 +0.2%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-13"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-13"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "最新信用與波動"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "HY 2.71、IG 0.79、VIX 14.55"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-12"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "ICE BofA／CBOE 經 FRED，更新日 2026-08-13"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "30 年期固定房貸"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "6.67%，前週 6.69%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "當週截至 2026-08-13"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Freddie Mac PMMS，2026-08-13"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論與初步判斷"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "初判是 headline PPI、能源與 10 年期殖利率同步下降，確實替估值與利率敏感資產提供緩解；但排除食品、能源與貿易服務後的 PPI 月增 0.4%、建築成本月增 2.2%，加上 TGA 回補造成準備金下降，說明價格與流動性風險只是轉弱而非消失。初領失業金增加需監測，但續領與四週均值沒有惡化；信用與波動也未擴散，因此不支持把風險升級為偏高。這是 AI 依原始資料形成的暫時推論，不是來源原話或短期漲跌預測。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "外部觀點比較"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀點摘要"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "與初判一致／分歧"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "對判斷影響"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-13（市場）"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "PPI 年增率下降、油價與殖利率回落支撐 S&P 500 創高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致並提供反方"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "支持風險小幅下調，不支持高風險判斷"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-13（市場）"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Cisco 財報優於預期仍因利潤率疑慮下跌"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "支持「高估值仍要求獲利品質」而非全面風險解除"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-13（中東）"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "美國仍封鎖伊朗港口，曼德海峽攻擊造成傷亡"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致但原始確認有限"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "保留能源航運尾部風險，不啟用事件加分"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "游庭皓、財經 M 平方"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "本次未導入"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "無法比較"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "不影響以公開原始來源形成的判斷"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "最終判斷與反方證據"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終判斷：未來 1–4 週風險暫定 60／100、中性、方向小幅下降，信心 85／100。PPI headline、油價、殖利率、信用與 VIX 提供緩解；核心服務與建築成本、TGA 回補、航運與高估值門檻限制下調幅度。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：S&P 500 創高；四大指數全數上漲；10 年期官方殖利率降至 4.63%；Brent 下跌 2.1%；VIX 與信用利差低；續領失業金下降；房貸利率小幅下降。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若核心服務與 PCE 降溫、準備金回升、航運恢復且市場廣度擴大，應繼續下調；若核心價格加速、TGA 持續抽水、長債或油價反彈、信用利差擴大，則上調。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日市場一句話"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "今天市場真正交易的不是 PPI 月比零成長，而是商品與能源降溫能否抵銷核心服務、建築成本與流動性吸收。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "反方證據與尚未確認資料"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "反方證據：headline PPI 月比持平；商品、能源與汽油價格下降；10 年期殖利率、Brent 與房貸利率回落；S&P 500 創高；VIX、HY 與 IG 利差低；續領失業金下降。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：8/13 HY／IG OAS 與 VIX、8/8 後廣義美元、荷莫茲與曼德海峽即時油輪流量與完整官方航運通報尚未在截止時間前取得。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "尚未確認與待觀察"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "未確認資料：信用與 VIX 固定落後一個交易日，廣義美元為週頻更新；不以即時行情或預期值補造。中東航運事件以 AP 作外部驗證，完整官方流量仍待確認。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "未入選候選事件：候選池共十項，包括 headline PPI、核心 PPI、最終需求建築、初領／續領失業金、Fed 準備金／TGA、Treasury 曲線、房貸利率、四大指數與市場廣度、Cisco 財報反應、Brent 與航運。headline、核心與建築成本合併為同一因果鏈；Treasury 與房貸利率納入 PPI／市場結構反方；Cisco 納入市場結構；油價與航運合併，避免重複計分。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "下一確認點：8/14 美國零售銷售與密西根大學消費者信心、下一份 PCE／CPI／PPI、8/13 後信用與 VIX補值、8/17 廣義美元、下一份 H.4.1、油輪流量與保費、下一週 EIA 庫存與 SPR。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "來源"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "link",
+                "text": "NYSE｜Holidays & Trading Hours｜2026 日曆與核心交易時段；截至 2026-08-14 查核",
+                "href": "https://www.nyse.com/trade/hours-calendars"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Bureau of Labor Statistics｜Producer Price Indexes — July 2026｜發布日 2026-08-13、資料期 2026 年 7 月",
+                "href": "https://www.bls.gov/news.release/ppi.nr0.htm"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Department of Labor｜Unemployment Insurance Weekly Claims｜發布日 2026-08-13、資料週截至 2026-08-08／08-01",
+                "href": "https://www.dol.gov/ui/data.pdf"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜H.4.1 Factors Affecting Reserve Balances｜發布日 2026-08-13、資料週截至 2026-08-12",
+                "href": "https://www.federalreserve.gov/releases/h41/current/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Department of the Treasury｜Daily Treasury Par Yield Curve Rates｜資料日 2026-08-13",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Freddie Mac｜Primary Mortgage Market Survey｜發布／資料日 2026-08-13",
+                "href": "https://www.freddiemac.com/pmms"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜HY OAS｜資料日 2026-08-12、更新日 2026-08-13",
+                "href": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜IG OAS｜資料日 2026-08-12、更新日 2026-08-13",
+                "href": "https://fred.stlouisfed.org/series/BAMLC0A0CM"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／CBOE｜VIX｜資料日 2026-08-12、更新日 2026-08-13",
+                "href": "https://fred.stlouisfed.org/series/VIXCLS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／Federal Reserve｜Nominal Broad U.S. Dollar Index｜資料日 2026-08-07、更新日 2026-08-10",
+                "href": "https://fred.stlouisfed.org/series/DTWEXBGS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Energy Information Administration｜Petroleum markets responded to disruptions in the Middle East in the second quarter｜2026-07-15",
+                "href": "https://www.eia.gov/todayinenergy/detail.php?id=67865"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "International Energy Agency｜Strait of Hormuz factsheet｜最後更新 2026-02",
+                "href": "https://www.iea.org/about/oil-security-and-emergency-ission/strait-of-hormuz"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜US stocks rise to a record as oil prices drop and inflation gets less bad｜2026-08-13",
+                "href": "https://apnews.com/article/stock-markets-ai-semiconductors-fed-energy-3a23f22469cd0e0062f711096906525c"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜New aircraft carrier heads toward Mideast after reports of issues on long-deployed USS Lincoln｜2026-08-13",
+                "href": "https://apnews.com/article/5366eba29f72b6b317416fde81d57a61"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜Crew of Yemeni vessel recount their chaotic rescue after Houthis' deadly attack｜2026-08-13",
+                "href": "https://apnews.com/article/29115cc1fbc209ed4be2d2f80eabc1bf"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Census Bureau｜Monthly Retail Trade Release Schedule｜7 月 2026 資料預定 2026-08-14 發布",
+                "href": "https://www.census.gov/retail/release_schedule.html"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "University of Michigan Surveys of Consumers｜2026 Release Dates｜8 月初值預定 2026-08-14 發布",
+                "href": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=75443"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "人工核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：是否接受五則事件排序、60 分風險框架、「PPI 表面降溫但服務成本與流動性仍限制容錯」主標題與五分鐘篇幅，供內部研究及私人 Dashboard 使用。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：本版本不授權公開發布、對外引用、個人化投資建議、持股調整、再平衡、買賣或任何投資行動，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/daily-briefs/2026-08-14-v01.md",
+      "asOf": "2026-08-14 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-14",
+      "dependencies": []
+    },
+    {
       "id": "records/daily-briefs/2026-08-13-v01.md",
       "date": "2026-08-13",
       "version": 1,
@@ -3193,7 +5301,7 @@
       "isLatest": true,
       "title": "CPI 降溫但實質工資仍縮水，市場靠低波動撐住高估值",
       "summary": "美國 7 月 CPI 月增 0.1%、年增 3.4%，核心 CPI 月增 0.2%、年增 2.5%，都比 6 月年增率低；但能源仍年增 14.7%，通膨壓力是降溫而非消失。 7 月實質平均時薪月減 0.1%、年減 0.2%；在就業轉弱背景下，家庭購買力沒有跟著 headline inflation 改善，成長風險仍在。 EIA 顯示商業原油庫存單週增加 1,740 萬桶，但 SPR 減少 610 萬桶；供給緩衝的表面改善部分來自戰略庫存釋出，不能直接解讀為能源風險解除。 S&P 500 上漲 0.3%、Nasdaq 上漲 0.5%，官方 10 年期殖利率由 4.70%降至 4.68%；但市場仍接近歷史高點，且房屋建商下跌，利率敏感環節仍弱。 1–4 週影子風險由 63 降至 61／100，維持中性；CPI 與殖利率提供緩解，但實質工資、能源運輸與高估值容錯仍構成下行風險。",
-      "freshness": "最新",
+      "freshness": "歷史版本",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
       "artifactHash": "sha256:56c2b2187f2ee3ae713f82390e1a14d4e1e67907c052f18e0b25d5a5c545dde7",
@@ -4681,7 +6789,7 @@
       ],
       "source": "records/daily-briefs/2026-08-13-v01.md",
       "asOf": "2026-08-13 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-13",
+      "updatedAt": "2026-08-13T07:11:35+08:00",
       "dependencies": []
     },
     {
@@ -16951,6 +19059,463 @@
   ],
   "threadsDocuments": [
     {
+      "id": "records/content/threads/2026-08-14-ppi-flat-core-sticky-v01.md",
+      "artifactKey": "cmVjb3Jkcy9jb250ZW50L3RocmVhZHMvMjAyNi0wOC0xNC1wcGktZmxhdC1jb3JlLXN0aWNreS12MDEubWQAMQBzaGEyNTY6MjFmMGRlYjhjNzczMjQ2ZjU2NWNiMzFiZjQ1NTFhNmVjZWNmY2M2MjMwNjgwYjEyZWVlMmNhZjkxNDI5ZTE0MQ",
+      "date": "2026-08-14",
+      "version": 1,
+      "versionLabel": "v01",
+      "title": "Threads 草稿｜PPI 沒漲，為什麼還不能說通膨過關？",
+      "summary": "商品 -0.7% 能源 -3.1% 服務 +0.2% 建築 +2.2%",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:21f0deb8c773246f565cb31bf4551a6ececfcc6230680b12eee2caf91429e141",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "日期：2026-08-14"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源研究："
+              },
+              {
+                "type": "code",
+                "text": "records/daily-briefs/2026-08-14-v01.md"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報："
+              },
+              {
+                "type": "code",
+                "text": "records/daily-briefs/2026-08-14-v01.md"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報雜湊："
+              },
+              {
+                "type": "code",
+                "text": "sha256:7a856b23823062f4fee83b07b24a1b5d8e48cfd6f7c646e58b8d7c564de05092"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "建議時機：現在；發布前須重新確認 BLS 原始資料與本人觀點是否有重大更新"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "主版本"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "美國 7 月 PPI 月增 0.0%。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "看到這個數字，最直覺的解讀是："
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "通膨壓力終於沒再增加。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "但把同一份 BLS 報告拆開看，故事沒有那麼單純。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "7 月最終需求："
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "商品 -0.7%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "能源 -3.1%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "服務 +0.2%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "建築 +2.2%"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "排除食品、能源與貿易服務後，核心 PPI 反而月增 0.4%、年增 4.7%。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "所以 headline 的 0%，不是所有成本都沒漲。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "而是商品與能源的下降，剛好抵銷了服務與建築的上升。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "市場先交易比較舒服的那一面："
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "10 年期美債官方殖利率從 4.68%降到 4.63%，S&P 500 上漲 0.7%並創收盤新高。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "這個反應有道理，但我不會因此直接把「PPI 沒漲」翻譯成「通膨已過關」。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "我會把問題拆成三層："
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 1,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "商品與能源的降溫能不能延續？"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "服務與建築成本會不會傳到 PCE、租金或企業毛利率？"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "殖利率下降，是趨勢轉彎，還是市場先交易 headline？"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "反方也要保留。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "汽油價格月減 5.7%，headline PPI 年增率也從 6 月的 5.5%降到 4.7%。如果能源與商品持續降溫，確實可以替利率與估值壓力買到時間。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "但真正決定這段緩解能走多遠的，可能不是 0.0%這個漂亮數字，而是核心服務成本能不能一起下來。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來我會看核心 PCE、下一份 CPI／PPI，以及企業財報裡的毛利率與成本指引。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "備選開頭"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 1,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "PPI 月增 0.0%，但核心 PPI 月增 0.4%、建築成本上升 2.2%。同一份通膨報告，正在說兩個不同的故事。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "商品與能源降價，可以把 headline PPI 壓到零；但如果服務成本還在漲，通膨真的算過關了嗎？"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "查核與語氣"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "已確認事實與來源：7 月最終需求 PPI 月比持平、年增4.7%；商品 -0.7%、能源 -3.1%、服務 +0.2%、建築 +2.2%；排除食品、能源與貿易服務後月增0.4%、年增4.7%；汽油月減5.7%。來源為 "
+              },
+              {
+                "type": "link",
+                "text": "U.S. Bureau of Labor Statistics，發布日2026-08-13、資料期2026年7月",
+                "href": "https://www.bls.gov/news.release/ppi.nr0.htm"
+              },
+              {
+                "type": "text",
+                "text": "。官方10年期美債殖利率由8/12的4.68%降至8/13的4.63%，來源為 "
+              },
+              {
+                "type": "link",
+                "text": "U.S. Department of the Treasury，資料日2026-08-13",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+              },
+              {
+                "type": "text",
+                "text": "。S&P 500上漲0.7%至7,798.99並創收盤新高，來源為 "
+              },
+              {
+                "type": "link",
+                "text": "Associated Press，2026-08-13",
+                "href": "https://apnews.com/article/stock-markets-ai-semiconductors-fed-energy-3a23f22469cd0e0062f711096906525c"
+              },
+              {
+                "type": "text",
+                "text": "。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "AI 推論：headline PPI 的改善主要來自商品與能源抵銷服務及建築上升；是否能持續緩解通膨與估值壓力，仍需核心 PCE、後續物價與企業毛利率確認。這是由官方資料推導的暫時推論，不是來源原話或短期市場預測。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "外部觀點："
+              },
+              {
+                "type": "link",
+                "text": "Associated Press，2026-08-13",
+                "href": "https://apnews.com/article/stock-markets-ai-semiconductors-fed-energy-3a23f22469cd0e0062f711096906525c"
+              },
+              {
+                "type": "text",
+                "text": "把 PPI 年增率下降、油價與殖利率回落視為股市創高的支撐；本篇以 BLS 與 Treasury 原始資料為主，AP 只用來驗證市場反應。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "最終判斷：headline PPI 與能源降溫是真實緩解，但核心服務及建築成本仍需確認，不能由月比0.0%單獨判定通膨已過關。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：商品、能源與汽油價格下降；headline PPI 年增率由5.5%降至4.7%；10年期殖利率下降；S&P 500創高。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：核心 PCE、8月 CPI／PPI、後續企業毛利率與成本指引尚未發布；不以預期值替代結果。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "待使用者補充：請確認文中「我不會因此直接把」「我會把問題拆成」與「接下來我會看」符合本人真實判斷；若不符合，發布前改為中性研究口吻，不虛構個人經歷或投資行動。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "App CTA：不加入；本篇核心是如何拆解 headline 與核心成本，沒有自然且必要的產品連結。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "內容聲明：本內容為市場研究與風險框架整理，非投資建議；不構成個股、持股或買賣建議。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終文字、個人觀點、發布時間與是否發布由使用者決定：待核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：未授權發布、留言或私訊互動、個人化投資建議、持股調整、買賣或任何投資行動，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/content/threads/2026-08-14-ppi-flat-core-sticky-v01.md",
+      "asOf": "2026-08-14",
+      "updatedAt": "2026-08-14",
+      "dependencies": [
+        "records/daily-briefs/2026-08-14-v01.md"
+      ]
+    },
+    {
       "id": "records/content/threads/2026-08-13-cpi-cools-real-wages-shrink-v01.md",
       "artifactKey": "cmVjb3Jkcy9jb250ZW50L3RocmVhZHMvMjAyNi0wOC0xMy1jcGktY29vbHMtcmVhbC13YWdlcy1zaHJpbmstdjAxLm1kADEAc2hhMjU2OjZmZDViMzFmNWVhODU2ZGRlYzQ3ZTM4ZWJkOWNkYzI3ZDcyNzAyYzRhNTM0NWM1YmFkZGZkMGE4OTBkNTcwYTQ",
       "date": "2026-08-13",
@@ -19435,45 +22000,45 @@
   "approvedThreadsArchive": [],
   "threadsArchiveIssues": [],
   "brief": {
-    "title": "CPI 降溫但實質工資仍縮水，市場靠低波動撐住高估值",
-    "headline": "CPI 降溫但實質工資仍縮水，市場靠低波動撐住高估值",
-    "summary": "美國 7 月 CPI 月增 0.1%、年增 3.4%，核心 CPI 月增 0.2%、年增 2.5%，都比 6 月年增率低；但能源仍年增 14.7%，通膨壓力是降溫而非消失。 7 月實質平均時薪月減 0.1%、年減 0.2%；在就業轉弱背景下，家庭購買力沒有跟著 headline inflation 改善，成長風險仍在。 EIA 顯示商業原油庫存單週增加 1,740 萬桶，但 SPR 減少 610 萬桶；供給緩衝的表面改善部分來自戰略庫存釋出，不能直接解讀為能源風險解除。 S&P 500 上漲 0.3%、Nasdaq 上漲 0.5%，官方 10 年期殖利率由 4.70%降至 4.68%；但市場仍接近歷史高點，且房屋建商下跌，利率敏感環節仍弱。 1–4 週影子風險由 63 降至 61／100，維持中性；CPI 與殖利率提供緩解，但實質工資、能源運輸與高估值容錯仍構成下行風險。",
+    "title": "PPI 表面降溫，但服務成本與流動性仍限制創高市場的容錯",
+    "headline": "PPI 表面降溫，但服務成本與流動性仍限制創高市場的容錯",
+    "summary": "美國 7 月最終需求 PPI 月比持平、年增 4.7%，低於 6 月修正後的年增 5.5%；但排除食品、能源與貿易服務後月增 0.4%、年增同為 4.7%，服務與建築成本沒有同步降溫。 初領失業金增加 9,000 人至 20.9 萬，但四週均值持平於 19.9 萬；續領失業金減少 2.2 萬至 177.7 萬，勞動市場是邊際轉弱而非壓力廣泛擴散。 Fed H.4.1 顯示截至 8/12 當週平均準備金減少 492.9 億美元、TGA 增加 566.3 億美元；資產負債表小幅擴張沒有完全抵銷財政現金回補的流動性吸收。 S&P 500 上漲 0.7%創收盤新高、Nasdaq 上漲 0.8%，10 年期 Treasury 官方值由 4.68%降至 4.63%；但 Russell 2000 只漲 0.2%，Cisco 財報優於預期仍因利潤率疑慮下跌 8.4%，高估值市場仍要求獲利品質。 1–4 週影子風險由 61 降至 60／100，維持中性；PPI headline、油價與長債殖利率帶來緩解，但核心服務、流動性吸收與航運風險限制下調幅度。",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准",
     "version": 1,
-    "artifactHash": "sha256:56c2b2187f2ee3ae713f82390e1a14d4e1e67907c052f18e0b25d5a5c545dde7",
-    "coveredSessionDate": "2026-08-12",
-    "asOf": "2026-08-13 07:10（Asia/Taipei，UTC+8）",
-    "source": "records/daily-briefs/2026-08-13-v01.md",
-    "updatedAt": "2026-08-13",
+    "artifactHash": "sha256:7a856b23823062f4fee83b07b24a1b5d8e48cfd6f7c646e58b8d7c564de05092",
+    "coveredSessionDate": "2026-08-13",
+    "asOf": "2026-08-14 07:10（Asia/Taipei，UTC+8）",
+    "source": "records/daily-briefs/2026-08-14-v01.md",
+    "updatedAt": "2026-08-14",
     "dependencies": []
   },
   "marketRisk": {
-    "label": "市場風險報告｜2026-08-13-v01",
+    "label": "市場風險報告｜2026-08-14-v01",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准",
     "version": 1,
-    "artifactHash": "sha256:c91ad3470e2fe7da2ec597c1bed4acda5c1a7ddf3ef33461127a24268fb3adc8",
-    "coveredSessionDate": "2026-08-12",
-    "asOf": "2026-08-13 07:10（Asia/Taipei，UTC+8）",
-    "source": "records/market-risk/2026-08-13-v01.md",
-    "updatedAt": "2026-08-13 07:10（Asia/Taipei，UTC+8）",
+    "artifactHash": "sha256:2253960b0ed0d8f87f75769d5233e21ced7952457a6e6f8dedb2f114f49ad17c",
+    "coveredSessionDate": "2026-08-13",
+    "asOf": "2026-08-14 07:10（Asia/Taipei，UTC+8）",
+    "source": "records/market-risk/2026-08-14-v01.md",
+    "updatedAt": "2026-08-14 07:10（Asia/Taipei，UTC+8）",
     "dependencies": [],
-    "score": 61,
-    "baseline": 61,
+    "score": 60,
+    "baseline": 60,
     "eventAdjustment": 0,
-    "dailyChange": -2,
-    "immediateRisk": "8/13 PPI、荷莫茲與曼德海峽航運、Brent 與 10 年期殖利率是否再度同向上升",
-    "structuralRisk": "實質工資與就業轉弱、SPR 與汽油庫存緩衝下降、高估值對 AI 獲利與資本效率的要求",
+    "dailyChange": -1,
+    "immediateRisk": "創高後的市場廣度、核心服務 PPI 對利率的再定價、荷莫茲與曼德海峽航運",
+    "structuralRisk": "服務與建築成本黏性、實質工資與就業動能、TGA 回補對準備金與流動性的吸收",
     "topRisks": [
-      "實質工資與消費韌性",
-      "能源運輸與 SPR 緩衝",
-      "高估值與利率敏感度"
+      "核心服務與建築成本",
+      "TGA 回補與準備金下降",
+      "高估值與能源航運尾部風險"
     ],
-    "confidence": 84,
-    "completeness": 93,
+    "confidence": 85,
+    "completeness": 94,
     "experimental": true
   },
   "blockers": []
