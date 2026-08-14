@@ -15,10 +15,12 @@ export function parseMarketRiskRecordPath(
   const filename = source.replaceAll("\\", "/").split("/").at(-1) ?? "";
   const match = /^(\d{4}-\d{2}-\d{2})-v(\d{2})\.md$/.exec(filename);
   if (!match || !isIsoCalendarDate(match[1]!)) return null;
+  const version = Number(match[2]);
+  if (version < 1) return null;
 
   return {
     date: match[1]!,
-    version: Number(match[2]),
+    version,
     versionLabel: `v${match[2]}`,
   };
 }

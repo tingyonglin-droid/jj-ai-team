@@ -775,9 +775,10 @@ test("最新摘要欄位無效時仍保留較早歷史節點與可追查阻擋",
   }
 });
 
-test("市場風險歷史與 archive 只接受 YYYY-MM-DD-vNN.md 檔名", async () => {
+test("市場風險檔名無效或為 v00 時全站排除並保留可追查問題", async () => {
   const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
   try {
+    await writeRoles(root);
     await writeFixture(root, "records/market-risk/2026-07-30-v01.md", marketRisk());
     await writeFixture(root, "records/market-risk/2026-07-31-v1.md", marketRisk({
       date: "2026-07-31",
@@ -788,24 +789,54 @@ test("市場風險歷史與 archive 只接受 YYYY-MM-DD-vNN.md 檔名", async (
     await writeFixture(root, "records/market-risk/2026-08-02-v001.md", marketRisk({
       date: "2026-08-02",
     }));
+    await writeFixture(root, "records/market-risk/2026-08-03-v00.md", marketRisk({
+      date: "2026-08-03",
+      version: 0,
+    }));
+    await writeFixture(root, "records/market-risk/2026-02-30-v01.md", marketRisk({
+      date: "2026-08-04",
+    }));
 
-    const snapshot = await generateDashboardSnapshot(root, new Date("2026-08-02T04:30:00.000Z"));
-
-    assert.deepEqual(snapshot.marketRiskHistory.nodes.map((node) => node.source), [
-      "records/market-risk/2026-07-30-v01.md",
-    ]);
-    assert.deepEqual(snapshot.marketRiskArchive.map((document) => document.source), [
-      "records/market-risk/2026-07-30-v01.md",
-    ]);
-    assert.deepEqual(snapshot.marketRiskHistory.issues.map((issue) => issue.source), [
+    const snapshot = await generateDashboardSnapshot(root, new Date("2026-08-04T04:30:00.000Z"));
+    const validSource = "records/market-risk/2026-07-30-v01.md";
+    const invalidSources = [
       "records/market-risk/2026-07-31-v1.md",
       "records/market-risk/2026-08-01.md",
       "records/market-risk/2026-08-02-v001.md",
+      "records/market-risk/2026-08-03-v00.md",
+      "records/market-risk/2026-02-30-v01.md",
+    ];
+
+    assert.deepEqual(snapshot.marketRiskHistory.nodes.map((node) => node.source), [
+      validSource,
+    ]);
+    assert.deepEqual(snapshot.marketRiskArchive.map((document) => document.source), [
+      validSource,
+    ]);
+    assert.deepEqual(snapshot.marketRiskHistory.issues.map((issue) => issue.source), [
+      "records/market-risk/2026-02-30-v01.md",
+      "records/market-risk/2026-07-31-v1.md",
+      "records/market-risk/2026-08-01.md",
+      "records/market-risk/2026-08-02-v001.md",
+      "records/market-risk/2026-08-03-v00.md",
     ]);
     assert.equal(
       snapshot.marketRiskHistory.issues.every((issue) => /YYYY-MM-DD-vNN\.md/.test(issue.reason)),
       true,
     );
+    assert.equal(snapshot.marketRisk?.source, validSource);
+    assert.equal(snapshot.tasks.some((task) => task.source === validSource), true);
+    assert.equal(snapshot.approvals.some((approval) => approval.source === validSource), true);
+    assert.equal(
+      snapshot.employees.find((employee) => employee.id === "macro-researcher")?.source,
+      validSource,
+    );
+    for (const source of invalidSources) {
+      assert.equal(snapshot.tasks.some((task) => task.source === source), false, source);
+      assert.equal(snapshot.approvals.some((approval) => approval.source === source), false, source);
+      assert.equal(snapshot.employees.some((employee) => employee.source === source), false, source);
+      assert.equal(snapshot.blockers.some((issue) => issue.source === source), true, source);
+    }
   } finally {
     await rm(root, { recursive: true, force: true });
   }

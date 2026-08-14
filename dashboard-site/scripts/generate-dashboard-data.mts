@@ -392,6 +392,20 @@ function representativeTime(content: string, relativePath: string) {
 }
 
 function validateRecord(record: MarkdownRecord): ValidationResult {
+  if (
+    record.definition?.id === "market-risk-report" &&
+    !parseMarketRiskRecordPath(record.relativePath)
+  ) {
+    return {
+      valid: false,
+      issue: issueFor(
+        record,
+        "malformed",
+        "市場風險檔名日期必須有效、版本至少為 v01，且檔名符合 YYYY-MM-DD-vNN.md。",
+      ),
+    };
+  }
+
   const title = firstHeading(record.content);
   if (!title || title.includes("請填寫")) {
     return { valid: false, issue: issueFor(record, "missing", "缺少有效的一級標題。") };
