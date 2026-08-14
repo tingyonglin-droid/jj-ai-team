@@ -20,6 +20,9 @@ import type {
   DashboardTask,
   WorkStatus,
   Freshness,
+  MarketRiskHistoryNode,
+  MarketRiskHistoryIssue,
+  MarketRiskState,
 } from "../lib/dashboard-types.ts";
 import { threadsArtifactKey } from "../lib/dashboard-types.ts";
 
@@ -666,6 +669,14 @@ function numericField(content: string, label: string) {
   return match ? Number(match[1]) : null;
 }
 
+function requiredSingleLineField(content: string, label: string) {
+  const expression = new RegExp(
+    `^[\\t ]*[-*][\\t ]*${escapeRegExp(label)}[：:][\\t ]*([^\\r\\n]*\\S[^\\r\\n]*)[\\t ]*$`,
+    "m",
+  );
+  return content.match(expression)?.[1]?.trim() ?? null;
+}
+
 function riskDetails(record: ValidRecord) {
   const score = numericField(record.content, "市場風險分數");
   const baseline = numericField(record.content, "基準分");
@@ -703,6 +714,128 @@ function riskDetails(record: ValidRecord) {
     confidence,
     completeness,
     experimental: true,
+  };
+}
+
+function riskState(score: number, content: string): MarketRiskState | null {
+  void content;
+  if (score >= 0 && score <= 20) return "低";
+  if (score >= 21 && score <= 24) return "保留區間";
+  if (score >= 25 && score <= 40) return "偏低";
+  if (score >= 41 && score <= 44) return "保留區間";
+  if (score >= 45 && score <= 60) return "中性";
+  if (score >= 61 && score <= 64) return "保留區間";
+  if (score >= 65 && score <= 80) return "偏高";
+  if (score >= 81 && score <= 84) return "保留區間";
+  if (score >= 85 && score <= 100) return "高";
+  return null;
+}
+
+function isIsoDate(value: string) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const date = new Date(`${value}T00:00:00.000Z`);
+  return !Number.isNaN(date.getTime()) && date.toISOString().slice(0, 10) === value;
+}
+
+function marketRiskHistoryNode(
+  record: ValidRecord,
+): Omit<MarketRiskHistoryNode, "versions"> | null {
+  const score = numericField(record.content, "市場風險分數");
+  const dailyChange = numericField(record.content, "單日變動");
+  const changeReasons = requiredSingleLineField(record.content, "調整事件");
+  const topRisks = requiredSingleLineField(record.content, "三項主要風險")
+    ?.split("、")
+    .map((item) => item.trim())
+    .filter(Boolean) ?? [];
+  const supportingEvidence = requiredSingleLineField(record.content, "支持證據");
+  const counterEvidence = requiredSingleLineField(record.content, "反方證據");
+  const confidence = numericField(record.content, "AI 判斷信心");
+  const completeness = numericField(record.content, "資料完整度");
+  const state = score === null ? null : riskState(score, record.content);
+
+  if (
+    score === null || !state || changeReasons === null || topRisks.length !== 3 ||
+    supportingEvidence === null || counterEvidence === null || confidence === null || completeness === null ||
+    !isIsoDate(record.representativeDate) ||
+    score < 0 || score > 100 || confidence < 0 || confidence > 100 ||
+    completeness < 0 || completeness > 100
+  ) {
+    return null;
+  }
+
+  return {
+    id: record.relativePath,
+    date: record.representativeDate,
+    version: record.version,
+    versionLabel: `v${String(record.version).padStart(2, "0")}`,
+    artifactHash: artifactContentHash(record.content),
+    artifactStatus: record.artifactStatus,
+    rawStatus: record.rawStatus ?? record.artifactStatus,
+    asOf: record.asOf,
+    updatedAt: record.updatedAt,
+    source: record.relativePath,
+    score,
+    state,
+    dailyChange,
+    changeReasons,
+    topRisks,
+    supportingEvidence,
+    counterEvidence,
+    confidence,
+    completeness,
+    lowCompleteness: completeness < 70,
+    dependencies: record.dependencies,
+  };
+}
+
+function marketRiskHistoryIssue(record: MarkdownRecord, reason: string): MarketRiskHistoryIssue {
+  return {
+    date: filenameDate(record.relativePath) ?? "",
+    source: record.relativePath,
+    version: record.version,
+    reason,
+  };
+}
+
+function buildMarketRiskHistory(records: MarkdownRecord[]): DashboardSnapshot["marketRiskHistory"] {
+  const grouped = Map.groupBy(
+    records.filter((record) => record.definition?.id === "market-risk-report" && filenameDate(record.relativePath)),
+    (record) => filenameDate(record.relativePath)!,
+  );
+  const nodes: MarketRiskHistoryNode[] = [];
+  const issues: MarketRiskHistoryIssue[] = [];
+
+  for (const versions of grouped.values()) {
+    const sorted = [...versions].sort(newestVersionFirst);
+    const latest = sorted[0];
+    const latestValidation = validateRecord(latest);
+    const latestNode = latestValidation.valid ? marketRiskHistoryNode(latestValidation.record) : null;
+    const versionEntries = sorted.map((record) => {
+      const validation = validateRecord(record);
+      const readable = validation.valid && marketRiskHistoryNode(validation.record) !== null;
+      return {
+        id: record.relativePath,
+        version: record.version,
+        versionLabel: `v${String(record.version).padStart(2, "0")}`,
+        source: record.relativePath,
+        readable,
+      };
+    });
+
+    if (!latestNode) {
+      const reason = latestValidation.valid
+        ? "最高版本缺少市場風險歷史所需的有效分數、證據或品質欄位。"
+        : latestValidation.issue.reason;
+      issues.push(marketRiskHistoryIssue(latest, reason));
+      continue;
+    }
+
+    nodes.push({ ...latestNode, versions: versionEntries });
+  }
+
+  return {
+    nodes: nodes.sort((left, right) => left.date.localeCompare(right.date)),
+    issues: issues.sort((left, right) => left.date.localeCompare(right.date) || left.source.localeCompare(right.source)),
   };
 }
 
@@ -766,6 +899,10 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
   const threadsIndex = definitions.findIndex((definition) => definition.id === "threads");
   const threadsDocuments = buildThreadsDocuments(
     threadsIndex >= 0 ? artifactRecordSets[threadsIndex] : [],
+  );
+  const riskDefinitionIndex = definitions.findIndex((definition) => definition.id === "market-risk-report");
+  const marketRiskHistory = buildMarketRiskHistory(
+    riskDefinitionIndex >= 0 ? artifactRecordSets[riskDefinitionIndex] : [],
   );
   const allRecords = [...artifactRecordSets.flat(), ...reviews, ...decisions];
   const { validRecords, issues } = selectLatestEffective(allRecords);
@@ -925,6 +1062,7 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
           ...parsedRisk,
         }
       : null,
+    marketRiskHistory,
     blockers: blockers.sort((left, right) => {
       if (left.severity !== right.severity) return left.severity === "blocker" ? -1 : 1;
       return left.title.localeCompare(right.title);

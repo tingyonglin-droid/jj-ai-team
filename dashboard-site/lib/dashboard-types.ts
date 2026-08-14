@@ -93,6 +93,44 @@ export function threadsArtifactKey(
     .toString("base64url");
 }
 
+export type MarketRiskState = "低" | "偏低" | "中性" | "偏高" | "高" | "保留區間";
+
+export interface MarketRiskHistoryVersion {
+  id: string;
+  version: number;
+  versionLabel: string;
+  source: string;
+  readable: boolean;
+}
+
+export interface MarketRiskHistoryNode extends TraceableRecord {
+  id: string;
+  date: string;
+  version: number;
+  versionLabel: string;
+  artifactHash: string;
+  artifactStatus: ArtifactStatus;
+  rawStatus: string;
+  score: number;
+  state: MarketRiskState;
+  dailyChange: number | null;
+  changeReasons: string;
+  topRisks: string[];
+  supportingEvidence: string;
+  counterEvidence: string;
+  confidence: number;
+  completeness: number;
+  lowCompleteness: boolean;
+  versions: MarketRiskHistoryVersion[];
+}
+
+export interface MarketRiskHistoryIssue {
+  date: string;
+  source: string;
+  version: number;
+  reason: string;
+}
+
 export interface DashboardSnapshot {
   generatedAt: string;
   date: string;
@@ -172,6 +210,10 @@ export interface DashboardSnapshot {
         experimental: boolean;
       })
     | null;
+  marketRiskHistory: {
+    nodes: MarketRiskHistoryNode[];
+    issues: MarketRiskHistoryIssue[];
+  };
   blockers: Array<{
     severity: "warning" | "blocker";
     kind: "missing" | "pending_update" | "malformed" | "conflict" | "calendar" | "sync";

@@ -163,29 +163,52 @@ function riskMethod(status = "待核准") {
 `;
 }
 
-function marketRisk(status = "待核准") {
-  return `# 市場風險報告｜2026-07-30-v01
+function marketRisk({
+  date = "2026-07-30",
+  version = 1,
+  status = "待核准",
+  score = 65,
+  completeness = 82,
+  confidence = 72,
+  stateTrend = "偏高；尚無趨勢",
+  changeReasons = "能源衝擊",
+  supportingEvidence = "官方來源。",
+  counterEvidence = "信用利差仍低",
+}: {
+  date?: string;
+  version?: number;
+  status?: string;
+  score?: number;
+  completeness?: number;
+  confidence?: number;
+  stateTrend?: string;
+  changeReasons?: string;
+  supportingEvidence?: string;
+  counterEvidence?: string;
+} = {}) {
+  const baseline = score - 10;
+  return `# 市場風險報告｜${date}-v${String(version).padStart(2, "0")}
 
 - 狀態：${status}
-- 資料截止：2026-07-30 17:30（Asia/Taipei，UTC+8）
+- 資料截止：${date} 17:30（Asia/Taipei，UTC+8）
 - 方法版本：v2.0
 - 影子運行：實驗性指標／第 1 個交易日
 - 觀察期：主分數為 1–4 週
 
 ## 總覽
 
-- 市場風險分數：65
-- 基準分：55
+- 市場風險分數：${score}
+- 基準分：${baseline}
 - 事件調整：+10
 - 單日變動：尚無前值
 - 5 日趨勢：尚無資料
 - 20 日趨勢：尚無資料
-- 風險狀態及趨勢：偏高；尚無趨勢
+- 風險狀態及趨勢：${stateTrend}
 - 即時風險：1–3 個交易日留意能源衝擊
 - 結構性風險：1–2 季留意資本支出回報
 - 三項主要風險：能源衝擊、長端利率、市場廣度
-- AI 判斷信心：72
-- 資料完整度：82
+- AI 判斷信心：${confidence}
+- 資料完整度：${completeness}
 
 ## 子指標
 
@@ -199,11 +222,12 @@ function marketRisk(status = "待核准") {
 
 ## 事件調整
 
-- 調整事件：能源衝擊
+- 調整事件：${changeReasons}
 
 ## 證據與限制
 
-- 支持證據：官方來源。
+- 支持證據：${supportingEvidence}
+- 反方證據：${counterEvidence}
 
 ## 核准
 
@@ -628,6 +652,100 @@ test("市場風險紀錄解析可重現的風險優先欄位", async () => {
     assert.equal(snapshot.marketRisk?.immediateRisk, "1–3 個交易日留意能源衝擊");
     assert.equal(snapshot.marketRisk?.structuralRisk, "1–2 季留意資本支出回報");
     assert.deepEqual(snapshot.marketRisk?.topRisks, ["能源衝擊", "長端利率", "市場廣度"]);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("市場風險歷史輸出可追查節點、證據與版本", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+  try {
+    await writeFixture(root, "records/market-risk/2026-07-30-v01.md", marketRisk({
+      date: "2026-07-30", version: 1, score: 65, completeness: 82,
+      stateTrend: "偏高；上升", changeReasons: "能源與長端利率同步上升",
+      supportingEvidence: "油價上升", counterEvidence: "信用利差仍低",
+    }));
+    const snapshot = await generateDashboardSnapshot(root, new Date("2026-07-30T04:30:00.000Z"));
+    assert.equal(snapshot.marketRiskHistory.nodes.length, 1);
+    const node = snapshot.marketRiskHistory.nodes[0];
+    assert.equal(node.date, "2026-07-30");
+    assert.equal(node.version, 1);
+    assert.equal(node.versionLabel, "v01");
+    assert.equal(node.score, 65);
+    assert.equal(node.state, "偏高");
+    assert.equal(node.changeReasons, "能源與長端利率同步上升");
+    assert.equal(node.supportingEvidence, "油價上升");
+    assert.equal(node.counterEvidence, "信用利差仍低");
+    assert.equal(node.lowCompleteness, false);
+    assert.deepEqual(snapshot.marketRiskHistory.issues, []);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("市場風險歷史依日期選取最高版本並標示低完整度", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+  try {
+    await writeFixture(root, "records/market-risk/2026-07-30-v01.md", marketRisk({ version: 1 }));
+    await writeFixture(root, "records/market-risk/2026-07-30-v02.md", marketRisk({ version: 2 }));
+    await writeFixture(root, "records/market-risk/2026-07-31-v01.md", marketRisk({
+      date: "2026-07-31", completeness: 69,
+    }));
+
+    const snapshot = await generateDashboardSnapshot(root, new Date("2026-07-31T04:30:00.000Z"));
+
+    assert.deepEqual(snapshot.marketRiskHistory.nodes.map((node) => [node.date, node.version]), [
+      ["2026-07-30", 2], ["2026-07-31", 1],
+    ]);
+    assert.deepEqual(snapshot.marketRiskHistory.nodes[0].versions.map((item) => [item.version, item.readable]), [
+      [2, true], [1, true],
+    ]);
+    assert.equal(snapshot.marketRiskHistory.nodes.find((node) => node.date === "2026-07-31")?.lowCompleteness, true);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("市場風險歷史不會以較舊可讀版本取代無效的最高版本", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+  try {
+    await writeFixture(root, "records/market-risk/2026-07-30-v01.md", marketRisk({ version: 1 }));
+    await writeFixture(
+      root,
+      "records/market-risk/2026-07-30-v02.md",
+      marketRisk({ version: 2, supportingEvidence: "" }),
+    );
+
+    const snapshot = await generateDashboardSnapshot(root, new Date("2026-07-30T04:30:00.000Z"));
+
+    assert.equal(snapshot.marketRiskHistory.nodes.some((node) => node.date === "2026-07-30"), false);
+    assert.equal(snapshot.marketRiskHistory.issues[0]?.source, "records/market-risk/2026-07-30-v02.md");
+    assert.equal(snapshot.marketRiskHistory.issues[0]?.version, 2);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("市場風險歷史拒絕品質欄位缺失與分數範圍外資料，並依分數產生狀態", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+  try {
+    await writeFixture(root, "records/market-risk/2026-07-30-v01.md", marketRisk({ score: 101 }));
+    await writeFixture(root, "records/market-risk/2026-07-31-v01.md", marketRisk({
+      date: "2026-07-31", supportingEvidence: "",
+    }));
+    await writeFixture(root, "records/market-risk/2026-08-01-v01.md", marketRisk({
+      date: "2026-08-01", counterEvidence: "",
+    }));
+    await writeFixture(root, "records/market-risk/2026-08-02-v01.md", marketRisk({
+      date: "2026-08-02", score: 61, stateTrend: "中性；持平",
+    }));
+
+    const snapshot = await generateDashboardSnapshot(root, new Date("2026-08-02T04:30:00.000Z"));
+
+    assert.deepEqual(snapshot.marketRiskHistory.issues.map((issue) => issue.date), [
+      "2026-07-30", "2026-07-31", "2026-08-01",
+    ]);
+    assert.equal(snapshot.marketRiskHistory.nodes[0]?.state, "保留區間");
   } finally {
     await rm(root, { recursive: true, force: true });
   }
