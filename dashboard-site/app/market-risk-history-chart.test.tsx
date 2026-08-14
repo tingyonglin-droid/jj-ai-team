@@ -122,7 +122,7 @@ test("三筆風險歷史清楚呈現預測邊界、狀態形狀、資料品質�
   assert.match(html, /href="\/market-risk\/2026-08-14\?version=v01"/);
   assert.doesNotMatch(html, /href="\/records\/market-risk/);
   assert.match(html, /data-risk-band="reserved"/);
-  assert.match(html, /待核准：空心圓/);
+  assert.match(html, /待核准：空心點/);
   assert.match(html, /已核准：實心圓/);
   assert.match(html, /最新版本無法解析/);
   assert.match(html, /<polyline/);

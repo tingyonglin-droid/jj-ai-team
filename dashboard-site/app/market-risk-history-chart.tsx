@@ -276,7 +276,7 @@ export function MarketRiskHistoryChart({
           </div>
 
           <div className="risk-history-legend" aria-label="節點核准狀態圖例">
-            <span><i data-approval-state="pending" />待核准：空心圓</span>
+            <span><i data-approval-state="pending" />待核准：空心點</span>
             <span><i data-approval-state="approved" />已核准：實心圓</span>
             <span><i data-approval-state="other" />其他狀態：方形</span>
           </div>

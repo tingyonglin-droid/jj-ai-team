@@ -44,6 +44,29 @@ test("server-renders the protected dashboard foundation for an allowed user", as
   assert.doesNotMatch(html, /Your site is taking shape|Building your site/i);
 });
 
+test("production home renders the market-risk chart safety boundary without personalized action copy", async () => {
+  process.env.ALLOWED_USER_EMAIL = "owner@example.com";
+  const response = await render("/", "owner@example.com");
+
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /未來 1–4 週市場下行風險/);
+  assert.match(html, /最近 4 週/);
+  assert.match(html, /全部歷史/);
+  assert.doesNotMatch(html, /買進|賣出|調整持股|再平衡建議/);
+});
+
+test("production market-risk reader remains protected and action-neutral", async () => {
+  process.env.ALLOWED_USER_EMAIL = "owner@example.com";
+  const response = await render("/market-risk/2026-08-14?version=v01", "owner@example.com");
+
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /完整市場風險報告/);
+  assert.match(html, /市場風險報告｜2026-08-14-v01/);
+  assert.doesNotMatch(html, /買進|賣出|調整持股|再平衡建議/);
+});
+
 test("does not server-render dashboard content for a non-allowed user", async () => {
   process.env.ALLOWED_USER_EMAIL = "owner@example.com";
   const response = await render("/", "other@example.com");

@@ -32,7 +32,7 @@ test("主要導覽將內容放在晨報全文與 AI 員工之間", () => {
   assert.match(html, /晨報全文[\s\S]*?href="\/content"[\s\S]*?AI 員工/);
 });
 
-test("今日總覽優先呈現需決定事項，並排除未核准行動", () => {
+test("今日總覽呈現市場風險歷史的預測邊界與核准圖例，並排除未核准行動", () => {
   const todayHtml = renderToStaticMarkup(
     <TodayOverview
       snapshot={{
@@ -65,7 +65,10 @@ test("今日總覽優先呈現需決定事項，並排除未核准行動", () =>
   assert.match(todayHtml, /依賴/);
   assert.match(todayHtml, /來源：/);
   assert.match(todayHtml, /更新時間：/);
-  assert.doesNotMatch(todayHtml, /一鍵發布|買進|賣出/);
+  assert.match(todayHtml, /未來 1–4 週市場下行風險/);
+  assert.match(todayHtml, /不是市場漲跌預測/);
+  assert.match(todayHtml, /待核准：空心點/);
+  assert.doesNotMatch(todayHtml, /一鍵發布|買進|賣出|調整持股|再平衡建議/);
 });
 
 test("今日總覽呈現可解釋的實驗性風險指標與三種期限", () => {
