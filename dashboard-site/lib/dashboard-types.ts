@@ -54,6 +54,19 @@ export interface DashboardBriefDocument extends TraceableRecord {
   blocks: BriefBlock[];
 }
 
+export interface DashboardMarketRiskDocument extends TraceableRecord {
+  id: string;
+  date: string;
+  version: number;
+  versionLabel: string;
+  isLatest: boolean;
+  title: string;
+  artifactStatus: ArtifactStatus;
+  rawStatus: string;
+  artifactHash: string;
+  blocks: BriefBlock[];
+}
+
 export type ApprovalSyncStatus = "pending" | "synced" | "blocked";
 
 export interface DashboardThreadsDocument extends TraceableRecord {
@@ -173,6 +186,7 @@ export interface DashboardSnapshot {
   >;
   tasks: DashboardTask[];
   briefArchive: DashboardBriefDocument[];
+  marketRiskArchive: DashboardMarketRiskDocument[];
   threadsDocuments: DashboardThreadsDocument[];
   approvedThreadsArchive: DashboardApprovedThreadsDocument[];
   threadsArchiveIssues: DashboardThreadsArchiveIssue[];

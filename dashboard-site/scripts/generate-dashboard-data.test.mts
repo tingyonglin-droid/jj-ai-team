@@ -700,6 +700,21 @@ test("市場風險歷史依日期選取最高版本並標示低完整度", async
     assert.deepEqual(snapshot.marketRiskHistory.nodes[0].versions.map((item) => [item.version, item.readable]), [
       [2, true], [1, true],
     ]);
+    assert.deepEqual(
+      snapshot.marketRiskArchive.map(({ date, versionLabel, isLatest }) => ({ date, versionLabel, isLatest })),
+      [
+        { date: "2026-07-31", versionLabel: "v01", isLatest: true },
+        { date: "2026-07-30", versionLabel: "v02", isLatest: true },
+        { date: "2026-07-30", versionLabel: "v01", isLatest: false },
+      ],
+    );
+    assert.equal(
+      snapshot.marketRiskHistory.nodes[0].versions
+        .filter((version) => version.readable)
+        .every((version) => snapshot.marketRiskArchive.some((document) => document.id === version.id)),
+      true,
+    );
+    assert.equal(snapshot.marketRiskArchive[0]?.blocks.some((block) => block.type === "table"), true);
     assert.equal(snapshot.marketRiskHistory.nodes.find((node) => node.date === "2026-07-31")?.lowCompleteness, true);
   } finally {
     await rm(root, { recursive: true, force: true });

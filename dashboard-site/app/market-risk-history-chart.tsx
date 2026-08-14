@@ -10,6 +10,7 @@ import {
   RISK_BANDS,
   type MarketRiskRange,
 } from "../lib/market-risk-history";
+import { marketRiskDocumentHref } from "../lib/market-risk-content";
 
 const CHART_WIDTH = 800;
 const CHART_HEIGHT = 320;
@@ -35,11 +36,6 @@ function nodeLabel(node: MarketRiskHistoryNode) {
 function changeLabel(change: number | null) {
   if (change === null) return "尚無前值";
   return `${change >= 0 ? "+" : ""}${change} 分`;
-}
-
-function sourceHref(source: string) {
-  if (/^https?:\/\//.test(source)) return source;
-  return `/${source.replace(/^\/+/, "")}`;
 }
 
 function RiskHistoryIssues({
@@ -99,17 +95,21 @@ function RiskHistoryDetail({
       </div>
       <nav className="risk-history-versions" aria-label={`${node.date} 市場風險版本`}>
         <span>該日版本：</span>
-        {node.versions.length > 0 ? node.versions.map((version) => (
-          <a
-            key={version.id}
-            href={sourceHref(version.source)}
-            data-readable={String(version.readable)}
-            aria-disabled={version.readable ? undefined : true}
-            onClick={version.readable ? undefined : (event) => event.preventDefault()}
-          >
-            {version.versionLabel}{version.readable ? "" : "（無法讀取）"}
-          </a>
-        )) : <span>尚無版本入口</span>}
+        {node.versions.length > 0 ? node.versions.map((version) =>
+          version.readable ? (
+            <a
+              key={version.id}
+              href={marketRiskDocumentHref(node.date, version.versionLabel)}
+              data-readable="true"
+            >
+              {version.versionLabel}
+            </a>
+          ) : (
+            <span key={version.id} data-readable="false">
+              {version.versionLabel}（無法讀取）
+            </span>
+          ),
+        ) : <span>尚無版本入口</span>}
       </nav>
     </section>
   );
@@ -242,6 +242,9 @@ export function MarketRiskHistoryChart({
               {visible.map((node) => {
                 const point = pointById.get(node.id);
                 if (!point) return null;
+                const warningId = node.lowCompleteness
+                  ? `risk-history-node-warning-${encodeURIComponent(node.id)}`
+                  : undefined;
                 const style = {
                   left: `${((PLOT_LEFT + point.x) / CHART_WIDTH) * 100}%`,
                   top: `${((PLOT_TOP + point.y) / CHART_HEIGHT) * 100}%`,
@@ -253,6 +256,7 @@ export function MarketRiskHistoryChart({
                       className="risk-history-node"
                       data-approval-state={approvalState(node)}
                       aria-label={nodeLabel(node)}
+                      aria-describedby={warningId}
                       aria-pressed={effectiveSelectedId === node.id}
                       title={nodeLabel(node)}
                       onClick={() => setSelectedId(node.id)}
@@ -260,7 +264,7 @@ export function MarketRiskHistoryChart({
                       onKeyDown={(event) => selectWithKeyboard(event, node.id)}
                     />
                     {node.lowCompleteness ? (
-                      <span className="risk-history-node-warning" role="note">
+                      <span id={warningId} className="risk-history-node-warning" role="note">
                         <span aria-hidden="true">⚠</span>
                         <span className="sr-only">資料完整度低於 70%</span>
                       </span>

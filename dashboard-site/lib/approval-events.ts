@@ -71,6 +71,7 @@ export function applyApprovalEvents(
   const approvalsById = new Map(snapshot.approvals.map((approval) => [approval.id, approval]));
   const threadsById = new Map(snapshot.threadsDocuments.map((document) => [document.id, document]));
   const marketRiskHistory = snapshot.marketRiskHistory ?? { nodes: [], issues: [] };
+  const marketRiskArchive = snapshot.marketRiskArchive ?? [];
   const { approvedThreadsArchive, threadsArchiveIssues } = projectApprovedThreads(snapshot, events);
   const validEvents = events.filter((event) => {
     if (event.artifactType === "Threads") {
@@ -88,6 +89,12 @@ export function applyApprovalEvents(
           node.id === event.artifactId &&
           node.version === event.artifactVersion &&
           node.artifactHash === event.artifactHash &&
+          event.action === "approve",
+      ) || marketRiskArchive.some(
+        (document) =>
+          document.id === event.artifactId &&
+          document.version === event.artifactVersion &&
+          document.artifactHash === event.artifactHash &&
           event.action === "approve",
       );
     }
@@ -190,6 +197,11 @@ export function applyApprovalEvents(
           : node,
       ),
     },
+    marketRiskArchive: marketRiskArchive.map((document) =>
+      isApproved(document.id, document.version, document.artifactHash)
+        ? { ...document, artifactStatus: "已核准" as const }
+        : document,
+    ),
     blockers: [
       ...snapshot.blockers.filter(
         (issue) =>

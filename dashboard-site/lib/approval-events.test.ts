@@ -45,6 +45,7 @@ test("歷史風險節點只套用 ID、版本與雜湊皆相符的核准", () =>
     marketRiskHistoryNode(2, "sha256:risk-v02"),
     marketRiskHistoryNode(1, "sha256:risk-v01"),
   ];
+  snapshot.marketRiskArchive = [marketRiskDocument(2, "sha256:risk-v02")];
 
   const applied = applyApprovalEvents(snapshot, [
     approvalEvent({
@@ -57,6 +58,7 @@ test("歷史風險節點只套用 ID、版本與雜湊皆相符的核准", () =>
 
   assert.equal(applied.marketRiskHistory.nodes[0]?.artifactStatus, "已核准");
   assert.equal(applied.marketRiskHistory.nodes[1]?.artifactStatus, "待核准");
+  assert.equal(applied.marketRiskArchive[0]?.artifactStatus, "已核准");
 });
 
 test("已同步核准不顯示尚未同步提醒", () => {
@@ -199,6 +201,29 @@ function marketRiskHistoryNode(
   };
 }
 
+function marketRiskDocument(
+  version: number,
+  artifactHash: string,
+): DashboardSnapshot["marketRiskArchive"][number] {
+  const id = `records/market-risk/2026-07-30-v${String(version).padStart(2, "0")}.md`;
+  return {
+    id,
+    date: "2026-07-30",
+    version,
+    versionLabel: `v${String(version).padStart(2, "0")}`,
+    isLatest: true,
+    title: `市場風險報告｜2026-07-30-v${String(version).padStart(2, "0")}`,
+    artifactHash,
+    artifactStatus: "待核准",
+    rawStatus: "待核准",
+    blocks: [],
+    source: id,
+    asOf: "2026-07-30",
+    updatedAt: "2026-07-30",
+    dependencies: [],
+  };
+}
+
 function pendingSnapshot(): DashboardSnapshot {
   return {
     generatedAt: "2026-08-03T00:00:00.000Z",
@@ -310,6 +335,7 @@ function pendingSnapshot(): DashboardSnapshot {
       nodes: [],
       issues: [],
     },
+    marketRiskArchive: [],
     blockers: [],
   };
 }

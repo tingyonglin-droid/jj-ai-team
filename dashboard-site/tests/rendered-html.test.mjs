@@ -63,6 +63,7 @@ test("server-renders every protected dashboard route for an allowed user", async
     "/approvals",
     "/briefs",
     "/briefs/2026-07-30",
+    "/market-risk/2026-08-14?version=v01",
     "/content",
     "/content/threads",
   ]) {
@@ -80,6 +81,7 @@ test("does not render protected pages for a non-allowed user", async () => {
     "/approvals",
     "/briefs",
     "/briefs/2026-07-30",
+    "/market-risk/2026-08-14?version=v01",
     "/content",
     "/content/threads",
   ]) {
@@ -89,7 +91,7 @@ test("does not render protected pages for a non-allowed user", async () => {
     assert.match(html, /沒有存取此儀表板的權限/);
     assert.doesNotMatch(
       html,
-      /每日投資晨報|7 月 30 日晨報|定稿摘要|records\/(?:daily-briefs|content\/threads)|員工動態|完整 Threads 正文/,
+      /每日投資晨報|市場風險報告|7 月 30 日晨報|定稿摘要|records\/(?:daily-briefs|market-risk|content\/threads)|員工動態|完整 Threads 正文/,
     );
   }
 });

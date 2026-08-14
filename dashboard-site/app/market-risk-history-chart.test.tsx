@@ -114,6 +114,13 @@ test("三筆風險歷史清楚呈現預測邊界、狀態形狀、資料品質�
   assert.match(html, /aria-label="2026-08-14，風險 60 分，中性，待核准"/);
   assert.match(html, /data-approval-state="pending"/);
   assert.match(html, /資料完整度低於 70%/);
+  assert.match(
+    html,
+    /aria-label="2026-08-01，風險 50 分，中性，待核准"[^>]*aria-describedby="risk-history-node-warning-recent"/,
+  );
+  assert.match(html, /id="risk-history-node-warning-recent"/);
+  assert.match(html, /href="\/market-risk\/2026-08-14\?version=v01"/);
+  assert.doesNotMatch(html, /href="\/records\/market-risk/);
   assert.match(html, /data-risk-band="reserved"/);
   assert.match(html, /待核准：空心圓/);
   assert.match(html, /已核准：實心圓/);
@@ -167,10 +174,11 @@ test("點擊、範圍切換與 Enter 鍵都能選取真實歷史節點", async (
     await act(async () => {
       allHistory.dispatchEvent(new TestMouseEvent("click", { bubbles: true }));
     });
+    assert.match(container.textContent, /2026-08-01 調整原因/);
 
     const old = buttonWithLabel(container, "2026-07-01，風險 35 分，偏低，已核准");
     assert.ok(old);
-    old.focus();
+    assert.equal(dom.document.activeElement, null);
     const enter = new TestEvent("keydown", { bubbles: true }) as TestEvent & { key: string };
     enter.key = "Enter";
     await act(async () => {

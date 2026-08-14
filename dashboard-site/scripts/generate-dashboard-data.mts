@@ -788,6 +788,50 @@ function marketRiskHistoryNode(
   };
 }
 
+function buildMarketRiskArchive(
+  records: MarkdownRecord[],
+): DashboardSnapshot["marketRiskArchive"] {
+  const readableRecords = records.flatMap((record) => {
+    const validation = validateRecord(record);
+    if (!validation.valid) return [];
+    const node = marketRiskHistoryNode(validation.record);
+    const date = filenameDate(record.relativePath);
+    return node && date === node.date ? [validation.record] : [];
+  });
+  const latestVersionByDate = new Map<string, number>();
+
+  for (const record of readableRecords) {
+    const latestVersion = latestVersionByDate.get(record.representativeDate);
+    if (latestVersion === undefined || record.version > latestVersion) {
+      latestVersionByDate.set(record.representativeDate, record.version);
+    }
+  }
+
+  return readableRecords
+    .map((record): DashboardSnapshot["marketRiskArchive"][number] => ({
+      id: record.relativePath,
+      date: record.representativeDate,
+      version: record.version,
+      versionLabel: `v${String(record.version).padStart(2, "0")}`,
+      isLatest: record.version === latestVersionByDate.get(record.representativeDate),
+      title: record.title,
+      artifactStatus: record.artifactStatus,
+      rawStatus: record.rawStatus ?? record.artifactStatus,
+      artifactHash: artifactContentHash(record.content),
+      blocks: parseBriefMarkdown(record.content),
+      source: record.relativePath,
+      asOf: record.asOf,
+      updatedAt: record.updatedAt,
+      dependencies: record.dependencies,
+    }))
+    .sort(
+      (left, right) =>
+        right.date.localeCompare(left.date) ||
+        right.version - left.version ||
+        right.source.localeCompare(left.source),
+    );
+}
+
 function marketRiskHistoryIssue(record: MarkdownRecord, reason: string): MarketRiskHistoryIssue {
   return {
     date: filenameDate(record.relativePath) ?? "",
@@ -911,6 +955,9 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
   );
   const riskDefinitionIndex = definitions.findIndex((definition) => definition.id === "market-risk-report");
   const marketRiskHistory = buildMarketRiskHistory(
+    riskDefinitionIndex >= 0 ? artifactRecordSets[riskDefinitionIndex] : [],
+  );
+  const marketRiskArchive = buildMarketRiskArchive(
     riskDefinitionIndex >= 0 ? artifactRecordSets[riskDefinitionIndex] : [],
   );
   const allRecords = [...artifactRecordSets.flat(), ...reviews, ...decisions];
@@ -1072,6 +1119,7 @@ export async function generateDashboardSnapshot(root: string, now: Date): Promis
         }
       : null,
     marketRiskHistory,
+    marketRiskArchive,
     blockers: blockers.sort((left, right) => {
       if (left.severity !== right.severity) return left.severity === "blocker" ? -1 : 1;
       return left.title.localeCompare(right.title);

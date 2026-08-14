@@ -40,6 +40,7 @@ test("每個 Dashboard 路由都先授權再載入快照", async () => {
     "/approvals",
     "/briefs",
     "/briefs/2026-07-30?version=v01",
+    "/market-risk/2026-08-14?version=v01",
     "/content",
     "/content/threads",
     "/content/threads/stable-key",
