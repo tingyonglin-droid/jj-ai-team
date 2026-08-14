@@ -35,7 +35,7 @@ export function filterRiskHistory(
   nodes: MarketRiskHistoryNode[],
   range: MarketRiskRange,
 ): MarketRiskHistoryNode[] {
-  if (range === "all") return nodes;
+  if (range === "all") return nodes.filter((node) => dateTimestamp(node.date) !== null);
 
   const latestTimestamp = [...nodes]
     .reverse()

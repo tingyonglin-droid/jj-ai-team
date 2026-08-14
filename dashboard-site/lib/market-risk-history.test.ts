@@ -76,10 +76,12 @@ test("無效日期不會成為四週範圍的最新錨點", () => {
   ]);
 });
 
-test("全部歷史範圍保留原本所有節點", () => {
-  const nodes = [node("old", "2026-07-01", 50), node("new", "2026-08-14", 55)];
+test("全部歷史範圍只保留有效日期的節點", () => {
+  const old = node("old", "2026-07-01", 50);
+  const newest = node("new", "2026-08-14", 55);
+  const nodes = [old, node("invalid", "2026-02-30", 60), newest];
 
-  assert.deepEqual(filterRiskHistory(nodes, "all"), nodes);
+  assert.deepEqual(filterRiskHistory(nodes, "all"), [old, newest]);
 });
 
 test("曲線以真實日期間隔與固定 0 到 100 分數座標定位", () => {
