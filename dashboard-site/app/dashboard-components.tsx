@@ -8,6 +8,7 @@ import {
 } from "../lib/dashboard-types";
 import { ApprovalAction } from "./approvals/approval-action";
 import { ThreadsDraftDisclosure } from "./approvals/threads-draft-disclosure";
+import { MarketRiskHistoryChart } from "./market-risk-history-chart";
 
 type Approval = DashboardSnapshot["approvals"][number];
 type Employee = DashboardSnapshot["employees"][number];
@@ -306,6 +307,7 @@ export function TodayOverview({ snapshot }: { snapshot: DashboardSnapshot }) {
                   <div><dt>AI 信心</dt><dd>{snapshot.marketRisk.confidence}%</dd></div>
                 </dl>
               </div>
+              <MarketRiskHistoryChart history={snapshot.marketRiskHistory} />
               <p><strong>即時風險：</strong>{snapshot.marketRisk.immediateRisk}</p>
               <p><strong>結構性風險：</strong>{snapshot.marketRisk.structuralRisk}</p>
               <p><strong>主要風險：</strong>{snapshot.marketRisk.topRisks.join("、")}</p>
