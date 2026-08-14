@@ -39,6 +39,26 @@ test("新版本不繼承舊版核准", () => {
   assert.equal(unchanged.brief?.artifactStatus, "待核准");
 });
 
+test("歷史風險節點只套用 ID、版本與雜湊皆相符的核准", () => {
+  const snapshot = pendingSnapshot();
+  snapshot.marketRiskHistory.nodes = [
+    marketRiskHistoryNode(2, "sha256:risk-v02"),
+    marketRiskHistoryNode(1, "sha256:risk-v01"),
+  ];
+
+  const applied = applyApprovalEvents(snapshot, [
+    approvalEvent({
+      artifactId: "records/market-risk/2026-07-30-v02.md",
+      artifactType: "市場風險報告",
+      artifactVersion: 2,
+      artifactHash: "sha256:risk-v02",
+    }),
+  ]);
+
+  assert.equal(applied.marketRiskHistory.nodes[0]?.artifactStatus, "已核准");
+  assert.equal(applied.marketRiskHistory.nodes[1]?.artifactStatus, "待核准");
+});
+
 test("已同步核准不顯示尚未同步提醒", () => {
   const approved = applyApprovalEvents(pendingSnapshot(), [
     approvalEvent({ syncStatus: "synced", syncedAt: "2026-08-03T01:00:00.000Z" }),
@@ -145,6 +165,37 @@ function threadsEvent(
     syncStatus: "pending",
     syncedAt: null,
     ...overrides,
+  };
+}
+
+function marketRiskHistoryNode(
+  version: number,
+  artifactHash: string,
+): DashboardSnapshot["marketRiskHistory"]["nodes"][number] {
+  const id = `records/market-risk/2026-07-30-v${String(version).padStart(2, "0")}.md`;
+  return {
+    id,
+    date: "2026-07-30",
+    version,
+    versionLabel: `v${String(version).padStart(2, "0")}`,
+    artifactHash,
+    artifactStatus: "待核准",
+    rawStatus: "待核准",
+    score: 42,
+    state: "中性",
+    dailyChange: null,
+    changeReasons: "測試資料",
+    topRisks: [],
+    supportingEvidence: "測試資料",
+    counterEvidence: "測試資料",
+    confidence: 80,
+    completeness: 100,
+    lowCompleteness: false,
+    versions: [],
+    source: id,
+    asOf: "2026-07-30",
+    updatedAt: "2026-07-30",
+    dependencies: [],
   };
 }
 
@@ -255,6 +306,10 @@ function pendingSnapshot(): DashboardSnapshot {
       dependencies: [],
     },
     marketRisk: null,
+    marketRiskHistory: {
+      nodes: [],
+      issues: [],
+    },
     blockers: [],
   };
 }
