@@ -113,6 +113,45 @@ test("今日總覽呈現可解釋的實驗性風險指標與三種期限", () =>
   assert.match(todayHtml, /records\/market-risk\/2026-07-30-v01.md/);
 });
 
+test("最新市場風險摘要無效時仍顯示較早歷史曲線與阻擋", () => {
+  const previousNode = snapshot.marketRiskHistory.nodes[0];
+  assert.ok(previousNode);
+  const source = "records/market-risk/2026-08-15-v01.md";
+  const html = renderToStaticMarkup(
+    <TodayOverview
+      snapshot={{
+        ...snapshot,
+        marketRisk: null,
+        marketRiskHistory: {
+          nodes: [previousNode],
+          issues: [{
+            date: "2026-08-15",
+            source,
+            version: 1,
+            reason: "最高版本包含不支援的數值語法。",
+          }],
+        },
+        blockers: [{
+          severity: "blocker",
+          kind: "malformed",
+          title: "最新市場風險摘要無法重現",
+          reason: "分數欄位格式無效。",
+          nextStep: "建立新版本。",
+          source,
+          asOf: "2026-08-15",
+          updatedAt: "2026-08-15",
+        }],
+      }}
+    />,
+  );
+
+  assert.match(html, /未來 1–4 週市場下行風險/);
+  assert.match(html, new RegExp(previousNode.date));
+  assert.match(html, /歷史資料阻擋/);
+  assert.match(html, /最高版本包含不支援的數值語法/);
+  assert.match(html, /最新市場風險摘要無法重現/);
+});
+
 test("資料狀態分開呈現正常沿用、提醒與真正阻擋", () => {
   const statusSnapshot: DashboardSnapshot = {
     ...snapshot,

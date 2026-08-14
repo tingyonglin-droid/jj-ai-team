@@ -13,6 +13,7 @@ import {
   type MarketCalendar,
   type ReportExpectation,
 } from "../lib/market-calendar.ts";
+import { parseMarketRiskRecordPath } from "../lib/market-risk-record.ts";
 import type {
   ApprovalType,
   ArtifactStatus,
@@ -665,8 +666,7 @@ function decisionFrom(record: ValidRecord) {
 
 function numericField(content: string, label: string) {
   const value = field(content, label);
-  const match = value?.match(/^[+]?(-?\d+)\b/);
-  return match ? Number(match[1]) : null;
+  return value && /^[+-]?\d+$/.test(value) ? Number(value) : null;
 }
 
 function requiredSingleLineField(content: string, label: string) {
@@ -791,29 +791,35 @@ function marketRiskHistoryNode(
 function buildMarketRiskArchive(
   records: MarkdownRecord[],
 ): DashboardSnapshot["marketRiskArchive"] {
-  const readableRecords = records.flatMap((record) => {
-    const validation = validateRecord(record);
-    if (!validation.valid) return [];
-    const node = marketRiskHistoryNode(validation.record);
-    const date = filenameDate(record.relativePath);
-    return node && date === node.date ? [validation.record] : [];
+  const filenameRecords = records.flatMap((record) => {
+    const filename = parseMarketRiskRecordPath(record.relativePath);
+    return filename ? [{ record, filename }] : [];
   });
   const latestVersionByDate = new Map<string, number>();
 
-  for (const record of readableRecords) {
-    const latestVersion = latestVersionByDate.get(record.representativeDate);
-    if (latestVersion === undefined || record.version > latestVersion) {
-      latestVersionByDate.set(record.representativeDate, record.version);
+  for (const { filename } of filenameRecords) {
+    const latestVersion = latestVersionByDate.get(filename.date);
+    if (latestVersion === undefined || filename.version > latestVersion) {
+      latestVersionByDate.set(filename.date, filename.version);
     }
   }
 
+  const readableRecords = filenameRecords.flatMap(({ record, filename }) => {
+    const validation = validateRecord(record);
+    if (!validation.valid) return [];
+    const node = marketRiskHistoryNode(validation.record);
+    return node && filename.date === node.date
+      ? [{ record: validation.record, filename }]
+      : [];
+  });
+
   return readableRecords
-    .map((record): DashboardSnapshot["marketRiskArchive"][number] => ({
+    .map(({ record, filename }): DashboardSnapshot["marketRiskArchive"][number] => ({
       id: record.relativePath,
-      date: record.representativeDate,
-      version: record.version,
-      versionLabel: `v${String(record.version).padStart(2, "0")}`,
-      isLatest: record.version === latestVersionByDate.get(record.representativeDate),
+      date: filename.date,
+      version: filename.version,
+      versionLabel: filename.versionLabel,
+      isLatest: filename.version === latestVersionByDate.get(filename.date),
       title: record.title,
       artifactStatus: record.artifactStatus,
       rawStatus: record.rawStatus ?? record.artifactStatus,
@@ -842,30 +848,45 @@ function marketRiskHistoryIssue(record: MarkdownRecord, reason: string): MarketR
 }
 
 function buildMarketRiskHistory(records: MarkdownRecord[]): DashboardSnapshot["marketRiskHistory"] {
+  const marketRiskRecords = records.filter(
+    (record) => record.definition?.id === "market-risk-report",
+  );
+  const parsedRecords = marketRiskRecords.flatMap((record) => {
+    const filename = parseMarketRiskRecordPath(record.relativePath);
+    return filename ? [{ record, filename }] : [];
+  });
   const grouped = Map.groupBy(
-    records.filter((record) => record.definition?.id === "market-risk-report"),
-    (record) => filenameDate(record.relativePath) ?? record.relativePath,
+    parsedRecords,
+    ({ filename }) => filename.date,
   );
   const nodes: MarketRiskHistoryNode[] = [];
-  const issues: MarketRiskHistoryIssue[] = [];
+  const issues: MarketRiskHistoryIssue[] = marketRiskRecords.flatMap((record) =>
+    parseMarketRiskRecordPath(record.relativePath)
+      ? []
+      : [marketRiskHistoryIssue(
+          record,
+          "檔名日期必須有效且檔名符合 YYYY-MM-DD-vNN.md，無法建立市場風險歷史節點。",
+        )],
+  );
 
   for (const [filenameDateValue, versions] of grouped) {
-    const sorted = [...versions].sort(newestVersionFirst);
-    const latest = sorted[0];
-    if (!isIsoDate(filenameDateValue)) {
-      issues.push(marketRiskHistoryIssue(latest, "檔名日期無效或缺失，無法建立市場風險歷史節點。"));
-      continue;
-    }
-    const latestValidation = validateRecord(latest);
+    const sorted = [...versions].sort(
+      (left, right) =>
+        right.filename.version - left.filename.version ||
+        right.record.relativePath.localeCompare(left.record.relativePath),
+    );
+    const latest = sorted[0]!;
+    const latestRecord = latest.record;
+    const latestValidation = validateRecord(latestRecord);
     const latestNode = latestValidation.valid ? marketRiskHistoryNode(latestValidation.record) : null;
-    const versionEntries = sorted.map((record) => {
+    const versionEntries = sorted.map(({ record, filename }) => {
       const validation = validateRecord(record);
       const node = validation.valid ? marketRiskHistoryNode(validation.record) : null;
       const readable = node !== null && node.date === filenameDateValue;
       return {
         id: record.relativePath,
-        version: record.version,
-        versionLabel: `v${String(record.version).padStart(2, "0")}`,
+        version: filename.version,
+        versionLabel: filename.versionLabel,
         source: record.relativePath,
         readable,
       };
@@ -875,11 +896,11 @@ function buildMarketRiskHistory(records: MarkdownRecord[]): DashboardSnapshot["m
       const reason = latestValidation.valid
         ? "最高版本缺少市場風險歷史所需的有效分數、證據或品質欄位。"
         : latestValidation.issue.reason;
-      issues.push(marketRiskHistoryIssue(latest, reason));
+      issues.push(marketRiskHistoryIssue(latestRecord, reason));
       continue;
     }
     if (latestNode.date !== filenameDateValue) {
-      issues.push(marketRiskHistoryIssue(latest, "檔名日期與資料代表日期不符，無法建立市場風險歷史節點。"));
+      issues.push(marketRiskHistoryIssue(latestRecord, "檔名日期與資料代表日期不符，無法建立市場風險歷史節點。"));
       continue;
     }
 

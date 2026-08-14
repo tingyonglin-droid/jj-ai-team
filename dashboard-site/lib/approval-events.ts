@@ -1,5 +1,28 @@
 import type { ApprovalEvent } from "../db/approval-store";
-import type { DashboardSnapshot } from "./dashboard-types";
+import type { ArtifactStatus, DashboardSnapshot } from "./dashboard-types";
+
+type ExactApprovalArtifact = {
+  id: string;
+  version: number;
+  artifactHash: string;
+  artifactStatus: ArtifactStatus;
+};
+
+export function projectExactApproval<T extends ExactApprovalArtifact>(
+  artifact: T,
+  events: ApprovalEvent[],
+): T {
+  const approved = events.some(
+    (event) =>
+      event.action === "approve" &&
+      event.artifactId === artifact.id &&
+      event.artifactVersion === artifact.version &&
+      event.artifactHash === artifact.artifactHash,
+  );
+  return approved
+    ? { ...artifact, artifactStatus: "已核准" } as T
+    : artifact;
+}
 
 function threadsDocumentKey(
   artifactId: string,
@@ -191,16 +214,10 @@ export function applyApprovalEvents(
         : snapshot.marketRisk,
     marketRiskHistory: {
       ...marketRiskHistory,
-      nodes: marketRiskHistory.nodes.map((node) =>
-        isApproved(node.id, node.version, node.artifactHash)
-          ? { ...node, artifactStatus: "已核准" as const }
-          : node,
-      ),
+      nodes: marketRiskHistory.nodes.map((node) => projectExactApproval(node, validEvents)),
     },
     marketRiskArchive: marketRiskArchive.map((document) =>
-      isApproved(document.id, document.version, document.artifactHash)
-        ? { ...document, artifactStatus: "已核准" as const }
-        : document,
+      projectExactApproval(document, validEvents),
     ),
     blockers: [
       ...snapshot.blockers.filter(

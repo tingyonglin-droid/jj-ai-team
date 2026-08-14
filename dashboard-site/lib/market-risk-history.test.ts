@@ -5,6 +5,7 @@ import type { MarketRiskHistoryNode, MarketRiskState } from "./dashboard-types.t
 import {
   changeFromPrevious,
   filterRiskHistory,
+  riskBandGeometry,
   riskChartPoints,
   RISK_BANDS,
 } from "./market-risk-history.ts";
@@ -48,6 +49,19 @@ test("風險區間完整對應既定的九個分數帶", () => {
     { min: 81, max: 84, label: "保留區間" },
     { min: 85, max: 100, label: "高" },
   ]);
+});
+
+test("九個語意分數帶使用連續視覺邊界且完整覆蓋圖高", () => {
+  const geometry = riskBandGeometry(100);
+
+  assert.equal(geometry.length, 9);
+  assert.equal(geometry.reduce((sum, band) => sum + band.height, 0), 100);
+  assert.equal(geometry[0]?.y + geometry[0]!.height, 100);
+  assert.equal(geometry.at(-1)?.y, 0);
+  for (let index = 0; index < geometry.length - 1; index += 1) {
+    const adjoiningBoundary = geometry[index + 1]!.y + geometry[index + 1]!.height;
+    assert.ok(Math.abs(adjoiningBoundary - geometry[index]!.y) < 1e-9);
+  }
 });
 
 test("四週範圍以最後有效節點為錨點並包含第 28 天邊界", () => {

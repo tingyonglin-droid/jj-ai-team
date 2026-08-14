@@ -112,6 +112,8 @@ export function TodayOverview({ snapshot }: { snapshot: DashboardSnapshot }) {
     : null;
   const warnings = snapshot.blockers.filter((issue) => issue.severity === "warning");
   const blockingIssues = snapshot.blockers.filter((issue) => issue.severity === "blocker");
+  const hasMarketRiskHistory =
+    snapshot.marketRiskHistory.nodes.length > 0 || snapshot.marketRiskHistory.issues.length > 0;
 
   return (
     <div className="dashboard-sections">
@@ -277,51 +279,65 @@ export function TodayOverview({ snapshot }: { snapshot: DashboardSnapshot }) {
               nextStep="依 daily-brief 工作流產出並保存晨報。"
             />
           )}
-          {snapshot.marketRisk ? (
+          {snapshot.marketRisk || hasMarketRiskHistory ? (
             <article className="risk-summary-card">
-              <div className="card-heading">
-                <p className="item-meta">市場風險</p>
-                <div className="risk-card-badges">
-                  {snapshot.marketRisk.experimental ? (
-                    <StatusBadge status="warning" label="實驗性指標" />
-                  ) : null}
-                  <StatusBadge status={snapshot.marketRisk.freshness} />
-                </div>
-              </div>
-              <h3>{snapshot.marketRisk.label}</h3>
-              <FreshnessNote freshness={snapshot.marketRisk.freshness} />
-              <div className="risk-score-panel">
-                <div>
-                  <p className="risk-score-label">1–4 週風險</p>
-                  <p className="risk-score-value">{snapshot.marketRisk.score}<span>／100</span></p>
-                  <p className="risk-score-change">
-                    單日變動：{snapshot.marketRisk.dailyChange === null
-                      ? "尚無前值"
-                      : `${snapshot.marketRisk.dailyChange >= 0 ? "+" : ""}${snapshot.marketRisk.dailyChange}`}
-                  </p>
-                </div>
-                <dl className="risk-score-details">
-                  <div><dt>基準分</dt><dd>{snapshot.marketRisk.baseline}</dd></div>
-                  <div><dt>事件調整</dt><dd>{snapshot.marketRisk.eventAdjustment >= 0 ? "+" : ""}{snapshot.marketRisk.eventAdjustment}</dd></div>
-                  <div><dt>資料完整度</dt><dd>{snapshot.marketRisk.completeness}%</dd></div>
-                  <div><dt>AI 信心</dt><dd>{snapshot.marketRisk.confidence}%</dd></div>
-                </dl>
-              </div>
+              {snapshot.marketRisk ? (
+                <>
+                  <div className="card-heading">
+                    <p className="item-meta">市場風險</p>
+                    <div className="risk-card-badges">
+                      {snapshot.marketRisk.experimental ? (
+                        <StatusBadge status="warning" label="實驗性指標" />
+                      ) : null}
+                      <StatusBadge status={snapshot.marketRisk.freshness} />
+                    </div>
+                  </div>
+                  <h3>{snapshot.marketRisk.label}</h3>
+                  <FreshnessNote freshness={snapshot.marketRisk.freshness} />
+                  <div className="risk-score-panel">
+                    <div>
+                      <p className="risk-score-label">1–4 週風險</p>
+                      <p className="risk-score-value">{snapshot.marketRisk.score}<span>／100</span></p>
+                      <p className="risk-score-change">
+                        單日變動：{snapshot.marketRisk.dailyChange === null
+                          ? "尚無前值"
+                          : `${snapshot.marketRisk.dailyChange >= 0 ? "+" : ""}${snapshot.marketRisk.dailyChange}`}
+                      </p>
+                    </div>
+                    <dl className="risk-score-details">
+                      <div><dt>基準分</dt><dd>{snapshot.marketRisk.baseline}</dd></div>
+                      <div><dt>事件調整</dt><dd>{snapshot.marketRisk.eventAdjustment >= 0 ? "+" : ""}{snapshot.marketRisk.eventAdjustment}</dd></div>
+                      <div><dt>資料完整度</dt><dd>{snapshot.marketRisk.completeness}%</dd></div>
+                      <div><dt>AI 信心</dt><dd>{snapshot.marketRisk.confidence}%</dd></div>
+                    </dl>
+                  </div>
+                </>
+              ) : (
+                <EmptyState
+                  title="最新市場風險摘要無法顯示"
+                  description="最新紀錄未通過摘要欄位驗證；較早的有效歷史仍保留在下方。"
+                  nextStep="依資料狀態中的阻擋原因更正來源並建立新版本。"
+                />
+              )}
               <MarketRiskHistoryChart history={snapshot.marketRiskHistory} />
-              <p><strong>即時風險：</strong>{snapshot.marketRisk.immediateRisk}</p>
-              <p><strong>結構性風險：</strong>{snapshot.marketRisk.structuralRisk}</p>
-              <p><strong>主要風險：</strong>{snapshot.marketRisk.topRisks.join("、")}</p>
-              <p>
-                依賴：
-                {snapshot.marketRisk.dependencies.length > 0
-                  ? snapshot.marketRisk.dependencies.join("、")
-                  : "尚未記載依賴"}
-              </p>
-              <p className="source-line">
-                資料代表時間：{snapshot.marketRisk.asOf}；涵蓋美股交易時段：
-                {snapshot.marketRisk.coveredSessionDate ?? "無法判定"}；來源：
-                {snapshot.marketRisk.source}；更新時間：{snapshot.marketRisk.updatedAt}
-              </p>
+              {snapshot.marketRisk ? (
+                <>
+                  <p><strong>即時風險：</strong>{snapshot.marketRisk.immediateRisk}</p>
+                  <p><strong>結構性風險：</strong>{snapshot.marketRisk.structuralRisk}</p>
+                  <p><strong>主要風險：</strong>{snapshot.marketRisk.topRisks.join("、")}</p>
+                  <p>
+                    依賴：
+                    {snapshot.marketRisk.dependencies.length > 0
+                      ? snapshot.marketRisk.dependencies.join("、")
+                      : "尚未記載依賴"}
+                  </p>
+                  <p className="source-line">
+                    資料代表時間：{snapshot.marketRisk.asOf}；涵蓋美股交易時段：
+                    {snapshot.marketRisk.coveredSessionDate ?? "無法判定"}；來源：
+                    {snapshot.marketRisk.source}；更新時間：{snapshot.marketRisk.updatedAt}
+                  </p>
+                </>
+              ) : null}
             </article>
           ) : (
             <EmptyState

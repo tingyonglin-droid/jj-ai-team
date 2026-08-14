@@ -3,7 +3,7 @@ import test from "node:test";
 
 import type { ApprovalEvent } from "../db/approval-store";
 import { threadsArtifactKey, type DashboardSnapshot } from "./dashboard-types";
-import { applyApprovalEvents } from "./approval-events.ts";
+import { applyApprovalEvents, projectExactApproval } from "./approval-events.ts";
 
 const artifactId = "records/daily-briefs/2026-07-31-v01.md";
 const artifactHash = "sha256:brief-v01";
@@ -59,6 +59,34 @@ test("歷史風險節點只套用 ID、版本與雜湊皆相符的核准", () =>
   assert.equal(applied.marketRiskHistory.nodes[0]?.artifactStatus, "已核准");
   assert.equal(applied.marketRiskHistory.nodes[1]?.artifactStatus, "待核准");
   assert.equal(applied.marketRiskArchive[0]?.artifactStatus, "已核准");
+});
+
+test("單一歷史風險紀錄不繼承版本或雜湊不符的核准", () => {
+  const node = marketRiskHistoryNode(2, "sha256:risk-v02");
+  const wrongVersion = approvalEvent({
+    artifactId: node.id,
+    artifactType: "市場風險報告",
+    artifactVersion: 1,
+    artifactHash: node.artifactHash,
+  });
+  const wrongHash = approvalEvent({
+    artifactId: node.id,
+    artifactType: "市場風險報告",
+    artifactVersion: node.version,
+    artifactHash: "sha256:other-content",
+  });
+
+  assert.equal(projectExactApproval(node, [wrongVersion]).artifactStatus, "待核准");
+  assert.equal(projectExactApproval(node, [wrongHash]).artifactStatus, "待核准");
+  assert.equal(
+    projectExactApproval(node, [approvalEvent({
+      artifactId: node.id,
+      artifactType: "市場風險報告",
+      artifactVersion: node.version,
+      artifactHash: node.artifactHash,
+    })]).artifactStatus,
+    "已核准",
+  );
 });
 
 test("已同步核准不顯示尚未同步提醒", () => {

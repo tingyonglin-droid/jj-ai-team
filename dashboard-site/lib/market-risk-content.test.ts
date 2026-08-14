@@ -30,3 +30,16 @@ test("市場風險 reader 依日期與版本選取文件且不回退不存在版
     "v01",
   ]);
 });
+
+test("市場風險 reader 在最高檔名版本不可讀時不預設回退舊文件", () => {
+  const readableOlderOnly = [
+    { ...documents[0]!, id: "v01-only", version: 1, versionLabel: "v01", isLatest: false },
+  ];
+
+  assert.equal(selectMarketRiskVersion(readableOlderOnly, "2026-08-14"), null);
+  assert.equal(
+    selectMarketRiskVersion(readableOlderOnly, "2026-08-14", "v01")?.id,
+    "v01-only",
+  );
+  assert.equal(selectMarketRiskVersion(readableOlderOnly, "2026-08-14", "v02"), null);
+});

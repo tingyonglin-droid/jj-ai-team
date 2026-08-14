@@ -5,6 +5,7 @@ import { tmpdir } from "node:os";
 import path from "node:path";
 import test from "node:test";
 
+import { selectMarketRiskVersion } from "../lib/market-risk-content.ts";
 import { generateDashboardSnapshot, sourceUpdatedAt } from "./generate-dashboard-data.mts";
 
 const roles = [
@@ -736,8 +737,125 @@ test("市場風險歷史不會以較舊可讀版本取代無效的最高版本",
     assert.equal(snapshot.marketRiskHistory.nodes.some((node) => node.date === "2026-07-30"), false);
     assert.equal(snapshot.marketRiskHistory.issues[0]?.source, "records/market-risk/2026-07-30-v02.md");
     assert.equal(snapshot.marketRiskHistory.issues[0]?.version, 2);
+    assert.deepEqual(
+      snapshot.marketRiskArchive.map(({ versionLabel, isLatest }) => ({ versionLabel, isLatest })),
+      [{ versionLabel: "v01", isLatest: false }],
+    );
+    assert.equal(selectMarketRiskVersion(snapshot.marketRiskArchive, "2026-07-30"), null);
+    assert.equal(
+      selectMarketRiskVersion(snapshot.marketRiskArchive, "2026-07-30", "v01")?.versionLabel,
+      "v01",
+    );
+    assert.equal(selectMarketRiskVersion(snapshot.marketRiskArchive, "2026-07-30", "v02"), null);
   } finally {
     await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("最新摘要欄位無效時仍保留較早歷史節點與可追查阻擋", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+  try {
+    await writeFixture(root, "records/market-risk/2026-07-30-v01.md", marketRisk());
+    await writeFixture(root, "records/market-risk/2026-07-31-v01.md", marketRisk({
+      date: "2026-07-31",
+      score: 65.5,
+    }));
+
+    const snapshot = await generateDashboardSnapshot(root, new Date("2026-07-31T04:30:00.000Z"));
+
+    assert.equal(snapshot.marketRisk, null);
+    assert.deepEqual(snapshot.marketRiskHistory.nodes.map((node) => node.date), ["2026-07-30"]);
+    assert.equal(snapshot.marketRiskHistory.issues[0]?.source, "records/market-risk/2026-07-31-v01.md");
+    assert.equal(
+      snapshot.blockers.some((issue) => issue.source === "records/market-risk/2026-07-31-v01.md"),
+      true,
+    );
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("市場風險歷史與 archive 只接受 YYYY-MM-DD-vNN.md 檔名", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+  try {
+    await writeFixture(root, "records/market-risk/2026-07-30-v01.md", marketRisk());
+    await writeFixture(root, "records/market-risk/2026-07-31-v1.md", marketRisk({
+      date: "2026-07-31",
+    }));
+    await writeFixture(root, "records/market-risk/2026-08-01.md", marketRisk({
+      date: "2026-08-01",
+    }));
+    await writeFixture(root, "records/market-risk/2026-08-02-v001.md", marketRisk({
+      date: "2026-08-02",
+    }));
+
+    const snapshot = await generateDashboardSnapshot(root, new Date("2026-08-02T04:30:00.000Z"));
+
+    assert.deepEqual(snapshot.marketRiskHistory.nodes.map((node) => node.source), [
+      "records/market-risk/2026-07-30-v01.md",
+    ]);
+    assert.deepEqual(snapshot.marketRiskArchive.map((document) => document.source), [
+      "records/market-risk/2026-07-30-v01.md",
+    ]);
+    assert.deepEqual(snapshot.marketRiskHistory.issues.map((issue) => issue.source), [
+      "records/market-risk/2026-07-31-v1.md",
+      "records/market-risk/2026-08-01.md",
+      "records/market-risk/2026-08-02-v001.md",
+    ]);
+    assert.equal(
+      snapshot.marketRiskHistory.issues.every((issue) => /YYYY-MM-DD-vNN\.md/.test(issue.reason)),
+      true,
+    );
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("市場風險歷史拒絕分數、信心與完整度的小數語法", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+  try {
+    await writeFixture(root, "records/market-risk/2026-07-30-v01.md", marketRisk({ score: 65.5 }));
+    await writeFixture(root, "records/market-risk/2026-07-31-v01.md", marketRisk({
+      date: "2026-07-31",
+      confidence: 72.5,
+    }));
+    await writeFixture(root, "records/market-risk/2026-08-01-v01.md", marketRisk({
+      date: "2026-08-01",
+      completeness: 82.5,
+    }));
+
+    const snapshot = await generateDashboardSnapshot(root, new Date("2026-08-01T04:30:00.000Z"));
+
+    assert.equal(snapshot.marketRiskHistory.nodes.length, 0);
+    assert.deepEqual(snapshot.marketRiskHistory.issues.map((issue) => issue.date), [
+      "2026-07-30",
+      "2026-07-31",
+      "2026-08-01",
+    ]);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("市場風險當期摘要拒絕基準分與事件調整的小數語法", async () => {
+  for (const malformed of [
+    marketRisk().replace("- 基準分：55", "- 基準分：55.5"),
+    marketRisk().replace("- 事件調整：+10", "- 事件調整：+10.5"),
+  ]) {
+    const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+    try {
+      await writeFixture(root, "records/market-risk/2026-07-30-v01.md", malformed);
+
+      const snapshot = await generateDashboardSnapshot(root, new Date("2026-07-30T04:30:00.000Z"));
+
+      assert.equal(snapshot.marketRisk, null);
+      assert.equal(
+        snapshot.blockers.some((issue) => issue.source === "records/market-risk/2026-07-30-v01.md"),
+        true,
+      );
+    } finally {
+      await rm(root, { recursive: true, force: true });
+    }
   }
 });
 

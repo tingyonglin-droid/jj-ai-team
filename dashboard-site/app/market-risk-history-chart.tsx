@@ -6,8 +6,8 @@ import type { DashboardSnapshot, MarketRiskHistoryNode } from "../lib/dashboard-
 import {
   changeFromPrevious,
   filterRiskHistory,
+  riskBandGeometry,
   riskChartPoints,
-  RISK_BANDS,
   type MarketRiskRange,
 } from "../lib/market-risk-history";
 import { marketRiskDocumentHref } from "../lib/market-risk-content";
@@ -195,9 +195,9 @@ export function MarketRiskHistoryChart({
             >
               <title id="risk-history-svg-title">市場下行風險歷史曲線</title>
               <desc id="risk-history-svg-description">縱軸固定零到一百分；橫軸依真實報告日期排列，不補入缺少報告的日期。</desc>
-              {RISK_BANDS.map((band) => {
-                const y = PLOT_TOP + ((100 - band.max) / 100) * PLOT_HEIGHT;
-                const height = ((band.max - band.min) / 100) * PLOT_HEIGHT;
+              {riskBandGeometry(PLOT_HEIGHT).map((band) => {
+                const y = PLOT_TOP + band.y;
+                const height = band.height;
                 return (
                   <g key={`${band.min}-${band.max}`}>
                     <rect

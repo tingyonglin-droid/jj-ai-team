@@ -3,7 +3,11 @@ import test from "node:test";
 import { renderToStaticMarkup } from "react-dom/server";
 
 import type { DashboardMarketRiskDocument } from "../../lib/dashboard-types";
-import { MarketRiskNotFound, MarketRiskReader } from "./market-risk-components";
+import {
+  MarketRiskNotFound,
+  MarketRiskReader,
+  MarketRiskRouteContent,
+} from "./market-risk-components";
 
 const documents: DashboardMarketRiskDocument[] = [
   {
@@ -72,4 +76,32 @@ test("找不到市場風險版本時不洩漏其他私人文件", () => {
   assert.match(html, /2026-08-14/);
   assert.match(html, /v99/);
   assert.doesNotMatch(html, /v02|records\/market-risk|安全內容/);
+});
+
+test("route 在最高檔名版本不可讀時只允許明確指定較舊可讀版本", () => {
+  const readableOlderOnly = [{ ...documents[1]!, isLatest: false }];
+
+  const defaultHtml = renderToStaticMarkup(
+    <MarketRiskRouteContent documents={readableOlderOnly} date="2026-08-14" />,
+  );
+  const explicitOlderHtml = renderToStaticMarkup(
+    <MarketRiskRouteContent
+      documents={readableOlderOnly}
+      date="2026-08-14"
+      version="v01"
+    />,
+  );
+  const explicitUnreadableHtml = renderToStaticMarkup(
+    <MarketRiskRouteContent
+      documents={readableOlderOnly}
+      date="2026-08-14"
+      version="v02"
+    />,
+  );
+
+  assert.match(defaultHtml, /找不到市場風險報告/);
+  assert.doesNotMatch(defaultHtml, /目前版本：v01|records\/market-risk\/2026-08-14-v01\.md/);
+  assert.match(explicitOlderHtml, /完整市場風險報告/);
+  assert.match(explicitOlderHtml, /目前版本：v01/);
+  assert.match(explicitUnreadableHtml, /找不到市場風險報告/);
 });

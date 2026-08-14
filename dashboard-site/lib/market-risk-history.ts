@@ -18,6 +18,18 @@ export const RISK_BANDS: ReadonlyArray<{
   { min: 85, max: 100, label: "高" },
 ];
 
+export function riskBandGeometry(height: number) {
+  return RISK_BANDS.map((band) => {
+    const visualMin = band.min === 0 ? 0 : band.min - 0.5;
+    const visualMax = band.max === 100 ? 100 : band.max + 0.5;
+    return {
+      ...band,
+      y: ((100 - visualMax) / 100) * height,
+      height: ((visualMax - visualMin) / 100) * height,
+    };
+  });
+}
+
 const DAYS_IN_FOUR_WEEKS = 28;
 const MILLISECONDS_PER_DAY = 24 * 60 * 60 * 1000;
 

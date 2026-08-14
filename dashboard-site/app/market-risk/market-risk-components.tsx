@@ -1,7 +1,11 @@
 import Link from "next/link";
 
 import type { DashboardMarketRiskDocument } from "../../lib/dashboard-types";
-import { marketRiskDocumentHref } from "../../lib/market-risk-content";
+import {
+  marketRiskDocumentHref,
+  marketRiskVersionsForDate,
+  selectMarketRiskVersion,
+} from "../../lib/market-risk-content";
 import { ArtifactContent } from "../approvals/artifact-content";
 import { StatusBadge } from "../dashboard-components";
 
@@ -78,5 +82,23 @@ export function MarketRiskNotFound({
         返回市場風險歷史
       </Link>
     </section>
+  );
+}
+
+export function MarketRiskRouteContent({
+  documents,
+  date,
+  version,
+}: {
+  documents: DashboardMarketRiskDocument[];
+  date: string;
+  version?: string;
+}) {
+  const document = selectMarketRiskVersion(documents, date, version);
+  const versions = marketRiskVersionsForDate(documents, date);
+  return document ? (
+    <MarketRiskReader document={document} versions={versions} />
+  ) : (
+    <MarketRiskNotFound date={date} version={version} />
   );
 }
