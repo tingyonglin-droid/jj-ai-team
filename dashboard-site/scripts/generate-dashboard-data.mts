@@ -799,20 +799,25 @@ function marketRiskHistoryIssue(record: MarkdownRecord, reason: string): MarketR
 
 function buildMarketRiskHistory(records: MarkdownRecord[]): DashboardSnapshot["marketRiskHistory"] {
   const grouped = Map.groupBy(
-    records.filter((record) => record.definition?.id === "market-risk-report" && filenameDate(record.relativePath)),
-    (record) => filenameDate(record.relativePath)!,
+    records.filter((record) => record.definition?.id === "market-risk-report"),
+    (record) => filenameDate(record.relativePath) ?? record.relativePath,
   );
   const nodes: MarketRiskHistoryNode[] = [];
   const issues: MarketRiskHistoryIssue[] = [];
 
-  for (const versions of grouped.values()) {
+  for (const [filenameDateValue, versions] of grouped) {
     const sorted = [...versions].sort(newestVersionFirst);
     const latest = sorted[0];
+    if (!isIsoDate(filenameDateValue)) {
+      issues.push(marketRiskHistoryIssue(latest, "檔名日期無效或缺失，無法建立市場風險歷史節點。"));
+      continue;
+    }
     const latestValidation = validateRecord(latest);
     const latestNode = latestValidation.valid ? marketRiskHistoryNode(latestValidation.record) : null;
     const versionEntries = sorted.map((record) => {
       const validation = validateRecord(record);
-      const readable = validation.valid && marketRiskHistoryNode(validation.record) !== null;
+      const node = validation.valid ? marketRiskHistoryNode(validation.record) : null;
+      const readable = node !== null && node.date === filenameDateValue;
       return {
         id: record.relativePath,
         version: record.version,
@@ -827,6 +832,10 @@ function buildMarketRiskHistory(records: MarkdownRecord[]): DashboardSnapshot["m
         ? "最高版本缺少市場風險歷史所需的有效分數、證據或品質欄位。"
         : latestValidation.issue.reason;
       issues.push(marketRiskHistoryIssue(latest, reason));
+      continue;
+    }
+    if (latestNode.date !== filenameDateValue) {
+      issues.push(marketRiskHistoryIssue(latest, "檔名日期與資料代表日期不符，無法建立市場風險歷史節點。"));
       continue;
     }
 

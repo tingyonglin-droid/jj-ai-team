@@ -751,6 +751,45 @@ test("市場風險歷史拒絕品質欄位缺失與分數範圍外資料，並�
   }
 });
 
+test("市場風險歷史拒絕無效日曆檔名日期", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+  try {
+    await writeFixture(
+      root,
+      "records/market-risk/2026-02-30-v01.md",
+      marketRisk({ date: "2026-07-30" }),
+    );
+
+    const snapshot = await generateDashboardSnapshot(root, new Date("2026-07-30T04:30:00.000Z"));
+
+    assert.equal(snapshot.marketRiskHistory.nodes.length, 0);
+    assert.equal(snapshot.marketRiskHistory.issues[0]?.source, "records/market-risk/2026-02-30-v01.md");
+    assert.match(snapshot.marketRiskHistory.issues[0]?.reason ?? "", /檔名日期/);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("市場風險歷史拒絕檔名與代表日期不符的最高版本且不回退", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
+  try {
+    await writeFixture(root, "records/market-risk/2026-07-30-v01.md", marketRisk({ version: 1 }));
+    await writeFixture(
+      root,
+      "records/market-risk/2026-07-30-v02.md",
+      marketRisk({ date: "2026-07-31", version: 2 }),
+    );
+
+    const snapshot = await generateDashboardSnapshot(root, new Date("2026-07-31T04:30:00.000Z"));
+
+    assert.equal(snapshot.marketRiskHistory.nodes.length, 0);
+    assert.equal(snapshot.marketRiskHistory.issues[0]?.source, "records/market-risk/2026-07-30-v02.md");
+    assert.match(snapshot.marketRiskHistory.issues[0]?.reason ?? "", /檔名日期與資料代表日期/);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
 test("週末沿用最近交易日，不把有效晨報列為過期警告", async () => {
   const root = await mkdtemp(path.join(tmpdir(), "dashboard-snapshot-"));
 
