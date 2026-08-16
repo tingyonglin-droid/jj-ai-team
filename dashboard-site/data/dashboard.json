@@ -1,14 +1,515 @@
 {
-  "generatedAt": "2026-08-14T07:02:07.846Z",
-  "date": "2026-08-14",
+  "generatedAt": "2026-08-16T23:13:27.521Z",
+  "date": "2026-08-17",
   "expectation": {
-    "dashboardDate": "2026-08-14",
+    "dashboardDate": "2026-08-17",
     "expectedReportDate": "2026-08-14",
     "coveredSessionDate": "2026-08-13",
-    "phase": "due",
-    "reason": "已到 07:30 交付門檻，今日應有新的例行晨報。"
+    "phase": "before_cutoff",
+    "reason": "尚未到 07:30 交付門檻，沿用前一個應有報告日。"
   },
   "approvals": [
+    {
+      "id": "records/market-risk/2026-08-17-v01.md",
+      "title": "市場風險報告｜2026-08-17-v01",
+      "type": "市場風險報告",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "市場風險報告｜2026-08-17-v01",
+      "fullContent": null,
+      "decision": "是否接受 63 分總分、63 分基準、0 事件調整、資料完整度 95、AI 信心 85、第 13 日影子紀錄與 10 份實際日期版本，供內部研究及私人 Dashboard 呈現。",
+      "source": "records/market-risk/2026-08-17-v01.md",
+      "asOf": "2026-08-17 07:10（Asia/Taipei，UTC+8）",
+      "createdAt": null,
+      "recordDate": "2026-08-17",
+      "version": 1,
+      "artifactHash": "sha256:ef83baf8acfe8fbb794c024ecdb727b42cac00da725a4e7b03bf99783283c0a2",
+      "updatedAt": "2026-08-17 07:10（Asia/Taipei，UTC+8）",
+      "dependencies": []
+    },
+    {
+      "id": "records/daily-briefs/2026-08-17-v01.md",
+      "title": "消費動能轉弱，但油價與長債反彈讓市場面臨雙向壓力",
+      "type": "晨報",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "美國 7 月零售銷售月減 0.6%，扣除汽車月減 0.3%，扣除汽車與汽油月減 0.2%；但總額仍年增 5.0%，餐飲服務月增 0.5%，單月初值不等於消費全面收縮。 密西根大學 8 月消費者信心初值由 55.2 降至 51.0，未來預期由 55.4 降至 50.6；一年通膨預期由 4.2%升至 4.3%，形成成長與通膨同時不利的組合。 6 月企業銷售月減 1.1%、庫存持平，庫存銷售比由 1.28 升至 1.30；這提高後續折價、補庫與生產調整的監測必要性，但年增資料仍是反方證據。 8/14 S&P 500 與 Nasdaq 分別下跌 0.2%與 0.3%，Russell 2000 上漲 0.5%；Brent 上漲 1.7%至 88.52 美元，官方 10 年期 Treasury 殖利率由 4.63%升至 4.68%。 Applied Materials 營收與獲利成長、財測續強，股價仍下跌 5.1%；1–4 週影子風險由 60 升至 63／100，維持中性但方向回升。",
+      "fullContent": null,
+      "decision": "是否接受五則事件排序、63 分風險框架、「消費轉弱但油價與長債反彈」主標題與五分鐘篇幅，供內部研究及私人 Dashboard 使用。",
+      "source": "records/daily-briefs/2026-08-17-v01.md",
+      "asOf": "2026-08-17 07:10（Asia/Taipei，UTC+8）",
+      "createdAt": null,
+      "recordDate": "2026-08-17",
+      "version": 1,
+      "artifactHash": "sha256:575a3cd1e9e19c6093814ea377d86ca3ac68ebe9b2d1dcbcd22d0863ab088eb1",
+      "updatedAt": "2026-08-17",
+      "dependencies": []
+    },
+    {
+      "id": "records/content/threads/2026-08-17-retail-down-not-recession-verdict-v01.md",
+      "title": "Threads 草稿｜零售月減 0.6%，為什麼我還不會直接下衰退結論？",
+      "type": "Threads",
+      "owner": "社群經營員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "扣除汽車：-0.3% 扣除汽車與汽油：-0.2% 汽車與零件：-1.8% 無店面零售：-2.2% 餐飲服務：+0.5%",
+      "fullContent": {
+        "format": "structured-markdown",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "日期：2026-08-17"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "狀態：待核准"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "來源研究："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-17-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-17-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報版本：v01"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報雜湊："
+                },
+                {
+                  "type": "code",
+                  "text": "sha256:575a3cd1e9e19c6093814ea377d86ca3ac68ebe9b2d1dcbcd22d0863ab088eb1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "建議時機：現在；發布前須重新確認 Census 原始資料、密西根大學終值排程與本人觀點是否有重大更新"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "主版本"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "美國 7 月零售銷售月減 0.6%。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "看到這個數字，很容易直接聯想到："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "消費是不是撐不住了？"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "先拆開看。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "扣除汽車：-0.3%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "扣除汽車與汽油：-0.2%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "汽車與零件：-1.8%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "無店面零售：-2.2%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "餐飲服務：+0.5%"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "所以這次轉弱不只來自汽油，汽車與電商也有壓力。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "但我還不會把 -0.6%直接翻譯成「衰退判決」。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "有三個原因。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "第一，這是抽樣初值，之後會修正；而且數據是名目金額，沒有排除價格變化。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "第二，總額仍比去年同期高 5.0%，餐飲服務也月增 0.5%。需求確實轉弱，但還不是所有類別同步收縮。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "第三，Census 明示部分分項月變化的 90% 信賴區間包含零，產業間差異也沒有做顯著性檢定。分項可以幫助找線索，不能被寫成精準判決。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "真正讓我提高警覺的，是同一天另一組資料。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "密西根大學 8 月消費者信心初值從 55.2 降到 51.0，未來預期從 55.4 降到 50.6；一年通膨預期則由 4.2%升到 4.3%。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "需求感受轉弱，通膨壓力卻沒有同步退場。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "接下來我會看三件事："
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "start": 1,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "零售修正值與實質個人消費，確認名目下降有多少是價格影響。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "所得、就業與信用，確認家庭支出能力是否廣泛惡化。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "消費者信心終值與通膨預期，確認這是單月擾動還是購買力壓力延續。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "一筆零售初值不是衰退判決。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "但當零售與信心同時往下、短期通膨預期往上，這個組合值得持續追蹤。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "備選開頭"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "start": 1,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "零售月減 0.6%，可以說消費正在轉弱；但只看這一個數字，還不能直接說衰退來了。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "同一天看到零售下降、消費者信心下滑、通膨預期上升，真正要問的不是「有沒有衰退」，而是購買力壓力是否正在擴散。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "查核與語氣"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "已確認事實與來源：7 月零售與餐飲服務總額 7,636 億美元、月減 0.6%、年增 5.0%；扣除汽車 -0.3%、扣除汽車與汽油 -0.2%、汽車與零件 -1.8%、無店面零售 -2.2%、餐飲服務 +0.5%。資料經季節、交易日調整但未經價格調整，部分分項月變化的 90% 信賴區間包含零，產業間比較未做顯著性檢定。來源為 "
+                },
+                {
+                  "type": "link",
+                  "text": "U.S. Census Bureau，發布日 2026-08-14、資料期 2026 年 7 月",
+                  "href": "https://www.census.gov/retail/marts/www/marts_current.pdf"
+                },
+                {
+                  "type": "text",
+                  "text": "。8 月消費者信心初值 51.0、7 月 55.2；未來預期 50.6、前值 55.4；一年通膨預期 4.3%、前值 4.2%。來源為 "
+                },
+                {
+                  "type": "link",
+                  "text": "University of Michigan Surveys of Consumers，發布日 2026-08-14",
+                  "href": "https://www.sca.isr.umich.edu/"
+                },
+                {
+                  "type": "text",
+                  "text": "。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "AI 推論：零售與信心同步轉弱提高消費下行風險，但初值、名目資料、年增仍正與餐飲月增都不支持由單月數據直接判定衰退。這是由原始資料形成的暫時推論，不是來源原話或短期市場預測。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "外部觀點："
+                },
+                {
+                  "type": "link",
+                  "text": "Associated Press，2026-08-14",
+                  "href": "https://apnews.com/article/stocks-markets-rates-oil-inflation-futures-5d9870d6c5ae735f9b74bf4ceefaa3ec"
+                },
+                {
+                  "type": "text",
+                  "text": "指出零售轉弱提高經濟放慢風險，也引述分析認為前月可能受退稅、世界盃與促銷活動拉高；本篇以 Census 與密西根大學原始資料為主，AP 只用來補充市場解讀。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "最終判斷：零售與信心方向轉弱值得升級監測，但在修正值、實質消費、所得、就業與信用尚未共同惡化前，不把單月 -0.6%視為衰退判決。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "反方證據：零售總額仍年增 5.0%；餐飲服務月增 0.5%；6 月月增 0.2%；零售為抽樣初值且未經價格調整；部分分項變化未達統計顯著。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "尚未確認資料：零售修正值、密西根 8 月終值、下一份個人所得／實質消費、後續就業與信用資料尚未發布；不以預期值替代結果。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "待使用者補充：請確認「我還不會把」「真正讓我提高警覺」與「接下來我會看」符合本人真實判斷；若不符合，發布前改為中性研究口吻，不虛構個人經歷或投資行動。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "App CTA：不加入；本篇核心是如何辨識單月初值與趨勢訊號，沒有自然且必要的產品連結。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "內容聲明：本內容為市場研究與風險框架整理，非投資建議；不構成個股、持股或買賣建議。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "核准"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "最終文字、個人觀點、發布時間與是否發布由使用者決定：待核准。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "核准紀錄：尚未核准。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "核准邊界：未授權發布、留言或私訊互動、個人化投資建議、持股調整、買賣或任何投資行動，也不延伸至未來版本。"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "decision": "尚未核准。",
+      "source": "records/content/threads/2026-08-17-retail-down-not-recession-verdict-v01.md",
+      "asOf": "2026-08-17",
+      "createdAt": null,
+      "recordDate": "2026-08-17",
+      "version": 1,
+      "artifactHash": "sha256:b860bd4cb3ea1a23ebca2f651651ef4314fa62ff2dd227e659389c9574af19ee",
+      "updatedAt": "2026-08-17",
+      "dependencies": [
+        "records/daily-briefs/2026-08-17-v01.md"
+      ]
+    },
     {
       "id": "records/market-risk/2026-08-14-v01.md",
       "title": "市場風險報告｜2026-08-14-v01",
@@ -3364,15 +3865,15 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
-      "currentTask": "市場風險報告｜2026-08-14-v01",
+      "currentTask": "市場風險報告｜2026-08-17-v01",
       "progress": "等待人工核准",
       "dependencies": [],
       "handoff": "將研究與風險成果交總司令驗收；將已驗證素材交社群經營員；將市場風險欄位與限制交 App 設計員。所有對外使用均由使用者核准。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/market-risk/2026-08-14-v01.md",
-      "asOf": "2026-08-14 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-14 07:10（Asia/Taipei，UTC+8）"
+      "source": "records/market-risk/2026-08-17-v01.md",
+      "asOf": "2026-08-17 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-17 07:10（Asia/Taipei，UTC+8）"
     },
     {
       "id": "social-operator",
@@ -3381,20 +3882,64 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
-      "currentTask": "Threads 草稿｜PPI 沒漲，為什麼還不能說通膨過關？",
+      "currentTask": "Threads 草稿｜零售月減 0.6%，為什麼我還不會直接下衰退結論？",
       "progress": "等待人工核准",
       "dependencies": [
-        "records/daily-briefs/2026-08-14-v01.md"
+        "records/daily-briefs/2026-08-17-v01.md"
       ],
       "handoff": "研究疑問退回總經研究員；成果與實驗交總司令驗收；最終語氣、個人觀點、發布與互動交使用者。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/content/threads/2026-08-14-ppi-flat-core-sticky-v01.md",
-      "asOf": "2026-08-14",
-      "updatedAt": "2026-08-14"
+      "source": "records/content/threads/2026-08-17-retail-down-not-recession-verdict-v01.md",
+      "asOf": "2026-08-17",
+      "updatedAt": "2026-08-17"
     }
   ],
   "tasks": [
+    {
+      "id": "records/market-risk/2026-08-17-v01.md",
+      "title": "市場風險報告｜2026-08-17-v01",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/market-risk/2026-08-17-v01.md",
+      "asOf": "2026-08-17 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-17 07:10（Asia/Taipei，UTC+8）"
+    },
+    {
+      "id": "records/daily-briefs/2026-08-17-v01.md",
+      "title": "消費動能轉弱，但油價與長債反彈讓市場面臨雙向壓力",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/daily-briefs/2026-08-17-v01.md",
+      "asOf": "2026-08-17 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-17"
+    },
+    {
+      "id": "records/content/threads/2026-08-17-retail-down-not-recession-verdict-v01.md",
+      "title": "Threads 草稿｜零售月減 0.6%，為什麼我還不會直接下衰退結論？",
+      "owner": "社群經營員",
+      "ownerId": "social-operator",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [
+        "records/daily-briefs/2026-08-17-v01.md"
+      ],
+      "source": "records/content/threads/2026-08-17-retail-down-not-recession-verdict-v01.md",
+      "asOf": "2026-08-17",
+      "updatedAt": "2026-08-17"
+    },
     {
       "id": "records/market-risk/2026-08-14-v01.md",
       "title": "市場風險報告｜2026-08-14-v01",
@@ -3748,6 +4293,1576 @@
   ],
   "briefArchive": [
     {
+      "id": "records/daily-briefs/2026-08-17-v01.md",
+      "date": "2026-08-17",
+      "version": 1,
+      "versionLabel": "v01",
+      "isLatest": true,
+      "title": "消費動能轉弱，但油價與長債反彈讓市場面臨雙向壓力",
+      "summary": "美國 7 月零售銷售月減 0.6%，扣除汽車月減 0.3%，扣除汽車與汽油月減 0.2%；但總額仍年增 5.0%，餐飲服務月增 0.5%，單月初值不等於消費全面收縮。 密西根大學 8 月消費者信心初值由 55.2 降至 51.0，未來預期由 55.4 降至 50.6；一年通膨預期由 4.2%升至 4.3%，形成成長與通膨同時不利的組合。 6 月企業銷售月減 1.1%、庫存持平，庫存銷售比由 1.28 升至 1.30；這提高後續折價、補庫與生產調整的監測必要性，但年增資料仍是反方證據。 8/14 S&P 500 與 Nasdaq 分別下跌 0.2%與 0.3%，Russell 2000 上漲 0.5%；Brent 上漲 1.7%至 88.52 美元，官方 10 年期 Treasury 殖利率由 4.63%升至 4.68%。 Applied Materials 營收與獲利成長、財測續強，股價仍下跌 5.1%；1–4 週影子風險由 60 升至 63／100，維持中性但方向回升。",
+      "freshness": "最新",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:575a3cd1e9e19c6093814ea377d86ca3ac68ebe9b2d1dcbcd22d0863ab088eb1",
+      "coveredSessionDate": "2026-08-14",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-08-17 07:10（Asia/Taipei，UTC+8）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察市場：美股、美元利率、信用、波動、能源與美國總經"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察期間：2026-08-14 已完成美股交易時段；總經與市場資料使用各來源截至截止時間的最新可得值"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料完整度：95／100；8/14 信用利差與 VIX、8/7 後廣義美元尚未發布，能源航運即時流量未取得單一官方完整序列"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "一分鐘摘要"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "美國 7 月零售銷售月減 0.6%，扣除汽車月減 0.3%，扣除汽車與汽油月減 0.2%；但總額仍年增 5.0%，餐飲服務月增 0.5%，單月初值不等於消費全面收縮。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "密西根大學 8 月消費者信心初值由 55.2 降至 51.0，未來預期由 55.4 降至 50.6；一年通膨預期由 4.2%升至 4.3%，形成成長與通膨同時不利的組合。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "6 月企業銷售月減 1.1%、庫存持平，庫存銷售比由 1.28 升至 1.30；這提高後續折價、補庫與生產調整的監測必要性，但年增資料仍是反方證據。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "8/14 S&P 500 與 Nasdaq 分別下跌 0.2%與 0.3%，Russell 2000 上漲 0.5%；Brent 上漲 1.7%至 88.52 美元，官方 10 年期 Treasury 殖利率由 4.63%升至 4.68%。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Applied Materials 營收與獲利成長、財測續強，股價仍下跌 5.1%；1–4 週影子風險由 60 升至 63／100，維持中性但方向回升。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日風險儀表"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "1–4 週風險分數：63／100"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "相較前一交易日：+3"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險狀態：中性"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "即時風險：零售與信心同步轉弱、油價與長債殖利率反彈、高預期財報後的估值壓力"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "結構性風險：實質所得與就業動能、核心服務通膨、TGA 回補對準備金及市場流動性的吸收"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "今日主要風險來源：消費動能、通膨預期與能源、長債及高估值容錯"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "五則重要事件"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "1｜7 月零售月減 0.6%，多個可選消費類別同步轉弱"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "美國 Census Bureau 公布，7 月零售與餐飲服務銷售初值為 7,636 億美元，月減 0.6%、年增 5.0%；6 月修正後月增 0.2%。扣除汽車月減 0.3%，扣除汽車與汽油月減 0.2%。汽車與零件、無店面零售分別月減 1.8%與 2.2%，餐飲服務則月增 0.5%。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "總額 7,636 億美元、月減 0.6%、年增 5.0%；扣除汽車 -0.3%、扣除汽車與汽油 -0.2%；汽車與零件 -1.8%、無店面零售 -2.2%、餐飲服務 +0.5%。來源：U.S. Census Bureau，發布日 2026-08-14、資料期 2026 年 7 月；資料經季節與交易日調整、未經價格調整。Census 並註明部分分項月變化的 90% 信賴區間包含零，產業間差異未做顯著性檢定。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：汽車、電商與多個可選類別同步下滑，使需求轉弱不只來自汽油價格；但年增 5.0%、餐飲仍成長，而且初值會修正，尚不足以由單月數據判定衰退。市場更需要確認名目成長能否轉成實質消費與企業營收。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面為主，D 風險變化為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫但尚未擴散"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日、1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：零售廣度轉弱 → 企業營收與庫存調整 → 利潤、招聘與信用壓力"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：零售修正值、實質個人消費、個人所得、信用卡與企業同店銷售"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：零售仍年增 5.0%、餐飲月增 0.5%、6 月由持平修正為月增 0.2%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若修正值回升、實質消費保持成長且可選消費廣度改善，應降低此風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "2｜消費者信心降至 51.0，短期通膨預期反而升高"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "密西根大學 8 月初值顯示，消費者信心由 7 月的 55.2 降至 51.0；現況指數由 54.8 降至 51.8，預期指數由 55.4 降至 50.6。一年通膨預期由 4.2%升至 4.3%，長期通膨預期維持 3.3%。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "信心 51.0、前值 55.2；現況 51.8、前值 54.8；預期 50.6、前值 55.4；一年通膨預期 4.3%、前值 4.2%；長期 3.3%、持平。來源：University of Michigan Surveys of Consumers，發布日 2026-08-14、2026 年 8 月初值。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：信心、現況與未來預期同時下降，而短期通膨預期上升，表示家庭感受到的購買力壓力未隨 headline PPI 完全緩解。信心調查不是支出本身，卻會提高後續消費與薪資需求轉弱的風險。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面為主，D 風險變化為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：信心下降＋通膨預期升高 → 實質購買力與消費意願受壓 → 營收、招聘與利率定價承壓"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：8 月終值、個人所得與支出、核心 PCE、汽油價格與工資預期"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：長期通膨預期維持 3.3%，信心調查不等同實際支出"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若終值回升、短期通膨預期下降且實質消費穩定，應取消升溫判斷"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "3｜企業銷售月減 1.1%，庫存銷售比升至 1.30"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Census Bureau 公布，6 月製造商、批發商與零售商合計銷售月減 1.1%、年增 10.0%；合計庫存月比持平、年增 3.0%，庫存銷售比由 5 月的 1.28 升至 1.30，仍低於 2025 年 6 月的 1.39。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "企業銷售 2.1113 兆美元、月減 1.1%、年增 10.0%；庫存 2.7402 兆美元、月比持平、年增 3.0%；庫存銷售比 1.30，前月 1.28、去年同期 1.39。來源：U.S. Census Bureau MTIS，發布日 2026-08-14、資料期 2026 年 6 月。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：銷售下降而庫存持平，使庫存相對銷售被動上升；若延續，企業可能以折價、減少訂單或放慢生產消化庫存。不過年增 10.0%且庫存比仍低於去年，同樣不支持立即判定全面庫存衰退。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面為主，C 資金輪動為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：潛伏"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：銷售下降但庫存持平 → 庫存銷售比上升 → 折價、訂單與生產調整 → 毛利與工業動能下降"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：分項庫存、耐久財訂單、工業生產、零售修正與企業毛利率"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：銷售年增 10.0%，庫存比 1.30 仍低於去年同期 1.39"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若銷售回升、庫存比下降且新訂單改善，應移除此風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "4｜Brent 與 10 年期殖利率反彈，壓縮估值緩衝"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "8/14 Brent 上漲 1.7%至每桶 88.52 美元；Treasury 官方曲線顯示 10 年期殖利率由 8/13 的 4.63%升至 4.68%，2 年期為 4.17%、30 年期為 5.25%。同日 S&P 500、Dow 與 Nasdaq 分別下跌 0.2%、0.2%與 0.3%，Russell 2000 上漲 0.5%。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Brent 88.52 美元、+1.7%；10 年期 4.68%、前日 4.63%；S&P 500 7,785.76、-0.2%；Dow 53,732.41、-0.2%；Nasdaq 26,729.16、-0.3%；Russell 2000 +0.5%。來源：U.S. Treasury，資料日 2026-08-14；Associated Press，2026-08-14。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：油價、短期通膨預期與長債同向反彈，抵銷前一日 headline PPI 帶來的部分利率緩解；但指數跌幅有限、小型股上漲，尚未出現全面去風險。能源與利率的持續性比單日指數漲跌更重要。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：B 估值為主，D 風險變化為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫但尚未擴散"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日、1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：能源與通膨預期上升 → 長債殖利率反彈 → 高估值折現率與企業成本上升 → 指數容錯下降"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：Brent、汽油價格、官方殖利率曲線、核心 PCE、VIX 與市場廣度"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：Russell 2000 上漲 0.5%，三大指數跌幅不超過 0.3%，最新信用利差與 VIX 仍低"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若油價與長債回落、通膨預期下降且市場廣度擴散，應降低此風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "5｜Applied Materials 成長續強，股價仍下跌 5.1%"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Applied Materials 第三季營收 91.15 億美元、年增 25%，GAAP EPS 3.17 美元、非 GAAP EPS 3.50 美元，自由現金流 23.30 億美元；公司給出第四季營收 102.5 億美元上下 5 億、非 GAAP EPS 4.02 美元上下 0.20 的展望。AP 報導該股 8/14 仍下跌 5.1%。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "營收 91.15 億美元、+25%；GAAP 毛利率 50.3%；GAAP EPS 3.17、非 GAAP EPS 3.50；營業現金流 30.37 億、CapEx 7.07 億、自由現金流 23.30 億美元；Q4 營收指引 102.5 億美元上下 5 億、非 GAAP EPS 4.02 上下 0.20。來源：Applied Materials，發布日 2026-08-13、季度截至 2026-07-26；股價反應來源 AP，2026-08-14。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：營收、獲利、現金流與財測均強，但負面股價反應顯示市場預期門檻已高；這比較像估值與預期落差風險，而非公司基本面轉差。公司強調 AI 相關需求，但未揭露可獨立核對的 AI 收入、商業化速度或客戶 ROI 指標。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：B 估值為主，A 基本面為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫但集中"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日、1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：高成長已被定價 → 財報優於預期仍不足以抬升估值 → 半導體設備與 AI 資本支出鏈波動放大"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：訂單與季度財測、毛利率、自由現金流、AI 資本支出、同業財報後反應"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：營收年增 25%、毛利率 50.3%、自由現金流 23.30 億美元且 Q4 指引續強"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若股價反應快速修復、同業財報擴散且財測持續上修，應降低市場結構風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "事實"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "數值／變化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料期間"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源與日期"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "零售與餐飲服務"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "月減 0.6%、年增 5.0%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026 年 7 月"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. Census Bureau，2026-08-14"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "消費者信心與通膨預期"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "信心 51.0；一年通膨預期 4.3%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026 年 8 月初值"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "University of Michigan，2026-08-14"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "企業銷售與庫存"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "銷售 -1.1%、庫存持平、庫存比 1.30"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026 年 6 月"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. Census Bureau，2026-08-14"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "官方 10 年期殖利率"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "4.68%，前日 4.63%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-14"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. Treasury，資料日 2026-08-14"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "美股收盤與 Brent"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "S&P -0.2%、Nasdaq -0.3%、Russell +0.5%；Brent +1.7%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-14"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-14"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Applied Materials 第三季"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "營收 +25%、GAAP 毛利率 50.3%、自由現金流 23.30 億美元"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "季度截至 2026-07-26"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Applied Materials，2026-08-13"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Fed 準備金與 TGA"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "準備金 -492.9 億美元；TGA +566.3 億美元"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "當週截至 2026-08-12"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Federal Reserve H.4.1，2026-08-13"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "最新信用與波動"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "HY OAS 2.71、IG OAS 0.79、VIX 14.63"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-13"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "ICE BofA／CBOE 經 FRED，更新日 2026-08-14"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論與初步判斷"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "初判是零售、信心與企業銷售共同提高成長風險，而短期通膨預期、Brent 與長債殖利率同步反彈，限制市場以降息或低通膨完全對沖。TGA 回補與準備金下降仍是結構性背景，高成長財報後的負面股價反應則顯示估值門檻偏高。不過零售與企業銷售仍年增、Russell 2000 上漲、信用與 VIX 低，尚不支持升級為偏高風險。這是 AI 依原始資料形成的暫時推論，不是來源原話或短期漲跌預測。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "外部觀點比較"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀點摘要"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "與初判一致／分歧"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "對判斷影響"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "University of Michigan 主任 Joanne Hsu，2026-08-14"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "僅 8% 消費者預期所得成長超過通膨，低於 2024 年 12 月的 18%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "支持把購買力列為後續確認點，但調查不等於實際支出"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-14（市場）"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "將零售轉弱、油價與利率反彈視為市場壓力，也引述部分分析認為前月消費受退稅、世界盃與促銷拉高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致並提供反方"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "支持風險回升，但提醒單月基期與修正風險"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Applied Materials 管理層，2026-08-13"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "認為 AI 與先進半導體需求支撐成長"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "部分一致"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "支持基本面反證；因缺離散 AI 收入與 ROI，不據此降低估值風險"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "游庭皓、財經 M 平方"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "本次未導入"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "無法比較"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "不影響以公開原始來源形成的判斷"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "最終判斷與反方證據"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終判斷：未來 1–4 週風險暫定 63／100、中性、方向回升，信心 85／100。消費動能與信心下降、短期通膨預期、油價和長債反彈支持上調；年增資料、Russell 上漲與低信用／波動提供反方。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：零售仍年增 5.0%；企業銷售年增 10.0%；餐飲月增 0.5%；長期通膨預期持平；Russell 2000 上漲 0.5%；HY／IG OAS 與 VIX 仍低；Applied Materials 基本面與財測續強。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若零售修正與實質消費回升、通膨預期和油價下降、長債回落且市場廣度改善，應下調；若勞動、消費、信用同步惡化或能源與利率續升，則再上調。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日市場一句話"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "今天市場真正交易的不是單一零售月減，而是消費動能轉弱時，油價與通膨預期仍未同步退場。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "反方證據與尚未確認資料"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "反方證據：零售及企業銷售年增仍強、餐飲月增、長期通膨預期持平、Russell 2000 上漲、信用與 VIX 低、Applied Materials 營收及現金流成長。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：8/14 HY／IG OAS 與 VIX、8/7 後廣義美元、零售與信心終值／修正值、能源航運即時流量、下一份 H.4.1 尚未在截止時間前取得。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "尚未確認與待觀察"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "候選事件池共十項：①零售銷售、②消費者信心與通膨預期、③企業銷售與庫存、④Brent 與能源供應風險、⑤Treasury 曲線、⑥Applied Materials 財報與股價反應、⑦Fed 準備金／TGA、⑧PPI 核心服務與建築、⑨失業金與實質工資、⑩信用利差與 VIX。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "入選理由：零售、信心、企業庫存、能源／長債與 AMAT 分別代表最新需求、家庭預期、庫存生產、利率通膨及估值門檻；能源與 Treasury 合併為同一折現率鏈，五則均有可追溯來源。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "未入選理由：TGA、PPI、就業在 8/14 沒有新一份原始發布，保留於結構性風險與確認訊號；信用與 VIX 用作反方證據，不為湊數獨立成事件。消費鏈只保留零售與信心兩則，企業庫存以生產／訂單鏈處理。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "未確認資料：信用、VIX 與廣義美元有正常發布落後，不以即時行情或預期值補造；能源航運事件只作背景，不因缺少單一官方流量序列啟用事件加分。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "下一確認點：零售修正、密西根 8 月終值、個人所得與 PCE、下一份 H.4.1、8/14 後信用與 VIX、廣義美元、EIA 庫存、半導體設備同業財報。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "來源"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "link",
+                "text": "NYSE｜Holidays & Trading Hours｜2026 日曆與核心交易時段；截至 2026-08-17 07:10 查核",
+                "href": "https://www.nyse.com/trade/hours-calendars"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Census Bureau｜Advance Monthly Sales for Retail and Food Services, July 2026｜發布日 2026-08-14",
+                "href": "https://www.census.gov/retail/marts/www/marts_current.pdf"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "University of Michigan Surveys of Consumers｜Preliminary Results for August 2026｜發布日 2026-08-14",
+                "href": "https://www.sca.isr.umich.edu/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Census Bureau｜Manufacturing and Trade Inventories and Sales, June 2026｜發布日 2026-08-14",
+                "href": "https://www.census.gov/mtis/www/data/pdf/mtis_current.pdf"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Treasury｜Daily Treasury Par Yield Curve Rates｜資料日 2026-08-14",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Applied Materials｜Third Quarter 2026 Results｜發布日 2026-08-13、季度截至 2026-07-26",
+                "href": "https://ir.appliedmaterials.com/static-files/425ac634-4ee7-4c41-a07f-fa9e3c42b797"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜H.4.1 Factors Affecting Reserve Balances｜發布日 2026-08-13、資料週截至 2026-08-12",
+                "href": "https://www.federalreserve.gov/releases/h41/current/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. BLS｜Producer Price Indexes — July 2026｜發布日 2026-08-13",
+                "href": "https://www.bls.gov/news.release/ppi.nr0.htm"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Department of Labor｜Unemployment Insurance Weekly Claims｜發布日 2026-08-13",
+                "href": "https://www.dol.gov/ui/data.pdf"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜HY OAS｜資料日 2026-08-13、更新日 2026-08-14",
+                "href": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜IG OAS｜資料日 2026-08-13、更新日 2026-08-14",
+                "href": "https://fred.stlouisfed.org/series/BAMLC0A0CM"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／CBOE｜VIX｜資料日 2026-08-13、更新日 2026-08-14",
+                "href": "https://fred.stlouisfed.org/series/VIXCLS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／Federal Reserve｜Nominal Broad U.S. Dollar Index｜資料日 2026-08-07",
+                "href": "https://fred.stlouisfed.org/series/DTWEXBGS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜US stocks dip as oil and Treasury yields rise｜2026-08-14",
+                "href": "https://apnews.com/article/stocks-markets-rates-oil-inflation-futures-5d9870d6c5ae735f9b74bf4ceefaa3ec"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜US retail sales declined 0.6% in July｜2026-08-14",
+                "href": "https://apnews.com/article/retail-inflation-consumer-sentiment-economy-3e2bc5807d7396b8e6c5f599941cb2a9"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "人工核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：是否接受五則事件排序、63 分風險框架、「消費轉弱但油價與長債反彈」主標題與五分鐘篇幅，供內部研究及私人 Dashboard 使用。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：本版本不授權公開發布、對外引用、個人化投資建議、持股調整、再平衡、買賣或任何投資行動，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/daily-briefs/2026-08-17-v01.md",
+      "asOf": "2026-08-17 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-17",
+      "dependencies": []
+    },
+    {
       "id": "records/daily-briefs/2026-08-14-v01.md",
       "date": "2026-08-14",
       "version": 1,
@@ -3755,7 +5870,7 @@
       "isLatest": true,
       "title": "PPI 表面降溫，但服務成本與流動性仍限制創高市場的容錯",
       "summary": "美國 7 月最終需求 PPI 月比持平、年增 4.7%，低於 6 月修正後的年增 5.5%；但排除食品、能源與貿易服務後月增 0.4%、年增同為 4.7%，服務與建築成本沒有同步降溫。 初領失業金增加 9,000 人至 20.9 萬，但四週均值持平於 19.9 萬；續領失業金減少 2.2 萬至 177.7 萬，勞動市場是邊際轉弱而非壓力廣泛擴散。 Fed H.4.1 顯示截至 8/12 當週平均準備金減少 492.9 億美元、TGA 增加 566.3 億美元；資產負債表小幅擴張沒有完全抵銷財政現金回補的流動性吸收。 S&P 500 上漲 0.7%創收盤新高、Nasdaq 上漲 0.8%，10 年期 Treasury 官方值由 4.68%降至 4.63%；但 Russell 2000 只漲 0.2%，Cisco 財報優於預期仍因利潤率疑慮下跌 8.4%，高估值市場仍要求獲利品質。 1–4 週影子風險由 61 降至 60／100，維持中性；PPI headline、油價與長債殖利率帶來緩解，但核心服務、流動性吸收與航運風險限制下調幅度。",
-      "freshness": "最新",
+      "freshness": "歷史版本",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
       "artifactHash": "sha256:7a856b23823062f4fee83b07b24a1b5d8e48cfd6f7c646e58b8d7c564de05092",
@@ -19059,6 +21174,460 @@
   ],
   "threadsDocuments": [
     {
+      "id": "records/content/threads/2026-08-17-retail-down-not-recession-verdict-v01.md",
+      "artifactKey": "cmVjb3Jkcy9jb250ZW50L3RocmVhZHMvMjAyNi0wOC0xNy1yZXRhaWwtZG93bi1ub3QtcmVjZXNzaW9uLXZlcmRpY3QtdjAxLm1kADEAc2hhMjU2OmI4NjBiZDRjYjNlYTFhMjNlYmNhMmY2NTE2NTFlZjQzMTRmYTYyZmYyZGQyMjdlNjU5Mzg5Yzk1NzRhZjE5ZWU",
+      "date": "2026-08-17",
+      "version": 1,
+      "versionLabel": "v01",
+      "title": "Threads 草稿｜零售月減 0.6%，為什麼我還不會直接下衰退結論？",
+      "summary": "扣除汽車：-0.3% 扣除汽車與汽油：-0.2% 汽車與零件：-1.8% 無店面零售：-2.2% 餐飲服務：+0.5%",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:b860bd4cb3ea1a23ebca2f651651ef4314fa62ff2dd227e659389c9574af19ee",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "日期：2026-08-17"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源研究："
+              },
+              {
+                "type": "code",
+                "text": "records/daily-briefs/2026-08-17-v01.md"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報："
+              },
+              {
+                "type": "code",
+                "text": "records/daily-briefs/2026-08-17-v01.md"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報雜湊："
+              },
+              {
+                "type": "code",
+                "text": "sha256:575a3cd1e9e19c6093814ea377d86ca3ac68ebe9b2d1dcbcd22d0863ab088eb1"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "建議時機：現在；發布前須重新確認 Census 原始資料、密西根大學終值排程與本人觀點是否有重大更新"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "主版本"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "美國 7 月零售銷售月減 0.6%。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "看到這個數字，很容易直接聯想到："
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "消費是不是撐不住了？"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "先拆開看。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "扣除汽車：-0.3%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "扣除汽車與汽油：-0.2%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "汽車與零件：-1.8%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "無店面零售：-2.2%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "餐飲服務：+0.5%"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "所以這次轉弱不只來自汽油，汽車與電商也有壓力。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "但我還不會把 -0.6%直接翻譯成「衰退判決」。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "有三個原因。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "第一，這是抽樣初值，之後會修正；而且數據是名目金額，沒有排除價格變化。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "第二，總額仍比去年同期高 5.0%，餐飲服務也月增 0.5%。需求確實轉弱，但還不是所有類別同步收縮。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "第三，Census 明示部分分項月變化的 90% 信賴區間包含零，產業間差異也沒有做顯著性檢定。分項可以幫助找線索，不能被寫成精準判決。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "真正讓我提高警覺的，是同一天另一組資料。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "密西根大學 8 月消費者信心初值從 55.2 降到 51.0，未來預期從 55.4 降到 50.6；一年通膨預期則由 4.2%升到 4.3%。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "需求感受轉弱，通膨壓力卻沒有同步退場。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來我會看三件事："
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 1,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "零售修正值與實質個人消費，確認名目下降有多少是價格影響。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "所得、就業與信用，確認家庭支出能力是否廣泛惡化。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "消費者信心終值與通膨預期，確認這是單月擾動還是購買力壓力延續。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "一筆零售初值不是衰退判決。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "但當零售與信心同時往下、短期通膨預期往上，這個組合值得持續追蹤。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "備選開頭"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 1,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "零售月減 0.6%，可以說消費正在轉弱；但只看這一個數字，還不能直接說衰退來了。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "同一天看到零售下降、消費者信心下滑、通膨預期上升，真正要問的不是「有沒有衰退」，而是購買力壓力是否正在擴散。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "查核與語氣"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "已確認事實與來源：7 月零售與餐飲服務總額 7,636 億美元、月減 0.6%、年增 5.0%；扣除汽車 -0.3%、扣除汽車與汽油 -0.2%、汽車與零件 -1.8%、無店面零售 -2.2%、餐飲服務 +0.5%。資料經季節、交易日調整但未經價格調整，部分分項月變化的 90% 信賴區間包含零，產業間比較未做顯著性檢定。來源為 "
+              },
+              {
+                "type": "link",
+                "text": "U.S. Census Bureau，發布日 2026-08-14、資料期 2026 年 7 月",
+                "href": "https://www.census.gov/retail/marts/www/marts_current.pdf"
+              },
+              {
+                "type": "text",
+                "text": "。8 月消費者信心初值 51.0、7 月 55.2；未來預期 50.6、前值 55.4；一年通膨預期 4.3%、前值 4.2%。來源為 "
+              },
+              {
+                "type": "link",
+                "text": "University of Michigan Surveys of Consumers，發布日 2026-08-14",
+                "href": "https://www.sca.isr.umich.edu/"
+              },
+              {
+                "type": "text",
+                "text": "。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "AI 推論：零售與信心同步轉弱提高消費下行風險，但初值、名目資料、年增仍正與餐飲月增都不支持由單月數據直接判定衰退。這是由原始資料形成的暫時推論，不是來源原話或短期市場預測。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "外部觀點："
+              },
+              {
+                "type": "link",
+                "text": "Associated Press，2026-08-14",
+                "href": "https://apnews.com/article/stocks-markets-rates-oil-inflation-futures-5d9870d6c5ae735f9b74bf4ceefaa3ec"
+              },
+              {
+                "type": "text",
+                "text": "指出零售轉弱提高經濟放慢風險，也引述分析認為前月可能受退稅、世界盃與促銷活動拉高；本篇以 Census 與密西根大學原始資料為主，AP 只用來補充市場解讀。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "最終判斷：零售與信心方向轉弱值得升級監測，但在修正值、實質消費、所得、就業與信用尚未共同惡化前，不把單月 -0.6%視為衰退判決。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：零售總額仍年增 5.0%；餐飲服務月增 0.5%；6 月月增 0.2%；零售為抽樣初值且未經價格調整；部分分項變化未達統計顯著。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：零售修正值、密西根 8 月終值、下一份個人所得／實質消費、後續就業與信用資料尚未發布；不以預期值替代結果。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "待使用者補充：請確認「我還不會把」「真正讓我提高警覺」與「接下來我會看」符合本人真實判斷；若不符合，發布前改為中性研究口吻，不虛構個人經歷或投資行動。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "App CTA：不加入；本篇核心是如何辨識單月初值與趨勢訊號，沒有自然且必要的產品連結。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "內容聲明：本內容為市場研究與風險框架整理，非投資建議；不構成個股、持股或買賣建議。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終文字、個人觀點、發布時間與是否發布由使用者決定：待核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：未授權發布、留言或私訊互動、個人化投資建議、持股調整、買賣或任何投資行動，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/content/threads/2026-08-17-retail-down-not-recession-verdict-v01.md",
+      "asOf": "2026-08-17",
+      "updatedAt": "2026-08-17",
+      "dependencies": [
+        "records/daily-briefs/2026-08-17-v01.md"
+      ]
+    },
+    {
       "id": "records/content/threads/2026-08-14-ppi-flat-core-sticky-v01.md",
       "artifactKey": "cmVjb3Jkcy9jb250ZW50L3RocmVhZHMvMjAyNi0wOC0xNC1wcGktZmxhdC1jb3JlLXN0aWNreS12MDEubWQAMQBzaGEyNTY6MjFmMGRlYjhjNzczMjQ2ZjU2NWNiMzFiZjQ1NTFhNmVjZWNmY2M2MjMwNjgwYjEyZWVlMmNhZjkxNDI5ZTE0MQ",
       "date": "2026-08-14",
@@ -22000,45 +24569,45 @@
   "approvedThreadsArchive": [],
   "threadsArchiveIssues": [],
   "brief": {
-    "title": "PPI 表面降溫，但服務成本與流動性仍限制創高市場的容錯",
-    "headline": "PPI 表面降溫，但服務成本與流動性仍限制創高市場的容錯",
-    "summary": "美國 7 月最終需求 PPI 月比持平、年增 4.7%，低於 6 月修正後的年增 5.5%；但排除食品、能源與貿易服務後月增 0.4%、年增同為 4.7%，服務與建築成本沒有同步降溫。 初領失業金增加 9,000 人至 20.9 萬，但四週均值持平於 19.9 萬；續領失業金減少 2.2 萬至 177.7 萬，勞動市場是邊際轉弱而非壓力廣泛擴散。 Fed H.4.1 顯示截至 8/12 當週平均準備金減少 492.9 億美元、TGA 增加 566.3 億美元；資產負債表小幅擴張沒有完全抵銷財政現金回補的流動性吸收。 S&P 500 上漲 0.7%創收盤新高、Nasdaq 上漲 0.8%，10 年期 Treasury 官方值由 4.68%降至 4.63%；但 Russell 2000 只漲 0.2%，Cisco 財報優於預期仍因利潤率疑慮下跌 8.4%，高估值市場仍要求獲利品質。 1–4 週影子風險由 61 降至 60／100，維持中性；PPI headline、油價與長債殖利率帶來緩解，但核心服務、流動性吸收與航運風險限制下調幅度。",
+    "title": "消費動能轉弱，但油價與長債反彈讓市場面臨雙向壓力",
+    "headline": "消費動能轉弱，但油價與長債反彈讓市場面臨雙向壓力",
+    "summary": "美國 7 月零售銷售月減 0.6%，扣除汽車月減 0.3%，扣除汽車與汽油月減 0.2%；但總額仍年增 5.0%，餐飲服務月增 0.5%，單月初值不等於消費全面收縮。 密西根大學 8 月消費者信心初值由 55.2 降至 51.0，未來預期由 55.4 降至 50.6；一年通膨預期由 4.2%升至 4.3%，形成成長與通膨同時不利的組合。 6 月企業銷售月減 1.1%、庫存持平，庫存銷售比由 1.28 升至 1.30；這提高後續折價、補庫與生產調整的監測必要性，但年增資料仍是反方證據。 8/14 S&P 500 與 Nasdaq 分別下跌 0.2%與 0.3%，Russell 2000 上漲 0.5%；Brent 上漲 1.7%至 88.52 美元，官方 10 年期 Treasury 殖利率由 4.63%升至 4.68%。 Applied Materials 營收與獲利成長、財測續強，股價仍下跌 5.1%；1–4 週影子風險由 60 升至 63／100，維持中性但方向回升。",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准",
     "version": 1,
-    "artifactHash": "sha256:7a856b23823062f4fee83b07b24a1b5d8e48cfd6f7c646e58b8d7c564de05092",
-    "coveredSessionDate": "2026-08-13",
-    "asOf": "2026-08-14 07:10（Asia/Taipei，UTC+8）",
-    "source": "records/daily-briefs/2026-08-14-v01.md",
-    "updatedAt": "2026-08-14T07:14:28+08:00",
+    "artifactHash": "sha256:575a3cd1e9e19c6093814ea377d86ca3ac68ebe9b2d1dcbcd22d0863ab088eb1",
+    "coveredSessionDate": "2026-08-14",
+    "asOf": "2026-08-17 07:10（Asia/Taipei，UTC+8）",
+    "source": "records/daily-briefs/2026-08-17-v01.md",
+    "updatedAt": "2026-08-17",
     "dependencies": []
   },
   "marketRisk": {
-    "label": "市場風險報告｜2026-08-14-v01",
+    "label": "市場風險報告｜2026-08-17-v01",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准",
     "version": 1,
-    "artifactHash": "sha256:2253960b0ed0d8f87f75769d5233e21ced7952457a6e6f8dedb2f114f49ad17c",
-    "coveredSessionDate": "2026-08-13",
-    "asOf": "2026-08-14 07:10（Asia/Taipei，UTC+8）",
-    "source": "records/market-risk/2026-08-14-v01.md",
-    "updatedAt": "2026-08-14 07:10（Asia/Taipei，UTC+8）",
+    "artifactHash": "sha256:ef83baf8acfe8fbb794c024ecdb727b42cac00da725a4e7b03bf99783283c0a2",
+    "coveredSessionDate": "2026-08-14",
+    "asOf": "2026-08-17 07:10（Asia/Taipei，UTC+8）",
+    "source": "records/market-risk/2026-08-17-v01.md",
+    "updatedAt": "2026-08-17 07:10（Asia/Taipei，UTC+8）",
     "dependencies": [],
-    "score": 60,
-    "baseline": 60,
+    "score": 63,
+    "baseline": 63,
     "eventAdjustment": 0,
-    "dailyChange": -1,
-    "immediateRisk": "創高後的市場廣度、核心服務 PPI 對利率的再定價、荷莫茲與曼德海峽航運",
-    "structuralRisk": "服務與建築成本黏性、實質工資與就業動能、TGA 回補對準備金與流動性的吸收",
+    "dailyChange": 3,
+    "immediateRisk": "零售與信心同步轉弱、油價及長債殖利率反彈、高預期財報後的估值壓力",
+    "structuralRisk": "實質所得與就業動能、核心服務通膨、TGA 回補對準備金與流動性的吸收",
     "topRisks": [
-      "核心服務與建築成本",
-      "TGA 回補與準備金下降",
-      "高估值與能源航運尾部風險"
+      "消費動能",
+      "通膨預期與能源",
+      "長債及高估值容錯"
     ],
     "confidence": 85,
-    "completeness": 94,
+    "completeness": 95,
     "experimental": true
   },
   "marketRiskHistory": {
@@ -22373,11 +24942,789 @@
             "readable": true
           }
         ]
+      },
+      {
+        "id": "records/market-risk/2026-08-17-v01.md",
+        "date": "2026-08-17",
+        "version": 1,
+        "versionLabel": "v01",
+        "artifactHash": "sha256:ef83baf8acfe8fbb794c024ecdb727b42cac00da725a4e7b03bf99783283c0a2",
+        "artifactStatus": "待核准",
+        "rawStatus": "待核准",
+        "asOf": "2026-08-17 07:10（Asia/Taipei，UTC+8）",
+        "updatedAt": "2026-08-17 07:10（Asia/Taipei，UTC+8）",
+        "source": "records/market-risk/2026-08-17-v01.md",
+        "score": 63,
+        "state": "保留區間",
+        "dailyChange": 3,
+        "changeReasons": "無；事件調整為 0",
+        "topRisks": [
+          "消費動能",
+          "通膨預期與能源",
+          "長債及高估值容錯"
+        ],
+        "supportingEvidence": "零售月減 0.6%、信心降至 51.0、企業銷售月減 1.1%、一年通膨預期升至 4.3%、10Y 回升至 4.68%、AMAT 跌 5.1%",
+        "counterEvidence": "零售與企業銷售仍年增、餐飲月增、長期通膨預期持平、Russell 上漲、VIX 與信用利差低、AMAT 財測續強",
+        "confidence": 85,
+        "completeness": 95,
+        "lowCompleteness": false,
+        "dependencies": [],
+        "versions": [
+          {
+            "id": "records/market-risk/2026-08-17-v01.md",
+            "version": 1,
+            "versionLabel": "v01",
+            "source": "records/market-risk/2026-08-17-v01.md",
+            "readable": true
+          }
+        ]
       }
     ],
     "issues": []
   },
   "marketRiskArchive": [
+    {
+      "id": "records/market-risk/2026-08-17-v01.md",
+      "date": "2026-08-17",
+      "version": 1,
+      "versionLabel": "v01",
+      "isLatest": true,
+      "title": "市場風險報告｜2026-08-17-v01",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:ef83baf8acfe8fbb794c024ecdb727b42cac00da725a4e7b03bf99783283c0a2",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-08-17 07:10（Asia/Taipei，UTC+8）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "方法版本：v1.0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影子運行：實驗性指標／第 13 個交易日"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察期：主分數為 1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "最後更新時間：2026-08-17 07:10（Asia/Taipei，UTC+8）"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "總覽"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "市場風險分數：63"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "基準分：63"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "事件調整：0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "單日變動：+3"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "5 日趨勢：可用最近五筆為 63→63→61→60→63，方向回升"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "20 日趨勢：影子運行僅第 13 個交易日，且第 5–7 日缺少當日版本，資料不足"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險狀態及趨勢：中性；方向回升，零售、信心與企業銷售提高成長風險，油價、通膨預期與長債反彈限制估值緩衝"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "即時風險：零售與信心同步轉弱、油價及長債殖利率反彈、高預期財報後的估值壓力"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "結構性風險：實質所得與就業動能、核心服務通膨、TGA 回補對準備金與流動性的吸收"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "三項主要風險：消費動能、通膨預期與能源、長債及高估值容錯"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "分數改變原因：景氣與成長由 65 升至 70，零售月減 0.6%、信心由 55.2 降至 51.0、企業銷售月減 1.1%；通膨與利率由 65 升至 70，一年通膨預期升至 4.3%、Brent 漲至 88.52 美元、官方 10Y 回升至 4.68%；流動性維持 60，最新 H.4.1 仍顯示 TGA 增加與準備金下降；信用維持 40，最新 HY／IG OAS 為 2.71／0.79；市場結構由 70 升至 75，三大指數小跌且 AMAT 財報強勁仍跌 5.1%，但 Russell 上漲、VIX 仍低。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "AI 判斷信心：85"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料完整度：95"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "子指標"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "子指標"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "權重"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "分數"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "趨勢"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "理由"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "景氣與成長"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "70"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "升高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "7 月零售月減 0.6%、8 月信心初值降至 51.0、6 月企業銷售月減 1.1%；反方是零售與企業銷售仍年增 5.0%與 10.0%，餐飲月增 0.5%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. Census Bureau、University of Michigan，2026-08-14"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "通膨與利率"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "70"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "升高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一年通膨預期由 4.2%升至 4.3%、Brent 漲 1.7%至 88.52 美元、官方 10Y 由 4.63%升至 4.68%；反方是長期通膨預期持平 3.3%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "University of Michigan、U.S. Treasury、AP，2026-08-14"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "流動性"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "60"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "持平偏高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "最新 H.4.1 顯示準備金週平均減少 492.9 億美元、TGA 增加 566.3 億美元；8/14 沒有新 H.4.1，廣義美元最新仍為 8/7"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Federal Reserve，發布日 2026-08-13、資料週截至 08-12；FRED／Fed H.10，資料日 2026-08-07"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "信用"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "40"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "持平"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "最新 HY OAS 2.71、IG OAS 0.79，沒有形成信用壓力擴散；8/14 值尚未發布"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "ICE BofA／FRED，資料日 2026-08-13、更新日 2026-08-14"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "市場結構"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "75"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "升高但未擴散"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "S&P、Dow、Nasdaq 分別跌 0.2%、0.2%、0.3%，AMAT 財報強仍跌 5.1%；但 Russell 漲 0.5%，最新 VIX 14.63"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "AP，2026-08-14；CBOE／FRED，資料日 2026-08-13"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "基準分計算："
+            },
+            {
+              "type": "code",
+              "text": "(70 + 70 + 60 + 40 + 75) ÷ 5 = 63"
+            },
+            {
+              "type": "text",
+              "text": "。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "事件調整"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "調整事件：無；事件調整為 0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "受影響子指標：無額外調整；零售、信心與庫存已納入景氣成長，通膨預期、油價與 Treasury 已納入通膨利率，H.4.1 已納入流動性，股市與 AMAT 已納入市場結構"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未反映於基準數據的理由：沒有同時符合重大、已發生、可驗證且未被五項子指標捕捉的事件；能源航運缺單一官方即時流量，不另加分"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：消費與信心轉弱 → 營收、招聘與信用；通膨預期與能源上升 → 長債與估值；TGA 回補 → 準備金與風險承擔；高預期 → 財報落差放大"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "支持證據：零售月減 0.6%、信心降至 51.0、企業銷售月減 1.1%、一年通膨預期升至 4.3%、10Y 回升至 4.68%、AMAT 跌 5.1%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：零售與企業銷售仍年增、餐飲月增、長期通膨預期持平、Russell 上漲、VIX 與信用利差低、AMAT 財測續強"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若出現未被子指標捕捉的重大且可由原始資料重現的供應、信用或政策衝擊才啟用事件調整；否則下一版直接重估子指標"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "總分計算："
+            },
+            {
+              "type": "code",
+              "text": "63 + 0 = 63"
+            },
+            {
+              "type": "text",
+              "text": "。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "證據與限制"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "支持證據：Census 顯示零售與企業銷售月減；密西根信心及預期下降、短期通膨預期上升；油價與官方 10Y 反彈；AMAT 財報後負面反應顯示高估值門檻"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：零售及企業銷售年增；餐飲月增；長期通膨預期持平；Russell 2000 上漲；HY／IG OAS 與 VIX 低；AMAT 營收、現金流及指引續強"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：零售修正、密西根終值、個人所得與核心 PCE、下一份 H.4.1、信用利差、VIX、廣義美元、Brent、EIA 庫存與半導體設備財測"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "待觀察數據：8/14 後信用與 VIX 補值、8/17 廣義美元、零售修正、密西根終值、下一份 PCE／CPI／PPI、下一份 H.4.1、油輪流量與 AMAT 同業財報"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：8/14 HY／IG OAS 與 VIX、8/7 後廣義美元、能源航運即時流量未在截止時間前取得；資料完整度 95、信心 85，不得視為精準預測"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "歷史限制：影子序號已到第 13 個交易日，工作區只有 10 個實際日期的風險版本，缺少第 5–7 日（對應 2026-08-05 至 08-07）當日紀錄；不以事後資料補造，20 日趨勢與首輪復盤只能有限評估"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "事後績效（後續追加）"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "評估日期：後續觀察窗結束時另行追加"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "後續市場表現：以 1–3 個交易日、1–4 週與 1–2 季觀察窗追加，不預寫結果"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "判斷評估：後續評估方向、時效、誤報或漏報"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "方法學習：只追加事後結果；如需改方法，建立新版本且不回寫本紀錄"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "來源"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "link",
+                "text": "NYSE｜Holidays & Trading Hours｜2026 日曆與核心交易時段；截至 2026-08-17 07:10 查核",
+                "href": "https://www.nyse.com/trade/hours-calendars"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Census Bureau｜Advance Monthly Sales for Retail and Food Services, July 2026｜2026-08-14",
+                "href": "https://www.census.gov/retail/marts/www/marts_current.pdf"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "University of Michigan Surveys of Consumers｜Preliminary Results for August 2026｜2026-08-14",
+                "href": "https://www.sca.isr.umich.edu/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Census Bureau｜Manufacturing and Trade Inventories and Sales, June 2026｜2026-08-14",
+                "href": "https://www.census.gov/mtis/www/data/pdf/mtis_current.pdf"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜H.4.1 Factors Affecting Reserve Balances｜發布日 2026-08-13、資料週截至 2026-08-12",
+                "href": "https://www.federalreserve.gov/releases/h41/current/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Treasury｜Daily Treasury Par Yield Curve Rates｜資料日 2026-08-14",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. BLS｜Producer Price Indexes — July 2026｜2026-08-13",
+                "href": "https://www.bls.gov/news.release/ppi.nr0.htm"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. BLS｜The Employment Situation — July 2026｜2026-08-07",
+                "href": "https://www.bls.gov/news.release/empsit.nr0.htm"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. BLS｜Real Earnings Summary — July 2026｜2026-08-12",
+                "href": "https://www.bls.gov/news.release/realer.nr0.htm"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Department of Labor｜Unemployment Insurance Weekly Claims｜2026-08-13",
+                "href": "https://www.dol.gov/ui/data.pdf"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜HY OAS｜資料日 2026-08-13",
+                "href": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜IG OAS｜資料日 2026-08-13",
+                "href": "https://fred.stlouisfed.org/series/BAMLC0A0CM"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／CBOE｜VIX｜資料日 2026-08-13",
+                "href": "https://fred.stlouisfed.org/series/VIXCLS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／Federal Reserve｜Nominal Broad U.S. Dollar Index｜資料日 2026-08-07",
+                "href": "https://fred.stlouisfed.org/series/DTWEXBGS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Applied Materials｜Third Quarter 2026 Results｜2026-08-13",
+                "href": "https://ir.appliedmaterials.com/static-files/425ac634-4ee7-4c41-a07f-fa9e3c42b797"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜US stocks dip as oil and Treasury yields rise｜2026-08-14",
+                "href": "https://apnews.com/article/stocks-markets-rates-oil-inflation-futures-5d9870d6c5ae735f9b74bf4ceefaa3ec"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：是否接受 63 分總分、63 分基準、0 事件調整、資料完整度 95、AI 信心 85、第 13 日影子紀錄與 10 份實際日期版本，供內部研究及私人 Dashboard 呈現。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：本次不授權公開發布，不連動 Beta、持股、再平衡、買賣、個人化投資建議或投資操作，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/market-risk/2026-08-17-v01.md",
+      "asOf": "2026-08-17 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-17 07:10（Asia/Taipei，UTC+8）",
+      "dependencies": []
+    },
     {
       "id": "records/market-risk/2026-08-14-v01.md",
       "date": "2026-08-14",
