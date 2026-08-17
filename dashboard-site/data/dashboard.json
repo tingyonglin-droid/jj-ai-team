@@ -1,14 +1,578 @@
 {
-  "generatedAt": "2026-08-16T23:13:27.521Z",
-  "date": "2026-08-17",
+  "generatedAt": "2026-08-17T23:14:43.634Z",
+  "date": "2026-08-18",
   "expectation": {
-    "dashboardDate": "2026-08-17",
-    "expectedReportDate": "2026-08-14",
-    "coveredSessionDate": "2026-08-13",
+    "dashboardDate": "2026-08-18",
+    "expectedReportDate": "2026-08-17",
+    "coveredSessionDate": "2026-08-14",
     "phase": "before_cutoff",
     "reason": "尚未到 07:30 交付門檻，沿用前一個應有報告日。"
   },
   "approvals": [
+    {
+      "id": "records/market-risk/2026-08-18-v01.md",
+      "title": "市場風險報告｜2026-08-18-v01",
+      "type": "市場風險報告",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "市場風險報告｜2026-08-18-v01",
+      "fullContent": null,
+      "decision": "是否接受 63 分總分、63 分基準、0 事件調整、資料完整度 94、AI 信心 84、第 14 日影子紀錄與 11 份實際日期版本，供內部研究及私人 Dashboard 呈現。",
+      "source": "records/market-risk/2026-08-18-v01.md",
+      "asOf": "2026-08-18 07:10（Asia/Taipei，UTC+8）",
+      "createdAt": null,
+      "recordDate": "2026-08-18",
+      "version": 1,
+      "artifactHash": "sha256:6fb7b98a174c16cc6c039949e24a68f313b561ac6d5a5a3c427b996fb921b8ec",
+      "updatedAt": "2026-08-18 07:10（Asia/Taipei，UTC+8）",
+      "dependencies": []
+    },
+    {
+      "id": "records/daily-briefs/2026-08-18-v01.md",
+      "title": "製造業升溫未能抵銷能源與長債壓力，市場風險結構轉向通膨端",
+      "type": "晨報",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "紐約聯準銀行 8 月 Empire State 製造業一般商業狀況指數升至 20.6，創逾四年高，新訂單、出貨與就業均維持正值；這降低部分景氣下行風險。 同份調查的交貨時間升至 20.6、供應可得性降至 -13.4、投入價格升至 58.6；需求改善同時伴隨供應與成本壓力，並非單向利多。 8/17 Brent 上漲 2.7%至每桶 90.87 美元；Treasury 官方 10 年期殖利率由 4.68%升至 4.72%，30 年期由 5.25%升至 5.30%。 S&P 500、Dow、Nasdaq 與 Russell 2000 分別下跌 0.5%、0.5%、0.3%與 0.4%，但 S&P 仍接近 8/13 的歷史高點，最新信用與 VIX 也未顯示失序。 NAHB 8 月建商信心僅由 34 升至 35，低於 50；35% 建商降價、63% 使用銷售優惠。1–4 週影子風險維持 63／100，但內部結構從成長轉弱移向通膨、長債與估值壓力。",
+      "fullContent": null,
+      "decision": "是否接受五則事件排序、63 分風險框架、「製造業升溫但能源與長債壓力上升」主標題與五分鐘篇幅，供內部研究及私人 Dashboard 使用。",
+      "source": "records/daily-briefs/2026-08-18-v01.md",
+      "asOf": "2026-08-18 07:10（Asia/Taipei，UTC+8）",
+      "createdAt": null,
+      "recordDate": "2026-08-18",
+      "version": 1,
+      "artifactHash": "sha256:5a506244f1a134bfd2e8769b7427c497042d90f62c394a88e59089d0c81029c9",
+      "updatedAt": "2026-08-18",
+      "dependencies": []
+    },
+    {
+      "id": "records/content/threads/2026-08-18-manufacturing-strong-risk-not-lower-v01.md",
+      "title": "Threads 草稿｜製造業創四年高，為什麼市場風險不一定下降？",
+      "type": "Threads",
+      "owner": "社群經營員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "一般商業狀況：20.6 新訂單：17.3 出貨：11.7 員工數：9.3 未來商業狀況：32.1 交貨時間：20.6 未完成訂單：15.5 供應可得性：-13.4 投入價格：58.6 售價：22.7",
+      "fullContent": {
+        "format": "structured-markdown",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "日期：2026-08-18"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "狀態：待核准"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "來源研究："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-18-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-18-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報版本：v01"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報雜湊："
+                },
+                {
+                  "type": "code",
+                  "text": "sha256:5a506244f1a134bfd2e8769b7427c497042d90f62c394a88e59089d0c81029c9"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "建議時機：現在；發布前須重新確認 New York Fed 原始資料、後續全國製造業數據與本人觀點是否有重大更新"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "主版本"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "紐約州 8 月製造業指數升到 20.6，創四年多新高。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "這是好消息嗎？"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "對景氣來說，部分是。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "一般商業狀況：20.6"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "新訂單：17.3"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "出貨：11.7"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "員工數：9.3"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "未來商業狀況：32.1"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "活動、訂單、出貨與就業都維持正值。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "至少這份調查不支持「製造業正在快速失速」的單向結論。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "但我也不會直接把它翻譯成「市場風險下降」。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "因為同一份報告裡，還有另一組數字："
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "交貨時間：20.6"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "未完成訂單：15.5"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "供應可得性：-13.4"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "投入價格：58.6"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "售價：22.7"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "需求變強，交貨卻更慢；供應變差，投入成本又升高。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "這會帶來兩條不同的傳導鏈。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "第一條是通膨。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "如果投入成本與交貨壓力擴散到其他區域，商品通膨可能比市場預期更黏，長端利率也更難快速回落。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "第二條是企業利潤。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "投入價格 58.6，但售價只有 22.7，而且售價指數還在下降。若企業不能完整轉嫁成本，毛利率可能先承壓。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "所以「景氣數字變好」和「股票估值更安全」，不是同一件事。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "好數據可以降低衰退風險，也可能提高利率與估值壓力。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "接下來我會看三件事："
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "start": 1,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "其他區域 Fed、ISM 與工業生產是否跟進，確認這不是紐約州的單點訊號。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "PPI、企業毛利與售價，確認投入成本有沒有真正轉嫁。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "油價與長債，確認供應壓力是否繼續跨市場傳導。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "還有一個重要限制："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "這是約百家紐約州製造商的擴散指數。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "20.6 不是「產出成長 20.6%」，也不能直接代表全美製造業。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "我會把它當成一個值得升級監測的訊號，而不是一份可以直接下結論的判決書。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "備選開頭"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "start": 1,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "製造業指數創四年新高，通常是好消息；但當投入價格、交貨時間與長債一起上升，市場不一定只交易「景氣變好」。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "同一份製造業報告裡，活動升到 20.6、投入價格升到 58.6。真正重要的不是哪個數字比較大，而是它們會走向兩條不同的傳導鏈。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "查核與語氣"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "已確認事實與來源：New York Fed 8 月 Empire State 製造業一般商業狀況指數 20.6、前值 15.6；新訂單 17.3、出貨 11.7、員工數 9.3、未來商業狀況 32.1；交貨時間 20.6、未完成訂單 15.5、供應可得性 -13.4、投入價格 58.6、售價 22.7。調查回覆期為 2026-08-03 至 08-10，約百家紐約州製造商回覆。來源為 "
+                },
+                {
+                  "type": "link",
+                  "text": "Federal Reserve Bank of New York，發布日 2026-08-17",
+                  "href": "https://www.newyorkfed.org/survey/empire/empiresurvey_overview.html"
+                },
+                {
+                  "type": "text",
+                  "text": "及"
+                },
+                {
+                  "type": "link",
+                  "text": "完整報告 PDF",
+                  "href": "https://www.newyorkfed.org/medialibrary/media/survey/empire/empire2026/2026_08_empire-state-manufacturing-survey.pdf"
+                },
+                {
+                  "type": "text",
+                  "text": "。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "AI 推論：成長與就業正值降低部分景氣下行風險，但供應、投入成本與交貨壓力可能透過通膨、長債與企業毛利提高估值風險。這是由原始資料形成的暫時推論，不是來源原話或短期市場預測。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "外部觀點：New York Fed 經濟研究顧問 Richard Deitz 在 2026-08-17 的報告中同時強調活動創逾四年最快與交貨、供應壓力惡化；本篇與此方向一致，但將利率與毛利傳導明確標為 AI 推論。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "最終判斷：這份區域調查提供更強的成長反方證據，但投入價格、供應限制與長端利率使市場風險結構轉向；不以單一地區擴散指數判定全美景氣或市場方向。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "反方證據：新訂單、出貨、就業與未來活動均為正；售價指數由 27.6 降至 22.7；區域調查可能不被全國資料確認；若供應與油價回落，通膨傳導可能減弱。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "尚未確認資料：其他區域 Fed、ISM、8/18 工業生產、後續 PPI／PCE、企業毛利與 8/17 信用／VIX 尚未全部發布或補值；不以預期值替代結果。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "待使用者補充：請確認「我也不會直接把」「接下來我會看」與「我會把它當成」符合本人真實判斷；若不符合，發布前改為中性研究口吻，不虛構個人經歷或投資行動。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "App CTA：不加入；本篇核心是區分景氣、通膨與估值傳導，沒有自然且必要的產品連結。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "內容聲明：本內容為市場研究與風險框架整理，非投資建議；不構成個股、持股或買賣建議。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "核准"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "最終文字、個人觀點、發布時間與是否發布由使用者決定：待核准。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "核准紀錄：尚未核准。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "核准邊界：未授權發布、留言或私訊互動、個人化投資建議、持股調整、買賣或任何投資行動，也不延伸至未來版本。"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "decision": "尚未核准。",
+      "source": "records/content/threads/2026-08-18-manufacturing-strong-risk-not-lower-v01.md",
+      "asOf": "2026-08-18",
+      "createdAt": null,
+      "recordDate": "2026-08-18",
+      "version": 1,
+      "artifactHash": "sha256:348c87c150e2d666ef800ca1a32ec2670eb5f0a7651b7dbef54230999ba9eaf8",
+      "updatedAt": "2026-08-18",
+      "dependencies": [
+        "records/daily-briefs/2026-08-18-v01.md"
+      ]
+    },
     {
       "id": "records/market-risk/2026-08-17-v01.md",
       "title": "市場風險報告｜2026-08-17-v01",
@@ -46,7 +610,7 @@
       "recordDate": "2026-08-17",
       "version": 1,
       "artifactHash": "sha256:575a3cd1e9e19c6093814ea377d86ca3ac68ebe9b2d1dcbcd22d0863ab088eb1",
-      "updatedAt": "2026-08-17",
+      "updatedAt": "2026-08-17T07:13:58+08:00",
       "dependencies": []
     },
     {
@@ -3865,15 +4429,15 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
-      "currentTask": "市場風險報告｜2026-08-17-v01",
+      "currentTask": "市場風險報告｜2026-08-18-v01",
       "progress": "等待人工核准",
       "dependencies": [],
       "handoff": "將研究與風險成果交總司令驗收；將已驗證素材交社群經營員；將市場風險欄位與限制交 App 設計員。所有對外使用均由使用者核准。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/market-risk/2026-08-17-v01.md",
-      "asOf": "2026-08-17 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-17 07:10（Asia/Taipei，UTC+8）"
+      "source": "records/market-risk/2026-08-18-v01.md",
+      "asOf": "2026-08-18 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-18 07:10（Asia/Taipei，UTC+8）"
     },
     {
       "id": "social-operator",
@@ -3882,20 +4446,64 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
-      "currentTask": "Threads 草稿｜零售月減 0.6%，為什麼我還不會直接下衰退結論？",
+      "currentTask": "Threads 草稿｜製造業創四年高，為什麼市場風險不一定下降？",
       "progress": "等待人工核准",
       "dependencies": [
-        "records/daily-briefs/2026-08-17-v01.md"
+        "records/daily-briefs/2026-08-18-v01.md"
       ],
       "handoff": "研究疑問退回總經研究員；成果與實驗交總司令驗收；最終語氣、個人觀點、發布與互動交使用者。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/content/threads/2026-08-17-retail-down-not-recession-verdict-v01.md",
-      "asOf": "2026-08-17",
-      "updatedAt": "2026-08-17"
+      "source": "records/content/threads/2026-08-18-manufacturing-strong-risk-not-lower-v01.md",
+      "asOf": "2026-08-18",
+      "updatedAt": "2026-08-18"
     }
   ],
   "tasks": [
+    {
+      "id": "records/market-risk/2026-08-18-v01.md",
+      "title": "市場風險報告｜2026-08-18-v01",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/market-risk/2026-08-18-v01.md",
+      "asOf": "2026-08-18 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-18 07:10（Asia/Taipei，UTC+8）"
+    },
+    {
+      "id": "records/daily-briefs/2026-08-18-v01.md",
+      "title": "製造業升溫未能抵銷能源與長債壓力，市場風險結構轉向通膨端",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/daily-briefs/2026-08-18-v01.md",
+      "asOf": "2026-08-18 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-18"
+    },
+    {
+      "id": "records/content/threads/2026-08-18-manufacturing-strong-risk-not-lower-v01.md",
+      "title": "Threads 草稿｜製造業創四年高，為什麼市場風險不一定下降？",
+      "owner": "社群經營員",
+      "ownerId": "social-operator",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [
+        "records/daily-briefs/2026-08-18-v01.md"
+      ],
+      "source": "records/content/threads/2026-08-18-manufacturing-strong-risk-not-lower-v01.md",
+      "asOf": "2026-08-18",
+      "updatedAt": "2026-08-18"
+    },
     {
       "id": "records/market-risk/2026-08-17-v01.md",
       "title": "市場風險報告｜2026-08-17-v01",
@@ -3922,7 +4530,7 @@
       "dependencies": [],
       "source": "records/daily-briefs/2026-08-17-v01.md",
       "asOf": "2026-08-17 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-17"
+      "updatedAt": "2026-08-17T07:13:58+08:00"
     },
     {
       "id": "records/content/threads/2026-08-17-retail-down-not-recession-verdict-v01.md",
@@ -4293,6 +4901,1588 @@
   ],
   "briefArchive": [
     {
+      "id": "records/daily-briefs/2026-08-18-v01.md",
+      "date": "2026-08-18",
+      "version": 1,
+      "versionLabel": "v01",
+      "isLatest": true,
+      "title": "製造業升溫未能抵銷能源與長債壓力，市場風險結構轉向通膨端",
+      "summary": "紐約聯準銀行 8 月 Empire State 製造業一般商業狀況指數升至 20.6，創逾四年高，新訂單、出貨與就業均維持正值；這降低部分景氣下行風險。 同份調查的交貨時間升至 20.6、供應可得性降至 -13.4、投入價格升至 58.6；需求改善同時伴隨供應與成本壓力，並非單向利多。 8/17 Brent 上漲 2.7%至每桶 90.87 美元；Treasury 官方 10 年期殖利率由 4.68%升至 4.72%，30 年期由 5.25%升至 5.30%。 S&P 500、Dow、Nasdaq 與 Russell 2000 分別下跌 0.5%、0.5%、0.3%與 0.4%，但 S&P 仍接近 8/13 的歷史高點，最新信用與 VIX 也未顯示失序。 NAHB 8 月建商信心僅由 34 升至 35，低於 50；35% 建商降價、63% 使用銷售優惠。1–4 週影子風險維持 63／100，但內部結構從成長轉弱移向通膨、長債與估值壓力。",
+      "freshness": "最新",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:5a506244f1a134bfd2e8769b7427c497042d90f62c394a88e59089d0c81029c9",
+      "coveredSessionDate": "2026-08-17",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-08-18 07:10（Asia/Taipei，UTC+8）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察市場：美股、美元利率、信用、波動、能源、住宅與美國總經"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察期間：2026-08-17 已完成美股交易時段；總經與市場資料使用各來源截至截止時間的最新可得值"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料完整度：94／100；8/17 信用利差與 VIX 尚未發布，H.4.1 最新發布日為 8/13、資料週截至 8/12，SCE Labor Market 雖排定 8/17 更新但公開摘要頁仍顯示 3 月內容"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "一分鐘摘要"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "紐約聯準銀行 8 月 Empire State 製造業一般商業狀況指數升至 20.6，創逾四年高，新訂單、出貨與就業均維持正值；這降低部分景氣下行風險。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "同份調查的交貨時間升至 20.6、供應可得性降至 -13.4、投入價格升至 58.6；需求改善同時伴隨供應與成本壓力，並非單向利多。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "8/17 Brent 上漲 2.7%至每桶 90.87 美元；Treasury 官方 10 年期殖利率由 4.68%升至 4.72%，30 年期由 5.25%升至 5.30%。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "S&P 500、Dow、Nasdaq 與 Russell 2000 分別下跌 0.5%、0.5%、0.3%與 0.4%，但 S&P 仍接近 8/13 的歷史高點，最新信用與 VIX 也未顯示失序。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "NAHB 8 月建商信心僅由 34 升至 35，低於 50；35% 建商降價、63% 使用銷售優惠。1–4 週影子風險維持 63／100，但內部結構從成長轉弱移向通膨、長債與估值壓力。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日風險儀表"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "1–4 週風險分數：63／100"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "相較前一交易日：0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險狀態：中性（保留區間）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "即時風險：Brent 重回 90 美元上方、長債殖利率上升、四項主要股指同步下跌"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "結構性風險：能源與供應限制延長通膨、住宅可負擔性、TGA 回補對準備金與市場流動性的吸收"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "今日主要風險來源：能源與投入成本、長債與估值、供應限制與住宅可負擔性"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "五則重要事件"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "1｜紐約製造業活動升至 20.6，成長反方證據變強"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "紐約聯準銀行 8 月 Empire State 製造業調查顯示，一般商業狀況指數由 15.6 升至 20.6，創逾四年高；新訂單 17.3、出貨 11.7、員工數 9.3、平均工時 6.9，均維持正值。調查回覆期為 8/3 至 8/10，涵蓋紐約州製造商，不能直接外推成全美產出增速。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "一般商業狀況 20.6、前值 15.6；新訂單 17.3、出貨 11.7、員工數 9.3、平均工時 6.9；未來商業狀況 32.1。來源：Federal Reserve Bank of New York，發布日 2026-08-17、調查回覆期 2026-08-03 至 08-10。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：區域製造業活動、訂單與就業同時為正，削弱「成長正在快速失速」的單向結論；但強勁活動也可能降低近期利率快速下行的空間。這是一份約百家紐約州製造商的擴散指數，不代表產出成長 20.6%。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：B 估值為主，A 基本面為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：潛伏"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：製造業與就業韌性 → 利率降溫空間縮小 → 長端殖利率與高估值折現壓力"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：其他區域聯準銀行調查、ISM、工業生產、就業與企業財測是否同步改善"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：新訂單與出貨雖為正，但低於 7 月；調查僅涵蓋紐約州且約百份回覆"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若全國工業生產與其他區域調查未跟進、就業轉弱且長債回落，應降低此估值風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "2｜投入價格升至 58.6，供應可得性繼續惡化"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "同份 Empire State 調查顯示，交貨時間指數由 13.0 升至 20.6，未完成訂單由 5.0 升至 15.5，供應可得性由 -10.0 降至 -13.4，存貨由 4.0 降至 -5.2。投入價格由 52.3 升至 58.6，而售價由 27.6 降至 22.7。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "交貨時間 20.6、未完成訂單 15.5、供應可得性 -13.4、存貨 -5.2、投入價格 58.6、售價 22.7。來源：Federal Reserve Bank of New York，發布日 2026-08-17、資料期 2026 年 8 月。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：投入成本上升、交貨拉長與供應惡化同時發生，可能延長商品通膨並壓縮無法完全轉嫁成本的企業毛利；但售價增幅放緩也是通膨傳導沒有全面加速的反方證據。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面與 B 估值並重"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫但尚未擴散"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：供應惡化＋投入成本上升 → 交貨延誤與毛利壓力 → 通膨、利率與企業獲利風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：其他區域價格與交貨指數、ISM 供應商交貨、PPI、企業毛利率與庫存"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：售價指數由 27.6 降至 22.7；未來活動與訂單預期仍樂觀"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若供應可得性、交貨時間與投入價格在後續調查同步改善，應解除升溫判斷"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "3｜Brent 上漲 2.7%至 90.87 美元，能源風險再度升溫"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AP 報導，8/17 Brent 上漲 2.7%至每桶 90.87 美元；油價在伊朗戰爭與原油運輸不確定性下持續大幅擺動。這是可觀察的市場價格與可信二手事件背景，但本次未取得能完整量化即時能源航運流量的單一官方序列。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Brent 每桶 90.87 美元、單日 +2.7%；AP 指出前一個月 Brent 曾在 72 至 102 美元間波動。來源：Associated Press，2026-08-17；資料期為 2026-08-17 收盤與前月區間。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：油價重回 90 美元上方會提高運輸、能源與通膨預期壓力，也可能迫使利率維持較高；但單日反彈與一個月大幅區間同時說明事件高度可逆，不能將當日價格直接外推為永久供應中斷。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 風險變化為主，A 基本面為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：已觸發但方向可逆"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日、1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：能源供應不確定性 → 油價與通膨預期上升 → 家庭購買力、企業成本與政策利率壓力"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：Brent 與汽油價格、EIA 庫存與供需資料、實際航運與保險成本、通膨預期"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：Brent 前月曾在 72 至 102 美元間劇烈往返，價格可能隨供應或談判消息快速反轉"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若 Brent 持續回落至 8/14 前水準、供應流量改善且通膨預期下降，應降低能源事件警戒"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "4｜10 年期升至 4.72%，四項主要股指同步下跌"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Treasury 官方曲線顯示，8/17 的 10 年期殖利率由 8/14 的 4.68%升至 4.72%，30 年期由 5.25%升至 5.30%，2 年期由 4.17%升至 4.19%。同日 S&P 500、Dow、Nasdaq 與 Russell 2000 分別下跌 0.5%、0.5%、0.3%與 0.4%。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2 年 4.19%、10 年 4.72%、30 年 5.30%；S&P 500 7,745.06、-0.5%；Dow 53,459.78、-0.5%；Nasdaq 26,644.91、-0.3%；Russell 2000 3,057.54、-0.4%。來源：U.S. Treasury 與 Associated Press，資料日 2026-08-17。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：長端升幅大於短端且大小型股同步下跌，顯示能源與通膨風險開始壓縮折現率緩衝；但跌幅有限、S&P 仍接近上週紀錄，最新可得 VIX 與信用利差也低，不構成市場失序。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：B 估值為主，C 資金輪動為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫但尚未擴散"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日、1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：油價與通膨壓力 → 長端殖利率上升 → 高估值折現與融資成本提高 → 指數廣度承壓"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：Treasury 曲線、實質殖利率、VIX、信用利差、市場廣度與成長股相對表現"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：S&P 仍接近 8/13 歷史高點；最新 HY OAS 2.67、IG OAS 0.80、VIX 14.25"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若油價與長端回落、股市廣度改善且信用與波動維持低位，應降低此風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "5｜建商信心僅 35，住宅可負擔性壓力仍在"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "NAHB／Wells Fargo 8 月住宅市場指數由 34 小升至 35；現況銷售由 37 升至 39，未來六個月銷售維持 43，潛在買家流量維持 23。35% 建商降價、平均降幅 6%，63% 使用銷售優惠。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "HMI 35；現況銷售 39、未來銷售 43、買家流量 23；降價建商 35%、平均降幅 6%、使用優惠 63%。來源：National Association of Home Builders，發布日 2026-08-17、資料期 2026 年 8 月。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：總指數與分項仍低於 50，廣泛優惠顯示高利率與可負擔性限制需求；但總指數與現況銷售改善，意味住宅市場偏弱而非當月加速惡化。NAHB 是產業調查，需以官方住宅開工、許可與銷售資料驗證。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面為主，D 風險變化為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：持續但未惡化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：高融資成本＋低買家流量 → 降價與優惠常態化 → 建築活動、住宅相關消費與利潤承壓"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：住宅開工與許可、新屋與成屋銷售、房貸利率、建築商毛利與取消率"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：HMI 月增 1 點、現況銷售升 2 點、降價比例由 37%降至 35%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若官方開工與銷售持續改善、買家流量回升且優惠比例下降，應移除此風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "事實"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "數值／變化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料期間"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源與日期"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "NYSE 交易時段"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "8/17 非休市；核心交易 9:30–16:00 ET"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-17"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "NYSE，2026-08-18 07:10 查核"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Empire State 一般商業狀況"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20.6、前值 15.6"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026 年 8 月"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "New York Fed，2026-08-17"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Empire State 供應與價格"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "交貨 20.6、供應 -13.4、投入價格 58.6"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026 年 8 月"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "New York Fed，2026-08-17"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "官方 Treasury 曲線"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2Y 4.19%、10Y 4.72%、30Y 5.30%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-17"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. Treasury，資料日 2026-08-17"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "美股與 Brent"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "S&P -0.5%、Nasdaq -0.3%、Russell -0.4%；Brent +2.7%至 90.87"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-17"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-17"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "NAHB 住宅市場指數"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "35、前值 34；35% 降價、63% 使用優惠"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026 年 8 月"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "NAHB，2026-08-17"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "最新信用與波動"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "HY OAS 2.67、IG OAS 0.80、VIX 14.25"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-14"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "ICE BofA／CBOE 經 FRED，更新日 2026-08-17"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "廣義美元"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "118.9028、前日 119.1848"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-14"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Federal Reserve H.10 經 FRED，更新日 2026-08-17"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Fed 準備金與 TGA"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "準備金週平均 -492.9 億美元；TGA +566.3 億美元"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "當週截至 2026-08-12"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Federal Reserve H.4.1，發布日 2026-08-13"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論與初步判斷"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "初判是成長與通膨訊號分裂：Empire State 的活動、訂單與就業削弱快速衰退敘事，但同份調查的供應限制、投入價格，加上 Brent 與長端殖利率上升，使市場從「成長轉弱」轉向「成長尚可但通膨與折現率較高」的風險。住宅建商信心仍弱，則顯示高利率對實體需求的壓力沒有解除。由於 S&P 接近紀錄、信用與 VIX 仍低，尚不支持升級為偏高風險。這是 AI 依原始資料形成的暫時推論，不是來源原話或短期漲跌預測。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "外部觀點比較"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀點摘要"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "與初判一致／分歧"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "對判斷影響"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "New York Fed 經濟研究顧問 Richard Deitz，2026-08-17"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "製造業以逾四年最快速度擴張，但交貨明顯拉長、供應可得性惡化"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "支持「成長反證變強、供應風險同步升高」的雙向判讀"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "NAHB，2026-08-17"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "HMI 小升但仍低，利率、可負擔性與材料成本會影響市場"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致並提供反方"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "支持住宅偏弱；月增與降價比例下降阻止升級為加速惡化"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-17"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "將油價上漲、長債走高與美股回落連成同一市場壓力鏈"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "補充跨資產市場反應；核心利率數值仍以 Treasury 原始資料為準"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "游庭皓、財經 M 平方"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "本次未導入"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "無法比較"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "不影響以公開原始來源形成的判斷"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "最終判斷與反方證據"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終判斷：未來 1–4 週風險維持 63／100、中性保留區間、方向持平，信心 84／100。成長反方證據改善，但能源、供應、投入成本與長端壓力上升；總分相同不代表風險結構沒有變化。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：Empire 活動、訂單、出貨與就業仍擴張；HMI 與現況銷售小升；S&P 接近上週紀錄；HY／IG OAS 與 VIX 仍低；廣義美元 8/14 小幅下降。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若油價、投入價格與長債回落、供應改善且住宅與市場廣度擴散，應下調；若能源與長債續升、價格壓力擴散至全國調查且信用或 VIX惡化，則再上調。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日市場一句話"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "今天市場真正交易的不是製造業單純變強或變弱，而是成長回升時，能源、供應與長端利率壓力也同步升高。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "反方證據與尚未確認資料"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "反方證據：Empire 活動與就業正成長、未來狀況 32.1；HMI 月增 1 點且降價比例下降；S&P 仍接近紀錄；最新信用利差與 VIX 維持低位。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：8/17 HY／IG OAS 與 VIX、8/15 後廣義美元、8/17 SCE Labor Market 新摘要、能源即時航運流量、8/18 工業生產與住宅資料尚未在截止時間前取得。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "尚未確認與待觀察"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "候選事件池共十項：①Empire 活動與訂單、②Empire 供應與投入價格、③Brent 與能源供應、④Treasury 曲線、⑤美股廣度、⑥NAHB 建商信心、⑦信用利差與 VIX、⑧Fed 準備金／TGA、⑨廣義美元、⑩SCE Labor Market 資料更新。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "入選理由：Empire 分成成長與供應價格兩條傳導鏈；Brent 代表外生能源壓力；Treasury 與股市合併為跨資產折現率鏈；HMI 代表住宅實體需求。每條因果鏈最多兩則且五則都有可追溯來源。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "未入選理由：信用、VIX、流動性與美元在 8/17 沒有新資料，保留為反方或結構性背景；SCE Labor Market 僅能確認更新排程，摘要頁未呈現 7 月新結果，不引用未知數值。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "未確認資料：能源航運缺少截止時間前可完整重現的單一官方即時序列；不因缺口啟用事件加分，也不使用預期值替代 8/18 待發布資料。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "下一確認點：8/18 Business Leaders Survey、進出口、住宅開工與許可、工業生產、待售屋；其後是初領失業金、Philadelphia Fed、H.4.1、EIA 與信用／VIX 補值。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "來源"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "link",
+                "text": "NYSE｜Holidays & Trading Hours｜2026 日曆與核心交易時段；2026-08-18 07:10 查核",
+                "href": "https://www.nyse.com/trade/hours-calendars"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve Bank of New York｜Empire State Manufacturing Survey, August 2026｜發布日 2026-08-17、回覆期 08-03 至 08-10",
+                "href": "https://www.newyorkfed.org/survey/empire/empiresurvey_overview.html"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve Bank of New York｜Empire State Manufacturing Survey PDF｜2026 年 8 月",
+                "href": "https://www.newyorkfed.org/medialibrary/media/survey/empire/empire2026/2026_08_empire-state-manufacturing-survey.pdf"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Treasury｜Daily Treasury Par Yield Curve Rates｜資料日 2026-08-17",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "National Association of Home Builders｜Housing Market Index｜發布日 2026-08-17、資料期 2026 年 8 月",
+                "href": "https://www.nahb.org/News-and-Economics/Housing-Economics/Indices/Housing-Market-Index"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve Bank of New York｜August 2026 Economic Indicators Calendar｜2026-08-18 查核",
+                "href": "https://www.newyorkfed.org/research/calendars/i-aug26.html"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜H.4.1 Factors Affecting Reserve Balances｜發布日 2026-08-13、資料週截至 2026-08-12",
+                "href": "https://www.federalreserve.gov/releases/h41/current/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜HY OAS｜資料日 2026-08-14、更新日 2026-08-17",
+                "href": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜IG OAS｜資料日 2026-08-14、更新日 2026-08-17",
+                "href": "https://fred.stlouisfed.org/series/BAMLC0A0CM"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／CBOE｜VIX｜資料日 2026-08-14、更新日 2026-08-17",
+                "href": "https://fred.stlouisfed.org/series/VIXCLS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／Federal Reserve｜Nominal Broad U.S. Dollar Index｜資料日 2026-08-14、更新日 2026-08-17",
+                "href": "https://fred.stlouisfed.org/series/DTWEXBGS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜US stocks edge further from their record after oil prices rise｜2026-08-17",
+                "href": "https://apnews.com/article/stocks-markets-futures-rates-oil-japan-bf398d5a01f611921c0b48a8bfc884d9"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜How major US stock indexes fared Monday 8/17/2026｜2026-08-17",
+                "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-b20808a2f37a7c505013c9b301c8ebe0"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "人工核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：是否接受五則事件排序、63 分風險框架、「製造業升溫但能源與長債壓力上升」主標題與五分鐘篇幅，供內部研究及私人 Dashboard 使用。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：本版本不授權公開發布、對外引用、個人化投資建議、持股調整、再平衡、買賣或任何投資行動，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/daily-briefs/2026-08-18-v01.md",
+      "asOf": "2026-08-18 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-18",
+      "dependencies": []
+    },
+    {
       "id": "records/daily-briefs/2026-08-17-v01.md",
       "date": "2026-08-17",
       "version": 1,
@@ -4300,7 +6490,7 @@
       "isLatest": true,
       "title": "消費動能轉弱，但油價與長債反彈讓市場面臨雙向壓力",
       "summary": "美國 7 月零售銷售月減 0.6%，扣除汽車月減 0.3%，扣除汽車與汽油月減 0.2%；但總額仍年增 5.0%，餐飲服務月增 0.5%，單月初值不等於消費全面收縮。 密西根大學 8 月消費者信心初值由 55.2 降至 51.0，未來預期由 55.4 降至 50.6；一年通膨預期由 4.2%升至 4.3%，形成成長與通膨同時不利的組合。 6 月企業銷售月減 1.1%、庫存持平，庫存銷售比由 1.28 升至 1.30；這提高後續折價、補庫與生產調整的監測必要性，但年增資料仍是反方證據。 8/14 S&P 500 與 Nasdaq 分別下跌 0.2%與 0.3%，Russell 2000 上漲 0.5%；Brent 上漲 1.7%至 88.52 美元，官方 10 年期 Treasury 殖利率由 4.63%升至 4.68%。 Applied Materials 營收與獲利成長、財測續強，股價仍下跌 5.1%；1–4 週影子風險由 60 升至 63／100，維持中性但方向回升。",
-      "freshness": "最新",
+      "freshness": "歷史版本",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
       "artifactHash": "sha256:575a3cd1e9e19c6093814ea377d86ca3ac68ebe9b2d1dcbcd22d0863ab088eb1",
@@ -5859,7 +8049,7 @@
       ],
       "source": "records/daily-briefs/2026-08-17-v01.md",
       "asOf": "2026-08-17 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-17",
+      "updatedAt": "2026-08-17T07:13:58+08:00",
       "dependencies": []
     },
     {
@@ -21174,6 +23364,523 @@
   ],
   "threadsDocuments": [
     {
+      "id": "records/content/threads/2026-08-18-manufacturing-strong-risk-not-lower-v01.md",
+      "artifactKey": "cmVjb3Jkcy9jb250ZW50L3RocmVhZHMvMjAyNi0wOC0xOC1tYW51ZmFjdHVyaW5nLXN0cm9uZy1yaXNrLW5vdC1sb3dlci12MDEubWQAMQBzaGEyNTY6MzQ4Yzg3YzE1MGUyZDY2NmVmODAwY2ExYTMyZWMyNjcwZWI1ZjBhNzY1MWI3ZGJlZjU0MjMwOTk5YmE5ZWFmOA",
+      "date": "2026-08-18",
+      "version": 1,
+      "versionLabel": "v01",
+      "title": "Threads 草稿｜製造業創四年高，為什麼市場風險不一定下降？",
+      "summary": "一般商業狀況：20.6 新訂單：17.3 出貨：11.7 員工數：9.3 未來商業狀況：32.1 交貨時間：20.6 未完成訂單：15.5 供應可得性：-13.4 投入價格：58.6 售價：22.7",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:348c87c150e2d666ef800ca1a32ec2670eb5f0a7651b7dbef54230999ba9eaf8",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "日期：2026-08-18"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源研究："
+              },
+              {
+                "type": "code",
+                "text": "records/daily-briefs/2026-08-18-v01.md"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報："
+              },
+              {
+                "type": "code",
+                "text": "records/daily-briefs/2026-08-18-v01.md"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報雜湊："
+              },
+              {
+                "type": "code",
+                "text": "sha256:5a506244f1a134bfd2e8769b7427c497042d90f62c394a88e59089d0c81029c9"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "建議時機：現在；發布前須重新確認 New York Fed 原始資料、後續全國製造業數據與本人觀點是否有重大更新"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "主版本"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "紐約州 8 月製造業指數升到 20.6，創四年多新高。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "這是好消息嗎？"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "對景氣來說，部分是。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "一般商業狀況：20.6"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "新訂單：17.3"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "出貨：11.7"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "員工數：9.3"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "未來商業狀況：32.1"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "活動、訂單、出貨與就業都維持正值。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "至少這份調查不支持「製造業正在快速失速」的單向結論。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "但我也不會直接把它翻譯成「市場風險下降」。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "因為同一份報告裡，還有另一組數字："
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "交貨時間：20.6"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "未完成訂單：15.5"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "供應可得性：-13.4"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "投入價格：58.6"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "售價：22.7"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "需求變強，交貨卻更慢；供應變差，投入成本又升高。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "這會帶來兩條不同的傳導鏈。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "第一條是通膨。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "如果投入成本與交貨壓力擴散到其他區域，商品通膨可能比市場預期更黏，長端利率也更難快速回落。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "第二條是企業利潤。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "投入價格 58.6，但售價只有 22.7，而且售價指數還在下降。若企業不能完整轉嫁成本，毛利率可能先承壓。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "所以「景氣數字變好」和「股票估值更安全」，不是同一件事。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "好數據可以降低衰退風險，也可能提高利率與估值壓力。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來我會看三件事："
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 1,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "其他區域 Fed、ISM 與工業生產是否跟進，確認這不是紐約州的單點訊號。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "PPI、企業毛利與售價，確認投入成本有沒有真正轉嫁。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "油價與長債，確認供應壓力是否繼續跨市場傳導。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "還有一個重要限制："
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "這是約百家紐約州製造商的擴散指數。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "20.6 不是「產出成長 20.6%」，也不能直接代表全美製造業。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "我會把它當成一個值得升級監測的訊號，而不是一份可以直接下結論的判決書。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "備選開頭"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 1,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "製造業指數創四年新高，通常是好消息；但當投入價格、交貨時間與長債一起上升，市場不一定只交易「景氣變好」。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "同一份製造業報告裡，活動升到 20.6、投入價格升到 58.6。真正重要的不是哪個數字比較大，而是它們會走向兩條不同的傳導鏈。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "查核與語氣"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "已確認事實與來源：New York Fed 8 月 Empire State 製造業一般商業狀況指數 20.6、前值 15.6；新訂單 17.3、出貨 11.7、員工數 9.3、未來商業狀況 32.1；交貨時間 20.6、未完成訂單 15.5、供應可得性 -13.4、投入價格 58.6、售價 22.7。調查回覆期為 2026-08-03 至 08-10，約百家紐約州製造商回覆。來源為 "
+              },
+              {
+                "type": "link",
+                "text": "Federal Reserve Bank of New York，發布日 2026-08-17",
+                "href": "https://www.newyorkfed.org/survey/empire/empiresurvey_overview.html"
+              },
+              {
+                "type": "text",
+                "text": "及"
+              },
+              {
+                "type": "link",
+                "text": "完整報告 PDF",
+                "href": "https://www.newyorkfed.org/medialibrary/media/survey/empire/empire2026/2026_08_empire-state-manufacturing-survey.pdf"
+              },
+              {
+                "type": "text",
+                "text": "。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "AI 推論：成長與就業正值降低部分景氣下行風險，但供應、投入成本與交貨壓力可能透過通膨、長債與企業毛利提高估值風險。這是由原始資料形成的暫時推論，不是來源原話或短期市場預測。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "外部觀點：New York Fed 經濟研究顧問 Richard Deitz 在 2026-08-17 的報告中同時強調活動創逾四年最快與交貨、供應壓力惡化；本篇與此方向一致，但將利率與毛利傳導明確標為 AI 推論。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "最終判斷：這份區域調查提供更強的成長反方證據，但投入價格、供應限制與長端利率使市場風險結構轉向；不以單一地區擴散指數判定全美景氣或市場方向。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：新訂單、出貨、就業與未來活動均為正；售價指數由 27.6 降至 22.7；區域調查可能不被全國資料確認；若供應與油價回落，通膨傳導可能減弱。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：其他區域 Fed、ISM、8/18 工業生產、後續 PPI／PCE、企業毛利與 8/17 信用／VIX 尚未全部發布或補值；不以預期值替代結果。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "待使用者補充：請確認「我也不會直接把」「接下來我會看」與「我會把它當成」符合本人真實判斷；若不符合，發布前改為中性研究口吻，不虛構個人經歷或投資行動。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "App CTA：不加入；本篇核心是區分景氣、通膨與估值傳導，沒有自然且必要的產品連結。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "內容聲明：本內容為市場研究與風險框架整理，非投資建議；不構成個股、持股或買賣建議。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終文字、個人觀點、發布時間與是否發布由使用者決定：待核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：未授權發布、留言或私訊互動、個人化投資建議、持股調整、買賣或任何投資行動，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/content/threads/2026-08-18-manufacturing-strong-risk-not-lower-v01.md",
+      "asOf": "2026-08-18",
+      "updatedAt": "2026-08-18",
+      "dependencies": [
+        "records/daily-briefs/2026-08-18-v01.md"
+      ]
+    },
+    {
       "id": "records/content/threads/2026-08-17-retail-down-not-recession-verdict-v01.md",
       "artifactKey": "cmVjb3Jkcy9jb250ZW50L3RocmVhZHMvMjAyNi0wOC0xNy1yZXRhaWwtZG93bi1ub3QtcmVjZXNzaW9uLXZlcmRpY3QtdjAxLm1kADEAc2hhMjU2OmI4NjBiZDRjYjNlYTFhMjNlYmNhMmY2NTE2NTFlZjQzMTRmYTYyZmYyZGQyMjdlNjU5Mzg5Yzk1NzRhZjE5ZWU",
       "date": "2026-08-17",
@@ -24569,45 +27276,45 @@
   "approvedThreadsArchive": [],
   "threadsArchiveIssues": [],
   "brief": {
-    "title": "消費動能轉弱，但油價與長債反彈讓市場面臨雙向壓力",
-    "headline": "消費動能轉弱，但油價與長債反彈讓市場面臨雙向壓力",
-    "summary": "美國 7 月零售銷售月減 0.6%，扣除汽車月減 0.3%，扣除汽車與汽油月減 0.2%；但總額仍年增 5.0%，餐飲服務月增 0.5%，單月初值不等於消費全面收縮。 密西根大學 8 月消費者信心初值由 55.2 降至 51.0，未來預期由 55.4 降至 50.6；一年通膨預期由 4.2%升至 4.3%，形成成長與通膨同時不利的組合。 6 月企業銷售月減 1.1%、庫存持平，庫存銷售比由 1.28 升至 1.30；這提高後續折價、補庫與生產調整的監測必要性，但年增資料仍是反方證據。 8/14 S&P 500 與 Nasdaq 分別下跌 0.2%與 0.3%，Russell 2000 上漲 0.5%；Brent 上漲 1.7%至 88.52 美元，官方 10 年期 Treasury 殖利率由 4.63%升至 4.68%。 Applied Materials 營收與獲利成長、財測續強，股價仍下跌 5.1%；1–4 週影子風險由 60 升至 63／100，維持中性但方向回升。",
+    "title": "製造業升溫未能抵銷能源與長債壓力，市場風險結構轉向通膨端",
+    "headline": "製造業升溫未能抵銷能源與長債壓力，市場風險結構轉向通膨端",
+    "summary": "紐約聯準銀行 8 月 Empire State 製造業一般商業狀況指數升至 20.6，創逾四年高，新訂單、出貨與就業均維持正值；這降低部分景氣下行風險。 同份調查的交貨時間升至 20.6、供應可得性降至 -13.4、投入價格升至 58.6；需求改善同時伴隨供應與成本壓力，並非單向利多。 8/17 Brent 上漲 2.7%至每桶 90.87 美元；Treasury 官方 10 年期殖利率由 4.68%升至 4.72%，30 年期由 5.25%升至 5.30%。 S&P 500、Dow、Nasdaq 與 Russell 2000 分別下跌 0.5%、0.5%、0.3%與 0.4%，但 S&P 仍接近 8/13 的歷史高點，最新信用與 VIX 也未顯示失序。 NAHB 8 月建商信心僅由 34 升至 35，低於 50；35% 建商降價、63% 使用銷售優惠。1–4 週影子風險維持 63／100，但內部結構從成長轉弱移向通膨、長債與估值壓力。",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准",
     "version": 1,
-    "artifactHash": "sha256:575a3cd1e9e19c6093814ea377d86ca3ac68ebe9b2d1dcbcd22d0863ab088eb1",
-    "coveredSessionDate": "2026-08-14",
-    "asOf": "2026-08-17 07:10（Asia/Taipei，UTC+8）",
-    "source": "records/daily-briefs/2026-08-17-v01.md",
-    "updatedAt": "2026-08-17",
+    "artifactHash": "sha256:5a506244f1a134bfd2e8769b7427c497042d90f62c394a88e59089d0c81029c9",
+    "coveredSessionDate": "2026-08-17",
+    "asOf": "2026-08-18 07:10（Asia/Taipei，UTC+8）",
+    "source": "records/daily-briefs/2026-08-18-v01.md",
+    "updatedAt": "2026-08-18",
     "dependencies": []
   },
   "marketRisk": {
-    "label": "市場風險報告｜2026-08-17-v01",
+    "label": "市場風險報告｜2026-08-18-v01",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准",
     "version": 1,
-    "artifactHash": "sha256:ef83baf8acfe8fbb794c024ecdb727b42cac00da725a4e7b03bf99783283c0a2",
-    "coveredSessionDate": "2026-08-14",
-    "asOf": "2026-08-17 07:10（Asia/Taipei，UTC+8）",
-    "source": "records/market-risk/2026-08-17-v01.md",
-    "updatedAt": "2026-08-17 07:10（Asia/Taipei，UTC+8）",
+    "artifactHash": "sha256:6fb7b98a174c16cc6c039949e24a68f313b561ac6d5a5a3c427b996fb921b8ec",
+    "coveredSessionDate": "2026-08-17",
+    "asOf": "2026-08-18 07:10（Asia/Taipei，UTC+8）",
+    "source": "records/market-risk/2026-08-18-v01.md",
+    "updatedAt": "2026-08-18 07:10（Asia/Taipei，UTC+8）",
     "dependencies": [],
     "score": 63,
     "baseline": 63,
     "eventAdjustment": 0,
-    "dailyChange": 3,
-    "immediateRisk": "零售與信心同步轉弱、油價及長債殖利率反彈、高預期財報後的估值壓力",
-    "structuralRisk": "實質所得與就業動能、核心服務通膨、TGA 回補對準備金與流動性的吸收",
+    "dailyChange": 0,
+    "immediateRisk": "Brent 重回 90 美元上方、長債殖利率上升、四項主要股指同步下跌",
+    "structuralRisk": "能源與供應限制延長通膨、住宅可負擔性、TGA 回補對準備金與流動性的吸收",
     "topRisks": [
-      "消費動能",
-      "通膨預期與能源",
-      "長債及高估值容錯"
+      "能源與投入成本",
+      "長債與估值",
+      "供應限制與住宅可負擔性"
     ],
-    "confidence": 85,
-    "completeness": 95,
+    "confidence": 84,
+    "completeness": 94,
     "experimental": true
   },
   "marketRiskHistory": {
@@ -24978,11 +27685,754 @@
             "readable": true
           }
         ]
+      },
+      {
+        "id": "records/market-risk/2026-08-18-v01.md",
+        "date": "2026-08-18",
+        "version": 1,
+        "versionLabel": "v01",
+        "artifactHash": "sha256:6fb7b98a174c16cc6c039949e24a68f313b561ac6d5a5a3c427b996fb921b8ec",
+        "artifactStatus": "待核准",
+        "rawStatus": "待核准",
+        "asOf": "2026-08-18 07:10（Asia/Taipei，UTC+8）",
+        "updatedAt": "2026-08-18 07:10（Asia/Taipei，UTC+8）",
+        "source": "records/market-risk/2026-08-18-v01.md",
+        "score": 63,
+        "state": "保留區間",
+        "dailyChange": 0,
+        "changeReasons": "無；事件調整為 0",
+        "topRisks": [
+          "能源與投入成本",
+          "長債與估值",
+          "供應限制與住宅可負擔性"
+        ],
+        "supportingEvidence": "Empire 交貨時間 20.6、供應 -13.4、投入價格 58.6；Brent 90.87；10Y 4.72%；四項主要股指同步下跌；HMI 35",
+        "counterEvidence": "Empire 活動、訂單與就業正成長；售價指數下降；HMI 小升；S&P 接近紀錄；信用與 VIX 低",
+        "confidence": 84,
+        "completeness": 94,
+        "lowCompleteness": false,
+        "dependencies": [],
+        "versions": [
+          {
+            "id": "records/market-risk/2026-08-18-v01.md",
+            "version": 1,
+            "versionLabel": "v01",
+            "source": "records/market-risk/2026-08-18-v01.md",
+            "readable": true
+          }
+        ]
       }
     ],
     "issues": []
   },
   "marketRiskArchive": [
+    {
+      "id": "records/market-risk/2026-08-18-v01.md",
+      "date": "2026-08-18",
+      "version": 1,
+      "versionLabel": "v01",
+      "isLatest": true,
+      "title": "市場風險報告｜2026-08-18-v01",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:6fb7b98a174c16cc6c039949e24a68f313b561ac6d5a5a3c427b996fb921b8ec",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-08-18 07:10（Asia/Taipei，UTC+8）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "方法版本：v1.0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影子運行：實驗性指標／第 14 個交易日"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察期：主分數為 1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "最後更新時間：2026-08-18 07:10（Asia/Taipei，UTC+8）"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "總覽"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "市場風險分數：63"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "基準分：63"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "事件調整：0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "單日變動：0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "5 日趨勢：可用最近五筆為 63→61→60→63→63，方向持平但內部結構轉向通膨與利率"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "20 日趨勢：影子運行僅第 14 個交易日，且第 5–7 日缺少當日版本，資料不足"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險狀態及趨勢：中性保留區間；總分持平，成長反方證據改善，但能源、供應、投入成本與長債壓力升高"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "即時風險：Brent 重回 90 美元上方、長債殖利率上升、四項主要股指同步下跌"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "結構性風險：能源與供應限制延長通膨、住宅可負擔性、TGA 回補對準備金與流動性的吸收"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "三項主要風險：能源與投入成本、長債與估值、供應限制與住宅可負擔性"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "分數改變原因：景氣與成長由 70 降至 65，Empire 活動 20.6、訂單、出貨與就業為正抵銷 HMI 35 與先前消費轉弱；通膨與利率由 70 升至 75，Brent 90.87 美元、投入價格 58.6、官方 10Y 4.72%；流動性維持 60，最新 H.4.1 仍顯示 TGA 增加與準備金下降，廣義美元 8/14 降至 118.9028；信用維持 40，最新 HY／IG OAS 2.67／0.80；市場結構維持 75，四項股指同步下跌，但 S&P 接近紀錄且最新 VIX 14.25。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "AI 判斷信心：84"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料完整度：94"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "子指標"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "子指標"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "權重"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "分數"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "趨勢"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "理由"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "景氣與成長"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "65"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "下降但仍偏高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Empire 一般商業狀況 20.6、訂單 17.3、出貨 11.7、就業 9.3，削弱快速衰退風險；反方是 HMI 僅 35，且區域調查不能外推全美"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "New York Fed、NAHB，2026-08-17"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "通膨與利率"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "75"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "升高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Brent +2.7%至 90.87 美元、Empire 投入價格 58.6、官方 10Y 4.72%、30Y 5.30%；反方是售價指數由 27.6 降至 22.7"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "New York Fed、U.S. Treasury、AP，2026-08-17"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "流動性"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "60"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "持平偏高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "最新 H.4.1 顯示準備金週平均減少 492.9 億美元、TGA 增加 566.3 億美元；廣義美元 8/14 由 119.1848 降至 118.9028"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Federal Reserve H.4.1，發布日 2026-08-13、資料週截至 08-12；FRED／Fed H.10，資料日 08-14"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "信用"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "40"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "持平"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "最新 HY OAS 2.67、IG OAS 0.80，沒有信用壓力擴散；8/17 值正常延遲"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "ICE BofA／FRED，資料日 2026-08-14、更新日 08-17"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "市場結構"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "75"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "持平偏高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "S&P、Dow、Nasdaq、Russell 分別跌 0.5%、0.5%、0.3%、0.4%；但 S&P 接近上週紀錄，最新 VIX 14.25"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "AP，2026-08-17；CBOE／FRED，資料日 2026-08-14"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "基準分計算："
+            },
+            {
+              "type": "code",
+              "text": "(65 + 75 + 60 + 40 + 75) ÷ 5 = 63"
+            },
+            {
+              "type": "text",
+              "text": "。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "事件調整"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "調整事件：無；事件調整為 0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "受影響子指標：無額外調整；Empire 活動與 HMI 已納入景氣成長，Empire 價格、Brent 與 Treasury 已納入通膨利率，H.4.1 與美元已納入流動性，股市與 VIX 已納入市場結構"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未反映於基準數據的理由：沒有同時符合重大、已發生、跨市場、可驗證且未被五項子指標捕捉的事件；能源航運缺單一官方即時流量，不另加分"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：供應限制與油價 → 通膨及長債 → 估值與融資成本；高利率與低買家流量 → 住宅活動與相關消費"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "支持證據：Empire 交貨時間 20.6、供應 -13.4、投入價格 58.6；Brent 90.87；10Y 4.72%；四項主要股指同步下跌；HMI 35"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：Empire 活動、訂單與就業正成長；售價指數下降；HMI 小升；S&P 接近紀錄；信用與 VIX 低"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：只有出現未被子指標捕捉、由原始資料及市場資料共同確認的重大供應、信用或政策衝擊才啟用事件調整；否則下一版直接重估子指標"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "總分計算："
+            },
+            {
+              "type": "code",
+              "text": "63 + 0 = 63"
+            },
+            {
+              "type": "text",
+              "text": "。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "證據與限制"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "支持證據：New York Fed 顯示供應可得性惡化、交貨拉長與投入價格加速；Brent、官方長債與主要股指同向反映通膨折現壓力；NAHB 顯示建商信心仍遠低於 50、優惠使用普遍"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：Empire 活動、訂單、出貨與就業仍擴張；售價增幅放緩；HMI 月增且降價比例下降；S&P 接近紀錄；HY／IG OAS 與 VIX 低；廣義美元小幅下降"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：其他區域調查、ISM、PPI／PCE、Brent 與 EIA、Treasury 曲線、住宅開工與許可、信用利差、VIX、下一份 H.4.1"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "待觀察數據：8/18 Business Leaders Survey、進出口、住宅開工、工業生產與待售屋；8/20 初領失業金、Philadelphia Fed、H.4.1；8/17 信用與 VIX 補值"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：8/17 HY／IG OAS 與 VIX、8/15 後廣義美元、SCE Labor Market 新摘要、能源即時航運流量尚未在截止時間前取得；資料完整度 94、信心 84，不得視為精準預測"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "歷史限制：影子序號已到第 14 個交易日，工作區只有 11 個實際日期的風險版本，缺少第 5–7 日（對應 2026-08-05 至 08-07）當日紀錄；不以事後資料補造，20 日趨勢與首輪復盤只能有限評估"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "事後績效（後續追加）"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "評估日期：後續觀察窗結束時另行追加"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "後續市場表現：以 1–3 個交易日、1–4 週與 1–2 季觀察窗追加，不預寫結果"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "判斷評估：後續評估方向、時效、誤報或漏報"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "方法學習：只追加事後結果；如需改方法，建立新版本且不回寫本紀錄"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "來源"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "link",
+                "text": "NYSE｜Holidays & Trading Hours｜2026 日曆與核心交易時段；2026-08-18 07:10 查核",
+                "href": "https://www.nyse.com/trade/hours-calendars"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve Bank of New York｜Empire State Manufacturing Survey, August 2026｜2026-08-17",
+                "href": "https://www.newyorkfed.org/survey/empire/empiresurvey_overview.html"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Treasury｜Daily Treasury Par Yield Curve Rates｜資料日 2026-08-17",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "National Association of Home Builders｜Housing Market Index｜資料期 2026 年 8 月、2026-08-17",
+                "href": "https://www.nahb.org/News-and-Economics/Housing-Economics/Indices/Housing-Market-Index"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜H.4.1 Factors Affecting Reserve Balances｜發布日 2026-08-13、資料週截至 2026-08-12",
+                "href": "https://www.federalreserve.gov/releases/h41/current/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜HY OAS｜資料日 2026-08-14、更新日 2026-08-17",
+                "href": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜IG OAS｜資料日 2026-08-14、更新日 2026-08-17",
+                "href": "https://fred.stlouisfed.org/series/BAMLC0A0CM"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／CBOE｜VIX｜資料日 2026-08-14、更新日 2026-08-17",
+                "href": "https://fred.stlouisfed.org/series/VIXCLS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／Federal Reserve｜Nominal Broad U.S. Dollar Index｜資料日 2026-08-14、更新日 2026-08-17",
+                "href": "https://fred.stlouisfed.org/series/DTWEXBGS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜US stocks edge further from their record after oil prices rise｜2026-08-17",
+                "href": "https://apnews.com/article/stocks-markets-futures-rates-oil-japan-bf398d5a01f611921c0b48a8bfc884d9"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜How major US stock indexes fared Monday 8/17/2026｜2026-08-17",
+                "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-b20808a2f37a7c505013c9b301c8ebe0"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：是否接受 63 分總分、63 分基準、0 事件調整、資料完整度 94、AI 信心 84、第 14 日影子紀錄與 11 份實際日期版本，供內部研究及私人 Dashboard 呈現。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：本次不授權公開發布，不連動 Beta、持股、再平衡、買賣、個人化投資建議或投資操作，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/market-risk/2026-08-18-v01.md",
+      "asOf": "2026-08-18 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-18 07:10（Asia/Taipei，UTC+8）",
+      "dependencies": []
+    },
     {
       "id": "records/market-risk/2026-08-17-v01.md",
       "date": "2026-08-17",
