@@ -1,14 +1,506 @@
 {
-  "generatedAt": "2026-08-17T23:14:43.634Z",
-  "date": "2026-08-18",
+  "generatedAt": "2026-08-18T23:11:35.366Z",
+  "date": "2026-08-19",
   "expectation": {
-    "dashboardDate": "2026-08-18",
-    "expectedReportDate": "2026-08-17",
-    "coveredSessionDate": "2026-08-14",
+    "dashboardDate": "2026-08-19",
+    "expectedReportDate": "2026-08-18",
+    "coveredSessionDate": "2026-08-17",
     "phase": "before_cutoff",
     "reason": "尚未到 07:30 交付門檻，沿用前一個應有報告日。"
   },
   "approvals": [
+    {
+      "id": "records/market-risk/2026-08-19-v01.md",
+      "title": "市場風險報告｜2026-08-19-v01",
+      "type": "市場風險報告",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "市場風險報告｜2026-08-19-v01",
+      "fullContent": null,
+      "decision": "是否接受 64 分總分、64 分基準、0 事件調整、資料完整度 95、AI 信心 86、第 15 日影子紀錄與 12 份實際日期版本，供內部研究及私人 Dashboard 呈現。",
+      "source": "records/market-risk/2026-08-19-v01.md",
+      "asOf": "2026-08-19 07:10（Asia/Taipei，UTC+8）",
+      "createdAt": null,
+      "recordDate": "2026-08-19",
+      "version": 1,
+      "artifactHash": "sha256:d8e790f88f43d11549f8f3cedf8747c62c11c59f71f4176728bd739fa1316792",
+      "updatedAt": "2026-08-19 07:10（Asia/Taipei，UTC+8）",
+      "dependencies": []
+    },
+    {
+      "id": "records/daily-briefs/2026-08-19-v01.md",
+      "title": "住宅活動同步轉弱但企業設備仍成長，AI 股估值壓力把風險推向保留區上緣",
+      "type": "晨報",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "Census／HUD 顯示 7 月住宅開工月減 12.4%、年減 13.5%，完工月減 9.1%、年減 16.8%；NAR 待售屋簽約月減 2.3%、年減 2.2%，住宅活動的下行證據擴大。 住宅並非單向惡化：建築許可月增 5.0%、年增 3.1%，單戶許可月增 2.5%；開工的單月變化仍可能波動，需等待後續月份確認。 New York Fed 8 月服務業活動指數由 8.7 降至 0.5，未來活動由 23.2 降至 9.3；投入價格升至 70.1、供應可得性降至 -14.3，形成「成長放慢但成本仍高」的組合。 Federal Reserve 顯示 7 月工業生產與製造業產出均月增 0.2%；企業設備增 0.8%、資訊處理增 1.5%，但消費品減 0.4%、汽車及零件減 2.1%，總量成長掩蓋內部分化。 S&P 500、Nasdaq 與 Russell 2000 分別下跌 0.7%、1.3%與 1.3%，AI 權重股領跌；官方 10 年與 30 年殖利率小幅降至 4.71%與 5.28%，Brent 仍在 91.02 美元。1–4 週影子風險升至 64／100、落在中性與偏高之間的保留區。",
+      "fullContent": null,
+      "decision": "是否接受五則事件排序、64 分風險框架、「住宅轉弱但企業設備仍成長」主標題與五分鐘篇幅，供內部研究及私人 Dashboard 使用。",
+      "source": "records/daily-briefs/2026-08-19-v01.md",
+      "asOf": "2026-08-19 07:10（Asia/Taipei，UTC+8）",
+      "createdAt": null,
+      "recordDate": "2026-08-19",
+      "version": 1,
+      "artifactHash": "sha256:e9dd9867edc65d1b5ef68135de00bc74b513ed8fd081580063e3508352dbbd42",
+      "updatedAt": "2026-08-19",
+      "dependencies": []
+    },
+    {
+      "id": "records/content/threads/2026-08-19-ai-demand-or-valuation-buffer-v01.md",
+      "title": "Threads 草稿｜AI 股再跌，市場在交易需求消失，還是估值容錯縮小？",
+      "type": "Threads",
+      "owner": "社群經營員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "工業生產：+0.2% 製造業產出：+0.2% 企業設備：+0.8% 資訊處理設備：+1.5% 10 年期：4.71% 30 年期：5.28% 雲端與 AI 收入 資本支出與自由現金流 AI 商業化與 ROI 證據 長債、信用利差與市場廣度",
+      "fullContent": {
+        "format": "structured-markdown",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "日期：2026-08-19"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "狀態：待核准"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "來源研究："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-19-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-19-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報版本：v01"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報雜湊："
+                },
+                {
+                  "type": "code",
+                  "text": "sha256:e9dd9867edc65d1b5ef68135de00bc74b513ed8fd081580063e3508352dbbd42"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "建議時機：現在；發布前須重新確認 AI 公司財測、Treasury 曲線與本人觀點是否有重大更新"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "主版本"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Nasdaq 昨天下跌 1.3%。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Micron 跌 7.0%、Nvidia 跌 2.3%、Broadcom 跌 3.2%。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "看到 AI 權重股一起回落，第一個問題通常是："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "AI 需求是不是開始崩了？"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "但我會先把「股價下跌」和「基本面已經轉弱」分開。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "因為同一天公布的 7 月工業生產，還沒有支持需求全面崩壞："
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "工業生產：+0.2%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "製造業產出：+0.2%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "企業設備：+0.8%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "資訊處理設備：+1.5%"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "至少在這份總體資料裡，企業設備和資訊處理仍在成長。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "但這不代表 AI 股沒有風險。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "市場可能正在重新計算另一件事："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "不是需求立刻消失，而是高資金成本下，估值的容錯變小。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "8/18 美國官方殖利率："
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "10 年期：4.71%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "30 年期：5.28%"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Brent 也還在每桶 91.02 美元。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "當折現率維持高位，市場會更嚴格追問："
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "start": 1,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "AI 收入成長能不能跟上資本支出？"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "商業化速度與 ROI 有沒有改善？"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "高估值是否已經把太多好消息算進去？"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "所以我不會把一天跌幅直接翻譯成「AI 基本面崩壞」。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "但我也不會只用「長期趨勢沒變」忽略估值風險。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "接下來真正要看的，不是一天紅綠，而是："
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "雲端與 AI 收入"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "資本支出與自由現金流"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "AI 商業化與 ROI 證據"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "長債、信用利差與市場廣度"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "價格告訴我們市場在提高懷疑。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "財報和現金流，才會告訴我們這次懷疑有沒有證據。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "備選開頭"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "start": 1,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "AI 股一起跌，不等於 AI 需求已經崩；但它可能代表市場不再願意給高估值那麼多犯錯空間。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Nasdaq 跌 1.3%那天，企業設備和資訊處理產出仍在成長。股價與基本面為什麼會走出兩個方向？"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "查核與語氣"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "事實與來源：S&P 500 -0.7%、Nasdaq -1.3%、Russell 2000 -1.3%，Micron -7.0%、Nvidia -2.3%、Broadcom -3.2%，來源為 Associated Press、2026-08-18；10Y 4.71%、30Y 5.28%，來源為 U.S. Treasury、資料日 2026-08-18；工業與製造業均 +0.2%、企業設備 +0.8%、資訊處理 +1.5%，來源為 Federal Reserve G.17、發布日 2026-08-18；Brent 91.02 美元，來源為 Associated Press、2026-08-18。完整連結見觸發晨報來源章節。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "反方或限制：工業生產的企業設備與資訊處理是廣義總經序列，不等於個別 AI 公司的需求、收入或 ROI；單日股價不能證明估值調整的唯一原因，仍需公司財報、現金流與資本支出驗證。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "待使用者補充：請確認是否採用第一人稱立場「我不把一天跌幅直接視為 AI 基本面崩壞，也不忽略高估值風險」；未代寫任何個人經歷、持股、交易或績效。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "App CTA：不加入；本篇核心是把價格、總經與基本面證據分層，沒有自然且必要的產品承接。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "核准"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "最終文字與發布由使用者決定：尚未核准；本草稿不得自動發布，也不授權留言、私訊或任何投資行動。"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "decision": "等待使用者決定",
+      "source": "records/content/threads/2026-08-19-ai-demand-or-valuation-buffer-v01.md",
+      "asOf": "2026-08-19",
+      "createdAt": null,
+      "recordDate": "2026-08-19",
+      "version": 1,
+      "artifactHash": "sha256:36201c5b3b5e4bbdbdfe2b8fab603363714bfb88f6f952f404696f1d65f32cfe",
+      "updatedAt": "2026-08-19",
+      "dependencies": [
+        "records/daily-briefs/2026-08-19-v01.md"
+      ]
+    },
     {
       "id": "records/market-risk/2026-08-18-v01.md",
       "title": "市場風險報告｜2026-08-18-v01",
@@ -46,7 +538,7 @@
       "recordDate": "2026-08-18",
       "version": 1,
       "artifactHash": "sha256:5a506244f1a134bfd2e8769b7427c497042d90f62c394a88e59089d0c81029c9",
-      "updatedAt": "2026-08-18",
+      "updatedAt": "2026-08-18T07:15:24+08:00",
       "dependencies": []
     },
     {
@@ -4429,15 +4921,15 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
-      "currentTask": "市場風險報告｜2026-08-18-v01",
+      "currentTask": "市場風險報告｜2026-08-19-v01",
       "progress": "等待人工核准",
       "dependencies": [],
       "handoff": "將研究與風險成果交總司令驗收；將已驗證素材交社群經營員；將市場風險欄位與限制交 App 設計員。所有對外使用均由使用者核准。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/market-risk/2026-08-18-v01.md",
-      "asOf": "2026-08-18 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-18 07:10（Asia/Taipei，UTC+8）"
+      "source": "records/market-risk/2026-08-19-v01.md",
+      "asOf": "2026-08-19 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-19 07:10（Asia/Taipei，UTC+8）"
     },
     {
       "id": "social-operator",
@@ -4446,20 +4938,64 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
-      "currentTask": "Threads 草稿｜製造業創四年高，為什麼市場風險不一定下降？",
+      "currentTask": "Threads 草稿｜AI 股再跌，市場在交易需求消失，還是估值容錯縮小？",
       "progress": "等待人工核准",
       "dependencies": [
-        "records/daily-briefs/2026-08-18-v01.md"
+        "records/daily-briefs/2026-08-19-v01.md"
       ],
       "handoff": "研究疑問退回總經研究員；成果與實驗交總司令驗收；最終語氣、個人觀點、發布與互動交使用者。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/content/threads/2026-08-18-manufacturing-strong-risk-not-lower-v01.md",
-      "asOf": "2026-08-18",
-      "updatedAt": "2026-08-18"
+      "source": "records/content/threads/2026-08-19-ai-demand-or-valuation-buffer-v01.md",
+      "asOf": "2026-08-19",
+      "updatedAt": "2026-08-19"
     }
   ],
   "tasks": [
+    {
+      "id": "records/market-risk/2026-08-19-v01.md",
+      "title": "市場風險報告｜2026-08-19-v01",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/market-risk/2026-08-19-v01.md",
+      "asOf": "2026-08-19 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-19 07:10（Asia/Taipei，UTC+8）"
+    },
+    {
+      "id": "records/daily-briefs/2026-08-19-v01.md",
+      "title": "住宅活動同步轉弱但企業設備仍成長，AI 股估值壓力把風險推向保留區上緣",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/daily-briefs/2026-08-19-v01.md",
+      "asOf": "2026-08-19 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-19"
+    },
+    {
+      "id": "records/content/threads/2026-08-19-ai-demand-or-valuation-buffer-v01.md",
+      "title": "Threads 草稿｜AI 股再跌，市場在交易需求消失，還是估值容錯縮小？",
+      "owner": "社群經營員",
+      "ownerId": "social-operator",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [
+        "records/daily-briefs/2026-08-19-v01.md"
+      ],
+      "source": "records/content/threads/2026-08-19-ai-demand-or-valuation-buffer-v01.md",
+      "asOf": "2026-08-19",
+      "updatedAt": "2026-08-19"
+    },
     {
       "id": "records/market-risk/2026-08-18-v01.md",
       "title": "市場風險報告｜2026-08-18-v01",
@@ -4486,7 +5022,7 @@
       "dependencies": [],
       "source": "records/daily-briefs/2026-08-18-v01.md",
       "asOf": "2026-08-18 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-18"
+      "updatedAt": "2026-08-18T07:15:24+08:00"
     },
     {
       "id": "records/content/threads/2026-08-18-manufacturing-strong-risk-not-lower-v01.md",
@@ -4901,6 +5437,1615 @@
   ],
   "briefArchive": [
     {
+      "id": "records/daily-briefs/2026-08-19-v01.md",
+      "date": "2026-08-19",
+      "version": 1,
+      "versionLabel": "v01",
+      "isLatest": true,
+      "title": "住宅活動同步轉弱但企業設備仍成長，AI 股估值壓力把風險推向保留區上緣",
+      "summary": "Census／HUD 顯示 7 月住宅開工月減 12.4%、年減 13.5%，完工月減 9.1%、年減 16.8%；NAR 待售屋簽約月減 2.3%、年減 2.2%，住宅活動的下行證據擴大。 住宅並非單向惡化：建築許可月增 5.0%、年增 3.1%，單戶許可月增 2.5%；開工的單月變化仍可能波動，需等待後續月份確認。 New York Fed 8 月服務業活動指數由 8.7 降至 0.5，未來活動由 23.2 降至 9.3；投入價格升至 70.1、供應可得性降至 -14.3，形成「成長放慢但成本仍高」的組合。 Federal Reserve 顯示 7 月工業生產與製造業產出均月增 0.2%；企業設備增 0.8%、資訊處理增 1.5%，但消費品減 0.4%、汽車及零件減 2.1%，總量成長掩蓋內部分化。 S&P 500、Nasdaq 與 Russell 2000 分別下跌 0.7%、1.3%與 1.3%，AI 權重股領跌；官方 10 年與 30 年殖利率小幅降至 4.71%與 5.28%，Brent 仍在 91.02 美元。1–4 週影子風險升至 64／100、落在中性與偏高之間的保留區。",
+      "freshness": "最新",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:e9dd9867edc65d1b5ef68135de00bc74b513ed8fd081580063e3508352dbbd42",
+      "coveredSessionDate": "2026-08-18",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-08-19 07:10（Asia/Taipei，UTC+8）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察市場：美股、美元利率、信用、波動、能源、住宅與美國總經"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察期間：2026-08-18 已完成美股交易時段；總經與市場資料使用各來源截至截止時間的最新可得值"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料完整度：95／100；8/18 信用利差與 VIX 尚未發布，廣義美元最新至 8/14，Cboe 年度成交檔最新至 8/17，H.4.1 最新發布日為 8/13、資料週截至 8/12"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "一分鐘摘要"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "Census／HUD 顯示 7 月住宅開工月減 12.4%、年減 13.5%，完工月減 9.1%、年減 16.8%；NAR 待售屋簽約月減 2.3%、年減 2.2%，住宅活動的下行證據擴大。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "住宅並非單向惡化：建築許可月增 5.0%、年增 3.1%，單戶許可月增 2.5%；開工的單月變化仍可能波動，需等待後續月份確認。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "New York Fed 8 月服務業活動指數由 8.7 降至 0.5，未來活動由 23.2 降至 9.3；投入價格升至 70.1、供應可得性降至 -14.3，形成「成長放慢但成本仍高」的組合。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Federal Reserve 顯示 7 月工業生產與製造業產出均月增 0.2%；企業設備增 0.8%、資訊處理增 1.5%，但消費品減 0.4%、汽車及零件減 2.1%，總量成長掩蓋內部分化。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "S&P 500、Nasdaq 與 Russell 2000 分別下跌 0.7%、1.3%與 1.3%，AI 權重股領跌；官方 10 年與 30 年殖利率小幅降至 4.71%與 5.28%，Brent 仍在 91.02 美元。1–4 週影子風險升至 64／100、落在中性與偏高之間的保留區。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日風險儀表"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "1–4 週風險分數：64／100"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "相較前一交易日：+1"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險狀態：中性與偏高之間的保留區間"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "即時風險：住宅開工與簽約同步下滑、AI 權重股與小型股跌幅擴大、Brent 維持 91 美元附近"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "結構性風險：住宅可負擔性、服務業投入成本與供應限制、AI 資本支出及高估值的回報驗證"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "今日主要風險來源：住宅與內需、非燃料與投入成本、AI 估值與集中度"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "五則重要事件"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "1｜住宅開工跌 12.4%，待售屋簽約也降 2.3%"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Census／HUD 顯示，7 月住宅開工降至年率 123.9 萬戶，月減 12.4%、年減 13.5%；完工降至 121.2 萬戶，月減 9.1%、年減 16.8%。NAR 同日公布，7 月待售屋簽約月減 2.3%、年減 2.2%，降至 2026 年 1 月以來低點，四大區域月比全數下滑。反方是建築許可升至 144.3 萬戶，月增 5.0%、年增 3.1%。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "開工 123.9 萬戶、月比 -12.4%、年比 -13.5%；完工 121.2 萬戶、月比 -9.1%、年比 -16.8%；許可 144.3 萬戶、月比 +5.0%、年比 +3.1%；待售屋簽約月比 -2.3%、年比 -2.2%。來源：U.S. Census Bureau／HUD、NAR，發布日 2026-08-18，資料期 2026 年 7 月。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：新屋施工與既有住宅簽約同時下降，代表高利率與可負擔性開始同時壓制供給端活動與需求端成交，可能傳導至住宅投資、耐久財、零售與地方就業；但許可回升與統計抽樣誤差阻止把一個月開工急跌直接視為確定趨勢。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面為主，D 風險變化為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫但仍待多月確認"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：高利率與高房價 → 開工及簽約下降 → 住宅投資、相關消費與就業承壓 → 企業營收與信用風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：8 月許可與開工、成屋與新屋銷售、房貸利率、建商取消率與住宅相關零售"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：總許可與單戶許可分別月增 5.0%與 2.5%；開工單月估計具波動，單戶開工月減 9.9%的信賴區間包含零"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若許可回升轉化為開工、待售簽約反彈且房貸利率下降，應降低住宅下行風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "2｜服務業活動降至 0.5，未來活動與供應同時惡化"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "New York Fed 8 月 Business Leaders Survey 顯示，服務業活動指數由 8.7 降至 0.5，商業氣候由 -24.0 降至 -25.7，未來活動由 23.2 降至 9.3，未來商業氣候由 0 降至 -16.5。投入價格升至 70.1，供應可得性降至 -14.3；調查回覆期為 8/3 至 8/10，涵蓋紐約州、北紐澤西與康乃狄克州西南部的服務業，不能直接外推全美。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "活動 0.5、前值 8.7；商業氣候 -25.7、前值 -24.0；未來活動 9.3、前值 23.2；未來商業氣候 -16.5、前值 0；投入價格 70.1、售價 27.7、供應可得性 -14.3。來源：Federal Reserve Bank of New York，發布日 2026-08-18、回覆期 2026-08-03 至 08-10。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：服務需求由擴張降至接近持平、未來信心明顯轉弱，同時投入價格與供應限制沒有同步降溫，對企業毛利形成兩面壓力；但活動仍非負值、就業指數仍為 2.4，尚不足以確認服務業衰退。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面為主，B 估值為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫但未擴散至全國"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：服務需求放慢＋投入成本偏高 → 毛利與招聘計畫承壓 → 盈餘預期與估值下修"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：ISM 服務業、新訂單與就業、其他區域 Fed 調查、服務業 CPI／PCE 與企業財測"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：活動指數仍為 0.5、就業 2.4，29% 受訪者回報改善；這是區域且多數未季調的擴散指數"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若全國服務業活動與訂單改善、投入價格下降且未來活動回升，應撤回升溫判斷"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "3｜工業生產增 0.2%，但消費品與汽車產出下滑"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Federal Reserve 7 月工業生產與製造業產出均月增 0.2%；企業設備增 0.8%、資訊處理設備增 1.5%、營建用品增 0.8%，但消費品減 0.4%、汽車及零件減 2.1%。總產能利用率升至 76.3%，仍低於 1972–2025 長期平均 3.1 個百分點。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "工業生產 +0.2%月比、+1.1%年比；製造業 +0.2%月比、+1.2%年比；企業設備 +0.8%、資訊處理 +1.5%、消費品 -0.4%、汽車及零件 -2.1%；產能利用率 76.3%。來源：Federal Reserve G.17，發布日 2026-08-18、資料期 2026 年 7 月。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：企業設備與資訊處理產出維持成長，是景氣與 AI 資本支出的反方證據；消費品與汽車走弱則顯示成長集中在企業投資而非廣泛終端需求。這種分化會提高高估值產業對後續營收與 ROI 驗證的敏感度。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面與 B 估值並重"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：潛伏"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：企業設備成長但消費品轉弱 → 總量韌性掩蓋內需分化 → 盈餘廣度與高估值產業容錯下降"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：耐久財與核心資本財訂單、零售與實質消費、半導體與雲端財測、產能利用率"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：工業生產與製造業仍成長，企業設備、資訊處理與營建用品同步上升"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若消費品與汽車產出回升、企業投資維持且盈餘廣度改善，應降低分化風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "4｜進口價格月減 0.4%，但非燃料價格與年增率仍高"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "BLS 顯示 7 月進口價格月減 0.4%，主要受燃料進口價格月減 7.2%影響；但非燃料進口價格月增 0.4%，進口資本財月增 0.9%。總進口與非燃料進口價格年增率仍為 5.9%與 4.5%；中國進口價格月增 0.8%，為 2008 年 7 月以來最大月增幅。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "總進口價格月比 -0.4%、年比 +5.9%；燃料月比 -7.2%、年比 +25.2%；非燃料月比 +0.4%、年比 +4.5%；資本財月比 +0.9%；中國進口價格月比 +0.8%、年比 +2.7%；出口價格月比 -1.3%、年比 +8.2%。來源：U.S. Bureau of Labor Statistics，發布日 2026-08-18、資料期 2026 年 7 月。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：能源基期與月度回落讓總進口價格降溫，但非燃料、資本財與中國來源價格仍上升，表示商品通膨壓力從燃料以外的渠道延續；月比與年比方向分裂，不宜只用單一總指標得出通膨已解除或全面惡化的結論。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：B 估值為主，A 基本面為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：持續但未全面加速"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：非燃料與資本財進口價格上升 → 企業成本與通膨黏性 → 利率維持較高 → 估值與毛利壓力"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：PPI、核心商品 CPI／PCE、企業進口成本與售價、美元與供應鏈調查"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：總進口價格連兩月下降，燃料進口價格大幅回落，出口價格月減 1.3%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若非燃料與資本財價格連續回落、商品通膨與企業成本同步降溫，應降低此風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "5｜Nasdaq 與 Russell 同跌 1.3%，AI 權重股估值容錯縮小"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "8/18 S&P 500 下跌 0.7%、Dow 下跌 0.2%、Nasdaq 與 Russell 2000 均下跌 1.3%；Micron、Nvidia 與 Broadcom 分別下跌 7.0%、2.3%與 3.2%。Treasury 官方曲線顯示 10 年與 30 年殖利率由 4.72%與 5.31%小幅降至 4.71%與 5.28%，不是當日殖利率再上升；AP 報導 Brent 小升 0.2%至 91.02 美元。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "S&P 500 7,691.76、-0.7%；Dow 53,343.40、-0.2%；Nasdaq 26,289.71、-1.3%；Russell 2000 3,017.89、-1.3%；Micron -7.0%、Nvidia -2.3%、Broadcom -3.2%；官方 10Y 4.71%、30Y 5.28%；Brent 91.02 美元、+0.2%。來源：U.S. Treasury 與 Associated Press，資料日／發布日 2026-08-18。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：AI 權重股與小型股同日下跌，顯示壓力不只限於單一公司；長債仍處高位、油價維持 91 美元附近，使高估值與需外部融資的企業容錯縮小。反方是 Treasury 當日殖利率實際小幅下降、最新信用與 VIX 仍低，尚未形成跨市場失序。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：B 估值為主，C 資金輪動為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫但尚未信用化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日、1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：高估值＋高資金成本 → AI 股獲利與 ROI 容錯縮小 → 權重股拖累指數 → 廣度與風險偏好承壓"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：AI 公司財測與資本支出、雲端／AI 收入及 ROI 證據、10Y／30Y、VIX、信用利差與市場廣度"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：工業生產中的企業設備與資訊處理仍增；10Y、30Y 當日各降 1 與 3 個基點；最新 VIX 15.19、HY OAS 2.70、IG OAS 0.81"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若 AI 營收與 ROI 證據改善、長債與油價回落、股市廣度修復且信用維持穩定，應降低估值風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "事實"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "數值／變化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料期間"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源與日期"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "NYSE 交易時段"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "8/18 非休市；核心交易 9:30–16:00 ET"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-18"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "NYSE，2026-08-19 07:10 查核"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "新屋施工與許可"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "開工 123.9 萬、-12.4%；許可 144.3 萬、+5.0%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026 年 7 月"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Census／HUD，2026-08-18"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "待售屋簽約"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "月比 -2.3%、年比 -2.2%，四區月比全降"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026 年 7 月"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "NAR，2026-08-18"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "服務業活動與價格"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "活動 0.5、未來活動 9.3、投入價格 70.1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026 年 8 月"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "New York Fed，2026-08-18"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "工業生產與製造業"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "均月增 0.2%；產能利用率 76.3%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026 年 7 月"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Federal Reserve G.17，2026-08-18"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "進出口價格"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "進口月比 -0.4%、年比 +5.9%；非燃料月比 +0.4%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026 年 7 月"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "BLS，2026-08-18"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "官方 Treasury 曲線"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2Y 4.19%、10Y 4.71%、30Y 5.28%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-18"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. Treasury，資料日 2026-08-18"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "美股與 Brent"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "S&P -0.7%、Nasdaq -1.3%、Russell -1.3%；Brent +0.2%至 91.02"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-18"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-18"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "最新信用與波動"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "HY OAS 2.70、IG OAS 0.81、VIX 15.19"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-17"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "ICE BofA／CBOE 經 FRED，2026-08-19 07:10 查核"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Fed 準備金與 TGA"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "準備金週平均 -492.9 億美元；TGA +566.3 億美元"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "當週截至 2026-08-12"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Federal Reserve H.4.1，發布日 2026-08-13"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論與初步判斷"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "初判是美國經濟的分化加深：住宅開工、完工與簽約同時走弱，區域服務業活動與未來展望也降溫；另一方面，工業生產、製造業、企業設備與資訊處理仍成長，阻止把弱住宅數據直接升格為全面衰退。通膨端同樣分裂：總進口與燃料價格月減，但非燃料、資本財與服務業投入價格仍高。市場以 AI 權重股與小型股同步下跌回應較低的估值容錯，而非以信用或波動失序確認系統性壓力。這是 AI 依原始資料形成的暫時推論，不是來源原話或短期漲跌預測。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "外部觀點比較"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀點摘要"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "與初判一致／分歧"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "對判斷影響"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "New York Fed，2026-08-18"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "將 8 月服務業描述為活動持平、商業氣候仍差、供應惡化且未來樂觀度顯著下降"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "支持成長降溫與成本壓力並存；區域與未季調限制阻止外推全美"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "NAR 首席經濟學家 Lawrence Yun，2026-08-18"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "將簽約下滑連結至年度高點附近的房貸利率與紀錄高房價，同時認為就業與未來供給可提供反方支撐"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致並提供反方"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "支持可負擔性壓力；就業與潛在需求阻止確認長期崩跌"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-18"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "將 AI 股下跌放在高估值、高殖利率與油價背景下，並指出當日 Treasury 殖利率大致持平至小降"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "補充市場定價與公司股價；利率核心數值仍以 Treasury 原始資料為準"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "游庭皓、財經 M 平方"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "本次未導入"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "無法比較"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "不影響以公開原始來源形成的判斷"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "最終判斷與反方證據"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終判斷：未來 1–4 週風險由 63 升至 64／100，落在中性與偏高之間的保留區，信心 86／100。住宅與服務業壓力擴大、AI 與小型股下跌，但工業與企業設備仍增、長債小幅回落且信用與 VIX 低，因此不升級為偏高風險。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：建築許可與單戶許可上升；工業生產、製造業、企業設備與資訊處理均成長；總進口與燃料價格月減；10Y／30Y 當日小幅下降；最新信用利差與 VIX 維持低位。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若住宅許可轉為開工、簽約與服務活動回升、AI 盈餘與 ROI 證據改善，應下調；若住宅、服務與消費品續弱、非燃料成本保持高位且信用或 VIX惡化，則升級為偏高風險。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日市場一句話"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "今天市場真正交易的不是一份住宅弱數據或一天 AI 股下跌，而是高利率與高成本環境下，成長分化正在壓縮企業與估值的容錯空間。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "反方證據與尚未確認資料"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "反方證據：建築許可月增 5.0%；工業與製造業產出均增 0.2%，企業設備增 0.8%、資訊處理增 1.5%；總進口價格月減 0.4%；官方長債小幅下降；最新信用與 VIX 低。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：8/18 HY／IG OAS 與 VIX、8/15 後廣義美元、8/18 Cboe 全市場成交量、下一份 H.4.1 與能源即時航運流量尚未在截止時間前取得。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "尚未確認與待觀察"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "候選事件池共十一項：①住宅開工與完工、②建築許可、③待售屋簽約、④Business Leaders 服務活動、⑤服務業價格與供應、⑥工業生產、⑦企業設備與消費品分化、⑧進出口價格、⑨Treasury 曲線、⑩AI／主要股指與 Brent、⑪信用／VIX／流動性。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "入選理由：住宅施工、許可與簽約合併為同一住宅鏈；服務活動與成本合併為區域服務鏈；工業生產保留企業投資與消費分化；進口價格代表商品成本；AI 與主要股指、利率、油價合併為估值鏈。沒有單一因果鏈超過兩則。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "未入選理由：信用、VIX、流動性與美元沒有 8/18 新值，保留為反方與結構性背景；Cboe 年度成交檔尚未含 8/18，不以二手估值補造；NAR 區域細項保留於住宅事件，不另拆一則。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "下一確認點：8/19 New York Fed Outlook-at-Risk；8/20 初領失業金、Philadelphia Fed、Reserve Demand Elasticity 與 H.4.1；其後是新屋銷售、耐久財、PCE 與企業財測。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "來源"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "link",
+                "text": "NYSE｜Holidays & Trading Hours｜2026 日曆與核心交易時段；2026-08-19 07:10 查核",
+                "href": "https://www.nyse.com/trade/hours-calendars"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Census Bureau／HUD｜Monthly New Residential Construction, July 2026｜發布日 2026-08-18",
+                "href": "https://www.census.gov/construction/nrc/pdf/newresconst.pdf"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "NAR｜Pending Home Sales Report Shows 2.3% Decrease in July｜發布日 2026-08-18",
+                "href": "https://www.nar.realtor/newsroom/NAR-Pending-Home-Sales-Report-Shows-2-3-Decrease-in-July"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve Bank of New York｜Business Leaders Survey, August 2026｜發布日 2026-08-18、回覆期 08-03 至 08-10",
+                "href": "https://www.newyorkfed.org/survey/business_leaders/bls_overview"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜Industrial Production and Capacity Utilization, July 2026｜發布日 2026-08-18",
+                "href": "https://www.federalreserve.gov/releases/g17/current/g17.pdf"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Bureau of Labor Statistics｜Import and Export Price Indexes, July 2026｜發布日 2026-08-18",
+                "href": "https://www.bls.gov/news.release/ximpim.nr0.htm"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Treasury｜Daily Treasury Par Yield Curve Rates｜資料日 2026-08-18",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Cboe｜U.S. Equities Historical Market Volume｜2026 年檔案截至 2026-08-17；2026-08-19 07:10 查核",
+                "href": "https://www.cboe.com/markets/us/equities/market-statistics/historical-market-volume"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜HY OAS｜資料日 2026-08-17；2026-08-19 07:10 查核",
+                "href": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜IG OAS｜資料日 2026-08-17；2026-08-19 07:10 查核",
+                "href": "https://fred.stlouisfed.org/series/BAMLC0A0CM"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／CBOE｜VIX｜資料日 2026-08-17；2026-08-19 07:10 查核",
+                "href": "https://fred.stlouisfed.org/series/VIXCLS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜H.4.1 Factors Affecting Reserve Balances｜發布日 2026-08-13、資料週截至 2026-08-12",
+                "href": "https://www.federalreserve.gov/releases/h41/current/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜Sinking AI stocks pull Wall Street further from its record｜2026-08-18",
+                "href": "https://apnews.com/article/stock-markets-oil-war-iran-trump-a805333e767251279e68e0686b28a8c9"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜How major US stock indexes fared Tuesday 8/18/2026｜2026-08-18",
+                "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-63300d6f51d4d27ce881cc6c11719171"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "人工核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：是否接受五則事件排序、64 分風險框架、「住宅轉弱但企業設備仍成長」主標題與五分鐘篇幅，供內部研究及私人 Dashboard 使用。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：本版本不授權公開發布、對外引用、個人化投資建議、持股調整、再平衡、買賣或任何投資行動，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/daily-briefs/2026-08-19-v01.md",
+      "asOf": "2026-08-19 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-19",
+      "dependencies": []
+    },
+    {
       "id": "records/daily-briefs/2026-08-18-v01.md",
       "date": "2026-08-18",
       "version": 1,
@@ -4908,7 +7053,7 @@
       "isLatest": true,
       "title": "製造業升溫未能抵銷能源與長債壓力，市場風險結構轉向通膨端",
       "summary": "紐約聯準銀行 8 月 Empire State 製造業一般商業狀況指數升至 20.6，創逾四年高，新訂單、出貨與就業均維持正值；這降低部分景氣下行風險。 同份調查的交貨時間升至 20.6、供應可得性降至 -13.4、投入價格升至 58.6；需求改善同時伴隨供應與成本壓力，並非單向利多。 8/17 Brent 上漲 2.7%至每桶 90.87 美元；Treasury 官方 10 年期殖利率由 4.68%升至 4.72%，30 年期由 5.25%升至 5.30%。 S&P 500、Dow、Nasdaq 與 Russell 2000 分別下跌 0.5%、0.5%、0.3%與 0.4%，但 S&P 仍接近 8/13 的歷史高點，最新信用與 VIX 也未顯示失序。 NAHB 8 月建商信心僅由 34 升至 35，低於 50；35% 建商降價、63% 使用銷售優惠。1–4 週影子風險維持 63／100，但內部結構從成長轉弱移向通膨、長債與估值壓力。",
-      "freshness": "最新",
+      "freshness": "歷史版本",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
       "artifactHash": "sha256:5a506244f1a134bfd2e8769b7427c497042d90f62c394a88e59089d0c81029c9",
@@ -6479,7 +8624,7 @@
       ],
       "source": "records/daily-briefs/2026-08-18-v01.md",
       "asOf": "2026-08-18 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-18",
+      "updatedAt": "2026-08-18T07:15:24+08:00",
       "dependencies": []
     },
     {
@@ -23364,6 +25509,451 @@
   ],
   "threadsDocuments": [
     {
+      "id": "records/content/threads/2026-08-19-ai-demand-or-valuation-buffer-v01.md",
+      "artifactKey": "cmVjb3Jkcy9jb250ZW50L3RocmVhZHMvMjAyNi0wOC0xOS1haS1kZW1hbmQtb3ItdmFsdWF0aW9uLWJ1ZmZlci12MDEubWQAMQBzaGEyNTY6MzYyMDFjNWIzYjVlNGJiZGJkZmUyYjhmYWI2MDMzNjM3MTRiZmI4OGY2Zjk1MmY0MDQ2OTZmMWQ2NWYzMmNmZQ",
+      "date": "2026-08-19",
+      "version": 1,
+      "versionLabel": "v01",
+      "title": "Threads 草稿｜AI 股再跌，市場在交易需求消失，還是估值容錯縮小？",
+      "summary": "工業生產：+0.2% 製造業產出：+0.2% 企業設備：+0.8% 資訊處理設備：+1.5% 10 年期：4.71% 30 年期：5.28% 雲端與 AI 收入 資本支出與自由現金流 AI 商業化與 ROI 證據 長債、信用利差與市場廣度",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:36201c5b3b5e4bbdbdfe2b8fab603363714bfb88f6f952f404696f1d65f32cfe",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "日期：2026-08-19"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源研究："
+              },
+              {
+                "type": "code",
+                "text": "records/daily-briefs/2026-08-19-v01.md"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報："
+              },
+              {
+                "type": "code",
+                "text": "records/daily-briefs/2026-08-19-v01.md"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報雜湊："
+              },
+              {
+                "type": "code",
+                "text": "sha256:e9dd9867edc65d1b5ef68135de00bc74b513ed8fd081580063e3508352dbbd42"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "建議時機：現在；發布前須重新確認 AI 公司財測、Treasury 曲線與本人觀點是否有重大更新"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "主版本"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Nasdaq 昨天下跌 1.3%。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Micron 跌 7.0%、Nvidia 跌 2.3%、Broadcom 跌 3.2%。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "看到 AI 權重股一起回落，第一個問題通常是："
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 需求是不是開始崩了？"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "但我會先把「股價下跌」和「基本面已經轉弱」分開。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "因為同一天公布的 7 月工業生產，還沒有支持需求全面崩壞："
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "工業生產：+0.2%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "製造業產出：+0.2%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "企業設備：+0.8%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資訊處理設備：+1.5%"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "至少在這份總體資料裡，企業設備和資訊處理仍在成長。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "但這不代表 AI 股沒有風險。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "市場可能正在重新計算另一件事："
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "不是需求立刻消失，而是高資金成本下，估值的容錯變小。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "8/18 美國官方殖利率："
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "10 年期：4.71%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "30 年期：5.28%"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Brent 也還在每桶 91.02 美元。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "當折現率維持高位，市場會更嚴格追問："
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 1,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "AI 收入成長能不能跟上資本支出？"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "商業化速度與 ROI 有沒有改善？"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "高估值是否已經把太多好消息算進去？"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "所以我不會把一天跌幅直接翻譯成「AI 基本面崩壞」。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "但我也不會只用「長期趨勢沒變」忽略估值風險。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來真正要看的，不是一天紅綠，而是："
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "雲端與 AI 收入"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資本支出與自由現金流"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "AI 商業化與 ROI 證據"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "長債、信用利差與市場廣度"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "價格告訴我們市場在提高懷疑。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "財報和現金流，才會告訴我們這次懷疑有沒有證據。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "備選開頭"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 1,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "AI 股一起跌，不等於 AI 需求已經崩；但它可能代表市場不再願意給高估值那麼多犯錯空間。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Nasdaq 跌 1.3%那天，企業設備和資訊處理產出仍在成長。股價與基本面為什麼會走出兩個方向？"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "查核與語氣"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "事實與來源：S&P 500 -0.7%、Nasdaq -1.3%、Russell 2000 -1.3%，Micron -7.0%、Nvidia -2.3%、Broadcom -3.2%，來源為 Associated Press、2026-08-18；10Y 4.71%、30Y 5.28%，來源為 U.S. Treasury、資料日 2026-08-18；工業與製造業均 +0.2%、企業設備 +0.8%、資訊處理 +1.5%，來源為 Federal Reserve G.17、發布日 2026-08-18；Brent 91.02 美元，來源為 Associated Press、2026-08-18。完整連結見觸發晨報來源章節。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方或限制：工業生產的企業設備與資訊處理是廣義總經序列，不等於個別 AI 公司的需求、收入或 ROI；單日股價不能證明估值調整的唯一原因，仍需公司財報、現金流與資本支出驗證。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "待使用者補充：請確認是否採用第一人稱立場「我不把一天跌幅直接視為 AI 基本面崩壞，也不忽略高估值風險」；未代寫任何個人經歷、持股、交易或績效。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "App CTA：不加入；本篇核心是把價格、總經與基本面證據分層，沒有自然且必要的產品承接。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終文字與發布由使用者決定：尚未核准；本草稿不得自動發布，也不授權留言、私訊或任何投資行動。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/content/threads/2026-08-19-ai-demand-or-valuation-buffer-v01.md",
+      "asOf": "2026-08-19",
+      "updatedAt": "2026-08-19",
+      "dependencies": [
+        "records/daily-briefs/2026-08-19-v01.md"
+      ]
+    },
+    {
       "id": "records/content/threads/2026-08-18-manufacturing-strong-risk-not-lower-v01.md",
       "artifactKey": "cmVjb3Jkcy9jb250ZW50L3RocmVhZHMvMjAyNi0wOC0xOC1tYW51ZmFjdHVyaW5nLXN0cm9uZy1yaXNrLW5vdC1sb3dlci12MDEubWQAMQBzaGEyNTY6MzQ4Yzg3YzE1MGUyZDY2NmVmODAwY2ExYTMyZWMyNjcwZWI1ZjBhNzY1MWI3ZGJlZjU0MjMwOTk5YmE5ZWFmOA",
       "date": "2026-08-18",
@@ -27276,45 +29866,45 @@
   "approvedThreadsArchive": [],
   "threadsArchiveIssues": [],
   "brief": {
-    "title": "製造業升溫未能抵銷能源與長債壓力，市場風險結構轉向通膨端",
-    "headline": "製造業升溫未能抵銷能源與長債壓力，市場風險結構轉向通膨端",
-    "summary": "紐約聯準銀行 8 月 Empire State 製造業一般商業狀況指數升至 20.6，創逾四年高，新訂單、出貨與就業均維持正值；這降低部分景氣下行風險。 同份調查的交貨時間升至 20.6、供應可得性降至 -13.4、投入價格升至 58.6；需求改善同時伴隨供應與成本壓力，並非單向利多。 8/17 Brent 上漲 2.7%至每桶 90.87 美元；Treasury 官方 10 年期殖利率由 4.68%升至 4.72%，30 年期由 5.25%升至 5.30%。 S&P 500、Dow、Nasdaq 與 Russell 2000 分別下跌 0.5%、0.5%、0.3%與 0.4%，但 S&P 仍接近 8/13 的歷史高點，最新信用與 VIX 也未顯示失序。 NAHB 8 月建商信心僅由 34 升至 35，低於 50；35% 建商降價、63% 使用銷售優惠。1–4 週影子風險維持 63／100，但內部結構從成長轉弱移向通膨、長債與估值壓力。",
+    "title": "住宅活動同步轉弱但企業設備仍成長，AI 股估值壓力把風險推向保留區上緣",
+    "headline": "住宅活動同步轉弱但企業設備仍成長，AI 股估值壓力把風險推向保留區上緣",
+    "summary": "Census／HUD 顯示 7 月住宅開工月減 12.4%、年減 13.5%，完工月減 9.1%、年減 16.8%；NAR 待售屋簽約月減 2.3%、年減 2.2%，住宅活動的下行證據擴大。 住宅並非單向惡化：建築許可月增 5.0%、年增 3.1%，單戶許可月增 2.5%；開工的單月變化仍可能波動，需等待後續月份確認。 New York Fed 8 月服務業活動指數由 8.7 降至 0.5，未來活動由 23.2 降至 9.3；投入價格升至 70.1、供應可得性降至 -14.3，形成「成長放慢但成本仍高」的組合。 Federal Reserve 顯示 7 月工業生產與製造業產出均月增 0.2%；企業設備增 0.8%、資訊處理增 1.5%，但消費品減 0.4%、汽車及零件減 2.1%，總量成長掩蓋內部分化。 S&P 500、Nasdaq 與 Russell 2000 分別下跌 0.7%、1.3%與 1.3%，AI 權重股領跌；官方 10 年與 30 年殖利率小幅降至 4.71%與 5.28%，Brent 仍在 91.02 美元。1–4 週影子風險升至 64／100、落在中性與偏高之間的保留區。",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准",
     "version": 1,
-    "artifactHash": "sha256:5a506244f1a134bfd2e8769b7427c497042d90f62c394a88e59089d0c81029c9",
-    "coveredSessionDate": "2026-08-17",
-    "asOf": "2026-08-18 07:10（Asia/Taipei，UTC+8）",
-    "source": "records/daily-briefs/2026-08-18-v01.md",
-    "updatedAt": "2026-08-18",
+    "artifactHash": "sha256:e9dd9867edc65d1b5ef68135de00bc74b513ed8fd081580063e3508352dbbd42",
+    "coveredSessionDate": "2026-08-18",
+    "asOf": "2026-08-19 07:10（Asia/Taipei，UTC+8）",
+    "source": "records/daily-briefs/2026-08-19-v01.md",
+    "updatedAt": "2026-08-19",
     "dependencies": []
   },
   "marketRisk": {
-    "label": "市場風險報告｜2026-08-18-v01",
+    "label": "市場風險報告｜2026-08-19-v01",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准",
     "version": 1,
-    "artifactHash": "sha256:6fb7b98a174c16cc6c039949e24a68f313b561ac6d5a5a3c427b996fb921b8ec",
-    "coveredSessionDate": "2026-08-17",
-    "asOf": "2026-08-18 07:10（Asia/Taipei，UTC+8）",
-    "source": "records/market-risk/2026-08-18-v01.md",
-    "updatedAt": "2026-08-18 07:10（Asia/Taipei，UTC+8）",
+    "artifactHash": "sha256:d8e790f88f43d11549f8f3cedf8747c62c11c59f71f4176728bd739fa1316792",
+    "coveredSessionDate": "2026-08-18",
+    "asOf": "2026-08-19 07:10（Asia/Taipei，UTC+8）",
+    "source": "records/market-risk/2026-08-19-v01.md",
+    "updatedAt": "2026-08-19 07:10（Asia/Taipei，UTC+8）",
     "dependencies": [],
-    "score": 63,
-    "baseline": 63,
+    "score": 64,
+    "baseline": 64,
     "eventAdjustment": 0,
-    "dailyChange": 0,
-    "immediateRisk": "Brent 重回 90 美元上方、長債殖利率上升、四項主要股指同步下跌",
-    "structuralRisk": "能源與供應限制延長通膨、住宅可負擔性、TGA 回補對準備金與流動性的吸收",
+    "dailyChange": 1,
+    "immediateRisk": "住宅開工與簽約同步下滑、AI 權重股與小型股跌幅擴大、Brent 維持 91 美元附近",
+    "structuralRisk": "住宅可負擔性、服務業投入成本與供應限制、AI 資本支出及高估值的回報驗證",
     "topRisks": [
-      "能源與投入成本",
-      "長債與估值",
-      "供應限制與住宅可負擔性"
+      "住宅與內需",
+      "非燃料與投入成本",
+      "AI 估值與集中度"
     ],
-    "confidence": 84,
-    "completeness": 94,
+    "confidence": 86,
+    "completeness": 95,
     "experimental": true
   },
   "marketRiskHistory": {
@@ -27721,11 +30311,761 @@
             "readable": true
           }
         ]
+      },
+      {
+        "id": "records/market-risk/2026-08-19-v01.md",
+        "date": "2026-08-19",
+        "version": 1,
+        "versionLabel": "v01",
+        "artifactHash": "sha256:d8e790f88f43d11549f8f3cedf8747c62c11c59f71f4176728bd739fa1316792",
+        "artifactStatus": "待核准",
+        "rawStatus": "待核准",
+        "asOf": "2026-08-19 07:10（Asia/Taipei，UTC+8）",
+        "updatedAt": "2026-08-19 07:10（Asia/Taipei，UTC+8）",
+        "source": "records/market-risk/2026-08-19-v01.md",
+        "score": 64,
+        "state": "保留區間",
+        "dailyChange": 1,
+        "changeReasons": "無；事件調整為 0",
+        "topRisks": [
+          "住宅與內需",
+          "非燃料與投入成本",
+          "AI 估值與集中度"
+        ],
+        "supportingEvidence": "住宅開工 -12.4%、待售簽約 -2.3%、服務未來活動 9.3、投入價格 70.1、非燃料進口 +0.4%、Nasdaq 與 Russell 各 -1.3%",
+        "counterEvidence": "建築許可 +5.0%；工業與製造業均 +0.2%、企業設備 +0.8%；總進口與燃料價格月減；10Y／30Y 小幅下降；信用與 VIX 低",
+        "confidence": 86,
+        "completeness": 95,
+        "lowCompleteness": false,
+        "dependencies": [],
+        "versions": [
+          {
+            "id": "records/market-risk/2026-08-19-v01.md",
+            "version": 1,
+            "versionLabel": "v01",
+            "source": "records/market-risk/2026-08-19-v01.md",
+            "readable": true
+          }
+        ]
       }
     ],
     "issues": []
   },
   "marketRiskArchive": [
+    {
+      "id": "records/market-risk/2026-08-19-v01.md",
+      "date": "2026-08-19",
+      "version": 1,
+      "versionLabel": "v01",
+      "isLatest": true,
+      "title": "市場風險報告｜2026-08-19-v01",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:d8e790f88f43d11549f8f3cedf8747c62c11c59f71f4176728bd739fa1316792",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-08-19 07:10（Asia/Taipei，UTC+8）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "方法版本：v1.0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影子運行：實驗性指標／第 15 個交易日"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察期：主分數為 1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "最後更新時間：2026-08-19 07:10（Asia/Taipei，UTC+8）"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "總覽"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "市場風險分數：64"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "基準分：64"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "事件調整：0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "單日變動：+1"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "5 日趨勢：可用最近五筆為 61→60→63→63→64，方向微升，住宅與服務業壓力擴大"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "20 日趨勢：影子運行僅第 15 個交易日，且第 5–7 日缺少當日版本，資料不足"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險狀態及趨勢：中性與偏高之間的保留區；住宅與服務業轉弱、AI 與小型股下跌，但工業與企業設備仍增且信用未失序"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "即時風險：住宅開工與簽約同步下滑、AI 權重股與小型股跌幅擴大、Brent 維持 91 美元附近"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "結構性風險：住宅可負擔性、服務業投入成本與供應限制、AI 資本支出及高估值的回報驗證"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "三項主要風險：住宅與內需、非燃料與投入成本、AI 估值與集中度"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "分數改變原因：景氣與成長由 65 升至 70，住宅開工月減 12.4%、待售屋簽約月減 2.3%、服務業活動降至 0.5與未來活動降至 9.3，反方是工業及製造業均增 0.2%、企業設備增 0.8%；通膨與利率維持 75，非燃料進口月增 0.4%、服務業投入價格 70.1、Brent 91.02 美元，反方是總進口與燃料價格月減、官方長債小幅下降；流動性維持 60，最新 H.4.1 與美元沒有新值；信用維持 40，最新 HY／IG OAS 2.70／0.81；市場結構維持 75，S&P -0.7%、Nasdaq 與 Russell 各 -1.3%，但最新 VIX 15.19 且信用利差低。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "AI 判斷信心：86"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料完整度：95"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "子指標"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "子指標"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "權重"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "分數"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "趨勢"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "理由"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "景氣與成長"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "70"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "升高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "住宅開工、完工與待售簽約同步下滑，服務活動與未來展望降溫；反方是工業生產、製造業、企業設備與資訊處理仍增"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Census／HUD、NAR、New York Fed、Federal Reserve，2026-08-18"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "通膨與利率"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "75"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "持平偏高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "非燃料進口月增 0.4%、服務投入價格 70.1、Brent 91.02；反方是總進口 -0.4%、燃料 -7.2%，10Y／30Y 降至 4.71%／5.28%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "BLS、New York Fed、U.S. Treasury、AP，2026-08-18"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "流動性"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "60"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "持平偏高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "最新 H.4.1 顯示準備金週平均減少 492.9 億美元、TGA 增加 566.3 億美元；廣義美元最新至 8/14 的 118.9028"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Federal Reserve H.4.1，發布日 2026-08-13、資料週截至 08-12；FRED／Fed H.10，資料日 08-14"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "信用"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "40"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "持平"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "最新 HY OAS 2.70、IG OAS 0.81，僅小幅高於 8/14 的 2.67／0.80，沒有信用壓力擴散；8/18 值正常延遲"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "ICE BofA／FRED，資料日 2026-08-17、2026-08-19 查核"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "市場結構"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "75"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "持平偏高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "S&P -0.7%、Nasdaq 與 Russell 各 -1.3%，Micron、Nvidia、Broadcom 領跌；反方是官方長債小降、最新 VIX 15.19 且信用低"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. Treasury、AP，資料日 2026-08-18；CBOE／FRED，資料日 08-17"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "基準分計算："
+            },
+            {
+              "type": "code",
+              "text": "(70 + 75 + 60 + 40 + 75) ÷ 5 = 64"
+            },
+            {
+              "type": "text",
+              "text": "。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "事件調整"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "調整事件：無；事件調整為 0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "受影響子指標：無額外調整；住宅、服務、工業與待售簽約已納入景氣成長，進口價格、服務投入成本、Brent 與 Treasury 已納入通膨利率，股市、AI 權重股與 VIX 已納入市場結構"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未反映於基準數據的理由：沒有同時符合重大、已發生、跨市場、可驗證且未被五項子指標捕捉的事件；8/18 信用與 VIX、Cboe 全市場成交量未取得，不以未知值加分"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：高利率與高房價 → 住宅施工與簽約下降 → 內需與盈餘壓力；非燃料與服務成本 → 利率與毛利壓力；高估值與高資金成本 → AI 與指數風險"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "支持證據：住宅開工 -12.4%、待售簽約 -2.3%、服務未來活動 9.3、投入價格 70.1、非燃料進口 +0.4%、Nasdaq 與 Russell 各 -1.3%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：建築許可 +5.0%；工業與製造業均 +0.2%、企業設備 +0.8%；總進口與燃料價格月減；10Y／30Y 小幅下降；信用與 VIX 低"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：只有出現未被子指標捕捉、由原始資料及市場資料共同確認的重大住宅信用、供應、政策或融資衝擊才啟用事件調整；否則下一版直接重估子指標"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "總分計算："
+            },
+            {
+              "type": "code",
+              "text": "64 + 0 = 64"
+            },
+            {
+              "type": "text",
+              "text": "。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "證據與限制"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "支持證據：Census／HUD 與 NAR 同時確認住宅施工和簽約走弱；New York Fed 顯示服務活動及未來展望降溫、投入成本與供應限制偏高；AP 市場資料顯示 AI 權重股、Nasdaq 與 Russell 壓力擴大"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：住宅許可上升；工業、製造業、企業設備與資訊處理產出成長；總進口與燃料價格月減；官方長債小幅下降；HY／IG OAS 與 VIX 低"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：8 月住宅許可與開工、房貸利率、新屋與成屋銷售、ISM 服務、耐久財、核心商品通膨、AI 公司收入／ROI／CapEx、信用利差與 VIX"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "待觀察數據：8/19 Outlook-at-Risk；8/20 初領失業金、Philadelphia Fed、Reserve Demand Elasticity 與 H.4.1；其後新屋銷售、耐久財與 PCE"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：8/18 HY／IG OAS 與 VIX、8/15 後廣義美元、8/18 Cboe 全市場成交量、下一份 H.4.1 與能源即時航運流量尚未在截止時間前取得；資料完整度 95、信心 86，不得視為精準預測"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "歷史限制：影子序號已到第 15 個交易日，工作區只有 12 個實際日期的風險版本，缺少第 5–7 日（對應 2026-08-05 至 08-07）當日紀錄；不以事後資料補造，20 日趨勢與首輪復盤只能有限評估"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "事後績效（後續追加）"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "評估日期：後續觀察窗結束時另行追加"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "後續市場表現：以 1–3 個交易日、1–4 週與 1–2 季觀察窗追加，不預寫結果"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "判斷評估：後續評估方向、時效、誤報或漏報"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "方法學習：只追加事後結果；如需改方法，建立新版本且不回寫本紀錄"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "來源"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "link",
+                "text": "NYSE｜Holidays & Trading Hours｜2026 日曆與核心交易時段；2026-08-19 07:10 查核",
+                "href": "https://www.nyse.com/trade/hours-calendars"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Census Bureau／HUD｜Monthly New Residential Construction, July 2026｜2026-08-18",
+                "href": "https://www.census.gov/construction/nrc/pdf/newresconst.pdf"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "NAR｜Pending Home Sales Report Shows 2.3% Decrease in July｜2026-08-18",
+                "href": "https://www.nar.realtor/newsroom/NAR-Pending-Home-Sales-Report-Shows-2-3-Decrease-in-July"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve Bank of New York｜Business Leaders Survey, August 2026｜2026-08-18",
+                "href": "https://www.newyorkfed.org/survey/business_leaders/bls_overview"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜Industrial Production and Capacity Utilization, July 2026｜2026-08-18",
+                "href": "https://www.federalreserve.gov/releases/g17/current/g17.pdf"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Bureau of Labor Statistics｜Import and Export Price Indexes, July 2026｜2026-08-18",
+                "href": "https://www.bls.gov/news.release/ximpim.nr0.htm"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Treasury｜Daily Treasury Par Yield Curve Rates｜資料日 2026-08-18",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜H.4.1 Factors Affecting Reserve Balances｜發布日 2026-08-13、資料週截至 2026-08-12",
+                "href": "https://www.federalreserve.gov/releases/h41/current/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜HY OAS｜資料日 2026-08-17",
+                "href": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜IG OAS｜資料日 2026-08-17",
+                "href": "https://fred.stlouisfed.org/series/BAMLC0A0CM"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／CBOE｜VIX｜資料日 2026-08-17",
+                "href": "https://fred.stlouisfed.org/series/VIXCLS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜Sinking AI stocks pull Wall Street further from its record｜2026-08-18",
+                "href": "https://apnews.com/article/stock-markets-oil-war-iran-trump-a805333e767251279e68e0686b28a8c9"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：是否接受 64 分總分、64 分基準、0 事件調整、資料完整度 95、AI 信心 86、第 15 日影子紀錄與 12 份實際日期版本，供內部研究及私人 Dashboard 呈現。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：本次不授權公開發布，不連動 Beta、持股、再平衡、買賣、個人化投資建議或投資操作，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/market-risk/2026-08-19-v01.md",
+      "asOf": "2026-08-19 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-19 07:10（Asia/Taipei，UTC+8）",
+      "dependencies": []
+    },
     {
       "id": "records/market-risk/2026-08-18-v01.md",
       "date": "2026-08-18",
