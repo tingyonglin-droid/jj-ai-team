@@ -1,14 +1,561 @@
 {
-  "generatedAt": "2026-08-19T23:11:10.051Z",
-  "date": "2026-08-20",
+  "generatedAt": "2026-08-20T23:16:17.457Z",
+  "date": "2026-08-21",
   "expectation": {
-    "dashboardDate": "2026-08-20",
-    "expectedReportDate": "2026-08-19",
-    "coveredSessionDate": "2026-08-18",
+    "dashboardDate": "2026-08-21",
+    "expectedReportDate": "2026-08-20",
+    "coveredSessionDate": "2026-08-19",
     "phase": "before_cutoff",
     "reason": "尚未到 07:30 交付門檻，沿用前一個應有報告日。"
   },
   "approvals": [
+    {
+      "id": "records/market-risk/2026-08-21-v01.md",
+      "title": "市場風險報告｜2026-08-21-v01",
+      "type": "市場風險報告",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "市場風險報告｜2026-08-21-v01",
+      "fullContent": null,
+      "decision": "是否接受 65 分總分、65 分基準、0 事件調整、資料完整度 97、AI 信心 88、第 17 日影子紀錄與 14 份實際日期版本，供內部研究及私人 Dashboard 呈現。",
+      "source": "records/market-risk/2026-08-21-v01.md",
+      "asOf": "2026-08-21 07:10（Asia/Taipei，UTC+8）",
+      "createdAt": null,
+      "recordDate": "2026-08-21",
+      "version": 1,
+      "artifactHash": "sha256:578712a52d78232987e16cab899345fd4abbe21926bcfc598882141569d912e3",
+      "updatedAt": "2026-08-21 07:10（Asia/Taipei，UTC+8）",
+      "dependencies": []
+    },
+    {
+      "id": "records/daily-briefs/2026-08-21-v01.md",
+      "title": "油價與長債殖利率同步反彈，強韌成長卻未能阻止美股全面回落",
+      "type": "晨報",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "8/19 的長債緩解迅速反轉：8/20 美國 10 年與 30 年殖利率各回升 4 個基點至 4.69%與 5.23%，市場再次要求更高的期限與融資補償。 Brent 原油上漲 2.4%至 93.78 美元；能源與長端利率同向上升，使通膨、企業成本與股票折現率同時受壓。 初領失業金降至 20.6 萬、費城 Fed 製造業活動升至 47.4，顯示景氣沒有快速失速；但「成長仍強」也減少長端利率自然下行的空間。 Walmart 營收、電商、毛利與全年財測均成長，但美國同店銷售增速放慢、關稅退款拉高當期獲利、自由現金流下降且 CapEx 目標提高，股價下跌 9.2%。 S&P 500、Dow、Nasdaq 與 Russell 2000 全面下跌，Cboe 頁面於 20:15 ET 顯示 VIX 16.01；風險分數由 64 升至 65，首次進入「偏高」，但信用利差與 VIX 絕對水準仍提供反證。",
+      "fullContent": null,
+      "decision": "是否接受五則事件排序、65 分偏高風險框架、「強韌成長未阻止金融條件收緊」主標題與五分鐘篇幅，供內部研究及私人 Dashboard 使用。",
+      "source": "records/daily-briefs/2026-08-21-v01.md",
+      "asOf": "2026-08-21 07:10（Asia/Taipei，UTC+8）",
+      "createdAt": null,
+      "recordDate": "2026-08-21",
+      "version": 1,
+      "artifactHash": "sha256:712acf95cd26e5baf730fdcec3581c126e51bfd1ca978ed3a5afbc37992a726f",
+      "updatedAt": "2026-08-21",
+      "dependencies": []
+    },
+    {
+      "id": "records/content/threads/2026-08-21-walmart-good-quarter-stock-falls-v01.md",
+      "title": "Threads 草稿｜Walmart 財報很好，股價為什麼還跌 9.2%？",
+      "type": "Threads",
+      "owner": "社群經營員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "銷售成長 3.0%–3.75% 營業利益成長 2.0%–4.0% 調整後 EPS 0.62–0.64 美元",
+      "fullContent": {
+        "format": "structured-markdown",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "日期：2026-08-21"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "狀態：待核准"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "來源研究："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-21-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-21-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報版本：v01"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報雜湊："
+                },
+                {
+                  "type": "code",
+                  "text": "sha256:712acf95cd26e5baf730fdcec3581c126e51bfd1ca978ed3a5afbc37992a726f"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "內容指紋："
+                },
+                {
+                  "type": "code",
+                  "text": "sha256:3cd5f0f04ee97f1362d9b721ac337f4e77ca5d01a391f3f5debc97a937a13aba"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "建議時機：現在；發布前須重新確認 Walmart 股價、公司財測與本人觀點是否有重大更新"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "主版本"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Walmart 這季的 headline，其實很好看。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "營收成長 5.9%，來到 1,879 億美元。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "全球電商成長 23%。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "毛利率增加 96 個基點。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "調整後 EPS 0.81 美元，也高於市場原先預期。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "公司甚至上調全年營收、營業利益與 EPS 指引。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "但股價還是跌了 9.2%。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "為什麼？"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "因為市場不只看「這季好不好」，也看「這些成長能不能複製」。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "我會拆成四件事："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "第一，美國同店銷售只成長 2.6%。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "低於去年同期的 4.6%，也比第一季的 4.1%慢。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "第二，公司給的第三季指引比較保守："
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "銷售成長 3.0%–3.75%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "營業利益成長 2.0%–4.0%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "調整後 EPS 0.62–0.64 美元"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "第三，當季獲利有一次性助力。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Walmart 收到接近 29 億美元的關稅退款。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "調整後恆定匯率營業利益成長 17.4%，其中包含約 750 個基點的淨利益。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "公司也說，剩餘退款會投入降價與顧客體驗。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "換句話說，這筆利益不該直接當成永久 run rate。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "第四，現金投入正在增加。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "上半年自由現金流 55 億美元，年減 14 億。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "全年 CapEx 目標，也從約營收 3.5%提高到約 4%。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "這些投資可能帶來更長期的電商、廣告與會員成長。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "但市場會先問："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "投入增加之後，回報何時出現？"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "所以這次跌幅，不等於 Walmart 的生意突然變差。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "比較像市場重新計算三件事："
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "start": 1,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "成長速度"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "獲利品質"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "現金回報"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "一句話："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "財報不是考試，不是答對「營收成長」就拿滿分。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "市場真正評分的是，下一季還能不能重複，而且要花多少錢。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "備選開頭"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "start": 1,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "Walmart 營收、電商、毛利、全年財測都成長，股價卻跌 9.2%。市場看的不是 headline，而是下一季能不能複製。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "好財報不一定帶來好股價。Walmart 這季最值得看的，是一次性利益、自由現金流與提高後的 CapEx。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "查核與語氣"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "事實與來源：營收 +5.9%至 1,879 億美元、全球電商 +23%、毛利率 +96bp、調整後 EPS 0.81 美元、關稅退款接近 29 億美元、調整後恆定匯率營業利益成長含 750bp 淨利益、上半年 FCF 55 億美元且年減 14 億、全年 CapEx 目標約淨銷售 4%、美國同店銷售 +2.6%及 Q3／全年財測，來源為 Walmart Q2 FY27 Earnings Release、發布日 2026-08-20；第一季同店 +4.1%、市場預期與股價 -9.2%，來源為 Associated Press、2026-08-20。完整連結見觸發晨報來源章節。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "反方或限制：公司上調全年財測，電商、廣告、會員收入與底層營業利益仍強；單日股價不能證明唯一因果，也不能推導未來報酬。文中的市場解讀屬 AI 推論，不是公司已確認原因。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "待使用者補充：請確認是否採用第一人稱立場「我會把財報拆成成長速度、獲利品質與現金回報」；未代寫任何個人經歷、持股、交易或績效。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "App CTA：不加入；本篇核心是財報閱讀框架，沒有自然且必要的產品承接。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "核准"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "最終文字與發布由使用者決定：尚未核准；本草稿不得自動發布，也不授權留言、私訊或任何投資行動。"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "decision": "等待使用者決定",
+      "source": "records/content/threads/2026-08-21-walmart-good-quarter-stock-falls-v01.md",
+      "asOf": "2026-08-21",
+      "createdAt": null,
+      "recordDate": "2026-08-21",
+      "version": 1,
+      "artifactHash": "sha256:8cb9860f62bac35869a1d08068358b6364248cf3697787b280c2e4e8657253da",
+      "updatedAt": "2026-08-21",
+      "dependencies": [
+        "records/daily-briefs/2026-08-21-v01.md"
+      ]
+    },
     {
       "id": "records/market-risk/2026-08-20-v01.md",
       "title": "市場風險報告｜2026-08-20-v01",
@@ -46,7 +593,7 @@
       "recordDate": "2026-08-20",
       "version": 1,
       "artifactHash": "sha256:bbffcd7807bfdcd7018a750a2074b0d56f76556b3676b2312d038f6f2b36ca5c",
-      "updatedAt": "2026-08-20",
+      "updatedAt": "2026-08-20T07:11:31+08:00",
       "dependencies": []
     },
     {
@@ -5389,15 +5936,15 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
-      "currentTask": "市場風險報告｜2026-08-20-v01",
+      "currentTask": "市場風險報告｜2026-08-21-v01",
       "progress": "等待人工核准",
       "dependencies": [],
       "handoff": "將研究與風險成果交總司令驗收；將已驗證素材交社群經營員；將市場風險欄位與限制交 App 設計員。所有對外使用均由使用者核准。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/market-risk/2026-08-20-v01.md",
-      "asOf": "2026-08-20 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-20 07:10（Asia/Taipei，UTC+8）"
+      "source": "records/market-risk/2026-08-21-v01.md",
+      "asOf": "2026-08-21 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-21 07:10（Asia/Taipei，UTC+8）"
     },
     {
       "id": "social-operator",
@@ -5406,20 +5953,64 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
-      "currentTask": "Threads 草稿｜長債殖利率跌了，但這不是 QE",
+      "currentTask": "Threads 草稿｜Walmart 財報很好，股價為什麼還跌 9.2%？",
       "progress": "等待人工核准",
       "dependencies": [
-        "records/daily-briefs/2026-08-20-v01.md"
+        "records/daily-briefs/2026-08-21-v01.md"
       ],
       "handoff": "研究疑問退回總經研究員；成果與實驗交總司令驗收；最終語氣、個人觀點、發布與互動交使用者。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/content/threads/2026-08-20-treasury-buybacks-are-not-qe-v01.md",
-      "asOf": "2026-08-20",
-      "updatedAt": "2026-08-20"
+      "source": "records/content/threads/2026-08-21-walmart-good-quarter-stock-falls-v01.md",
+      "asOf": "2026-08-21",
+      "updatedAt": "2026-08-21"
     }
   ],
   "tasks": [
+    {
+      "id": "records/market-risk/2026-08-21-v01.md",
+      "title": "市場風險報告｜2026-08-21-v01",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/market-risk/2026-08-21-v01.md",
+      "asOf": "2026-08-21 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-21 07:10（Asia/Taipei，UTC+8）"
+    },
+    {
+      "id": "records/daily-briefs/2026-08-21-v01.md",
+      "title": "油價與長債殖利率同步反彈，強韌成長卻未能阻止美股全面回落",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/daily-briefs/2026-08-21-v01.md",
+      "asOf": "2026-08-21 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-21"
+    },
+    {
+      "id": "records/content/threads/2026-08-21-walmart-good-quarter-stock-falls-v01.md",
+      "title": "Threads 草稿｜Walmart 財報很好，股價為什麼還跌 9.2%？",
+      "owner": "社群經營員",
+      "ownerId": "social-operator",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [
+        "records/daily-briefs/2026-08-21-v01.md"
+      ],
+      "source": "records/content/threads/2026-08-21-walmart-good-quarter-stock-falls-v01.md",
+      "asOf": "2026-08-21",
+      "updatedAt": "2026-08-21"
+    },
     {
       "id": "records/market-risk/2026-08-20-v01.md",
       "title": "市場風險報告｜2026-08-20-v01",
@@ -5446,7 +6037,7 @@
       "dependencies": [],
       "source": "records/daily-briefs/2026-08-20-v01.md",
       "asOf": "2026-08-20 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-20"
+      "updatedAt": "2026-08-20T07:11:31+08:00"
     },
     {
       "id": "records/content/threads/2026-08-20-treasury-buybacks-are-not-qe-v01.md",
@@ -5949,6 +6540,1486 @@
   ],
   "briefArchive": [
     {
+      "id": "records/daily-briefs/2026-08-21-v01.md",
+      "date": "2026-08-21",
+      "version": 1,
+      "versionLabel": "v01",
+      "isLatest": true,
+      "title": "油價與長債殖利率同步反彈，強韌成長卻未能阻止美股全面回落",
+      "summary": "8/19 的長債緩解迅速反轉：8/20 美國 10 年與 30 年殖利率各回升 4 個基點至 4.69%與 5.23%，市場再次要求更高的期限與融資補償。 Brent 原油上漲 2.4%至 93.78 美元；能源與長端利率同向上升，使通膨、企業成本與股票折現率同時受壓。 初領失業金降至 20.6 萬、費城 Fed 製造業活動升至 47.4，顯示景氣沒有快速失速；但「成長仍強」也減少長端利率自然下行的空間。 Walmart 營收、電商、毛利與全年財測均成長，但美國同店銷售增速放慢、關稅退款拉高當期獲利、自由現金流下降且 CapEx 目標提高，股價下跌 9.2%。 S&P 500、Dow、Nasdaq 與 Russell 2000 全面下跌，Cboe 頁面於 20:15 ET 顯示 VIX 16.01；風險分數由 64 升至 65，首次進入「偏高」，但信用利差與 VIX 絕對水準仍提供反證。",
+      "freshness": "最新",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:712acf95cd26e5baf730fdcec3581c126e51bfd1ca978ed3a5afbc37992a726f",
+      "coveredSessionDate": "2026-08-20",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-08-21 07:10（Asia/Taipei，UTC+8）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察市場：美股、美元利率、信用、波動、能源、美國總經與大型零售"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察期間：2026-08-20 已完成美股交易時段；總經與市場資料使用各來源截至截止時間的最新可得值"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料完整度：97／100；8/20 Cboe 全市場成交量尚未進入年度檔，HY／IG OAS 最新至 8/19，廣義美元最新至 8/14，均屬明示的正常發布落差"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "一分鐘摘要"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "8/19 的長債緩解迅速反轉：8/20 美國 10 年與 30 年殖利率各回升 4 個基點至 4.69%與 5.23%，市場再次要求更高的期限與融資補償。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Brent 原油上漲 2.4%至 93.78 美元；能源與長端利率同向上升，使通膨、企業成本與股票折現率同時受壓。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "初領失業金降至 20.6 萬、費城 Fed 製造業活動升至 47.4，顯示景氣沒有快速失速；但「成長仍強」也減少長端利率自然下行的空間。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Walmart 營收、電商、毛利與全年財測均成長，但美國同店銷售增速放慢、關稅退款拉高當期獲利、自由現金流下降且 CapEx 目標提高，股價下跌 9.2%。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "S&P 500、Dow、Nasdaq 與 Russell 2000 全面下跌，Cboe 頁面於 20:15 ET 顯示 VIX 16.01；風險分數由 64 升至 65，首次進入「偏高」，但信用利差與 VIX 絕對水準仍提供反證。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日風險儀表"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "1–4 週風險分數：65／100"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "相較前一交易日：+1"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險狀態：偏高"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "即時風險：油價與長債殖利率共振、主要指數全面回落、零售權重股預期重估"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "結構性風險：財政與企業融資需求、能源通膨、資本支出回報與消費增速分化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "今日主要風險來源：能源與長端利率、融資供給與期限溢價、盈餘品質與市場廣度"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "五則重要事件"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "1｜10 年與 30 年殖利率各反彈 4bp，前一日緩解未能延續"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "8/20 美國長債殖利率全面回升，10 年期由 4.65%升至 4.69%，20 年期由 5.17%升至 5.20%，30 年期由 5.19%升至 5.23%。這使 8/19 財政部擴大未來長端買回額度後出現的單日緩解，至少在價格上沒有延續。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "10Y +4bp、20Y +3bp、30Y +4bp；AP 另報導投資人仍在評估政府債務、科技公司融資與通膨對長端供給及需求的影響。來源：U.S. Treasury，資料日 2026-08-19 至 08-20；Associated Press，2026-08-20。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：流動性支持買回可以改善特定券種交易，但沒有直接降低淨融資需求。殖利率迅速回升表示市場仍要求期限與供給補償，股票估值不能只依賴單日利率回落。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 風險變化為主，B 估值為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日、1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：長端供需疑慮 → 期限溢價與殖利率上升 → 融資成本及股票折現率提高 → 高估值與高資本支出公司容錯下降"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：30 年期標售、9/9 後買回投標、市場深度、期限溢價與大型科技公司發債"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：Treasury 買回額度擴大仍可能改善特定舊券流動性；單日 3–4bp 反彈不足以證明市場功能惡化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若長端標售穩定、買回後深度改善且 10Y／30Y 持續回落，應降低警戒"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "2｜Brent 升至 93.78 美元，能源與利率風險同向"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "8/20 Brent 原油上漲 2.4%至每桶 93.78 美元。AP 將漲勢連結至波斯灣油輪通行時間仍不確定；這是外部市場敘事，並非已確認的唯一價格原因。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Brent +2.4%至 93.78 美元。來源：Associated Press，市場資料日 2026-08-20。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：油價與長債殖利率同日上升，會同時影響家庭實質支出、物流與企業成本、通膨預期及折現率。真正風險不是一天油價，而是衝擊能否傳到成品油、運輸與核心服務價格。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 風險變化為主，A 基本面為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日、1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：原油供給不確定性 → 能源與運輸成本上升 → 實質消費與企業毛利受壓 → 降息空間及估值容錯下降"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：Brent／WTI、油輪通行、EIA 成品油庫存、零售汽柴油與通膨預期"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：單日漲幅不能確認供給中斷或持續通膨，且上一份 EIA 週報顯示商業原油總庫存增加"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若油輪通行恢復、Brent 回吐漲幅且成品油與通膨預期沒有跟漲，應下調"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "3｜失業申請仍低、費城製造業加速，成長風險下降但利率緩衝也縮小"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "8/15 當週初領失業金降至 20.6 萬；8/8 當週續領升至 179.9 萬。8 月費城 Fed 製造業活動指數由 41.4 升至 47.4、就業由 10.0 升至 27.9，而投入價格由 53.9 降至 40.9。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "初領 -0.6 萬至 20.6 萬，四週均值升至 20.4 萬；續領 +1.8 萬至 179.9 萬。費城活動 47.4、就業 27.9、投入價格 40.9。來源：U.S. Department of Labor、Federal Reserve Bank of Philadelphia，發布日 2026-08-20。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：就業與區域製造業沒有顯示快速衰退，降低近期營收崩落風險；但強韌活動也會讓長端利率較難靠成長降溫自然回落。投入價格下降是重要反證，不能把強成長直接等同再通膨。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面為主，D 風險變化為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：景氣風險緩解、利率風險仍升溫"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：活動與就業強韌 → 盈餘下檔獲支撐但降息需求下降 → 長端利率維持高檔 → 估值與融資成本承壓"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：全國 ISM、新訂單、非農就業、續領失業金、PCE 與實質消費"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：續領失業金增加、費城投入價格明顯下降；區域調查不能代表全國製造業"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若全國活動與就業轉弱、續領持續升高且通膨同步降溫，應降低利率風險並重新評估成長風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "4｜Walmart 數字強但獲利品質與前瞻增速被重估"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Walmart 第二季營收增 5.9%至 1,879 億美元、全球電商增 23%，GAAP／調整後 EPS 為 0.80／0.81 美元，毛利率增加 96bp。公司提高全年銷售、調整後營業利益與 EPS 指引，但美國同店銷售僅增 2.6%，低於去年同期 4.6%；股價下跌 9.2%。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "自由現金流 55 億美元、年減 14 億；全年 CapEx 目標由約淨銷售 3.5%提高至約 4.0%。近 29 億美元 IEEPA 關稅退款使調整後恆定匯率營業利益成長包含 750bp 淨利益，公司計畫把其餘退款投入價格與顧客體驗。Q3 銷售／營業利益成長指引為 3.0%–3.75%／2.0%–4.0%；全年為 4.0%–5.0%／7.0%–8.5%。來源：Walmart，發布日 2026-08-20；股價為 AP 同日市場資料。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：市場可能不是否定當季營收，而是在重估可持續獲利、同店增速、再投資與資本密度。關稅退款抬高當期利潤，FCF 下降與 CapEx 提高則提醒現金回報仍需後續驗證；單日股價不能證明唯一因果。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面為主，B 估值為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：已觸發但未全面擴散"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日、1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：同店增速放慢＋一次性利益＋CapEx 上升 → 可持續盈餘與 FCF 預期下修 → 高估值零售與消費股重估"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：美國交易量與客單、毛利率、退款再投資、FCF、CapEx 回報、Q3 營業利益與全年財測"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：營收、全球電商、毛利、廣告與會員收入強；公司上調全年銷售、營業利益與 EPS 指引"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若同店增速回升、FCF 改善且扣除退款後營業利益維持高個位數成長，應撤回獲利品質警戒"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "5｜四大美股指數全面下跌，VIX 上升但信用尚未確認擴散"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "8/20 S&P 500、Dow、Nasdaq 與 Russell 2000 分別下跌 0.9%、1.3%、1.0%與 1.3%；Cboe 頁面於 20:15 ET 顯示 VIX 由前收 14.89 升至 16.01。跌勢跨大型股與小型股，但波動與最新信用資料仍未達到壓力廣泛擴散的程度。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "S&P 500 收 7,641.16、Dow 52,759.21、Nasdaq 26,067.17、Russell 2000 2,992.43；Cboe 頁面顯示 VIX +7.52%至 16.01。來源：Associated Press、Cboe，資料日 2026-08-20。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：大中小型股同跌代表風險不只集中在單一公司；但 VIX 絕對水準仍不高，最新可得 HY／IG OAS 也收窄，因此目前是市場結構升溫，不是信用危機判斷。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 風險變化為主，C 資金輪動為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫但未擴散至信用"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日、1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：利率與能源壓力＋權重股下跌 → 市場廣度轉弱與避險需求升高 → 若信用跟進則去風險加速"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：VIX、等權重／市值權重、上漲家數、Cboe 成交量、HY／IG OAS 與資金流"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：VIX 為 16.01；最新可得 8/19 HY／IG OAS 為 2.73／0.81，均較前日收窄"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若指數廣度恢復、VIX 回落且信用利差持續穩定，應把本事件降回短期波動"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "事實"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "數值／變化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料期間"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源與日期"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "美國長端殖利率反彈"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "10Y 4.65%→4.69%；30Y 5.19%→5.23%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-19 至 08-20"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. Treasury，資料日 2026-08-20"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Brent 原油上漲"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "+2.4%至 93.78 美元"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-20"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-20"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "初領／續領失業金"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20.6 萬／179.9 萬"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "週截至 08-15／08-08"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. Department of Labor，2026-08-20"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "費城製造業活動／投入價格"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "47.4／40.9"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Federal Reserve Bank of Philadelphia，2026-08-20"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Walmart 營收／調整後 EPS／FCF"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "1,879 億美元／0.81 美元／55 億美元"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "FY2027 Q2／上半年現金流"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Walmart，2026-08-20"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "四大指數下跌且 VIX 上升"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "-0.9%至-1.3%；VIX 16.01"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-20"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "AP／Cboe，2026-08-20"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論與初步判斷"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認資料同時顯示「實體活動仍強」與「金融條件重新收緊」：初領失業金與費城製造業降低近期衰退風險，卻沒有替長端利率和估值提供緩衝；油價、長債與股市則形成同日風險共振。Walmart 是微觀版本：當季數字強，但市場更在意可持續同店增速、一次性利益、FCF 與 CapEx。初判因此不是景氣崩落，而是折現率與盈餘品質共同壓縮估值容錯。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "外部觀點比較"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀點摘要"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "與初判一致／分歧"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "對判斷影響"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-20"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "將長債反彈連結至政府債務、企業融資、通膨與油價，並指出財政部買回相對市場規模有限"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致；屬外部解釋"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "支持「買回未解除供需壓力」，但利率事實仍以 Treasury 為準"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Walmart 管理層，2026-08-20"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "指出底層營業利益仍在原指引高端，並上調全年財測；同時要求把 Q2 與 Q3 合併評估退款再投資"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致並提供反方"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "支持區分當季退款利益與後續價格投資，避免把跌幅等同基本面崩壞"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Cboe，2026-08-20"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "頁面於 20:15 ET 顯示 VIX 升 7.52%至 16.01"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "與危機敘事分歧"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "限制市場結構警戒，不支持信用或波動危機結論"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "最終判斷與反方證據"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終判斷：未來 1–4 週風險由 64 升至 65，進入偏高，信心 88／100。主因是油價與長端利率同向上升、主要指數全面下跌，以及 Walmart 顯示市場開始區分 headline growth 與可持續現金回報；這不是衰退或信用危機判斷。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：初領失業金低、費城活動與就業強、費城投入價格下降；Walmart 上調全年財測；VIX 絕對水準不高且最新信用利差仍低；H.4.1 的 TGA 週均下降部分抵銷準備金下降。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若油價與長端殖利率回落、股市廣度恢復、信用保持穩定且企業 FCF／財測改善，應降回中性或保留區；若 VIX、信用利差、油價與長端殖利率續升，才考慮再上調。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日市場一句話"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "今天市場真正交易的不是經濟是否立刻衰退，而是強韌成長、能源成本與龐大融資需求會把折現率維持在多高。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "反方證據與尚未確認資料"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "反方證據：初領失業金 20.6 萬、費城活動 47.4、投入價格降至 40.9；Walmart 提高全年財測；VIX 16.01 且 8/19 HY／IG OAS 收窄；Fed H.4.1 顯示 TGA 週均下降 103 億美元。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：Cboe 年度全市場成交檔最新只到 8/19，無法用 8/20 成交量確認廣度；HY／IG OAS 最新至 8/19，廣義美元最新至 8/14。缺口不改寫官方利率、勞動、製造業、財報、VIX 與指數收盤。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "尚未確認與待觀察"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "未確認資料：全市場成交量與日頻信用有一日發布落差；美元週序列較舊。未用舊值冒充 8/20，也未據此加入事件調整。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "未入選候選事件：候選池十一項為①Treasury 長債殖利率、②政府債務與企業發債、③Brent 油價、④初領／續領失業金、⑤費城製造業、⑥Walmart、⑦四大指數與 VIX、⑧Fed H.4.1、⑨Advance Auto Parts、⑩Deere、⑪航空股與能源敏感度。債務／企業發債併入長債鏈；勞動與費城調查合併；H.4.1 作流動性底層；Advance Auto、Deere 與航空股作公司及產業反證，避免同一因果鏈超過兩則。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "下一確認點：8/21 後續利率、油價、VIX 與信用；下一份 EIA、PCE、耐久財與全國 ISM；Walmart Q3 的退款再投資、同店銷售、FCF 與 CapEx 回報。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "來源"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "link",
+                "text": "NYSE｜Holidays & Trading Hours｜2026 日曆與核心交易時段；2026-08-21 07:10 查核",
+                "href": "https://www.nyse.com/trade/hours-calendars?os=v0"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Treasury｜Daily Treasury Par Yield Curve Rates｜資料日 2026-08-19 至 08-20",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Department of Labor｜Unemployment Insurance Weekly Claims｜發布日 2026-08-20、資料週截至 08-15／08-08",
+                "href": "https://www.dol.gov/ui/data.pdf"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve Bank of Philadelphia｜MBOS Diffusion Index Data｜2026-08 資料、2026-08-20 更新",
+                "href": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/MBOS/Historical-Data/Diffusion-Indexes/bos_dift.txt?sc_lang=en"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Walmart｜Q2 FY27 Earnings Release｜發布日 2026-08-20",
+                "href": "https://corporate.walmart.com/content/dam/corporate/documents/newsroom/2026/08/20/walmart-releases-q2-fy27-earnings/q2-fy27-earnings-release.pdf"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜H.4.1 Factors Affecting Reserve Balances｜發布日 2026-08-20、資料週截至 08-19",
+                "href": "https://www.federalreserve.gov/releases/h41/current/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Cboe｜VIX｜資料日 2026-08-20、頁面時間 20:15 ET",
+                "href": "https://www.cboe.com/tradable-products/vix"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Cboe｜U.S. Equities Historical Market Volume｜最新資料日 2026-08-19；2026-08-21 07:10 查核",
+                "href": "https://www.cboe.com/markets/us/equities/market-statistics/historical-market-volume"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜HY OAS｜資料日 2026-08-19",
+                "href": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜IG OAS｜資料日 2026-08-19",
+                "href": "https://fred.stlouisfed.org/series/BAMLC0A0CM"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／Federal Reserve｜Trade Weighted U.S. Dollar Index: Broad｜最新資料日 2026-08-14",
+                "href": "https://fred.stlouisfed.org/series/DTWEXBGS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜The bond market swings back to worries and knocks US stocks lower｜2026-08-20",
+                "href": "https://apnews.com/article/1dcf7c9c3cc490b82b2632302628c46b"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜How major US stock indexes fared Thursday 8/20/2026｜2026-08-20",
+                "href": "https://apnews.com/article/b595de56eb56950bf87e77e1f812cfba"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜Why Treasury Secretary Bessent's moves to calm the bond market haven't worked so far｜2026-08-20",
+                "href": "https://apnews.com/article/c6e148f8235a98245adf04b2d4bdd8d1"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜Walmart is cautious with expectations after slowest sales growth in 6 years｜2026-08-20",
+                "href": "https://apnews.com/article/955945e03ffcc111389d62fa3103a051"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "人工核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：是否接受五則事件排序、65 分偏高風險框架、「強韌成長未阻止金融條件收緊」主標題與五分鐘篇幅，供內部研究及私人 Dashboard 使用。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：本版本不授權公開發布、對外引用、個人化投資建議、持股調整、再平衡、買賣或任何投資行動，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/daily-briefs/2026-08-21-v01.md",
+      "asOf": "2026-08-21 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-21",
+      "dependencies": []
+    },
+    {
       "id": "records/daily-briefs/2026-08-20-v01.md",
       "date": "2026-08-20",
       "version": 1,
@@ -5956,7 +8027,7 @@
       "isLatest": true,
       "title": "長債流動性獲官方支撐但實體需求仍分化，殖利率回落不是風險解除",
       "summary": "美國財政部把 10–20 年與 20–30 年期名目券的流動性支持買回上限，由每次 20 億美元提高至至少 40 億美元，9/9 起實施；這是市場功能支撐，不是改變淨發債需求的量化寬鬆。 10 年與 30 年殖利率在 8/19 分別由 4.71%降至 4.65%、由 5.28%降至 5.19%；美股主要指數小幅收高，但 Broadcom 跌 4.6%，顯示估值與集中度壓力沒有隨長債回落消失。 EIA 顯示原油庫存增加 440 萬桶、總商業石油庫存增加 880 萬桶；成品油供應量四週平均年減 2.9%，但蒸餾油庫存仍低於五年均值 13%，形成需求放慢與價格壓力並存。 Lowe's 同店銷售僅增 0.2%、毛利率與營業利益率下降並下修全年指引；Toll Brothers 交屋、住宅收入、EPS 與毛利率均年減，住宅鏈仍受可負擔性與成本壓力牽制。 Target 與 Estée Lauder 的銷售、流量或有機成長提供反證，因此 1–4 週風險維持 64／100，而非升級為偏高。",
-      "freshness": "最新",
+      "freshness": "歷史版本",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
       "artifactHash": "sha256:bbffcd7807bfdcd7018a750a2074b0d56f76556b3676b2312d038f6f2b36ca5c",
@@ -7418,7 +9489,7 @@
       ],
       "source": "records/daily-briefs/2026-08-20-v01.md",
       "asOf": "2026-08-20 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-20",
+      "updatedAt": "2026-08-20T07:11:31+08:00",
       "dependencies": []
     },
     {
@@ -27494,6 +29565,506 @@
   ],
   "threadsDocuments": [
     {
+      "id": "records/content/threads/2026-08-21-walmart-good-quarter-stock-falls-v01.md",
+      "artifactKey": "cmVjb3Jkcy9jb250ZW50L3RocmVhZHMvMjAyNi0wOC0yMS13YWxtYXJ0LWdvb2QtcXVhcnRlci1zdG9jay1mYWxscy12MDEubWQAMQBzaGEyNTY6OGNiOTg2MGY2MmJhYzM1ODY5YTFkMDgwNjgzNThiNjM2NDI0OGNmMzY5Nzc4N2IyODBjMmU0ZTg2NTcyNTNkYQ",
+      "date": "2026-08-21",
+      "version": 1,
+      "versionLabel": "v01",
+      "title": "Threads 草稿｜Walmart 財報很好，股價為什麼還跌 9.2%？",
+      "summary": "銷售成長 3.0%–3.75% 營業利益成長 2.0%–4.0% 調整後 EPS 0.62–0.64 美元",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:8cb9860f62bac35869a1d08068358b6364248cf3697787b280c2e4e8657253da",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "日期：2026-08-21"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源研究："
+              },
+              {
+                "type": "code",
+                "text": "records/daily-briefs/2026-08-21-v01.md"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報："
+              },
+              {
+                "type": "code",
+                "text": "records/daily-briefs/2026-08-21-v01.md"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報雜湊："
+              },
+              {
+                "type": "code",
+                "text": "sha256:712acf95cd26e5baf730fdcec3581c126e51bfd1ca978ed3a5afbc37992a726f"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "內容指紋："
+              },
+              {
+                "type": "code",
+                "text": "sha256:3cd5f0f04ee97f1362d9b721ac337f4e77ca5d01a391f3f5debc97a937a13aba"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "建議時機：現在；發布前須重新確認 Walmart 股價、公司財測與本人觀點是否有重大更新"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "主版本"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Walmart 這季的 headline，其實很好看。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "營收成長 5.9%，來到 1,879 億美元。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "全球電商成長 23%。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "毛利率增加 96 個基點。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "調整後 EPS 0.81 美元，也高於市場原先預期。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "公司甚至上調全年營收、營業利益與 EPS 指引。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "但股價還是跌了 9.2%。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "為什麼？"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "因為市場不只看「這季好不好」，也看「這些成長能不能複製」。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "我會拆成四件事："
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "第一，美國同店銷售只成長 2.6%。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "低於去年同期的 4.6%，也比第一季的 4.1%慢。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "第二，公司給的第三季指引比較保守："
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "銷售成長 3.0%–3.75%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "營業利益成長 2.0%–4.0%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "調整後 EPS 0.62–0.64 美元"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "第三，當季獲利有一次性助力。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Walmart 收到接近 29 億美元的關稅退款。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "調整後恆定匯率營業利益成長 17.4%，其中包含約 750 個基點的淨利益。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "公司也說，剩餘退款會投入降價與顧客體驗。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "換句話說，這筆利益不該直接當成永久 run rate。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "第四，現金投入正在增加。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "上半年自由現金流 55 億美元，年減 14 億。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "全年 CapEx 目標，也從約營收 3.5%提高到約 4%。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "這些投資可能帶來更長期的電商、廣告與會員成長。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "但市場會先問："
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "投入增加之後，回報何時出現？"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "所以這次跌幅，不等於 Walmart 的生意突然變差。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "比較像市場重新計算三件事："
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 1,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "成長速度"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "獲利品質"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "現金回報"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "一句話："
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "財報不是考試，不是答對「營收成長」就拿滿分。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "市場真正評分的是，下一季還能不能重複，而且要花多少錢。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "備選開頭"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 1,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "Walmart 營收、電商、毛利、全年財測都成長，股價卻跌 9.2%。市場看的不是 headline，而是下一季能不能複製。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "好財報不一定帶來好股價。Walmart 這季最值得看的，是一次性利益、自由現金流與提高後的 CapEx。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "查核與語氣"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "事實與來源：營收 +5.9%至 1,879 億美元、全球電商 +23%、毛利率 +96bp、調整後 EPS 0.81 美元、關稅退款接近 29 億美元、調整後恆定匯率營業利益成長含 750bp 淨利益、上半年 FCF 55 億美元且年減 14 億、全年 CapEx 目標約淨銷售 4%、美國同店銷售 +2.6%及 Q3／全年財測，來源為 Walmart Q2 FY27 Earnings Release、發布日 2026-08-20；第一季同店 +4.1%、市場預期與股價 -9.2%，來源為 Associated Press、2026-08-20。完整連結見觸發晨報來源章節。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方或限制：公司上調全年財測，電商、廣告、會員收入與底層營業利益仍強；單日股價不能證明唯一因果，也不能推導未來報酬。文中的市場解讀屬 AI 推論，不是公司已確認原因。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "待使用者補充：請確認是否採用第一人稱立場「我會把財報拆成成長速度、獲利品質與現金回報」；未代寫任何個人經歷、持股、交易或績效。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "App CTA：不加入；本篇核心是財報閱讀框架，沒有自然且必要的產品承接。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終文字與發布由使用者決定：尚未核准；本草稿不得自動發布，也不授權留言、私訊或任何投資行動。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/content/threads/2026-08-21-walmart-good-quarter-stock-falls-v01.md",
+      "asOf": "2026-08-21",
+      "updatedAt": "2026-08-21",
+      "dependencies": [
+        "records/daily-briefs/2026-08-21-v01.md"
+      ]
+    },
+    {
       "id": "records/content/threads/2026-08-20-treasury-buybacks-are-not-qe-v01.md",
       "artifactKey": "cmVjb3Jkcy9jb250ZW50L3RocmVhZHMvMjAyNi0wOC0yMC10cmVhc3VyeS1idXliYWNrcy1hcmUtbm90LXFlLXYwMS5tZAAxAHNoYTI1NjpkOTcyNmNhZGQwZGQ0ODllMTg2NmI3N2Y0OTg5YjY3ZmU4OTMxN2QzOWIzMjU5YmZkODg5ZGQyNjQ5NTUyMmU5",
       "date": "2026-08-20",
@@ -32272,45 +34843,45 @@
   "approvedThreadsArchive": [],
   "threadsArchiveIssues": [],
   "brief": {
-    "title": "長債流動性獲官方支撐但實體需求仍分化，殖利率回落不是風險解除",
-    "headline": "長債流動性獲官方支撐但實體需求仍分化，殖利率回落不是風險解除",
-    "summary": "美國財政部把 10–20 年與 20–30 年期名目券的流動性支持買回上限，由每次 20 億美元提高至至少 40 億美元，9/9 起實施；這是市場功能支撐，不是改變淨發債需求的量化寬鬆。 10 年與 30 年殖利率在 8/19 分別由 4.71%降至 4.65%、由 5.28%降至 5.19%；美股主要指數小幅收高，但 Broadcom 跌 4.6%，顯示估值與集中度壓力沒有隨長債回落消失。 EIA 顯示原油庫存增加 440 萬桶、總商業石油庫存增加 880 萬桶；成品油供應量四週平均年減 2.9%，但蒸餾油庫存仍低於五年均值 13%，形成需求放慢與價格壓力並存。 Lowe's 同店銷售僅增 0.2%、毛利率與營業利益率下降並下修全年指引；Toll Brothers 交屋、住宅收入、EPS 與毛利率均年減，住宅鏈仍受可負擔性與成本壓力牽制。 Target 與 Estée Lauder 的銷售、流量或有機成長提供反證，因此 1–4 週風險維持 64／100，而非升級為偏高。",
+    "title": "油價與長債殖利率同步反彈，強韌成長卻未能阻止美股全面回落",
+    "headline": "油價與長債殖利率同步反彈，強韌成長卻未能阻止美股全面回落",
+    "summary": "8/19 的長債緩解迅速反轉：8/20 美國 10 年與 30 年殖利率各回升 4 個基點至 4.69%與 5.23%，市場再次要求更高的期限與融資補償。 Brent 原油上漲 2.4%至 93.78 美元；能源與長端利率同向上升，使通膨、企業成本與股票折現率同時受壓。 初領失業金降至 20.6 萬、費城 Fed 製造業活動升至 47.4，顯示景氣沒有快速失速；但「成長仍強」也減少長端利率自然下行的空間。 Walmart 營收、電商、毛利與全年財測均成長，但美國同店銷售增速放慢、關稅退款拉高當期獲利、自由現金流下降且 CapEx 目標提高，股價下跌 9.2%。 S&P 500、Dow、Nasdaq 與 Russell 2000 全面下跌，Cboe 頁面於 20:15 ET 顯示 VIX 16.01；風險分數由 64 升至 65，首次進入「偏高」，但信用利差與 VIX 絕對水準仍提供反證。",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准",
     "version": 1,
-    "artifactHash": "sha256:bbffcd7807bfdcd7018a750a2074b0d56f76556b3676b2312d038f6f2b36ca5c",
-    "coveredSessionDate": "2026-08-19",
-    "asOf": "2026-08-20 07:10（Asia/Taipei，UTC+8）",
-    "source": "records/daily-briefs/2026-08-20-v01.md",
-    "updatedAt": "2026-08-20",
+    "artifactHash": "sha256:712acf95cd26e5baf730fdcec3581c126e51bfd1ca978ed3a5afbc37992a726f",
+    "coveredSessionDate": "2026-08-20",
+    "asOf": "2026-08-21 07:10（Asia/Taipei，UTC+8）",
+    "source": "records/daily-briefs/2026-08-21-v01.md",
+    "updatedAt": "2026-08-21",
     "dependencies": []
   },
   "marketRisk": {
-    "label": "市場風險報告｜2026-08-20-v01",
+    "label": "市場風險報告｜2026-08-21-v01",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准",
     "version": 1,
-    "artifactHash": "sha256:0b1e1ad7f4016ffe8f80e535b890c060ef0979cf4e292092e1ac5f3bf355592c",
-    "coveredSessionDate": "2026-08-19",
-    "asOf": "2026-08-20 07:10（Asia/Taipei，UTC+8）",
-    "source": "records/market-risk/2026-08-20-v01.md",
-    "updatedAt": "2026-08-20 07:10（Asia/Taipei，UTC+8）",
+    "artifactHash": "sha256:578712a52d78232987e16cab899345fd4abbe21926bcfc598882141569d912e3",
+    "coveredSessionDate": "2026-08-20",
+    "asOf": "2026-08-21 07:10（Asia/Taipei，UTC+8）",
+    "source": "records/market-risk/2026-08-21-v01.md",
+    "updatedAt": "2026-08-21 07:10（Asia/Taipei，UTC+8）",
     "dependencies": [],
-    "score": 64,
-    "baseline": 64,
+    "score": 65,
+    "baseline": 65,
     "eventAdjustment": 0,
-    "dailyChange": 0,
-    "immediateRisk": "長端市場功能仍需政策支撐、AI 權重股分化、能源需求與價格訊號背離",
-    "structuralRisk": "財政融資與期限溢價、住宅可負擔性、AI 資本支出及高估值的回報驗證",
+    "dailyChange": 1,
+    "immediateRisk": "Brent 與長債殖利率同向上升、四大指數全面下跌、Walmart 預期重估",
+    "structuralRisk": "財政與企業融資需求、能源通膨、資本支出回報與消費增速分化",
     "topRisks": [
-      "長債流動性與高利率",
-      "住宅與耐久消費",
-      "能源通膨與需求分化"
+      "能源與長端利率",
+      "融資供給與期限溢價",
+      "盈餘品質與市場廣度"
     ],
-    "confidence": 85,
-    "completeness": 95,
+    "confidence": 88,
+    "completeness": 97,
     "experimental": true
   },
   "marketRiskHistory": {
@@ -32789,11 +35360,775 @@
             "readable": true
           }
         ]
+      },
+      {
+        "id": "records/market-risk/2026-08-21-v01.md",
+        "date": "2026-08-21",
+        "version": 1,
+        "versionLabel": "v01",
+        "artifactHash": "sha256:578712a52d78232987e16cab899345fd4abbe21926bcfc598882141569d912e3",
+        "artifactStatus": "待核准",
+        "rawStatus": "待核准",
+        "asOf": "2026-08-21 07:10（Asia/Taipei，UTC+8）",
+        "updatedAt": "2026-08-21 07:10（Asia/Taipei，UTC+8）",
+        "source": "records/market-risk/2026-08-21-v01.md",
+        "score": 65,
+        "state": "偏高",
+        "dailyChange": 1,
+        "changeReasons": "無；事件調整為 0",
+        "topRisks": [
+          "能源與長端利率",
+          "融資供給與期限溢價",
+          "盈餘品質與市場廣度"
+        ],
+        "supportingEvidence": "Brent 93.78 美元、10Y／30Y 4.69%／5.23%、四大指數全面下跌、VIX 16.01、Walmart -9.2%且 FCF 下降",
+        "counterEvidence": "初領失業金與費城活動強、費城投入價格下降、Walmart 上調全年財測、8/19 信用利差收窄、VIX 絕對水準低",
+        "confidence": 88,
+        "completeness": 97,
+        "lowCompleteness": false,
+        "dependencies": [],
+        "versions": [
+          {
+            "id": "records/market-risk/2026-08-21-v01.md",
+            "version": 1,
+            "versionLabel": "v01",
+            "source": "records/market-risk/2026-08-21-v01.md",
+            "readable": true
+          }
+        ]
       }
     ],
     "issues": []
   },
   "marketRiskArchive": [
+    {
+      "id": "records/market-risk/2026-08-21-v01.md",
+      "date": "2026-08-21",
+      "version": 1,
+      "versionLabel": "v01",
+      "isLatest": true,
+      "title": "市場風險報告｜2026-08-21-v01",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:578712a52d78232987e16cab899345fd4abbe21926bcfc598882141569d912e3",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-08-21 07:10（Asia/Taipei，UTC+8）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "方法版本：v1.0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影子運行：實驗性指標／第 17 個交易日"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察期：主分數為 1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "最後更新時間：2026-08-21 07:10（Asia/Taipei，UTC+8）"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "總覽"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "市場風險分數：65"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "基準分：65"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "事件調整：0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "單日變動：+1"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "5 日趨勢：可用最近五筆為 63→63→64→64→65，方向緩升並進入偏高"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "20 日趨勢：影子運行僅第 17 個交易日，且第 5–7 日缺少當日版本，資料不足"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險狀態及趨勢：偏高、上升；景氣數據改善但能源、長端利率與市場廣度同步轉差"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "即時風險：Brent 與長債殖利率同向上升、四大指數全面下跌、Walmart 預期重估"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "結構性風險：財政與企業融資需求、能源通膨、資本支出回報與消費增速分化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "三項主要風險：能源與長端利率、融資供給與期限溢價、盈餘品質與市場廣度"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "分數改變原因：景氣與成長由 70 降至 65，因初領失業金 20.6 萬、費城活動 47.4 與就業 27.9 降低近期衰退風險，但續領增加及 Walmart 美國同店增速放慢限制降幅；通膨與利率由 75 升至 80，因 Brent +2.4%至 93.78 美元、10Y／30Y 各升 4bp；流動性維持 60，H.4.1 準備金週均下降 88 億、RRP 增 140 億，但 TGA 降 103 億且 Treasury 買回尚未執行；信用維持 40，最新 8/19 HY／IG OAS 2.73／0.81 均較前日收窄；市場結構由 75 升至 80，四大指數跌 0.9%至 1.3%、Walmart -9.2%、Cboe 頁面於 20:15 ET 顯示 VIX +7.52%至 16.01，但絕對波動與信用仍低。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "AI 判斷信心：88"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料完整度：97"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "子指標"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "子指標"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "權重"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "分數"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "趨勢"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "理由"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "景氣與成長"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "65"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "下降但仍偏高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "初領 20.6 萬、費城活動 47.4 與就業 27.9 顯示景氣強韌；反方是續領增至 179.9 萬、Walmart 美國同店僅增 2.6%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "DOL、Philadelphia Fed、Walmart，2026-08-20"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "通膨與利率"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "80"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "上升至偏高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Brent +2.4%至 93.78 美元，10Y／30Y 各回升 4bp 至 4.69%／5.23%；反方是費城投入價格由 53.9 降至 40.9"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. Treasury、Philadelphia Fed、AP，2026-08-20"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "流動性"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "60"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "持平偏高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "H.4.1 準備金週均 -88 億美元、RRP +140 億；TGA -103 億提供部分抵銷，Treasury 長端買回 9/9 才執行"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Federal Reserve，發布日 2026-08-20、資料週截至 08-19；U.S. Treasury，08-19"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "信用"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "40"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "持平偏低"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "最新可得 8/19 HY OAS 2.73、IG OAS 0.81，較 8/18 的 2.75／0.82 收窄；8/20 值正常延遲"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "ICE BofA／FRED，資料日 2026-08-19、2026-08-21 查核"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "市場結構"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "80"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "上升至偏高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "四大指數全面跌 0.9%至 1.3%、Walmart -9.2%、VIX +7.52%；反方是 VIX 僅 16.01、信用未擴散，Cboe 全市場量最新至 8/19"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "AP、Cboe，資料日 2026-08-20"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "基準分計算："
+            },
+            {
+              "type": "code",
+              "text": "(65 + 80 + 60 + 40 + 80) ÷ 5 = 65"
+            },
+            {
+              "type": "text",
+              "text": "。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "事件調整"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "調整事件：無；事件調整為 0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "受影響子指標：無額外調整；油價與長端殖利率已納入通膨利率，H.4.1 納入流動性，信用利差納入信用，指數／VIX／Walmart 納入市場結構與成長"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未反映於基準數據的理由：沒有同時符合重大、已發生、跨市場、可驗證且尚未被五項子指標捕捉的事件；不以 8/20 延遲的信用與成交量未知值加分"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：能源與長端利率上升 → 實質支出、毛利與折現率承壓；盈餘品質重估 → 高估值容錯下降；若信用跟進 → 去風險擴散"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "支持證據：Brent 93.78 美元、10Y／30Y 4.69%／5.23%、四大指數全面下跌、VIX 16.01、Walmart -9.2%且 FCF 下降"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：初領失業金與費城活動強、費城投入價格下降、Walmart 上調全年財測、8/19 信用利差收窄、VIX 絕對水準低"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：只有出現未被子指標捕捉、由原始資料及市場資料共同確認的重大能源、信用或流動性衝擊才啟用事件調整；否則下一版直接重估子指標"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "總分計算："
+            },
+            {
+              "type": "code",
+              "text": "65 + 0 = 65"
+            },
+            {
+              "type": "text",
+              "text": "。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "證據與限制"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "支持證據：Treasury 確認長債反彈；AP 確認油價與主要指數下跌；Walmart 官方財報顯示退款利益、FCF 下降與 CapEx 提高；Cboe 頁面於 20:15 ET 顯示 VIX 上升"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：DOL 與 Philadelphia Fed 顯示活動和就業強；費城投入價格下降；Walmart 上調全年財測；H.4.1 的 TGA 下降部分緩衝；最新信用利差收窄"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：Brent／WTI、10Y／30Y、長債標售與買回、市場廣度、VIX、HY／IG OAS、Walmart Q3 FCF 與 CapEx 回報"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "待觀察數據：下一份 EIA、PCE、耐久財、全國 ISM、9/9 後 Treasury 買回；信用／成交量若惡化則上調，油價／利率／廣度改善則下調"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：8/20 HY／IG OAS 與 Cboe 全市場成交量、8/15 後廣義美元。資料完整度 97、信心 88，不得視為精準預測"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "歷史限制：影子序號已到第 17 個交易日，工作區新增後有 14 個實際日期的風險版本，缺少第 5–7 日（2026-08-05 至 08-07）當日紀錄；不以事後資料補造，20 日趨勢與首輪復盤只能有限評估"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "事後績效（後續追加）"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "評估日期：後續觀察窗結束時另行追加"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "後續市場表現：以 1–3 個交易日、1–4 週與 1–2 季觀察窗追加，不預寫結果"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "判斷評估：後續評估方向、時效、誤報或漏報"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "方法學習：只追加事後結果；如需改方法，建立新版本且不回寫本紀錄"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "來源"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "link",
+                "text": "NYSE｜Holidays & Trading Hours｜2026 日曆與核心交易時段；2026-08-21 07:10 查核",
+                "href": "https://www.nyse.com/trade/hours-calendars?os=v0"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Treasury｜Daily Treasury Par Yield Curve Rates｜資料日 2026-08-19 至 08-20",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Department of Labor｜Unemployment Insurance Weekly Claims｜發布日 2026-08-20",
+                "href": "https://www.dol.gov/ui/data.pdf"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve Bank of Philadelphia｜MBOS Diffusion Index Data｜2026-08 資料、2026-08-20 更新",
+                "href": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/MBOS/Historical-Data/Diffusion-Indexes/bos_dift.txt?sc_lang=en"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Walmart｜Q2 FY27 Earnings Release｜發布日 2026-08-20",
+                "href": "https://corporate.walmart.com/content/dam/corporate/documents/newsroom/2026/08/20/walmart-releases-q2-fy27-earnings/q2-fy27-earnings-release.pdf"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜H.4.1｜發布日 2026-08-20、資料週截至 08-19",
+                "href": "https://www.federalreserve.gov/releases/h41/current/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Cboe｜VIX｜資料日 2026-08-20",
+                "href": "https://www.cboe.com/tradable-products/vix"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Cboe｜U.S. Equities Historical Market Volume｜最新資料日 2026-08-19",
+                "href": "https://www.cboe.com/markets/us/equities/market-statistics/historical-market-volume"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜HY OAS｜資料日 2026-08-19",
+                "href": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜IG OAS｜資料日 2026-08-19",
+                "href": "https://fred.stlouisfed.org/series/BAMLC0A0CM"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／Federal Reserve｜Broad Dollar Index｜最新資料日 2026-08-14",
+                "href": "https://fred.stlouisfed.org/series/DTWEXBGS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜The bond market swings back to worries and knocks US stocks lower｜2026-08-20",
+                "href": "https://apnews.com/article/1dcf7c9c3cc490b82b2632302628c46b"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜How major US stock indexes fared Thursday 8/20/2026｜2026-08-20",
+                "href": "https://apnews.com/article/b595de56eb56950bf87e77e1f812cfba"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜Walmart is cautious with expectations｜2026-08-20",
+                "href": "https://apnews.com/article/955945e03ffcc111389d62fa3103a051"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：是否接受 65 分總分、65 分基準、0 事件調整、資料完整度 97、AI 信心 88、第 17 日影子紀錄與 14 份實際日期版本，供內部研究及私人 Dashboard 呈現。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：本次不授權公開發布，不連動 Beta、持股、再平衡、買賣、個人化投資建議或投資操作，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/market-risk/2026-08-21-v01.md",
+      "asOf": "2026-08-21 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-21 07:10（Asia/Taipei，UTC+8）",
+      "dependencies": []
+    },
     {
       "id": "records/market-risk/2026-08-20-v01.md",
       "date": "2026-08-20",
