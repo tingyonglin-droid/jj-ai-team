@@ -1,14 +1,494 @@
 {
-  "generatedAt": "2026-08-20T23:16:17.457Z",
-  "date": "2026-08-21",
+  "generatedAt": "2026-08-23T23:10:38.135Z",
+  "date": "2026-08-24",
   "expectation": {
-    "dashboardDate": "2026-08-21",
-    "expectedReportDate": "2026-08-20",
-    "coveredSessionDate": "2026-08-19",
+    "dashboardDate": "2026-08-24",
+    "expectedReportDate": "2026-08-21",
+    "coveredSessionDate": "2026-08-20",
     "phase": "before_cutoff",
     "reason": "尚未到 07:30 交付門檻，沿用前一個應有報告日。"
   },
   "approvals": [
+    {
+      "id": "records/market-risk/2026-08-24-v01.md",
+      "title": "市場風險報告｜2026-08-24-v01",
+      "type": "市場風險報告",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "市場風險報告｜2026-08-24-v01",
+      "fullContent": null,
+      "decision": "是否接受 61 分總分、61 分基準、0 事件調整、資料完整度 98、AI 信心 88、第 18 日影子紀錄與 15 份實際日期版本，供內部研究及私人 Dashboard 呈現。",
+      "source": "records/market-risk/2026-08-24-v01.md",
+      "asOf": "2026-08-24 07:10（Asia/Taipei，UTC+8）",
+      "createdAt": null,
+      "recordDate": "2026-08-24",
+      "version": 1,
+      "artifactHash": "sha256:a037ec4a536dff505ec051b1117dd93d30a77b107fce6efd8c8f7a672ea7f78b",
+      "updatedAt": "2026-08-24 07:10（Asia/Taipei，UTC+8）",
+      "dependencies": []
+    },
+    {
+      "id": "records/daily-briefs/2026-08-24-v01.md",
+      "title": "美股反彈但長債續跌，低波動沒有消除折現率壓力",
+      "type": "晨報",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "8/21 S&P 500、Dow、Nasdaq 與 Russell 2000 分別上漲 0.4%、1.0%、0.4%與 0.9%，VIX 降至 15.13，修復前一日的全面回落。 反彈沒有帶動長端利率放鬆：Treasury 顯示 10 年與 30 年殖利率分別升 5bp／4bp 至 4.74%／5.27%，折現率壓力仍在。 S&P Global 美國綜合 PMI 初值由 54.5 升至 56.0，為 2022 年 4 月以來最快；活動改善支持盈餘，但供應延誤、能源與關稅成本也限制利率下行。 Brent 上漲 0.8%至 92.67 美元。單日價格不能確認供給中斷，但能源風險仍可能經運輸、通膨預期與企業毛利傳導。 下週 NVIDIA 8/26 財報與 8/28 Fed 主席 Kevin Warsh 在 Jackson Hole 的演說形成連續催化劑；它們是已排定的觀察點，不是已發生的利空。",
+      "fullContent": null,
+      "decision": "是否接受五則事件排序、61 分保留區風險框架、「低波動未消除折現率壓力」主標題與五分鐘篇幅，供內部研究及私人 Dashboard 使用。",
+      "source": "records/daily-briefs/2026-08-24-v01.md",
+      "asOf": "2026-08-24 07:10（Asia/Taipei，UTC+8）",
+      "createdAt": null,
+      "recordDate": "2026-08-24",
+      "version": 1,
+      "artifactHash": "sha256:25a3a7269afe1a6a4bd413590b52f9a83f4e79e3fe3ed1d4970eef12b5e97a49",
+      "updatedAt": "2026-08-24",
+      "dependencies": []
+    },
+    {
+      "id": "records/content/threads/2026-08-24-vix-low-yields-high-v01.md",
+      "title": "Threads 草稿｜VIX 跌到 15.13，市場風險就下降了嗎？",
+      "type": "Threads",
+      "owner": "社群經營員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "summary": "S&P 500：+0.4% Dow：+1.0% Nasdaq：+0.4% Russell 2000：+0.9% 美國 10 年期殖利率升到 4.74% 30 年期殖利率升到 5.27% 四大指數整週仍下跌 0.8%到 2.1%",
+      "fullContent": {
+        "format": "structured-markdown",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "日期：2026-08-24"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "狀態：待核准"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "來源研究："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-24-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-24-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報版本：v01"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報雜湊："
+                },
+                {
+                  "type": "code",
+                  "text": "sha256:25a3a7269afe1a6a4bd413590b52f9a83f4e79e3fe3ed1d4970eef12b5e97a49"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "內容指紋："
+                },
+                {
+                  "type": "code",
+                  "text": "sha256:61c3037e92cbb3e53178f20b78a8a71d58142e44b4fb27ac99c5459ab5e51dd3"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "建議時機：現在；發布前須重新確認 VIX、長端殖利率與本人觀點是否有重大更新"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "主版本"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "VIX 跌到 15.13，市場風險就下降了嗎？"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "答案是：有一部分下降，但不是全部。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "上週五，美股四大指數全面反彈："
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "S&P 500：+0.4%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Dow：+1.0%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Nasdaq：+0.4%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Russell 2000：+0.9%"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "VIX 也從 16.01 降到 15.13。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "這代表短期期權市場的預期波動下降，投資人買保險的壓力緩和。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "但同一天："
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "美國 10 年期殖利率升到 4.74%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "30 年期殖利率升到 5.27%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "四大指數整週仍下跌 0.8%到 2.1%"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "所以我會把市場風險拆成三層。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "第一層：價格。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "股市上漲，代表當天風險偏好修復。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "第二層：波動。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "VIX 回落，代表市場預期未來約 30 天的 S&P 500 波動下降。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "第三層：金融條件。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "長端殖利率上升，會提高企業融資成本，也提高股票估值使用的折現率。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "這一層沒有因為 VIX 回落就消失。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "更有意思的是，美國 8 月綜合 PMI 初值從 54.5 升到 56.0，創 2022 年 4 月以來最快增速。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "強成長支持企業營收，卻也讓利率更難靠景氣降溫自然下來。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "這就是為什麼："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "低 VIX，可以和高折現率同時存在。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "一句話："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "VIX 告訴我們「市場預期會不會晃得更大」，但不會回答「資產的折現率是不是變便宜」。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "看風險，不能只看一個溫度計。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "備選開頭"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "start": 1,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "美股四大指數反彈、VIX 降到 15.13，但 10 年期殖利率卻升到 4.74%。市場是在降風險，還是換一種風險？"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "VIX 低，不等於所有風險都低。上週五最值得看的，是波動下降與折現率上升同時發生。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "查核與語氣"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "事實與來源：四大指數單日漲幅及週線跌幅，來源為 Associated Press、資料日 2026-08-21；VIX 16.01→15.13，來源為 Cboe、資料日 2026-08-21；10Y／30Y 4.69%→4.74%／5.23%→5.27%，來源為 U.S. Treasury、資料日 2026-08-20 至 08-21；綜合 PMI 54.5→56.0，來源為 S&P Global、發布日 2026-08-21。完整連結見觸發晨報來源章節。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "反方或限制：VIX 是依 S&P 500 期權推導的近期期望波動，不等同全部市場風險；日線反彈不能推導未來報酬，長端殖利率上升也不證明股市必然下跌。三層框架屬 AI 整理。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "待使用者補充：請確認是否採用第一人稱立場「我會把市場風險拆成價格、波動與金融條件三層」；未代寫任何個人經歷、持股、交易或績效。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "App CTA：不加入；本篇核心是風險閱讀框架，沒有自然且必要的產品承接。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "核准"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "最終文字與發布由使用者決定：尚未核准；本草稿不得自動發布，也不授權留言、私訊或任何投資行動。"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "decision": "等待使用者決定",
+      "source": "records/content/threads/2026-08-24-vix-low-yields-high-v01.md",
+      "asOf": "2026-08-24",
+      "createdAt": null,
+      "recordDate": "2026-08-24",
+      "version": 1,
+      "artifactHash": "sha256:63fa96efd1406f9849e328ca1f4f32ebc8fbae3d4350eed01e324b1d97c29d39",
+      "updatedAt": "2026-08-24",
+      "dependencies": [
+        "records/daily-briefs/2026-08-24-v01.md"
+      ]
+    },
     {
       "id": "records/market-risk/2026-08-21-v01.md",
       "title": "市場風險報告｜2026-08-21-v01",
@@ -46,7 +526,7 @@
       "recordDate": "2026-08-21",
       "version": 1,
       "artifactHash": "sha256:712acf95cd26e5baf730fdcec3581c126e51bfd1ca978ed3a5afbc37992a726f",
-      "updatedAt": "2026-08-21",
+      "updatedAt": "2026-08-21T07:17:18+08:00",
       "dependencies": []
     },
     {
@@ -5936,15 +6416,15 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
-      "currentTask": "市場風險報告｜2026-08-21-v01",
+      "currentTask": "市場風險報告｜2026-08-24-v01",
       "progress": "等待人工核准",
       "dependencies": [],
       "handoff": "將研究與風險成果交總司令驗收；將已驗證素材交社群經營員；將市場風險欄位與限制交 App 設計員。所有對外使用均由使用者核准。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/market-risk/2026-08-21-v01.md",
-      "asOf": "2026-08-21 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-21 07:10（Asia/Taipei，UTC+8）"
+      "source": "records/market-risk/2026-08-24-v01.md",
+      "asOf": "2026-08-24 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-24 07:10（Asia/Taipei，UTC+8）"
     },
     {
       "id": "social-operator",
@@ -5953,20 +6433,64 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
-      "currentTask": "Threads 草稿｜Walmart 財報很好，股價為什麼還跌 9.2%？",
+      "currentTask": "Threads 草稿｜VIX 跌到 15.13，市場風險就下降了嗎？",
       "progress": "等待人工核准",
       "dependencies": [
-        "records/daily-briefs/2026-08-21-v01.md"
+        "records/daily-briefs/2026-08-24-v01.md"
       ],
       "handoff": "研究疑問退回總經研究員；成果與實驗交總司令驗收；最終語氣、個人觀點、發布與互動交使用者。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/content/threads/2026-08-21-walmart-good-quarter-stock-falls-v01.md",
-      "asOf": "2026-08-21",
-      "updatedAt": "2026-08-21"
+      "source": "records/content/threads/2026-08-24-vix-low-yields-high-v01.md",
+      "asOf": "2026-08-24",
+      "updatedAt": "2026-08-24"
     }
   ],
   "tasks": [
+    {
+      "id": "records/market-risk/2026-08-24-v01.md",
+      "title": "市場風險報告｜2026-08-24-v01",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/market-risk/2026-08-24-v01.md",
+      "asOf": "2026-08-24 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-24 07:10（Asia/Taipei，UTC+8）"
+    },
+    {
+      "id": "records/daily-briefs/2026-08-24-v01.md",
+      "title": "美股反彈但長債續跌，低波動沒有消除折現率壓力",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/daily-briefs/2026-08-24-v01.md",
+      "asOf": "2026-08-24 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-24"
+    },
+    {
+      "id": "records/content/threads/2026-08-24-vix-low-yields-high-v01.md",
+      "title": "Threads 草稿｜VIX 跌到 15.13，市場風險就下降了嗎？",
+      "owner": "社群經營員",
+      "ownerId": "social-operator",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "nextStep": "等待使用者核准",
+      "dependencies": [
+        "records/daily-briefs/2026-08-24-v01.md"
+      ],
+      "source": "records/content/threads/2026-08-24-vix-low-yields-high-v01.md",
+      "asOf": "2026-08-24",
+      "updatedAt": "2026-08-24"
+    },
     {
       "id": "records/market-risk/2026-08-21-v01.md",
       "title": "市場風險報告｜2026-08-21-v01",
@@ -5993,7 +6517,7 @@
       "dependencies": [],
       "source": "records/daily-briefs/2026-08-21-v01.md",
       "asOf": "2026-08-21 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-21"
+      "updatedAt": "2026-08-21T07:17:18+08:00"
     },
     {
       "id": "records/content/threads/2026-08-21-walmart-good-quarter-stock-falls-v01.md",
@@ -6540,6 +7064,1486 @@
   ],
   "briefArchive": [
     {
+      "id": "records/daily-briefs/2026-08-24-v01.md",
+      "date": "2026-08-24",
+      "version": 1,
+      "versionLabel": "v01",
+      "isLatest": true,
+      "title": "美股反彈但長債續跌，低波動沒有消除折現率壓力",
+      "summary": "8/21 S&P 500、Dow、Nasdaq 與 Russell 2000 分別上漲 0.4%、1.0%、0.4%與 0.9%，VIX 降至 15.13，修復前一日的全面回落。 反彈沒有帶動長端利率放鬆：Treasury 顯示 10 年與 30 年殖利率分別升 5bp／4bp 至 4.74%／5.27%，折現率壓力仍在。 S&P Global 美國綜合 PMI 初值由 54.5 升至 56.0，為 2022 年 4 月以來最快；活動改善支持盈餘，但供應延誤、能源與關稅成本也限制利率下行。 Brent 上漲 0.8%至 92.67 美元。單日價格不能確認供給中斷，但能源風險仍可能經運輸、通膨預期與企業毛利傳導。 下週 NVIDIA 8/26 財報與 8/28 Fed 主席 Kevin Warsh 在 Jackson Hole 的演說形成連續催化劑；它們是已排定的觀察點，不是已發生的利空。",
+      "freshness": "最新",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:25a3a7269afe1a6a4bd413590b52f9a83f4e79e3fe3ed1d4970eef12b5e97a49",
+      "coveredSessionDate": "2026-08-21",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-08-24 07:10（Asia/Taipei，UTC+8）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察市場：美股、美元利率、信用、波動、能源、美國總經與大型科技催化劑"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察期間：2026-08-21 已完成美股交易時段；總經與市場資料使用各來源截至截止時間的最新可得值"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料完整度：98／100；8/21 Cboe 成交檔、Treasury 殖利率、主要指數與 VIX 均已更新，HY／IG OAS 最新至 8/20、廣義美元最新至 8/14，屬明示的正常發布落差"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "一分鐘摘要"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "8/21 S&P 500、Dow、Nasdaq 與 Russell 2000 分別上漲 0.4%、1.0%、0.4%與 0.9%，VIX 降至 15.13，修復前一日的全面回落。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反彈沒有帶動長端利率放鬆：Treasury 顯示 10 年與 30 年殖利率分別升 5bp／4bp 至 4.74%／5.27%，折現率壓力仍在。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "S&P Global 美國綜合 PMI 初值由 54.5 升至 56.0，為 2022 年 4 月以來最快；活動改善支持盈餘，但供應延誤、能源與關稅成本也限制利率下行。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Brent 上漲 0.8%至 92.67 美元。單日價格不能確認供給中斷，但能源風險仍可能經運輸、通膨預期與企業毛利傳導。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "下週 NVIDIA 8/26 財報與 8/28 Fed 主席 Kevin Warsh 在 Jackson Hole 的演說形成連續催化劑；它們是已排定的觀察點，不是已發生的利空。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日風險儀表"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "1–4 週風險分數：61／100"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "相較前一交易日：-4"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險狀態：中性與偏高之間的保留區"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "即時風險：長端殖利率續升、能源價格仍高、AI 財報與政策訊息集中"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "結構性風險：財政與企業融資需求、能源與供應鏈成本、AI 資本支出回報"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "今日主要風險來源：長端利率與期限溢價、能源與供應鏈成本、AI／政策催化劑集中"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "五則重要事件"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "1｜10 年殖利率升至 4.74%，股市反彈沒有解除折現率壓力"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "8/21 美國 10 年期公債殖利率由 4.69%升至 4.74%，30 年期由 5.23%升至 5.27%。前一交易日長債反彈後，市場仍要求更高的期限與融資補償。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "10Y +5bp、20Y +4bp 至 5.24%、30Y +4bp。來源：U.S. Treasury，資料日 2026-08-20 至 08-21。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：股價上漲與長債殖利率上升可以同時發生，但前者是一天的風險偏好，後者直接提高長久期資產的折現率與企業融資門檻。市場修復不等於金融條件已經放鬆。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 風險變化為主，B 估值為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：維持升溫"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日、1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：長端供需與通膨疑慮 → 殖利率上升 → 融資成本及股票折現率提高 → 高估值與高資本支出公司容錯下降"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：30 年期標售、期限溢價、Treasury 買回投標、市場深度與大型科技公司發債"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：單日 4–5bp 上升不足以證明市場功能惡化；若成長與盈餘同步上修，部分估值壓力可被吸收"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若長端標售穩定、10Y／30Y 持續回落且信用利差不擴大，應降低警戒"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "2｜美國綜合 PMI 升至 56.0，成長加速也讓利率難以自然下行"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "S&P Global 8 月美國綜合產出 PMI 初值由 54.5 升至 56.0，為 2022 年 4 月以來最快。調查同時顯示就業增速為 2025 年 1 月以來最快，供應延誤接近四年來最嚴重區間之一；投入成本增速較 2 月以來最慢，但仍受能源、供應鏈與關稅影響。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "綜合產出 PMI 56.0、前值 54.5；S&P Global 依歷史關係估算第三季年化成長接近 3.0%，高於第二季約 1.5%。來源：S&P Global Market Intelligence，發布日 2026-08-21；成長估算屬該機構模型，不是官方 GDP。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：活動與就業強韌降低近期營收急縮風險，卻也減少市場單靠成長降溫取得利率下行的空間。售價通膨放緩是重要反證，不能把高 PMI 直接等同再通膨。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面為主，D 風險變化為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：成長風險緩解、利率風險仍高"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：活動與就業加速 → 盈餘下檔受支撐但降息需求下降 → 長端殖利率維持高檔 → 估值與融資成本承壓"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：ISM、新訂單、非農就業、PCE、實質消費與企業售價"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：產出價格增速下降；初值調查可能修訂，不能代替官方 GDP"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若後續官方活動與就業轉弱、通膨同步降溫，應降低利率警戒並重新評估成長風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "3｜Brent 升至 92.67 美元，能源風險仍未離開成本鏈"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "8/21 Brent 原油上漲 0.8%至每桶 92.67 美元。AP 將市場關注連結至波斯灣油輪通行與供應不確定性；這是外部市場敘事，不是已確認的唯一價格原因。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Brent +0.8%至 92.67 美元。來源：Associated Press，市場資料日 2026-08-21。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：油價絕對水準偏高時，風險不只在能源股，而是能否傳至汽柴油、物流、企業毛利與通膨預期。單日漲幅本身不足以確認持續衝擊。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 風險變化為主，A 基本面為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：維持升溫但未確認擴散"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日、1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：供給不確定性 → 能源與運輸成本上升 → 實質消費與企業毛利受壓 → 通膨及利率下降空間縮小"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：Brent／WTI、油輪通行、EIA 庫存、零售汽柴油與通膨預期"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：8/21 漲幅有限，尚未由官方資料確認實體供應中斷"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若油輪通行穩定、Brent 回吐漲幅且成品油與通膨預期沒有跟漲，應下調"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "4｜四大指數反彈、VIX 降至 15.13，但週線仍全面下跌"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "8/21 S&P 500、Dow、Nasdaq 與 Russell 2000 全面上漲，Cboe 顯示 VIX 由 16.01 降至 15.13；同一週四項指數仍分別下跌 1.4%、0.8%、2.1%與 1.6%。日線廣度修復，但尚未推翻一週的風險重估。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "S&P 500 收 7,674.37、Dow 53,277.01、Nasdaq 26,180.45、Russell 2000 3,017.87；單日 +0.4%、+1.0%、+0.4%、+0.9%；VIX -5.50%至 15.13。來源：Associated Press、Cboe，資料日 2026-08-21。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：VIX 回落代表近期期權隱含波動下降，不代表長端利率、信用、能源或盈餘風險同步消失。日線修復支持下調市場結構分數，但週線與利率提供反方證據。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：C 資金輪動為主，D 風險變化為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：短線降溫、週線仍待確認"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日、1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：廣泛反彈＋避險需求下降 → 短線去風險壓力緩解 → 若利率與信用穩定，修復可延續"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：VIX、等權重與市值權重、上漲家數、成交量、HY／IG OAS"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：四大指數週線仍跌；10Y／30Y 同日上升，金融條件未同步放鬆"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若 VIX、信用利差與長端殖利率再升且市場廣度轉弱，短線修復判斷失效"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "5｜NVIDIA 財報與 Jackson Hole 排定在同週，兩種估值假設將連續受檢驗"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "NVIDIA 已排定 8/26 美股盤後公布第二季 FY2027 財報；Kansas City Fed 的 Jackson Hole 經濟政策研討會於 8/27–8/29 舉行，Fed 行事曆顯示主席 Kevin Warsh 將於 8/28 10:00 ET 發表主題演說。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "NVIDIA 財報預計 8/26 13:20 PT 公布、14:00 PT 舉行電話會議；Jackson Hole 8/27–8/29，主席演說 8/28 10:00 ET。來源：NVIDIA Investor Relations、Federal Reserve Bank of Kansas City、Federal Reserve，查核日 2026-08-24。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：NVIDIA 驗證 AI 需求、毛利與資本支出回報，Jackson Hole 驗證政策與長端利率預期。兩者不是已發生的下跌理由，而是同週先後測試盈餘分子與折現率分母的事件風險。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：B 估值為主，D 風險變化為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：尚未觸發、需預先監測"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日、1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：AI 財測或政策訊息偏離預期 → 盈餘或折現率假設重估 → 權重科技與市場波動放大"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：NVIDIA 營收、毛利、供給與展望；Warsh 對通膨、成長與政策反應函數的表述；期權隱含波動"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：事件尚未發生，正面財測或較平衡的政策訊息也可能降低風險"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若兩項事件均未造成盈餘、利率、波動或市場廣度的顯著重估，應撤回催化劑集中警戒"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "事實"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "數值／變化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料期間"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源與日期"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "美國長端殖利率上升"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "10Y 4.69%→4.74%；30Y 5.23%→5.27%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-20 至 08-21"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. Treasury，資料日 2026-08-21"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "美國綜合 PMI 初值加速"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "54.5→56.0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "S&P Global，2026-08-21"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Brent 原油上漲"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "+0.8%至 92.67 美元"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-21"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-21"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "四大指數反彈"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "+0.4%至+1.0%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-21"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-21"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "VIX 回落"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "16.01→15.13，-5.50%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-21"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Cboe，2026-08-21"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "兩項下週催化劑已排定"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "NVIDIA 8/26；Jackson Hole 8/27–8/29"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-26 至 08-29"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "NVIDIA／Kansas City Fed／Federal Reserve，2026-08-24 查核"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論與初步判斷"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認資料顯示「成長與風險偏好修復」和「折現率仍高」並存：PMI、四大指數與 VIX 降低短線成長及市場結構風險，長端殖利率與油價則沒有同步放鬆。初判不是信用或波動危機，而是低波動環境仍需承受偏高折現率；下週財報與政策訊息將檢驗這種組合能否延續。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "外部觀點比較"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀點摘要"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "與初判一致／分歧"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "對判斷影響"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "S&P Global，2026-08-21"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "認為強勁產出與就業、供應延誤仍形成偏鷹組合，但售價通膨放緩支持政策先觀望"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致並提供反方"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "支持「成長改善但利率不易自然下行」，不把高 PMI 直接等同再通膨"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-21"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "指出股市反彈與長債殖利率、油價上升並存"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致；屬外部市場敘事"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "支持區分短線價格修復與金融條件，利率事實仍以 Treasury 為準"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Cboe，2026-08-21"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "VIX 降至 15.13"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "與全面壓力敘事分歧"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "支持下調市場結構風險，不支持波動危機結論"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "最終判斷與反方證據"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終判斷：未來 1–4 週風險由 65 降至 61，回到中性與偏高之間的保留區，信心 88／100。主因是四大指數同步反彈、VIX 回落及 PMI 降低近期成長下檔；長端殖利率、油價與下週催化劑限制降幅。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：VIX 僅 15.13、指數全面反彈、PMI 56.0、Fed H.8 顯示貸款與 C&I 增加、商業票據餘額小幅上升；這些資料不支持信用或流動性危機。相反方向是四大指數週線仍跌、10Y／30Y 續升及信用資料有一日發布落差。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若長端殖利率與信用利差回落、油價降溫且財報／政策催化劑未引發廣度惡化，應再下調；若利率、油價、VIX 與信用同步上升，則需回到偏高。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日市場一句話"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "VIX 回落修復了短線情緒，但真正決定高估值資產容錯的長端折現率仍在上升。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "反方證據與尚未確認資料"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "反方證據：四大指數反彈、VIX 15.13、PMI 56.0；Fed H.8 顯示截至 8/12 貸款與租賃較前週增加 261 億美元、C&I 增 84 億，商業票據 8/19 較 8/12 增 30 億美元。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：HY／IG OAS 最新至 8/20，分別 2.75／0.82，較 8/19 上升 2bp／1bp但仍低；廣義美元最新至 8/14。這些發布落差未冒充 8/21 值，也未據此加入事件調整。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "尚未確認與待觀察"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "未確認資料：日頻信用有一個交易日發布落差，美元週序列較舊；不以未知值做確定結論。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "未入選候選事件：候選池九項為①Treasury 長債、②美國 PMI、③Brent、④主要指數與 VIX、⑤NVIDIA／Jackson Hole、⑥Ross Stores 財報、⑦Fed H.8、⑧商業票據、⑨HY／IG OAS。Ross 作企業基本面反證，H.8／商業票據／信用作流動性與信用底層，避免同一因果鏈超過兩則。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "下一確認點：8/24 後續利率、油價、VIX 與信用；8/26 NVIDIA 財報；8/28 Jackson Hole 主席演說；下一份 PCE、ISM 與 EIA。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "來源"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "link",
+                "text": "NYSE｜Holidays & Trading Hours｜2026 日曆與核心交易時段；2026-08-24 07:10 查核",
+                "href": "https://www.nyse.com/trade/hours-calendars"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Treasury｜Daily Treasury Par Yield Curve Rates｜資料日 2026-08-20 至 08-21",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "S&P Global｜US flash PMI signals hotter output growth and cooler inflation｜2026-08-21",
+                "href": "https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/08/us-flash-pmi-signals-welcome-mix-of-hotter-output-growth-cooler-inflation"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Cboe｜VIX｜資料日 2026-08-21",
+                "href": "https://www.cboe.com/tradable-products/vix"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Cboe｜U.S. Equities Historical Market Volume｜資料日 2026-08-21",
+                "href": "https://cdn.cboe.com/resources/us/equities/market-statistics/historical-market-volume/market_history_2026.csv"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜HY OAS｜最新資料日 2026-08-20",
+                "href": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜IG OAS｜最新資料日 2026-08-20",
+                "href": "https://fred.stlouisfed.org/series/BAMLC0A0CM"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／Federal Reserve｜Broad Dollar Index｜最新資料日 2026-08-14",
+                "href": "https://fred.stlouisfed.org/series/DTWEXBGS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜H.8 Assets and Liabilities of Commercial Banks｜發布日 2026-08-21、最新週截至 08-12",
+                "href": "https://www.federalreserve.gov/releases/h8/current/default.htm"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜Commercial Paper Outstanding｜最新週 2026-08-19",
+                "href": "https://www.federalreserve.gov/releases/cp/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "NVIDIA｜Q2 FY2027 results call schedule｜2026-08-26 事件",
+                "href": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Second-Quarter-Financial-Results/default.aspx"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve Bank of Kansas City｜Jackson Hole Symposium｜2026-08-27 至 08-29",
+                "href": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜August 2026 calendar｜2026-08-28 主席演說",
+                "href": "https://www.federalreserve.gov/newsevents/2026-august.htm"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜Stocks rise while Treasury yields climb｜2026-08-21",
+                "href": "https://apnews.com/article/stock-markets-bonds-futures-oil-iran-96ef9586e1288e50843b4d2b1ccebc32"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜How major US stock indexes fared Friday 8/21/2026｜2026-08-21",
+                "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-09c079b43680c3e4564346892b5dc824"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "人工核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：是否接受五則事件排序、61 分保留區風險框架、「低波動未消除折現率壓力」主標題與五分鐘篇幅，供內部研究及私人 Dashboard 使用。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：本版本不授權公開發布、對外引用、個人化投資建議、持股調整、再平衡、買賣或任何投資行動，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/daily-briefs/2026-08-24-v01.md",
+      "asOf": "2026-08-24 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-24",
+      "dependencies": []
+    },
+    {
       "id": "records/daily-briefs/2026-08-21-v01.md",
       "date": "2026-08-21",
       "version": 1,
@@ -6547,7 +8551,7 @@
       "isLatest": true,
       "title": "油價與長債殖利率同步反彈，強韌成長卻未能阻止美股全面回落",
       "summary": "8/19 的長債緩解迅速反轉：8/20 美國 10 年與 30 年殖利率各回升 4 個基點至 4.69%與 5.23%，市場再次要求更高的期限與融資補償。 Brent 原油上漲 2.4%至 93.78 美元；能源與長端利率同向上升，使通膨、企業成本與股票折現率同時受壓。 初領失業金降至 20.6 萬、費城 Fed 製造業活動升至 47.4，顯示景氣沒有快速失速；但「成長仍強」也減少長端利率自然下行的空間。 Walmart 營收、電商、毛利與全年財測均成長，但美國同店銷售增速放慢、關稅退款拉高當期獲利、自由現金流下降且 CapEx 目標提高，股價下跌 9.2%。 S&P 500、Dow、Nasdaq 與 Russell 2000 全面下跌，Cboe 頁面於 20:15 ET 顯示 VIX 16.01；風險分數由 64 升至 65，首次進入「偏高」，但信用利差與 VIX 絕對水準仍提供反證。",
-      "freshness": "最新",
+      "freshness": "歷史版本",
       "artifactStatus": "待核准",
       "rawStatus": "待核准",
       "artifactHash": "sha256:712acf95cd26e5baf730fdcec3581c126e51bfd1ca978ed3a5afbc37992a726f",
@@ -8016,7 +10020,7 @@
       ],
       "source": "records/daily-briefs/2026-08-21-v01.md",
       "asOf": "2026-08-21 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-21",
+      "updatedAt": "2026-08-21T07:17:18+08:00",
       "dependencies": []
     },
     {
@@ -29565,6 +31569,439 @@
   ],
   "threadsDocuments": [
     {
+      "id": "records/content/threads/2026-08-24-vix-low-yields-high-v01.md",
+      "artifactKey": "cmVjb3Jkcy9jb250ZW50L3RocmVhZHMvMjAyNi0wOC0yNC12aXgtbG93LXlpZWxkcy1oaWdoLXYwMS5tZAAxAHNoYTI1Njo2M2ZhOTZlZmQxNDA2Zjk4NDllMzI4Y2ExZjRmMzJlYmM4ZmJhZTNkNDM1MGVlZDAxZTMyNGIxZDk3YzI5ZDM5",
+      "date": "2026-08-24",
+      "version": 1,
+      "versionLabel": "v01",
+      "title": "Threads 草稿｜VIX 跌到 15.13，市場風險就下降了嗎？",
+      "summary": "S&P 500：+0.4% Dow：+1.0% Nasdaq：+0.4% Russell 2000：+0.9% 美國 10 年期殖利率升到 4.74% 30 年期殖利率升到 5.27% 四大指數整週仍下跌 0.8%到 2.1%",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:63fa96efd1406f9849e328ca1f4f32ebc8fbae3d4350eed01e324b1d97c29d39",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "日期：2026-08-24"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源研究："
+              },
+              {
+                "type": "code",
+                "text": "records/daily-briefs/2026-08-24-v01.md"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報："
+              },
+              {
+                "type": "code",
+                "text": "records/daily-briefs/2026-08-24-v01.md"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報雜湊："
+              },
+              {
+                "type": "code",
+                "text": "sha256:25a3a7269afe1a6a4bd413590b52f9a83f4e79e3fe3ed1d4970eef12b5e97a49"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "內容指紋："
+              },
+              {
+                "type": "code",
+                "text": "sha256:61c3037e92cbb3e53178f20b78a8a71d58142e44b4fb27ac99c5459ab5e51dd3"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "建議時機：現在；發布前須重新確認 VIX、長端殖利率與本人觀點是否有重大更新"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "主版本"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "VIX 跌到 15.13，市場風險就下降了嗎？"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "答案是：有一部分下降，但不是全部。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "上週五，美股四大指數全面反彈："
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "S&P 500：+0.4%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Dow：+1.0%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Nasdaq：+0.4%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Russell 2000：+0.9%"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "VIX 也從 16.01 降到 15.13。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "這代表短期期權市場的預期波動下降，投資人買保險的壓力緩和。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "但同一天："
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "美國 10 年期殖利率升到 4.74%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "30 年期殖利率升到 5.27%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "四大指數整週仍下跌 0.8%到 2.1%"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "所以我會把市場風險拆成三層。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "第一層：價格。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "股市上漲，代表當天風險偏好修復。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "第二層：波動。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "VIX 回落，代表市場預期未來約 30 天的 S&P 500 波動下降。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "第三層：金融條件。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "長端殖利率上升，會提高企業融資成本，也提高股票估值使用的折現率。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "這一層沒有因為 VIX 回落就消失。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "更有意思的是，美國 8 月綜合 PMI 初值從 54.5 升到 56.0，創 2022 年 4 月以來最快增速。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "強成長支持企業營收，卻也讓利率更難靠景氣降溫自然下來。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "這就是為什麼："
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "低 VIX，可以和高折現率同時存在。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "一句話："
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "VIX 告訴我們「市場預期會不會晃得更大」，但不會回答「資產的折現率是不是變便宜」。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "看風險，不能只看一個溫度計。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "備選開頭"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 1,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "美股四大指數反彈、VIX 降到 15.13，但 10 年期殖利率卻升到 4.74%。市場是在降風險，還是換一種風險？"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "VIX 低，不等於所有風險都低。上週五最值得看的，是波動下降與折現率上升同時發生。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "查核與語氣"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "事實與來源：四大指數單日漲幅及週線跌幅，來源為 Associated Press、資料日 2026-08-21；VIX 16.01→15.13，來源為 Cboe、資料日 2026-08-21；10Y／30Y 4.69%→4.74%／5.23%→5.27%，來源為 U.S. Treasury、資料日 2026-08-20 至 08-21；綜合 PMI 54.5→56.0，來源為 S&P Global、發布日 2026-08-21。完整連結見觸發晨報來源章節。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方或限制：VIX 是依 S&P 500 期權推導的近期期望波動，不等同全部市場風險；日線反彈不能推導未來報酬，長端殖利率上升也不證明股市必然下跌。三層框架屬 AI 整理。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "待使用者補充：請確認是否採用第一人稱立場「我會把市場風險拆成價格、波動與金融條件三層」；未代寫任何個人經歷、持股、交易或績效。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "App CTA：不加入；本篇核心是風險閱讀框架，沒有自然且必要的產品承接。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終文字與發布由使用者決定：尚未核准；本草稿不得自動發布，也不授權留言、私訊或任何投資行動。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/content/threads/2026-08-24-vix-low-yields-high-v01.md",
+      "asOf": "2026-08-24",
+      "updatedAt": "2026-08-24",
+      "dependencies": [
+        "records/daily-briefs/2026-08-24-v01.md"
+      ]
+    },
+    {
       "id": "records/content/threads/2026-08-21-walmart-good-quarter-stock-falls-v01.md",
       "artifactKey": "cmVjb3Jkcy9jb250ZW50L3RocmVhZHMvMjAyNi0wOC0yMS13YWxtYXJ0LWdvb2QtcXVhcnRlci1zdG9jay1mYWxscy12MDEubWQAMQBzaGEyNTY6OGNiOTg2MGY2MmJhYzM1ODY5YTFkMDgwNjgzNThiNjM2NDI0OGNmMzY5Nzc4N2IyODBjMmU0ZTg2NTcyNTNkYQ",
       "date": "2026-08-21",
@@ -34843,45 +37280,45 @@
   "approvedThreadsArchive": [],
   "threadsArchiveIssues": [],
   "brief": {
-    "title": "油價與長債殖利率同步反彈，強韌成長卻未能阻止美股全面回落",
-    "headline": "油價與長債殖利率同步反彈，強韌成長卻未能阻止美股全面回落",
-    "summary": "8/19 的長債緩解迅速反轉：8/20 美國 10 年與 30 年殖利率各回升 4 個基點至 4.69%與 5.23%，市場再次要求更高的期限與融資補償。 Brent 原油上漲 2.4%至 93.78 美元；能源與長端利率同向上升，使通膨、企業成本與股票折現率同時受壓。 初領失業金降至 20.6 萬、費城 Fed 製造業活動升至 47.4，顯示景氣沒有快速失速；但「成長仍強」也減少長端利率自然下行的空間。 Walmart 營收、電商、毛利與全年財測均成長，但美國同店銷售增速放慢、關稅退款拉高當期獲利、自由現金流下降且 CapEx 目標提高，股價下跌 9.2%。 S&P 500、Dow、Nasdaq 與 Russell 2000 全面下跌，Cboe 頁面於 20:15 ET 顯示 VIX 16.01；風險分數由 64 升至 65，首次進入「偏高」，但信用利差與 VIX 絕對水準仍提供反證。",
+    "title": "美股反彈但長債續跌，低波動沒有消除折現率壓力",
+    "headline": "美股反彈但長債續跌，低波動沒有消除折現率壓力",
+    "summary": "8/21 S&P 500、Dow、Nasdaq 與 Russell 2000 分別上漲 0.4%、1.0%、0.4%與 0.9%，VIX 降至 15.13，修復前一日的全面回落。 反彈沒有帶動長端利率放鬆：Treasury 顯示 10 年與 30 年殖利率分別升 5bp／4bp 至 4.74%／5.27%，折現率壓力仍在。 S&P Global 美國綜合 PMI 初值由 54.5 升至 56.0，為 2022 年 4 月以來最快；活動改善支持盈餘，但供應延誤、能源與關稅成本也限制利率下行。 Brent 上漲 0.8%至 92.67 美元。單日價格不能確認供給中斷，但能源風險仍可能經運輸、通膨預期與企業毛利傳導。 下週 NVIDIA 8/26 財報與 8/28 Fed 主席 Kevin Warsh 在 Jackson Hole 的演說形成連續催化劑；它們是已排定的觀察點，不是已發生的利空。",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准",
     "version": 1,
-    "artifactHash": "sha256:712acf95cd26e5baf730fdcec3581c126e51bfd1ca978ed3a5afbc37992a726f",
-    "coveredSessionDate": "2026-08-20",
-    "asOf": "2026-08-21 07:10（Asia/Taipei，UTC+8）",
-    "source": "records/daily-briefs/2026-08-21-v01.md",
-    "updatedAt": "2026-08-21",
+    "artifactHash": "sha256:25a3a7269afe1a6a4bd413590b52f9a83f4e79e3fe3ed1d4970eef12b5e97a49",
+    "coveredSessionDate": "2026-08-21",
+    "asOf": "2026-08-24 07:10（Asia/Taipei，UTC+8）",
+    "source": "records/daily-briefs/2026-08-24-v01.md",
+    "updatedAt": "2026-08-24",
     "dependencies": []
   },
   "marketRisk": {
-    "label": "市場風險報告｜2026-08-21-v01",
+    "label": "市場風險報告｜2026-08-24-v01",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准",
     "version": 1,
-    "artifactHash": "sha256:578712a52d78232987e16cab899345fd4abbe21926bcfc598882141569d912e3",
-    "coveredSessionDate": "2026-08-20",
-    "asOf": "2026-08-21 07:10（Asia/Taipei，UTC+8）",
-    "source": "records/market-risk/2026-08-21-v01.md",
-    "updatedAt": "2026-08-21 07:10（Asia/Taipei，UTC+8）",
+    "artifactHash": "sha256:a037ec4a536dff505ec051b1117dd93d30a77b107fce6efd8c8f7a672ea7f78b",
+    "coveredSessionDate": "2026-08-21",
+    "asOf": "2026-08-24 07:10（Asia/Taipei，UTC+8）",
+    "source": "records/market-risk/2026-08-24-v01.md",
+    "updatedAt": "2026-08-24 07:10（Asia/Taipei，UTC+8）",
     "dependencies": [],
-    "score": 65,
-    "baseline": 65,
+    "score": 61,
+    "baseline": 61,
     "eventAdjustment": 0,
-    "dailyChange": 1,
-    "immediateRisk": "Brent 與長債殖利率同向上升、四大指數全面下跌、Walmart 預期重估",
-    "structuralRisk": "財政與企業融資需求、能源通膨、資本支出回報與消費增速分化",
+    "dailyChange": -4,
+    "immediateRisk": "長端殖利率續升、能源價格仍高、AI 財報與政策訊息集中",
+    "structuralRisk": "財政與企業融資需求、能源與供應鏈成本、AI 資本支出回報",
     "topRisks": [
-      "能源與長端利率",
-      "融資供給與期限溢價",
-      "盈餘品質與市場廣度"
+      "長端利率與期限溢價",
+      "能源與供應鏈成本",
+      "AI／政策催化劑集中"
     ],
     "confidence": 88,
-    "completeness": 97,
+    "completeness": 98,
     "experimental": true
   },
   "marketRiskHistory": {
@@ -35396,11 +37833,782 @@
             "readable": true
           }
         ]
+      },
+      {
+        "id": "records/market-risk/2026-08-24-v01.md",
+        "date": "2026-08-24",
+        "version": 1,
+        "versionLabel": "v01",
+        "artifactHash": "sha256:a037ec4a536dff505ec051b1117dd93d30a77b107fce6efd8c8f7a672ea7f78b",
+        "artifactStatus": "待核准",
+        "rawStatus": "待核准",
+        "asOf": "2026-08-24 07:10（Asia/Taipei，UTC+8）",
+        "updatedAt": "2026-08-24 07:10（Asia/Taipei，UTC+8）",
+        "source": "records/market-risk/2026-08-24-v01.md",
+        "score": 61,
+        "state": "保留區間",
+        "dailyChange": -4,
+        "changeReasons": "無；事件調整為 0",
+        "topRisks": [
+          "長端利率與期限溢價",
+          "能源與供應鏈成本",
+          "AI／政策催化劑集中"
+        ],
+        "supportingEvidence": "10Y／30Y 4.74%／5.27%、Brent 92.67 美元、四大指數週線下跌、下週兩項已排定催化劑",
+        "counterEvidence": "PMI 56.0、四大指數單日反彈、VIX 15.13、H.8 貸款與商業票據增加、信用利差絕對水準低",
+        "confidence": 88,
+        "completeness": 98,
+        "lowCompleteness": false,
+        "dependencies": [],
+        "versions": [
+          {
+            "id": "records/market-risk/2026-08-24-v01.md",
+            "version": 1,
+            "versionLabel": "v01",
+            "source": "records/market-risk/2026-08-24-v01.md",
+            "readable": true
+          }
+        ]
       }
     ],
     "issues": []
   },
   "marketRiskArchive": [
+    {
+      "id": "records/market-risk/2026-08-24-v01.md",
+      "date": "2026-08-24",
+      "version": 1,
+      "versionLabel": "v01",
+      "isLatest": true,
+      "title": "市場風險報告｜2026-08-24-v01",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准",
+      "artifactHash": "sha256:a037ec4a536dff505ec051b1117dd93d30a77b107fce6efd8c8f7a672ea7f78b",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-08-24 07:10（Asia/Taipei，UTC+8）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "方法版本：v1.0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影子運行：實驗性指標／第 18 個交易日"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察期：主分數為 1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "最後更新時間：2026-08-24 07:10（Asia/Taipei，UTC+8）"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "總覽"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "市場風險分數：61"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "基準分：61"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "事件調整：0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "單日變動：-4"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "5 日趨勢：可用最近五筆為 63→64→64→65→61，方向由偏高回落至保留區"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "20 日趨勢：影子運行僅第 18 個交易日，且第 5–7 日缺少當日版本，資料不足"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險狀態及趨勢：中性與偏高之間的保留區、下降；指數與 VIX 修復，但長端利率、能源及下週催化劑限制降幅"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "即時風險：長端殖利率續升、能源價格仍高、AI 財報與政策訊息集中"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "結構性風險：財政與企業融資需求、能源與供應鏈成本、AI 資本支出回報"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "三項主要風險：長端利率與期限溢價、能源與供應鏈成本、AI／政策催化劑集中"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "分數改變原因：景氣與成長由 65 降至 60，S&P Global 綜合 PMI 由 54.5 升至 56.0、Fed H.8 貸款與 C&I 增加，降低近期成長下檔；通膨與利率維持 80，10Y／30Y 分別升 5bp／4bp 至 4.74%／5.27%、Brent 升至 92.67 美元，但 PMI 售價通膨放緩限制上調；流動性維持 60，H.8 證券資產週減 167 億美元，但貸款與租賃增 261 億、商業票據餘額週增 30 億；信用維持 40，最新 8/20 HY／IG OAS 2.75／0.82，日增 2bp／1bp但仍低且 8/21 值正常延遲；市場結構由 80 降至 65，四大指數上漲 0.4%至 1.0%、VIX 降 5.50%至 15.13，但週線仍全面下跌。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "AI 判斷信心：88"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料完整度：98"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "子指標"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "子指標"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "權重"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "分數"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "趨勢"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "理由"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "景氣與成長"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "60"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "下降至保留區"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "美國綜合 PMI 54.5→56.0、就業增速為 2025 年 1 月以來最快；H.8 貸款與 C&I 增加。反方是供應延誤與高折現率可能壓縮未來需求"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "S&P Global，2026-08-21；Federal Reserve H.8，發布日 2026-08-21"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "通膨與利率"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "80"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "持平偏高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "10Y／30Y 分別 +5bp／+4bp 至 4.74%／5.27%，Brent +0.8%至 92.67 美元；反方是 PMI 售價通膨放緩"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. Treasury、S&P Global、AP，資料日 2026-08-21"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "流動性"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "60"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "持平偏高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "H.8 截至 8/12 證券資產週減 167 億美元，但貸款與租賃增 261 億、C&I 增 84 億；商業票據 8/19 較 8/12 增 30 億"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Federal Reserve H.8／CP，發布或資料日 2026-08-19 至 08-21"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "信用"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "40"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "持平偏低"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "最新可得 8/20 HY OAS 2.75、IG OAS 0.82，較 8/19 上升 2bp／1bp但仍低；8/21 值正常延遲"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "ICE BofA／FRED，資料日 2026-08-20、2026-08-24 查核"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "市場結構"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "65"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "下降至偏高門檻"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "四大指數上漲 0.4%至 1.0%、VIX -5.50%至 15.13，8/21 Cboe 成交檔完整；反方是週線仍跌 0.8%至 2.1%、長端殖利率續升"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "AP、Cboe，資料日 2026-08-21"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "基準分計算："
+            },
+            {
+              "type": "code",
+              "text": "(60 + 80 + 60 + 40 + 65) ÷ 5 = 61"
+            },
+            {
+              "type": "text",
+              "text": "。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "事件調整"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "調整事件：無；事件調整為 0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "受影響子指標：無額外調整；PMI 納入景氣，長端殖利率與油價納入通膨利率，H.8／商業票據納入流動性，OAS 納入信用，指數／VIX 納入市場結構"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未反映於基準數據的理由：沒有同時符合重大、已發生、跨市場、可驗證且尚未被五項子指標捕捉的事件；NVIDIA 與 Jackson Hole 尚未發生，不以前瞻事件加分"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：長端利率與能源偏高 → 折現率及成本承壓；財報或政策訊息偏離預期 → 盈餘／利率假設重估；若信用跟進 → 去風險擴散"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "支持證據：10Y／30Y 4.74%／5.27%、Brent 92.67 美元、四大指數週線下跌、下週兩項已排定催化劑"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：PMI 56.0、四大指數單日反彈、VIX 15.13、H.8 貸款與商業票據增加、信用利差絕對水準低"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：只有出現未被子指標捕捉、由原始資料與市場資料共同確認的重大能源、信用或流動性衝擊才啟用事件調整；否則下一版直接重估子指標"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "總分計算："
+            },
+            {
+              "type": "code",
+              "text": "61 + 0 = 61"
+            },
+            {
+              "type": "text",
+              "text": "。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "證據與限制"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "支持證據：Treasury 確認長端殖利率續升；S&P Global 確認活動與就業加速但供應延誤仍高；AP 與 Cboe 確認主要指數反彈及 VIX 回落；Fed H.8／CP 未顯示流動性急縮"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：四大指數週線仍跌、油價仍高、HY／IG OAS 小幅上升、長端利率沒有隨 VIX 回落；這些資料限制風險降幅"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：Brent／WTI、10Y／30Y、長債標售與買回、市場廣度、VIX、HY／IG OAS、NVIDIA 財測與 Jackson Hole 政策表述"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "待觀察數據：8/26 NVIDIA 財報、8/28 主席演說、下一份 PCE／ISM／EIA；信用與波動若惡化則上調，油價、利率與廣度改善則下調"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：8/21 HY／IG OAS 與 8/14 後廣義美元。資料完整度 98、信心 88，不得視為精準預測"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "歷史限制：影子序號已到第 18 個交易日，工作區新增後有 15 個實際日期的風險版本，缺少第 5–7 日（2026-08-05 至 08-07）當日紀錄；不以事後資料補造，20 日趨勢與首輪復盤只能有限評估"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "事後績效（後續追加）"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "評估日期：後續觀察窗結束時另行追加"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "後續市場表現：以 1–3 個交易日、1–4 週與 1–2 季觀察窗追加，不預寫結果"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "判斷評估：後續評估方向、時效、誤報或漏報"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "方法學習：只追加事後結果；如需改方法，建立新版本且不回寫本紀錄"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "來源"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "link",
+                "text": "NYSE｜Holidays & Trading Hours｜2026 日曆與核心交易時段；2026-08-24 07:10 查核",
+                "href": "https://www.nyse.com/trade/hours-calendars"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Treasury｜Daily Treasury Par Yield Curve Rates｜資料日 2026-08-20 至 08-21",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "S&P Global｜US flash PMI｜2026-08-21",
+                "href": "https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/08/us-flash-pmi-signals-welcome-mix-of-hotter-output-growth-cooler-inflation"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜H.8｜發布日 2026-08-21、最新週截至 08-12",
+                "href": "https://www.federalreserve.gov/releases/h8/current/default.htm"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜Commercial Paper Outstanding｜最新週 2026-08-19",
+                "href": "https://www.federalreserve.gov/releases/cp/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Cboe｜VIX｜資料日 2026-08-21",
+                "href": "https://www.cboe.com/tradable-products/vix"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Cboe｜U.S. Equities Historical Market Volume｜資料日 2026-08-21",
+                "href": "https://cdn.cboe.com/resources/us/equities/market-statistics/historical-market-volume/market_history_2026.csv"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜HY OAS｜最新資料日 2026-08-20",
+                "href": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜IG OAS｜最新資料日 2026-08-20",
+                "href": "https://fred.stlouisfed.org/series/BAMLC0A0CM"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／Federal Reserve｜Broad Dollar Index｜最新資料日 2026-08-14",
+                "href": "https://fred.stlouisfed.org/series/DTWEXBGS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "NVIDIA｜Q2 FY2027 results call schedule｜2026-08-26 事件",
+                "href": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Second-Quarter-Financial-Results/default.aspx"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve Bank of Kansas City｜Jackson Hole Symposium｜2026-08-27 至 08-29",
+                "href": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜August 2026 calendar｜2026-08-28 主席演說",
+                "href": "https://www.federalreserve.gov/newsevents/2026-august.htm"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜Stocks rise while Treasury yields climb｜2026-08-21",
+                "href": "https://apnews.com/article/stock-markets-bonds-futures-oil-iran-96ef9586e1288e50843b4d2b1ccebc32"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜How major US stock indexes fared Friday 8/21/2026｜2026-08-21",
+                "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-09c079b43680c3e4564346892b5dc824"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：是否接受 61 分總分、61 分基準、0 事件調整、資料完整度 98、AI 信心 88、第 18 日影子紀錄與 15 份實際日期版本，供內部研究及私人 Dashboard 呈現。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：本次不授權公開發布，不連動 Beta、持股、再平衡、買賣、個人化投資建議或投資操作，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/market-risk/2026-08-24-v01.md",
+      "asOf": "2026-08-24 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-24 07:10（Asia/Taipei，UTC+8）",
+      "dependencies": []
+    },
     {
       "id": "records/market-risk/2026-08-21-v01.md",
       "date": "2026-08-21",
