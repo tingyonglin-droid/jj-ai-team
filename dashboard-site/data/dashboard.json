@@ -1,14 +1,452 @@
 {
-  "generatedAt": "2026-08-24T23:10:51.757Z",
-  "date": "2026-08-25",
+  "generatedAt": "2026-08-25T23:12:10.120Z",
+  "date": "2026-08-26",
   "expectation": {
-    "dashboardDate": "2026-08-25",
-    "expectedReportDate": "2026-08-24",
-    "coveredSessionDate": "2026-08-21",
+    "dashboardDate": "2026-08-26",
+    "expectedReportDate": "2026-08-25",
+    "coveredSessionDate": "2026-08-24",
     "phase": "before_cutoff",
     "reason": "尚未到 07:30 交付門檻，沿用前一個應有報告日。"
   },
   "approvals": [
+    {
+      "id": "records/market-risk/2026-08-26-v01.md",
+      "title": "市場風險報告｜2026-08-26-v01",
+      "type": "市場風險報告",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版）",
+      "summary": "市場風險報告｜2026-08-26-v01",
+      "fullContent": null,
+      "decision": "是否接受有限版 58 分總分、58 分基準、0 事件調整、資料完整度 94、AI 信心 85、第 20 日影子紀錄與 17 份實際日期版本，供內部研究及私人 Dashboard 呈現。",
+      "source": "records/market-risk/2026-08-26-v01.md",
+      "asOf": "2026-08-26 07:10（Asia/Taipei，UTC+8）",
+      "createdAt": null,
+      "recordDate": "2026-08-26",
+      "version": 1,
+      "artifactHash": "sha256:74182753782a5fb614eb39027e89db5125c391614890cba0e9712b0f8cb16e29",
+      "updatedAt": "2026-08-26 07:10（Asia/Taipei，UTC+8）",
+      "dependencies": []
+    },
+    {
+      "id": "records/daily-briefs/2026-08-26-v01.md",
+      "title": "油與長債降溫，但房市與消費預期仍亮黃燈",
+      "type": "晨報",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版）",
+      "summary": "8/25 是 8/24 基準後新的完整交易時段；S&P 500、Dow、Nasdaq、Russell 2000 分別上漲 0.3%、0.3%、0.7%、0.5%，但股價反彈不等於事件風險消失。 Brent 下跌 3.6%至 87.27 美元；官方 Treasury 曲線顯示 10Y 與 30Y 各下降 6bp 至 4.64%與 5.17%，通膨與估值壓力邊際緩和，但絕對水準仍高。 7 月新屋銷售年率降至 60.7 萬戶，月減 10.5%；待售新屋增至 48.8 萬戶、供給升至 9.6 個月。官方公布的月減估計誤差為 ±14.0%，不能把單月值直接寫成房市崩跌。 8 月消費者信心由 90.2 降至 89.4；現況指數升至 121.2，但預期指數降至 68.2，顯示現在與未來看法分裂。 1–4 週影子風險由 60 降至 58，仍屬中性；能源與長債緩和抵銷部分成長疑慮。因市場結構、信用與美元存在正常發布落差，本版僅做有限判斷。",
+      "fullContent": null,
+      "decision": "是否接受有限版五則排序、58 分中性框架、「油與長債降溫但成長黃燈仍在」主標題與五分鐘篇幅，供內部研究及私人 Dashboard 使用。",
+      "source": "records/daily-briefs/2026-08-26-v01.md",
+      "asOf": "2026-08-26 07:10（Asia/Taipei，UTC+8）",
+      "createdAt": null,
+      "recordDate": "2026-08-26",
+      "version": 1,
+      "artifactHash": "sha256:87dcaedac7f9758e5783fa60bee2fb0ee37e376972c5f2db64f09e12fa8bbceb",
+      "updatedAt": "2026-08-26",
+      "dependencies": []
+    },
+    {
+      "id": "records/content/threads/2026-08-26-new-home-sales-noise-v01.md",
+      "title": "Threads 草稿｜新屋銷售跌 10.5%，就是房市崩嗎？",
+      "type": "Threads",
+      "owner": "社群經營員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版研究來源）",
+      "summary": "年率：60.7 萬戶 月減：10.5% 待售新屋：48.8 萬戶 庫存供給：9.6 個月",
+      "fullContent": {
+        "format": "structured-markdown",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "日期：2026-08-26"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "狀態：待核准（有限版研究來源）"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "來源研究："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-26-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-26-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報版本：v01"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報雜湊："
+                },
+                {
+                  "type": "code",
+                  "text": "sha256:87dcaedac7f9758e5783fa60bee2fb0ee37e376972c5f2db64f09e12fa8bbceb"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "內容指紋："
+                },
+                {
+                  "type": "code",
+                  "text": "sha256:67bb6e101090be725bcca6cd3634c87f1d2268866c17153cde855cf5c3499c40"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "建議時機：現在；發布前須確認 Census 原始發布未修訂，且沒有新的住房資料改變結論"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "主版本"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "新屋銷售跌 10.5%，就是房市崩嗎？"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "先別急著下結論。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "美國 7 月新屋銷售的確明顯轉弱："
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "年率：60.7 萬戶"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "月減：10.5%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "待售新屋：48.8 萬戶"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "庫存供給：9.6 個月"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "「銷售下降、庫存上升」，方向上是房市的黃燈。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "但這份數據還有一個很重要的細節："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "10.5%的月減，官方估計誤差是 ±14.0%。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "也就是說，這個誤差範圍跨過零。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "單月數字看起來很大，統計上卻還不足以確認房市已經出現同等幅度的趨勢性下滑。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "我會把它拆成三層看。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "第一層：方向。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "銷售變少、待售變多、供給月數拉高，風險確實在升溫。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "第二層：確定性。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "單月估計噪音很大，不能把 -10.5%直接翻譯成「房市崩了」。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "第三層：持續性。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "接下來要看 8 月新屋銷售、住宅開工、建商訂單與房價，是否一起轉弱。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "這不是忽略風險。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "而是不把一個噪音很大的月資料，太快升級成確定趨勢。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "一句話："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "數字告訴你方向，誤差範圍告訴你能有多確定。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "備選開頭"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "start": 1,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "新屋銷售月減 10.5%，標題很嚇人。但同一份官方資料還寫了一個更重要的數字：±14.0%。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "看到「美國新屋銷售暴跌 10.5%」，先問一個問題：這個跌幅，統計上確定嗎？"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "查核與語氣"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "事實與來源：7 月新屋銷售經季調年率 60.7 萬戶、月減 10.5%（±14.0%）、待售 48.8 萬戶、供給 9.6 個月，來源為 U.S. Census Bureau／HUD，發布日 2026-08-25、資料期 2026-07；完整連結見觸發晨報來源章節。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "反方或限制：月減估計誤差跨過零，因此不能由單月數字確認趨勢性崩跌；但銷售下降與庫存月數上升仍是需要追蹤的風險訊號。晨報因 8/25 VIX、成交、信用與美元存在發布落差而標示有限版，但本草稿沒有使用這些缺失數值。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "待使用者補充：請確認是否採用第一人稱立場「我會把資料拆成方向、確定性、持續性三層」；未代寫任何個人經歷、持股、交易或績效。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "App CTA：不加入；本篇核心是如何閱讀有誤差範圍的總經數據，沒有自然且必要的產品承接。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "核准"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "最終文字與發布由使用者決定：尚未核准；本草稿不得自動發布，也不授權留言、私訊或任何投資行動。"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "decision": "等待使用者決定",
+      "source": "records/content/threads/2026-08-26-new-home-sales-noise-v01.md",
+      "asOf": "2026-08-26",
+      "createdAt": null,
+      "recordDate": "2026-08-26",
+      "version": 1,
+      "artifactHash": "sha256:b70bee475e20c0ec805bacf4fe7880da28f0904519521b289bae711a4ebcee80",
+      "updatedAt": "2026-08-26",
+      "dependencies": [
+        "records/daily-briefs/2026-08-26-v01.md"
+      ]
+    },
     {
       "id": "records/market-risk/2026-08-25-v01.md",
       "title": "市場風險報告｜2026-08-25-v01",
@@ -46,7 +484,7 @@
       "recordDate": "2026-08-25",
       "version": 1,
       "artifactHash": "sha256:f91668bcdd6b0c6ce6747e7193f26c4de669164328bc0ccb2bdeb23b64254e99",
-      "updatedAt": "2026-08-25",
+      "updatedAt": "2026-08-25T07:12:27+08:00",
       "dependencies": []
     },
     {
@@ -6915,15 +7353,15 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准（有限版）",
-      "currentTask": "市場風險報告｜2026-08-25-v01",
+      "currentTask": "市場風險報告｜2026-08-26-v01",
       "progress": "等待人工核准",
       "dependencies": [],
       "handoff": "將研究與風險成果交總司令驗收；將已驗證素材交社群經營員；將市場風險欄位與限制交 App 設計員。所有對外使用均由使用者核准。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/market-risk/2026-08-25-v01.md",
-      "asOf": "2026-08-25 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-25 07:10（Asia/Taipei，UTC+8）"
+      "source": "records/market-risk/2026-08-26-v01.md",
+      "asOf": "2026-08-26 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-26 07:10（Asia/Taipei，UTC+8）"
     },
     {
       "id": "social-operator",
@@ -6932,20 +7370,64 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准（有限版研究來源）",
-      "currentTask": "Threads 草稿｜大多數股票上漲，為什麼 S&P 500 還是跌？",
+      "currentTask": "Threads 草稿｜新屋銷售跌 10.5%，就是房市崩嗎？",
       "progress": "等待人工核准",
       "dependencies": [
-        "records/daily-briefs/2026-08-25-v01.md"
+        "records/daily-briefs/2026-08-26-v01.md"
       ],
       "handoff": "研究疑問退回總經研究員；成果與實驗交總司令驗收；最終語氣、個人觀點、發布與互動交使用者。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/content/threads/2026-08-25-index-down-majority-up-v01.md",
-      "asOf": "2026-08-25",
-      "updatedAt": "2026-08-25"
+      "source": "records/content/threads/2026-08-26-new-home-sales-noise-v01.md",
+      "asOf": "2026-08-26",
+      "updatedAt": "2026-08-26"
     }
   ],
   "tasks": [
+    {
+      "id": "records/market-risk/2026-08-26-v01.md",
+      "title": "市場風險報告｜2026-08-26-v01",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版）",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/market-risk/2026-08-26-v01.md",
+      "asOf": "2026-08-26 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-26 07:10（Asia/Taipei，UTC+8）"
+    },
+    {
+      "id": "records/daily-briefs/2026-08-26-v01.md",
+      "title": "油與長債降溫，但房市與消費預期仍亮黃燈",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版）",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/daily-briefs/2026-08-26-v01.md",
+      "asOf": "2026-08-26 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-26"
+    },
+    {
+      "id": "records/content/threads/2026-08-26-new-home-sales-noise-v01.md",
+      "title": "Threads 草稿｜新屋銷售跌 10.5%，就是房市崩嗎？",
+      "owner": "社群經營員",
+      "ownerId": "social-operator",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版研究來源）",
+      "nextStep": "等待使用者核准",
+      "dependencies": [
+        "records/daily-briefs/2026-08-26-v01.md"
+      ],
+      "source": "records/content/threads/2026-08-26-new-home-sales-noise-v01.md",
+      "asOf": "2026-08-26",
+      "updatedAt": "2026-08-26"
+    },
     {
       "id": "records/market-risk/2026-08-25-v01.md",
       "title": "市場風險報告｜2026-08-25-v01",
@@ -6972,7 +7454,7 @@
       "dependencies": [],
       "source": "records/daily-briefs/2026-08-25-v01.md",
       "asOf": "2026-08-25 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-25"
+      "updatedAt": "2026-08-25T07:12:27+08:00"
     },
     {
       "id": "records/content/threads/2026-08-25-index-down-majority-up-v01.md",
@@ -7607,6 +8089,1519 @@
   ],
   "briefArchive": [
     {
+      "id": "records/daily-briefs/2026-08-26-v01.md",
+      "date": "2026-08-26",
+      "version": 1,
+      "versionLabel": "v01",
+      "isLatest": true,
+      "title": "油與長債降溫，但房市與消費預期仍亮黃燈",
+      "summary": "8/25 是 8/24 基準後新的完整交易時段；S&P 500、Dow、Nasdaq、Russell 2000 分別上漲 0.3%、0.3%、0.7%、0.5%，但股價反彈不等於事件風險消失。 Brent 下跌 3.6%至 87.27 美元；官方 Treasury 曲線顯示 10Y 與 30Y 各下降 6bp 至 4.64%與 5.17%，通膨與估值壓力邊際緩和，但絕對水準仍高。 7 月新屋銷售年率降至 60.7 萬戶，月減 10.5%；待售新屋增至 48.8 萬戶、供給升至 9.6 個月。官方公布的月減估計誤差為 ±14.0%，不能把單月值直接寫成房市崩跌。 8 月消費者信心由 90.2 降至 89.4；現況指數升至 121.2，但預期指數降至 68.2，顯示現在與未來看法分裂。 1–4 週影子風險由 60 降至 58，仍屬中性；能源與長債緩和抵銷部分成長疑慮。因市場結構、信用與美元存在正常發布落差，本版僅做有限判斷。",
+      "freshness": "最新",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版）",
+      "artifactHash": "sha256:87dcaedac7f9758e5783fa60bee2fb0ee37e376972c5f2db64f09e12fa8bbceb",
+      "coveredSessionDate": "2026-08-25",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准（有限版）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-08-26 07:10（Asia/Taipei，UTC+8）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察市場：美國股市、利率、能源、信用、流動性、房市與消費信心"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察期間：2026-08-25 完整美股交易時段；總經與信用資料採截止時間前最新發布值"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料完整度：94／100；8/25 Treasury、主要指數、新屋銷售與消費信心已完整，8/25 VIX、Cboe 成交檔、HY／IG OAS 與廣義美元尚未發布，最新分別至 8/24、8/24、8/24 與 8/21"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "一分鐘摘要"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "8/25 是 8/24 基準後新的完整交易時段；S&P 500、Dow、Nasdaq、Russell 2000 分別上漲 0.3%、0.3%、0.7%、0.5%，但股價反彈不等於事件風險消失。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Brent 下跌 3.6%至 87.27 美元；官方 Treasury 曲線顯示 10Y 與 30Y 各下降 6bp 至 4.64%與 5.17%，通膨與估值壓力邊際緩和，但絕對水準仍高。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "7 月新屋銷售年率降至 60.7 萬戶，月減 10.5%；待售新屋增至 48.8 萬戶、供給升至 9.6 個月。官方公布的月減估計誤差為 ±14.0%，不能把單月值直接寫成房市崩跌。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "8 月消費者信心由 90.2 降至 89.4；現況指數升至 121.2，但預期指數降至 68.2，顯示現在與未來看法分裂。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "1–4 週影子風險由 60 降至 58，仍屬中性；能源與長債緩和抵銷部分成長疑慮。因市場結構、信用與美元存在正常發布落差，本版僅做有限判斷。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日風險儀表"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "1–4 週風險分數：58"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "相較前一交易日：-2"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險狀態：中性"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "即時風險：NVIDIA 財報前 AI 權重集中、8/25 VIX／成交資料缺口、能源地緣消息反轉"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "結構性風險：長端利率與財政供給、住房需求與庫存、AI 資本支出回報"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "今日主要風險來源：房市需求與庫存分化、消費預期走弱、AI 權重與政策催化劑集中"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "五則重要事件"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "1｜新屋銷售下降，庫存供給升至 9.6 個月"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實：美國 Census Bureau 與 HUD 於 8/25 發布 7 月新屋銷售，經季調年率為 60.7 萬戶，較 6 月修正後 67.8 萬戶下降 10.5%；待售新屋為 48.8 萬戶，供給由 8.5 個月升至 9.6 個月。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "60.7 萬戶、月減 10.5%（±14.0%）、年減 6.3%（±19.6%）；待售 48.8 萬戶、月增 1.9%；中位售價 393,800 美元、月減 2.3%。來源：U.S. Census Bureau／HUD，發布日 2026-08-25、資料期 2026-07。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：需求下降而待售量增加，若持續數月，可能壓低建商訂單、價格與住宅投資；但單月銷售變動的信賴區間跨過零，證據不足以把 -10.5%寫成已確認趨勢。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面為主，D 風險變化為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫但未確認趨勢"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：新屋需求下降＋庫存月數上升 → 建商折價、開工與住宅投資承壓 → 景氣與相關企業盈餘風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：8 月新屋銷售、待售庫存、房價、住宅開工與建商訂單同步轉弱"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：月減估計誤差為 ±14.0%，現值無法排除統計噪音；中位價年減亦不具統計顯著性"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：銷售回升、供給月數回落，且開工／訂單未同步惡化"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "2｜消費者對現在改善，對未來更悲觀"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實：Conference Board 8 月消費者信心指數由 7 月修正值 90.2 降至 89.4；現況指數上升 6.8 點至 121.2，預期指數下降 5.8 點至 68.2。初步調查期間為 8/3–8/16。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "總指數 89.4（-0.8）、現況 121.2（+6.8）、預期 68.2（-5.8）；預期工作機會增加者由 16.4%降至 14.6%，預期工作機會減少者由 25.3%升至 26.1%。來源：The Conference Board，發布日 2026-08-25、調查期 2026-08-03 至 08-16。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：消費者尚未把當下環境評為急遽惡化，但對未來工作與收入更保守；若轉成實際支出縮減，消費與服務業盈餘會承壓。信心調查不是支出資料，不能單獨判定衰退。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：潛伏至升溫"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：未來工作／收入預期下降 → 可選消費與信貸需求轉弱 → 營收、利潤與就業回饋風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：個人支出、零售銷售、初領失業救濟、薪資與消費信用同步轉弱"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：現況指數反而上升 6.8 點；總指數只下降 0.8 點"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：預期指數回升，且實際支出與就業資料維持韌性"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "3｜Brent 再跌 3.6%，但地緣供給尾部風險未消失"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實：AP 報導 Brent 8/25 下跌 3.6%至每桶 87.27 美元，為連續 13 次上漲後的第二次下跌；同日美伊緊張與制裁消息仍在，油價過去一個月曾在 72–102 美元間波動。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Brent 87.27 美元、單日 -3.6%；過去一個月區間約 72–102 美元。來源：Associated Press，發布與資料日 2026-08-25。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：油價下降可緩和短期通膨與長端殖利率壓力，但地緣消息未解決，使這次緩和更像風險溢價回吐而非供給風險永久消失。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 風險變化為主，A 基本面為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：短期緩解、尾部風險仍潛伏"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日、1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：地緣消息反轉 → 油價與通膨預期回升 → 長端利率與企業成本上升 → 高估值與消費承壓"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：Brent 是否重返 90／100 美元、運輸通道、制裁與供給消息、EIA 庫存"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：Brent 連跌兩日且 8/25 單日 -3.6%，顯示供給恐慌正在退潮"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：供給與運輸恢復、油價在較低區間穩定且通膨預期不回升"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "4｜長債殖利率下行，但融資門檻仍高"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實：官方 Treasury 曲線顯示 8/25 的 10Y 由 4.70%降至 4.64%，20Y 由 5.21%降至 5.16%，30Y 由 5.23%降至 5.17%；2Y 由 4.24%降至 4.17%。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2Y 4.17%（-7bp）、10Y 4.64%（-6bp）、20Y 5.16%（-5bp）、30Y 5.17%（-6bp）。來源：U.S. Treasury，資料日 2026-08-24 至 08-25、2026-08-26 07:10 查核。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：全曲線下移減輕估值與融資的邊際壓力，但 10Y／30Y 絕對水準仍高；若油價或政策表述反轉，期限溢價可能快速回升。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：B 估值為主，D 風險變化為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：短期緩解、結構性風險未解除"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日、1–4 週、1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：長端仍高或再上行 → 折現率與房貸／企業融資成本維持高檔 → 估值、住宅與資本支出承壓"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：10Y／30Y、實質利率、期限溢價、長債標售與 Jackson Hole 表述"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：8/25 主要期限同步下降 5–7bp，不支持當日金融條件惡化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：長端持續回落且信用、房貸與市場廣度同步改善"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "5｜NVIDIA 反彈 2.2%，財報仍是未驗證的集中催化劑"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實：8/25 NVIDIA 上漲 2.2%，前一日曾下跌 2.9%；公司排定 8/26 約 13:20 PT 公布 FY2027 Q2 結果、14:00 PT 舉行電話會議。8/25 美股收盤時財報尚未發布。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "NVIDIA +2.2%；S&P 500 +0.3%、Dow +0.3%、Nasdaq +0.7%、Russell 2000 +0.5%。來源：Associated Press，資料與發布日 2026-08-25；NVIDIA，公告日 2026-07-29、事件日 2026-08-26。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論：AI 權重股反彈支撐市值加權指數，但財報尚未驗證營收、毛利、現金流、CapEx 與 AI 商業化／ROI；單日價格反彈不能取代財報證據。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：B 估值為主，C 資金輪動為次"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：尚未觸發、事件前升溫"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日、1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：財報或財測低於高期待 → AI 盈餘與估值假設重估 → 權重科技與指數波動 → 風險偏好收縮"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：營收、EPS、毛利率、自由現金流、CapEx、財測，以及雲端／AI 收入與客戶 ROI 證據"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：NVIDIA 8/25 上漲 2.2%，四大指數同日全數收高；目前沒有已發財報證明基本面轉弱"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：財報與財測支持高期待，且半導體廣度、信用與長端未同步惡化"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "事實"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "數值／變化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料期間"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源與日期"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "四大指數收高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "S&P +0.3%、Dow +0.3%、Nasdaq +0.7%、Russell +0.5%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-25"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-25"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Treasury 曲線下移"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2Y 4.17%、10Y 4.64%、20Y 5.16%、30Y 5.17%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-24 至 08-25"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. Treasury，2026-08-26 查核"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Brent 下跌"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "87.27 美元、-3.6%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-25"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-25"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "新屋需求與庫存分化"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "銷售 60.7 萬戶、-10.5%；待售 48.8 萬戶；供給 9.6 個月"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-07"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. Census Bureau／HUD，2026-08-25"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "消費信心未來預期走弱"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "總指數 89.4；現況 121.2；預期 68.2"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "調查期 2026-08-03 至 08-16"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "The Conference Board，2026-08-25"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "信用仍未擴散"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "HY OAS 2.69、IG OAS 0.81"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-24"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "ICE BofA／FRED，2026-08-26 查核"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "波動資料最新值"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "VIX 15.85"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-24"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Cboe／FRED，2026-08-26 07:10 查核"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論與初步判斷"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "原始資料先形成的初判是「金融條件邊際緩和，實體需求出現黃燈，但尚非全面風險事件」。油價與 Treasury 曲線同步下降，信用利差仍低，支持風險分數下調；新屋銷售、庫存月數與消費者預期則阻止風險大幅下降。股市上漲是反方證據，不把它解讀為 NVIDIA 財報或政策結果已經確認。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "外部觀點比較"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀點摘要"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "與初判一致／分歧"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "對判斷影響"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Associated Press，2026-08-25"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "把油價下跌、長債殖利率下降與股市上漲連成同一條短期緩和鏈，同時提醒油價絕對水準與地緣風險仍高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致；屬外部市場敘事"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "支持通膨利率與市場結構風險下降，但不支持解除結構性警戒"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Cboe，2026-08-25"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "認為財報前晶片股上下波動較像部位調整，未見新的基本面催化劑"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致；外部觀點"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "支持把 NVIDIA 反彈列為事件前價格訊號，而非已確認基本面改善"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Reuters，2026-08-25"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "指出消費者信心降至七個月低點，未來勞動市場與通膨看法惡化"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致；數值以 Conference Board 原始發布為準"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "支持成長風險上調，但現況指數改善限制結論強度"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "最終判斷與反方證據"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終判斷：1–4 週影子風險由 60 降至 58，維持中性，信心 85／100。油價與長端殖利率回落、信用利差低且四大指數收高，降低即時系統性壓力；新屋需求／庫存分化、消費者未來預期走弱與 NVIDIA／Jackson Hole 催化劑集中，保留成長與估值警戒。本版因 8/25 VIX、成交、信用與美元發布落差而為有限版。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：新屋銷售月減的 ±14.0%誤差跨過零；消費現況指數上升；四大指數全數上漲；2Y 至 30Y 同步下降；HY／IG OAS 維持低檔。這些資料不支持把單月房市或信心資料升格為衰退定論。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若後續住房、支出與就業未同步轉弱，且 NVIDIA 財報、長端、信用與市場廣度改善，應再下調；若成長資料、油價、長端、VIX與信用同步惡化，則需上調。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日市場一句話"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "今天市場真正交易的不是股市有沒有反彈，而是油與長債的緩和能否抵銷房市、消費預期與事件集中風險。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "反方證據與尚未確認資料"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "反方證據：四大指數收高，Brent -3.6%，2Y／10Y／30Y 各下降 7／6／6bp，8/24 HY／IG OAS 為 2.69／0.81；沒有確認信用或流動性危機。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：8/25 VIX、Cboe 成交檔、HY／IG OAS 尚未發布；廣義美元最新至 8/21。NVIDIA FY2027 Q2 與 8/28 Jackson Hole 主席演說在截止時仍未發生，不把預期寫成事實。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "尚未確認與待觀察"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "未確認資料：8/25 VIX、Cboe 全市場成交、信用利差與廣義美元；這些缺口降低市場結構、信用與流動性判斷信心，但未被猜測或第三方即時值補造。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "未入選候選事件：候選池十項為①新屋銷售、②消費者信心、③Brent、④Treasury 曲線、⑤四大指數、⑥NVIDIA 財報前反彈、⑦Dick's Sporting Goods 大跌、⑧VIX／Cboe 成交、⑨信用／美元、⑩Jackson Hole。指數併入 NVIDIA 事件；信用、美元與波動作底層反證；Dick's 的完整原始財務表在鎖定前未取得，不以二手摘要補成財報分析；Jackson Hole 尚未發生，列下一確認點。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "下一確認點：8/26 NVIDIA 財報；8/26 耐久財訂單；8/28 Jackson Hole 主席演說；8/25 VIX／成交／信用補發布；後續個人支出、就業、住宅開工與 8 月新屋銷售。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "來源"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "link",
+                "text": "NYSE｜Holidays & Trading Hours｜2026 日曆與核心交易時段；2026-08-26 07:10 查核",
+                "href": "https://www.nyse.com/trade/hours-calendars"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Census Bureau／HUD｜Monthly New Residential Sales, July 2026｜發布日 2026-08-25",
+                "href": "https://www.census.gov/construction/nrs/current/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "The Conference Board｜US Consumer Confidence Edged Down Slightly in August｜發布日 2026-08-25、調查期 2026-08-03 至 08-16",
+                "href": "https://www.conference-board.org/topics/consumer-confidence/index.cfm"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Treasury｜Daily Treasury Par Yield Curve Rates｜資料日 2026-08-24 至 08-25",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜Falling oil prices help calm the stock and bond markets｜2026-08-25",
+                "href": "https://apnews.com/article/stocks-markets-futures-nvidia-bonds-oil-f17fc8cfc61f40114eb7246701b4695d"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜How major US stock indexes fared Tuesday 8/25/2026｜2026-08-25",
+                "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-69aae9f2f61737936f126e7820833bbe"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Cboe｜Drop in Crude Oil Prices Fuels Markets｜2026-08-25",
+                "href": "https://www.cboe.com/insights/posts/drop-in-crude-oil-prices-fuels-markets/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Cboe／FRED｜VIX daily close｜最新資料日 2026-08-24；8/25 值截至截止時間未發布",
+                "href": "https://fred.stlouisfed.org/series/VIXCLS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Cboe｜U.S. Equities Historical Market Volume｜最新資料日 2026-08-24；8/25 檔截至截止時間未發布",
+                "href": "https://cdn.cboe.com/resources/us/equities/market-statistics/historical-market-volume/market_history_2026.csv"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜HY OAS｜最新資料日 2026-08-24",
+                "href": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜IG OAS｜最新資料日 2026-08-24",
+                "href": "https://fred.stlouisfed.org/series/BAMLC0A0CM"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／Federal Reserve｜Broad Dollar Index｜最新資料日 2026-08-21",
+                "href": "https://fred.stlouisfed.org/series/DTWEXBGS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "NVIDIA｜Q2 FY2027 results call schedule｜公告日 2026-07-29、事件日 2026-08-26",
+                "href": "https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-second-quarter-financial-results-6927195"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve Bank of Kansas City｜Jackson Hole Economic Policy Symposium｜事件日 2026-08-27 至 08-29",
+                "href": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜August 2026 calendar｜2026-08-28 主席演說",
+                "href": "https://www.federalreserve.gov/newsevents/2026-august.htm"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Reuters｜US consumer confidence falls in August｜2026-08-25",
+                "href": "https://finance.yahoo.com/economy/articles/us-consumer-confidence-falls-august-144138345.html"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "人工核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：是否接受有限版五則排序、58 分中性框架、「油與長債降溫但成長黃燈仍在」主標題與五分鐘篇幅，供內部研究及私人 Dashboard 使用。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：本版本不授權公開發布、對外引用、個人化投資建議、持股調整、再平衡、買賣或任何投資行動，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/daily-briefs/2026-08-26-v01.md",
+      "asOf": "2026-08-26 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-26",
+      "dependencies": []
+    },
+    {
       "id": "records/daily-briefs/2026-08-25-v01.md",
       "date": "2026-08-25",
       "version": 1,
@@ -7614,7 +9609,7 @@
       "isLatest": true,
       "title": "多數成分股上漲但指數收低，廣度改善沒有解除 AI 集中風險",
       "summary": "8/24 S&P 500 下跌 0.3%、Nasdaq 與 Russell 2000 各跌 0.8%，Dow 上漲 0.3%；多數 S&P 500 成分股其實上漲，權重股而非全面賣壓主導指數。 NVIDIA、Micron 與 Broadcom 分別下跌 2.9%、5.8%與 2.6%。AI 題材的問題暫時從「需求是否存在」轉向「財報能否支撐權重與估值」。 Treasury 官方曲線顯示 10 年與 30 年殖利率各回落 4bp 至 4.70%與 5.23%，Brent 也下跌 2.3%至 90.54 美元；折現率與能源壓力邊際緩解，但絕對水準仍高。 HY／IG OAS 最新 8/21 分別降至 2.70／0.81，廣義美元降至 118.0628；信用與美元沒有確認去風險擴散。 NVIDIA 8/26 財報與 Fed 主席 Kevin Warsh 8/28 Jackson Hole 演說仍是已排定的連續催化劑，不是已發生的利空。因 8/24 VIX 與 Cboe 成交資料未在鎖定前更新，本版為有限版。",
-      "freshness": "最新",
+      "freshness": "歷史版本",
       "artifactStatus": "待核准",
       "rawStatus": "待核准（有限版）",
       "artifactHash": "sha256:f91668bcdd6b0c6ce6747e7193f26c4de669164328bc0ccb2bdeb23b64254e99",
@@ -9109,7 +11104,7 @@
       ],
       "source": "records/daily-briefs/2026-08-25-v01.md",
       "asOf": "2026-08-25 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-25",
+      "updatedAt": "2026-08-25T07:12:27+08:00",
       "dependencies": []
     },
     {
@@ -33618,6 +35613,397 @@
   ],
   "threadsDocuments": [
     {
+      "id": "records/content/threads/2026-08-26-new-home-sales-noise-v01.md",
+      "artifactKey": "cmVjb3Jkcy9jb250ZW50L3RocmVhZHMvMjAyNi0wOC0yNi1uZXctaG9tZS1zYWxlcy1ub2lzZS12MDEubWQAMQBzaGEyNTY6YjcwYmVlNDc1ZTIwYzBlYzgwNWJhY2Y0ZmU3ODgwZGEyOGYwOTA0NTE5NTIxYjI4OWJhZTcxMWE0ZWJjZWU4MA",
+      "date": "2026-08-26",
+      "version": 1,
+      "versionLabel": "v01",
+      "title": "Threads 草稿｜新屋銷售跌 10.5%，就是房市崩嗎？",
+      "summary": "年率：60.7 萬戶 月減：10.5% 待售新屋：48.8 萬戶 庫存供給：9.6 個月",
+      "rawStatus": "待核准（有限版研究來源）",
+      "artifactHash": "sha256:b70bee475e20c0ec805bacf4fe7880da28f0904519521b289bae711a4ebcee80",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "日期：2026-08-26"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准（有限版研究來源）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源研究："
+              },
+              {
+                "type": "code",
+                "text": "records/daily-briefs/2026-08-26-v01.md"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報："
+              },
+              {
+                "type": "code",
+                "text": "records/daily-briefs/2026-08-26-v01.md"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報雜湊："
+              },
+              {
+                "type": "code",
+                "text": "sha256:87dcaedac7f9758e5783fa60bee2fb0ee37e376972c5f2db64f09e12fa8bbceb"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "內容指紋："
+              },
+              {
+                "type": "code",
+                "text": "sha256:67bb6e101090be725bcca6cd3634c87f1d2268866c17153cde855cf5c3499c40"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "建議時機：現在；發布前須確認 Census 原始發布未修訂，且沒有新的住房資料改變結論"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "主版本"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "新屋銷售跌 10.5%，就是房市崩嗎？"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "先別急著下結論。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "美國 7 月新屋銷售的確明顯轉弱："
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "年率：60.7 萬戶"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "月減：10.5%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "待售新屋：48.8 萬戶"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "庫存供給：9.6 個月"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "「銷售下降、庫存上升」，方向上是房市的黃燈。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "但這份數據還有一個很重要的細節："
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "10.5%的月減，官方估計誤差是 ±14.0%。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "也就是說，這個誤差範圍跨過零。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "單月數字看起來很大，統計上卻還不足以確認房市已經出現同等幅度的趨勢性下滑。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "我會把它拆成三層看。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "第一層：方向。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "銷售變少、待售變多、供給月數拉高，風險確實在升溫。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "第二層：確定性。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "單月估計噪音很大，不能把 -10.5%直接翻譯成「房市崩了」。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "第三層：持續性。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看 8 月新屋銷售、住宅開工、建商訂單與房價，是否一起轉弱。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "這不是忽略風險。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "而是不把一個噪音很大的月資料，太快升級成確定趨勢。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "一句話："
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "數字告訴你方向，誤差範圍告訴你能有多確定。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "備選開頭"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 1,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "新屋銷售月減 10.5%，標題很嚇人。但同一份官方資料還寫了一個更重要的數字：±14.0%。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "看到「美國新屋銷售暴跌 10.5%」，先問一個問題：這個跌幅，統計上確定嗎？"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "查核與語氣"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "事實與來源：7 月新屋銷售經季調年率 60.7 萬戶、月減 10.5%（±14.0%）、待售 48.8 萬戶、供給 9.6 個月，來源為 U.S. Census Bureau／HUD，發布日 2026-08-25、資料期 2026-07；完整連結見觸發晨報來源章節。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方或限制：月減估計誤差跨過零，因此不能由單月數字確認趨勢性崩跌；但銷售下降與庫存月數上升仍是需要追蹤的風險訊號。晨報因 8/25 VIX、成交、信用與美元存在發布落差而標示有限版，但本草稿沒有使用這些缺失數值。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "待使用者補充：請確認是否採用第一人稱立場「我會把資料拆成方向、確定性、持續性三層」；未代寫任何個人經歷、持股、交易或績效。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "App CTA：不加入；本篇核心是如何閱讀有誤差範圍的總經數據，沒有自然且必要的產品承接。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終文字與發布由使用者決定：尚未核准；本草稿不得自動發布，也不授權留言、私訊或任何投資行動。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/content/threads/2026-08-26-new-home-sales-noise-v01.md",
+      "asOf": "2026-08-26",
+      "updatedAt": "2026-08-26",
+      "dependencies": [
+        "records/daily-briefs/2026-08-26-v01.md"
+      ]
+    },
+    {
       "id": "records/content/threads/2026-08-25-index-down-majority-up-v01.md",
       "artifactKey": "cmVjb3Jkcy9jb250ZW50L3RocmVhZHMvMjAyNi0wOC0yNS1pbmRleC1kb3duLW1ham9yaXR5LXVwLXYwMS5tZAAxAHNoYTI1Njo3YzZkNGU3N2U0MTUyMGEwMjY3OGVjZDYzZTZhM2ZiYTc4MjM0YTNiZTdlOTAyNmExMjFhYjZhNWJjZGI1Yzlj",
       "date": "2026-08-25",
@@ -39781,44 +42167,44 @@
   "approvedThreadsArchive": [],
   "threadsArchiveIssues": [],
   "brief": {
-    "title": "多數成分股上漲但指數收低，廣度改善沒有解除 AI 集中風險",
-    "headline": "多數成分股上漲但指數收低，廣度改善沒有解除 AI 集中風險",
-    "summary": "8/24 S&P 500 下跌 0.3%、Nasdaq 與 Russell 2000 各跌 0.8%，Dow 上漲 0.3%；多數 S&P 500 成分股其實上漲，權重股而非全面賣壓主導指數。 NVIDIA、Micron 與 Broadcom 分別下跌 2.9%、5.8%與 2.6%。AI 題材的問題暫時從「需求是否存在」轉向「財報能否支撐權重與估值」。 Treasury 官方曲線顯示 10 年與 30 年殖利率各回落 4bp 至 4.70%與 5.23%，Brent 也下跌 2.3%至 90.54 美元；折現率與能源壓力邊際緩解，但絕對水準仍高。 HY／IG OAS 最新 8/21 分別降至 2.70／0.81，廣義美元降至 118.0628；信用與美元沒有確認去風險擴散。 NVIDIA 8/26 財報與 Fed 主席 Kevin Warsh 8/28 Jackson Hole 演說仍是已排定的連續催化劑，不是已發生的利空。因 8/24 VIX 與 Cboe 成交資料未在鎖定前更新，本版為有限版。",
+    "title": "油與長債降溫，但房市與消費預期仍亮黃燈",
+    "headline": "油與長債降溫，但房市與消費預期仍亮黃燈",
+    "summary": "8/25 是 8/24 基準後新的完整交易時段；S&P 500、Dow、Nasdaq、Russell 2000 分別上漲 0.3%、0.3%、0.7%、0.5%，但股價反彈不等於事件風險消失。 Brent 下跌 3.6%至 87.27 美元；官方 Treasury 曲線顯示 10Y 與 30Y 各下降 6bp 至 4.64%與 5.17%，通膨與估值壓力邊際緩和，但絕對水準仍高。 7 月新屋銷售年率降至 60.7 萬戶，月減 10.5%；待售新屋增至 48.8 萬戶、供給升至 9.6 個月。官方公布的月減估計誤差為 ±14.0%，不能把單月值直接寫成房市崩跌。 8 月消費者信心由 90.2 降至 89.4；現況指數升至 121.2，但預期指數降至 68.2，顯示現在與未來看法分裂。 1–4 週影子風險由 60 降至 58，仍屬中性；能源與長債緩和抵銷部分成長疑慮。因市場結構、信用與美元存在正常發布落差，本版僅做有限判斷。",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准（有限版）",
     "version": 1,
-    "artifactHash": "sha256:f91668bcdd6b0c6ce6747e7193f26c4de669164328bc0ccb2bdeb23b64254e99",
-    "coveredSessionDate": "2026-08-24",
-    "asOf": "2026-08-25 07:10（Asia/Taipei，UTC+8）",
-    "source": "records/daily-briefs/2026-08-25-v01.md",
-    "updatedAt": "2026-08-25",
+    "artifactHash": "sha256:87dcaedac7f9758e5783fa60bee2fb0ee37e376972c5f2db64f09e12fa8bbceb",
+    "coveredSessionDate": "2026-08-25",
+    "asOf": "2026-08-26 07:10（Asia/Taipei，UTC+8）",
+    "source": "records/daily-briefs/2026-08-26-v01.md",
+    "updatedAt": "2026-08-26",
     "dependencies": []
   },
   "marketRisk": {
-    "label": "市場風險報告｜2026-08-25-v01",
+    "label": "市場風險報告｜2026-08-26-v01",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准（有限版）",
     "version": 1,
-    "artifactHash": "sha256:44dd77d8a22adcc3270557b013bba8863d9e03e0aef6b89e066587e0bc56dbe3",
-    "coveredSessionDate": "2026-08-24",
-    "asOf": "2026-08-25 07:10（Asia/Taipei，UTC+8）",
-    "source": "records/market-risk/2026-08-25-v01.md",
-    "updatedAt": "2026-08-25 07:10（Asia/Taipei，UTC+8）",
+    "artifactHash": "sha256:74182753782a5fb614eb39027e89db5125c391614890cba0e9712b0f8cb16e29",
+    "coveredSessionDate": "2026-08-25",
+    "asOf": "2026-08-26 07:10（Asia/Taipei，UTC+8）",
+    "source": "records/market-risk/2026-08-26-v01.md",
+    "updatedAt": "2026-08-26 07:10（Asia/Taipei，UTC+8）",
     "dependencies": [],
-    "score": 60,
-    "baseline": 60,
+    "score": 58,
+    "baseline": 58,
     "eventAdjustment": 0,
-    "dailyChange": -1,
-    "immediateRisk": "AI 權重股集中下跌、財報前事件風險、8/24 波動資料缺口",
-    "structuralRisk": "長端利率與財政供給、能源與供應鏈成本、AI 資本支出回報",
+    "dailyChange": -2,
+    "immediateRisk": "NVIDIA 財報前 AI 權重集中、8/25 VIX／成交資料缺口、能源地緣消息反轉",
+    "structuralRisk": "長端利率與財政供給、住房需求與庫存、AI 資本支出回報",
     "topRisks": [
-      "AI 權重與估值集中",
-      "長端利率仍高",
-      "財報與政策催化劑集中"
+      "房市需求與庫存分化",
+      "消費預期走弱",
+      "AI 權重與政策催化劑集中"
     ],
-    "confidence": 84,
+    "confidence": 85,
     "completeness": 94,
     "experimental": true
   },
@@ -40406,11 +42792,775 @@
             "readable": true
           }
         ]
+      },
+      {
+        "id": "records/market-risk/2026-08-26-v01.md",
+        "date": "2026-08-26",
+        "version": 1,
+        "versionLabel": "v01",
+        "artifactHash": "sha256:74182753782a5fb614eb39027e89db5125c391614890cba0e9712b0f8cb16e29",
+        "artifactStatus": "待核准",
+        "rawStatus": "待核准（有限版）",
+        "asOf": "2026-08-26 07:10（Asia/Taipei，UTC+8）",
+        "updatedAt": "2026-08-26 07:10（Asia/Taipei，UTC+8）",
+        "source": "records/market-risk/2026-08-26-v01.md",
+        "score": 58,
+        "state": "中性",
+        "dailyChange": -2,
+        "changeReasons": "無；事件調整為 0",
+        "topRisks": [
+          "房市需求與庫存分化",
+          "消費預期走弱",
+          "AI 權重與政策催化劑集中"
+        ],
+        "supportingEvidence": "新屋銷售下降與庫存月數上升、消費預期 68.2、財報與政策催化劑集中",
+        "counterEvidence": "新屋單月誤差跨零、消費現況改善、四大指數上漲、油價與長端下降、信用利差低",
+        "confidence": 85,
+        "completeness": 94,
+        "lowCompleteness": false,
+        "dependencies": [],
+        "versions": [
+          {
+            "id": "records/market-risk/2026-08-26-v01.md",
+            "version": 1,
+            "versionLabel": "v01",
+            "source": "records/market-risk/2026-08-26-v01.md",
+            "readable": true
+          }
+        ]
       }
     ],
     "issues": []
   },
   "marketRiskArchive": [
+    {
+      "id": "records/market-risk/2026-08-26-v01.md",
+      "date": "2026-08-26",
+      "version": 1,
+      "versionLabel": "v01",
+      "isLatest": true,
+      "title": "市場風險報告｜2026-08-26-v01",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版）",
+      "artifactHash": "sha256:74182753782a5fb614eb39027e89db5125c391614890cba0e9712b0f8cb16e29",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准（有限版）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-08-26 07:10（Asia/Taipei，UTC+8）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "方法版本：v1.0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影子運行：實驗性指標／第 20 個交易日"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察期：主分數為 1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "最後更新時間：2026-08-26 07:10（Asia/Taipei，UTC+8）"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "總覽"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "市場風險分數：58"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "基準分：58"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "事件調整：0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "單日變動：-2"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "5 日趨勢：最近五筆為 64→65→61→60→58；工作區第 5–7 日缺檔不回填，因此僅能有限比較，方向下降"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "20 日趨勢：影子序號到第 20 個交易日，但第 5–7 日缺少當日版本，無法形成完整 20 日連續序列"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險狀態及趨勢：中性、下降；能源、長端與市場價格緩和，房市與消費未來預期限制降幅"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "即時風險：NVIDIA 財報前 AI 權重集中、8/25 VIX／成交資料缺口、能源地緣消息反轉"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "結構性風險：長端利率與財政供給、住房需求與庫存、AI 資本支出回報"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "三項主要風險：房市需求與庫存分化、消費預期走弱、AI 權重與政策催化劑集中"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "分數改變原因：景氣與成長由 60 升至 65，7 月新屋銷售月減 10.5%至 60.7 萬戶、供給升至 9.6 個月，8 月消費者預期指數降至 68.2，但新屋月減誤差跨零且消費現況改善；通膨與利率由 75 降至 70，Brent -3.6%至 87.27 美元、2Y／10Y／30Y 各降 7／6／6bp，但長端絕對水準仍高；流動性維持 60，廣義美元最新至 8/21且 H.8 尚無新週資料；信用維持 35，8/24 HY／IG OAS 為 2.69／0.81；市場結構由 70 降至 60，四大指數收高、NVIDIA +2.2%，但財報未發布且 8/25 VIX／成交檔缺失。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "AI 判斷信心：85"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料完整度：94"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "子指標"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "子指標"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "權重"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "分數"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "趨勢"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "理由"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "景氣與成長"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "65"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "上升、混合偏弱"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "新屋銷售 60.7 萬戶、月減 10.5%，待售 48.8 萬戶、供給 9.6 個月；消費者預期指數降至 68.2。反方是新屋估計誤差跨零、消費現況升至 121.2"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Census／HUD、Conference Board，發布日 2026-08-25"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "通膨與利率"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "70"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "下降但仍偏高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Brent -3.6%至 87.27 美元；2Y／10Y／30Y 各降至 4.17%／4.64%／5.17%，但長端與油價絕對水準及地緣尾部風險仍高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. Treasury、AP，資料日 2026-08-25"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "流動性"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "60"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "持平偏高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "H.8 尚無新週資料；廣義美元最新 8/21 為 118.0628，正常發布落差使當日流動性無法高信心更新"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Federal Reserve H.8／H.10、FRED，最新資料至 2026-08-21"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "信用"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "35"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "持平偏低"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "8/24 HY OAS 2.69、IG OAS 0.81，低且未擴散；8/25 值尚未發布"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "ICE BofA／FRED，資料日 2026-08-24、2026-08-26 查核"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "市場結構"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "60"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "下降但事件前"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "S&P／Dow／Nasdaq／Russell 分別 +0.3%／+0.3%／+0.7%／+0.5%，NVIDIA +2.2%；反方是財報未發布，且 8/25 VIX／成交資料缺失"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "AP，資料日 2026-08-25；Cboe／FRED，最新 2026-08-24"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "基準分計算："
+            },
+            {
+              "type": "code",
+              "text": "(65 + 70 + 60 + 35 + 60) ÷ 5 = 58"
+            },
+            {
+              "type": "text",
+              "text": "。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "事件調整"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "調整事件：無；事件調整為 0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "受影響子指標：房市與消費信心已納入景氣成長；油價與 Treasury 已納入通膨利率；信用與市場價格已納入各自子指標"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未反映於基準數據的理由：沒有同時符合重大、已發生、跨市場、可驗證且尚未被五項子指標捕捉的事件；NVIDIA 財報與 Jackson Hole 尚未發生，不以前瞻事件加分；8/25 VIX／成交缺失不猜測調整"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：住房／消費預期轉弱 → 支出與投資風險；油價／長端回落 → 金融條件緩和；若 NVIDIA／政策偏離預期 → 估值與利率假設重估"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "支持證據：新屋銷售下降與庫存月數上升、消費預期 68.2、財報與政策催化劑集中"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：新屋單月誤差跨零、消費現況改善、四大指數上漲、油價與長端下降、信用利差低"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：只有出現未被子指標捕捉、由原始資料與市場資料共同確認的重大信用、流動性或能源衝擊才啟用事件調整；否則下一版直接重估子指標"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "總分計算："
+            },
+            {
+              "type": "code",
+              "text": "58 + 0 = 58"
+            },
+            {
+              "type": "text",
+              "text": "。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "證據與限制"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "支持證據：Census／HUD 確認新屋銷售、庫存與供給月數；Conference Board 確認未來預期走弱；Treasury 確認全曲線下移；AP 確認油價、指數與 NVIDIA 價格"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：新屋銷售月減不具統計顯著性；消費現況指數改善；四大指數全數上漲；Brent 與長端下降；HY／IG OAS 仍低，不支持系統性去風險"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：8/25 VIX／Cboe 成交檔、住房與消費後續硬數據、10Y／30Y、Brent、HY／IG OAS、NVIDIA 財報與 Jackson Hole 表述"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "待觀察數據：8/26 NVIDIA 財報與耐久財訂單、8/28 主席演說、後續 PCE／個人支出／就業／住宅開工；成長、信用與波動若同步惡化則上調，利率、油價與實體需求改善則下調"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：8/25 VIX、Cboe 成交檔、HY／IG OAS；廣義美元最新至 8/21。資料完整度 94、信心 85，本版為有限版，不得視為精準預測"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "歷史限制：影子序號為第 20 個交易日，工作區新增後有 17 個實際日期風險版本，缺少第 5–7 日（2026-08-05 至 08-07）當日紀錄；不以事後資料補造，首輪 20 日趨勢只能有限評估"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "事後績效（後續追加）"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "評估日期：後續觀察窗結束時另行追加"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "後續市場表現：以 1–3 個交易日、1–4 週與 1–2 季觀察窗追加，不預寫結果"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "判斷評估：後續評估方向、時效、誤報或漏報"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "方法學習：只追加事後結果；如需改方法，建立新版本且不回寫本紀錄"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "來源"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "link",
+                "text": "NYSE｜Holidays & Trading Hours｜2026 日曆與核心交易時段；2026-08-26 07:10 查核",
+                "href": "https://www.nyse.com/trade/hours-calendars"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Census Bureau／HUD｜Monthly New Residential Sales, July 2026｜發布日 2026-08-25",
+                "href": "https://www.census.gov/construction/nrs/current/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "The Conference Board｜US Consumer Confidence Edged Down Slightly in August｜發布日 2026-08-25",
+                "href": "https://www.conference-board.org/topics/consumer-confidence/index.cfm"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Treasury｜Daily Treasury Par Yield Curve Rates｜資料日 2026-08-24 至 08-25",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜Falling oil prices help calm the stock and bond markets｜2026-08-25",
+                "href": "https://apnews.com/article/stocks-markets-futures-nvidia-bonds-oil-f17fc8cfc61f40114eb7246701b4695d"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜How major US stock indexes fared Tuesday 8/25/2026｜2026-08-25",
+                "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-69aae9f2f61737936f126e7820833bbe"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Cboe／FRED｜VIX daily close｜最新資料日 2026-08-24",
+                "href": "https://fred.stlouisfed.org/series/VIXCLS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Cboe｜U.S. Equities Historical Market Volume｜最新資料日 2026-08-24",
+                "href": "https://cdn.cboe.com/resources/us/equities/market-statistics/historical-market-volume/market_history_2026.csv"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜HY OAS｜最新資料日 2026-08-24",
+                "href": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜IG OAS｜最新資料日 2026-08-24",
+                "href": "https://fred.stlouisfed.org/series/BAMLC0A0CM"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／Federal Reserve｜Broad Dollar Index｜最新資料日 2026-08-21",
+                "href": "https://fred.stlouisfed.org/series/DTWEXBGS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "NVIDIA｜Q2 FY2027 results call schedule｜公告日 2026-07-29、事件日 2026-08-26",
+                "href": "https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-second-quarter-financial-results-6927195"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve Bank of Kansas City｜Jackson Hole Economic Policy Symposium｜事件日 2026-08-27 至 08-29",
+                "href": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜August 2026 calendar｜2026-08-28 主席演說",
+                "href": "https://www.federalreserve.gov/newsevents/2026-august.htm"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：是否接受有限版 58 分總分、58 分基準、0 事件調整、資料完整度 94、AI 信心 85、第 20 日影子紀錄與 17 份實際日期版本，供內部研究及私人 Dashboard 呈現。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：本次不授權公開發布，不連動 Beta、持股、再平衡、買賣、個人化投資建議或投資操作，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/market-risk/2026-08-26-v01.md",
+      "asOf": "2026-08-26 07:10（Asia/Taipei，UTC+8）",
+      "updatedAt": "2026-08-26 07:10（Asia/Taipei，UTC+8）",
+      "dependencies": []
+    },
     {
       "id": "records/market-risk/2026-08-25-v01.md",
       "date": "2026-08-25",
