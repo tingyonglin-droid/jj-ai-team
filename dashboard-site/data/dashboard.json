@@ -1,14 +1,473 @@
 {
-  "generatedAt": "2026-08-25T23:12:10.120Z",
-  "date": "2026-08-26",
+  "generatedAt": "2026-08-26T23:12:40.313Z",
+  "date": "2026-08-27",
   "expectation": {
-    "dashboardDate": "2026-08-26",
-    "expectedReportDate": "2026-08-25",
-    "coveredSessionDate": "2026-08-24",
+    "dashboardDate": "2026-08-27",
+    "expectedReportDate": "2026-08-26",
+    "coveredSessionDate": "2026-08-25",
     "phase": "before_cutoff",
     "reason": "尚未到 07:30 交付門檻，沿用前一個應有報告日。"
   },
   "approvals": [
+    {
+      "id": "records/market-risk/2026-08-27-v01.md",
+      "title": "市場風險報告｜2026-08-27-v01",
+      "type": "市場風險報告",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版）",
+      "summary": "市場風險報告｜2026-08-27-v01",
+      "fullContent": null,
+      "decision": "確認是否接受有限版 60 分總分、60 分基準、0 事件調整、資料完整度 95、AI 信心 85、第 21 日影子紀錄與 18 份實際日期版本，供內部研究及私人 Dashboard 呈現。",
+      "source": "records/market-risk/2026-08-27-v01.md",
+      "asOf": "2026-08-27 07:10（Asia/Taipei，UTC+8；07:10:21 完成鎖定後複核）",
+      "createdAt": null,
+      "recordDate": "2026-08-27",
+      "version": 1,
+      "artifactHash": "sha256:8fda5a7fe3ece767a554c041a4c8b3701454e454e37beb1f72c153153762b724",
+      "updatedAt": "2026-08-27 07:10:21（Asia/Taipei，UTC+8）",
+      "dependencies": []
+    },
+    {
+      "id": "records/daily-briefs/2026-08-27-v01.md",
+      "title": "NVIDIA 財報翻倍，但通膨與高利率仍壓縮估值容錯",
+      "type": "晨報",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版）",
+      "summary": "8/26 是 8/25 基準後新的完整 NYSE 交易時段；S&P 500 跌不到 0.1%，Dow -0.2%、Nasdaq -0.1%、Russell 2000 -0.1%，市場在 NVIDIA 財報前沒有形成廣泛去風險。 7 月 PCE 與核心 PCE 分別年增 3.7%與 3.3%，月增皆為 0.2%；同時實質 PCE 幾乎零成長，形成「價格仍高、實質支出停滯」的混合訊號。 Q2 實質 GDP 年率維持 1.5%，但國內購買價格指數、PCE 與核心 PCE 季增年率第二估值上修至 5.8%、5.3%與 3.6%；反方是私人國內最終銷售 4.2%、實質 GDI 2.2%。 NVIDIA Q2 FY2027 營收 962.21 億美元、年增 106%，資料中心營收 890 億美元、年增 117%，Q3 營收指引 1,080 億美元；基本面強，但股價常規時段跌 1.6%、財報後初段盤後小跌，顯示高預期使估值容錯沒有同步擴大。 今日 1–4 週影子風險分數為 60／100（中性、較前次 +2）；通膨與利率重新升溫，但信用利差低、油價回落與企業需求強提供反證。",
+      "fullContent": null,
+      "decision": "確認是否接受五則事件、60 分有限版影子風險、標題與篇幅，供內部研究及私人 Dashboard 呈現。",
+      "source": "records/daily-briefs/2026-08-27-v01.md",
+      "asOf": "2026-08-27 07:10（Asia/Taipei，UTC+8；07:10:21 完成鎖定後複核）",
+      "createdAt": null,
+      "recordDate": "2026-08-27",
+      "version": 1,
+      "artifactHash": "sha256:e8a8f993884a9491ad3da6a2810183ac57b0322a3b10c12f1e91ca2cface253c",
+      "updatedAt": "2026-08-27",
+      "dependencies": []
+    },
+    {
+      "id": "records/content/threads/2026-08-27-pce-level-vs-momentum-v01.md",
+      "title": "Threads 草稿｜PCE 年增 3.7%、月增 0.2%，通膨到底有沒有降溫？",
+      "type": "Threads",
+      "owner": "社群經營員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版研究來源）",
+      "summary": "年增 3.7% 核心年增 3.3% PCE、核心 PCE 月增都是 0.2% 實質消費幾乎零成長 8 月服務價格是否持續偏黏 能源價格是否再度推升 headline PCE 實質消費與實質所得能否恢復成長 Jackson Hole 後，利率市場如何重新定價",
+      "fullContent": {
+        "format": "structured-markdown",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "日期：2026-08-27"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "狀態：待核准（有限版研究來源）"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "來源研究："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-27-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-27-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報版本：v01"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報雜湊："
+                },
+                {
+                  "type": "code",
+                  "text": "sha256:e8a8f993884a9491ad3da6a2810183ac57b0322a3b10c12f1e91ca2cface253c"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "內容指紋："
+                },
+                {
+                  "type": "code",
+                  "text": "sha256:869079946b050e17255e153c018dcdb293e24a5bd5fc79117d721febdcc0df73"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "建議時機：現在；發布前須確認 BEA 原始發布未修訂，且沒有新的通膨或消費資料改變結論"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "主版本"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "PCE 年增 3.7%、月增 0.2%， 通膨到底有沒有降溫？"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "同一份數據，同時給了兩個看起來相反的答案。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "美國 7 月 PCE："
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "年增 3.7%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "核心年增 3.3%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "PCE、核心 PCE 月增都是 0.2%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "實質消費幾乎零成長"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "只看年增，會覺得通膨還很高。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "只看月增，又會覺得短期動能沒有失控。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "兩個都對，因為看的時間尺度不同。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "我會把它拆成三層。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "第一層：水位。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "年增 3.7%、核心年增 3.3%，代表價格水準的累積漲幅仍高。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "第二層：速度。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "單月都增 0.2%，沒有確認通膨正在加速，但一個月也不足以宣告過關。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "第三層：承受力。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "實質消費幾乎沒有成長，代表家庭增加的支出很大一部分被價格吃掉，而不是買到更多商品與服務。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "所以現在不能簡化成「通膨已降溫」，也不能只靠這一個月就說「通膨重新失控」。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "接下來要看的是："
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "8 月服務價格是否持續偏黏"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "能源價格是否再度推升 headline PCE"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "實質消費與實質所得能否恢復成長"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Jackson Hole 後，利率市場如何重新定價"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "一句話："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "年增告訴你水位，月增告訴你速度，實質消費告訴你家庭還能不能撐。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "備選開頭"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "start": 1,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "PCE 年增 3.7%，但月增只有 0.2%。這不是數據打架，而是兩個時間尺度在說不同的事。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "通膨到底有沒有降溫？先把「價格水位」和「上漲速度」分開看。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "查核與語氣"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "事實與來源：7 月 PCE／核心 PCE 月增均為 0.2%、年增分別為 3.7%／3.3%，實質 PCE 月增不到 0.1%；來源為 "
+                },
+                {
+                  "type": "link",
+                  "text": "U.S. BEA｜Personal Income and Outlays, July 2026｜發布日 2026-08-26、資料期 2026-07",
+                  "href": "https://www.bea.gov/sites/default/files/2026-08/pi0726.pdf"
+                },
+                {
+                  "type": "text",
+                  "text": "。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "反方或限制：單月 0.2%不足以確認通膨再加速，也不足以宣告回到 2%目標；實質 PCE 幾乎零成長是需求承受力的警訊，但不能由單月資料推導衰退。本晨報因 8/26 VIX、Cboe 成交與 HY／IG OAS 尚未發布、廣義美元最新至 8/21而標示有限版；本草稿沒有用缺失數值支持結論。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "待使用者補充：請確認是否採用第一人稱立場「我會把它拆成水位、速度、承受力三層」；未代寫任何個人經歷、持股、交易或績效。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "App CTA：不加入；本篇重點是閱讀通膨數據的時間尺度，沒有自然且必要的產品承接。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "核准"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "最終文字與發布由使用者決定：尚未核准；本草稿不得自動發布，也不授權留言、私訊或任何投資行動。"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "decision": "等待使用者決定",
+      "source": "records/content/threads/2026-08-27-pce-level-vs-momentum-v01.md",
+      "asOf": "2026-08-27",
+      "createdAt": null,
+      "recordDate": "2026-08-27",
+      "version": 1,
+      "artifactHash": "sha256:f4ab90d1e7539df5208ae794e7eac5b3ce24f5fe7e47bfad3384271b86b97ccd",
+      "updatedAt": "2026-08-27",
+      "dependencies": [
+        "records/daily-briefs/2026-08-27-v01.md"
+      ]
+    },
     {
       "id": "records/market-risk/2026-08-26-v01.md",
       "title": "市場風險報告｜2026-08-26-v01",
@@ -46,7 +505,7 @@
       "recordDate": "2026-08-26",
       "version": 1,
       "artifactHash": "sha256:87dcaedac7f9758e5783fa60bee2fb0ee37e376972c5f2db64f09e12fa8bbceb",
-      "updatedAt": "2026-08-26",
+      "updatedAt": "2026-08-26T07:13:10+08:00",
       "dependencies": []
     },
     {
@@ -7353,15 +7812,15 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准（有限版）",
-      "currentTask": "市場風險報告｜2026-08-26-v01",
+      "currentTask": "市場風險報告｜2026-08-27-v01",
       "progress": "等待人工核准",
       "dependencies": [],
       "handoff": "將研究與風險成果交總司令驗收；將已驗證素材交社群經營員；將市場風險欄位與限制交 App 設計員。所有對外使用均由使用者核准。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/market-risk/2026-08-26-v01.md",
-      "asOf": "2026-08-26 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-26 07:10（Asia/Taipei，UTC+8）"
+      "source": "records/market-risk/2026-08-27-v01.md",
+      "asOf": "2026-08-27 07:10（Asia/Taipei，UTC+8；07:10:21 完成鎖定後複核）",
+      "updatedAt": "2026-08-27 07:10:21（Asia/Taipei，UTC+8）"
     },
     {
       "id": "social-operator",
@@ -7370,20 +7829,64 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准（有限版研究來源）",
-      "currentTask": "Threads 草稿｜新屋銷售跌 10.5%，就是房市崩嗎？",
+      "currentTask": "Threads 草稿｜PCE 年增 3.7%、月增 0.2%，通膨到底有沒有降溫？",
       "progress": "等待人工核准",
       "dependencies": [
-        "records/daily-briefs/2026-08-26-v01.md"
+        "records/daily-briefs/2026-08-27-v01.md"
       ],
       "handoff": "研究疑問退回總經研究員；成果與實驗交總司令驗收；最終語氣、個人觀點、發布與互動交使用者。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/content/threads/2026-08-26-new-home-sales-noise-v01.md",
-      "asOf": "2026-08-26",
-      "updatedAt": "2026-08-26"
+      "source": "records/content/threads/2026-08-27-pce-level-vs-momentum-v01.md",
+      "asOf": "2026-08-27",
+      "updatedAt": "2026-08-27"
     }
   ],
   "tasks": [
+    {
+      "id": "records/market-risk/2026-08-27-v01.md",
+      "title": "市場風險報告｜2026-08-27-v01",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版）",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/market-risk/2026-08-27-v01.md",
+      "asOf": "2026-08-27 07:10（Asia/Taipei，UTC+8；07:10:21 完成鎖定後複核）",
+      "updatedAt": "2026-08-27 07:10:21（Asia/Taipei，UTC+8）"
+    },
+    {
+      "id": "records/daily-briefs/2026-08-27-v01.md",
+      "title": "NVIDIA 財報翻倍，但通膨與高利率仍壓縮估值容錯",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版）",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/daily-briefs/2026-08-27-v01.md",
+      "asOf": "2026-08-27 07:10（Asia/Taipei，UTC+8；07:10:21 完成鎖定後複核）",
+      "updatedAt": "2026-08-27"
+    },
+    {
+      "id": "records/content/threads/2026-08-27-pce-level-vs-momentum-v01.md",
+      "title": "Threads 草稿｜PCE 年增 3.7%、月增 0.2%，通膨到底有沒有降溫？",
+      "owner": "社群經營員",
+      "ownerId": "social-operator",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版研究來源）",
+      "nextStep": "等待使用者核准",
+      "dependencies": [
+        "records/daily-briefs/2026-08-27-v01.md"
+      ],
+      "source": "records/content/threads/2026-08-27-pce-level-vs-momentum-v01.md",
+      "asOf": "2026-08-27",
+      "updatedAt": "2026-08-27"
+    },
     {
       "id": "records/market-risk/2026-08-26-v01.md",
       "title": "市場風險報告｜2026-08-26-v01",
@@ -7410,7 +7913,7 @@
       "dependencies": [],
       "source": "records/daily-briefs/2026-08-26-v01.md",
       "asOf": "2026-08-26 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-26"
+      "updatedAt": "2026-08-26T07:13:10+08:00"
     },
     {
       "id": "records/content/threads/2026-08-26-new-home-sales-noise-v01.md",
@@ -8089,6 +8592,1563 @@
   ],
   "briefArchive": [
     {
+      "id": "records/daily-briefs/2026-08-27-v01.md",
+      "date": "2026-08-27",
+      "version": 1,
+      "versionLabel": "v01",
+      "isLatest": true,
+      "title": "NVIDIA 財報翻倍，但通膨與高利率仍壓縮估值容錯",
+      "summary": "8/26 是 8/25 基準後新的完整 NYSE 交易時段；S&P 500 跌不到 0.1%，Dow -0.2%、Nasdaq -0.1%、Russell 2000 -0.1%，市場在 NVIDIA 財報前沒有形成廣泛去風險。 7 月 PCE 與核心 PCE 分別年增 3.7%與 3.3%，月增皆為 0.2%；同時實質 PCE 幾乎零成長，形成「價格仍高、實質支出停滯」的混合訊號。 Q2 實質 GDP 年率維持 1.5%，但國內購買價格指數、PCE 與核心 PCE 季增年率第二估值上修至 5.8%、5.3%與 3.6%；反方是私人國內最終銷售 4.2%、實質 GDI 2.2%。 NVIDIA Q2 FY2027 營收 962.21 億美元、年增 106%，資料中心營收 890 億美元、年增 117%，Q3 營收指引 1,080 億美元；基本面強，但股價常規時段跌 1.6%、財報後初段盤後小跌，顯示高預期使估值容錯沒有同步擴大。 今日 1–4 週影子風險分數為 60／100（中性、較前次 +2）；通膨與利率重新升溫，但信用利差低、油價回落與企業需求強提供反證。",
+      "freshness": "最新",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版）",
+      "artifactHash": "sha256:e8a8f993884a9491ad3da6a2810183ac57b0322a3b10c12f1e91ca2cface253c",
+      "coveredSessionDate": "2026-08-26",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准（有限版）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-08-27 07:10（Asia/Taipei，UTC+8；07:10:21 完成鎖定後複核）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察市場：美國股市、利率、能源、信用、流動性、總經與 AI 財報"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察期間：2026-08-26 完整美股交易時段；總經、公司、信用與流動性資料採 07:10 前最新發布值"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料完整度：95／100；8/26 Treasury、主要指數、PCE、GDP、耐久財與 NVIDIA 財報已完整，8/26 VIX、Cboe 成交檔、HY／IG OAS 與廣義美元尚未發布，最新分別至 8/25、8/25、8/25 與 8/21"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "一分鐘摘要"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "8/26 是 8/25 基準後新的完整 NYSE 交易時段；S&P 500 跌不到 0.1%，Dow -0.2%、Nasdaq -0.1%、Russell 2000 -0.1%，市場在 NVIDIA 財報前沒有形成廣泛去風險。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "7 月 PCE 與核心 PCE 分別年增 3.7%與 3.3%，月增皆為 0.2%；同時實質 PCE 幾乎零成長，形成「價格仍高、實質支出停滯」的混合訊號。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Q2 實質 GDP 年率維持 1.5%，但國內購買價格指數、PCE 與核心 PCE 季增年率第二估值上修至 5.8%、5.3%與 3.6%；反方是私人國內最終銷售 4.2%、實質 GDI 2.2%。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "NVIDIA Q2 FY2027 營收 962.21 億美元、年增 106%，資料中心營收 890 億美元、年增 117%，Q3 營收指引 1,080 億美元；基本面強，但股價常規時段跌 1.6%、財報後初段盤後小跌，顯示高預期使估值容錯沒有同步擴大。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "今日 1–4 週影子風險分數為 60／100（中性、較前次 +2）；通膨與利率重新升溫，但信用利差低、油價回落與企業需求強提供反證。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日風險儀表"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "1–4 週風險分數：60／100"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "相較前一交易日：+2"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險狀態：中性"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "即時風險：NVIDIA 財報後第一個完整交易日、Jackson Hole 政策訊號、油價與荷莫茲航運消息反轉"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "結構性風險：服務通膨與高長端利率、AI 資本支出回報與市場集中度、實質消費與所得韌性"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "今日主要風險來源：PCE 通膨黏性、長端與政策重新定價、AI 高預期與集中度"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "五則重要事件"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "1｜PCE 年增仍高，實質消費卻幾乎停滯"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實：BEA 公布 7 月個人所得月增 0.4%、可支配所得月增 0.5%、名目 PCE 月增 0.2%；實質 PCE 月增不到 0.1%，個人儲蓄率為 3.0%。PCE 與核心 PCE 物價指數月增皆為 0.2%，年增分別為 3.7%與 3.3%。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "link",
+              "text": "U.S. BEA，發布日 2026-08-26、資料期 2026-07",
+              "href": "https://www.bea.gov/sites/default/files/2026-08/pi0726.pdf"
+            },
+            {
+              "type": "text",
+              "text": "：名目 PCE +0.2% MoM、實質 PCE <+0.1% MoM、PCE +3.7% YoY、核心 PCE +3.3% YoY、儲蓄率 3.0%。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認的價格水準仍明顯高於 Fed 2%目標，而實質支出沒有同步成長。AI 推論是：若服務價格黏性延續、家庭又不願增加實質支出，企業營收與折現率會同時承壓；但單月 0.2%的核心月增尚未確認再加速。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面／D 風險變化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週／1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：通膨年增維持高位＋實質消費停滯 → Fed 降低寬鬆空間、家庭需求轉弱 → 盈餘與估值容錯下降"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：8 月服務 PCE、零售與實質所得同步惡化，或 2Y／10Y 殖利率續升"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：可支配實質所得月增 0.4%，核心 PCE 月增僅 0.2%，尚未確認通膨動能失控"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：後續核心 PCE 月增持續接近 0.2%且實質消費恢復正成長"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "2｜Q2 成長只有 1.5%，價格指標卻被上修"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實：BEA 第二估值維持 Q2 實質 GDP 年率 1.5%，低於 Q1 的 2.1%；私人國內最終銷售上修至 4.2%、實質 GDI 為 2.2%，但國內購買價格、PCE 與核心 PCE 季增年率分別由初值上修至 5.8%、5.3%與 3.6%。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "link",
+              "text": "U.S. BEA，發布日 2026-08-26、資料期 2026-Q2",
+              "href": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-2nd-quarter-2026"
+            },
+            {
+              "type": "text",
+              "text": "：實質 GDP +1.5% SAAR、私人國內最終銷售 +4.2%、實質 GDI +2.2%、國內購買價格 +5.8%、企業當期生產利潤增加 4,009 億美元。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "初判是總量成長放慢與價格壓力同時存在，政策取捨變難；反方是私人需求、GDI 與企業利潤顯示內部動能強於 GDP 標題數字，不足以判定衰退。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：A 基本面／D 風險變化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週／1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：GDP 放慢＋價格估值上修 → 政策反應函數更偏緊 → 高估值與利率敏感產業承壓"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：Q3 即時成長估計下修且就業、消費與企業訂單同步轉弱"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：私人國內最終銷售 4.2%、GDI 2.2%及企業利潤大增，不支持廣泛衰退"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：第三估值下修價格、上修實質成長，或 Q3 硬數據確認需求擴張"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "3｜NVIDIA 大幅超預期，但市場仍在檢驗高預期"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實：NVIDIA Q2 FY2027 營收 962.21 億美元、年增 106%，資料中心營收 890 億美元、年增 117%；GAAP／非 GAAP 毛利率均為 75.0%，GAAP EPS 2.46 美元、非 GAAP EPS 2.22 美元。公司指引 Q3 營收 1,080 億美元 ±2%，且未假設中國資料中心運算收入。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "link",
+              "text": "NVIDIA，發布日 2026-08-26、季度截至 2026-07-26",
+              "href": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027"
+            },
+            {
+              "type": "text",
+              "text": "：營收 962.21 億美元、非 GAAP EPS 2.22 美元、毛利率 75.0%、自由現金流 213.41 億美元、購置不動產設備與無形資產 26.77 億美元（作為公司現金流表的 CapEx 近似）、Q3 營收指引 1,080 億美元 ±2%、毛利率指引 74.0% ±0.5 個百分點。AP 引用 FactSet 共識為營收 922.7 億美元、非 GAAP EPS 2.09 美元。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "基本面證實 AI 基礎設施需求仍強，削弱需求立即崩落的空方論點；但公司規模、估值與指數權重使「超預期」本身成為門檻。常規時段 NVIDIA 跌 1.6%，AP 在財報公布不久觀察到盤後約跌 0.3%；盤後數字尚未形成完整交易時段，不作確定價格結論。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：B 估值／D 風險變化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：潛伏"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日／1–4 週／1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：財報強但預期更高 → 超預期幅度與估值容錯縮小 → AI 權重股波動放大至指數"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：8/27 常規時段 NVIDIA、半導體與 S&P 500 同步下跌，或毛利率／現金流預期被下修"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：營收、EPS、資料中心、自由現金流與指引均強於去年或市場共識"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：財報後第一個完整交易日出現廣泛上漲，且後續雲端業者維持 AI CapEx 與商業化證據"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "4｜PCE 推升殖利率，Jackson Hole 成為下一個重新定價點"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實：8/26 美國 2Y／10Y／30Y 公債殖利率分別為 4.19%／4.66%／5.18%，較 8/25 上升 2／2／1bp。Kansas City Fed 確認 2026 Jackson Hole 研討會於 8/27–8/29 舉行；AP 報導主席 Kevin Warsh 預定 8/28 發表市場關注的政策演說。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "link",
+              "text": "U.S. Treasury，資料日 2026-08-26",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+            },
+            {
+              "type": "text",
+              "text": "：2Y 4.19%、10Y 4.66%、30Y 5.18%；"
+            },
+            {
+              "type": "link",
+              "text": "Kansas City Fed，2026 活動頁",
+              "href": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/"
+            },
+            {
+              "type": "text",
+              "text": "：活動日 2026-08-27 至 08-29。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "殖利率單日變化不大，但長端絕對水準仍高；在 PCE 年增高、實質消費弱的組合下，市場會把政策語氣同時映射到成長與估值。尚未發表的演說只列為催化劑，不預寫立場。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：B 估值／D 風險變化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日／1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：通膨黏性＋政策不確定 → 長端與終端利率預期上升 → 高久期股票估值下修"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：主席演說偏向進一步緊縮，且 10Y／30Y 突破近期高點"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：2Y／10Y／30Y 仍低於 8/21 的 4.24%／4.74%／5.27%，尚非新高"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：政策訊號與後續數據支持通膨降溫，長端殖利率回落且信用利差不擴大"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "5｜油價回落，但荷莫茲供應尾部風險未消失"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實：AP 報導 Brent 8/26 一度降至 84.56 美元，收在 86.94 美元、日跌 0.4%，並低於前一週末約 94 美元；價格仍受伊朗衝突與油輪何時可自由通過波斯灣的不確定性影響。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "link",
+              "text": "Associated Press，市場回顧日 2026-08-26",
+              "href": "https://apnews.com/article/stocks-markets-ai-oil-nvidia-7112fc458ebbf59dfa6172799e4e139d"
+            },
+            {
+              "type": "text",
+              "text": "：Brent 86.94 美元、日跌 0.4%、盤中低點 84.56 美元、前週末約 94 美元。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "油價下降暫時降低通膨與殖利率壓力，是重要反證；但供應與航運風險仍受事件驅動，若反轉會快速推回通膨預期並壓縮家庭實質所得。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 風險變化／A 基本面"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫但邊際緩解"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日／1–4 週／1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：航運或供應再受阻 → 油價與汽油回升 → 通膨預期、殖利率與消費壓力上升"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：Brent 重回 94 美元附近，且航運、保險或官方供應資料確認受阻"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：Brent 連續回落並在 8/26 再跌 0.4%，尚未重現前週高點"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：可驗證的外交與航運改善、Brent 穩定回落，且能源通膨預期同步下降"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "事實"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "數值／變化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料期間"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源與日期"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "主要美股指數小跌"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "S&P <−0.1%、Dow −0.2%、Nasdaq −0.1%、Russell −0.1%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-26"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "AP，2026-08-26",
+                  "href": "https://apnews.com/article/b1704f7dffb77bc3166f4485e8d89532"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "7 月 PCE 通膨"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "headline 3.7% YoY、core 3.3% YoY，月增均 0.2%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-07"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "BEA，2026-08-26",
+                  "href": "https://www.bea.gov/sites/default/files/2026-08/pi0726.pdf"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "實質 PCE 幾乎零成長"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "<0.1% MoM；儲蓄率 3.0%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-07"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "BEA，2026-08-26",
+                  "href": "https://www.bea.gov/sites/default/files/2026-08/pi0726.pdf"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Q2 GDP 與價格"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "GDP +1.5% SAAR；國內購買價格 +5.8%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-Q2 第二估值"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "BEA，2026-08-26",
+                  "href": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-2nd-quarter-2026"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "耐久財訂單"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "total +1.1%、ex-transport +0.4%、ex-defense +1.3% MoM"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-07"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "Census，2026-08-26",
+                  "href": "https://www.census.gov/manufacturing/m3/adv/current/index.html"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "NVIDIA Q2 FY2027"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "營收 962.21 億美元、non-GAAP EPS 2.22 美元、FCF 213.41 億美元"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "季度截至 2026-07-26"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "NVIDIA，2026-08-26",
+                  "href": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Treasury 曲線小幅上移"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2Y／10Y／30Y 4.19%／4.66%／5.18%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-26"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "U.S. Treasury，2026-08-26",
+                  "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "最新可得信用與波動"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "HY OAS 2.70、IG OAS 0.81、VIX 15.45"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-25"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "FRED／ICE BofA、Cboe，2026-08-26 查核",
+                  "href": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論與初步判斷"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "初判先由 BEA、Census、Treasury 與 NVIDIA 原始資料形成：成長不是全面崩落，AI 需求與耐久財仍強；真正的下行風險來自通膨年增偏高、實質消費停滯與長端利率高位，使政策與估值容錯同時縮小。推論鏈為「PCE／GDP 價格偏高 → 寬鬆空間受限 → 長端維持高位 → 高久期股票容錯下降」，以及「實質消費停滯 → 需求韌性需重新驗證 → 盈餘廣度承壓」。NVIDIA 的強勁財報是反方證據，也同時提高市場對 AI 權重股的下一次門檻。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "外部觀點比較"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀點摘要"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "與初判一致／分歧"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "對判斷影響"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "link",
+                  "text": "Associated Press 市場回顧，2026-08-26",
+                  "href": "https://apnews.com/article/stocks-markets-ai-oil-nvidia-7112fc458ebbf59dfa6172799e4e139d"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "PCE 略高於預期後殖利率上升，股市在 NVIDIA 前近乎持平，油價回落"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致：通膨與利率是主要壓力；油價是反證"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "維持通膨利率風險偏高，不把指數小跌升格為系統性風險"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "link",
+                  "text": "Associated Press／FactSet NVIDIA，2026-08-26",
+                  "href": "https://apnews.com/article/nvidia-artificial-intelligence-earnings-dc8d556e709b50915cca9217a60b1991"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "營收與 EPS 高於共識、指引也較高，但投資人仍擔心 AI 支出回報與高估值"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致：基本面強而估值門檻更高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "不判定 AI 需求崩落；保留市場集中與財報後反應風險"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "最終判斷與反方證據"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終判斷：中等信心的中性風險。8/26 的新增證據不是單一利空，而是「通膨與長端重新升溫、實質消費停滯，但企業需求與信用仍強」的矛盾；1–4 週風險較前次升至 60，但不足以判定系統性去風險。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：NVIDIA 營收、EPS、FCF 與指引強；耐久財訂單成長；私人國內最終銷售 4.2%、GDI 2.2%、企業利潤增加；Brent 回落；8/25 HY／IG OAS 仍低、VIX 15.45。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若後續核心 PCE 月增維持約 0.2%、實質消費恢復、長端下降、信用不擴大且 NVIDIA 財報後市場廣度改善，應下調風險；若成長、信用、油價與長端同時惡化，則上調。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日市場一句話"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "今天市場真正交易的不是 NVIDIA 財報有多強，而是通膨與高利率下，強勁基本面還能換到多少估值容錯。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "反方證據與尚未確認資料"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "反方證據：耐久財訂單 total／ex-transport／ex-defense 全數成長；NVIDIA 財報與指引大幅增長；私人內需、GDI、企業利潤仍具韌性；Brent 下降；最新信用利差與 VIX 未顯示系統性壓力。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：8/26 VIX、Cboe 全市場成交、HY／IG OAS 尚未發布；廣義美元最新至 8/21；NVIDIA 盤後價格尚未形成完整交易時段；Warsh Jackson Hole 演說尚未發生。這些缺口使本版維持有限版，不據此做確定價格或政策結論。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "尚未確認與待觀察"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "未確認資料：8/26 VIX、Cboe 成交、HY／IG OAS；廣義美元 8/21 後數值；NVIDIA 財報後第一個完整常規交易日；Jackson Hole 主席演說內容。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "未入選候選事件：候選共十則。入選 PCE／實質消費、GDP／價格估值、NVIDIA、Treasury／Jackson Hole、油價五條因果鏈；耐久財 +1.1%與企業利潤 +4,009 億美元作反證；四大指數小跌、VIX 15.45與信用利差低納入市場結構／限制；Jackson Hole 活動本身未獨立成一則，避免與利率鏈重複。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "下一確認點：8/27 NVIDIA 完整常規時段與市場廣度、Cboe／FRED 補值、8/28 主席演說、後續就業與 8 月 PCE。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "來源"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "link",
+                "text": "NYSE｜Holidays & Trading Hours｜2026 日曆與核心交易時段；2026-08-27 查核",
+                "href": "https://www.nyse.com/trade/hours-calendars"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. BEA｜Personal Income and Outlays, July 2026｜發布日 2026-08-26",
+                "href": "https://www.bea.gov/sites/default/files/2026-08/pi0726.pdf"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. BEA｜GDP Second Estimate and Corporate Profits, Q2 2026｜發布日 2026-08-26",
+                "href": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-2nd-quarter-2026"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Census Bureau｜Advance Durable Goods, July 2026｜發布日 2026-08-26",
+                "href": "https://www.census.gov/manufacturing/m3/adv/current/index.html"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "NVIDIA｜Q2 FY2027 results｜發布日 2026-08-26",
+                "href": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Treasury｜Daily Treasury Par Yield Curve Rates｜資料日 2026-08-25 至 08-26",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜Wall Street holds mostly steady｜市場回顧日 2026-08-26",
+                "href": "https://apnews.com/article/stocks-markets-ai-oil-nvidia-7112fc458ebbf59dfa6172799e4e139d"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜How major US stock indexes fared Wednesday｜市場回顧日 2026-08-26",
+                "href": "https://apnews.com/article/b1704f7dffb77bc3166f4485e8d89532"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜NVIDIA results exceed expectations｜發布日 2026-08-26",
+                "href": "https://apnews.com/article/nvidia-artificial-intelligence-earnings-dc8d556e709b50915cca9217a60b1991"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Kansas City Fed｜Jackson Hole Economic Policy Symposium｜活動日 2026-08-27 至 08-29",
+                "href": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜H.4.1｜發布日 2026-08-20、資料週截至 08-19",
+                "href": "https://www.federalreserve.gov/releases/h41/current/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜H.10｜發布日 2026-08-24、廣義美元最新資料日 08-21",
+                "href": "https://www.federalreserve.gov/releases/h10/current/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Cboe／FRED｜VIX daily close｜最新資料日 2026-08-25",
+                "href": "https://fred.stlouisfed.org/series/VIXCLS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Cboe｜U.S. Equities Historical Market Volume｜最新資料日 2026-08-25",
+                "href": "https://cdn.cboe.com/resources/us/equities/market-statistics/historical-market-volume/market_history_2026.csv"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜HY OAS｜最新資料日 2026-08-25",
+                "href": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜IG OAS｜最新資料日 2026-08-25",
+                "href": "https://fred.stlouisfed.org/series/BAMLC0A0CM"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "人工核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：確認是否接受五則事件、60 分有限版影子風險、標題與篇幅，供內部研究及私人 Dashboard 呈現。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：本次不授權公開引用或發布、不提供個人化投資建議，也不授權任何持股、再平衡、買賣或其他投資行動。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/daily-briefs/2026-08-27-v01.md",
+      "asOf": "2026-08-27 07:10（Asia/Taipei，UTC+8；07:10:21 完成鎖定後複核）",
+      "updatedAt": "2026-08-27",
+      "dependencies": []
+    },
+    {
       "id": "records/daily-briefs/2026-08-26-v01.md",
       "date": "2026-08-26",
       "version": 1,
@@ -8096,7 +10156,7 @@
       "isLatest": true,
       "title": "油與長債降溫，但房市與消費預期仍亮黃燈",
       "summary": "8/25 是 8/24 基準後新的完整交易時段；S&P 500、Dow、Nasdaq、Russell 2000 分別上漲 0.3%、0.3%、0.7%、0.5%，但股價反彈不等於事件風險消失。 Brent 下跌 3.6%至 87.27 美元；官方 Treasury 曲線顯示 10Y 與 30Y 各下降 6bp 至 4.64%與 5.17%，通膨與估值壓力邊際緩和，但絕對水準仍高。 7 月新屋銷售年率降至 60.7 萬戶，月減 10.5%；待售新屋增至 48.8 萬戶、供給升至 9.6 個月。官方公布的月減估計誤差為 ±14.0%，不能把單月值直接寫成房市崩跌。 8 月消費者信心由 90.2 降至 89.4；現況指數升至 121.2，但預期指數降至 68.2，顯示現在與未來看法分裂。 1–4 週影子風險由 60 降至 58，仍屬中性；能源與長債緩和抵銷部分成長疑慮。因市場結構、信用與美元存在正常發布落差，本版僅做有限判斷。",
-      "freshness": "最新",
+      "freshness": "歷史版本",
       "artifactStatus": "待核准",
       "rawStatus": "待核准（有限版）",
       "artifactHash": "sha256:87dcaedac7f9758e5783fa60bee2fb0ee37e376972c5f2db64f09e12fa8bbceb",
@@ -9598,7 +11658,7 @@
       ],
       "source": "records/daily-briefs/2026-08-26-v01.md",
       "asOf": "2026-08-26 07:10（Asia/Taipei，UTC+8）",
-      "updatedAt": "2026-08-26",
+      "updatedAt": "2026-08-26T07:13:10+08:00",
       "dependencies": []
     },
     {
@@ -35613,6 +37673,418 @@
   ],
   "threadsDocuments": [
     {
+      "id": "records/content/threads/2026-08-27-pce-level-vs-momentum-v01.md",
+      "artifactKey": "cmVjb3Jkcy9jb250ZW50L3RocmVhZHMvMjAyNi0wOC0yNy1wY2UtbGV2ZWwtdnMtbW9tZW50dW0tdjAxLm1kADEAc2hhMjU2OmY0YWI5MGQxZTc1MzlkZjUyMDhhZTc5NGU3ZWFjNWIzY2UyNGY1ZmU3ZTQ3YmZhZDMzODQyNzFiODZiOTdjY2Q",
+      "date": "2026-08-27",
+      "version": 1,
+      "versionLabel": "v01",
+      "title": "Threads 草稿｜PCE 年增 3.7%、月增 0.2%，通膨到底有沒有降溫？",
+      "summary": "年增 3.7% 核心年增 3.3% PCE、核心 PCE 月增都是 0.2% 實質消費幾乎零成長 8 月服務價格是否持續偏黏 能源價格是否再度推升 headline PCE 實質消費與實質所得能否恢復成長 Jackson Hole 後，利率市場如何重新定價",
+      "rawStatus": "待核准（有限版研究來源）",
+      "artifactHash": "sha256:f4ab90d1e7539df5208ae794e7eac5b3ce24f5fe7e47bfad3384271b86b97ccd",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "日期：2026-08-27"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准（有限版研究來源）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源研究："
+              },
+              {
+                "type": "code",
+                "text": "records/daily-briefs/2026-08-27-v01.md"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報："
+              },
+              {
+                "type": "code",
+                "text": "records/daily-briefs/2026-08-27-v01.md"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報雜湊："
+              },
+              {
+                "type": "code",
+                "text": "sha256:e8a8f993884a9491ad3da6a2810183ac57b0322a3b10c12f1e91ca2cface253c"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "內容指紋："
+              },
+              {
+                "type": "code",
+                "text": "sha256:869079946b050e17255e153c018dcdb293e24a5bd5fc79117d721febdcc0df73"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "建議時機：現在；發布前須確認 BEA 原始發布未修訂，且沒有新的通膨或消費資料改變結論"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "主版本"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "PCE 年增 3.7%、月增 0.2%， 通膨到底有沒有降溫？"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "同一份數據，同時給了兩個看起來相反的答案。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "美國 7 月 PCE："
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "年增 3.7%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核心年增 3.3%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "PCE、核心 PCE 月增都是 0.2%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "實質消費幾乎零成長"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "只看年增，會覺得通膨還很高。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "只看月增，又會覺得短期動能沒有失控。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "兩個都對，因為看的時間尺度不同。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "我會把它拆成三層。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "第一層：水位。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "年增 3.7%、核心年增 3.3%，代表價格水準的累積漲幅仍高。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "第二層：速度。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "單月都增 0.2%，沒有確認通膨正在加速，但一個月也不足以宣告過關。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "第三層：承受力。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "實質消費幾乎沒有成長，代表家庭增加的支出很大一部分被價格吃掉，而不是買到更多商品與服務。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "所以現在不能簡化成「通膨已降溫」，也不能只靠這一個月就說「通膨重新失控」。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看的是："
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "8 月服務價格是否持續偏黏"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "能源價格是否再度推升 headline PCE"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "實質消費與實質所得能否恢復成長"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Jackson Hole 後，利率市場如何重新定價"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "一句話："
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "年增告訴你水位，月增告訴你速度，實質消費告訴你家庭還能不能撐。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "備選開頭"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 1,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "PCE 年增 3.7%，但月增只有 0.2%。這不是數據打架，而是兩個時間尺度在說不同的事。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "通膨到底有沒有降溫？先把「價格水位」和「上漲速度」分開看。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "查核與語氣"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "事實與來源：7 月 PCE／核心 PCE 月增均為 0.2%、年增分別為 3.7%／3.3%，實質 PCE 月增不到 0.1%；來源為 "
+              },
+              {
+                "type": "link",
+                "text": "U.S. BEA｜Personal Income and Outlays, July 2026｜發布日 2026-08-26、資料期 2026-07",
+                "href": "https://www.bea.gov/sites/default/files/2026-08/pi0726.pdf"
+              },
+              {
+                "type": "text",
+                "text": "。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方或限制：單月 0.2%不足以確認通膨再加速，也不足以宣告回到 2%目標；實質 PCE 幾乎零成長是需求承受力的警訊，但不能由單月資料推導衰退。本晨報因 8/26 VIX、Cboe 成交與 HY／IG OAS 尚未發布、廣義美元最新至 8/21而標示有限版；本草稿沒有用缺失數值支持結論。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "待使用者補充：請確認是否採用第一人稱立場「我會把它拆成水位、速度、承受力三層」；未代寫任何個人經歷、持股、交易或績效。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "App CTA：不加入；本篇重點是閱讀通膨數據的時間尺度，沒有自然且必要的產品承接。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終文字與發布由使用者決定：尚未核准；本草稿不得自動發布，也不授權留言、私訊或任何投資行動。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/content/threads/2026-08-27-pce-level-vs-momentum-v01.md",
+      "asOf": "2026-08-27",
+      "updatedAt": "2026-08-27",
+      "dependencies": [
+        "records/daily-briefs/2026-08-27-v01.md"
+      ]
+    },
+    {
       "id": "records/content/threads/2026-08-26-new-home-sales-noise-v01.md",
       "artifactKey": "cmVjb3Jkcy9jb250ZW50L3RocmVhZHMvMjAyNi0wOC0yNi1uZXctaG9tZS1zYWxlcy1ub2lzZS12MDEubWQAMQBzaGEyNTY6YjcwYmVlNDc1ZTIwYzBlYzgwNWJhY2Y0ZmU3ODgwZGEyOGYwOTA0NTE5NTIxYjI4OWJhZTcxMWE0ZWJjZWU4MA",
       "date": "2026-08-26",
@@ -42167,45 +44639,45 @@
   "approvedThreadsArchive": [],
   "threadsArchiveIssues": [],
   "brief": {
-    "title": "油與長債降溫，但房市與消費預期仍亮黃燈",
-    "headline": "油與長債降溫，但房市與消費預期仍亮黃燈",
-    "summary": "8/25 是 8/24 基準後新的完整交易時段；S&P 500、Dow、Nasdaq、Russell 2000 分別上漲 0.3%、0.3%、0.7%、0.5%，但股價反彈不等於事件風險消失。 Brent 下跌 3.6%至 87.27 美元；官方 Treasury 曲線顯示 10Y 與 30Y 各下降 6bp 至 4.64%與 5.17%，通膨與估值壓力邊際緩和，但絕對水準仍高。 7 月新屋銷售年率降至 60.7 萬戶，月減 10.5%；待售新屋增至 48.8 萬戶、供給升至 9.6 個月。官方公布的月減估計誤差為 ±14.0%，不能把單月值直接寫成房市崩跌。 8 月消費者信心由 90.2 降至 89.4；現況指數升至 121.2，但預期指數降至 68.2，顯示現在與未來看法分裂。 1–4 週影子風險由 60 降至 58，仍屬中性；能源與長債緩和抵銷部分成長疑慮。因市場結構、信用與美元存在正常發布落差，本版僅做有限判斷。",
+    "title": "NVIDIA 財報翻倍，但通膨與高利率仍壓縮估值容錯",
+    "headline": "NVIDIA 財報翻倍，但通膨與高利率仍壓縮估值容錯",
+    "summary": "8/26 是 8/25 基準後新的完整 NYSE 交易時段；S&P 500 跌不到 0.1%，Dow -0.2%、Nasdaq -0.1%、Russell 2000 -0.1%，市場在 NVIDIA 財報前沒有形成廣泛去風險。 7 月 PCE 與核心 PCE 分別年增 3.7%與 3.3%，月增皆為 0.2%；同時實質 PCE 幾乎零成長，形成「價格仍高、實質支出停滯」的混合訊號。 Q2 實質 GDP 年率維持 1.5%，但國內購買價格指數、PCE 與核心 PCE 季增年率第二估值上修至 5.8%、5.3%與 3.6%；反方是私人國內最終銷售 4.2%、實質 GDI 2.2%。 NVIDIA Q2 FY2027 營收 962.21 億美元、年增 106%，資料中心營收 890 億美元、年增 117%，Q3 營收指引 1,080 億美元；基本面強，但股價常規時段跌 1.6%、財報後初段盤後小跌，顯示高預期使估值容錯沒有同步擴大。 今日 1–4 週影子風險分數為 60／100（中性、較前次 +2）；通膨與利率重新升溫，但信用利差低、油價回落與企業需求強提供反證。",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准（有限版）",
     "version": 1,
-    "artifactHash": "sha256:87dcaedac7f9758e5783fa60bee2fb0ee37e376972c5f2db64f09e12fa8bbceb",
-    "coveredSessionDate": "2026-08-25",
-    "asOf": "2026-08-26 07:10（Asia/Taipei，UTC+8）",
-    "source": "records/daily-briefs/2026-08-26-v01.md",
-    "updatedAt": "2026-08-26",
+    "artifactHash": "sha256:e8a8f993884a9491ad3da6a2810183ac57b0322a3b10c12f1e91ca2cface253c",
+    "coveredSessionDate": "2026-08-26",
+    "asOf": "2026-08-27 07:10（Asia/Taipei，UTC+8；07:10:21 完成鎖定後複核）",
+    "source": "records/daily-briefs/2026-08-27-v01.md",
+    "updatedAt": "2026-08-27",
     "dependencies": []
   },
   "marketRisk": {
-    "label": "市場風險報告｜2026-08-26-v01",
+    "label": "市場風險報告｜2026-08-27-v01",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准（有限版）",
     "version": 1,
-    "artifactHash": "sha256:74182753782a5fb614eb39027e89db5125c391614890cba0e9712b0f8cb16e29",
-    "coveredSessionDate": "2026-08-25",
-    "asOf": "2026-08-26 07:10（Asia/Taipei，UTC+8）",
-    "source": "records/market-risk/2026-08-26-v01.md",
-    "updatedAt": "2026-08-26 07:10（Asia/Taipei，UTC+8）",
+    "artifactHash": "sha256:8fda5a7fe3ece767a554c041a4c8b3701454e454e37beb1f72c153153762b724",
+    "coveredSessionDate": "2026-08-26",
+    "asOf": "2026-08-27 07:10（Asia/Taipei，UTC+8；07:10:21 完成鎖定後複核）",
+    "source": "records/market-risk/2026-08-27-v01.md",
+    "updatedAt": "2026-08-27 07:10:21（Asia/Taipei，UTC+8）",
     "dependencies": [],
-    "score": 58,
-    "baseline": 58,
+    "score": 60,
+    "baseline": 60,
     "eventAdjustment": 0,
-    "dailyChange": -2,
-    "immediateRisk": "NVIDIA 財報前 AI 權重集中、8/25 VIX／成交資料缺口、能源地緣消息反轉",
-    "structuralRisk": "長端利率與財政供給、住房需求與庫存、AI 資本支出回報",
+    "dailyChange": 2,
+    "immediateRisk": "NVIDIA 財報後第一個完整交易日、Jackson Hole 政策訊號、油價與荷莫茲消息反轉",
+    "structuralRisk": "服務通膨與高長端利率、AI 資本支出回報與市場集中度、實質消費與所得韌性",
     "topRisks": [
-      "房市需求與庫存分化",
-      "消費預期走弱",
-      "AI 權重與政策催化劑集中"
+      "PCE 通膨黏性",
+      "長端與政策重新定價",
+      "AI 高預期與集中度"
     ],
     "confidence": 85,
-    "completeness": 94,
+    "completeness": 95,
     "experimental": true
   },
   "marketRiskHistory": {
@@ -42828,11 +45300,782 @@
             "readable": true
           }
         ]
+      },
+      {
+        "id": "records/market-risk/2026-08-27-v01.md",
+        "date": "2026-08-27",
+        "version": 1,
+        "versionLabel": "v01",
+        "artifactHash": "sha256:8fda5a7fe3ece767a554c041a4c8b3701454e454e37beb1f72c153153762b724",
+        "artifactStatus": "待核准",
+        "rawStatus": "待核准（有限版）",
+        "asOf": "2026-08-27 07:10（Asia/Taipei，UTC+8；07:10:21 完成鎖定後複核）",
+        "updatedAt": "2026-08-27 07:10:21（Asia/Taipei，UTC+8）",
+        "source": "records/market-risk/2026-08-27-v01.md",
+        "score": 60,
+        "state": "中性",
+        "dailyChange": 2,
+        "changeReasons": "無；事件調整為 0",
+        "topRisks": [
+          "PCE 通膨黏性",
+          "長端與政策重新定價",
+          "AI 高預期與集中度"
+        ],
+        "supportingEvidence": "PCE 年增 3.7%、核心 3.3%、實質 PCE 幾乎零成長、Q2 GDP 1.5%、Treasury 曲線上移、四大指數小跌",
+        "counterEvidence": "NVIDIA 營收／EPS／指引強、耐久財成長、私人內需與 GDI 強、企業利潤增加、Brent 回落、信用利差低",
+        "confidence": 85,
+        "completeness": 95,
+        "lowCompleteness": false,
+        "dependencies": [],
+        "versions": [
+          {
+            "id": "records/market-risk/2026-08-27-v01.md",
+            "version": 1,
+            "versionLabel": "v01",
+            "source": "records/market-risk/2026-08-27-v01.md",
+            "readable": true
+          }
+        ]
       }
     ],
     "issues": []
   },
   "marketRiskArchive": [
+    {
+      "id": "records/market-risk/2026-08-27-v01.md",
+      "date": "2026-08-27",
+      "version": 1,
+      "versionLabel": "v01",
+      "isLatest": true,
+      "title": "市場風險報告｜2026-08-27-v01",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版）",
+      "artifactHash": "sha256:8fda5a7fe3ece767a554c041a4c8b3701454e454e37beb1f72c153153762b724",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准（有限版）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-08-27 07:10（Asia/Taipei，UTC+8；07:10:21 完成鎖定後複核）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "方法版本：v1.0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影子運行：實驗性指標／第 21 個交易日"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察期：主分數為 1–4 週；另標示 1–3 個交易日與 1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "最後更新時間：2026-08-27 07:10:21（Asia/Taipei，UTC+8）"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "總覽"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "市場風險分數：60"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "基準分：60"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "事件調整：0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "單日變動：+2"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "5 日趨勢：最近五筆為 65→61→60→58→60；工作區第 5–7 日缺檔不回填，方向先降後回升"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "20 日趨勢：影子序號到第 21 個交易日，但第 5–7 日缺少當日版本，無法形成完整連續 20 日序列"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險狀態及趨勢：中性、回升；PCE／GDP 價格與長端壓力增加，信用、油價與企業需求提供抵銷"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "即時風險：NVIDIA 財報後第一個完整交易日、Jackson Hole 政策訊號、油價與荷莫茲消息反轉"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "結構性風險：服務通膨與高長端利率、AI 資本支出回報與市場集中度、實質消費與所得韌性"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "三項主要風險：PCE 通膨黏性、長端與政策重新定價、AI 高預期與集中度"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "分數改變原因：景氣與成長維持 65，Q2 GDP 1.5%與 7 月實質 PCE 幾乎零成長偏弱，但私人國內最終銷售 4.2%、GDI 2.2%、耐久財 +1.1%與 NVIDIA 財報強；通膨與利率由 70 升至 75，PCE／核心 PCE 年增 3.7%／3.3%、Q2 價格指標上修，2Y／10Y／30Y 各升 2／2／1bp；流動性維持 60，H.4.1 最新週準備金下降且廣義美元僅至 8/21；信用維持 35，8/25 HY／IG OAS 為 2.70／0.81；市場結構由 60 升至 65，四大指數小跌且 NVIDIA 常規時段 -1.6%，但 VIX／成交資料落後、財報後完整市場反應未形成。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "AI 判斷信心：85"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料完整度：95"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "子指標"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "子指標"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "權重"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "分數"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "趨勢"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "理由"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "景氣與成長"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "65"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "持平、混合偏弱"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Q2 GDP 1.5%、7 月實質 PCE 幾乎零成長；反方是私人國內最終銷售 4.2%、GDI 2.2%、企業利潤 +4,009 億美元、耐久財 +1.1%與 NVIDIA 需求強"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "BEA、Census、NVIDIA，發布日 2026-08-26"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "通膨與利率"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "75"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "上升至偏高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "PCE／核心 PCE 年增 3.7%／3.3%，Q2 國內購買價格／PCE／核心 PCE 季增年率 5.8%／5.3%／3.6%；2Y／10Y／30Y 升至 4.19%／4.66%／5.18%。反方是月增均 0.2%、Brent -0.4%至 86.94 美元"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "BEA、U.S. Treasury、AP，資料或發布日 2026-08-26"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "流動性"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "60"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "持平偏高、資料落後"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "H.4.1 8/19 週準備金週均 -87.72 億美元、RRP +139.77 億、TGA -103.38 億；廣義美元最新 8/21 為 118.0628，沒有 8/26 新週資料支持改分"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Federal Reserve H.4.1／H.10，發布日 2026-08-20、08-24"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "信用"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "35"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "持平偏低"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "8/25 HY OAS 2.70、IG OAS 0.81，分別較 8/24 +1bp／持平，絕對水準低且未擴散；8/26 值尚未發布"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "ICE BofA／FRED，資料日 2026-08-25、2026-08-27 查核"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "市場結構"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "65"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "上升但未確認擴散"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "四大指數小跌 0.1%至 0.2%，NVIDIA 常規時段 -1.6%；反方是指數仍近高點、8/25 VIX 15.45，且 NVIDIA 財報基本面強。8/26 VIX／成交檔與財報後完整市場反應缺失"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "AP，資料日 2026-08-26；Cboe／FRED，最新 2026-08-25"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "基準分計算："
+            },
+            {
+              "type": "code",
+              "text": "(65 + 75 + 60 + 35 + 65) ÷ 5 = 60"
+            },
+            {
+              "type": "text",
+              "text": "。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "事件調整"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "調整事件：無；事件調整為 0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "受影響子指標：PCE／GDP 價格與 Treasury 已納入通膨利率；實質消費、GDP、耐久財與企業需求已納入景氣成長；NVIDIA 與指數已納入市場結構"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未反映於基準數據的理由：NVIDIA 財報在收盤後發布且大幅超預期，但早期盤後反應小、基本面方向正面，尚無跨市場下行衝擊；不以高預期或未知的下一日反應額外加分。Jackson Hole 尚未發生，不預先計分"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：通膨與價格估值偏高 → 利率與政策風險；實質消費停滯 → 盈餘廣度風險；NVIDIA 高預期 → AI 權重與市場集中度風險"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "支持證據：PCE 年增 3.7%、核心 3.3%、實質 PCE 幾乎零成長、Q2 GDP 1.5%、Treasury 曲線上移、四大指數小跌"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：NVIDIA 營收／EPS／指引強、耐久財成長、私人內需與 GDI 強、企業利潤增加、Brent 回落、信用利差低"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：只有出現尚未被五項子指標捕捉、由原始資料與市場資料共同確認的重大政策、信用、能源或 AI 融資衝擊才啟用事件調整；否則下一版直接重估子指標"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "總分計算："
+            },
+            {
+              "type": "code",
+              "text": "60 + 0 = 60"
+            },
+            {
+              "type": "text",
+              "text": "。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "證據與限制"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "支持證據：BEA 確認 PCE 年增偏高、實質消費幾乎零成長與 Q2 GDP 1.5%；Treasury 確認曲線小幅上移；AP 確認主要指數小跌與 Brent 仍受供應事件驅動"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：NVIDIA 營收 962.21 億美元、資料中心 890 億美元、FCF 213.41 億美元與 Q3 指引 1,080 億美元；耐久財 +1.1%；私人國內最終銷售 4.2%、GDI 2.2%、企業利潤 +4,009 億美元；Brent 回落；信用利差低"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：8/27 NVIDIA、半導體與指數廣度，8/26 VIX／Cboe 成交與信用補值，8/28 Jackson Hole 演說，10Y／30Y、Brent、HY／IG OAS"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "待觀察數據：NVIDIA 財報後第一個完整交易時段、主席演說、後續就業／零售／8 月 PCE；成長、信用、油價與長端若同步惡化則上調，月度通膨、實質需求與長端改善則下調"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：8/26 VIX、Cboe 成交、HY／IG OAS；廣義美元最新至 8/21；NVIDIA 盤後價格尚非完整交易時段。資料完整度 95、信心 85，本版為有限版，不得視為精準預測"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "歷史限制：影子序號為第 21 個交易日，工作區新增後有 18 個實際日期風險版本，缺少第 5–7 日（2026-08-05 至 08-07）當日紀錄；不以事後資料補造，20 日趨勢只能有限評估"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "事後績效（後續追加）"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "評估日期：後續觀察窗結束時另行追加"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "後續市場表現：以 1–3 個交易日、1–4 週與 1–2 季觀察窗追加，不預寫結果"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "判斷評估：後續評估方向、時效、誤報或漏報"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "方法學習：只追加事後結果；如需改方法，建立新版本且不回寫本紀錄"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "來源"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "link",
+                "text": "NYSE｜Holidays & Trading Hours｜2026 日曆與核心交易時段；2026-08-27 查核",
+                "href": "https://www.nyse.com/trade/hours-calendars"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. BEA｜Personal Income and Outlays, July 2026｜發布日 2026-08-26",
+                "href": "https://www.bea.gov/sites/default/files/2026-08/pi0726.pdf"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. BEA｜GDP Second Estimate and Corporate Profits, Q2 2026｜發布日 2026-08-26",
+                "href": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-2nd-quarter-2026"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Census Bureau｜Advance Durable Goods, July 2026｜發布日 2026-08-26",
+                "href": "https://www.census.gov/manufacturing/m3/adv/current/index.html"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "NVIDIA｜Q2 FY2027 results｜發布日 2026-08-26",
+                "href": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Treasury｜Daily Treasury Par Yield Curve Rates｜資料日 2026-08-25 至 08-26",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜Wall Street holds mostly steady｜市場回顧日 2026-08-26",
+                "href": "https://apnews.com/article/stocks-markets-ai-oil-nvidia-7112fc458ebbf59dfa6172799e4e139d"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜NVIDIA results exceed expectations｜發布日 2026-08-26",
+                "href": "https://apnews.com/article/nvidia-artificial-intelligence-earnings-dc8d556e709b50915cca9217a60b1991"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Kansas City Fed｜Jackson Hole Economic Policy Symposium｜活動日 2026-08-27 至 08-29",
+                "href": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜H.4.1｜發布日 2026-08-20、資料週截至 08-19",
+                "href": "https://www.federalreserve.gov/releases/h41/current/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜H.10｜發布日 2026-08-24、廣義美元最新資料日 08-21",
+                "href": "https://www.federalreserve.gov/releases/h10/current/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Cboe／FRED｜VIX daily close｜最新資料日 2026-08-25",
+                "href": "https://fred.stlouisfed.org/series/VIXCLS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Cboe｜U.S. Equities Historical Market Volume｜最新資料日 2026-08-25",
+                "href": "https://cdn.cboe.com/resources/us/equities/market-statistics/historical-market-volume/market_history_2026.csv"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜HY OAS｜最新資料日 2026-08-25",
+                "href": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜IG OAS｜最新資料日 2026-08-25",
+                "href": "https://fred.stlouisfed.org/series/BAMLC0A0CM"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：確認是否接受有限版 60 分總分、60 分基準、0 事件調整、資料完整度 95、AI 信心 85、第 21 日影子紀錄與 18 份實際日期版本，供內部研究及私人 Dashboard 呈現。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：本次不授權公開發布，不連動 Beta、持股、再平衡、買賣、個人化投資建議或投資操作，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/market-risk/2026-08-27-v01.md",
+      "asOf": "2026-08-27 07:10（Asia/Taipei，UTC+8；07:10:21 完成鎖定後複核）",
+      "updatedAt": "2026-08-27 07:10:21（Asia/Taipei，UTC+8）",
+      "dependencies": []
+    },
     {
       "id": "records/market-risk/2026-08-26-v01.md",
       "date": "2026-08-26",
