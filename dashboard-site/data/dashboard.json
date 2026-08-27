@@ -1,14 +1,506 @@
 {
-  "generatedAt": "2026-08-26T23:12:40.313Z",
-  "date": "2026-08-27",
+  "generatedAt": "2026-08-27T23:13:28.536Z",
+  "date": "2026-08-28",
   "expectation": {
-    "dashboardDate": "2026-08-27",
-    "expectedReportDate": "2026-08-26",
-    "coveredSessionDate": "2026-08-25",
+    "dashboardDate": "2026-08-28",
+    "expectedReportDate": "2026-08-27",
+    "coveredSessionDate": "2026-08-26",
     "phase": "before_cutoff",
     "reason": "尚未到 07:30 交付門檻，沿用前一個應有報告日。"
   },
   "approvals": [
+    {
+      "id": "records/market-risk/2026-08-28-v01.md",
+      "title": "市場風險報告｜2026-08-28-v01",
+      "type": "市場風險報告",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版）",
+      "summary": "市場風險報告｜2026-08-28-v01",
+      "fullContent": null,
+      "decision": "確認是否接受有限版 57 分總分、57 分基準、0 事件調整、資料完整度 95、AI 信心 85、第 22 日影子紀錄與 19 份實際日期版本，供內部研究及私人 Dashboard 呈現。",
+      "source": "records/market-risk/2026-08-28-v01.md",
+      "asOf": "2026-08-28 07:10（Asia/Taipei，UTC+8；07:10:46 完成鎖定後複核）",
+      "createdAt": null,
+      "recordDate": "2026-08-28",
+      "version": 1,
+      "artifactHash": "sha256:324ee0270d57fb2e30ef52377a8b0d1ce76f185f4ef5bfae445ea4c093f9c411",
+      "updatedAt": "2026-08-28 07:10:46（Asia/Taipei，UTC+8）",
+      "dependencies": []
+    },
+    {
+      "id": "records/daily-briefs/2026-08-28-v01.md",
+      "title": "AI 財報帶動指數上漲，但多數成分股仍下跌",
+      "type": "晨報",
+      "owner": "總經研究員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版）",
+      "summary": "8/27 是上次基準 8/26 後新的完整 NYSE 正常交易時段；S&P 500 +0.7%、Nasdaq +1.6%、Dow +0.2%、Russell 2000 +0.3%。 NVIDIA 財報後第一個完整交易日漲 8.7%，Salesforce 漲 22.6%；原始財報確認 AI 基礎設施與軟體收入都在成長，削弱「AI 需求立即崩落」的論點。 反方是 AP 確認 S&P 500 多數成分股仍下跌，代表指數上漲主要由少數大型 AI 贏家帶動，尚未形成全面風險偏好。 初領失業金降至 20.3 萬、10Y 升至 4.67%；Brent 反彈 1.8%至 88.52 美元。成長韌性與能源價格同時壓縮寬鬆空間，8/28 Fed 主席演說是下一個確認點。 今日 1–4 週影子風險分數為 57／100（中性、較前次 -3）；企業需求與信用改善使分數下降，但高利率、能源與市場集中度仍使本版維持有限。",
+      "fullContent": null,
+      "decision": "確認是否接受五則事件、57 分有限版影子風險、標題與篇幅，供內部研究及私人 Dashboard 呈現。",
+      "source": "records/daily-briefs/2026-08-28-v01.md",
+      "asOf": "2026-08-28 07:10（Asia/Taipei，UTC+8；07:10:46 完成鎖定後複核）",
+      "createdAt": null,
+      "recordDate": "2026-08-28",
+      "version": 1,
+      "artifactHash": "sha256:2f3cbe8ee4112893c0d3e958fcd5810c92e7d3bc6c93ecd7a6007be02df400b5",
+      "updatedAt": "2026-08-28",
+      "dependencies": []
+    },
+    {
+      "id": "records/content/threads/2026-08-28-ai-commercialization-proof-v01.md",
+      "title": "Threads 草稿｜NVIDIA 漲 8.7%、Salesforce 漲 22.6%，AI 商業化被證明了嗎？",
+      "type": "Threads",
+      "owner": "社群經營員",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版研究來源）",
+      "summary": "營收 962 億美元，年增 106% 資料中心營收 890 億美元，年增 117% 自由現金流 213 億美元 下季營收指引 1,080 億美元 ±2% 營收 113 億美元，年增 11% Agentforce＋Data 360 ARR 接近 39 億美元，年增超過 210% 自由現金流 11 億美元，年增 81%",
+      "fullContent": {
+        "format": "structured-markdown",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "日期：2026-08-28"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "狀態：待核准（有限版研究來源）"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "來源研究："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-28-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報："
+                },
+                {
+                  "type": "code",
+                  "text": "records/daily-briefs/2026-08-28-v01.md"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報版本：v01"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "觸發晨報雜湊："
+                },
+                {
+                  "type": "code",
+                  "text": "sha256:2f3cbe8ee4112893c0d3e958fcd5810c92e7d3bc6c93ecd7a6007be02df400b5"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "內容指紋："
+                },
+                {
+                  "type": "code",
+                  "text": "sha256:50b23459cd786e0702b9535e4c4c8f119448779cbb75044af708d3beadc3aca6"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "建議時機：現在；發布前須確認公司原始發布未修訂，且 8/28 Jackson Hole 主席演說沒有明顯改變利率與估值背景"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "主版本"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "NVIDIA 漲 8.7%、Salesforce 漲 22.6%， AI 商業化真的被證明了嗎？"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "這一季，市場拿到兩個很強的訊號。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "第一個是算力需求。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "NVIDIA："
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "營收 962 億美元，年增 106%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "資料中心營收 890 億美元，年增 117%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "自由現金流 213 億美元"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "下季營收指引 1,080 億美元 ±2%"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "第二個是軟體收入。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Salesforce："
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "營收 113 億美元，年增 11%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Agentforce＋Data 360 ARR 接近 39 億美元，年增超過 210%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "自由現金流 11 億美元，年增 81%"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "所以，「AI 完全賺不到錢」這個說法，證據正在變弱。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "但這不等於所有 AI 估值都安全。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "我會再看三件事。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "start": 1,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "成長有多少來自既有業務？"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Salesforce 的營收包含 Informatica 貢獻，全年財測也包含待完成併購。不能把全部成長都當成自然加速。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "start": 2,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "現金流能不能跟上？"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "單季自由現金流很強，但 Salesforce 全年自由現金流成長指引仍只有約 4%～5%。"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "start": 3,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "漲勢有沒有擴散？"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "當天 S&P 500 上漲 0.7%，但多數成分股其實下跌。指數上漲，主要還是靠少數大型贏家。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "我的結論是："
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "這一季證明「領先公司可以把 AI 換成收入與現金流」， 但還沒有證明「所有 AI 投資都能通過 ROI 檢驗」。"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "下一步不是只看股價漲多少， 而是看收入、現金流與市場廣度能不能一起擴散。"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "備選開頭"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "start": 1,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "NVIDIA 漲 8.7%、Salesforce 漲 22.6%。這次市場買的不只是 AI 故事，而是兩種不同的商業化證據。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "AI 到底有沒有開始賺錢？先把「算力需求」和「軟體收入」分開看。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "查核與語氣"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "事實與來源：NVIDIA Q2 FY2027 營收 962.21 億美元、資料中心 890 億美元、自由現金流 213.41 億美元、Q3 指引 1,080 億美元 ±2%，來源為 "
+                },
+                {
+                  "type": "link",
+                  "text": "NVIDIA｜發布日 2026-08-26、季度截至 2026-07-26",
+                  "href": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx"
+                },
+                {
+                  "type": "text",
+                  "text": "；Salesforce Q2 FY2027 營收 113 億美元、Agentforce／Data 360 ARR 接近 39 億美元、自由現金流 11 億美元，來源為 "
+                },
+                {
+                  "type": "link",
+                  "text": "Salesforce｜發布日 2026-08-26、季度截至 2026-07-31",
+                  "href": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Second-Quarter-Fiscal-2027-Results/default.aspx"
+                },
+                {
+                  "type": "text",
+                  "text": "；NVIDIA +8.7%、Salesforce +22.6%、S&P 500 +0.7%且多數成分股下跌，來源為 "
+                },
+                {
+                  "type": "link",
+                  "text": "Associated Press｜市場日 2026-08-27",
+                  "href": "https://apnews.com/article/stocks-market-iran-war-oil-us-35c60216666d877595a3941df73030de"
+                },
+                {
+                  "type": "text",
+                  "text": "。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "反方或限制：Salesforce Q2 營收包含 4.56 億美元 Informatica 貢獻，FY27 財測含略高於 3 個百分點的 Informatica 貢獻並納入待完成併購；Agentforce／Data 360 ARR 是公司自列指標。單季龍頭財報與股價反應不能證明全部 AI 企業或專案都達成 ROI，也不能由多數成分股下跌推導系統性去風險。本晨報因 8/27 VIX、Cboe 成交與信用利差缺失、廣義美元最新至 8/21而標示有限版；本草稿沒有用缺失數值支持結論。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "待使用者補充：請確認是否採用第一人稱立場「我會再看成長來源、現金流、漲勢擴散三件事」與結論措辭；未代寫任何個人經歷、持股、交易或績效。"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "App CTA：不加入；本篇重點是辨識 AI 商業化證據與限制，沒有自然且必要的產品承接。"
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "content": [
+              {
+                "type": "text",
+                "text": "核准"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "text": "最終文字與發布由使用者決定：尚未核准；本草稿不得自動發布，也不授權留言、私訊或任何投資行動。"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "decision": "等待使用者決定",
+      "source": "records/content/threads/2026-08-28-ai-commercialization-proof-v01.md",
+      "asOf": "2026-08-28",
+      "createdAt": null,
+      "recordDate": "2026-08-28",
+      "version": 1,
+      "artifactHash": "sha256:f3e4d2402a209de560d64b336f43f61a4591d5143897477218d888407d4e553a",
+      "updatedAt": "2026-08-28",
+      "dependencies": [
+        "records/daily-briefs/2026-08-28-v01.md"
+      ]
+    },
     {
       "id": "records/market-risk/2026-08-27-v01.md",
       "title": "市場風險報告｜2026-08-27-v01",
@@ -46,7 +538,7 @@
       "recordDate": "2026-08-27",
       "version": 1,
       "artifactHash": "sha256:e8a8f993884a9491ad3da6a2810183ac57b0322a3b10c12f1e91ca2cface253c",
-      "updatedAt": "2026-08-27",
+      "updatedAt": "2026-08-27T07:13:39+08:00",
       "dependencies": []
     },
     {
@@ -7812,15 +8304,15 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准（有限版）",
-      "currentTask": "市場風險報告｜2026-08-27-v01",
+      "currentTask": "市場風險報告｜2026-08-28-v01",
       "progress": "等待人工核准",
       "dependencies": [],
       "handoff": "將研究與風險成果交總司令驗收；將已驗證素材交社群經營員；將市場風險欄位與限制交 App 設計員。所有對外使用均由使用者核准。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/market-risk/2026-08-27-v01.md",
-      "asOf": "2026-08-27 07:10（Asia/Taipei，UTC+8；07:10:21 完成鎖定後複核）",
-      "updatedAt": "2026-08-27 07:10:21（Asia/Taipei，UTC+8）"
+      "source": "records/market-risk/2026-08-28-v01.md",
+      "asOf": "2026-08-28 07:10（Asia/Taipei，UTC+8；07:10:46 完成鎖定後複核）",
+      "updatedAt": "2026-08-28 07:10:46（Asia/Taipei，UTC+8）"
     },
     {
       "id": "social-operator",
@@ -7829,20 +8321,64 @@
       "status": "待核准",
       "artifactStatus": "待核准",
       "rawStatus": "待核准（有限版研究來源）",
-      "currentTask": "Threads 草稿｜PCE 年增 3.7%、月增 0.2%，通膨到底有沒有降溫？",
+      "currentTask": "Threads 草稿｜NVIDIA 漲 8.7%、Salesforce 漲 22.6%，AI 商業化被證明了嗎？",
       "progress": "等待人工核准",
       "dependencies": [
-        "records/daily-briefs/2026-08-27-v01.md"
+        "records/daily-briefs/2026-08-28-v01.md"
       ],
       "handoff": "研究疑問退回總經研究員；成果與實驗交總司令驗收；最終語氣、個人觀點、發布與互動交使用者。",
       "blocker": null,
       "nextStep": "等待使用者核准",
-      "source": "records/content/threads/2026-08-27-pce-level-vs-momentum-v01.md",
-      "asOf": "2026-08-27",
-      "updatedAt": "2026-08-27"
+      "source": "records/content/threads/2026-08-28-ai-commercialization-proof-v01.md",
+      "asOf": "2026-08-28",
+      "updatedAt": "2026-08-28"
     }
   ],
   "tasks": [
+    {
+      "id": "records/market-risk/2026-08-28-v01.md",
+      "title": "市場風險報告｜2026-08-28-v01",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版）",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/market-risk/2026-08-28-v01.md",
+      "asOf": "2026-08-28 07:10（Asia/Taipei，UTC+8；07:10:46 完成鎖定後複核）",
+      "updatedAt": "2026-08-28 07:10:46（Asia/Taipei，UTC+8）"
+    },
+    {
+      "id": "records/daily-briefs/2026-08-28-v01.md",
+      "title": "AI 財報帶動指數上漲，但多數成分股仍下跌",
+      "owner": "總經研究員",
+      "ownerId": "macro-researcher",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版）",
+      "nextStep": "等待使用者核准",
+      "dependencies": [],
+      "source": "records/daily-briefs/2026-08-28-v01.md",
+      "asOf": "2026-08-28 07:10（Asia/Taipei，UTC+8；07:10:46 完成鎖定後複核）",
+      "updatedAt": "2026-08-28"
+    },
+    {
+      "id": "records/content/threads/2026-08-28-ai-commercialization-proof-v01.md",
+      "title": "Threads 草稿｜NVIDIA 漲 8.7%、Salesforce 漲 22.6%，AI 商業化被證明了嗎？",
+      "owner": "社群經營員",
+      "ownerId": "social-operator",
+      "status": "待核准",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版研究來源）",
+      "nextStep": "等待使用者核准",
+      "dependencies": [
+        "records/daily-briefs/2026-08-28-v01.md"
+      ],
+      "source": "records/content/threads/2026-08-28-ai-commercialization-proof-v01.md",
+      "asOf": "2026-08-28",
+      "updatedAt": "2026-08-28"
+    },
     {
       "id": "records/market-risk/2026-08-27-v01.md",
       "title": "市場風險報告｜2026-08-27-v01",
@@ -7869,7 +8405,7 @@
       "dependencies": [],
       "source": "records/daily-briefs/2026-08-27-v01.md",
       "asOf": "2026-08-27 07:10（Asia/Taipei，UTC+8；07:10:21 完成鎖定後複核）",
-      "updatedAt": "2026-08-27"
+      "updatedAt": "2026-08-27T07:13:39+08:00"
     },
     {
       "id": "records/content/threads/2026-08-27-pce-level-vs-momentum-v01.md",
@@ -8592,6 +9128,1594 @@
   ],
   "briefArchive": [
     {
+      "id": "records/daily-briefs/2026-08-28-v01.md",
+      "date": "2026-08-28",
+      "version": 1,
+      "versionLabel": "v01",
+      "isLatest": true,
+      "title": "AI 財報帶動指數上漲，但多數成分股仍下跌",
+      "summary": "8/27 是上次基準 8/26 後新的完整 NYSE 正常交易時段；S&P 500 +0.7%、Nasdaq +1.6%、Dow +0.2%、Russell 2000 +0.3%。 NVIDIA 財報後第一個完整交易日漲 8.7%，Salesforce 漲 22.6%；原始財報確認 AI 基礎設施與軟體收入都在成長，削弱「AI 需求立即崩落」的論點。 反方是 AP 確認 S&P 500 多數成分股仍下跌，代表指數上漲主要由少數大型 AI 贏家帶動，尚未形成全面風險偏好。 初領失業金降至 20.3 萬、10Y 升至 4.67%；Brent 反彈 1.8%至 88.52 美元。成長韌性與能源價格同時壓縮寬鬆空間，8/28 Fed 主席演說是下一個確認點。 今日 1–4 週影子風險分數為 57／100（中性、較前次 -3）；企業需求與信用改善使分數下降，但高利率、能源與市場集中度仍使本版維持有限。",
+      "freshness": "最新",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版）",
+      "artifactHash": "sha256:2f3cbe8ee4112893c0d3e958fcd5810c92e7d3bc6c93ecd7a6007be02df400b5",
+      "coveredSessionDate": "2026-08-27",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准（有限版）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-08-28 07:10（Asia/Taipei，UTC+8；07:10:46 完成鎖定後複核）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察市場：美國股市、利率、能源、信用、流動性、總經與 AI 財報"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察期間：2026-08-27 完整美股交易時段；總經、公司、信用與流動性資料採 07:10 前最新發布值"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料完整度：95／100；8/27 主要指數、Treasury、公司財報後反應、初領失業金與 H.4.1 已完整，8/27 VIX 與 Cboe 成交檔尚未發布／取得，HY／IG OAS 最新至 8/26，廣義美元最新至 8/21"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "一分鐘摘要"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "8/27 是上次基準 8/26 後新的完整 NYSE 正常交易時段；S&P 500 +0.7%、Nasdaq +1.6%、Dow +0.2%、Russell 2000 +0.3%。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "NVIDIA 財報後第一個完整交易日漲 8.7%，Salesforce 漲 22.6%；原始財報確認 AI 基礎設施與軟體收入都在成長，削弱「AI 需求立即崩落」的論點。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方是 AP 確認 S&P 500 多數成分股仍下跌，代表指數上漲主要由少數大型 AI 贏家帶動，尚未形成全面風險偏好。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "初領失業金降至 20.3 萬、10Y 升至 4.67%；Brent 反彈 1.8%至 88.52 美元。成長韌性與能源價格同時壓縮寬鬆空間，8/28 Fed 主席演說是下一個確認點。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "今日 1–4 週影子風險分數為 57／100（中性、較前次 -3）；企業需求與信用改善使分數下降，但高利率、能源與市場集中度仍使本版維持有限。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日風險儀表"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "1–4 週風險分數：57／100"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "相較前一交易日：-3"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險狀態：中性"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "即時風險：8/28 Jackson Hole 主席演說、AI 權重股漲勢能否擴散、Brent 是否延續反彈"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "結構性風險：服務通膨與高長端利率、AI 資本支出回報與市場集中度、流動性緩衝未明顯擴張"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "今日主要風險來源：AI 漲勢集中、長端與政策重新定價、能源通膨尾部風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "五則重要事件"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "1｜NVIDIA 與 Salesforce 證明 AI 收入成長，但估值門檻沒有消失"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實：NVIDIA 在財報後第一個完整交易日上漲 8.7%，Salesforce 上漲 22.6%。NVIDIA Q2 FY2027 營收 962.21 億美元、年增 106%，資料中心營收 890 億美元、年增 117%；Salesforce Q2 FY2027 營收 113 億美元、年增 11%，Agentforce 與 Data 360 ARR 接近 39 億美元、年增逾 210%。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "link",
+              "text": "NVIDIA，發布日 2026-08-26、季度截至 2026-07-26",
+              "href": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx"
+            },
+            {
+              "type": "text",
+              "text": "：營收 962.21 億美元、非 GAAP EPS 2.22 美元、毛利率 75.0%、自由現金流 213.41 億美元、購置不動產設備與無形資產 26.77 億美元、Q3 營收指引 1,080 億美元 ±2%；"
+            },
+            {
+              "type": "link",
+              "text": "Salesforce，發布日 2026-08-26、季度截至 2026-07-31",
+              "href": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Second-Quarter-Fiscal-2027-Results/default.aspx"
+            },
+            {
+              "type": "text",
+              "text": "：營收 113 億美元、non-GAAP EPS 5.90 美元、non-GAAP 營業利益率 34.1%、自由現金流 11 億美元、FY27 營收指引 461–464 億美元；"
+            },
+            {
+              "type": "link",
+              "text": "AP，市場日 2026-08-27",
+              "href": "https://apnews.com/article/stocks-market-iran-war-oil-us-35c60216666d877595a3941df73030de"
+            },
+            {
+              "type": "text",
+              "text": "：NVIDIA +8.7%、Salesforce +22.6%。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認的收入、現金流與市場反應支持 AI 從運算基礎設施延伸到企業軟體的商業化證據。AI 推論是：這降低需求立即崩落的 1–4 週風險，但高漲幅也提高下一季的預期門檻；Salesforce 指引含併購貢獻，不能把全部成長都視為既有業務自然加速。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：B 估值／A 基本面"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：潛伏、邊際緩解"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日／1–4 週／1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：財報與股價大幅上修 → 市場提高下一季成長與 ROI 門檻 → 任一指引或現金流落差放大權重股波動"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：AI 軟體 ARR、雲端 AI 收入與自由現金流持續成長，且漲勢擴散到更多成分股"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：NVIDIA 營收、資料中心、FCF 與指引強；Salesforce 營收、cRPO、Agentforce／Data 360 ARR 與 FCF 均成長"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若後續企業財報顯示 AI 收入與現金流廣泛改善，且市場廣度同步轉強，應進一步降低此項風險"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "2｜指數上漲，但多數 S&P 500 成分股下跌"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實：S&P 500 上漲 0.7%、Nasdaq 上漲 1.6%，但 AP 的當日市場回顧指出 S&P 500 多數成分股下跌。NVIDIA 與 Salesforce 的大漲足以抵銷多數個股回落。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "link",
+              "text": "AP 指數收盤，市場日 2026-08-27",
+              "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-b4216a1f191d0304b4ed59e6912e23a4"
+            },
+            {
+              "type": "text",
+              "text": "：S&P 500 7,730.99（+0.7%）、Dow 53,569.44（+0.2%）、Nasdaq 26,541.35（+1.6%）、Russell 2000 3,014.34（+0.3%）；"
+            },
+            {
+              "type": "link",
+              "text": "AP 市場回顧，市場日 2026-08-27",
+              "href": "https://apnews.com/article/stocks-market-iran-war-oil-us-35c60216666d877595a3941df73030de"
+            },
+            {
+              "type": "text",
+              "text": "：多數 S&P 500 成分股下跌。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "市值加權指數上漲不等於企業獲利或風險偏好全面改善。AI 推論是：若漲勢只靠極少數權重股，指數短期仍可走高，但對單一財報、估值或監管消息更敏感；反方是四大指數全部收紅、Russell 2000 也上漲，尚不能判定廣泛去風險。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：C 資金輪動／D 風險變化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：潛伏"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日／1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：少數權重股拉動指數 → 市場廣度未跟上 → 權重股反轉時指數回撤被放大"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：後續上漲家數、等權重指數與小型股未跟上，且 AI 權重股轉弱"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：四大指數全數上漲，Russell 2000 +0.3%，最新可得 VIX 仍低"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：多數成分股轉為上漲、等權重與小型股持續跟進，且成交廣度改善"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "3｜初領失業金偏低，長端殖利率再上移"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實：截至 8/22 當週初領失業金為 20.3 萬、較修正後前值減少 0.4 萬；截至 8/15 的續領失業金為 177.8 萬、減少 1.8 萬。8/27 美國 2Y／10Y／30Y 殖利率為 4.20%／4.67%／5.19%，各較 8/26 上升 1bp。Kansas City Fed 確認 Fed 主席 Kevin Warsh 將於 8/28 10:00 ET 發表演說。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "link",
+              "text": "U.S. Department of Labor，發布日 2026-08-27、資料週截至 08-22／08-15",
+              "href": "https://www.dol.gov/ui/data.pdf"
+            },
+            {
+              "type": "text",
+              "text": "：初領 203,000、四週均值 205,500、續領 1,778,000；"
+            },
+            {
+              "type": "link",
+              "text": "U.S. Treasury，資料日 2026-08-27",
+              "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+            },
+            {
+              "type": "text",
+              "text": "：2Y 4.20%、10Y 4.67%、30Y 5.19%；"
+            },
+            {
+              "type": "link",
+              "text": "Kansas City Fed，發布日 2026-08-25",
+              "href": "https://www.kansascityfed.org/newsroom/2026-news-releases/kansas-city-fed-to-host-annual-jackson-hole-economic-policy-symposium-2026/"
+            },
+            {
+              "type": "text",
+              "text": "：主席演說時間 2026-08-28 10:00 ET。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "低裁員是景氣反方證據，卻也減少市場押注快速寬鬆的理由；在 PCE 年增仍高與油價反彈下，殖利率小幅上移顯示政策與期限溢酬壓力尚未消失。尚未發表的演說只列為催化劑，不預寫政策立場。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：B 估值／D 風險變化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日／1–4 週"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：就業韌性＋通膨未完全降溫 → 寬鬆預期延後、長端維持高位 → 高久期股票估值容錯縮小"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：主席演說偏緊、2Y／10Y／30Y 突破近期高點，且通膨預期同步上升"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：初領與續領下降支持景氣，殖利率單日僅上升 1bp"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：政策訊號與後續數據支持通膨降溫，長端回落且信用利差不擴大"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "4｜Brent 反彈 1.8%，能源通膨尾部風險回來"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實：Brent 8/27 上漲 1.8%至每桶 88.52 美元，前一日曾收在 86.94 美元；價格仍受伊朗戰事與油輪能否自由離開波斯灣的不確定性影響。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "link",
+              "text": "AP 市場回顧，市場日 2026-08-27",
+              "href": "https://apnews.com/article/stocks-market-iran-war-oil-us-35c60216666d877595a3941df73030de"
+            },
+            {
+              "type": "text",
+              "text": "：Brent 88.52 美元、日漲 1.8%；"
+            },
+            {
+              "type": "link",
+              "text": "AP 市場回顧，市場日 2026-08-26",
+              "href": "https://apnews.com/article/stocks-markets-ai-oil-nvidia-7112fc458ebbf59dfa6172799e4e139d"
+            },
+            {
+              "type": "text",
+              "text": "：前一日 Brent 86.94 美元、日跌 0.4%。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "單日反彈尚未確認新一輪能源衝擊，但會削弱前一日油價回落帶來的通膨反證。AI 推論是：若航運限制持續並使 Brent 重回前週約 94 美元，headline 通膨、家庭實質所得與長端殖利率會同時承壓。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：D 風險變化／A 基本面"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：升溫"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–3 個交易日／1–4 週／1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：航運或供應再受阻 → 油價與汽油回升 → 通膨預期、殖利率與消費壓力上升"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：Brent 重回 94 美元附近，且航運、保險或官方供應資料確認受阻"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：88.52 美元仍低於前週末約 94 美元，單日反彈不足以確認趨勢"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：可驗證的外交與航運改善、Brent 穩定回落，且能源通膨預期同步下降"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "type": "text",
+              "text": "5｜Fed 資產負債表顯示流動性緩衝沒有明顯擴張"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "發生什麼事"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實：H.4.1 顯示截至 8/26 當週，準備金週均值為 2.9249 兆美元、較前週減少 103.51 億美元；逆回購週均值減少 26.52 億美元、TGA 週均值減少 28.76 億美元。週三單點準備金為 2.9168 兆美元、較 8/19 減少 139.93 億美元，TGA 單點增加 230.29 億美元。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "關鍵數據"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "link",
+              "text": "Federal Reserve H.4.1，發布日 2026-08-27、資料週截至 08-26",
+              "href": "https://www.federalreserve.gov/releases/h41/current/"
+            },
+            {
+              "type": "text",
+              "text": "：準備金週均值 2.924936 兆美元（WoW -103.51 億）、逆回購週均值 3,622.13 億美元（-26.52 億）、TGA 週均值 9,507.36 億美元（-28.76 億）；週三單點準備金 2.916824 兆美元（-139.93 億）、TGA 9,594.35 億美元（+230.29 億）。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "市場意義"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "週均 TGA 與逆回購下降提供部分抵銷，但準備金週均與單點都下降，無法支持「流動性明顯轉鬆」的確定結論。廣義美元資料仍只到 8/21，故本項保持有限判斷。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "下行風險判斷"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "主要／次要性質：C 資金輪動／D 風險變化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險階段：潛伏"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影響期限：1–4 週／1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：準備金下降＋TGA 單點回升 → 邊際流動性緩衝未擴張 → 高估值與高槓桿部位對衝擊更敏感"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "content": [
+            {
+              "type": "text",
+              "text": "接下來要看什麼"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：準備金連續下降、TGA 持續回升且信用利差或融資壓力同步擴大"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：週均 TGA 與逆回購均下降，且最新信用利差收窄"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：準備金回升、TGA 壓力緩解，且信用與市場廣度沒有惡化"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "已確認事實"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "事實"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "數值／變化"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料期間"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源與日期"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "主要美股指數上漲"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "S&P +0.7%、Dow +0.2%、Nasdaq +1.6%、Russell +0.3%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-27"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "AP，2026-08-27",
+                  "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-b4216a1f191d0304b4ed59e6912e23a4"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "多數 S&P 500 成分股下跌"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "NVIDIA／Salesforce 漲幅抵銷多數個股回落"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-27"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "AP，2026-08-27",
+                  "href": "https://apnews.com/article/stocks-market-iran-war-oil-us-35c60216666d877595a3941df73030de"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "NVIDIA／Salesforce 股價反應"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "+8.7%／+22.6%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-27"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "AP，2026-08-27",
+                  "href": "https://apnews.com/article/stocks-market-iran-war-oil-us-35c60216666d877595a3941df73030de"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "初領／續領失業金"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "203,000／1,778,000"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "截至 2026-08-22／08-15"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "U.S. DOL，2026-08-27",
+                  "href": "https://www.dol.gov/ui/data.pdf"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Treasury 曲線上移"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2Y／10Y／30Y 4.20%／4.67%／5.19%，均 +1bp"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-27"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "U.S. Treasury，2026-08-27",
+                  "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Brent 反彈"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "88.52 美元、+1.8%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-27"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "AP，2026-08-27",
+                  "href": "https://apnews.com/article/stocks-market-iran-war-oil-us-35c60216666d877595a3941df73030de"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "Fed 準備金週均值下降"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2.924936 兆美元、WoW -103.51 億美元"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "週截至 2026-08-26"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "Federal Reserve H.4.1，2026-08-27",
+                  "href": "https://www.federalreserve.gov/releases/h41/current/"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "最新可得信用與波動"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "HY OAS 2.67、IG OAS 0.80、VIX 15.21"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2026-08-26"
+                }
+              ],
+              [
+                {
+                  "type": "link",
+                  "text": "FRED／ICE BofA、Cboe，2026-08-28 查核",
+                  "href": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "AI 推論與初步判斷"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "初判先由 DOL、Treasury、Federal Reserve、NVIDIA 與 Salesforce 原始資料形成：就業、AI 基礎設施與企業軟體需求沒有顯示立即衰退，信用利差也收窄，因此景氣與信用風險可下調；但長端仍高、Brent 反彈、準備金下降，且 AP 確認多數 S&P 500 成分股未跟漲，使估值與市場結構風險仍在。推論鏈為「企業需求與信用改善 → 盈餘／融資尾部風險下降」，同時「低裁員＋能源反彈 → 寬鬆空間受限 → 長端維持高位」，以及「少數 AI 權重股拉動指數 → 市場廣度未擴散 → 指數對單一事件更敏感」。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "外部觀點比較"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀點摘要"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "與初判一致／分歧"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "對判斷影響"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "link",
+                  "text": "Associated Press 市場回顧，2026-08-27",
+                  "href": "https://apnews.com/article/stocks-market-iran-war-oil-us-35c60216666d877595a3941df73030de"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "AI 財報推升 NVIDIA、Salesforce 與指數，但多數 S&P 500 成分股下跌；初領偏低、殖利率與油價上升"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致：企業需求強，但廣度、利率與能源限制風險下修"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "將景氣、信用下調，但不把科技股大漲升格為全面風險解除"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "link",
+                  "text": "Associated Press 指數收盤，2026-08-27",
+                  "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-b4216a1f191d0304b4ed59e6912e23a4"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "四大指數全數上漲，NVIDIA 為最主要推力"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "一致：指數反彈是真實反證；分歧在於不能由指數推導全部個股改善"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "市場結構只下調一級，保留集中度警戒"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "最終判斷與反方證據"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終判斷：中等信心的中性風險。8/27 新證據支持 AI 需求、軟體商業化、就業與信用仍具韌性，將 1–4 週分數由 60 降至 57；但這不是全面解除風險，因多數 S&P 500 成分股下跌、長端高位、油價反彈與流動性緩衝未擴張。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：四大指數全數上漲；NVIDIA 與 Salesforce 收入、現金流與財測強；初領與續領下降；HY／IG OAS 收窄；最新可得 VIX 低。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：若市場廣度、信用、準備金與實質需求同步改善，可再下調；若主席演說、長端、Brent、信用與廣度同時惡化，則上調。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "今日市場一句話"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "今天市場真正交易的不是 AI 財報全面解除風險，而是少數贏家的收入成長能否擴散成更廣的企業獲利。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "反方證據與尚未確認資料"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "反方證據：NVIDIA／Salesforce 財報與完整市場反應強、四大指數上漲、初領與續領下降、8/26 HY／IG OAS 收窄、VIX 最新值低、週均 TGA 與逆回購下降。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：8/27 VIX 收盤與 Cboe 全市場成交檔尚未發布／取得；HY／IG OAS 最新至 8/26；廣義美元最新至 8/21；8/28 主席演說尚未發生。這些缺口使本版維持有限版，不據此做確定價格、廣度或政策結論。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "尚未確認與待觀察"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "未確認資料：8/27 VIX 與 Cboe 成交、8/27 信用利差、8/21 後廣義美元、8/28 主席演說內容。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "未入選候選事件：候選共十則。入選 NVIDIA／Salesforce 財報反應、指數與廣度、初領／Treasury／Jackson Hole、Brent、H.4.1 五條因果鏈；Best Buy -4.4%與 HP -2.9%作消費／毛利限制，Dollar General +2.5%與 Dollar Tree -3.9%作低價零售分歧，HY／IG OAS 收窄與 VIX 最新低值作反證。沒有把單一零售商價格反應獨立升格為總經結論。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "下一確認點：8/28 主席演說、上漲家數與等權重／小型股、Brent、VIX／Cboe／FRED 補值、後續就業與 8 月 PCE。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "來源"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "link",
+                "text": "NYSE｜Holidays & Trading Hours｜2026 日曆與核心交易時段；2026-08-28 查核",
+                "href": "https://www.nyse.com/trade/hours-calendars"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Department of Labor｜Unemployment Insurance Weekly Claims｜發布日 2026-08-27",
+                "href": "https://www.dol.gov/ui/data.pdf"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Treasury｜Daily Treasury Par Yield Curve Rates｜資料日 2026-08-26 至 08-27",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜H.4.1｜發布日 2026-08-27、資料週截至 08-26",
+                "href": "https://www.federalreserve.gov/releases/h41/current/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜H.10｜發布日 2026-08-24、廣義美元最新資料日 08-21",
+                "href": "https://www.federalreserve.gov/releases/h10/current/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "NVIDIA｜Q2 FY2027 results｜發布日 2026-08-26",
+                "href": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Salesforce｜Q2 FY2027 results｜發布日 2026-08-26",
+                "href": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Second-Quarter-Fiscal-2027-Results/default.aspx"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜Tech stocks lead Wall Street｜市場回顧日 2026-08-27",
+                "href": "https://apnews.com/article/stocks-market-iran-war-oil-us-35c60216666d877595a3941df73030de"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜How major US stock indexes fared Thursday｜市場回顧日 2026-08-27",
+                "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-b4216a1f191d0304b4ed59e6912e23a4"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Kansas City Fed｜2026 Jackson Hole symposium｜發布日 2026-08-25、活動日 08-27 至 08-29",
+                "href": "https://www.kansascityfed.org/newsroom/2026-news-releases/kansas-city-fed-to-host-annual-jackson-hole-economic-policy-symposium-2026/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Cboe／FRED｜VIX daily close｜最新資料日 2026-08-26",
+                "href": "https://fred.stlouisfed.org/series/VIXCLS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Cboe｜U.S. Equities Historical Market Volume｜2026-08-28 查核時無法取得 8/27 檔",
+                "href": "https://cdn.cboe.com/resources/us/equities/market-statistics/historical-market-volume/market_history_2026.csv"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜HY OAS｜最新資料日 2026-08-26",
+                "href": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜IG OAS｜最新資料日 2026-08-26",
+                "href": "https://fred.stlouisfed.org/series/BAMLC0A0CM"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "人工核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：確認是否接受五則事件、57 分有限版影子風險、標題與篇幅，供內部研究及私人 Dashboard 呈現。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：本次不授權公開引用或發布、不提供個人化投資建議，也不授權任何持股、再平衡、買賣或其他投資行動。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/daily-briefs/2026-08-28-v01.md",
+      "asOf": "2026-08-28 07:10（Asia/Taipei，UTC+8；07:10:46 完成鎖定後複核）",
+      "updatedAt": "2026-08-28",
+      "dependencies": []
+    },
+    {
       "id": "records/daily-briefs/2026-08-27-v01.md",
       "date": "2026-08-27",
       "version": 1,
@@ -8599,7 +10723,7 @@
       "isLatest": true,
       "title": "NVIDIA 財報翻倍，但通膨與高利率仍壓縮估值容錯",
       "summary": "8/26 是 8/25 基準後新的完整 NYSE 交易時段；S&P 500 跌不到 0.1%，Dow -0.2%、Nasdaq -0.1%、Russell 2000 -0.1%，市場在 NVIDIA 財報前沒有形成廣泛去風險。 7 月 PCE 與核心 PCE 分別年增 3.7%與 3.3%，月增皆為 0.2%；同時實質 PCE 幾乎零成長，形成「價格仍高、實質支出停滯」的混合訊號。 Q2 實質 GDP 年率維持 1.5%，但國內購買價格指數、PCE 與核心 PCE 季增年率第二估值上修至 5.8%、5.3%與 3.6%；反方是私人國內最終銷售 4.2%、實質 GDI 2.2%。 NVIDIA Q2 FY2027 營收 962.21 億美元、年增 106%，資料中心營收 890 億美元、年增 117%，Q3 營收指引 1,080 億美元；基本面強，但股價常規時段跌 1.6%、財報後初段盤後小跌，顯示高預期使估值容錯沒有同步擴大。 今日 1–4 週影子風險分數為 60／100（中性、較前次 +2）；通膨與利率重新升溫，但信用利差低、油價回落與企業需求強提供反證。",
-      "freshness": "最新",
+      "freshness": "歷史版本",
       "artifactStatus": "待核准",
       "rawStatus": "待核准（有限版）",
       "artifactHash": "sha256:e8a8f993884a9491ad3da6a2810183ac57b0322a3b10c12f1e91ca2cface253c",
@@ -10145,7 +12269,7 @@
       ],
       "source": "records/daily-briefs/2026-08-27-v01.md",
       "asOf": "2026-08-27 07:10（Asia/Taipei，UTC+8；07:10:21 完成鎖定後複核）",
-      "updatedAt": "2026-08-27",
+      "updatedAt": "2026-08-27T07:13:39+08:00",
       "dependencies": []
     },
     {
@@ -37673,6 +39797,451 @@
   ],
   "threadsDocuments": [
     {
+      "id": "records/content/threads/2026-08-28-ai-commercialization-proof-v01.md",
+      "artifactKey": "cmVjb3Jkcy9jb250ZW50L3RocmVhZHMvMjAyNi0wOC0yOC1haS1jb21tZXJjaWFsaXphdGlvbi1wcm9vZi12MDEubWQAMQBzaGEyNTY6ZjNlNGQyNDAyYTIwOWRlNTYwZDY0YjMzNmY0M2Y2MWE0NTkxZDUxNDM4OTc0NzcyMThkODg4NDA3ZDRlNTUzYQ",
+      "date": "2026-08-28",
+      "version": 1,
+      "versionLabel": "v01",
+      "title": "Threads 草稿｜NVIDIA 漲 8.7%、Salesforce 漲 22.6%，AI 商業化被證明了嗎？",
+      "summary": "營收 962 億美元，年增 106% 資料中心營收 890 億美元，年增 117% 自由現金流 213 億美元 下季營收指引 1,080 億美元 ±2% 營收 113 億美元，年增 11% Agentforce＋Data 360 ARR 接近 39 億美元，年增超過 210% 自由現金流 11 億美元，年增 81%",
+      "rawStatus": "待核准（有限版研究來源）",
+      "artifactHash": "sha256:f3e4d2402a209de560d64b336f43f61a4591d5143897477218d888407d4e553a",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "日期：2026-08-28"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准（有限版研究來源）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源研究："
+              },
+              {
+                "type": "code",
+                "text": "records/daily-briefs/2026-08-28-v01.md"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報："
+              },
+              {
+                "type": "code",
+                "text": "records/daily-briefs/2026-08-28-v01.md"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報版本：v01"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觸發晨報雜湊："
+              },
+              {
+                "type": "code",
+                "text": "sha256:2f3cbe8ee4112893c0d3e958fcd5810c92e7d3bc6c93ecd7a6007be02df400b5"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "內容指紋："
+              },
+              {
+                "type": "code",
+                "text": "sha256:50b23459cd786e0702b9535e4c4c8f119448779cbb75044af708d3beadc3aca6"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "建議時機：現在；發布前須確認公司原始發布未修訂，且 8/28 Jackson Hole 主席演說沒有明顯改變利率與估值背景"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "主版本"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "NVIDIA 漲 8.7%、Salesforce 漲 22.6%， AI 商業化真的被證明了嗎？"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "這一季，市場拿到兩個很強的訊號。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "第一個是算力需求。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "NVIDIA："
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "營收 962 億美元，年增 106%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料中心營收 890 億美元，年增 117%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "自由現金流 213 億美元"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "下季營收指引 1,080 億美元 ±2%"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "第二個是軟體收入。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Salesforce："
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "營收 113 億美元，年增 11%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Agentforce＋Data 360 ARR 接近 39 億美元，年增超過 210%"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "自由現金流 11 億美元，年增 81%"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "所以，「AI 完全賺不到錢」這個說法，證據正在變弱。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "但這不等於所有 AI 估值都安全。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "我會再看三件事。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 1,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "成長有多少來自既有業務？"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Salesforce 的營收包含 Informatica 貢獻，全年財測也包含待完成併購。不能把全部成長都當成自然加速。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 2,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "現金流能不能跟上？"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "單季自由現金流很強，但 Salesforce 全年自由現金流成長指引仍只有約 4%～5%。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 3,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "漲勢有沒有擴散？"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "當天 S&P 500 上漲 0.7%，但多數成分股其實下跌。指數上漲，主要還是靠少數大型贏家。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "我的結論是："
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "這一季證明「領先公司可以把 AI 換成收入與現金流」， 但還沒有證明「所有 AI 投資都能通過 ROI 檢驗」。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "下一步不是只看股價漲多少， 而是看收入、現金流與市場廣度能不能一起擴散。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "備選開頭"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 1,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "NVIDIA 漲 8.7%、Salesforce 漲 22.6%。這次市場買的不只是 AI 故事，而是兩種不同的商業化證據。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "AI 到底有沒有開始賺錢？先把「算力需求」和「軟體收入」分開看。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "查核與語氣"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "事實與來源：NVIDIA Q2 FY2027 營收 962.21 億美元、資料中心 890 億美元、自由現金流 213.41 億美元、Q3 指引 1,080 億美元 ±2%，來源為 "
+              },
+              {
+                "type": "link",
+                "text": "NVIDIA｜發布日 2026-08-26、季度截至 2026-07-26",
+                "href": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx"
+              },
+              {
+                "type": "text",
+                "text": "；Salesforce Q2 FY2027 營收 113 億美元、Agentforce／Data 360 ARR 接近 39 億美元、自由現金流 11 億美元，來源為 "
+              },
+              {
+                "type": "link",
+                "text": "Salesforce｜發布日 2026-08-26、季度截至 2026-07-31",
+                "href": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Second-Quarter-Fiscal-2027-Results/default.aspx"
+              },
+              {
+                "type": "text",
+                "text": "；NVIDIA +8.7%、Salesforce +22.6%、S&P 500 +0.7%且多數成分股下跌，來源為 "
+              },
+              {
+                "type": "link",
+                "text": "Associated Press｜市場日 2026-08-27",
+                "href": "https://apnews.com/article/stocks-market-iran-war-oil-us-35c60216666d877595a3941df73030de"
+              },
+              {
+                "type": "text",
+                "text": "。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方或限制：Salesforce Q2 營收包含 4.56 億美元 Informatica 貢獻，FY27 財測含略高於 3 個百分點的 Informatica 貢獻並納入待完成併購；Agentforce／Data 360 ARR 是公司自列指標。單季龍頭財報與股價反應不能證明全部 AI 企業或專案都達成 ROI，也不能由多數成分股下跌推導系統性去風險。本晨報因 8/27 VIX、Cboe 成交與信用利差缺失、廣義美元最新至 8/21而標示有限版；本草稿沒有用缺失數值支持結論。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "待使用者補充：請確認是否採用第一人稱立場「我會再看成長來源、現金流、漲勢擴散三件事」與結論措辭；未代寫任何個人經歷、持股、交易或績效。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "App CTA：不加入；本篇重點是辨識 AI 商業化證據與限制，沒有自然且必要的產品承接。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "最終文字與發布由使用者決定：尚未核准；本草稿不得自動發布，也不授權留言、私訊或任何投資行動。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/content/threads/2026-08-28-ai-commercialization-proof-v01.md",
+      "asOf": "2026-08-28",
+      "updatedAt": "2026-08-28",
+      "dependencies": [
+        "records/daily-briefs/2026-08-28-v01.md"
+      ]
+    },
+    {
       "id": "records/content/threads/2026-08-27-pce-level-vs-momentum-v01.md",
       "artifactKey": "cmVjb3Jkcy9jb250ZW50L3RocmVhZHMvMjAyNi0wOC0yNy1wY2UtbGV2ZWwtdnMtbW9tZW50dW0tdjAxLm1kADEAc2hhMjU2OmY0YWI5MGQxZTc1MzlkZjUyMDhhZTc5NGU3ZWFjNWIzY2UyNGY1ZmU3ZTQ3YmZhZDMzODQyNzFiODZiOTdjY2Q",
       "date": "2026-08-27",
@@ -44639,42 +47208,42 @@
   "approvedThreadsArchive": [],
   "threadsArchiveIssues": [],
   "brief": {
-    "title": "NVIDIA 財報翻倍，但通膨與高利率仍壓縮估值容錯",
-    "headline": "NVIDIA 財報翻倍，但通膨與高利率仍壓縮估值容錯",
-    "summary": "8/26 是 8/25 基準後新的完整 NYSE 交易時段；S&P 500 跌不到 0.1%，Dow -0.2%、Nasdaq -0.1%、Russell 2000 -0.1%，市場在 NVIDIA 財報前沒有形成廣泛去風險。 7 月 PCE 與核心 PCE 分別年增 3.7%與 3.3%，月增皆為 0.2%；同時實質 PCE 幾乎零成長，形成「價格仍高、實質支出停滯」的混合訊號。 Q2 實質 GDP 年率維持 1.5%，但國內購買價格指數、PCE 與核心 PCE 季增年率第二估值上修至 5.8%、5.3%與 3.6%；反方是私人國內最終銷售 4.2%、實質 GDI 2.2%。 NVIDIA Q2 FY2027 營收 962.21 億美元、年增 106%，資料中心營收 890 億美元、年增 117%，Q3 營收指引 1,080 億美元；基本面強，但股價常規時段跌 1.6%、財報後初段盤後小跌，顯示高預期使估值容錯沒有同步擴大。 今日 1–4 週影子風險分數為 60／100（中性、較前次 +2）；通膨與利率重新升溫，但信用利差低、油價回落與企業需求強提供反證。",
+    "title": "AI 財報帶動指數上漲，但多數成分股仍下跌",
+    "headline": "AI 財報帶動指數上漲，但多數成分股仍下跌",
+    "summary": "8/27 是上次基準 8/26 後新的完整 NYSE 正常交易時段；S&P 500 +0.7%、Nasdaq +1.6%、Dow +0.2%、Russell 2000 +0.3%。 NVIDIA 財報後第一個完整交易日漲 8.7%，Salesforce 漲 22.6%；原始財報確認 AI 基礎設施與軟體收入都在成長，削弱「AI 需求立即崩落」的論點。 反方是 AP 確認 S&P 500 多數成分股仍下跌，代表指數上漲主要由少數大型 AI 贏家帶動，尚未形成全面風險偏好。 初領失業金降至 20.3 萬、10Y 升至 4.67%；Brent 反彈 1.8%至 88.52 美元。成長韌性與能源價格同時壓縮寬鬆空間，8/28 Fed 主席演說是下一個確認點。 今日 1–4 週影子風險分數為 57／100（中性、較前次 -3）；企業需求與信用改善使分數下降，但高利率、能源與市場集中度仍使本版維持有限。",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准（有限版）",
     "version": 1,
-    "artifactHash": "sha256:e8a8f993884a9491ad3da6a2810183ac57b0322a3b10c12f1e91ca2cface253c",
-    "coveredSessionDate": "2026-08-26",
-    "asOf": "2026-08-27 07:10（Asia/Taipei，UTC+8；07:10:21 完成鎖定後複核）",
-    "source": "records/daily-briefs/2026-08-27-v01.md",
-    "updatedAt": "2026-08-27",
+    "artifactHash": "sha256:2f3cbe8ee4112893c0d3e958fcd5810c92e7d3bc6c93ecd7a6007be02df400b5",
+    "coveredSessionDate": "2026-08-27",
+    "asOf": "2026-08-28 07:10（Asia/Taipei，UTC+8；07:10:46 完成鎖定後複核）",
+    "source": "records/daily-briefs/2026-08-28-v01.md",
+    "updatedAt": "2026-08-28",
     "dependencies": []
   },
   "marketRisk": {
-    "label": "市場風險報告｜2026-08-27-v01",
+    "label": "市場風險報告｜2026-08-28-v01",
     "freshness": "最新",
     "artifactStatus": "待核准",
     "rawStatus": "待核准（有限版）",
     "version": 1,
-    "artifactHash": "sha256:8fda5a7fe3ece767a554c041a4c8b3701454e454e37beb1f72c153153762b724",
-    "coveredSessionDate": "2026-08-26",
-    "asOf": "2026-08-27 07:10（Asia/Taipei，UTC+8；07:10:21 完成鎖定後複核）",
-    "source": "records/market-risk/2026-08-27-v01.md",
-    "updatedAt": "2026-08-27 07:10:21（Asia/Taipei，UTC+8）",
+    "artifactHash": "sha256:324ee0270d57fb2e30ef52377a8b0d1ce76f185f4ef5bfae445ea4c093f9c411",
+    "coveredSessionDate": "2026-08-27",
+    "asOf": "2026-08-28 07:10（Asia/Taipei，UTC+8；07:10:46 完成鎖定後複核）",
+    "source": "records/market-risk/2026-08-28-v01.md",
+    "updatedAt": "2026-08-28 07:10:46（Asia/Taipei，UTC+8）",
     "dependencies": [],
-    "score": 60,
-    "baseline": 60,
+    "score": 57,
+    "baseline": 57,
     "eventAdjustment": 0,
-    "dailyChange": 2,
-    "immediateRisk": "NVIDIA 財報後第一個完整交易日、Jackson Hole 政策訊號、油價與荷莫茲消息反轉",
-    "structuralRisk": "服務通膨與高長端利率、AI 資本支出回報與市場集中度、實質消費與所得韌性",
+    "dailyChange": -3,
+    "immediateRisk": "8/28 Jackson Hole 主席演說、AI 權重股漲勢能否擴散、Brent 是否延續反彈",
+    "structuralRisk": "服務通膨與高長端利率、AI 資本支出回報與市場集中度、流動性緩衝未明顯擴張",
     "topRisks": [
-      "PCE 通膨黏性",
+      "AI 漲勢集中",
       "長端與政策重新定價",
-      "AI 高預期與集中度"
+      "能源通膨尾部風險"
     ],
     "confidence": 85,
     "completeness": 95,
@@ -45336,11 +47905,775 @@
             "readable": true
           }
         ]
+      },
+      {
+        "id": "records/market-risk/2026-08-28-v01.md",
+        "date": "2026-08-28",
+        "version": 1,
+        "versionLabel": "v01",
+        "artifactHash": "sha256:324ee0270d57fb2e30ef52377a8b0d1ce76f185f4ef5bfae445ea4c093f9c411",
+        "artifactStatus": "待核准",
+        "rawStatus": "待核准（有限版）",
+        "asOf": "2026-08-28 07:10（Asia/Taipei，UTC+8；07:10:46 完成鎖定後複核）",
+        "updatedAt": "2026-08-28 07:10:46（Asia/Taipei，UTC+8）",
+        "source": "records/market-risk/2026-08-28-v01.md",
+        "score": 57,
+        "state": "中性",
+        "dailyChange": -3,
+        "changeReasons": "無；事件調整為 0",
+        "topRisks": [
+          "AI 漲勢集中",
+          "長端與政策重新定價",
+          "能源通膨尾部風險"
+        ],
+        "supportingEvidence": "多數 S&P 500 成分股下跌、殖利率與 Brent 上升、準備金下降、8/27 VIX／成交缺失",
+        "counterEvidence": "四大指數上漲、NVIDIA／Salesforce 財報與現金流強、初領／續領下降、HY／IG OAS 收窄、最新可得 VIX 低",
+        "confidence": 85,
+        "completeness": 95,
+        "lowCompleteness": false,
+        "dependencies": [],
+        "versions": [
+          {
+            "id": "records/market-risk/2026-08-28-v01.md",
+            "version": 1,
+            "versionLabel": "v01",
+            "source": "records/market-risk/2026-08-28-v01.md",
+            "readable": true
+          }
+        ]
       }
     ],
     "issues": []
   },
   "marketRiskArchive": [
+    {
+      "id": "records/market-risk/2026-08-28-v01.md",
+      "date": "2026-08-28",
+      "version": 1,
+      "versionLabel": "v01",
+      "isLatest": true,
+      "title": "市場風險報告｜2026-08-28-v01",
+      "artifactStatus": "待核准",
+      "rawStatus": "待核准（有限版）",
+      "artifactHash": "sha256:324ee0270d57fb2e30ef52377a8b0d1ce76f185f4ef5bfae445ea4c093f9c411",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "狀態：待核准（有限版）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料截止：2026-08-28 07:10（Asia/Taipei，UTC+8；07:10:46 完成鎖定後複核）"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "方法版本：v1.0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "影子運行：實驗性指標／第 22 個交易日"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "觀察期：主分數為 1–4 週；另標示 1–3 個交易日與 1–2 季"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "最後更新時間：2026-08-28 07:10:46（Asia/Taipei，UTC+8）"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "總覽"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "市場風險分數：57"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "基準分：57"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "事件調整：0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "單日變動：-3"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "5 日趨勢：最近五筆為 61→60→58→60→57；工作區第 5–7 日缺檔不回填，方向為先降、短暫回升後再下降"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "20 日趨勢：影子序號到第 22 個交易日，但第 5–7 日缺少當日版本，無法形成完整連續 20 日序列"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "風險狀態及趨勢：中性、下降；AI／企業需求與信用改善，長端、能源與市場集中度限制下修"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "即時風險：8/28 Jackson Hole 主席演說、AI 權重股漲勢能否擴散、Brent 是否延續反彈"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "結構性風險：服務通膨與高長端利率、AI 資本支出回報與市場集中度、流動性緩衝未明顯擴張"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "三項主要風險：AI 漲勢集中、長端與政策重新定價、能源通膨尾部風險"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "分數改變原因：景氣與成長由 65 降至 60，初領／續領下降、NVIDIA 與 Salesforce 收入及現金流強，但多數 S&P 500 成分股下跌且零售反應分歧；通膨與利率維持 75，2Y／10Y／30Y 各升 1bp、Brent +1.8%，但殖利率單日變化有限；流動性維持 60，H.4.1 準備金週均 -103.51 億美元，週均 TGA／逆回購下降提供抵銷；信用由 35 降至 30，8/26 HY／IG OAS 分別由 2.70／0.81 收窄至 2.67／0.80；市場結構由 65 降至 60，四大指數上漲、最新可得 VIX 低，但多數 S&P 500 成分股下跌且 8/27 VIX／成交缺失。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "AI 判斷信心：85"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "資料完整度：95"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "子指標"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            [
+              {
+                "type": "text",
+                "text": "子指標"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "權重"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "分數"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "趨勢"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "理由"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "來源"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "景氣與成長"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "60"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "下降、仍偏高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "初領 20.3 萬、續領 177.8 萬，NVIDIA 營收／FCF／指引與 Salesforce 營收／cRPO／FCF 強；限制是多數 S&P 500 成分股下跌，Best Buy／HP 財報後反應偏弱，不能判定需求全面擴散"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. DOL，發布日 2026-08-27；NVIDIA／Salesforce，發布日 2026-08-26；AP，市場日 08-27"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "通膨與利率"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "75"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "持平偏高"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "2Y／10Y／30Y 升至 4.20%／4.67%／5.19%，Brent +1.8%至 88.52 美元；反方是單日殖利率僅 +1bp、油價仍低於前週末約 94 美元"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "U.S. Treasury、AP，資料日 2026-08-27；BEA PCE，發布日 08-26"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "流動性"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "60"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "持平偏高、混合"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "H.4.1 準備金週均 -103.51 億美元、週三單點 -139.93 億；反方是週均 TGA -28.76 億、逆回購 -26.52 億。廣義美元最新仍至 8/21"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "Federal Reserve H.4.1，發布日 2026-08-27；H.10，發布日 08-24"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "信用"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "30"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "下降至偏低"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "8/26 HY OAS 2.67、IG OAS 0.80，分別較 8/25 收窄 3bp／1bp，絕對水準低且未擴散；8/27 值尚未發布"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "ICE BofA／FRED，資料日 2026-08-26、2026-08-28 查核"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "text": "市場結構"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "20%"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "60"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "下降但集中"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "S&P +0.7%、Nasdaq +1.6%、Dow +0.2%、Russell +0.3%，最新可得 VIX 15.21；反方是多數 S&P 500 成分股下跌，漲勢集中 NVIDIA +8.7%與 Salesforce +22.6%，8/27 VIX／成交缺失"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": "AP，資料日 2026-08-27；Cboe／FRED，最新 2026-08-26"
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "基準分計算："
+            },
+            {
+              "type": "code",
+              "text": "(60 + 75 + 60 + 30 + 60) ÷ 5 = 57"
+            },
+            {
+              "type": "text",
+              "text": "。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "事件調整"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "調整事件：無；事件調整為 0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "受影響子指標：初領、企業財報已納入景氣成長；Treasury 與 Brent 已納入通膨利率；H.4.1 已納入流動性；OAS 已納入信用；指數、廣度與 AI 權重股已納入市場結構"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未反映於基準數據的理由：NVIDIA／Salesforce 大漲與多數成分股下跌已由市場結構同時反映；主席演說尚未發生，不預先計分；沒有原始資料與跨市場訊號共同確認的新衝擊，故不額外調整"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "傳導鏈：AI 財報強 → 景氣反證但集中度提高；低裁員＋油價反彈 → 寬鬆預期受限；準備金下降 → 邊際流動性緩衝未擴張"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "支持證據：多數 S&P 500 成分股下跌、殖利率與 Brent 上升、準備金下降、8/27 VIX／成交缺失"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：四大指數上漲、NVIDIA／Salesforce 財報與現金流強、初領／續領下降、HY／IG OAS 收窄、最新可得 VIX 低"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "失效條件：只有出現尚未被五項子指標捕捉、由原始資料與市場資料共同確認的重大政策、信用、能源或 AI 融資衝擊才啟用事件調整；否則下一版直接重估子指標"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "總分計算："
+            },
+            {
+              "type": "code",
+              "text": "57 + 0 = 57"
+            },
+            {
+              "type": "text",
+              "text": "。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "證據與限制"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "支持證據：AP 確認指數上漲但多數成分股下跌；Treasury 確認曲線再上移；Brent +1.8%；H.4.1 準備金週均與單點下降"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "反方證據：NVIDIA 營收 962.21 億美元、資料中心 890 億美元、FCF 213.41 億美元與 Q3 指引 1,080 億美元；Salesforce 營收 113 億美元、Agentforce／Data 360 ARR 接近 39 億美元、FCF 11 億美元；初領與續領下降；四大指數上漲；信用利差收窄"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "確認訊號：8/28 主席演說、上漲家數與等權重／小型股、8/27 VIX／Cboe 成交與信用補值、10Y／30Y、Brent、準備金與 TGA"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "待觀察數據：主席演說與政策重新定價、AI 財報後第二日廣度、後續就業／零售／8 月 PCE；廣度、信用與長端若同步惡化則上調，企業現金流、實質需求與長端改善則下調"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "尚未確認資料：8/27 VIX、Cboe 成交、HY／IG OAS；廣義美元最新至 8/21；主席演說尚未發生。資料完整度 95、信心 85，本版為有限版，不得視為精準預測"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "歷史限制：影子序號為第 22 個交易日，工作區新增後有 19 個實際日期風險版本，缺少第 5–7 日（2026-08-05 至 08-07）當日紀錄；不以事後資料補造，20 日趨勢只能有限評估"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "事後績效（後續追加）"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "評估日期：後續觀察窗結束時另行追加"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "後續市場表現：以 1–3 個交易日、1–4 週與 1–2 季觀察窗追加，不預寫結果"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "判斷評估：後續評估方向、時效、誤報或漏報"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "方法學習：只追加事後結果；如需改方法，建立新版本且不回寫本紀錄"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "來源"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "link",
+                "text": "NYSE｜Holidays & Trading Hours｜2026 日曆與核心交易時段；2026-08-28 查核",
+                "href": "https://www.nyse.com/trade/hours-calendars"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Department of Labor｜Unemployment Insurance Weekly Claims｜發布日 2026-08-27",
+                "href": "https://www.dol.gov/ui/data.pdf"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "U.S. Treasury｜Daily Treasury Par Yield Curve Rates｜資料日 2026-08-26 至 08-27",
+                "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜H.4.1｜發布日 2026-08-27、資料週截至 08-26",
+                "href": "https://www.federalreserve.gov/releases/h41/current/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Federal Reserve｜H.10｜發布日 2026-08-24、廣義美元最新資料日 08-21",
+                "href": "https://www.federalreserve.gov/releases/h10/current/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "NVIDIA｜Q2 FY2027 results｜發布日 2026-08-26",
+                "href": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Salesforce｜Q2 FY2027 results｜發布日 2026-08-26",
+                "href": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Second-Quarter-Fiscal-2027-Results/default.aspx"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜Tech stocks lead Wall Street｜市場回顧日 2026-08-27",
+                "href": "https://apnews.com/article/stocks-market-iran-war-oil-us-35c60216666d877595a3941df73030de"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Associated Press｜How major US stock indexes fared Thursday｜市場回顧日 2026-08-27",
+                "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-b4216a1f191d0304b4ed59e6912e23a4"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Kansas City Fed｜2026 Jackson Hole symposium｜發布日 2026-08-25、活動日 08-27 至 08-29",
+                "href": "https://www.kansascityfed.org/newsroom/2026-news-releases/kansas-city-fed-to-host-annual-jackson-hole-economic-policy-symposium-2026/"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Cboe／FRED｜VIX daily close｜最新資料日 2026-08-26",
+                "href": "https://fred.stlouisfed.org/series/VIXCLS"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "Cboe｜U.S. Equities Historical Market Volume｜2026-08-28 查核時無法取得 8/27 檔",
+                "href": "https://cdn.cboe.com/resources/us/equities/market-statistics/historical-market-volume/market_history_2026.csv"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜HY OAS｜最新資料日 2026-08-26",
+                "href": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+              }
+            ],
+            [
+              {
+                "type": "link",
+                "text": "FRED／ICE BofA｜IG OAS｜最新資料日 2026-08-26",
+                "href": "https://fred.stlouisfed.org/series/BAMLC0A0CM"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "type": "text",
+              "text": "核准"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "type": "text",
+                "text": "待核准事項：確認是否接受有限版 57 分總分、57 分基準、0 事件調整、資料完整度 95、AI 信心 85、第 22 日影子紀錄與 19 份實際日期版本，供內部研究及私人 Dashboard 呈現。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准紀錄：尚未核准。"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "核准邊界：本次不授權公開發布，不連動 Beta、持股、再平衡、買賣、個人化投資建議或投資操作，也不延伸至未來版本。"
+              }
+            ]
+          ]
+        }
+      ],
+      "source": "records/market-risk/2026-08-28-v01.md",
+      "asOf": "2026-08-28 07:10（Asia/Taipei，UTC+8；07:10:46 完成鎖定後複核）",
+      "updatedAt": "2026-08-28 07:10:46（Asia/Taipei，UTC+8）",
+      "dependencies": []
+    },
     {
       "id": "records/market-risk/2026-08-27-v01.md",
       "date": "2026-08-27",
